@@ -1,0 +1,8 @@
+[application]
+name = "breviarium"
+default_platform = "web"
+out_dir = "dist"
+asset_dir = "public"
+
+[web.app]
+title = "Breviarium"

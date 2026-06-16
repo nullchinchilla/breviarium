@@ -2778,6 +2778,7 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
         split_ordinary_minor(ordinary);
         split_ordinary_prime(ordinary);
         split_ordinary_compline(ordinary);
+        split_ordinary_matins(ordinary);
     }
     for (book, offices) in &books {
         let path = data_dir.join("books").join(format!("{book}.yaml"));
@@ -3087,6 +3088,55 @@ fn split_ordinary_compline(offices: &mut BTreeMap<String, OfficeOut>) {
         offices.remove("minor");
     }
     for (office, slots) in compline {
+        offices.insert(
+            office,
+            OfficeOut {
+                slots,
+                ..OfficeOut::default()
+            },
+        );
+    }
+}
+
+/// Splits `ordinary/matins` so the invitatory antiphon lives in a `matins`
+/// office (slot `invitatory`) and the ordinary hymns in `matins-{season}` /
+/// `matins-day{n}` offices (slot `hymn`). Unused variants stay in `matins`.
+fn split_ordinary_matins(offices: &mut BTreeMap<String, OfficeOut>) {
+    let Some(matins) = offices.remove("matins") else {
+        return;
+    };
+    let mut new = BTreeMap::<String, BTreeMap<String, String>>::new();
+    let mut put = |office: String, slot: &str, id: String| {
+        new.entry(office).or_default().insert(slot.to_string(), id);
+    };
+    let mut leftover = OfficeOut::default();
+
+    for (key, id) in matins.slots {
+        let mapped = match key.as_str() {
+            "invit" => Some(("matins".to_string(), "invitatory")),
+            "hymnus-adv" => Some(("matins-adv".to_string(), "hymn")),
+            "hymnus-quad" => Some(("matins-quad".to_string(), "hymn")),
+            "hymnus-pasch" => Some(("matins-pasch".to_string(), "hymn")),
+            _ => key
+                .strip_suffix("-hymnus")
+                .filter(|day| day.starts_with("day") && !key.contains("hymnusm"))
+                .map(|day| (format!("matins-{day}"), "hymn")),
+        };
+        match mapped {
+            Some((office, slot)) => put(office, slot, id),
+            None => {
+                leftover.slots.insert(key, id);
+            }
+        }
+    }
+
+    // The `matins` office collects both the invitatory and the leftover variants.
+    for (slot, id) in leftover.slots {
+        new.entry("matins".to_string())
+            .or_default()
+            .insert(slot, id);
+    }
+    for (office, slots) in new {
         offices.insert(
             office,
             OfficeOut {

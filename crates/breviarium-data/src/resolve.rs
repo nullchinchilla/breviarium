@@ -591,7 +591,6 @@ pub(crate) fn resolve_office(
 }
 
 // The fixed structural books (ferial/seasonal defaults), referenced by key.
-const MATINS_SPECIAL: &str = "ordinary/matins";
 const PSALTER_MAJOR: &str = "psalter/major";
 const PSALTER_MINOR: &str = "psalter/minor";
 const PSALTER_MATINS: &str = "psalter/matins";
@@ -1102,7 +1101,7 @@ fn resolve_matins_invitatory(
     let antiphon = context
         .principal()
         .antiphons(catalog, language, "matins-invitatory")
-        .or_else(|| Stack::of([MATINS_SPECIAL]).antiphons(catalog, language, "invit"))
+        .or_else(|| Stack::of(["ordinary/matins"]).antiphons(catalog, language, "invitatory"))
         .and_then(|values| values.into_iter().next())
         .unwrap_or_default();
     let mut nodes = Vec::new();
@@ -1144,12 +1143,7 @@ fn resolve_hymn(
             .principal()
             .doc(catalog, language, "matins-hymn", diagnostics)
             .or_else(|_| {
-                Stack::of([MATINS_SPECIAL]).doc(
-                    catalog,
-                    language,
-                    &matins_ordinary_hymn_section(context),
-                    diagnostics,
-                )
+                Stack::of([matins_hymn_office(context)]).doc(catalog, language, "hymn", diagnostics)
             }),
         "prime-hymn" => {
             Stack::of(["ordinary/prime-fixed"]).doc(catalog, language, "hymn", diagnostics)
@@ -2956,16 +2950,18 @@ fn prime_season(context: &OfficeContext) -> &'static str {
     }
 }
 
-fn matins_ordinary_hymn_section(context: &OfficeContext) -> String {
+/// The Ordinary Matins-hymn book for today: the season's book, else the
+/// weekday's.
+fn matins_hymn_office(context: &OfficeContext) -> String {
     if context.facts.temporal_week.starts_with("Adv") {
-        "hymnus-adv".to_string()
+        "ordinary/matins-adv".to_string()
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "hymnus-quad".to_string()
+        "ordinary/matins-quad".to_string()
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        "hymnus-pasch".to_string()
+        "ordinary/matins-pasch".to_string()
     } else {
         format!(
-            "day{}-hymnus",
+            "ordinary/matins-day{}",
             divinum_weekday_number(context.facts.weekday)
         )
     }

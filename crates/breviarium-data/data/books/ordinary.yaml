@@ -443,31 +443,20 @@ offices:
       quadragesimae: marian-antiphon.ave-reg-na-c-l-rum-c4cd570572
   matins:
     slots:
-      day0-hymnus: hymn.nocte-surg-ntes-vigil-mus-omnes-31f30353ab
       day0-hymnus1: hymn.primo-die-quo-tr-nitas-54f22747e1
       day0-hymnus1m: hymn.primo-di-rum-mnium-90402d3210
       day0-hymnusm: hymn.nocte-surg-ntes-vigil-mus-omnes-c0b362635e
-      day1-hymnus: hymn.somno-ref-ctis-rtubus-7e627f3118
       day1-hymnusm: hymn.somno-ref-ctis-rtubus-00fcb2b01b
-      day2-hymnus: hymn.consors-pat-rni-l-minis-63eb7753e8
       day2-hymnusm: hymn.consors-pat-rni-l-minis-45775bc8db
-      day3-hymnus: hymn.rerum-cre-tor-ptime-039e460eb7
       day3-hymnusm: hymn.rerum-cre-tor-ptime-61da60dcc9
-      day4-hymnus: hymn.nox-atra-rerum-c-ntegit-7829b41359
       day4-hymnusm: hymn.nox-atra-rerum-c-ntegit-e03f9940f3
-      day5-hymnus: hymn.tu-trinit-tis-unitas-b970709677
       day5-hymnusm: hymn.tu-trinit-tis-unitas-82421ce659
-      day6-hymnus: hymn.summ-parens-clem-nti-ae3fc140d1
       day6-hymnusm: hymn.summ-deus-clem-nti-9011a39165
-      hymnus-adv: hymn.verbum-sup-rnum-pr-diens-86a18cd66b
-      hymnus-pasch: hymn.rex-sempit-rne-c-litum-9244452d9a
-      hymnus-quad: hymn.ex-more-docti-m-stico-6d8417e5d9
       hymnus-quad5: hymn.pange-lingua-glori-si-13dcaa9a6e
       hymnusm-adv: hymn.verbum-sup-rnum-pr-diens-6beccf4b5a
       hymnusm-pasch: hymn.rex-sempit-rne-d-mine-5413c77774
       hymnusm-quad: hymn.ex-more-docti-m-stico-b2ac8d1eca
       hymnusm-quad5: hymn.pange-lingua-glori-si-3d5b131d36
-      invit: invitatory.dominica-d-minum-qui-fecit-nos-ven-te-ador-mus-05b9e58b8f
       invit-adv: invitatory.regem-vent-rum-d-minum-ven-te-ador-mus-f9ed5484cf
       invit-adv3: invitatory.prope-est-iam-d-minus-ven-te-ador-mus-a9cf58bd4a
       invit-pasch: invitatory.surr-xit-d-minus-vere-allel-ia-c941ce8474
@@ -476,6 +465,7 @@ offices:
       invit-quad5-op: invitatory.ador-mus-d-minum-qui-nos-red-mit-per-crucem-c9ac7ffa5a
       invit-trid: invitatory.dominica-ador-mus-d-minum-qui-fecit-nos-f1e6e81eb5
       invit-tridc: invitatory.dominica-ador-mus-d-minum-qui-fecit-nos-62c0b07764
+      invitatory: invitatory.dominica-d-minum-qui-fecit-nos-ven-te-ador-mus-05b9e58b8f
       mm-capitulum: note.1-cor-16-13-14-fda122f062
       mm-capitulum-adv: note.titus-2-12-13-d7b1ed23cb
       mm-capitulum-epi: note.isa-60-4-5-14014601d9
@@ -496,6 +486,36 @@ offices:
       mm-lb6c: note.eccl-12-2-3-63f3bea6c8
       nocturn-2-versum-feria6: note.d-minus-in-sion-magnus-e59491c5cf
       nocturn-2-versum-sabbato: note.misit-verbum-suum-et-san-vit-eos-bba5f467e0
+  matins-adv:
+    slots:
+      hymn: hymn.verbum-sup-rnum-pr-diens-86a18cd66b
+  matins-day0:
+    slots:
+      hymn: hymn.nocte-surg-ntes-vigil-mus-omnes-31f30353ab
+  matins-day1:
+    slots:
+      hymn: hymn.somno-ref-ctis-rtubus-7e627f3118
+  matins-day2:
+    slots:
+      hymn: hymn.consors-pat-rni-l-minis-63eb7753e8
+  matins-day3:
+    slots:
+      hymn: hymn.rerum-cre-tor-ptime-039e460eb7
+  matins-day4:
+    slots:
+      hymn: hymn.nox-atra-rerum-c-ntegit-7829b41359
+  matins-day5:
+    slots:
+      hymn: hymn.tu-trinit-tis-unitas-b970709677
+  matins-day6:
+    slots:
+      hymn: hymn.summ-parens-clem-nti-ae3fc140d1
+  matins-pasch:
+    slots:
+      hymn: hymn.rex-sempit-rne-c-litum-9244452d9a
+  matins-quad:
+    slots:
+      hymn: hymn.ex-more-docti-m-stico-6d8417e5d9
   minor:
     slots:
       ant-4-asc: antiphon.allel-ia-asc-ndens-christus-in-altum-allel-ia-ca-63d08fd055

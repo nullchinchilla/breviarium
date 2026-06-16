@@ -895,16 +895,7 @@ fn dispatch(
         ),
         (Lookup, _) => Err("unsupported step".to_string()),
         (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
-        (Psalmody, "lauds") => {
-            resolve_major_psalmody(catalog, language, context, Hour::Lauds, diagnostics)
-        }
-        (Psalmody, "vespers") => {
-            resolve_major_psalmody(catalog, language, context, Hour::Vespers, diagnostics)
-        }
-        (Psalmody, "compline") => {
-            resolve_compline_psalmody(catalog, language, context, diagnostics)
-        }
-        (Psalmody, _) => resolve_minor_psalmody(catalog, language, context, diagnostics),
+        (Psalmody, arg) => resolve_psalmody(catalog, language, context, arg, diagnostics),
         (Matins, _) => resolve_matins_nocturns(catalog, language, context, diagnostics),
         (ChapterBlock, "major") if hour == Hour::Vespers => {
             resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Vespers, diagnostics)
@@ -919,9 +910,7 @@ fn dispatch(
             resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics)
         }
         (Canticle, which) => resolve_canticle(catalog, language, context, which, diagnostics),
-        (Collect, "prime") => resolve_prime_collect(catalog, language, diagnostics),
-        (Collect, "compline") => resolve_compline_collect(catalog, language, diagnostics),
-        (Collect, _) => resolve_collects(catalog, language, context, diagnostics),
+        (Collect, arg) => resolve_collect(catalog, language, context, arg, diagnostics),
         (Martyrology, _) => resolve_prime_martyrology(catalog, language, context, diagnostics),
         (Preces, _) => Ok(vec![DocumentNode::Marker {
             text: localized_literal(language, "omittitur", "omit").to_string(),
@@ -1438,13 +1427,55 @@ fn resolve_matins_blessing(
     Ok(nodes)
 }
 
-fn resolve_major_psalmody(
+/// The psalmody for an hour. `arg` selects the scheme: `lauds`/`vespers` merge
+/// proper antiphons over the ferial day-psalms; `minor` reads a psalter table
+/// row (with rubric adjustments); `compline` reads the fixed Compline row.
+fn resolve_psalmody(
+    catalog: &Catalog,
+    language: &str,
+    context: &OfficeContext,
+    arg: &str,
+    diagnostics: &mut Vec<Diagnostic>,
+) -> Result<Vec<DocumentNode>, String> {
+    let entries = match arg {
+        "lauds" => major_psalmody_entries(catalog, language, context, Hour::Lauds)?,
+        "vespers" => major_psalmody_entries(catalog, language, context, Hour::Vespers)?,
+        "compline" => {
+            let label = weekday_table_label(context.facts.weekday);
+            let row = table_row(
+                catalog,
+                language,
+                &context.psalmi_minor_source(),
+                "Completorium",
+                label,
+            )
+            .ok_or_else(|| format!("missing Compline psalmody row `{label}`"))?;
+            vec![PsalmodyEntry {
+                antiphon: row.text.unwrap_or_default(),
+                psalms: row.psalms,
+            }]
+        }
+        // "minor"
+        _ => minor_psalmody_entries(catalog, language, context)?,
+    };
+    let mut nodes = Vec::new();
+    for entry in &entries {
+        nodes.extend(expand_psalmody_entry(
+            catalog,
+            language,
+            entry,
+            diagnostics,
+        )?);
+    }
+    Ok(nodes)
+}
+
+fn major_psalmody_entries(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
     hour: Hour,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
+) -> Result<Vec<PsalmodyEntry>, String> {
     let (proper_section, ordinary_section) = match hour {
         Hour::Lauds => (
             "lauds-psalmody",
@@ -1504,16 +1535,38 @@ fn resolve_major_psalmody(
     } else {
         ordinary
     };
-    let mut nodes = Vec::new();
-    for entry in &entries {
-        nodes.extend(expand_psalmody_entry(
-            catalog,
-            language,
-            entry,
-            diagnostics,
-        )?);
+    Ok(entries)
+}
+
+fn minor_psalmody_entries(
+    catalog: &Catalog,
+    language: &str,
+    context: &OfficeContext,
+) -> Result<Vec<PsalmodyEntry>, String> {
+    let hour = minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
+    let label = minor_hour_row_label(context.hour, context)
+        .ok_or_else(|| "not a minor hour".to_string())?;
+    let row = table_row_with_fallbacks(
+        catalog,
+        language,
+        &context.psalmi_minor_source(),
+        hour,
+        &minor_hour_row_label_candidates(&label),
+    )
+    .ok_or_else(|| format!("missing minor psalm row `{hour}` `{label}`"))?;
+    let mut entry = PsalmodyEntry {
+        antiphon: row.text.unwrap_or_default(),
+        psalms: row.psalms,
+    };
+    if context.has_rule("minores-sine-antiphona") {
+        entry.antiphon.clear();
+    } else if let Some(antiphon) = proper_minor_hour_antiphon(catalog, language, context) {
+        entry.antiphon = antiphon;
     }
-    Ok(nodes)
+    if context.omits_optional_psalms() {
+        entry.psalms.retain(|psalm| !psalm.optional);
+    }
+    Ok(vec![entry])
 }
 
 fn resolve_major_chapter_hymn_verse(
@@ -1778,50 +1831,6 @@ fn resolve_canticle(
     gospel_canticle_nodes(catalog, language, number, &antiphon, diagnostics)
 }
 
-fn resolve_minor_psalmody(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let hour = minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
-    let label = minor_hour_row_label(context.hour, context)
-        .ok_or_else(|| "not a minor hour".to_string())?;
-    let row = table_row_with_fallbacks(
-        catalog,
-        language,
-        &context.psalmi_minor_source(),
-        hour,
-        &minor_hour_row_label_candidates(&label),
-    )
-    .ok_or_else(|| format!("missing minor psalm row `{hour}` `{label}`"))?;
-    let mut entry = PsalmodyEntry {
-        antiphon: row.text.unwrap_or_default(),
-        psalms: row.psalms,
-    };
-    if context.has_rule("minores-sine-antiphona") {
-        entry.antiphon.clear();
-    } else if let Some(antiphon) = proper_minor_hour_antiphon(catalog, language, context) {
-        entry.antiphon = antiphon;
-    }
-    let mut entries = vec![entry];
-    if context.omits_optional_psalms() {
-        for entry in &mut entries {
-            entry.psalms.retain(|psalm| !psalm.optional);
-        }
-    }
-    let mut nodes = Vec::new();
-    for entry in &entries {
-        nodes.extend(expand_psalmody_entry(
-            catalog,
-            language,
-            entry,
-            diagnostics,
-        )?);
-    }
-    Ok(nodes)
-}
-
 fn resolve_minor_chapter_responsory_verse(
     catalog: &Catalog,
     language: &str,
@@ -1944,35 +1953,6 @@ fn resolve_minor_chapter_responsory_verse(
     Ok(nodes)
 }
 
-fn resolve_prime_collect(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = domine_exaudi_nodes(language);
-    nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "oratio_Domine",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Per Dominum",
-        diagnostics,
-    )?);
-    nodes.extend(domine_exaudi_nodes(language));
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Benedicamus Domino",
-        diagnostics,
-    )?);
-    Ok(nodes)
-}
-
 fn resolve_prime_martyrology(
     catalog: &Catalog,
     language: &str,
@@ -2028,32 +2008,6 @@ fn resolve_prime_short_reading(
     Ok(nodes)
 }
 
-fn resolve_compline_psalmody(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let label = weekday_table_label(context.facts.weekday);
-    let row = table_row(
-        catalog,
-        language,
-        &context.psalmi_minor_source(),
-        "Completorium",
-        label,
-    )
-    .ok_or_else(|| format!("missing Compline psalmody row `{label}`"))?;
-    expand_psalmody_entry(
-        catalog,
-        language,
-        &PsalmodyEntry {
-            antiphon: row.text.unwrap_or_default(),
-            psalms: row.psalms,
-        },
-        diagnostics,
-    )
-}
-
 fn resolve_compline_chapter_responsory_verse(
     catalog: &Catalog,
     language: &str,
@@ -2087,58 +2041,79 @@ fn resolve_compline_chapter_responsory_verse(
     Ok(nodes)
 }
 
-fn resolve_compline_collect(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = domine_exaudi_nodes(language);
-    nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "oratio_Visita",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Per Dominum",
-        diagnostics,
-    )?);
-    Ok(nodes)
-}
-
-fn resolve_collects(
+/// The collect block. Prime and Compline use a fixed ordinary collect; every
+/// other hour resolves the proper collect from the stack and appends any
+/// commemorations. `arg` is `prime`/`compline`/`standard`/`daytime`.
+fn resolve_collect(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
+    arg: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let mut nodes = domine_exaudi_nodes(language);
     nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
-    match first_collect_doc(
-        catalog,
-        language,
-        context,
-        &context.collect_sources(),
-        diagnostics,
-    ) {
-        Ok(oratio) => nodes.extend(oratio),
-        Err(reason) => nodes.push(DocumentNode::Unresolved {
-            kind: "section".to_string(),
-            value: "collect".to_string(),
-            reason,
-        }),
-    }
-    for commemoration in &context.commemorations {
-        nodes.extend(resolve_commemoration(
-            catalog,
-            language,
-            context,
-            commemoration,
-            diagnostics,
-        )?);
+    match arg {
+        "prime" => {
+            nodes.extend(formula_nodes(
+                catalog,
+                language,
+                "oratio_Domine",
+                diagnostics,
+            )?);
+            nodes.extend(formula_nodes(
+                catalog,
+                language,
+                "Per Dominum",
+                diagnostics,
+            )?);
+            nodes.extend(domine_exaudi_nodes(language));
+            nodes.extend(formula_nodes(
+                catalog,
+                language,
+                "Benedicamus Domino",
+                diagnostics,
+            )?);
+        }
+        "compline" => {
+            nodes.extend(formula_nodes(
+                catalog,
+                language,
+                "oratio_Visita",
+                diagnostics,
+            )?);
+            nodes.extend(formula_nodes(
+                catalog,
+                language,
+                "Per Dominum",
+                diagnostics,
+            )?);
+        }
+        _ => {
+            match first_collect_doc(
+                catalog,
+                language,
+                context,
+                &context.collect_sources(),
+                diagnostics,
+            ) {
+                Ok(oratio) => nodes.extend(oratio),
+                Err(reason) => nodes.push(DocumentNode::Unresolved {
+                    kind: "section".to_string(),
+                    value: "collect".to_string(),
+                    reason,
+                }),
+            }
+            for commemoration in &context.commemorations {
+                nodes.extend(resolve_commemoration(
+                    catalog,
+                    language,
+                    context,
+                    commemoration,
+                    diagnostics,
+                )?);
+            }
+        }
     }
     Ok(nodes)
 }

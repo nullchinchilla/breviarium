@@ -950,8 +950,95 @@ fn dispatch(
     }
 }
 
-/// Assembles a fixed sequence of ordinary-book formulae — every hour's opening,
-/// examination, Pretiosa, and conclusion. `arg` selects which sequence.
+/// One element of a fixed formula assembly (see [`FORMULA_ORDER`]).
+enum Part {
+    /// A named formula from the ordinary book.
+    Formula(&'static str),
+    /// The first of several named formulae that resolves.
+    FirstOf(&'static [&'static str]),
+    /// Splice in another assembly (e.g. matins-opening includes opening).
+    Include(&'static str),
+    /// `Deus in adjutorium` then the seasonal Alleluia / Lent line.
+    Opening,
+    /// `Domine, exaudi` versicle + response.
+    DomineExaudi,
+    /// The Compline examination rubric.
+    ExaminationRubric,
+    /// An Amen.
+    Amen,
+}
+
+/// Each hour's fixed opening / Pretiosa / examination / conclusion, as data.
+const FORMULA_ORDER: &[(&str, &[Part])] = {
+    use Part::*;
+    &[
+        ("opening", &[Opening]),
+        (
+            "matins-opening",
+            &[Formula("domine-labia"), Include("opening")],
+        ),
+        (
+            "compline-opening",
+            &[
+                Formula("jube-domne"),
+                Formula("benedictio-completorium"),
+                Amen,
+            ],
+        ),
+        (
+            "examination",
+            &[
+                Formula("adjutorium-nostrum"),
+                ExaminationRubric,
+                Formula("pater-noster"),
+                Formula("confiteor"),
+                Formula("misereatur"),
+                Formula("indulgentiam"),
+                Formula("converte-nos"),
+            ],
+        ),
+        ("pretiosa", &[Formula("pretiosa")]),
+        (
+            "chapter-office",
+            &[
+                Formula("deus-in-adjutorium-iij"),
+                Formula("gloria"),
+                Formula("kyrie"),
+                Formula("pater-noster-et"),
+                Formula("respice"),
+                Formula("oremus"),
+                Formula("dirigere"),
+            ],
+        ),
+        (
+            "prime-conclusion",
+            &[
+                Formula("adjutorium-nostrum"),
+                Formula("benedicite"),
+                Formula("benedictio-prima2"),
+            ],
+        ),
+        (
+            "compline-conclusion",
+            &[
+                DomineExaudi,
+                Formula("benedicamus-domino"),
+                FirstOf(&["benedictio-completorium-final", "benedictio-completorium2"]),
+                Amen,
+            ],
+        ),
+        (
+            "conclusion",
+            &[
+                DomineExaudi,
+                Formula("benedicamus-domino"),
+                Formula("fidelium-animae"),
+            ],
+        ),
+    ]
+};
+
+/// Assembles a fixed sequence of ordinary-book formulae from [`FORMULA_ORDER`].
 fn resolve_formula(
     catalog: &Catalog,
     language: &str,
@@ -959,96 +1046,53 @@ fn resolve_formula(
     arg: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let formula = |name, diagnostics: &mut _| formula_nodes(catalog, language, name, diagnostics);
-    let nodes = match arg {
-        "opening" => {
-            let mut nodes = formula("deus-in-adjutorium", diagnostics)?;
-            let alleluia = formula_lines(catalog, language, "alleluia", diagnostics)?;
-            let index = usize::from(context.facts.temporal_week.starts_with("Quad"));
-            if let Some(line) = alleluia.get(index) {
-                nodes.push(DocumentNode::Text { text: line.clone() });
+    let parts = FORMULA_ORDER
+        .iter()
+        .find(|(name, _)| *name == arg)
+        .or_else(|| FORMULA_ORDER.iter().find(|(name, _)| *name == "conclusion"))
+        .map(|(_, parts)| *parts)
+        .unwrap_or(&[]);
+    let mut nodes = Vec::new();
+    for part in parts {
+        match part {
+            Part::Formula(name) => {
+                nodes.extend(formula_nodes(catalog, language, name, diagnostics)?)
             }
-            nodes
-        }
-        "matins-opening" => {
-            let mut nodes = formula("domine-labia", diagnostics)?;
-            nodes.extend(resolve_formula(
+            Part::FirstOf(names) => {
+                nodes.extend(first_formula_doc(catalog, language, names, diagnostics)?)
+            }
+            Part::Include(other) => nodes.extend(resolve_formula(
                 catalog,
                 language,
                 context,
-                "opening",
+                other,
                 diagnostics,
-            )?);
-            nodes
-        }
-        "compline-opening" => {
-            let mut nodes = formula("jube-domne", diagnostics)?;
-            nodes.extend(formula("benedictio-completorium", diagnostics)?);
-            nodes.extend(amen_nodes());
-            nodes
-        }
-        "examination" => {
-            let mut nodes = formula("adjutorium-nostrum", diagnostics)?;
-            nodes.push(DocumentNode::Rubric {
+            )?),
+            Part::Opening => {
+                nodes.extend(formula_nodes(
+                    catalog,
+                    language,
+                    "deus-in-adjutorium",
+                    diagnostics,
+                )?);
+                let alleluia = formula_lines(catalog, language, "alleluia", diagnostics)?;
+                let index = usize::from(context.facts.temporal_week.starts_with("Quad"));
+                if let Some(line) = alleluia.get(index) {
+                    nodes.push(DocumentNode::Text { text: line.clone() });
+                }
+            }
+            Part::DomineExaudi => nodes.extend(domine_exaudi_nodes(language)),
+            Part::ExaminationRubric => nodes.push(DocumentNode::Rubric {
                 text: localized_literal(
                     language,
                     "Examen conscientiae vel Pater Noster totum secreto.",
                     "There follows an examination of conscience, or the Our Father said silently.",
                 )
                 .to_string(),
-            });
-            for name in [
-                "pater-noster",
-                "confiteor",
-                "misereatur",
-                "indulgentiam",
-                "converte-nos",
-            ] {
-                nodes.extend(formula(name, diagnostics)?);
-            }
-            nodes
+            }),
+            Part::Amen => nodes.extend(amen_nodes()),
         }
-        "pretiosa" => formula("pretiosa", diagnostics)?,
-        "chapter-office" => {
-            let mut nodes = formula("deus-in-adjutorium-iij", diagnostics)?;
-            for name in [
-                "gloria",
-                "kyrie",
-                "pater-noster-et",
-                "respice",
-                "oremus",
-                "dirigere",
-            ] {
-                nodes.extend(formula(name, diagnostics)?);
-            }
-            nodes
-        }
-        "prime-conclusion" => {
-            let mut nodes = formula("adjutorium-nostrum", diagnostics)?;
-            nodes.extend(formula("benedicite", diagnostics)?);
-            nodes.extend(formula("benedictio-prima2", diagnostics)?);
-            nodes
-        }
-        "compline-conclusion" => {
-            let mut nodes = domine_exaudi_nodes(language);
-            nodes.extend(formula("benedicamus-domino", diagnostics)?);
-            nodes.extend(first_formula_doc(
-                catalog,
-                language,
-                &["benedictio-completorium-final", "benedictio-completorium2"],
-                diagnostics,
-            )?);
-            nodes.extend(amen_nodes());
-            nodes
-        }
-        // "conclusion"
-        _ => {
-            let mut nodes = domine_exaudi_nodes(language);
-            nodes.extend(formula("benedicamus-domino", diagnostics)?);
-            nodes.extend(formula("fidelium-animae", diagnostics)?);
-            nodes
-        }
-    };
+    }
     Ok(nodes)
 }
 

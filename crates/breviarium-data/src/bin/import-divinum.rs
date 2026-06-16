@@ -23,6 +23,8 @@ fn run(root: &Path) -> Result<(), String> {
     let output_roots = [
         "corpus",
         "sources",
+        "books",
+        "lexicon",
         "texts",
         "office",
         "mass",
@@ -39,10 +41,10 @@ fn run(root: &Path) -> Result<(), String> {
                 .map_err(|error| format!("{}: {error}", output_root.display()))?;
         }
     }
-    fs::create_dir_all(data_dir.join("corpus"))
-        .map_err(|error| format!("{}: {error}", data_dir.join("corpus").display()))?;
-    fs::create_dir_all(data_dir.join("sources"))
-        .map_err(|error| format!("{}: {error}", data_dir.join("sources").display()))?;
+    fs::create_dir_all(data_dir.join("books"))
+        .map_err(|error| format!("{}: {error}", data_dir.join("books").display()))?;
+    fs::create_dir_all(data_dir.join("lexicon"))
+        .map_err(|error| format!("{}: {error}", data_dir.join("lexicon").display()))?;
 
     let mut corpus = SourceCorpus::default();
     let mut stats = ImportStats::default();
@@ -110,35 +112,14 @@ fn run(root: &Path) -> Result<(), String> {
     fill_structural_aliases(&mut bundles, &structural_aliases);
 
     let normalized = normalize_bundles(bundles)?;
-    for (category, records) in normalized.corpus {
-        let output_path = data_dir
-            .join("corpus")
-            .join(format!("{}.yaml", slug(&category)));
-        if let Some(parent) = output_path.parent() {
-            fs::create_dir_all(parent).map_err(|error| format!("{}: {error}", parent.display()))?;
-        }
-        stats.generated_corpus_texts += records.len();
-        let yaml = render_corpus_bundle(records)?;
-        fs::write(&output_path, yaml)
-            .map_err(|error| format!("{}: {error}", output_path.display()))?;
-        stats.generated_bundles += 1;
-    }
-    for (category, sources) in normalized.sources {
-        let output_path = data_dir
-            .join("sources")
-            .join(format!("{}.yaml", slug(&category)));
-        if let Some(parent) = output_path.parent() {
-            fs::create_dir_all(parent).map_err(|error| format!("{}: {error}", parent.display()))?;
-        }
-        stats.generated_source_sections += sources
-            .values()
-            .map(|source| source.sections.len())
-            .sum::<usize>();
-        let yaml = render_source_bundle(sources)?;
-        fs::write(&output_path, yaml)
-            .map_err(|error| format!("{}: {error}", output_path.display()))?;
-        stats.generated_bundles += 1;
-    }
+    stats.generated_corpus_texts = normalized.corpus.values().map(BTreeMap::len).sum();
+    stats.generated_source_sections = normalized
+        .sources
+        .values()
+        .flat_map(BTreeMap::values)
+        .map(|source| source.sections.len())
+        .sum();
+    stats.generated_bundles += emit_books_lexicon(&normalized, &data_dir)?;
 
     println!("Divinum Officium source: {}", root.display());
     println!("Imported files: {}", stats.imported_files);
@@ -2744,20 +2725,310 @@ fn normalize_bundles(
     })
 }
 
-fn render_corpus_bundle(records: BTreeMap<String, CorpusRecordYaml>) -> Result<String, String> {
-    let bundle = CorpusBundleYaml {
-        doc_type: "corpus_bundle",
-        texts: records,
-    };
-    yaml_serde::to_string(&bundle).map_err(|error| format!("failed to serialize YAML: {error}"))
+/// Emits the new books + lexicon schema (the runtime contract in
+/// `breviarium_data::schema`). `lexicon/{category}.yaml` carries the same
+/// deduped multilingual texts as the corpus; `books/{book}.yaml` regroups the
+/// sources by liturgical book (temporal/sanctoral/commons/psalter/ordinary/
+/// martyrology), each office reduced to rank/flags/values/common + canonical
+/// slot → text-id. Returns the number of files written.
+fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<usize, String> {
+    let mut written = 0;
+    for (category, records) in &normalized.corpus {
+        // Fully type/clean each text here, at import time, so the lexicon stores
+        // semantic nodes and the runtime never re-parses strings.
+        let typed: BTreeMap<String, CorpusRecordYaml> = records
+            .iter()
+            .map(|(id, record)| {
+                (
+                    id.clone(),
+                    CorpusRecordYaml {
+                        role: record.role.clone(),
+                        content: record
+                            .content
+                            .iter()
+                            .map(|(language, items)| {
+                                (language.clone(), type_content(language, items))
+                            })
+                            .collect(),
+                    },
+                )
+            })
+            .collect();
+        let path = data_dir
+            .join("lexicon")
+            .join(format!("{}.yaml", slug(category)));
+        let yaml = yaml_serde::to_string(&LexiconFileOut { texts: &typed })
+            .map_err(|error| format!("failed to serialize lexicon: {error}"))?;
+        fs::write(&path, yaml).map_err(|error| format!("{}: {error}", path.display()))?;
+        written += 1;
+    }
+
+    let mut books = BTreeMap::<String, BTreeMap<String, OfficeOut>>::new();
+    for sources in normalized.sources.values() {
+        for (source_key, source) in sources {
+            let (book, office_key) = book_and_office(source_key);
+            books
+                .entry(book)
+                .or_default()
+                .insert(office_key, office_out(source));
+        }
+    }
+    for (book, offices) in &books {
+        let path = data_dir.join("books").join(format!("{book}.yaml"));
+        let yaml = yaml_serde::to_string(&BookFileOut { offices })
+            .map_err(|error| format!("failed to serialize book `{book}`: {error}"))?;
+        fs::write(&path, yaml).map_err(|error| format!("{}: {error}", path.display()))?;
+        written += 1;
+    }
+    Ok(written)
 }
 
-fn render_source_bundle(sources: BTreeMap<String, SourceYaml>) -> Result<String, String> {
-    let bundle = SourceBundleYaml {
-        doc_type: "source_bundle",
-        sources,
-    };
-    yaml_serde::to_string(&bundle).map_err(|error| format!("failed to serialize YAML: {error}"))
+// ---- import-time typing + cleaning of lexicon content ----
+//
+// Ported from the old runtime `semantic_text_nodes` / `clean_*`. Running it here
+// means the lexicon stores fully semantic, cleaned nodes and the runtime maps
+// them 1:1 with no string re-parsing.
+
+fn type_content(language: &str, items: &[ContentItem]) -> Vec<ContentItem> {
+    let mut out = Vec::new();
+    for item in items {
+        match item {
+            ContentItem::Text { text } => out.extend(semantic_split(language, text)),
+            ContentItem::Heading { text } => out.push(ContentItem::Heading {
+                text: clean_text(text),
+            }),
+            ContentItem::Citation { text } => out.push(ContentItem::Citation {
+                text: clean_text(text),
+            }),
+            ContentItem::Versicle { text } => out.push(ContentItem::Versicle {
+                text: clean_text(text),
+            }),
+            ContentItem::Response { text } => out.push(ContentItem::Response {
+                text: clean_text(text),
+            }),
+            ContentItem::ShortResponse { text } => out.push(ContentItem::ShortResponse {
+                text: clean_text(text),
+            }),
+            ContentItem::Prayer { text } => out.push(ContentItem::Prayer {
+                text: clean_text(text),
+            }),
+            ContentItem::Antiphon { text } => out.push(ContentItem::Antiphon {
+                text: clean_antiphon(text),
+            }),
+            ContentItem::Blessing { text } => out.push(ContentItem::Blessing {
+                text: clean_blessing(text),
+            }),
+            ContentItem::Rubric { text } => out.push(ContentItem::Rubric {
+                text: clean_text(text),
+            }),
+            ContentItem::Marker { text } => out.push(marker_item(text)),
+            ContentItem::Psalmody { antiphon, psalms } => out.push(ContentItem::Psalmody {
+                antiphon: clean_antiphon(antiphon),
+                psalms: psalms.clone(),
+            }),
+            ContentItem::TableRow {
+                label,
+                text,
+                psalms,
+            } => out.push(ContentItem::TableRow {
+                label: clean_text(label),
+                text: text.as_ref().map(|value| clean_antiphon(value)),
+                psalms: psalms.clone(),
+            }),
+            other => out.push(other.clone()),
+        }
+    }
+    out
+}
+
+fn semantic_split(language: &str, text: &str) -> Vec<ContentItem> {
+    let mut nodes = Vec::new();
+    for raw_line in text.lines() {
+        let line = clean_text(raw_line);
+        if line.trim().is_empty() {
+            nodes.push(ContentItem::Text {
+                text: String::new(),
+            });
+            continue;
+        }
+        if let Some((heading, citation)) = split_paren(&line) {
+            nodes.push(ContentItem::Heading { text: heading });
+            nodes.push(ContentItem::Citation { text: citation });
+        } else if let Some(rest) = strip_role(&line, "R.br.") {
+            nodes.push(ContentItem::ShortResponse { text: rest });
+        } else if let Some(rest) = strip_role(&line, "R/.") {
+            nodes.push(ContentItem::Response { text: rest });
+        } else if let Some(rest) = strip_role(&line, "R.") {
+            nodes.push(ContentItem::Response { text: rest });
+        } else if let Some(rest) = strip_role(&line, "V/.") {
+            nodes.push(ContentItem::Versicle { text: rest });
+        } else if let Some(rest) = strip_role(&line, "V.") {
+            nodes.push(ContentItem::Versicle { text: rest });
+        } else if let Some(rest) = strip_role(&line, "Ant.") {
+            nodes.push(ContentItem::Antiphon {
+                text: clean_antiphon(&rest),
+            });
+        } else if let Some(rest) = strip_role(&line, "Benedictio.") {
+            nodes.push(ContentItem::Blessing {
+                text: clean_blessing(&rest),
+            });
+        } else if let Some(rest) = strip_role(&line, "Benediction.") {
+            nodes.push(ContentItem::Blessing {
+                text: clean_blessing(&rest),
+            });
+        } else if let Some(rest) = strip_role(&line, "v.") {
+            nodes.push(classify(rest));
+        } else if let Some(rest) = strip_role(&line, "r.") {
+            nodes.push(ContentItem::Prayer { text: rest });
+        } else if looks_like_cite(&line) {
+            nodes.push(ContentItem::Citation { text: line });
+        } else {
+            nodes.push(classify(line));
+        }
+    }
+    let _ = language;
+    nodes
+}
+
+fn marker_item(text: &str) -> ContentItem {
+    let text = clean_text(text);
+    let lower = text.to_ascii_lowercase();
+    if looks_like_cite(&text) {
+        ContentItem::Citation { text }
+    } else if lower.contains("omittitur") || lower == "omit" || lower.starts_with("skip ") {
+        ContentItem::Rubric { text }
+    } else {
+        ContentItem::Heading { text }
+    }
+}
+
+fn classify(line: String) -> ContentItem {
+    if looks_like_cite(&line) {
+        ContentItem::Citation { text: line }
+    } else if line.eq_ignore_ascii_case("oremus.") || line.eq_ignore_ascii_case("let us pray.") {
+        ContentItem::Prayer { text: line }
+    } else {
+        ContentItem::Text {
+            text: clean_text(&line),
+        }
+    }
+}
+
+fn strip_role(line: &str, prefix: &str) -> Option<String> {
+    line.strip_prefix(prefix)
+        .map(str::trim)
+        .filter(|rest| !rest.is_empty())
+        .map(ToOwned::to_owned)
+}
+
+fn clean_antiphon(text: &str) -> String {
+    let text = clean_text(text);
+    text.strip_prefix("Ant. ")
+        .unwrap_or(&text)
+        .trim()
+        .to_string()
+}
+
+fn clean_blessing(text: &str) -> String {
+    let text = clean_text(text);
+    text.strip_prefix("Benedictio.")
+        .or_else(|| text.strip_prefix("Benediction."))
+        .unwrap_or(&text)
+        .trim()
+        .to_string()
+}
+
+fn clean_text(text: &str) -> String {
+    text.trim().split_whitespace().collect::<Vec<_>>().join(" ")
+}
+
+fn split_paren(line: &str) -> Option<(String, String)> {
+    let inner = line.strip_prefix('(')?.strip_suffix(')')?;
+    let (heading, citation) = inner.split_once(" * ")?;
+    Some((clean_text(heading), clean_text(citation)))
+}
+
+fn looks_like_cite(text: &str) -> bool {
+    let text = text.trim();
+    if text.is_empty() || text.starts_with("Psalmus ") || text.starts_with("Psalm ") {
+        return false;
+    }
+    let has_digit = text.chars().any(|ch| ch.is_ascii_digit());
+    has_digit
+        && (text.contains(':')
+            || text.starts_with("Ier ")
+            || text.starts_with("Jer ")
+            || text.starts_with("Luc. ")
+            || text.starts_with("Luke ")
+            || text.starts_with("1 ")
+            || text.starts_with("2 ")
+            || text.starts_with("3 "))
+}
+
+/// Splits a flat source key into its (book, book-relative office key).
+fn book_and_office(key: &str) -> (String, String) {
+    const PREFIXES: &[(&str, &str)] = &[
+        ("proper/temporal/", "temporal"),
+        ("proper/sanctoral/", "sanctoral"),
+        ("common/", "commons"),
+        ("psalter/", "psalter"),
+        ("ordinary/", "ordinary"),
+        ("martyrology/", "martyrology"),
+    ];
+    for (prefix, book) in PREFIXES {
+        if let Some(rest) = key.strip_prefix(prefix) {
+            return ((*book).to_string(), rest.to_string());
+        }
+    }
+    match key.split_once('/') {
+        Some((book, rest)) => (book.to_string(), rest.to_string()),
+        None => (key.to_string(), key.to_string()),
+    }
+}
+
+/// Reduces a legacy `SourceYaml` to a books-schema office: rank, parsed
+/// flags/values, the inherited common, and canonical slot → text-id.
+fn office_out(source: &SourceYaml) -> OfficeOut {
+    let mut flags = Vec::new();
+    let mut values = BTreeMap::new();
+    let mut common = None;
+    for rule in &source.metadata.rules {
+        match rule {
+            RuleToken::Flag { id, .. } => flags.push(id.clone()),
+            RuleToken::Value { key, value, .. } => {
+                values.insert(key.clone(), value.clone());
+            }
+            // Last SourceRef wins, and a rule SourceRef takes precedence over
+            // rank.common — matching the old `rule_maps` / `rule_source.or(rank_common)`.
+            RuleToken::SourceRef { target, .. } => common = Some(target.clone()),
+        }
+    }
+    let rank = source
+        .metadata
+        .rank
+        .as_ref()
+        .filter(|rank| rank.label.is_some() || rank.value.is_some())
+        .map(|rank| RankOut {
+            name: rank.label.clone(),
+            value: rank.value,
+        });
+    if common.is_none() {
+        if let Some(rank) = &source.metadata.rank {
+            common = rank.common.clone();
+        }
+    }
+    let slots = source
+        .sections
+        .iter()
+        .map(|(key, section)| (key.clone(), section.text_id.clone()))
+        .collect();
+    OfficeOut {
+        rank,
+        flags,
+        values,
+        common,
+        slots,
+    }
 }
 
 fn source_and_section_from_record_id(record_id: &str) -> Option<(String, String)> {
@@ -2884,21 +3155,43 @@ struct SectionAccumulator {
 }
 
 #[derive(Serialize)]
-struct CorpusBundleYaml {
-    doc_type: &'static str,
-    texts: BTreeMap<String, CorpusRecordYaml>,
-}
-
-#[derive(Serialize)]
 struct CorpusRecordYaml {
     role: String,
     content: BTreeMap<String, Vec<ContentItem>>,
 }
 
+// ---- new books + lexicon schema (see `breviarium_data::schema`) ----
+
 #[derive(Serialize)]
-struct SourceBundleYaml {
-    doc_type: &'static str,
-    sources: BTreeMap<String, SourceYaml>,
+struct LexiconFileOut<'a> {
+    texts: &'a BTreeMap<String, CorpusRecordYaml>,
+}
+
+#[derive(Serialize)]
+struct BookFileOut<'a> {
+    offices: &'a BTreeMap<String, OfficeOut>,
+}
+
+#[derive(Default, Serialize)]
+struct OfficeOut {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    rank: Option<RankOut>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    flags: Vec<String>,
+    #[serde(skip_serializing_if = "BTreeMap::is_empty")]
+    values: BTreeMap<String, String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    common: Option<String>,
+    #[serde(skip_serializing_if = "BTreeMap::is_empty")]
+    slots: BTreeMap<String, String>,
+}
+
+#[derive(Serialize)]
+struct RankOut {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    name: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    value: Option<f32>,
 }
 
 #[derive(Default, Serialize)]

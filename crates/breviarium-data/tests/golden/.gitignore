@@ -1,0 +1,3 @@
+# Large local golden-diff baselines (regenerated, not committed)
+*.txt
+*.txt.gz

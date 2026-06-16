@@ -672,6 +672,13 @@ impl Stack {
             .iter()
             .find_map(|key| section_psalmody(catalog, language, key, slot))
     }
+
+    /// Whether any book in the stack provides `slot`.
+    fn has(&self, catalog: &Catalog, language: &str, slot: &str) -> bool {
+        self.keys
+            .iter()
+            .any(|key| section_nodes(catalog, language, key, slot).is_some())
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -854,87 +861,6 @@ impl OfficeContext {
     fn omits_optional_psalms(&self) -> bool {
         self.profile == "roman-1960"
     }
-
-    // --- legacy source accessors (being replaced by Stack; deleted at the end) ---
-    fn principal_sources(&self) -> Vec<&str> {
-        [&self.principal_key, &self.commune_key]
-            .into_iter()
-            .flatten()
-            .map(String::as_str)
-            .collect()
-    }
-    fn inherited_sources(&self) -> Vec<&str> {
-        let mut v = Vec::new();
-        for k in [
-            &self.principal_key,
-            &self.commune_key,
-            &self.temporal_key,
-            &self.weekly_temporal_key,
-            &self.previous_temporal_key,
-        ]
-        .into_iter()
-        .flatten()
-        {
-            if !v.contains(&k.as_str()) {
-                v.push(k.as_str());
-            }
-        }
-        v
-    }
-    fn collect_sources(&self) -> Vec<&str> {
-        let mut v = self.inherited_sources();
-        for k in &self.collect_reference_keys {
-            if !v.contains(&k.as_str()) {
-                v.push(k.as_str());
-            }
-        }
-        v
-    }
-    fn matins_lesson_sources(&self) -> Vec<&str> {
-        let mut v = Vec::new();
-        for k in [
-            &self.principal_key,
-            &self.scripture_key,
-            &self.temporal_key,
-            &self.weekly_temporal_key,
-            &self.commune_key,
-        ]
-        .into_iter()
-        .flatten()
-        {
-            if !v.contains(&k.as_str()) {
-                v.push(k.as_str());
-            }
-        }
-        v
-    }
-    fn major_special_source(&self) -> String {
-        MAJOR_SPECIAL.to_string()
-    }
-    fn minor_special_source(&self) -> String {
-        MINOR_SPECIAL.to_string()
-    }
-    fn prime_special_source(&self) -> String {
-        PRIME_SPECIAL.to_string()
-    }
-    fn matins_special_source(&self) -> String {
-        MATINS_SPECIAL.to_string()
-    }
-    fn psalmi_major_source(&self) -> String {
-        PSALTER_MAJOR.to_string()
-    }
-    fn psalmi_minor_source(&self) -> String {
-        PSALTER_MINOR.to_string()
-    }
-    fn psalmi_matutinum_source(&self) -> String {
-        PSALTER_MATINS.to_string()
-    }
-    fn benedictions_source(&self) -> String {
-        BENEDICTIONS.to_string()
-    }
-    fn maria_antiphon_source(&self) -> String {
-        "ordinary/marian-antiphons".to_string()
-    }
 }
 
 fn execute_steps(
@@ -1007,14 +933,9 @@ fn dispatch(
         (Lookup, "prime-short-reading") => {
             resolve_prime_short_reading(catalog, language, context, diagnostics)
         }
-        (Lookup, "compline-short-reading") => section_doc(
-            catalog,
-            language,
-            context,
-            &context.minor_special_source(),
-            "compline-short-reading",
-            diagnostics,
-        ),
+        (Lookup, "compline-short-reading") => {
+            Stack::of([MINOR_SPECIAL]).doc(catalog, language, "compline-short-reading", diagnostics)
+        }
         (Lookup, _) => Err("unsupported step".to_string()),
         (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
         (Psalmody, arg) => resolve_psalmody(catalog, language, context, arg, diagnostics),
@@ -1140,15 +1061,12 @@ fn resolve_matins_invitatory(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let antiphon = first_section_antiphons(
-        catalog,
-        language,
-        &context.principal_sources(),
-        "matins-invitatory",
-    )
-    .or_else(|| section_antiphons(catalog, language, &context.matins_special_source(), "Invit"))
-    .and_then(|values| values.into_iter().next())
-    .unwrap_or_default();
+    let antiphon = context
+        .principal()
+        .antiphons(catalog, language, "matins-invitatory")
+        .or_else(|| Stack::of([MATINS_SPECIAL]).antiphons(catalog, language, "Invit"))
+        .and_then(|values| values.into_iter().next())
+        .unwrap_or_default();
     let mut nodes = Vec::new();
     if !antiphon.is_empty() {
         nodes.push(DocumentNode::Text {
@@ -1183,37 +1101,34 @@ fn resolve_hymn(
     arg: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let special = |source: String, section: &str, diagnostics: &mut _| {
-        section_doc(catalog, language, context, &source, section, diagnostics)
-    };
     match arg {
-        "matins-hymn" => first_section_doc(
-            catalog,
-            language,
-            context,
-            &context.principal_sources(),
-            "matins-hymn",
-            diagnostics,
-        )
-        .or_else(|_| {
-            special(
-                context.matins_special_source(),
-                &matins_ordinary_hymn_section(context),
-                diagnostics,
-            )
-        }),
-        "prime-hymn" => special(context.prime_special_source(), "prime-hymn", diagnostics),
+        "matins-hymn" => context
+            .principal()
+            .doc(catalog, language, "matins-hymn", diagnostics)
+            .or_else(|_| {
+                Stack::of([MATINS_SPECIAL]).doc(
+                    catalog,
+                    language,
+                    &matins_ordinary_hymn_section(context),
+                    diagnostics,
+                )
+            }),
+        "prime-hymn" => {
+            Stack::of([PRIME_SPECIAL]).doc(catalog, language, "prime-hymn", diagnostics)
+        }
         "minor-hymn" => {
             let hour =
                 minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
-            special(
-                context.minor_special_source(),
+            Stack::of([MINOR_SPECIAL]).doc(
+                catalog,
+                language,
                 &format!("Hymnus {hour}"),
                 diagnostics,
             )
         }
         // "compline-hymn"
         _ => {
+            let minor = Stack::of([MINOR_SPECIAL]);
             let season = if context.facts.temporal_week.starts_with("Quad5") {
                 "Hymnus Completorium Quad5"
             } else if context.facts.temporal_week.starts_with("Quad") {
@@ -1223,13 +1138,9 @@ fn resolve_hymn(
             } else {
                 "Hymnus Completorium"
             };
-            special(context.minor_special_source(), season, diagnostics).or_else(|_| {
-                special(
-                    context.minor_special_source(),
-                    "Hymnus Completorium",
-                    diagnostics,
-                )
-            })
+            minor
+                .doc(catalog, language, season, diagnostics)
+                .or_else(|_| minor.doc(catalog, language, "Hymnus Completorium", diagnostics))
         }
     }
 }
@@ -1240,21 +1151,17 @@ fn resolve_matins_nocturns(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let entries = first_section_psalmody(
-        catalog,
-        language,
-        &context.principal_sources(),
-        "matins-psalmody",
-    )
-    .or_else(|| {
-        section_psalmody(
-            catalog,
-            language,
-            &context.psalmi_matutinum_source(),
-            &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
-        )
-    })
-    .ok_or_else(|| "missing Matins psalmody".to_string())?;
+    let entries = context
+        .principal()
+        .psalmody(catalog, language, "matins-psalmody")
+        .or_else(|| {
+            Stack::of([PSALTER_MATINS]).psalmody(
+                catalog,
+                language,
+                &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
+            )
+        })
+        .ok_or_else(|| "missing Matins psalmody".to_string())?;
     let mut nodes = Vec::new();
     let lesson_count = matins_lesson_count(catalog, language, context);
     if lesson_count <= 3 {
@@ -1333,9 +1240,8 @@ fn matins_lesson_count(catalog: &Catalog, language: &str, context: &OfficeContex
         return 9;
     }
     if context
-        .principal_sources()
-        .iter()
-        .any(|source| section_nodes(catalog, language, source, "matins-reading-4").is_some())
+        .principal()
+        .has(catalog, language, "matins-reading-4")
     {
         9
     } else {
@@ -1348,14 +1254,9 @@ fn has_abbreviated_sanctoral_lesson(
     language: &str,
     context: &OfficeContext,
 ) -> bool {
-    let sources = context.principal_sources();
-    let has_lectio94 = sources.iter().any(|source| {
-        section_nodes(catalog, language, source, "matins-reading-3-abbreviated").is_some()
-    });
-    let has_lectio4 = sources
-        .iter()
-        .any(|source| section_nodes(catalog, language, source, "matins-reading-4").is_some());
-    has_lectio94 && !has_lectio4
+    let principal = context.principal();
+    principal.has(catalog, language, "matins-reading-3-abbreviated")
+        && !principal.has(catalog, language, "matins-reading-4")
 }
 
 fn resolve_matins_versicle(
@@ -1366,40 +1267,35 @@ fn resolve_matins_versicle(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let section = format!("matins-nocturn-{nocturn}-versicle");
-    first_section_doc(
-        catalog,
-        language,
-        context,
-        &context.principal_sources(),
-        &section,
-        diagnostics,
-    )
-    .or_else(|_| {
-        let pairs = section_nodes(
-            catalog,
-            language,
-            &context.psalmi_matutinum_source(),
-            &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
-        )
-        .unwrap_or_default()
-        .into_iter()
-        .filter_map(|node| match node {
-            ContentNode::Versicle { text } => Some(DocumentNode::Versicle { text }),
-            ContentNode::Response { text } => Some(DocumentNode::Response { text }),
-            _ => None,
-        })
-        .collect::<Vec<_>>();
-        let nodes = pairs
+    context
+        .principal()
+        .doc(catalog, language, &section, diagnostics)
+        .or_else(|_| {
+            let pairs = section_nodes(
+                catalog,
+                language,
+                PSALTER_MATINS,
+                &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
+            )
+            .unwrap_or_default()
             .into_iter()
-            .skip((nocturn - 1) * 2)
-            .take(2)
+            .filter_map(|node| match node {
+                ContentNode::Versicle { text } => Some(DocumentNode::Versicle { text }),
+                ContentNode::Response { text } => Some(DocumentNode::Response { text }),
+                _ => None,
+            })
             .collect::<Vec<_>>();
-        if nodes.is_empty() {
-            Err(format!("missing {section}"))
-        } else {
-            Ok(nodes)
-        }
-    })
+            let nodes = pairs
+                .into_iter()
+                .skip((nocturn - 1) * 2)
+                .take(2)
+                .collect::<Vec<_>>();
+            if nodes.is_empty() {
+                Err(format!("missing {section}"))
+            } else {
+                Ok(nodes)
+            }
+        })
 }
 
 fn resolve_matins_lessons(
@@ -1415,11 +1311,10 @@ fn resolve_matins_lessons(
     nodes.extend(resolve_matins_absolution(
         catalog,
         language,
-        context,
         nocturn,
         diagnostics,
     )?);
-    let lesson_sources = context.matins_lesson_sources();
+    let lessons = context.matins_lessons();
     let use_abbreviated_sanctoral_lesson =
         has_abbreviated_sanctoral_lesson(catalog, language, context);
     for lesson in first..first + count {
@@ -1439,7 +1334,7 @@ fn resolve_matins_lessons(
         if context.has_rule("lectio1-tempnat") && lesson <= 3 {
             if let Some(key) = &context.temporal_key {
                 if let Ok(lectio) =
-                    section_doc(catalog, language, context, key, &section, diagnostics)
+                    Stack::of([key.clone()]).doc(catalog, language, &section, diagnostics)
                 {
                     nodes.extend(lectio);
                     lesson_added = true;
@@ -1447,11 +1342,9 @@ fn resolve_matins_lessons(
             }
         }
         if !lesson_added && use_abbreviated_sanctoral_lesson && lesson == 3 {
-            if let Ok(lectio) = first_section_doc(
+            if let Ok(lectio) = context.principal().doc(
                 catalog,
                 language,
-                context,
-                &context.principal_sources(),
                 "matins-reading-3-abbreviated",
                 diagnostics,
             ) {
@@ -1460,14 +1353,7 @@ fn resolve_matins_lessons(
             }
         }
         if !lesson_added {
-            match first_section_doc(
-                catalog,
-                language,
-                context,
-                &lesson_sources,
-                &section,
-                diagnostics,
-            ) {
+            match lessons.doc(catalog, language, &section, diagnostics) {
                 Ok(lectio) => nodes.extend(lectio),
                 Err(reason) => nodes.push(DocumentNode::Unresolved {
                     kind: "section".to_string(),
@@ -1476,11 +1362,9 @@ fn resolve_matins_lessons(
                 }),
             }
         }
-        if let Ok(resp) = first_section_doc(
+        if let Ok(resp) = lessons.doc(
             catalog,
             language,
-            context,
-            &lesson_sources,
             &format!("matins-responsory-{lesson}"),
             diagnostics,
         ) {
@@ -1495,18 +1379,12 @@ fn resolve_matins_lessons(
 fn resolve_matins_absolution(
     catalog: &Catalog,
     language: &str,
-    context: &OfficeContext,
     nocturn: usize,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let mut nodes = formula_nodes(catalog, language, "Pater noster Et", diagnostics)?;
-    if let Some(line) = section_lines(
-        catalog,
-        language,
-        &context.benedictions_source(),
-        "matins-absolutions",
-    )
-    .and_then(|lines| lines.get(nocturn.saturating_sub(1)).cloned())
+    if let Some(line) = section_lines(catalog, language, BENEDICTIONS, "matins-absolutions")
+        .and_then(|lines| lines.get(nocturn.saturating_sub(1)).cloned())
     {
         nodes.push(DocumentNode::Text {
             text: format!("Absolutio. {line}"),
@@ -1530,7 +1408,7 @@ fn resolve_matins_blessing(
         _ if context.has_rule("lectio1-tempnat") => "matins-blessings-nocturn-3-christmas",
         _ => "matins-blessings-nocturn-3",
     };
-    if let Some(line) = section_lines(catalog, language, &context.benedictions_source(), section)
+    if let Some(line) = section_lines(catalog, language, BENEDICTIONS, section)
         .and_then(|lines| lines.get((lesson - 1) % 3).cloned())
     {
         nodes.push(DocumentNode::Text {
@@ -1555,14 +1433,8 @@ fn resolve_psalmody(
         "vespers" => major_psalmody_entries(catalog, language, context, Hour::Vespers)?,
         "compline" => {
             let label = weekday_table_label(context.facts.weekday);
-            let row = table_row(
-                catalog,
-                language,
-                &context.psalmi_minor_source(),
-                "Completorium",
-                label,
-            )
-            .ok_or_else(|| format!("missing Compline psalmody row `{label}`"))?;
+            let row = table_row(catalog, language, PSALTER_MINOR, "Completorium", label)
+                .ok_or_else(|| format!("missing Compline psalmody row `{label}`"))?;
             vec![PsalmodyEntry {
                 antiphon: row.text.unwrap_or_default(),
                 psalms: row.psalms,
@@ -1615,25 +1487,11 @@ fn major_psalmody_entries(
         ),
         _ => return Err("not a major psalmody hour".to_string()),
     };
-    let ordinary = section_psalmody(
-        catalog,
-        language,
-        &context.psalmi_major_source(),
-        &ordinary_section,
-    )
-    .ok_or_else(|| format!("missing ordinary psalmody `{ordinary_section}`"))?;
-    let proper_entries = first_section_psalmody(
-        catalog,
-        language,
-        &context.principal_sources(),
-        proper_section,
-    );
-    let proper_antiphons = first_section_antiphons(
-        catalog,
-        language,
-        &context.principal_sources(),
-        proper_section,
-    );
+    let ordinary = section_psalmody(catalog, language, PSALTER_MAJOR, &ordinary_section)
+        .ok_or_else(|| format!("missing ordinary psalmody `{ordinary_section}`"))?;
+    let principal = context.principal();
+    let proper_entries = principal.psalmody(catalog, language, proper_section);
+    let proper_antiphons = principal.antiphons(catalog, language, proper_section);
     let entries = if let Some(entries) = proper_entries {
         if entries.iter().any(|entry| !entry.psalms.is_empty()) {
             entries
@@ -1662,7 +1520,7 @@ fn minor_psalmody_entries(
     let row = table_row_with_fallbacks(
         catalog,
         language,
-        &context.psalmi_minor_source(),
+        PSALTER_MINOR,
         hour,
         &minor_hour_row_label_candidates(&label),
     )
@@ -1698,7 +1556,7 @@ fn resolve_chapter_block(
             resolve_major_chapter_hymn_verse(catalog, language, context, hour, diagnostics)
         }
         (_, Hour::Compline) => {
-            resolve_compline_chapter_responsory_verse(catalog, language, context, diagnostics)
+            resolve_compline_chapter_responsory_verse(catalog, language, diagnostics)
         }
         _ => resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics),
     }
@@ -1868,54 +1726,43 @@ fn resolve_canticle(
     let (number, antiphon) = match which {
         "magnificat" => (
             "232",
-            first_section_antiphons(
-                catalog,
-                language,
-                &context.principal_sources(),
-                "vespers-gospel-antiphon",
-            )
-            .or_else(|| {
-                section_antiphons(
-                    catalog,
-                    language,
-                    &context.major_special_source(),
-                    &ferial_magnificat_antiphon_section(context),
-                )
-            }),
+            context
+                .principal()
+                .antiphons(catalog, language, "vespers-gospel-antiphon")
+                .or_else(|| {
+                    section_antiphons(
+                        catalog,
+                        language,
+                        MAJOR_SPECIAL,
+                        &ferial_magnificat_antiphon_section(context),
+                    )
+                }),
         ),
         "nunc-dimittis" => (
             "233",
             section_antiphons(
                 catalog,
                 language,
-                &context.minor_special_source(),
+                MINOR_SPECIAL,
                 compline_antiphon_section(context),
             )
             .or_else(|| {
-                section_antiphons(
-                    catalog,
-                    language,
-                    &context.minor_special_source(),
-                    "compline-gospel-antiphon",
-                )
+                section_antiphons(catalog, language, MINOR_SPECIAL, "compline-gospel-antiphon")
             }),
         ),
         _ => (
             "231",
-            first_section_antiphons(
-                catalog,
-                language,
-                &context.principal_sources(),
-                "lauds-gospel-antiphon",
-            )
-            .or_else(|| {
-                section_antiphons(
-                    catalog,
-                    language,
-                    &context.major_special_source(),
-                    &ferial_benedictus_antiphon_section(context),
-                )
-            }),
+            context
+                .principal()
+                .antiphons(catalog, language, "lauds-gospel-antiphon")
+                .or_else(|| {
+                    section_antiphons(
+                        catalog,
+                        language,
+                        MAJOR_SPECIAL,
+                        &ferial_benedictus_antiphon_section(context),
+                    )
+                }),
         ),
     };
     let antiphon = antiphon
@@ -2007,7 +1854,7 @@ fn resolve_prime_martyrology(
     let next_day = context.facts.date + Duration::days(1);
     let key = sanctoral_key(next_day);
     let source = source_key(&["martyrology", &key]);
-    match section_doc(catalog, language, context, &source, "raw", diagnostics) {
+    match Stack::of([source]).doc(catalog, language, "raw", diagnostics) {
         Ok(nodes) => Ok(nodes),
         Err(reason) => Ok(vec![DocumentNode::Unresolved {
             kind: "section".to_string(),
@@ -2031,24 +1878,17 @@ fn resolve_prime_short_reading(
         diagnostics,
     )?);
     nodes.extend(
-        first_section_doc(
-            catalog,
-            language,
-            context,
-            &context.principal_sources(),
-            "prime-short-reading",
-            diagnostics,
-        )
-        .or_else(|_| {
-            section_doc(
-                catalog,
-                language,
-                context,
-                &context.prime_special_source(),
-                prime_season(context),
-                diagnostics,
-            )
-        })?,
+        context
+            .principal()
+            .doc(catalog, language, "prime-short-reading", diagnostics)
+            .or_else(|_| {
+                Stack::of([PRIME_SPECIAL]).doc(
+                    catalog,
+                    language,
+                    prime_season(context),
+                    diagnostics,
+                )
+            })?,
     );
     Ok(nodes)
 }
@@ -2056,33 +1896,12 @@ fn resolve_prime_short_reading(
 fn resolve_compline_chapter_responsory_verse(
     catalog: &Catalog,
     language: &str,
-    context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = section_doc(
-        catalog,
-        language,
-        context,
-        &context.minor_special_source(),
-        "compline-chapter",
-        diagnostics,
-    )?;
-    nodes.extend(section_doc(
-        catalog,
-        language,
-        context,
-        &context.minor_special_source(),
-        "compline-short-responsory",
-        diagnostics,
-    )?);
-    nodes.extend(section_doc(
-        catalog,
-        language,
-        context,
-        &context.minor_special_source(),
-        "compline-versicle",
-        diagnostics,
-    )?);
+    let minor = Stack::of([MINOR_SPECIAL]);
+    let mut nodes = minor.doc(catalog, language, "compline-chapter", diagnostics)?;
+    nodes.extend(minor.doc(catalog, language, "compline-short-responsory", diagnostics)?);
+    nodes.extend(minor.doc(catalog, language, "compline-versicle", diagnostics)?);
     Ok(nodes)
 }
 
@@ -2135,13 +1954,7 @@ fn resolve_collect(
             )?);
         }
         _ => {
-            match first_collect_doc(
-                catalog,
-                language,
-                context,
-                &context.collect_sources(),
-                diagnostics,
-            ) {
+            match first_collect_doc(catalog, language, context, &context.collect(), diagnostics) {
                 Ok(oratio) => nodes.extend(oratio),
                 Err(reason) => nodes.push(DocumentNode::Unresolved {
                     kind: "section".to_string(),
@@ -2193,21 +2006,15 @@ fn resolve_commemoration(
     } else {
         "lauds-versicle"
     };
-    if let Some(antiphon) = first_section_antiphons(catalog, language, &sources, indexed_antiphon)
+    if let Some(antiphon) = sources
+        .antiphons(catalog, language, indexed_antiphon)
         .and_then(|mut values| values.pop())
     {
         nodes.push(DocumentNode::Text {
             text: format!("Ant. {}", close_antiphon(&antiphon)),
         });
     }
-    if let Ok(versicle) = first_section_doc(
-        catalog,
-        language,
-        context,
-        &sources,
-        indexed_versicle,
-        diagnostics,
-    ) {
+    if let Ok(versicle) = sources.doc(catalog, language, indexed_versicle, diagnostics) {
         nodes.extend(versicle);
     }
     nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
@@ -2226,15 +2033,16 @@ fn first_collect_doc(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
-    sources: &[&str],
+    sources: &Stack,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
+    // Source-major order (try every collect section within one book before the
+    // next book), unlike the slot-major `of_slots`.
     let sections = collect_section_candidates(context.hour);
-    for source in sources {
+    for source in &sources.keys {
         for section in &sections {
-            if let Ok(nodes) = section_doc(catalog, language, context, source, section, diagnostics)
-            {
-                return Ok(nodes);
+            if let Some(nodes) = section_nodes(catalog, language, source, section) {
+                return expand_nodes(catalog, language, &nodes, diagnostics);
             }
         }
     }
@@ -2255,11 +2063,9 @@ fn resolve_final_antiphon(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = section_doc(
+    let mut nodes = Stack::of(["ordinary/marian-antiphons"]).doc(
         catalog,
         language,
-        context,
-        &context.maria_antiphon_source(),
         final_antiphon_section(context),
         diagnostics,
     )?;
@@ -2267,53 +2073,6 @@ fn resolve_final_antiphon(
         nodes.extend(divinum_auxilium_nodes(language));
     }
     Ok(nodes)
-}
-
-fn section_doc(
-    catalog: &Catalog,
-    language: &str,
-    _context: &OfficeContext,
-    source_key: &str,
-    section: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let nodes = section_nodes(catalog, language, source_key, section)
-        .ok_or_else(|| format!("missing section `{section}` in `{source_key}`"))?;
-    expand_nodes(catalog, language, &nodes, diagnostics)
-}
-
-fn first_section_doc(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    sources: &[&str],
-    section: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    for source in sources {
-        if let Ok(nodes) = section_doc(catalog, language, context, source, section, diagnostics) {
-            return Ok(nodes);
-        }
-    }
-    Err(format!("missing section `{section}`"))
-}
-
-fn first_of_sections(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    sources: &[&str],
-    sections: &[&str],
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    for section in sections {
-        if let Ok(nodes) =
-            first_section_doc(catalog, language, context, sources, section, diagnostics)
-        {
-            return Ok(nodes);
-        }
-    }
-    Err(format!("missing sections {sections:?}"))
 }
 
 fn formula_nodes(
@@ -2664,17 +2423,6 @@ fn section_antiphons(
     (!values.is_empty()).then_some(values)
 }
 
-fn first_section_antiphons(
-    catalog: &Catalog,
-    language: &str,
-    sources: &[&str],
-    section: &str,
-) -> Option<Vec<String>> {
-    sources
-        .iter()
-        .find_map(|source| section_antiphons(catalog, language, source, section))
-}
-
 fn section_psalmody(
     catalog: &Catalog,
     language: &str,
@@ -2696,17 +2444,6 @@ fn section_psalmody(
         }
     }
     (!entries.is_empty()).then_some(entries)
-}
-
-fn first_section_psalmody(
-    catalog: &Catalog,
-    language: &str,
-    sources: &[&str],
-    section: &str,
-) -> Option<Vec<PsalmodyEntry>> {
-    sources
-        .iter()
-        .find_map(|source| section_psalmody(catalog, language, source, section))
 }
 
 fn table_row(
@@ -2841,37 +2578,25 @@ fn gospel_canticle_nodes(
     )
 }
 
-fn commemoration_sources<'a>(
-    context: &'a OfficeContext,
-    commemoration: &'a CommemorationContext,
-) -> Vec<&'a str> {
-    let mut sources = vec![commemoration.source_key.as_str()];
-    if let Some(key) = &commemoration.commune_key {
-        sources.push(key.as_str());
-    }
-    if context
+fn commemoration_sources(context: &OfficeContext, commemoration: &CommemorationContext) -> Stack {
+    let mut keys: Vec<String> = vec![commemoration.source_key.clone()];
+    keys.extend(commemoration.commune_key.clone());
+    let temporal = context
         .temporal_key
         .as_deref()
         .is_some_and(|key| key == commemoration.source_key)
-        || source_key_category(&commemoration.source_key)
-            .is_some_and(|category| category == "temporal")
-    {
-        if let Some(key) = &context.weekly_temporal_key {
-            let source = key.as_str();
-            if !sources.iter().any(|existing| *existing == source) {
-                sources.push(source);
-            }
-        }
-        for key in &context.collect_reference_keys {
-            if source_key_category(key).is_some_and(|category| category == "temporal") {
-                let source = key.as_str();
-                if !sources.iter().any(|existing| *existing == source) {
-                    sources.push(source);
-                }
-            }
-        }
+        || source_key_category(&commemoration.source_key) == Some("temporal");
+    if temporal {
+        keys.extend(context.weekly_temporal_key.clone());
+        keys.extend(
+            context
+                .collect_reference_keys
+                .iter()
+                .filter(|key| source_key_category(key) == Some("temporal"))
+                .cloned(),
+        );
     }
-    sources
+    Stack::of(keys)
 }
 
 fn document_lines(nodes: &[DocumentNode]) -> Vec<String> {
@@ -3191,15 +2916,10 @@ fn proper_minor_hour_antiphon(
     language: &str,
     context: &OfficeContext,
 ) -> Option<String> {
-    let sources = context.principal_sources();
+    let sources = context.principal();
     if let Some(antiphon) = canonical_minor_hour(context.hour)
         .and_then(|canonical_hour| {
-            first_section_antiphons(
-                catalog,
-                language,
-                &sources,
-                &format!("{canonical_hour}-antiphon"),
-            )
+            sources.antiphons(catalog, language, &format!("{canonical_hour}-antiphon"))
         })
         .and_then(first_nonempty_antiphon)
     {
@@ -3212,7 +2932,8 @@ fn proper_minor_hour_antiphon(
     ["lauds-psalmody", "vespers-psalmody"]
         .into_iter()
         .find_map(|section| {
-            first_section_antiphons(catalog, language, &sources, section)
+            sources
+                .antiphons(catalog, language, section)
                 .and_then(|values| values.get(index).cloned())
                 .filter(|value| !value.trim().is_empty())
         })

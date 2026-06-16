@@ -590,6 +590,90 @@ pub(crate) fn resolve_office(
     })
 }
 
+// The fixed structural books (ferial/seasonal defaults), referenced by key.
+const MAJOR_SPECIAL: &str = "ordinary/major";
+const MINOR_SPECIAL: &str = "ordinary/minor";
+const PRIME_SPECIAL: &str = "ordinary/prime";
+const MATINS_SPECIAL: &str = "ordinary/matins";
+const PSALTER_MAJOR: &str = "psalter/major";
+const PSALTER_MINOR: &str = "psalter/minor";
+const PSALTER_MATINS: &str = "psalter/matins";
+const BENEDICTIONS: &str = "ordinary/benedictions";
+
+/// An ordered pile of books (source keys), highest priority first. The single
+/// generic slot-filler: every `*_sources()` helper and the repeated
+/// `first_section_doc(...).or_else(...)` orchestration becomes `stack.doc(slot)`.
+struct Stack {
+    keys: Vec<String>,
+}
+
+impl Stack {
+    /// Builds a stack from ordered keys, dropping empties and de-duplicating.
+    fn of<I, S>(keys: I) -> Self
+    where
+        I: IntoIterator<Item = S>,
+        S: Into<String>,
+    {
+        let mut out: Vec<String> = Vec::new();
+        for key in keys {
+            let key = key.into();
+            if !key.is_empty() && !out.iter().any(|existing| *existing == key) {
+                out.push(key);
+            }
+        }
+        Self { keys: out }
+    }
+
+    /// Fills the first of `slots` that resolves in any book (slot-major order,
+    /// matching the legacy `first_of_sections`).
+    fn of_slots(
+        &self,
+        catalog: &Catalog,
+        language: &str,
+        slots: &[&str],
+        diagnostics: &mut Vec<Diagnostic>,
+    ) -> Result<Vec<DocumentNode>, String> {
+        for slot in slots {
+            for key in &self.keys {
+                if let Some(nodes) = section_nodes(catalog, language, key, slot) {
+                    return expand_nodes(catalog, language, &nodes, diagnostics);
+                }
+            }
+        }
+        Err(format!("missing sections {slots:?}"))
+    }
+
+    /// Fills a single slot from the first book that has it.
+    fn doc(
+        &self,
+        catalog: &Catalog,
+        language: &str,
+        slot: &str,
+        diagnostics: &mut Vec<Diagnostic>,
+    ) -> Result<Vec<DocumentNode>, String> {
+        self.of_slots(catalog, language, &[slot], diagnostics)
+    }
+
+    /// The antiphon strings of the first book providing `slot`.
+    fn antiphons(&self, catalog: &Catalog, language: &str, slot: &str) -> Option<Vec<String>> {
+        self.keys
+            .iter()
+            .find_map(|key| section_antiphons(catalog, language, key, slot))
+    }
+
+    /// The psalmody entries of the first book providing `slot`.
+    fn psalmody(
+        &self,
+        catalog: &Catalog,
+        language: &str,
+        slot: &str,
+    ) -> Option<Vec<PsalmodyEntry>> {
+        self.keys
+            .iter()
+            .find_map(|key| section_psalmody(catalog, language, key, slot))
+    }
+}
+
 #[derive(Clone, Debug)]
 struct OfficeContext {
     facts: DateFacts,
@@ -704,64 +788,57 @@ impl OfficeContext {
         }
     }
 
-    fn principal_sources(&self) -> Vec<&str> {
-        let mut sources = Vec::new();
-        if let Some(key) = &self.principal_key {
-            sources.push(key.as_str());
-        }
-        if let Some(key) = &self.commune_key {
-            sources.push(key.as_str());
-        }
-        sources
+    /// The proper stack: the day's own office and the common it points to.
+    fn principal(&self) -> Stack {
+        Stack::of(
+            [&self.principal_key, &self.commune_key]
+                .into_iter()
+                .flatten()
+                .cloned(),
+        )
     }
 
-    fn collect_sources(&self) -> Vec<&str> {
-        let mut sources = self.inherited_sources();
+    /// The inherited stack: proper, common, then the temporal fallbacks.
+    fn inherited(&self) -> Stack {
+        Stack::of(
+            [
+                &self.principal_key,
+                &self.commune_key,
+                &self.temporal_key,
+                &self.weekly_temporal_key,
+                &self.previous_temporal_key,
+            ]
+            .into_iter()
+            .flatten()
+            .cloned(),
+        )
+    }
+
+    /// The collect stack: inherited, then any extra collect-reference sources.
+    fn collect(&self) -> Stack {
+        let mut stack = self.inherited();
         for key in &self.collect_reference_keys {
-            let source = key.as_str();
-            if !sources.iter().any(|existing| *existing == source) {
-                sources.push(source);
+            if !stack.keys.iter().any(|existing| existing == key) {
+                stack.keys.push(key.clone());
             }
         }
-        sources
+        stack
     }
 
-    fn inherited_sources(&self) -> Vec<&str> {
-        let mut sources = Vec::new();
-        self.push_source(&mut sources, &self.principal_key);
-        self.push_source(&mut sources, &self.commune_key);
-        self.push_source(&mut sources, &self.temporal_key);
-        self.push_source(&mut sources, &self.weekly_temporal_key);
-        self.push_source(&mut sources, &self.previous_temporal_key);
-        sources
-    }
-
-    fn matins_lesson_sources(&self) -> Vec<&str> {
-        let mut sources = Vec::new();
-        for key in [
-            &self.principal_key,
-            &self.scripture_key,
-            &self.temporal_key,
-            &self.weekly_temporal_key,
-            &self.commune_key,
-        ] {
-            if let Some(key) = key {
-                let source = key.as_str();
-                if !sources.iter().any(|existing| *existing == source) {
-                    sources.push(source);
-                }
-            }
-        }
-        sources
-    }
-
-    fn push_source<'a>(&'a self, sources: &mut Vec<&'a str>, file: &'a Option<String>) {
-        if let Some(file) = file {
-            let source = file.as_str();
-            if !sources.iter().any(|existing| *existing == source) {
-                sources.push(source);
-            }
-        }
+    /// The Matins-lesson stack: proper, monthly Scripture, temporal, common.
+    fn matins_lessons(&self) -> Stack {
+        Stack::of(
+            [
+                &self.principal_key,
+                &self.scripture_key,
+                &self.temporal_key,
+                &self.weekly_temporal_key,
+                &self.commune_key,
+            ]
+            .into_iter()
+            .flatten()
+            .cloned(),
+        )
     }
 
     fn has_rule(&self, id: &str) -> bool {
@@ -778,38 +855,83 @@ impl OfficeContext {
         self.profile == "roman-1960"
     }
 
+    // --- legacy source accessors (being replaced by Stack; deleted at the end) ---
+    fn principal_sources(&self) -> Vec<&str> {
+        [&self.principal_key, &self.commune_key]
+            .into_iter()
+            .flatten()
+            .map(String::as_str)
+            .collect()
+    }
+    fn inherited_sources(&self) -> Vec<&str> {
+        let mut v = Vec::new();
+        for k in [
+            &self.principal_key,
+            &self.commune_key,
+            &self.temporal_key,
+            &self.weekly_temporal_key,
+            &self.previous_temporal_key,
+        ]
+        .into_iter()
+        .flatten()
+        {
+            if !v.contains(&k.as_str()) {
+                v.push(k.as_str());
+            }
+        }
+        v
+    }
+    fn collect_sources(&self) -> Vec<&str> {
+        let mut v = self.inherited_sources();
+        for k in &self.collect_reference_keys {
+            if !v.contains(&k.as_str()) {
+                v.push(k.as_str());
+            }
+        }
+        v
+    }
+    fn matins_lesson_sources(&self) -> Vec<&str> {
+        let mut v = Vec::new();
+        for k in [
+            &self.principal_key,
+            &self.scripture_key,
+            &self.temporal_key,
+            &self.weekly_temporal_key,
+            &self.commune_key,
+        ]
+        .into_iter()
+        .flatten()
+        {
+            if !v.contains(&k.as_str()) {
+                v.push(k.as_str());
+            }
+        }
+        v
+    }
     fn major_special_source(&self) -> String {
-        "ordinary/major".to_string()
+        MAJOR_SPECIAL.to_string()
     }
-
     fn minor_special_source(&self) -> String {
-        "ordinary/minor".to_string()
+        MINOR_SPECIAL.to_string()
     }
-
     fn prime_special_source(&self) -> String {
-        "ordinary/prime".to_string()
+        PRIME_SPECIAL.to_string()
     }
-
     fn matins_special_source(&self) -> String {
-        "ordinary/matins".to_string()
+        MATINS_SPECIAL.to_string()
     }
-
     fn psalmi_major_source(&self) -> String {
-        "psalter/major".to_string()
+        PSALTER_MAJOR.to_string()
     }
-
     fn psalmi_minor_source(&self) -> String {
-        "psalter/minor".to_string()
+        PSALTER_MINOR.to_string()
     }
-
     fn psalmi_matutinum_source(&self) -> String {
-        "psalter/matins".to_string()
+        PSALTER_MATINS.to_string()
     }
-
     fn benedictions_source(&self) -> String {
-        "ordinary/benedictions".to_string()
+        BENEDICTIONS.to_string()
     }
-
     fn maria_antiphon_source(&self) -> String {
         "ordinary/marian-antiphons".to_string()
     }
@@ -1590,139 +1712,100 @@ fn resolve_major_chapter_hymn_verse(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let is_vespers = hour == Hour::Vespers;
-    let chapter_candidates: &[&str] = if is_vespers {
-        &["vespers-chapter", "lauds-chapter"]
+    let sunday = context.facts.weekday == Weekday::Sun;
+    let hour_word = if is_vespers { "vespers" } else { "lauds" };
+    let inherited = context.inherited();
+    let special = Stack::of([MAJOR_SPECIAL]);
+
+    // Each part: canonical slot candidates, then the seasonal/ferial fallback
+    // sections in the major special book.
+    let parts: [(&[&str], Vec<String>, &str); 3] = if is_vespers {
+        [
+            (
+                &["vespers-chapter", "lauds-chapter"],
+                if sunday {
+                    vec![
+                        "Dominica Vespera".into(),
+                        "Responsory Dominica Vespera".into(),
+                    ]
+                } else {
+                    vec!["Feria Vespera".into(), "Responsory Feria Vespera".into()]
+                },
+                "chapter",
+            ),
+            (
+                &["vespers-hymn"],
+                major_hymn_fallback_sections(context, true),
+                "hymn",
+            ),
+            (
+                &["vespers-versicle", "lauds-versicle"],
+                vec![if sunday {
+                    "Dominica Versum 3"
+                } else {
+                    "Feria Versum 3"
+                }
+                .into()],
+                "versicle",
+            ),
+        ]
     } else {
-        &["lauds-chapter"]
+        [
+            (
+                &["lauds-chapter"],
+                vec![if sunday {
+                    "Dominica Laudes"
+                } else {
+                    "Feria Laudes"
+                }
+                .into()],
+                "chapter",
+            ),
+            (
+                &["lauds-hymn"],
+                major_hymn_fallback_sections(context, false),
+                "hymn",
+            ),
+            (
+                &["lauds-versicle"],
+                vec![if sunday {
+                    "Dominica Versum 2"
+                } else {
+                    "Feria Versum 2"
+                }
+                .into()],
+                "versicle",
+            ),
+        ]
     };
-    let hymn_candidates: &[&str] = if is_vespers {
-        &["vespers-hymn"]
-    } else {
-        &["lauds-hymn"]
-    };
-    let verse_candidates: &[&str] = if is_vespers {
-        &["vespers-versicle", "lauds-versicle"]
-    } else {
-        &["lauds-versicle"]
-    };
-    let inherited_sources = context.inherited_sources();
-    let special_source = context.major_special_source();
-    let special_sources = [special_source.as_str()];
-    let mut nodes = match first_of_sections(
-        catalog,
-        language,
-        context,
-        &inherited_sources,
-        chapter_candidates,
-        diagnostics,
-    )
-    .or_else(|_| {
-        let sections = if is_vespers {
-            if context.facts.weekday == Weekday::Sun {
-                vec!["Dominica Vespera", "Responsory Dominica Vespera"]
-            } else {
-                vec!["Feria Vespera", "Responsory Feria Vespera"]
-            }
-        } else if context.facts.weekday == Weekday::Sun {
-            vec!["Dominica Laudes"]
-        } else {
-            vec!["Feria Laudes"]
-        };
-        first_of_sections(
-            catalog,
-            language,
-            context,
-            &special_sources,
-            &sections,
-            diagnostics,
-        )
-    }) {
-        Ok(chapter) => chapter,
-        Err(reason) => vec![DocumentNode::Unresolved {
-            kind: "section".to_string(),
-            value: if is_vespers {
-                "major vespers chapter"
-            } else {
-                "major lauds chapter"
-            }
-            .to_string(),
-            reason,
-        }],
-    };
-    match first_of_sections(
-        catalog,
-        language,
-        context,
-        &inherited_sources,
-        hymn_candidates,
-        diagnostics,
-    )
-    .or_else(|_| {
-        let sections = major_hymn_fallback_sections(context, is_vespers);
-        let section_refs = sections.iter().map(String::as_str).collect::<Vec<_>>();
-        first_of_sections(
-            catalog,
-            language,
-            context,
-            &special_sources,
-            &section_refs,
-            diagnostics,
-        )
-    })
-    .or_else(|_| major_external_hymn_fallback(catalog, language, context, is_vespers, diagnostics))
-    {
-        Ok(hymn) => nodes.extend(hymn),
-        Err(reason) => nodes.push(DocumentNode::Unresolved {
-            kind: "section".to_string(),
-            value: if is_vespers {
-                "major vespers hymn"
-            } else {
-                "major lauds hymn"
-            }
-            .to_string(),
-            reason,
-        }),
-    }
-    match first_of_sections(
-        catalog,
-        language,
-        context,
-        &inherited_sources,
-        verse_candidates,
-        diagnostics,
-    )
-    .or_else(|_| {
-        let section = if is_vespers {
-            if context.facts.weekday == Weekday::Sun {
-                "Dominica Versum 3"
-            } else {
-                "Feria Versum 3"
-            }
-        } else if context.facts.weekday == Weekday::Sun {
-            "Dominica Versum 2"
-        } else {
-            "Feria Versum 2"
-        };
-        section_doc(
-            catalog,
-            language,
-            context,
-            &special_source,
-            section,
-            diagnostics,
-        )
-    }) {
-        Ok(verse) => nodes.extend(verse),
-        Err(reason) => nodes.push(DocumentNode::Unresolved {
-            kind: "section".to_string(),
-            value: if is_vespers {
-                "major vespers versicle"
-            } else {
-                "major lauds versicle"
-            }
-            .to_string(),
-            reason,
-        }),
+
+    let mut nodes = Vec::new();
+    for (slots, fallback, label) in parts {
+        let fallback_refs: Vec<&str> = fallback.iter().map(String::as_str).collect();
+        let result = inherited
+            .of_slots(catalog, language, slots, diagnostics)
+            .or_else(|_| special.of_slots(catalog, language, &fallback_refs, diagnostics))
+            .or_else(|error| {
+                if label == "hymn" {
+                    major_external_hymn_fallback(
+                        catalog,
+                        language,
+                        context,
+                        is_vespers,
+                        diagnostics,
+                    )
+                } else {
+                    Err(error)
+                }
+            });
+        match result {
+            Ok(part) => nodes.extend(part),
+            Err(reason) => nodes.push(DocumentNode::Unresolved {
+                kind: "section".to_string(),
+                value: format!("major {hour_word} {label}"),
+                reason,
+            }),
+        }
     }
     Ok(nodes)
 }
@@ -1764,13 +1847,10 @@ fn major_external_hymn_fallback(
     if !is_vespers || context.facts.weekday != Weekday::Sat {
         return Err("no external hymn fallback".to_string());
     }
-    let trinity_sunday_source = source_key(&["temporal", "Pent01-0"]);
-    first_of_sections(
+    Stack::of([source_key(&["temporal", "Pent01-0"])]).doc(
         catalog,
         language,
-        context,
-        &[trinity_sunday_source.as_str()],
-        &["vespers-hymn"],
+        "vespers-hymn",
         diagnostics,
     )
 }
@@ -1851,83 +1931,48 @@ fn resolve_minor_chapter_responsory_verse(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     if context.hour == Hour::Prime {
-        let mut nodes = section_doc(
+        let prime = Stack::of([PRIME_SPECIAL]);
+        let day = if context.facts.weekday == Weekday::Sun || context.has_rule("psalmi-dominica") {
+            "Dominica"
+        } else {
+            "Feria"
+        };
+        let mut nodes = prime.doc(catalog, language, day, diagnostics)?;
+        nodes.extend(prime.doc(catalog, language, "prime-short-responsory", diagnostics)?);
+        if let Ok(seasonal) = prime.doc(
             catalog,
             language,
-            context,
-            &context.prime_special_source(),
-            if context.facts.weekday == Weekday::Sun || context.has_rule("psalmi-dominica") {
-                "Dominica"
-            } else {
-                "Feria"
-            },
-            diagnostics,
-        )?;
-        nodes.extend(section_doc(
-            catalog,
-            language,
-            context,
-            &context.prime_special_source(),
-            "prime-short-responsory",
-            diagnostics,
-        )?);
-        if let Ok(seasonal) = section_doc(
-            catalog,
-            language,
-            context,
-            &context.prime_special_source(),
             &format!("Responsory {}", prime_season(context)),
             diagnostics,
         ) {
             nodes.extend(seasonal);
         }
-        nodes.extend(section_doc(
-            catalog,
-            language,
-            context,
-            &context.prime_special_source(),
-            "prime-versicle",
-            diagnostics,
-        )?);
+        nodes.extend(prime.doc(catalog, language, "prime-versicle", diagnostics)?);
         return Ok(nodes);
     }
 
     let hour = minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
     let canonical_hour =
         canonical_minor_hour(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
-    let chapter_candidates = match context.hour {
-        Hour::Terce => vec![
+    let principal = context.principal();
+    let special = Stack::of([MINOR_SPECIAL]);
+    let season = minor_special_season(context);
+
+    let chapter_slots: Vec<String> = if context.hour == Hour::Terce {
+        vec![
             format!("{canonical_hour}-chapter"),
             "lauds-chapter".to_string(),
-        ],
-        _ => vec![format!("{canonical_hour}-chapter")],
+        ]
+    } else {
+        vec![format!("{canonical_hour}-chapter")]
     };
-    let mut nodes = chapter_candidates
-        .iter()
-        .find_map(|section| {
-            first_section_doc(
-                catalog,
-                language,
-                context,
-                &context.principal_sources(),
-                section,
-                diagnostics,
-            )
-            .ok()
-        })
-        .or_else(|| {
-            section_doc(
-                catalog,
-                language,
-                context,
-                &context.minor_special_source(),
-                &format!("{} {hour}", minor_special_season(context)),
-                diagnostics,
-            )
-            .ok()
-        })
-        .ok_or_else(|| format!("missing minor chapter for {hour}"))?;
-    for (section, fallback_prefix, optional) in [
+    let chapter_refs: Vec<&str> = chapter_slots.iter().map(String::as_str).collect();
+    let mut nodes = principal
+        .of_slots(catalog, language, &chapter_refs, diagnostics)
+        .or_else(|_| special.doc(catalog, language, &format!("{season} {hour}"), diagnostics))
+        .map_err(|_| format!("missing minor chapter for {hour}"))?;
+
+    for (slot, fallback_prefix, optional) in [
         (
             format!("{canonical_hour}-short-responsory"),
             "Responsory breve",
@@ -1935,32 +1980,19 @@ fn resolve_minor_chapter_responsory_verse(
         ),
         (format!("{canonical_hour}-versicle"), "Versum", true),
     ] {
-        if let Some(nodes2) = [section.as_str()].iter().find_map(|section| {
-            first_section_doc(
-                catalog,
-                language,
-                context,
-                &context.principal_sources(),
-                section,
-                diagnostics,
-            )
-            .ok()
-        }) {
-            nodes.extend(nodes2);
-        } else {
-            let section = format!("{fallback_prefix} {} {hour}", minor_special_season(context));
-            match section_doc(
-                catalog,
-                language,
-                context,
-                &context.minor_special_source(),
-                &section,
-                diagnostics,
-            ) {
-                Ok(nodes2) => nodes.extend(nodes2),
-                Err(_) if optional => {}
-                Err(error) => return Err(error),
-            }
+        match principal
+            .doc(catalog, language, &slot, diagnostics)
+            .or_else(|_| {
+                special.doc(
+                    catalog,
+                    language,
+                    &format!("{fallback_prefix} {season} {hour}"),
+                    diagnostics,
+                )
+            }) {
+            Ok(part) => nodes.extend(part),
+            Err(_) if optional => {}
+            Err(error) => return Err(error),
         }
     }
     Ok(nodes)

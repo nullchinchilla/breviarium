@@ -2776,6 +2776,7 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
     if let Some(ordinary) = books.get_mut("ordinary") {
         split_ordinary_major(ordinary);
         split_ordinary_minor(ordinary);
+        split_ordinary_prime(ordinary);
     }
     for (book, offices) in &books {
         let path = data_dir.join("books").join(format!("{book}.yaml"));
@@ -2967,6 +2968,69 @@ fn split_ordinary_minor(offices: &mut BTreeMap<String, OfficeOut>) {
 
     if !leftover.slots.is_empty() {
         offices.insert("minor".to_string(), leftover);
+    }
+    for (office, slots) in new {
+        offices.insert(
+            office,
+            OfficeOut {
+                slots,
+                ..OfficeOut::default()
+            },
+        );
+    }
+}
+
+/// Splits the flat `ordinary/prime` office into `prime-{sunday|feria}` (chapter),
+/// `prime-{season}` (short-reading + seasonal responsory) and `prime-fixed`
+/// (hymn, short-responsory, versicle). Unused sections stay in `prime`.
+fn split_ordinary_prime(offices: &mut BTreeMap<String, OfficeOut>) {
+    let Some(prime) = offices.remove("prime") else {
+        return;
+    };
+    const SEASONS: &[&str] = &[
+        "adv",
+        "nat",
+        "epi",
+        "quad",
+        "quad5",
+        "pasch",
+        "per-annum",
+        "asc",
+        "pent",
+    ];
+    let mut new = BTreeMap::<String, BTreeMap<String, String>>::new();
+    let mut put = |office: String, slot: &str, id: String| {
+        new.entry(office).or_default().insert(slot.to_string(), id);
+    };
+    let mut leftover = OfficeOut::default();
+
+    for (key, id) in prime.slots {
+        let mapped = match key.as_str() {
+            "dominica" => Some(("prime-sunday".to_string(), "chapter")),
+            "feria" => Some(("prime-feria".to_string(), "chapter")),
+            "prime-hymn" => Some(("prime-fixed".to_string(), "hymn")),
+            "prime-short-responsory" => Some(("prime-fixed".to_string(), "short-responsory")),
+            "prime-versicle" => Some(("prime-fixed".to_string(), "versicle")),
+            _ => {
+                if let Some(season) = key.strip_prefix("responsory-") {
+                    Some((format!("prime-{season}"), "seasonal-responsory"))
+                } else if SEASONS.contains(&key.as_str()) {
+                    Some((format!("prime-{key}"), "short-reading"))
+                } else {
+                    None
+                }
+            }
+        };
+        match mapped {
+            Some((office, slot)) => put(office, slot, id),
+            None => {
+                leftover.slots.insert(key, id);
+            }
+        }
+    }
+
+    if !leftover.slots.is_empty() {
+        offices.insert("prime".to_string(), leftover);
     }
     for (office, slots) in new {
         offices.insert(

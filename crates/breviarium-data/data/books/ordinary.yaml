@@ -607,30 +607,58 @@ offices:
       terce-versicle: versicle.de-ore-le-nis-l-bera-me-d-mine-6ce45f17b2
   prime:
     slots:
-      adv: short-reading.isa-33-2-a3d21ca89a
-      asc: short-reading.act-1-11-0b5a1bb3af
       commemoratio-defunctorum: short-reading.deinde-dicit-lector-commemor-tio-mnium-fratrum-f-8bed7f27f2
-      dominica: short-reading.1-tim-1-17-b79b561d93
-      epi: short-reading.isa-60-6-444c7ad4f8
-      feria: short-reading.zach-8-19-09b7e144a5
       hymnusm-prima: hymn.iam-lucis-orto-s-dere-2014925616
-      nat: short-reading.heb-1-11-12-4610c9c9e9
-      pasch: short-reading.col-3-1-2-3168062998
-      pent: short-reading.act-2-11-e613f569cd
-      per-annum: short-reading.2-thess-3-5-330a490e38
       preces-dominicales-prima-1: short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-5b24fdfcb6
       preces-dominicales-prima-2: short-reading.adiut-rium-nostrum-in-n-mine-d-mini-14f86be6ab
       preces-feriales-prima: short-reading.ripe-me-364d192ed8
-      prime-hymn: hymn.iam-lucis-orto-s-dere-6e9435eec1
-      prime-short-responsory: short-responsory.christe-fili-dei-vivi-miser-re-nobis-df8edff6b0
-      prime-versicle: versicle.exs-rge-christe-diuva-nos-16e4aca95e
-      quad: short-reading.isa-55-6-1cfc4619c8
-      quad5: short-reading.isa-50-6-7-da2838c584
-      responsory-adv: short-responsory.qui-vent-rus-es-in-mundum-63776ebc3e
-      responsory-asc: short-responsory.qui-scandis-super-s-dera-bafdba417e
-      responsory-corp: short-responsory.qui-natus-est-de-mar-a-v-rgine-91627df661
-      responsory-epi: short-responsory.qui-apparu-sti-h-die-97cc88adc8
-      responsory-heart: short-responsory.qui-corde-fundis-gr-tiam-ddfb5ec433
-      responsory-nat: short-responsory.qui-natus-es-de-mar-a-v-rgine-0c20c6a186
-      responsory-pasch: short-responsory.qui-surrex-sti-a-m-rtuis-50d0a8ba55
-      responsory-pent: short-responsory.qui-sedes-ad-d-xteram-patris-0b4e905840
+  prime-adv:
+    slots:
+      seasonal-responsory: short-responsory.qui-vent-rus-es-in-mundum-63776ebc3e
+      short-reading: short-reading.isa-33-2-a3d21ca89a
+  prime-asc:
+    slots:
+      seasonal-responsory: short-responsory.qui-scandis-super-s-dera-bafdba417e
+      short-reading: short-reading.act-1-11-0b5a1bb3af
+  prime-corp:
+    slots:
+      seasonal-responsory: short-responsory.qui-natus-est-de-mar-a-v-rgine-91627df661
+  prime-epi:
+    slots:
+      seasonal-responsory: short-responsory.qui-apparu-sti-h-die-97cc88adc8
+      short-reading: short-reading.isa-60-6-444c7ad4f8
+  prime-feria:
+    slots:
+      chapter: short-reading.zach-8-19-09b7e144a5
+  prime-fixed:
+    slots:
+      hymn: hymn.iam-lucis-orto-s-dere-6e9435eec1
+      short-responsory: short-responsory.christe-fili-dei-vivi-miser-re-nobis-df8edff6b0
+      versicle: versicle.exs-rge-christe-diuva-nos-16e4aca95e
+  prime-heart:
+    slots:
+      seasonal-responsory: short-responsory.qui-corde-fundis-gr-tiam-ddfb5ec433
+  prime-nat:
+    slots:
+      seasonal-responsory: short-responsory.qui-natus-es-de-mar-a-v-rgine-0c20c6a186
+      short-reading: short-reading.heb-1-11-12-4610c9c9e9
+  prime-pasch:
+    slots:
+      seasonal-responsory: short-responsory.qui-surrex-sti-a-m-rtuis-50d0a8ba55
+      short-reading: short-reading.col-3-1-2-3168062998
+  prime-pent:
+    slots:
+      seasonal-responsory: short-responsory.qui-sedes-ad-d-xteram-patris-0b4e905840
+      short-reading: short-reading.act-2-11-e613f569cd
+  prime-per-annum:
+    slots:
+      short-reading: short-reading.2-thess-3-5-330a490e38
+  prime-quad:
+    slots:
+      short-reading: short-reading.isa-55-6-1cfc4619c8
+  prime-quad5:
+    slots:
+      short-reading: short-reading.isa-50-6-7-da2838c584
+  prime-sunday:
+    slots:
+      chapter: short-reading.1-tim-1-17-b79b561d93

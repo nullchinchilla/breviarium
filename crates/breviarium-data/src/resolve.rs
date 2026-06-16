@@ -592,7 +592,6 @@ pub(crate) fn resolve_office(
 
 // The fixed structural books (ferial/seasonal defaults), referenced by key.
 const MINOR_SPECIAL: &str = "ordinary/minor";
-const PRIME_SPECIAL: &str = "ordinary/prime";
 const MATINS_SPECIAL: &str = "ordinary/matins";
 const PSALTER_MAJOR: &str = "psalter/major";
 const PSALTER_MINOR: &str = "psalter/minor";
@@ -1154,7 +1153,7 @@ fn resolve_hymn(
                 )
             }),
         "prime-hymn" => {
-            Stack::of([PRIME_SPECIAL]).doc(catalog, language, "prime-hymn", diagnostics)
+            Stack::of(["ordinary/prime-fixed"]).doc(catalog, language, "hymn", diagnostics)
         }
         "minor-hymn" => {
             let hour =
@@ -1798,23 +1797,25 @@ fn resolve_minor_chapter_responsory_verse(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     if context.hour == Hour::Prime {
-        let prime = Stack::of([PRIME_SPECIAL]);
-        let day = if context.facts.weekday == Weekday::Sun || context.has_rule("psalmi-dominica") {
-            "dominica"
-        } else {
-            "feria"
-        };
-        let mut nodes = prime.doc(catalog, language, day, diagnostics)?;
-        nodes.extend(prime.doc(catalog, language, "prime-short-responsory", diagnostics)?);
-        if let Ok(seasonal) = prime.doc(
+        let selector =
+            if context.facts.weekday == Weekday::Sun || context.has_rule("psalmi-dominica") {
+                "sunday"
+            } else {
+                "feria"
+            };
+        let fixed = Stack::of(["ordinary/prime-fixed"]);
+        let season = Stack::of([format!("ordinary/prime-{}", prime_season(context))]);
+        let mut nodes = Stack::of([format!("ordinary/prime-{selector}")]).doc(
             catalog,
             language,
-            &format!("responsory-{}", prime_season(context)),
+            "chapter",
             diagnostics,
-        ) {
+        )?;
+        nodes.extend(fixed.doc(catalog, language, "short-responsory", diagnostics)?);
+        if let Ok(seasonal) = season.doc(catalog, language, "seasonal-responsory", diagnostics) {
             nodes.extend(seasonal);
         }
-        nodes.extend(prime.doc(catalog, language, "prime-versicle", diagnostics)?);
+        nodes.extend(fixed.doc(catalog, language, "versicle", diagnostics)?);
         return Ok(nodes);
     }
 
@@ -1896,10 +1897,10 @@ fn resolve_prime_short_reading(
             .principal()
             .doc(catalog, language, "prime-short-reading", diagnostics)
             .or_else(|_| {
-                Stack::of([PRIME_SPECIAL]).doc(
+                Stack::of([format!("ordinary/prime-{}", prime_season(context))]).doc(
                     catalog,
                     language,
-                    prime_season(context),
+                    "short-reading",
                     diagnostics,
                 )
             })?,

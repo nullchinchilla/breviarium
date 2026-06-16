@@ -26,9 +26,10 @@ pub(crate) enum Handler {
     Psalmody,
     /// Matins nocturns, lessons and responsories (3-vs-9 lesson logic).
     Matins,
-    /// Generic single-slot fill from the book stack. `Slot::arg` is the
-    /// canonical slot name (`matins-hymn`, `chapter-office`, …).
+    /// Generic single-slot fill from the book stack (Prime/Compline short reading).
     Lookup,
+    /// The hymn for an hour. `Slot::arg` is `matins`/`prime`/`minor`/`compline`.
+    Hymn,
     /// Composite chapter+hymn+verse (major hours) or chapter+responsory+verse
     /// (minor hours / Prime / Compline). `Slot::arg` is `major` or `minor`.
     ChapterBlock,
@@ -102,7 +103,7 @@ const MATINS: &[Slot] = &[
         "Invitatorium",
         "Invitatory",
     ),
-    slot("hymn", R::Hymn, Lookup, "matins-hymn", "Hymnus", "Hymn"),
+    slot("hymn", R::Hymn, Hymn, "matins-hymn", "Hymnus", "Hymn"),
     slot(
         "nocturns",
         R::Reading,
@@ -174,7 +175,7 @@ const PRIME: &[Slot] = &[
         "Incipit",
         "Start",
     ),
-    slot("hymn", R::Hymn, Lookup, "prime-hymn", "Hymnus", "Hymn"),
+    slot("hymn", R::Hymn, Hymn, "prime-hymn", "Hymnus", "Hymn"),
     slot(
         "psalmody",
         R::Psalmody,
@@ -211,7 +212,7 @@ const PRIME: &[Slot] = &[
     slot(
         "chapter-office",
         R::Chapter,
-        Lookup,
+        Formula,
         "chapter-office",
         "Capitulum",
         "Chapter Office",
@@ -243,7 +244,7 @@ const MINOR: &[Slot] = &[
         "Incipit",
         "Start",
     ),
-    slot("hymn", R::Hymn, Lookup, "minor-hymn", "Hymnus", "Hymn"),
+    slot("hymn", R::Hymn, Hymn, "minor-hymn", "Hymnus", "Hymn"),
     slot(
         "psalmody",
         R::Psalmody,
@@ -372,7 +373,7 @@ const COMPLINE: &[Slot] = &[
         "Psalmi",
         "Psalms",
     ),
-    slot("hymn", R::Hymn, Lookup, "compline-hymn", "Hymnus", "Hymn"),
+    slot("hymn", R::Hymn, Hymn, "compline-hymn", "Hymnus", "Hymn"),
     slot(
         "chapter",
         R::Chapter,
@@ -820,23 +821,21 @@ fn execute_steps(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Vec<OfficeBlock> {
-    // The hour's structure now comes from the data-driven `resolve::Slot` table
-    // (replacing the hardcoded `builtin_steps`). Each slot still delegates to the
-    // existing `resolve_step` via `slot_step_kind` while the generic handler
-    // bodies are being brought up one at a time against the golden baseline.
-    resolve::hour_slots(request.hour)
+    // The hour's structure is the data-driven `Slot` table; each slot dispatches
+    // on its generic `Handler` directly to a resolution function.
+    hour_slots(request.hour)
         .iter()
         .map(|slot| {
-            let kind = slot_step_kind(slot, request.hour);
             let columns = request
                 .languages
                 .iter()
                 .map(|language| {
-                    let content = match resolve_step(catalog, language, context, &kind, diagnostics)
-                    {
-                        Ok(nodes) => OfficeColumnContent::Resolved { nodes },
-                        Err(reason) => OfficeColumnContent::Missing { reason },
-                    };
+                    let content =
+                        match dispatch(catalog, language, context, slot, request.hour, diagnostics)
+                        {
+                            Ok(nodes) => OfficeColumnContent::Resolved { nodes },
+                            Err(reason) => OfficeColumnContent::Missing { reason },
+                        };
                     OfficeColumn {
                         language: language.clone(),
                         title: slot_title(slot, language),
@@ -860,7 +859,7 @@ fn execute_steps(
 
 /// Per-language column title for a slot, matching the old `step.titles` map
 /// which only ever carried `la`/`en` keys (other languages → `None`).
-fn slot_title(slot: &resolve::Slot, language: &str) -> Option<String> {
+fn slot_title(slot: &Slot, language: &str) -> Option<String> {
     match language {
         "la" => Some(slot.title_la.to_string()),
         "en" => Some(slot.title_en.to_string()),
@@ -868,115 +867,25 @@ fn slot_title(slot: &resolve::Slot, language: &str) -> Option<String> {
     }
 }
 
-/// Bridges a generic `resolve::Slot` back onto the legacy `OfficeStepKind` so the
-/// table-driven loop reproduces `builtin_steps` exactly. This adapter is deleted
-/// in Execution-plan step 4 as each handler gains a real generic body.
-fn slot_step_kind(slot: &resolve::Slot, hour: Hour) -> OfficeStepKind {
-    use resolve::Handler::*;
-    use OfficeStepKind as K;
-    match (slot.handler, slot.arg) {
-        (Formula, "matins-opening") => K::MatinsOpening,
-        (Formula, "opening") => K::Opening,
-        (Formula, "compline-opening") => K::ComplineOpening,
-        (Formula, "examination") => K::ComplineExamination,
-        (Formula, "pretiosa") => K::PrimePretiosa,
-        (Formula, "prime-conclusion") => K::PrimeConclusion,
-        (Formula, "compline-conclusion") => K::ComplineConclusion,
-        (Formula, _) => K::Conclusion,
-        (Invitatory, _) => K::MatinsInvitatory,
-        (Lookup, "matins-hymn") => K::MatinsHymn,
-        (Lookup, "prime-hymn") => K::PrimeHymn,
-        (Lookup, "minor-hymn") => K::MinorHymn,
-        (Lookup, "compline-hymn") => K::ComplineHymn,
-        (Lookup, "chapter-office") => K::PrimeChapterOffice,
-        (Lookup, "prime-short-reading") => K::PrimeShortReading,
-        (Lookup, "compline-short-reading") => K::ComplineShortReading,
-        (Lookup, _) => K::Unsupported,
-        (Psalmody, "lauds") => K::LaudsPsalmody,
-        (Psalmody, "vespers") => K::VespersPsalmody,
-        (Psalmody, "compline") => K::ComplinePsalmody,
-        (Psalmody, _) => K::MinorPsalmody,
-        (Matins, _) => K::MatinsNocturns,
-        (ChapterBlock, "major") if hour == Hour::Vespers => K::VespersChapterHymnVerse,
-        (ChapterBlock, "major") => K::MajorChapterHymnVerse,
-        (ChapterBlock, _) if hour == Hour::Compline => K::ComplineChapterResponsoryVerse,
-        (ChapterBlock, _) => K::MinorChapterResponsoryVerse,
-        (Canticle, "magnificat") => K::Magnificat,
-        (Canticle, "nunc-dimittis") => K::NuncDimittis,
-        (Canticle, _) => K::GospelCanticle,
-        (Collect, "prime") => K::PrimeCollect,
-        (Collect, "compline") => K::ComplineCollect,
-        (Collect, _) => K::Collects,
-        (Martyrology, _) => K::PrimeMartyrology,
-        (Preces, _) => K::Preces,
-        (FinalAntiphon, _) => K::FinalAntiphon,
-    }
-}
-
-fn resolve_step(
+/// Fills one slot by dispatching its generic [`Handler`] (and `arg`) directly to
+/// a resolution function. This is the whole step-resolution surface — there is no
+/// intermediate per-hour `OfficeStepKind` enum.
+fn dispatch(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
-    kind: &OfficeStepKind,
+    slot: &Slot,
+    hour: Hour,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    match kind {
-        OfficeStepKind::Opening => resolve_opening(catalog, language, context, diagnostics),
-        OfficeStepKind::MatinsOpening => {
-            resolve_matins_opening(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::MatinsInvitatory => {
-            resolve_matins_invitatory(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::MatinsHymn => resolve_matins_hymn(catalog, language, context, diagnostics),
-        OfficeStepKind::MatinsNocturns => {
-            resolve_matins_nocturns(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::LaudsPsalmody => {
-            resolve_major_psalmody(catalog, language, context, Hour::Lauds, diagnostics)
-        }
-        OfficeStepKind::MajorChapterHymnVerse => {
-            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Lauds, diagnostics)
-        }
-        OfficeStepKind::GospelCanticle => {
-            resolve_gospel_canticle(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::VespersPsalmody => {
-            resolve_major_psalmody(catalog, language, context, Hour::Vespers, diagnostics)
-        }
-        OfficeStepKind::VespersChapterHymnVerse => {
-            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Vespers, diagnostics)
-        }
-        OfficeStepKind::Magnificat => resolve_magnificat(catalog, language, context, diagnostics),
-        OfficeStepKind::PrimeHymn => section_doc(
-            catalog,
-            language,
-            context,
-            &context.prime_special_source(),
-            "prime-hymn",
-            diagnostics,
-        ),
-        OfficeStepKind::MinorHymn => resolve_minor_hymn(catalog, language, context, diagnostics),
-        OfficeStepKind::MinorPsalmody => {
-            resolve_minor_psalmody(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::MinorChapterResponsoryVerse => {
-            resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::PrimeCollect => resolve_prime_collect(catalog, language, diagnostics),
-        OfficeStepKind::PrimeMartyrology => {
-            resolve_prime_martyrology(catalog, language, context, diagnostics)
-        }
-        OfficeStepKind::PrimePretiosa => formula_nodes(catalog, language, "Pretiosa", diagnostics),
-        OfficeStepKind::PrimeChapterOffice => {
-            resolve_prime_chapter_office(catalog, language, diagnostics)
-        }
-        OfficeStepKind::PrimeShortReading => {
+    use Handler::*;
+    match (slot.handler, slot.arg) {
+        (Formula, arg) => resolve_formula(catalog, language, context, arg, diagnostics),
+        (Invitatory, _) => resolve_matins_invitatory(catalog, language, context, diagnostics),
+        (Lookup, "prime-short-reading") => {
             resolve_prime_short_reading(catalog, language, context, diagnostics)
         }
-        OfficeStepKind::PrimeConclusion => resolve_prime_conclusion(catalog, language, diagnostics),
-        OfficeStepKind::ComplineOpening => resolve_compline_opening(catalog, language, diagnostics),
-        OfficeStepKind::ComplineShortReading => section_doc(
+        (Lookup, "compline-short-reading") => section_doc(
             catalog,
             language,
             context,
@@ -984,60 +893,142 @@ fn resolve_step(
             "compline-short-reading",
             diagnostics,
         ),
-        OfficeStepKind::ComplineExamination => {
-            resolve_compline_examination(catalog, language, diagnostics)
+        (Lookup, _) => Err("unsupported step".to_string()),
+        (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
+        (Psalmody, "lauds") => {
+            resolve_major_psalmody(catalog, language, context, Hour::Lauds, diagnostics)
         }
-        OfficeStepKind::ComplinePsalmody => {
+        (Psalmody, "vespers") => {
+            resolve_major_psalmody(catalog, language, context, Hour::Vespers, diagnostics)
+        }
+        (Psalmody, "compline") => {
             resolve_compline_psalmody(catalog, language, context, diagnostics)
         }
-        OfficeStepKind::ComplineHymn => {
-            resolve_compline_hymn(catalog, language, context, diagnostics)
+        (Psalmody, _) => resolve_minor_psalmody(catalog, language, context, diagnostics),
+        (Matins, _) => resolve_matins_nocturns(catalog, language, context, diagnostics),
+        (ChapterBlock, "major") if hour == Hour::Vespers => {
+            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Vespers, diagnostics)
         }
-        OfficeStepKind::ComplineChapterResponsoryVerse => {
+        (ChapterBlock, "major") => {
+            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Lauds, diagnostics)
+        }
+        (ChapterBlock, _) if hour == Hour::Compline => {
             resolve_compline_chapter_responsory_verse(catalog, language, context, diagnostics)
         }
-        OfficeStepKind::NuncDimittis => {
-            resolve_nunc_dimittis(catalog, language, context, diagnostics)
+        (ChapterBlock, _) => {
+            resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics)
         }
-        OfficeStepKind::ComplineCollect => resolve_compline_collect(catalog, language, diagnostics),
-        OfficeStepKind::ComplineConclusion => {
-            resolve_compline_conclusion(catalog, language, diagnostics)
-        }
-        OfficeStepKind::Preces => Ok(vec![DocumentNode::Marker {
+        (Canticle, which) => resolve_canticle(catalog, language, context, which, diagnostics),
+        (Collect, "prime") => resolve_prime_collect(catalog, language, diagnostics),
+        (Collect, "compline") => resolve_compline_collect(catalog, language, diagnostics),
+        (Collect, _) => resolve_collects(catalog, language, context, diagnostics),
+        (Martyrology, _) => resolve_prime_martyrology(catalog, language, context, diagnostics),
+        (Preces, _) => Ok(vec![DocumentNode::Marker {
             text: localized_literal(language, "omittitur", "omit").to_string(),
         }]),
-        OfficeStepKind::Collects => resolve_collects(catalog, language, context, diagnostics),
-        OfficeStepKind::Conclusion => resolve_conclusion(catalog, language, diagnostics),
-        OfficeStepKind::FinalAntiphon => {
-            resolve_final_antiphon(catalog, language, context, diagnostics)
+        (FinalAntiphon, _) => resolve_final_antiphon(catalog, language, context, diagnostics),
+    }
+}
+
+/// Assembles a fixed sequence of ordinary-book formulae — every hour's opening,
+/// examination, Pretiosa, and conclusion. `arg` selects which sequence.
+fn resolve_formula(
+    catalog: &Catalog,
+    language: &str,
+    context: &OfficeContext,
+    arg: &str,
+    diagnostics: &mut Vec<Diagnostic>,
+) -> Result<Vec<DocumentNode>, String> {
+    let formula = |name, diagnostics: &mut _| formula_nodes(catalog, language, name, diagnostics);
+    let nodes = match arg {
+        "opening" => {
+            let mut nodes = formula("Deus in adjutorium", diagnostics)?;
+            let alleluia = formula_lines(catalog, language, "Alleluia", diagnostics)?;
+            let index = usize::from(context.facts.temporal_week.starts_with("Quad"));
+            if let Some(line) = alleluia.get(index) {
+                nodes.push(DocumentNode::Text { text: line.clone() });
+            }
+            nodes
         }
-        OfficeStepKind::Unsupported => Err("unsupported step".to_string()),
-    }
-}
-
-fn resolve_opening(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Deus in adjutorium", diagnostics)?;
-    let alleluia = formula_lines(catalog, language, "Alleluia", diagnostics)?;
-    let index = usize::from(context.facts.temporal_week.starts_with("Quad"));
-    if let Some(line) = alleluia.get(index) {
-        nodes.push(DocumentNode::Text { text: line.clone() });
-    }
-    Ok(nodes)
-}
-
-fn resolve_matins_opening(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Domine labia", diagnostics)?;
-    nodes.extend(resolve_opening(catalog, language, context, diagnostics)?);
+        "matins-opening" => {
+            let mut nodes = formula("Domine labia", diagnostics)?;
+            nodes.extend(resolve_formula(
+                catalog,
+                language,
+                context,
+                "opening",
+                diagnostics,
+            )?);
+            nodes
+        }
+        "compline-opening" => {
+            let mut nodes = formula("Jube domne", diagnostics)?;
+            nodes.extend(formula("Benedictio Completorium", diagnostics)?);
+            nodes.extend(amen_nodes());
+            nodes
+        }
+        "examination" => {
+            let mut nodes = formula("Adjutorium nostrum", diagnostics)?;
+            nodes.push(DocumentNode::Rubric {
+                text: localized_literal(
+                    language,
+                    "Examen conscientiae vel Pater Noster totum secreto.",
+                    "There follows an examination of conscience, or the Our Father said silently.",
+                )
+                .to_string(),
+            });
+            for name in [
+                "Pater noster",
+                "Confiteor",
+                "Misereatur",
+                "Indulgentiam",
+                "Converte nos",
+            ] {
+                nodes.extend(formula(name, diagnostics)?);
+            }
+            nodes
+        }
+        "pretiosa" => formula("Pretiosa", diagnostics)?,
+        "chapter-office" => {
+            let mut nodes = formula("Deus in adjutorium iij", diagnostics)?;
+            for name in [
+                "Gloria",
+                "Kyrie",
+                "Pater noster Et",
+                "respice",
+                "Oremus",
+                "dirigere",
+            ] {
+                nodes.extend(formula(name, diagnostics)?);
+            }
+            nodes
+        }
+        "prime-conclusion" => {
+            let mut nodes = formula("Adjutorium nostrum", diagnostics)?;
+            nodes.extend(formula("Benedicite", diagnostics)?);
+            nodes.extend(formula("benedictio Prima2", diagnostics)?);
+            nodes
+        }
+        "compline-conclusion" => {
+            let mut nodes = domine_exaudi_nodes(language);
+            nodes.extend(formula("Benedicamus Domino", diagnostics)?);
+            nodes.extend(first_formula_doc(
+                catalog,
+                language,
+                &["benedictio Completorium Final", "Benedictio Completorium2"],
+                diagnostics,
+            )?);
+            nodes.extend(amen_nodes());
+            nodes
+        }
+        // "conclusion"
+        _ => {
+            let mut nodes = domine_exaudi_nodes(language);
+            nodes.extend(formula("Benedicamus Domino", diagnostics)?);
+            nodes.extend(formula("Fidelium animae", diagnostics)?);
+            nodes
+        }
+    };
     Ok(nodes)
 }
 
@@ -1081,31 +1072,64 @@ fn resolve_matins_invitatory(
     Ok(nodes)
 }
 
-fn resolve_matins_hymn(
+/// The hymn for an hour: proper if present, else the season/day hymn from the
+/// relevant special book. `arg` is `matins`/`prime`/`minor`/`compline`.
+fn resolve_hymn(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
+    arg: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    first_section_doc(
-        catalog,
-        language,
-        context,
-        &context.principal_sources(),
-        "matins-hymn",
-        diagnostics,
-    )
-    .or_else(|_| {
-        let section = matins_ordinary_hymn_section(context);
-        section_doc(
+    let special = |source: String, section: &str, diagnostics: &mut _| {
+        section_doc(catalog, language, context, &source, section, diagnostics)
+    };
+    match arg {
+        "matins-hymn" => first_section_doc(
             catalog,
             language,
             context,
-            &context.matins_special_source(),
-            &section,
+            &context.principal_sources(),
+            "matins-hymn",
             diagnostics,
         )
-    })
+        .or_else(|_| {
+            special(
+                context.matins_special_source(),
+                &matins_ordinary_hymn_section(context),
+                diagnostics,
+            )
+        }),
+        "prime-hymn" => special(context.prime_special_source(), "prime-hymn", diagnostics),
+        "minor-hymn" => {
+            let hour =
+                minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
+            special(
+                context.minor_special_source(),
+                &format!("Hymnus {hour}"),
+                diagnostics,
+            )
+        }
+        // "compline-hymn"
+        _ => {
+            let season = if context.facts.temporal_week.starts_with("Quad5") {
+                "Hymnus Completorium Quad5"
+            } else if context.facts.temporal_week.starts_with("Quad") {
+                "Hymnus Completorium Quad"
+            } else if context.facts.temporal_week.starts_with("Pasc") {
+                "Hymnus Completorium Pasch"
+            } else {
+                "Hymnus Completorium"
+            };
+            special(context.minor_special_source(), season, diagnostics).or_else(|_| {
+                special(
+                    context.minor_special_source(),
+                    "Hymnus Completorium",
+                    diagnostics,
+                )
+            })
+        }
+    }
 }
 
 fn resolve_matins_nocturns(
@@ -1685,71 +1709,73 @@ fn major_external_hymn_fallback(
     )
 }
 
-fn resolve_gospel_canticle(
+/// The gospel canticle for an hour: its antiphon (proper, else the ferial
+/// fallback) wrapped around the fixed canticle psalm. `which` is `benedictus`
+/// (Lauds), `magnificat` (Vespers), or `nunc-dimittis` (Compline).
+fn resolve_canticle(
     catalog: &Catalog,
     language: &str,
     context: &OfficeContext,
+    which: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let antiphon = first_section_antiphons(
-        catalog,
-        language,
-        &context.principal_sources(),
-        "lauds-gospel-antiphon",
-    )
-    .or_else(|| {
-        section_antiphons(
-            catalog,
-            language,
-            &context.major_special_source(),
-            &ferial_benedictus_antiphon_section(context),
-        )
-    })
-    .and_then(|values| values.into_iter().next())
-    .unwrap_or_default();
-    gospel_canticle_nodes(catalog, language, "231", &antiphon, diagnostics)
-}
-
-fn resolve_magnificat(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let antiphon = first_section_antiphons(
-        catalog,
-        language,
-        &context.principal_sources(),
-        "vespers-gospel-antiphon",
-    )
-    .or_else(|| {
-        section_antiphons(
-            catalog,
-            language,
-            &context.major_special_source(),
-            &ferial_magnificat_antiphon_section(context),
-        )
-    })
-    .and_then(|values| values.into_iter().next())
-    .unwrap_or_default();
-    gospel_canticle_nodes(catalog, language, "232", &antiphon, diagnostics)
-}
-
-fn resolve_minor_hymn(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let hour = minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
-    section_doc(
-        catalog,
-        language,
-        context,
-        &context.minor_special_source(),
-        &format!("Hymnus {hour}"),
-        diagnostics,
-    )
+    let (number, antiphon) = match which {
+        "magnificat" => (
+            "232",
+            first_section_antiphons(
+                catalog,
+                language,
+                &context.principal_sources(),
+                "vespers-gospel-antiphon",
+            )
+            .or_else(|| {
+                section_antiphons(
+                    catalog,
+                    language,
+                    &context.major_special_source(),
+                    &ferial_magnificat_antiphon_section(context),
+                )
+            }),
+        ),
+        "nunc-dimittis" => (
+            "233",
+            section_antiphons(
+                catalog,
+                language,
+                &context.minor_special_source(),
+                compline_antiphon_section(context),
+            )
+            .or_else(|| {
+                section_antiphons(
+                    catalog,
+                    language,
+                    &context.minor_special_source(),
+                    "compline-gospel-antiphon",
+                )
+            }),
+        ),
+        _ => (
+            "231",
+            first_section_antiphons(
+                catalog,
+                language,
+                &context.principal_sources(),
+                "lauds-gospel-antiphon",
+            )
+            .or_else(|| {
+                section_antiphons(
+                    catalog,
+                    language,
+                    &context.major_special_source(),
+                    &ferial_benedictus_antiphon_section(context),
+                )
+            }),
+        ),
+    };
+    let antiphon = antiphon
+        .and_then(|values| values.into_iter().next())
+        .unwrap_or_default();
+    gospel_canticle_nodes(catalog, language, number, &antiphon, diagnostics)
 }
 
 fn resolve_minor_psalmody(
@@ -1966,26 +1992,6 @@ fn resolve_prime_martyrology(
     }
 }
 
-fn resolve_prime_chapter_office(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Deus in adjutorium iij", diagnostics)?;
-    nodes.extend(formula_nodes(catalog, language, "Gloria", diagnostics)?);
-    nodes.extend(formula_nodes(catalog, language, "Kyrie", diagnostics)?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Pater noster Et",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(catalog, language, "respice", diagnostics)?);
-    nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
-    nodes.extend(formula_nodes(catalog, language, "dirigere", diagnostics)?);
-    Ok(nodes)
-}
-
 fn resolve_prime_short_reading(
     catalog: &Catalog,
     language: &str,
@@ -2022,75 +2028,6 @@ fn resolve_prime_short_reading(
     Ok(nodes)
 }
 
-fn resolve_prime_conclusion(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Adjutorium nostrum", diagnostics)?;
-    nodes.extend(formula_nodes(catalog, language, "Benedicite", diagnostics)?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "benedictio Prima2",
-        diagnostics,
-    )?);
-    Ok(nodes)
-}
-
-fn resolve_compline_opening(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Jube domne", diagnostics)?;
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Benedictio Completorium",
-        diagnostics,
-    )?);
-    nodes.extend(amen_nodes());
-    Ok(nodes)
-}
-
-fn resolve_compline_examination(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Adjutorium nostrum", diagnostics)?;
-    nodes.push(DocumentNode::Rubric {
-        text: localized_literal(
-            language,
-            "Examen conscientiae vel Pater Noster totum secreto.",
-            "There follows an examination of conscience, or the Our Father said silently.",
-        )
-        .to_string(),
-    });
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Pater noster",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(catalog, language, "Confiteor", diagnostics)?);
-    nodes.extend(formula_nodes(catalog, language, "Misereatur", diagnostics)?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Indulgentiam",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Converte nos",
-        diagnostics,
-    )?);
-    Ok(nodes)
-}
-
 fn resolve_compline_psalmody(
     catalog: &Catalog,
     language: &str,
@@ -2115,41 +2052,6 @@ fn resolve_compline_psalmody(
         },
         diagnostics,
     )
-}
-
-fn resolve_compline_hymn(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let season = if context.facts.temporal_week.starts_with("Quad5") {
-        "Hymnus Completorium Quad5"
-    } else if context.facts.temporal_week.starts_with("Quad") {
-        "Hymnus Completorium Quad"
-    } else if context.facts.temporal_week.starts_with("Pasc") {
-        "Hymnus Completorium Pasch"
-    } else {
-        "Hymnus Completorium"
-    };
-    section_doc(
-        catalog,
-        language,
-        context,
-        &context.minor_special_source(),
-        season,
-        diagnostics,
-    )
-    .or_else(|_| {
-        section_doc(
-            catalog,
-            language,
-            context,
-            &context.minor_special_source(),
-            "Hymnus Completorium",
-            diagnostics,
-        )
-    })
 }
 
 fn resolve_compline_chapter_responsory_verse(
@@ -2185,31 +2087,6 @@ fn resolve_compline_chapter_responsory_verse(
     Ok(nodes)
 }
 
-fn resolve_nunc_dimittis(
-    catalog: &Catalog,
-    language: &str,
-    context: &OfficeContext,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let antiphon = section_antiphons(
-        catalog,
-        language,
-        &context.minor_special_source(),
-        compline_antiphon_section(context),
-    )
-    .or_else(|| {
-        section_antiphons(
-            catalog,
-            language,
-            &context.minor_special_source(),
-            "compline-gospel-antiphon",
-        )
-    })
-    .and_then(|values| values.into_iter().next())
-    .unwrap_or_default();
-    gospel_canticle_nodes(catalog, language, "233", &antiphon, diagnostics)
-}
-
 fn resolve_compline_collect(
     catalog: &Catalog,
     language: &str,
@@ -2229,28 +2106,6 @@ fn resolve_compline_collect(
         "Per Dominum",
         diagnostics,
     )?);
-    Ok(nodes)
-}
-
-fn resolve_compline_conclusion(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = domine_exaudi_nodes(language);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Benedicamus Domino",
-        diagnostics,
-    )?);
-    nodes.extend(first_formula_doc(
-        catalog,
-        language,
-        &["benedictio Completorium Final", "Benedictio Completorium2"],
-        diagnostics,
-    )?);
-    nodes.extend(amen_nodes());
     Ok(nodes)
 }
 
@@ -2372,27 +2227,6 @@ fn collect_section_candidates(hour: Hour) -> Vec<&'static str> {
         Hour::Matins => vec!["matins-collect", "collect"],
         _ => vec!["daytime-collect", "collect"],
     }
-}
-
-fn resolve_conclusion(
-    catalog: &Catalog,
-    language: &str,
-    diagnostics: &mut Vec<Diagnostic>,
-) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = domine_exaudi_nodes(language);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Benedicamus Domino",
-        diagnostics,
-    )?);
-    nodes.extend(formula_nodes(
-        catalog,
-        language,
-        "Fidelium animae",
-        diagnostics,
-    )?);
-    Ok(nodes)
 }
 
 fn resolve_final_antiphon(
@@ -3460,44 +3294,4 @@ fn final_antiphon_section(context: &OfficeContext) -> &'static str {
     } else {
         "Postpentecost"
     }
-}
-
-#[derive(Clone, Debug, Deserialize, Eq, PartialEq)]
-#[serde(rename_all = "snake_case")]
-enum OfficeStepKind {
-    Opening,
-    MatinsOpening,
-    MatinsInvitatory,
-    MatinsHymn,
-    MatinsNocturns,
-    LaudsPsalmody,
-    MajorChapterHymnVerse,
-    GospelCanticle,
-    VespersPsalmody,
-    VespersChapterHymnVerse,
-    Magnificat,
-    PrimeHymn,
-    MinorHymn,
-    MinorPsalmody,
-    MinorChapterResponsoryVerse,
-    PrimeCollect,
-    PrimeMartyrology,
-    PrimePretiosa,
-    PrimeChapterOffice,
-    PrimeShortReading,
-    PrimeConclusion,
-    ComplineOpening,
-    ComplineShortReading,
-    ComplineExamination,
-    ComplinePsalmody,
-    ComplineHymn,
-    ComplineChapterResponsoryVerse,
-    NuncDimittis,
-    ComplineCollect,
-    ComplineConclusion,
-    Preces,
-    Collects,
-    Conclusion,
-    FinalAntiphon,
-    Unsupported,
 }

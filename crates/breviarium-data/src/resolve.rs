@@ -12,33 +12,36 @@ use crate::*;
 use chrono::{Datelike, Duration, NaiveDate, Weekday};
 use std::collections::{BTreeMap, BTreeSet};
 
-/// One structural shape of office content. A handful of these replace the 35
-/// `OfficeStepKind` variants of the original resolver.
+/// How a slot is filled — one structural shape of office content, carrying its
+/// own argument. A handful of these replace the 35 `OfficeStepKind` variants of
+/// the original resolver.
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
-pub(crate) enum Handler {
-    /// Fixed text assembled from the ordinary book (openings, Pretiosa,
-    /// examination, conclusions). `Slot::arg` selects which formula.
-    Formula,
+pub(crate) enum Fill {
+    /// Fixed text assembled from the ordinary book; the arg is the formula key
+    /// (`opening`, `conclusion`, `pretiosa`, …).
+    Formula(&'static str),
+    /// Generic single-slot fill from the book stack; the arg is the canonical
+    /// slot name (Prime/Compline short reading).
+    Lookup(&'static str),
+    /// The hymn for an hour; the arg is `matins-hymn`/`prime-hymn`/`minor-hymn`/
+    /// `compline-hymn`.
+    Hymn(&'static str),
+    /// Antiphon(s) + psalms; the arg is the scheme (`lauds`/`vespers`/`minor`/
+    /// `compline`).
+    Psalmody(&'static str),
+    /// Gospel canticle + antiphon; the arg is `benedictus`/`magnificat`/
+    /// `nunc-dimittis`.
+    Canticle(&'static str),
+    /// Domine exaudi + Oremus + collect + commemorations; the arg is
+    /// `standard`/`prime`/`compline`/`daytime`.
+    Collect(&'static str),
+    /// Chapter + hymn + verse (major) or chapter + responsory + verse (minor);
+    /// the arg is `major` or `minor`.
+    ChapterBlock(&'static str),
     /// Matins invitatory: Psalm 94 woven with the invitatory antiphon.
     Invitatory,
-    /// Antiphon(s) + psalms; ferial psalms come from the psalter by weekday.
-    /// `Slot::arg` selects the scheme (`lauds`/`vespers`/`minor`/`compline`).
-    Psalmody,
     /// Matins nocturns, lessons and responsories (3-vs-9 lesson logic).
     Matins,
-    /// Generic single-slot fill from the book stack (Prime/Compline short reading).
-    Lookup,
-    /// The hymn for an hour. `Slot::arg` is `matins`/`prime`/`minor`/`compline`.
-    Hymn,
-    /// Composite chapter+hymn+verse (major hours) or chapter+responsory+verse
-    /// (minor hours / Prime / Compline). `Slot::arg` is `major` or `minor`.
-    ChapterBlock,
-    /// Gospel canticle + antiphon. `Slot::arg` is `benedictus` / `magnificat` /
-    /// `nunc-dimittis`.
-    Canticle,
-    /// Domine exaudi + Oremus + collect (candidate order) + commemorations.
-    /// `Slot::arg` is `standard` / `prime` / `compline`.
-    Collect,
     /// Prime martyrology (next calendar day).
     Martyrology,
     /// Preces omission marker for Roman 1960.
@@ -47,373 +50,315 @@ pub(crate) enum Handler {
     FinalAntiphon,
 }
 
-/// One ordered slot in an hour's template. Mirrors the old `RawOfficeStep`
-/// (`id`, `role`, per-language `title`) but dispatches on a generic [`Handler`].
+/// One ordered slot in an hour's template: its block id, semantic role, how it
+/// is filled, and its `(Latin, English)` column heading.
 #[derive(Clone, Debug)]
 pub(crate) struct Slot {
     /// Stable block id suffix (`office.{profile}.{hour}.{id}`).
     pub id: &'static str,
     /// Semantic role carried onto the resolved block.
     pub role: TextRole,
-    /// Which structural handler fills this slot.
-    pub handler: Handler,
-    /// Handler argument: canonical slot name, formula key, scheme, or canticle.
-    pub arg: &'static str,
-    /// Latin column title.
-    pub title_la: &'static str,
-    /// English column title.
-    pub title_en: &'static str,
+    /// How this slot is filled.
+    pub fill: Fill,
+    /// `(Latin, English)` column heading.
+    pub title: (&'static str, &'static str),
 }
 
-const fn slot(
-    id: &'static str,
-    role: TextRole,
-    handler: Handler,
-    arg: &'static str,
-    title_la: &'static str,
-    title_en: &'static str,
-) -> Slot {
-    Slot {
-        id,
-        role,
-        handler,
-        arg,
-        title_la,
-        title_en,
-    }
-}
-
-use Handler::*;
+use Fill::*;
 use TextRole as R;
 
 const MATINS: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "matins-opening",
-        "Incipit",
-        "Start",
-    ),
-    slot(
-        "invitatory",
-        R::Invitatory,
-        Invitatory,
-        "matins-invitatory",
-        "Invitatorium",
-        "Invitatory",
-    ),
-    slot("hymn", R::Hymn, Hymn, "matins-hymn", "Hymnus", "Hymn"),
-    slot(
-        "nocturns",
-        R::Reading,
-        Matins,
-        "matins",
-        "Nocturni",
-        "Nocturns",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("matins-opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "invitatory",
+        role: R::Invitatory,
+        fill: Invitatory,
+        title: ("Invitatorium", "Invitatory"),
+    },
+    Slot {
+        id: "hymn",
+        role: R::Hymn,
+        fill: Hymn("matins-hymn"),
+        title: ("Hymnus", "Hymn"),
+    },
+    Slot {
+        id: "nocturns",
+        role: R::Reading,
+        fill: Matins,
+        title: ("Nocturni", "Nocturns"),
+    },
 ];
 
 const LAUDS: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "opening",
-        "Incipit",
-        "Start",
-    ),
-    slot(
-        "psalmody",
-        R::Psalmody,
-        Psalmody,
-        "lauds",
-        "Psalmi",
-        "Psalms",
-    ),
-    slot(
-        "chapter",
-        R::Chapter,
-        ChapterBlock,
-        "major",
-        "Capitulum Hymnus Versus",
-        "Chapter Hymn Verse",
-    ),
-    slot(
-        "benedictus",
-        R::GospelCanticle,
-        Canticle,
-        "benedictus",
-        "Canticum: Benedictus",
-        "Canticle: Benedictus",
-    ),
-    slot("preces", R::Preces, Preces, "", "Preces", "Preces"),
-    slot(
-        "collect",
-        R::Collect,
-        Collect,
-        "standard",
-        "Oratio",
-        "Prayer",
-    ),
-    slot(
-        "conclusion",
-        R::Conclusion,
-        Formula,
-        "conclusion",
-        "Conclusio",
-        "Conclusion",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "psalmody",
+        role: R::Psalmody,
+        fill: Psalmody("lauds"),
+        title: ("Psalmi", "Psalms"),
+    },
+    Slot {
+        id: "chapter",
+        role: R::Chapter,
+        fill: ChapterBlock("major"),
+        title: ("Capitulum Hymnus Versus", "Chapter Hymn Verse"),
+    },
+    Slot {
+        id: "benedictus",
+        role: R::GospelCanticle,
+        fill: Canticle("benedictus"),
+        title: ("Canticum: Benedictus", "Canticle: Benedictus"),
+    },
+    Slot {
+        id: "preces",
+        role: R::Preces,
+        fill: Preces,
+        title: ("Preces", "Preces"),
+    },
+    Slot {
+        id: "collect",
+        role: R::Collect,
+        fill: Collect("standard"),
+        title: ("Oratio", "Prayer"),
+    },
+    Slot {
+        id: "conclusion",
+        role: R::Conclusion,
+        fill: Formula("conclusion"),
+        title: ("Conclusio", "Conclusion"),
+    },
 ];
 
 const PRIME: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "opening",
-        "Incipit",
-        "Start",
-    ),
-    slot("hymn", R::Hymn, Hymn, "prime-hymn", "Hymnus", "Hymn"),
-    slot(
-        "psalmody",
-        R::Psalmody,
-        Psalmody,
-        "minor",
-        "Psalmi",
-        "Psalms",
-    ),
-    slot(
-        "chapter",
-        R::Chapter,
-        ChapterBlock,
-        "minor",
-        "Capitulum",
-        "Chapter",
-    ),
-    slot("collect", R::Collect, Collect, "prime", "Oratio", "Prayer"),
-    slot(
-        "martyrology",
-        R::MartyrologyEntry,
-        Martyrology,
-        "",
-        "Martyrologium",
-        "Martyrology",
-    ),
-    slot(
-        "pretiosa",
-        R::Versicle,
-        Formula,
-        "pretiosa",
-        "Pretiosa",
-        "Pretiosa",
-    ),
-    slot(
-        "chapter-office",
-        R::Chapter,
-        Formula,
-        "chapter-office",
-        "Capitulum",
-        "Chapter Office",
-    ),
-    slot(
-        "short-reading",
-        R::ShortReading,
-        Lookup,
-        "prime-short-reading",
-        "Lectio brevis",
-        "Short Reading",
-    ),
-    slot(
-        "conclusion",
-        R::Conclusion,
-        Formula,
-        "prime-conclusion",
-        "Conclusio",
-        "Conclusion",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "hymn",
+        role: R::Hymn,
+        fill: Hymn("prime-hymn"),
+        title: ("Hymnus", "Hymn"),
+    },
+    Slot {
+        id: "psalmody",
+        role: R::Psalmody,
+        fill: Psalmody("minor"),
+        title: ("Psalmi", "Psalms"),
+    },
+    Slot {
+        id: "chapter",
+        role: R::Chapter,
+        fill: ChapterBlock("minor"),
+        title: ("Capitulum", "Chapter"),
+    },
+    Slot {
+        id: "collect",
+        role: R::Collect,
+        fill: Collect("prime"),
+        title: ("Oratio", "Prayer"),
+    },
+    Slot {
+        id: "martyrology",
+        role: R::MartyrologyEntry,
+        fill: Martyrology,
+        title: ("Martyrologium", "Martyrology"),
+    },
+    Slot {
+        id: "pretiosa",
+        role: R::Versicle,
+        fill: Formula("pretiosa"),
+        title: ("Pretiosa", "Pretiosa"),
+    },
+    Slot {
+        id: "chapter-office",
+        role: R::Chapter,
+        fill: Formula("chapter-office"),
+        title: ("Capitulum", "Chapter Office"),
+    },
+    Slot {
+        id: "short-reading",
+        role: R::ShortReading,
+        fill: Lookup("prime-short-reading"),
+        title: ("Lectio brevis", "Short Reading"),
+    },
+    Slot {
+        id: "conclusion",
+        role: R::Conclusion,
+        fill: Formula("prime-conclusion"),
+        title: ("Conclusio", "Conclusion"),
+    },
 ];
 
 const MINOR: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "opening",
-        "Incipit",
-        "Start",
-    ),
-    slot("hymn", R::Hymn, Hymn, "minor-hymn", "Hymnus", "Hymn"),
-    slot(
-        "psalmody",
-        R::Psalmody,
-        Psalmody,
-        "minor",
-        "Psalmi",
-        "Psalms",
-    ),
-    slot(
-        "chapter",
-        R::Chapter,
-        ChapterBlock,
-        "minor",
-        "Capitulum",
-        "Chapter",
-    ),
-    slot("preces", R::Preces, Preces, "", "Preces", "Preces"),
-    slot(
-        "collect",
-        R::Collect,
-        Collect,
-        "daytime",
-        "Oratio",
-        "Prayer",
-    ),
-    slot(
-        "conclusion",
-        R::Conclusion,
-        Formula,
-        "conclusion",
-        "Conclusio",
-        "Conclusion",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "hymn",
+        role: R::Hymn,
+        fill: Hymn("minor-hymn"),
+        title: ("Hymnus", "Hymn"),
+    },
+    Slot {
+        id: "psalmody",
+        role: R::Psalmody,
+        fill: Psalmody("minor"),
+        title: ("Psalmi", "Psalms"),
+    },
+    Slot {
+        id: "chapter",
+        role: R::Chapter,
+        fill: ChapterBlock("minor"),
+        title: ("Capitulum", "Chapter"),
+    },
+    Slot {
+        id: "preces",
+        role: R::Preces,
+        fill: Preces,
+        title: ("Preces", "Preces"),
+    },
+    Slot {
+        id: "collect",
+        role: R::Collect,
+        fill: Collect("daytime"),
+        title: ("Oratio", "Prayer"),
+    },
+    Slot {
+        id: "conclusion",
+        role: R::Conclusion,
+        fill: Formula("conclusion"),
+        title: ("Conclusio", "Conclusion"),
+    },
 ];
 
 const VESPERS: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "opening",
-        "Incipit",
-        "Start",
-    ),
-    slot(
-        "psalmody",
-        R::Psalmody,
-        Psalmody,
-        "vespers",
-        "Psalmi",
-        "Psalms",
-    ),
-    slot(
-        "chapter",
-        R::Chapter,
-        ChapterBlock,
-        "major",
-        "Capitulum Hymnus Versus",
-        "Chapter Hymn Verse",
-    ),
-    slot(
-        "magnificat",
-        R::GospelCanticle,
-        Canticle,
-        "magnificat",
-        "Canticum: Magnificat",
-        "Canticle: Magnificat",
-    ),
-    slot("preces", R::Preces, Preces, "", "Preces", "Preces"),
-    slot(
-        "collect",
-        R::Collect,
-        Collect,
-        "standard",
-        "Oratio",
-        "Prayer",
-    ),
-    slot(
-        "conclusion",
-        R::Conclusion,
-        Formula,
-        "conclusion",
-        "Conclusio",
-        "Conclusion",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "psalmody",
+        role: R::Psalmody,
+        fill: Psalmody("vespers"),
+        title: ("Psalmi", "Psalms"),
+    },
+    Slot {
+        id: "chapter",
+        role: R::Chapter,
+        fill: ChapterBlock("major"),
+        title: ("Capitulum Hymnus Versus", "Chapter Hymn Verse"),
+    },
+    Slot {
+        id: "magnificat",
+        role: R::GospelCanticle,
+        fill: Canticle("magnificat"),
+        title: ("Canticum: Magnificat", "Canticle: Magnificat"),
+    },
+    Slot {
+        id: "preces",
+        role: R::Preces,
+        fill: Preces,
+        title: ("Preces", "Preces"),
+    },
+    Slot {
+        id: "collect",
+        role: R::Collect,
+        fill: Collect("standard"),
+        title: ("Oratio", "Prayer"),
+    },
+    Slot {
+        id: "conclusion",
+        role: R::Conclusion,
+        fill: Formula("conclusion"),
+        title: ("Conclusio", "Conclusion"),
+    },
 ];
 
 const COMPLINE: &[Slot] = &[
-    slot(
-        "opening",
-        R::Opening,
-        Formula,
-        "compline-opening",
-        "Benedictio",
-        "Blessing",
-    ),
-    slot(
-        "short-reading",
-        R::ShortReading,
-        Lookup,
-        "compline-short-reading",
-        "Lectio brevis",
-        "Short Reading",
-    ),
-    slot(
-        "examination",
-        R::Preces,
-        Formula,
-        "examination",
-        "Examen",
-        "Examination",
-    ),
-    slot(
-        "opening-2",
-        R::Opening,
-        Formula,
-        "opening",
-        "Incipit",
-        "Start",
-    ),
-    slot(
-        "psalmody",
-        R::Psalmody,
-        Psalmody,
-        "compline",
-        "Psalmi",
-        "Psalms",
-    ),
-    slot("hymn", R::Hymn, Hymn, "compline-hymn", "Hymnus", "Hymn"),
-    slot(
-        "chapter",
-        R::Chapter,
-        ChapterBlock,
-        "minor",
-        "Capitulum",
-        "Chapter",
-    ),
-    slot(
-        "nunc-dimittis",
-        R::GospelCanticle,
-        Canticle,
-        "nunc-dimittis",
-        "Canticum: Nunc dimittis",
-        "Canticle: Nunc dimittis",
-    ),
-    slot(
-        "collect",
-        R::Collect,
-        Collect,
-        "compline",
-        "Oratio",
-        "Prayer",
-    ),
-    slot(
-        "conclusion",
-        R::Conclusion,
-        Formula,
-        "compline-conclusion",
-        "Conclusio",
-        "Conclusion",
-    ),
-    slot(
-        "final-antiphon",
-        R::MarianAntiphon,
-        FinalAntiphon,
-        "final-antiphon",
-        "Antiphona finalis",
-        "Final Antiphon",
-    ),
+    Slot {
+        id: "opening",
+        role: R::Opening,
+        fill: Formula("compline-opening"),
+        title: ("Benedictio", "Blessing"),
+    },
+    Slot {
+        id: "short-reading",
+        role: R::ShortReading,
+        fill: Lookup("compline-short-reading"),
+        title: ("Lectio brevis", "Short Reading"),
+    },
+    Slot {
+        id: "examination",
+        role: R::Preces,
+        fill: Formula("examination"),
+        title: ("Examen", "Examination"),
+    },
+    Slot {
+        id: "opening-2",
+        role: R::Opening,
+        fill: Formula("opening"),
+        title: ("Incipit", "Start"),
+    },
+    Slot {
+        id: "psalmody",
+        role: R::Psalmody,
+        fill: Psalmody("compline"),
+        title: ("Psalmi", "Psalms"),
+    },
+    Slot {
+        id: "hymn",
+        role: R::Hymn,
+        fill: Hymn("compline-hymn"),
+        title: ("Hymnus", "Hymn"),
+    },
+    Slot {
+        id: "chapter",
+        role: R::Chapter,
+        fill: ChapterBlock("minor"),
+        title: ("Capitulum", "Chapter"),
+    },
+    Slot {
+        id: "nunc-dimittis",
+        role: R::GospelCanticle,
+        fill: Canticle("nunc-dimittis"),
+        title: ("Canticum: Nunc dimittis", "Canticle: Nunc dimittis"),
+    },
+    Slot {
+        id: "collect",
+        role: R::Collect,
+        fill: Collect("compline"),
+        title: ("Oratio", "Prayer"),
+    },
+    Slot {
+        id: "conclusion",
+        role: R::Conclusion,
+        fill: Formula("compline-conclusion"),
+        title: ("Conclusio", "Conclusion"),
+    },
+    Slot {
+        id: "final-antiphon",
+        role: R::MarianAntiphon,
+        fill: FinalAntiphon,
+        title: ("Antiphona finalis", "Final Antiphon"),
+    },
 ];
 
 /// The ordered slot template for an hour — the data-driven office skeleton.
@@ -476,20 +421,16 @@ mod tests {
     }
 
     #[test]
-    fn lookup_and_named_handlers_reference_canonical_slots() {
-        // Lookup/Invitatory/FinalAntiphon args must be real canonical slots, so
-        // the table and the importer's emitted slot vocabulary cannot drift.
+    fn lookup_slots_are_canonical() {
+        // A `Lookup` arg is a canonical slot name, so the table and the
+        // importer's emitted slot vocabulary cannot drift.
         for hour in ALL_HOURS {
             for s in hour_slots(hour) {
-                if matches!(
-                    s.handler,
-                    Handler::Lookup | Handler::Invitatory | Handler::FinalAntiphon
-                ) {
+                if let Fill::Lookup(arg) = s.fill {
                     assert!(
-                        slots::CANONICAL.contains(&s.arg),
-                        "{hour:?}/{} uses non-canonical slot `{}`",
+                        slots::CANONICAL.contains(&arg),
+                        "{hour:?}/{} uses non-canonical slot `{arg}`",
                         s.id,
-                        s.arg
                     );
                 }
             }
@@ -571,7 +512,6 @@ pub(crate) fn resolve_office(
         &request.profile,
         &principal,
         temporal_key,
-        sanctoral_key,
         &commemorations,
         primary_language,
     );
@@ -710,7 +650,6 @@ impl OfficeContext {
         profile: &str,
         principal: &OfficeObservance,
         temporal_key: Option<String>,
-        _sanctoral_key: Option<String>,
         commemorations: &[OfficeObservance],
         primary_language: &str,
     ) -> Self {
@@ -902,8 +841,8 @@ fn execute_steps(
 /// which only ever carried `la`/`en` keys (other languages → `None`).
 fn slot_title(slot: &Slot, language: &str) -> Option<String> {
     match language {
-        "la" => Some(slot.title_la.to_string()),
-        "en" => Some(slot.title_en.to_string()),
+        "la" => Some(slot.title.0.to_string()),
+        "en" => Some(slot.title.1.to_string()),
         _ => None,
     }
 }
@@ -919,30 +858,29 @@ fn dispatch(
     hour: Hour,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    use Handler::*;
-    match (slot.handler, slot.arg) {
-        (Formula, arg) => resolve_formula(catalog, language, context, arg, diagnostics),
-        (Invitatory, _) => resolve_matins_invitatory(catalog, language, context, diagnostics),
-        (Lookup, "prime-short-reading") => {
+    match slot.fill {
+        Formula(arg) => resolve_formula(catalog, language, context, arg, diagnostics),
+        Invitatory => resolve_matins_invitatory(catalog, language, context, diagnostics),
+        Lookup("prime-short-reading") => {
             resolve_prime_short_reading(catalog, language, context, diagnostics)
         }
-        (Lookup, "compline-short-reading") => {
+        Lookup("compline-short-reading") => {
             Stack::of(["ordinary/compline"]).doc(catalog, language, "short-reading", diagnostics)
         }
-        (Lookup, _) => Err("unsupported step".to_string()),
-        (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
-        (Psalmody, arg) => resolve_psalmody(catalog, language, context, arg, diagnostics),
-        (Matins, _) => resolve_matins_nocturns(catalog, language, context, diagnostics),
-        (ChapterBlock, arg) => {
+        Lookup(_) => Err("unsupported step".to_string()),
+        Hymn(arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
+        Psalmody(arg) => resolve_psalmody(catalog, language, context, arg, diagnostics),
+        Matins => resolve_matins_nocturns(catalog, language, context, diagnostics),
+        ChapterBlock(arg) => {
             resolve_chapter_block(catalog, language, context, arg, hour, diagnostics)
         }
-        (Canticle, which) => resolve_canticle(catalog, language, context, which, diagnostics),
-        (Collect, arg) => resolve_collect(catalog, language, context, arg, diagnostics),
-        (Martyrology, _) => resolve_prime_martyrology(catalog, language, context, diagnostics),
-        (Preces, _) => Ok(vec![DocumentNode::Marker {
+        Canticle(which) => resolve_canticle(catalog, language, context, which, diagnostics),
+        Collect(arg) => resolve_collect(catalog, language, context, arg, diagnostics),
+        Martyrology => resolve_prime_martyrology(catalog, language, context, diagnostics),
+        Preces => Ok(vec![DocumentNode::Marker {
             text: localized_literal(language, "omittitur", "omit").to_string(),
         }]),
-        (FinalAntiphon, _) => resolve_final_antiphon(catalog, language, context, diagnostics),
+        FinalAntiphon => resolve_final_antiphon(catalog, language, context, diagnostics),
     }
 }
 

@@ -2773,6 +2773,9 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
                 .insert(office_key, office_out(source_key, source));
         }
     }
+    if let Some(ordinary) = books.get_mut("ordinary") {
+        split_ordinary_major(ordinary);
+    }
     for (book, offices) in &books {
         let path = data_dir.join("books").join(format!("{book}.yaml"));
         let yaml = yaml_serde::to_string(&BookFileOut { offices })
@@ -2781,6 +2784,135 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
         written += 1;
     }
     Ok(written)
+}
+
+/// Splits the flat `ordinary/major` office (whose sections encode
+/// selector+role in DO names like `dominica-laudes`, `hymnus-adv-vespera`) into
+/// canonical season/day/selector offices keyed by canonical slots, so the
+/// resolver fills the major chapter-hymn-verse block by plain stack lookup.
+/// Sections the resolver never consults are left in the `major` office.
+fn split_ordinary_major(offices: &mut BTreeMap<String, OfficeOut>) {
+    let Some(major) = offices.remove("major") else {
+        return;
+    };
+    let hour = |do_hour: &str| match do_hour {
+        "laudes" => Some("lauds"),
+        "vespera" => Some("vespers"),
+        _ => None,
+    };
+    let mut new = BTreeMap::<String, BTreeMap<String, String>>::new();
+    let mut put = |office: String, slot: &str, id: String| {
+        new.entry(office).or_default().insert(slot.to_string(), id);
+    };
+    let mut leftover = OfficeOut::default();
+
+    for (key, id) in major.slots {
+        let mapped = (|| {
+            // {sel}-laudes / {sel}-vespera  -> major-{sel}.{hour}-chapter
+            for sel in ["dominica", "feria"] {
+                for do_hour in ["laudes", "vespera"] {
+                    if key == format!("{sel}-{do_hour}") {
+                        let h = hour(do_hour)?;
+                        let office = if sel == "dominica" {
+                            "major-sunday"
+                        } else {
+                            "major-feria"
+                        };
+                        return Some((office.to_string(), format!("{h}-chapter")));
+                    }
+                    if key == format!("responsory-{sel}-{do_hour}") {
+                        let h = hour(do_hour)?;
+                        let office = if sel == "dominica" {
+                            "major-sunday-2"
+                        } else {
+                            "major-feria-2"
+                        };
+                        return Some((office.to_string(), format!("{h}-chapter")));
+                    }
+                }
+                // {sel}-versum-2 -> lauds-versicle ; {sel}-versum-3 -> vespers-versicle
+                if key == format!("{sel}-versum-2") {
+                    let office = if sel == "dominica" {
+                        "major-sunday"
+                    } else {
+                        "major-feria"
+                    };
+                    return Some((office.to_string(), "lauds-versicle".to_string()));
+                }
+                if key == format!("{sel}-versum-3") {
+                    let office = if sel == "dominica" {
+                        "major-sunday"
+                    } else {
+                        "major-feria"
+                    };
+                    return Some((office.to_string(), "vespers-versicle".to_string()));
+                }
+            }
+            // hymns: hymnus-{season}-{hour}, hymnusm-{season}-{hour},
+            // hymnus-day{n}-{hour}, hymnusm-day6-vespera
+            for (prefix, monastic) in [("hymnus-", false), ("hymnusm-", true)] {
+                if let Some(rest) = key.strip_prefix(prefix) {
+                    for do_hour in ["laudes", "vespera"] {
+                        if let Some(mid) = rest.strip_suffix(&format!("-{do_hour}")) {
+                            let h = hour(do_hour)?;
+                            // mid is a season (adv/quad/quad5/pasch) or day{n}
+                            let is_known = matches!(mid, "adv" | "quad" | "quad5" | "pasch")
+                                || mid.starts_with("day");
+                            if !is_known {
+                                return None;
+                            }
+                            let office = if monastic {
+                                format!("major-monastic-{mid}")
+                            } else {
+                                format!("major-{mid}")
+                            };
+                            return Some((office, format!("{h}-hymn")));
+                        }
+                    }
+                }
+            }
+            // gospel-canticle antiphons: {sel}-ant-2 -> lauds, -ant-3 -> vespers
+            for n in 0..=7u32 {
+                let sel = if n == 0 {
+                    "dominica".to_string()
+                } else {
+                    format!("feria{n}")
+                };
+                if key == format!("{sel}-ant-2") {
+                    return Some((
+                        format!("major-{sel}-ant"),
+                        "lauds-gospel-antiphon".to_string(),
+                    ));
+                }
+                if key == format!("{sel}-ant-3") {
+                    return Some((
+                        format!("major-{sel}-ant"),
+                        "vespers-gospel-antiphon".to_string(),
+                    ));
+                }
+            }
+            None
+        })();
+        match mapped {
+            Some((office, slot)) => put(office, &slot, id),
+            None => {
+                leftover.slots.insert(key, id);
+            }
+        }
+    }
+
+    if !leftover.slots.is_empty() {
+        offices.insert("major".to_string(), leftover);
+    }
+    for (office, slots) in new {
+        offices.insert(
+            office,
+            OfficeOut {
+                slots,
+                ..OfficeOut::default()
+            },
+        );
+    }
 }
 
 // ---- import-time typing + cleaning of lexicon content ----

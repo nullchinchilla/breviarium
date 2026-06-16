@@ -196,88 +196,22 @@ offices:
       adv-versum-3: versicle.ror-te-c-li-d-super-et-nubes-pluant-iustum-1e6900a1e4
       adv-vespera: chapter.gen-49-10-4e5fec2238
       asc-versum-0: versicle.asc-ndo-ad-patrem-meum-et-patrem-vestrum-allel-i-870efd499f
-      dominica-ant-2: antiphon.ut-in-proprio-de-tempore-e8942e065f
-      dominica-ant-3: antiphon.ut-in-proprio-de-tempore-dd25fc9a6a
-      dominica-laudes: chapter.apo-7-12-84a7697e3b
       dominica-versum-0: versicle.exc-lsus-super-omnes-gentes-d-minus-40b5ae17c8
-      dominica-versum-2: versicle.d-minus-regn-vit-dec-rem-nduit-64c37349ae
-      dominica-versum-3: versicle.dirig-tur-d-mine-or-tio-mea-7725eae96d
-      dominica-vespera: chapter.2-cor-1-3-4-45c7345452
       feria-ant-2: antiphon.text-0752f4450e
       feria-ant-3: antiphon.text-0752f4450e
-      feria-laudes: chapter.rom-13-12-13-f0372a924a
       feria-versum-0: versicle.fiat-miseric-rdia-tua-d-mine-super-nos-6aea6086da
-      feria-versum-2: versicle.repl-ti-sumus-mane-miseric-rdia-tua-7a1442829b
       feria-versum-2op: versicle.in-matutinis-d-mine-medit-bor-in-te-a9a0b44887
-      feria-versum-3: versicle.dirig-tur-d-mine-or-tio-mea-287b974bf0
-      feria-vespera: chapter.2-cor-1-3-4-a611d36292
-      feria2-ant-2: antiphon.bened-ctus-d-minus-deus-isra-l-quia-visit-vit-et-3a120ab515
-      feria2-ant-3: antiphon.magn-ficat-nima-mea-d-minum-quia-resp-xit-deus-h-03a29d8ced
       feria2c-ant-3: antiphon.exsult-vit-sp-ritus-meus-in-deo-salut-ri-meo-1cff50af25
-      feria3-ant-2: antiphon.er-xit-nobis-d-minus-cornu-sal-tis-in-domo-david-ac8bfacc9e
-      feria3-ant-3: antiphon.exsult-vit-sp-ritus-meus-in-deo-salut-ri-meo-1cff50af25
       feria3c-ant-2: antiphon.sal-tem-ex-inim-cis-nostris-et-de-manu-mnium-qui-811598f751
       feria3c-ant-3: antiphon.respex-sti-humilit-tem-meam-d-mine-deus-meus-194de4ffca
-      feria4-ant-2: antiphon.de-manu-mnium-qui-od-runt-nos-liber-vit-nos-d-mi-72fe322018
-      feria4-ant-3: antiphon.resp-xit-d-minus-humilit-tem-meam-et-fecit-in-me-788ec00cbf
       feria4c-ant-3: antiphon.quia-fecit-mihi-d-minus-magna-qui-potens-est-et-cdff14af16
-      feria5-ant-2: antiphon.in-sanctit-te-servi-mus-d-mino-et-liber-bit-nos-327b9d059f
-      feria5-ant-3: antiphon.fecit-deus-pot-ntiam-in-br-cchio-suo-disp-rsit-s-29e97fdc8a
       feria5c-ant-2: antiphon.ad-dandam-sci-ntiam-plebi-tu-d-mine-in-remissi-n-8256cfceec
-      feria6-ant-2: antiphon.per-v-scera-miseric-rdi-dei-nostri-visit-vit-nos-ec401c1560
-      feria6-ant-3: antiphon.dep-suit-d-minus-pot-ntes-de-sede-et-exalt-vit-h-fbf9e5127a
       feria6c-ant-3: antiphon.susc-pit-deus-isra-l-p-erum-suum-sicut-loc-tus-e-4cb8d2ca26
-      feria7-ant-2: antiphon.ill-mina-d-mine-sed-ntes-in-t-nebris-et-umbra-mo-5198bac72a
-      feria7-ant-3: antiphon.susc-pit-deus-isra-l-p-erum-suum-sicut-loc-tus-e-f32320f89f
       feria7c-ant-2: antiphon.in-viam-pacis-d-rige-nos-d-mine-0f6bddfee0
-      hymnus-adv-laudes: hymn.en-clara-vox-red-rguit-5569d5224a
-      hymnus-adv-vespera: hymn.cre-tor-alme-s-derum-190a7aa2e7
-      hymnus-day0-laudes: hymn.ecce-iam-noctis-tenu-tur-umbra-405051d6b9
       hymnus-day0-laudes-hiemalis: hymn.t-rne-rerum-c-nditor-f7eb5cd54f
-      hymnus-day0-vespera: hymn.lucis-cre-tor-ptime-a880bfca9e
-      hymnus-day1-laudes: hymn.splendor-pat-rn-gl-ri-1afa66bbaf
-      hymnus-day1-vespera: hymn.imm-nse-c-li-c-nditor-ac78f1d1c9
-      hymnus-day2-laudes: hymn.ales-di-i-n-ntius-96c2815cc6
-      hymnus-day2-vespera: hymn.tell-ris-alme-c-nditor-b999d46410
-      hymnus-day3-laudes: hymn.nox-et-ten-br-et-n-bila-6955abb215
-      hymnus-day3-vespera: hymn.c-li-deus-sanct-ssime-827bc9366f
-      hymnus-day4-laudes: hymn.lux-ecce-surgit-urea-b55d31aa73
-      hymnus-day4-vespera: hymn.magn-deus-pot-nti-f22c096fcb
-      hymnus-day5-laudes: hymn.t-rna-c-li-gl-ria-ecea611d73
-      hymnus-day5-vespera: hymn.h-minis-superne-c-nditor-c882049800
-      hymnus-day6-laudes: hymn.aur-ra-iam-spargit-polum-2592988640
-      hymnus-day6-vespera: hymn.iam-sol-rec-dit-gneus-bbb95e6226
-      hymnus-pasch-laudes: hymn.aur-ra-c-lum-p-rpurat-686f4f3e67
-      hymnus-pasch-vespera: hymn.ad-r-gias-agni-dapes-782a2215d1
-      hymnus-quad-laudes: hymn.o-sol-sal-tis-ntimis-4e64d9647d
-      hymnus-quad-vespera: hymn.audi-ben-gne-c-nditor-8bbd0ace2b
-      hymnus-quad5-laudes: hymn.lustra-sex-qui-iam-per-git-345102b58a
-      hymnus-quad5-vespera: hymn.vex-lla-regis-pr-deunt-f3456ff328
-      hymnusm-adv-laudes: hymn.vox-clara-ecce-ntonat-77730facd4
-      hymnusm-adv-vespera: hymn.c-nditor-alme-s-derum-3f07c4dff2
-      hymnusm-day0-laudes: hymn.ecce-iam-noctis-tenu-tur-umbra-aeddb88f7a
       hymnusm-day0-laudes-hiemalis: hymn.t-rne-rerum-c-nditor-4230ee49c5
-      hymnusm-day0-vespera: hymn.lucis-cre-tor-ptime-60557a5608
       hymnusm-day0-vespera-hiemalis: hymn.deus-cre-tor-mnium-74819c4bb9
-      hymnusm-day1-laudes: hymn.splendor-pat-rn-gl-ri-1af1dd28f8
-      hymnusm-day1-vespera: hymn.imm-nse-c-li-c-nditor-7a94fc1cd2
-      hymnusm-day2-laudes: hymn.ales-di-i-n-ntius-6a7d6f0055
-      hymnusm-day2-vespera: hymn.tell-ris-ingens-c-nditor-0a8f97f5e3
-      hymnusm-day3-laudes: hymn.nox-et-ten-br-et-n-bila-5759ea5134
-      hymnusm-day3-vespera: hymn.c-li-deus-sanct-ssime-14d3c5429a
-      hymnusm-day4-laudes: hymn.lux-ecce-surgit-urea-ba7cc5e8f0
-      hymnusm-day4-vespera: hymn.magn-deus-pot-nti-c92e39b231
-      hymnusm-day5-laudes: hymn.t-rna-c-li-gl-ria-2ca8b4a2c1
-      hymnusm-day5-vespera: hymn.plasm-tor-h-minis-deus-5e0a99fcaf
-      hymnusm-day6-laudes: hymn.aur-ra-iam-spargit-polum-babbb90f53
-      hymnusm-day6-vespera: hymn.o-lux-be-ta-tr-nitas-f46b204900
-      hymnusm-pasch-laudes: hymn.aur-ra-lucis-r-tilat-748ba90804
       hymnusm-pasch-laudesop: hymn.serm-ne-blando-angelus-8eea60e69a
-      hymnusm-pasch-vespera: hymn.ad-cenam-agni-pr-vidi-4a3d948b5c
-      hymnusm-quad-laudes: hymn.iam-christe-sol-iust-ti-a407b2c556
-      hymnusm-quad-vespera: hymn.audi-ben-gne-c-nditor-90018473d6
-      hymnusm-quad5-laudes: hymn.lustris-sex-qui-iam-per-ctis-2bb259ddf2
-      hymnusm-quad5-vespera: hymn.vex-lla-regis-pr-deunt-32ee565ceb
       nat-versum-0: versicle.puer-natus-est-nobis-9d35af148b
       pasch-laudes: chapter.rom-6-9-10-3a9fe886c0
       pasch-versum-0: versicle.in-resurrecti-ne-tua-christe-allel-ia-82c0447676
@@ -306,11 +240,7 @@ offices:
       responsory-adv-laudes: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-e6e344f013
       responsory-adv-vespera: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-0d737b0ee6
       responsory-adv-vespera-c: short-responsory.tu-ex-rgens-d-mine-miser-beris-sion-e33b910db1
-      responsory-dominica-laudes: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-a13dfb628b
       responsory-dominica-laudes-c: short-responsory.h-c-est-dies-quam-fecit-d-minus-19ba813237
-      responsory-dominica-vespera: short-responsory.quam-magnific-ta-sunt-pera-tua-d-mine-8d447901dd
-      responsory-feria-laudes: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-c291472406
-      responsory-feria-vespera: short-responsory.bened-cam-d-minum-in-omni-t-mpore-907b611c8d
       responsory-feria-vespera-c: short-responsory.adiut-rium-nostrum-in-n-mine-d-mini-2f00c046ca
       responsory-pasch-laudes: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-allel-ia-78f84311b4
       responsory-pasch-vespera: short-responsory.surr-xit-d-minus-vere-allel-ia-allel-ia-0a6b5ce23d
@@ -339,6 +269,142 @@ offices:
       suffragium-paschalev: chapter.crucem-sanctam-s-biit-qui-inf-rnum-confr-git-acc-d101cd5139
       suffragium-vespera: chapter.de-beata-maria-ef3f0601f6
       versum-et-oratio-bmv: versicle.ora-pro-nobis-sancta-dei-g-netrix-bd38a845a3
+  major-adv:
+    slots:
+      lauds-hymn: hymn.en-clara-vox-red-rguit-5569d5224a
+      vespers-hymn: hymn.cre-tor-alme-s-derum-190a7aa2e7
+  major-day0:
+    slots:
+      lauds-hymn: hymn.ecce-iam-noctis-tenu-tur-umbra-405051d6b9
+      vespers-hymn: hymn.lucis-cre-tor-ptime-a880bfca9e
+  major-day1:
+    slots:
+      lauds-hymn: hymn.splendor-pat-rn-gl-ri-1afa66bbaf
+      vespers-hymn: hymn.imm-nse-c-li-c-nditor-ac78f1d1c9
+  major-day2:
+    slots:
+      lauds-hymn: hymn.ales-di-i-n-ntius-96c2815cc6
+      vespers-hymn: hymn.tell-ris-alme-c-nditor-b999d46410
+  major-day3:
+    slots:
+      lauds-hymn: hymn.nox-et-ten-br-et-n-bila-6955abb215
+      vespers-hymn: hymn.c-li-deus-sanct-ssime-827bc9366f
+  major-day4:
+    slots:
+      lauds-hymn: hymn.lux-ecce-surgit-urea-b55d31aa73
+      vespers-hymn: hymn.magn-deus-pot-nti-f22c096fcb
+  major-day5:
+    slots:
+      lauds-hymn: hymn.t-rna-c-li-gl-ria-ecea611d73
+      vespers-hymn: hymn.h-minis-superne-c-nditor-c882049800
+  major-day6:
+    slots:
+      lauds-hymn: hymn.aur-ra-iam-spargit-polum-2592988640
+      vespers-hymn: hymn.iam-sol-rec-dit-gneus-bbb95e6226
+  major-dominica-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.ut-in-proprio-de-tempore-e8942e065f
+      vespers-gospel-antiphon: antiphon.ut-in-proprio-de-tempore-dd25fc9a6a
+  major-feria:
+    slots:
+      lauds-chapter: chapter.rom-13-12-13-f0372a924a
+      lauds-versicle: versicle.repl-ti-sumus-mane-miseric-rdia-tua-7a1442829b
+      vespers-chapter: chapter.2-cor-1-3-4-a611d36292
+      vespers-versicle: versicle.dirig-tur-d-mine-or-tio-mea-287b974bf0
+  major-feria-2:
+    slots:
+      lauds-chapter: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-c291472406
+      vespers-chapter: short-responsory.bened-cam-d-minum-in-omni-t-mpore-907b611c8d
+  major-feria2-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.bened-ctus-d-minus-deus-isra-l-quia-visit-vit-et-3a120ab515
+      vespers-gospel-antiphon: antiphon.magn-ficat-nima-mea-d-minum-quia-resp-xit-deus-h-03a29d8ced
+  major-feria3-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.er-xit-nobis-d-minus-cornu-sal-tis-in-domo-david-ac8bfacc9e
+      vespers-gospel-antiphon: antiphon.exsult-vit-sp-ritus-meus-in-deo-salut-ri-meo-1cff50af25
+  major-feria4-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.de-manu-mnium-qui-od-runt-nos-liber-vit-nos-d-mi-72fe322018
+      vespers-gospel-antiphon: antiphon.resp-xit-d-minus-humilit-tem-meam-et-fecit-in-me-788ec00cbf
+  major-feria5-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.in-sanctit-te-servi-mus-d-mino-et-liber-bit-nos-327b9d059f
+      vespers-gospel-antiphon: antiphon.fecit-deus-pot-ntiam-in-br-cchio-suo-disp-rsit-s-29e97fdc8a
+  major-feria6-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.per-v-scera-miseric-rdi-dei-nostri-visit-vit-nos-ec401c1560
+      vespers-gospel-antiphon: antiphon.dep-suit-d-minus-pot-ntes-de-sede-et-exalt-vit-h-fbf9e5127a
+  major-feria7-ant:
+    slots:
+      lauds-gospel-antiphon: antiphon.ill-mina-d-mine-sed-ntes-in-t-nebris-et-umbra-mo-5198bac72a
+      vespers-gospel-antiphon: antiphon.susc-pit-deus-isra-l-p-erum-suum-sicut-loc-tus-e-f32320f89f
+  major-monastic-adv:
+    slots:
+      lauds-hymn: hymn.vox-clara-ecce-ntonat-77730facd4
+      vespers-hymn: hymn.c-nditor-alme-s-derum-3f07c4dff2
+  major-monastic-day0:
+    slots:
+      lauds-hymn: hymn.ecce-iam-noctis-tenu-tur-umbra-aeddb88f7a
+      vespers-hymn: hymn.lucis-cre-tor-ptime-60557a5608
+  major-monastic-day1:
+    slots:
+      lauds-hymn: hymn.splendor-pat-rn-gl-ri-1af1dd28f8
+      vespers-hymn: hymn.imm-nse-c-li-c-nditor-7a94fc1cd2
+  major-monastic-day2:
+    slots:
+      lauds-hymn: hymn.ales-di-i-n-ntius-6a7d6f0055
+      vespers-hymn: hymn.tell-ris-ingens-c-nditor-0a8f97f5e3
+  major-monastic-day3:
+    slots:
+      lauds-hymn: hymn.nox-et-ten-br-et-n-bila-5759ea5134
+      vespers-hymn: hymn.c-li-deus-sanct-ssime-14d3c5429a
+  major-monastic-day4:
+    slots:
+      lauds-hymn: hymn.lux-ecce-surgit-urea-ba7cc5e8f0
+      vespers-hymn: hymn.magn-deus-pot-nti-c92e39b231
+  major-monastic-day5:
+    slots:
+      lauds-hymn: hymn.t-rna-c-li-gl-ria-2ca8b4a2c1
+      vespers-hymn: hymn.plasm-tor-h-minis-deus-5e0a99fcaf
+  major-monastic-day6:
+    slots:
+      lauds-hymn: hymn.aur-ra-iam-spargit-polum-babbb90f53
+      vespers-hymn: hymn.o-lux-be-ta-tr-nitas-f46b204900
+  major-monastic-pasch:
+    slots:
+      lauds-hymn: hymn.aur-ra-lucis-r-tilat-748ba90804
+      vespers-hymn: hymn.ad-cenam-agni-pr-vidi-4a3d948b5c
+  major-monastic-quad:
+    slots:
+      lauds-hymn: hymn.iam-christe-sol-iust-ti-a407b2c556
+      vespers-hymn: hymn.audi-ben-gne-c-nditor-90018473d6
+  major-monastic-quad5:
+    slots:
+      lauds-hymn: hymn.lustris-sex-qui-iam-per-ctis-2bb259ddf2
+      vespers-hymn: hymn.vex-lla-regis-pr-deunt-32ee565ceb
+  major-pasch:
+    slots:
+      lauds-hymn: hymn.aur-ra-c-lum-p-rpurat-686f4f3e67
+      vespers-hymn: hymn.ad-r-gias-agni-dapes-782a2215d1
+  major-quad:
+    slots:
+      lauds-hymn: hymn.o-sol-sal-tis-ntimis-4e64d9647d
+      vespers-hymn: hymn.audi-ben-gne-c-nditor-8bbd0ace2b
+  major-quad5:
+    slots:
+      lauds-hymn: hymn.lustra-sex-qui-iam-per-git-345102b58a
+      vespers-hymn: hymn.vex-lla-regis-pr-deunt-f3456ff328
+  major-sunday:
+    slots:
+      lauds-chapter: chapter.apo-7-12-84a7697e3b
+      lauds-versicle: versicle.d-minus-regn-vit-dec-rem-nduit-64c37349ae
+      vespers-chapter: chapter.2-cor-1-3-4-45c7345452
+      vespers-versicle: versicle.dirig-tur-d-mine-or-tio-mea-7725eae96d
+  major-sunday-2:
+    slots:
+      lauds-chapter: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-a13dfb628b
+      vespers-chapter: short-responsory.quam-magnific-ta-sunt-pera-tua-d-mine-8d447901dd
   marian-antiphons:
     slots:
       advent: marian-antiphon.alma-redempt-ris-mater-qu-p-rvia-c-li-porta-mane-fb4c310fbe

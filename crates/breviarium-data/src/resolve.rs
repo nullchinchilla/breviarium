@@ -591,7 +591,6 @@ pub(crate) fn resolve_office(
 }
 
 // The fixed structural books (ferial/seasonal defaults), referenced by key.
-const MAJOR_SPECIAL: &str = "ordinary/major";
 const MINOR_SPECIAL: &str = "ordinary/minor";
 const PRIME_SPECIAL: &str = "ordinary/prime";
 const MATINS_SPECIAL: &str = "ordinary/matins";
@@ -1611,81 +1610,36 @@ fn resolve_major_chapter_hymn_verse(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let is_vespers = hour == Hour::Vespers;
-    let sunday = context.facts.weekday == Weekday::Sun;
     let hour_word = if is_vespers { "vespers" } else { "lauds" };
     let inherited = context.inherited();
-    let special = Stack::of([MAJOR_SPECIAL]);
+    // Today's seasonal/ferial Ordinary, as books on the stack: the chapter +
+    // versicle come from major-{sunday|feria}, the hymn from the season/day book.
+    let special = major_special_stack(context, is_vespers);
 
-    // Each part: canonical slot candidates, then the seasonal/ferial fallback
-    // sections in the major special book.
-    let parts: [(&[&str], Vec<String>, &str); 3] = if is_vespers {
+    // For each part: the proper-book slot candidates, then the canonical slot in
+    // the Ordinary stack (which already holds the right season/day book).
+    let parts: [(&[&str], &str); 3] = if is_vespers {
         [
-            (
-                &["vespers-chapter", "lauds-chapter"],
-                if sunday {
-                    vec![
-                        "dominica-vespera".into(),
-                        "responsory-dominica-vespera".into(),
-                    ]
-                } else {
-                    vec!["feria-vespera".into(), "responsory-feria-vespera".into()]
-                },
-                "chapter",
-            ),
-            (
-                &["vespers-hymn"],
-                major_hymn_fallback_sections(context, true),
-                "hymn",
-            ),
-            (
-                &["vespers-versicle", "lauds-versicle"],
-                vec![if sunday {
-                    "dominica-versum-3"
-                } else {
-                    "feria-versum-3"
-                }
-                .into()],
-                "versicle",
-            ),
+            (&["vespers-chapter", "lauds-chapter"], "chapter"),
+            (&["vespers-hymn"], "hymn"),
+            (&["vespers-versicle", "lauds-versicle"], "versicle"),
         ]
     } else {
         [
-            (
-                &["lauds-chapter"],
-                vec![if sunday {
-                    "dominica-laudes"
-                } else {
-                    "feria-laudes"
-                }
-                .into()],
-                "chapter",
-            ),
-            (
-                &["lauds-hymn"],
-                major_hymn_fallback_sections(context, false),
-                "hymn",
-            ),
-            (
-                &["lauds-versicle"],
-                vec![if sunday {
-                    "dominica-versum-2"
-                } else {
-                    "feria-versum-2"
-                }
-                .into()],
-                "versicle",
-            ),
+            (&["lauds-chapter"], "chapter"),
+            (&["lauds-hymn"], "hymn"),
+            (&["lauds-versicle"], "versicle"),
         ]
     };
 
     let mut nodes = Vec::new();
-    for (slots, fallback, label) in parts {
-        let fallback_refs: Vec<&str> = fallback.iter().map(String::as_str).collect();
+    for (slots, role) in parts {
+        let canonical = format!("{hour_word}-{role}");
         let result = inherited
             .of_slots(catalog, language, slots, diagnostics)
-            .or_else(|_| special.of_slots(catalog, language, &fallback_refs, diagnostics))
+            .or_else(|_| special.doc(catalog, language, &canonical, diagnostics))
             .or_else(|error| {
-                if label == "hymn" {
+                if role == "hymn" {
                     major_external_hymn_fallback(
                         catalog,
                         language,
@@ -1701,7 +1655,7 @@ fn resolve_major_chapter_hymn_verse(
             Ok(part) => nodes.extend(part),
             Err(reason) => nodes.push(DocumentNode::Unresolved {
                 kind: "section".to_string(),
-                value: format!("major {hour_word} {label}"),
+                value: format!("major {hour_word} {role}"),
                 reason,
             }),
         }
@@ -1709,31 +1663,66 @@ fn resolve_major_chapter_hymn_verse(
     Ok(nodes)
 }
 
-fn major_hymn_fallback_sections(context: &OfficeContext, is_vespers: bool) -> Vec<String> {
-    let hour = if is_vespers { "vespera" } else { "laudes" };
-    let season = if context.facts.temporal_week.starts_with("Adv") {
+/// The seasonal/ferial Ordinary books for the major hours, in priority order:
+/// the day's selector (sunday/feria) office for chapter+versicle, then the
+/// season's or weekday's hymn book(s) (monastic variant first when seasonal).
+fn major_special_stack(context: &OfficeContext, is_vespers: bool) -> Stack {
+    let selector = if context.facts.weekday == Weekday::Sun {
+        "sunday"
+    } else {
+        "feria"
+    };
+    let mut keys = vec![
+        format!("ordinary/major-{selector}"),
+        format!("ordinary/major-{selector}-2"),
+    ];
+    match major_seasonal(context) {
+        Some(season) => {
+            keys.push(format!("ordinary/major-monastic-{season}"));
+            keys.push(format!("ordinary/major-{season}"));
+        }
+        None => {
+            let weekday = divinum_weekday_number(context.facts.weekday);
+            keys.push(format!("ordinary/major-day{weekday}"));
+            if is_vespers && weekday == 6 {
+                keys.push("ordinary/major-monastic-day6".to_string());
+            }
+        }
+    }
+    Stack::of(keys)
+}
+
+/// The seasonal hymn variant for the major hours, if any.
+fn major_seasonal(context: &OfficeContext) -> Option<&'static str> {
+    let week = &context.facts.temporal_week;
+    if week.starts_with("Adv") {
         Some("adv")
-    } else if context.facts.temporal_week.starts_with("Quad5") {
+    } else if week.starts_with("Quad5") {
         Some("quad5")
-    } else if context.facts.temporal_week.starts_with("Quad") {
+    } else if week.starts_with("Quad") {
         Some("quad")
-    } else if context.facts.temporal_week.starts_with("Pasc") {
+    } else if week.starts_with("Pasc") {
         Some("pasch")
     } else {
         None
-    };
-    if let Some(season) = season {
-        return vec![
-            format!("hymnusm-{season}-{hour}"),
-            format!("hymnus-{season}-{hour}"),
-        ];
     }
+}
+
+/// The ferial gospel-canticle antiphon from the major Ordinary, keyed by the
+/// day's selector office (`major-dominica-ant` / `major-feria{n}-ant`).
+fn ferial_canticle_antiphons(
+    catalog: &Catalog,
+    language: &str,
+    context: &OfficeContext,
+    slot: &str,
+) -> Option<Vec<String>> {
     let weekday = divinum_weekday_number(context.facts.weekday);
-    let mut sections = vec![format!("hymnus-day{weekday}-{hour}")];
-    if is_vespers && weekday == 6 {
-        sections.push("hymnusm-day6-vespera".to_string());
-    }
-    sections
+    let selector = if weekday == 0 {
+        "dominica".to_string()
+    } else {
+        format!("feria{}", weekday + 1)
+    };
+    Stack::of([format!("ordinary/major-{selector}-ant")]).antiphons(catalog, language, slot)
 }
 
 fn major_external_hymn_fallback(
@@ -1771,12 +1760,7 @@ fn resolve_canticle(
                 .principal()
                 .antiphons(catalog, language, "vespers-gospel-antiphon")
                 .or_else(|| {
-                    section_antiphons(
-                        catalog,
-                        language,
-                        MAJOR_SPECIAL,
-                        &ferial_magnificat_antiphon_section(context),
-                    )
+                    ferial_canticle_antiphons(catalog, language, context, "vespers-gospel-antiphon")
                 }),
         ),
         "nunc-dimittis" => (
@@ -1797,12 +1781,7 @@ fn resolve_canticle(
                 .principal()
                 .antiphons(catalog, language, "lauds-gospel-antiphon")
                 .or_else(|| {
-                    section_antiphons(
-                        catalog,
-                        language,
-                        MAJOR_SPECIAL,
-                        &ferial_benedictus_antiphon_section(context),
-                    )
+                    ferial_canticle_antiphons(catalog, language, context, "lauds-gospel-antiphon")
                 }),
         ),
     };
@@ -2996,24 +2975,6 @@ fn matins_ordinary_hymn_section(context: &OfficeContext) -> String {
             "day{}-hymnus",
             divinum_weekday_number(context.facts.weekday)
         )
-    }
-}
-
-fn ferial_benedictus_antiphon_section(context: &OfficeContext) -> String {
-    let weekday = divinum_weekday_number(context.facts.weekday);
-    if weekday == 0 {
-        "dominica-ant-2".to_string()
-    } else {
-        format!("feria{}-ant-2", weekday + 1)
-    }
-}
-
-fn ferial_magnificat_antiphon_section(context: &OfficeContext) -> String {
-    let weekday = divinum_weekday_number(context.facts.weekday);
-    if weekday == 0 {
-        "dominica-ant-3".to_string()
-    } else {
-        format!("feria{}-ant-3", weekday + 1)
     }
 }
 

@@ -2777,6 +2777,7 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
         split_ordinary_major(ordinary);
         split_ordinary_minor(ordinary);
         split_ordinary_prime(ordinary);
+        split_ordinary_compline(ordinary);
     }
     for (book, offices) in &books {
         let path = data_dir.join("books").join(format!("{book}.yaml"));
@@ -3033,6 +3034,59 @@ fn split_ordinary_prime(offices: &mut BTreeMap<String, OfficeOut>) {
         offices.insert("prime".to_string(), leftover);
     }
     for (office, slots) in new {
+        offices.insert(
+            office,
+            OfficeOut {
+                slots,
+                ..OfficeOut::default()
+            },
+        );
+    }
+}
+
+/// Extracts the Compline sections that the `split_ordinary_minor` pass left in
+/// the `minor` office into a `compline` office (chapter / short-responsory /
+/// versicle / short-reading / the seasonal Nunc-dimittis antiphons) and
+/// `compline-{season}` offices for the seasonal hymn.
+fn split_ordinary_compline(offices: &mut BTreeMap<String, OfficeOut>) {
+    let Some(minor) = offices.get_mut("minor") else {
+        return;
+    };
+    let mut compline = BTreeMap::<String, BTreeMap<String, String>>::new();
+    let mut keep = BTreeMap::<String, String>::new();
+    for (key, id) in std::mem::take(&mut minor.slots) {
+        let mapped = if key == "compline-chapter" {
+            Some(("compline".to_string(), "chapter".to_string()))
+        } else if key == "compline-short-responsory" {
+            Some(("compline".to_string(), "short-responsory".to_string()))
+        } else if key == "compline-versicle" {
+            Some(("compline".to_string(), "versicle".to_string()))
+        } else if key == "compline-short-reading" {
+            Some(("compline".to_string(), "short-reading".to_string()))
+        } else if let Some(rest) = key.strip_prefix("compline-gospel-antiphon") {
+            let slot = format!("gospel-antiphon{rest}");
+            Some(("compline".to_string(), slot))
+        } else if key == "hymnus-completorium" {
+            Some(("compline".to_string(), "hymn".to_string()))
+        } else if let Some(season) = key.strip_prefix("hymnus-completorium-") {
+            Some((format!("compline-{season}"), "hymn".to_string()))
+        } else {
+            None
+        };
+        match mapped {
+            Some((office, slot)) => {
+                compline.entry(office).or_default().insert(slot, id);
+            }
+            None => {
+                keep.insert(key, id);
+            }
+        }
+    }
+    minor.slots = keep;
+    if minor.slots.is_empty() {
+        offices.remove("minor");
+    }
+    for (office, slots) in compline {
         offices.insert(
             office,
             OfficeOut {

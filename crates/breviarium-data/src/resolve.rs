@@ -591,7 +591,6 @@ pub(crate) fn resolve_office(
 }
 
 // The fixed structural books (ferial/seasonal defaults), referenced by key.
-const MINOR_SPECIAL: &str = "ordinary/minor";
 const MATINS_SPECIAL: &str = "ordinary/matins";
 const PSALTER_MAJOR: &str = "psalter/major";
 const PSALTER_MINOR: &str = "psalter/minor";
@@ -929,7 +928,7 @@ fn dispatch(
             resolve_prime_short_reading(catalog, language, context, diagnostics)
         }
         (Lookup, "compline-short-reading") => {
-            Stack::of([MINOR_SPECIAL]).doc(catalog, language, "compline-short-reading", diagnostics)
+            Stack::of(["ordinary/compline"]).doc(catalog, language, "short-reading", diagnostics)
         }
         (Lookup, _) => Err("unsupported step".to_string()),
         (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
@@ -1165,21 +1164,23 @@ fn resolve_hymn(
                 diagnostics,
             )
         }
-        // "compline-hymn"
+        // "compline-hymn": today's seasonal Compline book, else the default.
         _ => {
-            let minor = Stack::of([MINOR_SPECIAL]);
             let season = if context.facts.temporal_week.starts_with("Quad5") {
-                "hymnus-completorium-quad5"
+                Some("quad5")
             } else if context.facts.temporal_week.starts_with("Quad") {
-                "hymnus-completorium-quad"
+                Some("quad")
             } else if context.facts.temporal_week.starts_with("Pasc") {
-                "hymnus-completorium-pasch"
+                Some("pasch")
             } else {
-                "hymnus-completorium"
+                None
             };
-            minor
-                .doc(catalog, language, season, diagnostics)
-                .or_else(|_| minor.doc(catalog, language, "hymnus-completorium", diagnostics))
+            let mut keys = Vec::new();
+            if let Some(season) = season {
+                keys.push(format!("ordinary/compline-{season}"));
+            }
+            keys.push("ordinary/compline".to_string());
+            Stack::of(keys).doc(catalog, language, "hymn", diagnostics)
         }
     }
 }
@@ -1762,18 +1763,15 @@ fn resolve_canticle(
                     ferial_canticle_antiphons(catalog, language, context, "vespers-gospel-antiphon")
                 }),
         ),
-        "nunc-dimittis" => (
-            "233",
-            section_antiphons(
-                catalog,
-                language,
-                MINOR_SPECIAL,
-                compline_antiphon_section(context),
+        "nunc-dimittis" => {
+            let compline = Stack::of(["ordinary/compline"]);
+            (
+                "233",
+                compline
+                    .antiphons(catalog, language, compline_antiphon_section(context))
+                    .or_else(|| compline.antiphons(catalog, language, "gospel-antiphon")),
             )
-            .or_else(|| {
-                section_antiphons(catalog, language, MINOR_SPECIAL, "compline-gospel-antiphon")
-            }),
-        ),
+        }
         _ => (
             "231",
             context
@@ -1913,10 +1911,10 @@ fn resolve_compline_chapter_responsory_verse(
     language: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let minor = Stack::of([MINOR_SPECIAL]);
-    let mut nodes = minor.doc(catalog, language, "compline-chapter", diagnostics)?;
-    nodes.extend(minor.doc(catalog, language, "compline-short-responsory", diagnostics)?);
-    nodes.extend(minor.doc(catalog, language, "compline-versicle", diagnostics)?);
+    let compline = Stack::of(["ordinary/compline"]);
+    let mut nodes = compline.doc(catalog, language, "chapter", diagnostics)?;
+    nodes.extend(compline.doc(catalog, language, "short-responsory", diagnostics)?);
+    nodes.extend(compline.doc(catalog, language, "versicle", diagnostics)?);
     Ok(nodes)
 }
 
@@ -2975,13 +2973,13 @@ fn matins_ordinary_hymn_section(context: &OfficeContext) -> String {
 
 fn compline_antiphon_section(context: &OfficeContext) -> &'static str {
     if context.facts.temporal_week.starts_with("Quad5") {
-        "compline-gospel-antiphon-passiontide"
+        "gospel-antiphon-passiontide"
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "compline-gospel-antiphon-lent"
+        "gospel-antiphon-lent"
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        "compline-gospel-antiphon-easter"
+        "gospel-antiphon-easter"
     } else {
-        "compline-gospel-antiphon"
+        "gospel-antiphon"
     }
 }
 

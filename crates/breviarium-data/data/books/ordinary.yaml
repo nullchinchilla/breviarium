@@ -6,6 +6,32 @@ offices:
       matins-blessings-nocturn-2: blessing.deus-pater-omn-potens-sit-nobis-prop-tius-et-cle-19cd36b48b
       matins-blessings-nocturn-3: blessing.ille-nos-bened-cat-qui-sine-fine-vivit-et-regnat-f262007c20
       matins-blessings-nocturn-3-christmas: blessing.evang-lica-l-ctio-sit-nobis-salus-et-prot-ctio-52f6a77faa
+  compline:
+    slots:
+      chapter: chapter.ier-14-9-5d4cf9979b
+      gospel-antiphon: antiphon.salva-nos-d-mine-vigil-ntes-cust-di-nos-dormi-nt-984a585d52
+      gospel-antiphon-easter: antiphon.allel-ia-resurr-xit-d-minus-allel-ia-sicut-dixit-1fbc34c983
+      gospel-antiphon-lent: antiphon.ev-gila-super-nos-t-rne-salv-tor-ne-nos-appreh-n-9c45721793
+      gospel-antiphon-passiontide: antiphon.o-rex-glori-se-inter-sanctos-tuos-qui-semper-es-a5c4706bd5
+      hymn: hymn.te-lucis-ante-t-rminum-f252b6676d
+      short-reading: short-reading.1-pet-5-8-9-7272d8b1ba
+      short-responsory: short-responsory.in-manus-tuas-d-mine-comm-ndo-sp-ritum-meum-c2a8a19ae4
+      versicle: versicle.cust-di-nos-d-mine-ut-pup-llam-culi-495c4e2775
+  compline-asc:
+    slots:
+      hymn: hymn.iesu-nostra-red-mptio-6c15c746ce
+  compline-pasch:
+    slots:
+      hymn: hymn.iesu-nostra-red-mptio-ebfa6ef679
+  compline-pent:
+    slots:
+      hymn: hymn.iesu-nostra-red-mptio-c16a905b3c
+  compline-quad:
+    slots:
+      hymn: hymn.christe-qui-lux-es-et-dies-5b2a993361
+  compline-quad5:
+    slots:
+      hymn: hymn.christe-qui-lux-es-et-dies-5b2a993361
   formulae:
     slots:
       a-porta-inferi: rubric.a-porta-nferi-6ade4d00e1
@@ -475,22 +501,8 @@ offices:
       ant-4-asc: antiphon.allel-ia-asc-ndens-christus-in-altum-allel-ia-ca-63d08fd055
       ant-4-pent: antiphon.allel-ia-sp-ritus-par-clitus-allel-ia-doc-bit-vo-4c07764695
       ant-4-quad3: antiphon.m-dia-vita-in-morte-sumus-quem-qu-rimus-adiut-re-d02fa30e1e
-      compline-chapter: chapter.ier-14-9-5d4cf9979b
-      compline-gospel-antiphon: antiphon.salva-nos-d-mine-vigil-ntes-cust-di-nos-dormi-nt-984a585d52
-      compline-gospel-antiphon-easter: antiphon.allel-ia-resurr-xit-d-minus-allel-ia-sicut-dixit-1fbc34c983
-      compline-gospel-antiphon-lent: antiphon.ev-gila-super-nos-t-rne-salv-tor-ne-nos-appreh-n-9c45721793
-      compline-gospel-antiphon-passiontide: antiphon.o-rex-glori-se-inter-sanctos-tuos-qui-semper-es-a5c4706bd5
-      compline-short-reading: short-reading.1-pet-5-8-9-7272d8b1ba
-      compline-short-responsory: short-responsory.in-manus-tuas-d-mine-comm-ndo-sp-ritum-meum-c2a8a19ae4
-      compline-versicle: versicle.cust-di-nos-d-mine-ut-pup-llam-culi-495c4e2775
       dominica-nonaop: chapter.1-ioann-5-7-38592af4d6
       dominica-sextaop: chapter.2-cor-13-13-2ae6473436
-      hymnus-completorium: hymn.te-lucis-ante-t-rminum-f252b6676d
-      hymnus-completorium-asc: hymn.iesu-nostra-red-mptio-6c15c746ce
-      hymnus-completorium-pasch: hymn.iesu-nostra-red-mptio-ebfa6ef679
-      hymnus-completorium-pent: hymn.iesu-nostra-red-mptio-c16a905b3c
-      hymnus-completorium-quad: hymn.christe-qui-lux-es-et-dies-5b2a993361
-      hymnus-completorium-quad5: hymn.christe-qui-lux-es-et-dies-5b2a993361
       hymnus-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-566651a48a
       hymnusm-completorium: hymn.te-lucis-ante-t-rminum-33af4d5940
       hymnusm-nona: hymn.rerum-deus-tenax-vigor-3369fb8ae7

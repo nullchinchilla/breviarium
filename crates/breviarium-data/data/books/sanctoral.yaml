@@ -8,7 +8,7 @@ offices:
     values:
       doxology: Nat
       psalm5-vespera: '115'
-    common: Tempora/Nat2-0
+    common: temporal/nat2-0
   01-01:
     rank:
       name: Duplex I classis
@@ -20,7 +20,7 @@ offices:
     - lectio1-tempnat
     values:
       9-lectiones: '1960'
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       collect: collect.deus-qui-sal-tis-t-rn-be-t-mar-virginit-te-fec-n-00bec7e28c
       lauds-chapter: chapter.titus-2-11-12-e0be4a8657
@@ -57,7 +57,7 @@ offices:
     values:
       comkey: '70'
       prefatio: Nat
-    common: Sancti/12-26
+    common: sanctoral/12-26
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-prim-tias-m-rtyru-26ac1fa2bf
       matins-reading-1: reading.de-actibus-apostolorum-4c74df0bf6
@@ -84,7 +84,7 @@ offices:
     values:
       comkey: '70'
       prefatio: Apostolis
-    common: Sancti/12-27
+    common: sanctoral/12-27
     slots:
       matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-dd4e4d50df
       matins-reading-2: reading.apo-4-5-8-1754914a4b
@@ -103,7 +103,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.antherus-nati-ne-gr-cus-patre-romulo-post-sanctu-fef878b3b5
       matins-reading-5: reading.sermo-sancti-august-ni-ep-scopi-265c1aef04
@@ -121,7 +121,7 @@ offices:
     values:
       comkey: '70'
       prefatio: Nat
-    common: Sancti/12-28
+    common: sanctoral/12-28
     slots:
       matins-reading-3-abbreviated: reading.sermo-sancti-august-ni-ep-scopi-51d4edfb51
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-a82a777a83
@@ -141,7 +141,7 @@ offices:
     - omit-preces
     - feria-te-deum
     - lectio1-tempnat
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       collect: collect.omn-potens-sempit-rne-deus-d-rige-actus-nostros-755e018b09
       lauds-chapter: chapter.gal-4-1-2-05114fca72
@@ -163,7 +163,7 @@ offices:
   01-05cc:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       lauds-gospel-antiphon: antiphon.qui-odit-nimam-suam-in-hoc-mundo-in-vitam-t-rnam-a709f48ed9
       matins-reading-4: reading.telesphorus-nati-ne-gr-cus-p-tria-thuriensis-in-5d1937ef6c
@@ -230,7 +230,7 @@ offices:
       value: 1.2
     flags:
     - feria-te-deum
-    common: Sancti/12-28
+    common: sanctoral/12-28
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-0d750bea7d
       matins-reading-2: reading.rom-8-17-20-2a1169ff84
@@ -247,7 +247,7 @@ offices:
     - infra-octavam-epiphani-domini
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-gospel-antiphon: antiphon.ab-ori-nte-ven-runt-magi-in-b-thlehem-ador-re-d-a2391c8fbf
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-dc72354519
@@ -271,7 +271,7 @@ offices:
     - infra-octavam-epiphani-domini
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-gospel-antiphon: antiphon.tria-sunt-m-nera-qu-obtul-runt-magi-d-mino-aurum-261ac7e365
       matins-reading-4: reading.de-serm-ne-sancti-august-ni-ep-scopi-c5be20b7a5
@@ -295,7 +295,7 @@ offices:
     - infra-octavam-epiphani-domini
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-gospel-antiphon: antiphon.v-dimus-stellam-eius-in-ori-nte-et-v-nimus-cum-m-777e4e24c2
       matins-reading-4: reading.sermo-sancti-le-nis-pap-e57792489a
@@ -319,7 +319,7 @@ offices:
     - infra-octavam-epiphani-domini
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-gospel-antiphon: antiphon.omnes-nati-nes-v-nient-a-longe-port-ntes-m-nera-3ef935c293
       matins-reading-4: reading.sermo-sancti-m-ximi-ep-scopi-f7c02f0442
@@ -344,7 +344,7 @@ offices:
     - die-baptismatis-domini-no-secunda-vespera
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-gospel-antiphon: antiphon.v-nient-ad-te-qui-detrah-bant-tibi-et-ador-bunt-ee3f1eec83
       matins-reading-4: reading.sermo-sancti-fulg-ntii-ep-scopi-60a45c0a9c
@@ -360,7 +360,7 @@ offices:
   01-11cc:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.hyginus-atheni-nsis-philosopho-patre-cum-iam-rom-0c520f4ea2
       matins-reading-5: reading.inst-tuit-tiam-ne-absque-celebrati-ne-miss-templ-b180fc553d
@@ -378,7 +378,7 @@ offices:
     - infra-octavam-epiphani-domini
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       lauds-chapter: chapter.isa-60-1-37de214994
       lauds-gospel-antiphon: antiphon.manif-ste-magnum-est-piet-tis-sacram-ntum-quod-m-513ccabaf5
@@ -405,7 +405,7 @@ offices:
     - lectio1-tempora
     values:
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       collect: collect.vota-qu-sumus-d-mine-supplic-ntis-p-puli-c-l-sti-c676238cb5
       lauds-chapter: chapter.rom-12-1-729d9b8fdb
@@ -437,7 +437,7 @@ offices:
     values:
       comkey: '20'
       doxology: Epi
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       collect: collect.deus-cuius-unig-nitus-in-subst-ntia-nostr-carnis-8d079dd203
       matins-reading-4: reading.sermo-sancti-greg-rii-nazianz-ni-4e066ec5fd
@@ -459,7 +459,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-1617
     - 12-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.hil-rius-in-aquit-nia-n-bili-g-nere-natus-doctr-28d560bd8f
       matins-reading-4: reading.hil-rius-in-aquit-nia-n-bili-g-nere-natus-doctr-a65cd6906e
@@ -476,7 +476,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.concede-qu-sumus-omn-potens-deus-ut-ad-meli-rem-091bfb1e7a
       matins-reading-3-abbreviated: reading.felix-nolanus-presbyter-cum-in-idola-vehementius-21c329f004
@@ -488,7 +488,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       matins-reading-3-abbreviated: reading.paulus-eremit-rum-auctor-et-mag-ster-apud-inferi-a30a5113ca
       matins-reading-4: reading.paulus-eremit-rum-auctor-et-magister-apud-inferi-111b427de9
@@ -504,7 +504,7 @@ offices:
       value: 1.1
     flags:
     - rubrica-monastica-12-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       lauds-gospel-antiphon: antiphon.simil-bo-eum-viro-sapi-nti-qui-dific-vit-domum-s-c19998bcb4
       lauds-versicle: versicle.text-3c241b111f
@@ -514,7 +514,7 @@ offices:
   01-16:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       collect: collect.preces-p-puli-tui-qu-sumus-d-mine-clem-nter-ex-u-1725f64b65
       matins-reading-3-abbreviated: reading.marc-llus-rom-nus-a-const-ntio-et-gal-rio-usque-fa3de1c5be
@@ -531,7 +531,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       matins-reading-3-abbreviated: reading.ant-nius-g-ptius-cum-ingr-ssus-eccl-siam-ex-evan-8694e4fff9
       matins-reading-4: reading.antonius-gyptius-nob-libus-et-christi-nis-par-nt-217411325f
@@ -545,7 +545,7 @@ offices:
     flags:
     - 9-lectiones
     - sub-unica-concl
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-to-petro-ap-stolo-tuo-coll-tis-cl-vi-1c8e864a1c
       lauds-gospel-antiphon: antiphon.quodc-mque-lig-veris-super-terram-erit-lig-tum-e-19298a747f
@@ -577,7 +577,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-t-prisc-v-b956c88673
       matins-reading-3-abbreviated: reading.prisca-nobilis-virgo-romana-tr-decim-annos-nata-5aa1357261
@@ -586,7 +586,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.ex-udi-d-mine-p-pulum-tuum-cum-sanct-rum-tu-rum-5d3d053726
       matins-reading-3-abbreviated: reading.marius-persa-nobili-loco-natus-cum-martha-c-niug-5e86140067
@@ -595,7 +595,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C3b
+    common: commons/c3b
     slots:
       matins-reading-4: reading.telesphorus-nati-ne-gr-cus-p-tria-thuriensis-in-72ca71a6ee
       matins-reading-5: reading.edixisse-quoque-ne-sacerd-tes-a-p-pulo-arguerent-f68861b098
@@ -607,7 +607,7 @@ offices:
       value: 1.1
     flags:
     - rubrica-tridentina-9-lectiones
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.deus-qui-ad-illustr-ndam-eccl-siam-tuam-be-tum-c-f4aeb97273
       matins-reading-4: reading.canutus-quartus-suenonis-esthritii-danorum-regis-01cd765e5e
@@ -623,7 +623,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.infirmit-tem-nostram-r-spice-omn-potens-deus-et-86b91940cc
       matins-reading-3-abbreviated: reading.fabi-nus-rom-nus-a-maxim-no-usque-ad-d-cium-rege-546d5de035
@@ -644,7 +644,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '147'
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-inf-rma-mundi-lig-6bc189b8a7
       lauds-chapter: chapter.sir-51-1-3-c46e757ad0
@@ -673,7 +673,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.ad-sto-d-mine-supplicati-nibus-nostris-ut-qui-ex-cedf2bc456
       matins-reading-3-abbreviated: reading.vinc-ntius-osc-in-hisp-nia-citeri-re-natus-a-pri-76af6c21e6
@@ -688,7 +688,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-raym-ndum-p-nit-nti-sacram-nti-i-ecb48cec65
       matins-reading-3-abbreviated: reading.raym-ndus-barcinon-nsis-ex-n-bili-fam-lia-de-p-a-9853c3b37a
@@ -708,7 +708,7 @@ offices:
     - ad-missam-sub-unica-conclusione
     values:
       prefatio: Maria=Desponsatióne
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.fam-lis-tuis-qu-sumus-d-mine-c-lestis-gr-ti-munu-0245a7428a
       daytime-collect: collect.fam-lis-tuis-qu-sumus-d-mine-c-lestis-gr-ti-munu-2729183b2d
@@ -742,7 +742,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       matins-reading-3-abbreviated: reading.emerenti-na-virgo-romana-collactanea-be-t-agneti-4ba2b6ef7f
       title: note.s-emerentian-virgini-et-martyris-e074a6657d
@@ -752,7 +752,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-3-abbreviated: reading.tim-theus-lystris-in-lyca-nia-natus-ex-patre-gen-cac2a01999
       matins-reading-4: reading.tim-theus-lystris-in-lyca-nia-natus-ex-patre-gen-f0e7867171
@@ -767,7 +767,7 @@ offices:
     - 9-lectiones
     values:
       psalm5vespera: '116'
-    common: Sancti/06-30
+    common: sanctoral/06-30
     slots:
       collect: collect.deus-qui-univ-rsum-mundum-be-ti-pauli-ap-stoli-p-12ae763113
       lauds-chapter: chapter.act-9-1-2-ef123bb39f
@@ -799,7 +799,7 @@ offices:
     flags:
     - sub-unica-concl
     - psalmi-dominica
-    common: Sancti/01-25
+    common: sanctoral/01-25
     slots:
       matins-reading-1: reading.de-actibus-apostol-rum-a8cf026814
       matins-reading-2: reading.act-9-6-9-e96094c5a3
@@ -813,7 +813,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-a7bf2dfaf0
       matins-reading-5: reading.de-expositione-sancti-ambr-sii-ep-scopi-in-psalm-b47e0f09bc
@@ -829,7 +829,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.eccl-siam-tuam-qu-sumus-d-mine-gr-tia-c-l-stis-a-ea0a5936e8
       matins-reading-3-abbreviated: reading.io-nnes-antioch-nus-propter-ureum-eloqu-nti-flum-bb431b3010
@@ -846,7 +846,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.vitali-nus-bee985f762
       matins-reading-5: reading.nulli-lab-ri-11932b471b
@@ -859,7 +859,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-in-tu-carit-tis-ex-mplum-ad-fid-lium-re-96bc438e2a
       matins-reading-3-abbreviated: reading.petrus-nol-scus-rec-udi-prope-carcas-nam-in-g-ll-fa75936044
@@ -873,7 +873,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.agatho-nati-ne-s-culus-ex-doctissimo-ac-sanct-ss-0d7a3d3248
       matins-reading-5: reading.his-pr-missis-leg-tos-suos-et-conc-lii-rom-ni-mi-41bfe3b10a
@@ -885,7 +885,7 @@ offices:
       value: 1.1
     flags:
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       collect: collect.deus-qui-nos-nnua-be-t-agn-tis-v-rginis-et-m-rty-bafd2b321f
       lauds-gospel-antiphon: antiphon.ecce-quod-concup-vi-iam-v-deo-quod-sper-vi-iam-t-74f621c8c5
@@ -899,7 +899,7 @@ offices:
     - mtv
     - 9-lectiones
     - rubrica-tridentina-in-1-nocturno-lectiones-ex-commune-1-loco
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-ad-anim-rum-sal-tem-be-tum-franc-scum-c-7b68aaa67b
       matins-reading-3-abbreviated: reading.franc-scus-in-ppido-sal-sio-unde-fam-li-cogn-men-1d11b6bbb0
@@ -910,7 +910,7 @@ offices:
   01-30:
     flags:
     - 9-lectiones
-    common: Commune/C6
+    common: commons/c6
     slots:
       lauds-hymn: hymn.tu-nat-le-solum-pr-tege-tu-bon-947b31bcfc
       matins-hymn: hymn.mart-n-c-lebri-pl-udite-n-mini-9d6b82d22a
@@ -926,7 +926,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       matins-reading-4: reading.felix-quartus-samnitis-adb64a8d0c
       matins-reading-5: reading.porro-felix-92bc8b80d1
@@ -938,7 +938,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-io-nnem-confess-rem-tuum-adoles-46b80ae9aa
       matins-reading-3-abbreviated: reading.io-nnes-bosco-h-mili-loco-natus-post-rumn-sam-in-a4d95a8553
@@ -955,7 +955,7 @@ offices:
       value: 3.01
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-3-abbreviated: reading.ign-tius-antioch-post-petrum-sec-nda-successi-ne-c12bba9a3f
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-524eaed18b
@@ -974,7 +974,7 @@ offices:
     - festum-domini
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.omn-potens-sempit-rne-deus-maiest-tem-tuam-s-ppl-bf4f5dd8d6
       lauds-chapter: chapter.mal-3-1-67eefc2f54
@@ -1014,7 +1014,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       matins-reading-3-abbreviated: reading.bl-sius-seb-ste-in-arm-nia-cum-virt-tum-laude-fl-7cedc189a4
       title: note.s-blasii-episcopi-et-martyris-d35edd8de7
@@ -1025,7 +1025,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.dion-sius-ex-monacho-post-be-tum-xystum-sec-ndum-633668ad4c
       matins-reading-5: reading.sermo-sancti-i-annis-chrys-stomi-e891127240
@@ -1038,7 +1038,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-in-eccl-sia-tua-nova-semper-inst-uras-e-f91f249992
       matins-reading-3-abbreviated: reading.andr-am-flor-nti-ex-n-bili-corsin-rum-fam-lia-na-dcba1ac3b1
@@ -1057,7 +1057,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '147'
-    common: Commune/C6
+    common: commons/c6
     slots:
       lauds-chapter: chapter.sir-51-1-3-c46e757ad0
       lauds-gospel-antiphon: antiphon.pagan-rum-multit-do-f-giens-ad-sep-lcrum-v-rgini-694d8c7584
@@ -1087,7 +1087,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       collect: collect.deus-qui-inter-primos-iap-ni-m-rtyres-be-tum-phi-e75c9d0b93
       matins-reading-4: reading.phil-ppus-de-las-casas-sive-a-iesu-m-xici-hisp-n-99d219930e
@@ -1104,7 +1104,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-tum-titum-confess-rem-tuum-atque-pon-2e6bb18540
       matins-reading-3-abbreviated: reading.titus-cret-nsium-ep-scopus-qui-inter-disc-pulos-1e00a72cac
@@ -1121,7 +1121,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-be-tam-hyacintham-v-rginem-tuam-iugis-m-75ea881e1e
       matins-reading-4: reading.hyac-ntha-n-bilis-virgo-rom-na-marci-ant-nii-de-685054ba25
@@ -1132,7 +1132,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       matins-reading-3-abbreviated: reading.dor-thea-virgo-ex-c-sar-a-cappadoci-propter-chri-b59369789e
       title: note.s-dorothe-virginis-et-martyris-cf862eb777
@@ -1143,7 +1143,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       matins-reading-3-abbreviated: reading.romu-ldus-rav-nn-s-rgio-patre-n-bili-g-nere-natu-a9b37c0d81
       matins-reading-4: reading.romu-ldus-rav-nn-s-rgio-patre-n-bili-g-nere-natu-89a4569c56
@@ -1160,7 +1160,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-per-sanctum-io-nnem-rdinem-sanct-ssim-t-4269fdbfa6
       matins-reading-3-abbreviated: reading.io-nnes-de-matha-falc-ne-in-prov-ncia-piis-et-no-b77fb11464
@@ -1178,7 +1178,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-be-tum-cyr-llum-confess-rem-tuum-atque-c2256b6607
       matins-reading-3-abbreviated: reading.cyr-llus-alexandr-nus-the-phili-ep-scopi-alexand-262da8e48c
@@ -1193,7 +1193,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.zosimus-gr-cus-abrahami-f-lius-post-sanctum-inno-356fcb45b7
       matins-reading-5: reading.ecclesi-stic-discipl-n-tenac-ssimus-tuit-complur-c52baca1de
@@ -1203,7 +1203,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6
+    common: commons/c6
     slots:
       matins-reading-3-abbreviated: reading.apoll-nia-virgo-alexandr-na-sub-d-cio-imperat-re-624c41edd6
       title: note.s-apolloni-virginis-et-martyris-abd3cfa3ae
@@ -1213,7 +1213,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-nimam-be-t-v-rginis-tu-schol-stic-ad-os-2f4507a9d7
       matins-reading-3-abbreviated: reading.schol-stica-vener-bilis-patris-bened-cti-soror-u-f61db70243
@@ -1231,7 +1231,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-per-immacul-tam-v-rginis-concepti-nem-d-0f1d1fdb0c
       lauds-chapter: chapter.cant-2-13-14-7fcb635666
@@ -1276,7 +1276,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.d-mine-iesu-christe-qui-ad-recol-ndam-mem-riam-d-9652ccced3
       lauds-chapter: chapter.1-pet-4-13-2481a43597
@@ -1300,7 +1300,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.greg-rius-huius-n-minis-sec-ndus-nati-ne-rom-nus-8e1bea0b49
       matins-reading-5: reading.urbis-m-nia-contra-longobard-rum-excursiones-liq-718e308b3b
@@ -1313,7 +1313,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.greg-rius-huius-n-minis-sec-ndus-nati-ne-rom-nus-19506b43bb
       matins-reading-5: reading.le-nem-isaurum-sacr-rum-imaginum-destructorem-v-83daf619f0
@@ -1323,7 +1323,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-be-ti-val-5c3bbf2df8
       matins-reading-3-abbreviated: reading.sermo-sancti-august-ni-ep-scopi-695c03b4ee
@@ -1335,7 +1335,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.agatho-nati-ne-s-culus-ex-doctissimo-ac-sanct-ss-1aabef070f
       matins-reading-5: reading.acc-ptis-a-constant-no-pogonato-l-tteris-ad-donu-3dc4e98102
@@ -1345,7 +1345,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       matins-reading-3-abbreviated: reading.faustinus-et-iovita-fratres-nobiles-brixiani-in-3c2322e7ca
       title: note.ss-faustini-et-iovit-b944a2b543
@@ -1356,7 +1356,7 @@ offices:
     flags:
     - 9-lectiones
     - tempore-quadragesimae-in-1-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-greg-rii-contess-r-51701860f5
       matins-reading-4: reading.greg-rius-huius-n-minis-sec-ndus-nati-ne-rom-nus-9740c950ce
@@ -1367,7 +1367,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-3-abbreviated: reading.simeon-f-lius-cl-oph-post-iacobum-pr-ximus-ieros-655f7df77e
       title: note.s-simeonis-episcopi-et-martyris-3a9d538266
@@ -1384,7 +1384,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '131'
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-to-petro-ap-stolo-tuo-coll-tis-cl-vi-1c8e864a1c
       lauds-gospel-antiphon: antiphon.quodc-mque-lig-veris-super-terram-erit-lig-tum-e-19298a747f
@@ -1419,7 +1419,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.conc-de-nos-qu-sumus-omn-potens-deus-be-ti-petri-c91c54e128
       matins-reading-3-abbreviated: reading.petrus-rav-nn-ortus-utr-que-orb-tus-par-nte-dami-44c1dc0bbc
@@ -1439,7 +1439,7 @@ offices:
     - no-gloria
     values:
       laudes: '2'
-    common: Commune/C1v
+    common: commons/c1v
     slots:
       title: note.in-vigilia-s-matthi-ap-4528adbca0
   02-24:
@@ -1450,7 +1450,7 @@ offices:
     - antiphonas-horas
     - psalmi-dominica
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-be-tum-matth-am-apostol-rum-tu-rum-coll-300cd6f823
       matins-reading-1: reading.de-actibus-apostol-rum-2ae656c0b5
@@ -1469,7 +1469,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.felix-t-rtius-p-tria-rom-nus-natus-ex-nobilissim-0748efdcae
       matins-reading-5: reading.const-tuit-ut-eccl-si-ndnnisi-ab-ep-scopis-conse-7cecf70140
@@ -1481,7 +1481,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-inter-inn-mera-gr-ti-tua-dona-tiam-in-s-a105ebdd60
       matins-reading-4: reading.walb-rga-sancti-rich-rdi-angl-rum-regis-filia-sa-2eeb97c565
@@ -1494,7 +1494,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-famulam-tuam-margar-tam-de-perditi-nis-e785550dd9
       lauds-gospel-antiphon: antiphon.ut-cogn-vit-resipuit-ser-phici-rdinis-magdal-na-b6f751a594
@@ -1514,7 +1514,7 @@ offices:
     - in-1-nocturno-lectiones-ex-commune-in-2-loco
     - sed-rubrica-1960-loco-hujus-versus-dicitur
     - scriptura1960
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-gabri-lem-dulc-ssim-matris-tu-do-1a2f504461
       matins-reading-3-abbreviated: reading.g-briel-ass-sii-in-umbria-natus-et-franc-scus-ob-1808a7e481
@@ -1531,7 +1531,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.simplicius-tiburtinus-patre-castorio-proxime-pos-4acd62f5a3
       matins-reading-5: reading.damn-vit-terum-petrum-moggum-altertmi-alexandrin-d941363db7
@@ -1544,7 +1544,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-3-loco
-    common: Commune/C6a-1
+    common: commons/c6a-1
     slots:
       matins-reading-4: reading.cuneg-ndis-sigefr-di-palat-ni-f-lia-etsi-henr-co-3ed2739446
       matins-reading-5: reading.insignem-quoque-in-p-uperes-et-ecclesias-benefic-c645ce3fe5
@@ -1561,7 +1561,7 @@ offices:
     - in-1-nocturno-lectiones-ex-commune-in-2-loco
     - sed-rubrica-1960-loco-hujus-versus-dicitur
     - scriptura1960
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-inter-reg-les-del-cias-et-mundi-ill-ceb-c6632061e0
       matins-reading-3-abbreviated: reading.casim-rus-pol-ni-regis-f-lius-a-puer-tia-piet-te-4ad91355d7
@@ -1572,7 +1572,7 @@ offices:
   03-04cc:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-4: reading.lucius-rom-nus-patre-porphyrio-post-sancti-corn-2b299d745f
       matins-reading-5: reading.de-ep-stola-s-cypri-ni-ep-scopi-et-m-rtyris-et-c-c717d2fde7
@@ -1585,7 +1585,7 @@ offices:
     flags:
     - 9-lectiones
     - quarum-festum
-    common: Commune/C7b
+    common: commons/c7b
     slots:
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-beat-rum-pe-7857cfe4c0
       matins-reading-1: reading.de-libro-ecclesi-stici-54dad62329
@@ -1600,7 +1600,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.adesto-d-mine-supplicati-nibus-nostris-quas-in-b-67df25d2ea
       matins-reading-4: reading.fridol-nus-r-gio-in-b141202d6d
@@ -1614,7 +1614,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-1570-aut-rubrica-1617-in-1-nocturno-lectiones-ex-commune-1-loco
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-thom-confess-ris-t-2f7c08d936
       matins-reading-3-abbreviated: reading.thomas-aqu-nas-nob-libus-par-ntibus-natus-iam-ad-2bc0fbb846
@@ -1628,7 +1628,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-io-nnem-tuo-am-re-succ-nsum-inte-86982168cb
       matins-reading-3-abbreviated: reading.io-nnes-a-deo-cath-licis-pi-sque-par-ntibus-in-p-83b875f77e
@@ -1645,7 +1645,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-be-tam-franc-scam-f-mulam-tuam-inter-c-5449f89cc8
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-franc-78a2a1ac2b
@@ -1661,7 +1661,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-glori-sos-ae4ed6f6a2
       matins-reading-4: reading.licinio-imperatore-et-agricolao-pr-side-ad-sebas-e3f2485983
@@ -1677,7 +1677,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-nim-f-muli-tui-greg-rii-t-rn-beatit-din-920e36c8c9
       matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
@@ -1695,7 +1695,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       title: note.s-mathilidis-vidu-5d0e933e54
   03-15-clemensmariahofbaue:
@@ -1705,7 +1705,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-be-tum-clem-ntem-mar-am-miro-f-dei-r-bo-7f4d37cad8
       matins-reading-4: reading.clemens-mar-a-h-fbauer-tassov-tii-in-mor-via-nat-43a35c0e18
@@ -1718,7 +1718,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.zachar-as-nati-ne-gr-cus-patre-polychronio-greg-5897338e22
       matins-reading-5: reading.sed-et-tic-num-usque-prof-ctus-e-ndem-infiexit-u-4c0600b0be
@@ -1730,7 +1730,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-ad-pr-dic-ndam-g-ntibus-gl-riam-tuam-be-0431c9d914
       matins-reading-4: reading.patricius-hiberni-dictus-apostolus-calphurnio-pa-613f7275f6
@@ -1743,7 +1743,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.da-nobis-qu-sumus-omn-potens-deus-beato-cyr-llo-2af2406cf0
       matins-reading-4: reading.cyrillus-hierosolymitanus-a-teneris-annis-divina-2a405f4e11
@@ -1814,7 +1814,7 @@ offices:
     - 9-lectiones
     values:
       psalm5-vespera: '116'
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.sanct-ssim-genetr-cis-tu-sponsi-qu-sumus-d-mine-d7e3ed86c4
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-121f5749c7
@@ -1830,7 +1830,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       matins-reading-1: reading.de-libro-ecclesiastici-42fa06f481
       matins-reading-2: reading.sir-44-6-9-55a9e6e926
@@ -1849,7 +1849,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C4
+    common: commons/c4
     slots:
       title: note.s-turibius-of-mogroveio-bishop-590da1101f
   03-24:
@@ -1863,7 +1863,7 @@ offices:
     values:
       psalm5-vespera: '137'
       psalm5-vespera3: '116'
-    common: Sancti/05-08
+    common: sanctoral/05-08
     slots:
       collect: collect.deus-qui-inter-c-teros-angelos-ad-annunti-ndum-i-9b5bb2e2a4
       lauds-chapter: chapter.dan-9-21-22-3206ca28e2
@@ -1909,7 +1909,7 @@ offices:
     - ant-matutinum-12-special
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-de-be-t-mar-v-rginis-tero-verbum-tuum-a-8a0445ad3e
       lauds-chapter: chapter.isa-7-14-15-679e467ce3
@@ -1944,7 +1944,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       title: note.s-castuli-martyris-a00cb6a12e
   03-27:
@@ -1954,7 +1954,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-ad-cultum-sacr-ru-386e281696
       lauds-versicle: versicle.text-3c241b111f
@@ -1975,7 +1975,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-8fe98f47f1
       matins-reading-4: reading.rup-rtus-vangion-nsis-h-die-wormati-nsis-eccl-si-4db135f18d
@@ -1989,7 +1989,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-per-be-tum-io-nnem-fid-les-tuos-in-virt-e14cbe7ce5
       matins-reading-4: reading.ioannes-capistrani-in-pelignis-ortus-et-perusium-a46152cdfe
@@ -2005,7 +2005,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.xystus-huius-n-minis-t-rtius-p-tria-komanus-fili-f8dfde0497
       matins-reading-5: reading.is-a-be-to-petro-ap-stolo-sibi-per-visum-appar-n-f1a9f2c06e
@@ -2015,7 +2015,7 @@ offices:
     rank:
       name: Commemoratio
       value: 1.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-om-potens-cuius-s-rvitus-summa-et-plena-est-9886b2bc1c
   04-02:
@@ -2024,7 +2024,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-hum-lium-celsit-do-qui-be-tum-franc-scum-co-87ba2ff3c4
       matins-reading-3-abbreviated: reading.franc-scus-paul-in-cal-bria-natus-est-adul-scens-660e5f4843
@@ -2041,7 +2041,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       matins-reading-3-abbreviated: reading.isid-rus-nati-ne-hisp-nus-ex-nova-carth-gine-sev-f07f8529bd
       matins-reading-4: reading.isidorus-natione-hispanus-doctor-egregius-ex-nov-cbf8d6aee1
@@ -2057,7 +2057,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-vinc-ntii-confess-1b471d57f3
       matins-reading-3-abbreviated: reading.vinc-ntius-hon-sta-stirpe-val-nti-in-hisp-nia-na-0a3478126c
@@ -2071,7 +2071,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-in-be-ta-cresc-ntia-v-rgine-tua-christi-bb516e9687
       matins-reading-4: reading.mar-a-cresc-ntia-h-ss-piis-orta-par-ntibus-textr-b79bee93be
@@ -2084,7 +2084,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.xystus-huius-n-minis-primus-rom-nus-nati-ne-de-r-7f10ab605c
       matins-reading-5: reading.nonnulla-ad-discipl-nam-ecclesi-sticam-pertin-nt-43949c7966
@@ -2096,7 +2096,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.c-lest-nus-rom-nus-prisci-f-lius-05b6b539b5
       matins-reading-5: reading.cum-autem-nest-rius-constantinopolitanus-ep-scop-b6a0f8ff20
@@ -2108,7 +2108,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-be-tam-mar-am-de-caligine-viti-rum-erep-264279172d
       matins-reading-4: reading.mar-a-gypt-aca-qu-08d3209316
@@ -2128,7 +2128,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-5860913078
       matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-233c1b1a39
@@ -2145,7 +2145,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.iulius-rom-nus-rustici-f-lius-post-be-tum-marcum-92a2d795d4
       matins-reading-5: reading.const-nti-augusto-religiosissimo-principi-per-oc-b6c34b3f20
@@ -2160,7 +2160,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '115'
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-nos-be-ti-n-m-rtyris-tui-atque-pont-fic-df0537c667
       lauds-gospel-antiphon: antiphon.acceptam-be-tus-zeno-cor-nam-a-rege-paup-ribus-d-d381548a1f
@@ -2178,7 +2178,7 @@ offices:
     flags:
     - 9-lectiones
     - lectio1-quad
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-be-tum-hermeneg-ldum-m-rtyrem-tuum-c-l-c6366fdaea
       lauds-hymn: hymn.nullis-te-g-nitor-bland-tiis-trahit-b0f1ded555
@@ -2202,7 +2202,7 @@ offices:
     flags:
     - 9-lectiones
     - lectio1-quad
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-per-stult-tiam-crucis-emin-ntem-iesu-ch-fd6a20a1ae
       matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-53470a0a2b
@@ -2225,14 +2225,14 @@ offices:
     - psalmi-dominica
     - gloria
     - credo
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-dedicatione-ecclesi-metropolitan-286f3165eb
   04-14t:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-55d108fc68
       lauds-gospel-antiphon: antiphon.text-0752f4450e
@@ -2251,7 +2251,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.secunda-die-infra-octavam-dedicationis-ecclesi-m-8220463bc3
   04-16-benedictusjlabre:
@@ -2261,7 +2261,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-bened-ctum-ios-phum-confess-rem-76613f73ed
       matins-reading-4: reading.in-ppido-amettes-boloniensis-di-c-sis-in-g-llia-a965783c87
@@ -2282,13 +2282,13 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.tertia-die-infra-octavam-dedicationis-ecclesi-me-12410805ae
   04-17:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-3-abbreviated: reading.anic-tus-syrus-imperat-re-marco-aur-lio-anton-no-3663c3e738
       matins-reading-4: reading.anic-tus-syrus-imperat-re-marco-aur-lio-anton-no-3663c3e738
@@ -2309,7 +2309,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quarta-die-infra-octavam-dedicationis-ecclesi-me-2082ce1f73
   04-18oct:
@@ -2323,7 +2323,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quinta-die-infra-octavam-dedicationis-ecclesi-me-3c79b0ce52
   04-19-leoix:
@@ -2332,7 +2332,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-3-abbreviated: reading.leo-huius-n-minis-nonus-ex-n-bili-francorum-pros-7c460d6909
       matins-reading-4: reading.leo-huius-n-minis-nonus-ex-n-bili-francorum-pros-287590b5eb
@@ -2350,7 +2350,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.sexta-die-infra-octavam-dedicationis-ecclesi-met-b9ae1fefaa
   04-20oct:
@@ -2365,7 +2365,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.septima-die-infra-octavam-dedicationis-ecclesi-m-50ad4c9083
   04-21:
@@ -2374,7 +2374,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       matins-reading-3-abbreviated: reading.ans-lmus-aug-st-pr-t-ri-in-f-nibus-it-li-nob-lib-93ddd15a99
       matins-reading-4: reading.ans-lmus-august-pr-tori-in-finibus-it-li-gundulp-7e480efc49
@@ -2389,7 +2389,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-miseric-rdi-tu-i-nuam-fid-libus-pat-re-8a65ee2fa7
       lauds-gospel-antiphon: antiphon.ecce-vir-sanctus-in-op-ribus-suis-et-honor-bilis-dba6859fbf
@@ -2417,13 +2417,13 @@ offices:
     flags:
     - 9-lectiones
     - in-2-nocturno-lectiones-ex-c8-in-8-loco
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-octava-dedicationis-ecclesi-metropolitan-b68ae0cf0f
   04-22:
     flags:
     - 9-lectiones
-    common: Commune/C3b
+    common: commons/c3b
     slots:
       matins-reading-3-abbreviated: reading.soter-fundis-in-camp-nia-natus-sanc-vit-ne-sacr-cdcee99b45
       matins-reading-4: reading.soter-fundis-in-camp-nia-natus-sanc-vit-ne-sacr-790ec14d56
@@ -2434,7 +2434,7 @@ offices:
     flags:
     - sed-civitate-monacensi
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-nos-be-ti-ge-rgii-m-rtyris-tui-m-ritis-14e9d1f68f
       matins-reading-3-abbreviated: reading.the-martyr-george-beareth-among-the-easterns-the-6a9b204dbb
@@ -2448,7 +2448,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-be-tum-fid-lem-ser-phico-sp-ritus-ard-r-28d7b796ef
       lauds-gospel-antiphon: antiphon.lux-perp-tua-luc-bit-sanctis-tuis-d-mine-et-t-rn-df833b7b39
@@ -2471,7 +2471,7 @@ offices:
     - antiphonas-horas
     values:
       rubrica-1960-psalm5-vespera: '138'
-    common: Commune/C1a
+    common: commons/c1a
     slots:
       collect: collect.deus-qui-be-tum-marcum-evangel-stam-tuum-evang-l-7d20a8eb7e
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-3440730ff8
@@ -2481,7 +2481,7 @@ offices:
   04-26:
     flags:
     - 9-lectiones
-    common: Commune/C3b
+    common: commons/c3b
     slots:
       matins-reading-3-abbreviated: reading.cletus-rom-nus-imperat-ribus-vespasi-no-et-tito-41df687e2a
       matins-reading-4: reading.cletus-romanus-patre-miliano-de-regione-quinta-e-eb5ac33eff
@@ -2494,7 +2494,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-ad-tu-ndam-cath-licam-fidem-be-tum-petr-1187e6a9e1
       matins-reading-3-abbreviated: reading.petrus-can-sius-novi-magi-in-g-lria-natus-statim-d56e6bbafd
@@ -2511,7 +2511,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.anast-sius-rom-nus-f-lius-m-ximi-siricio-vita-fu-f4d1c62247
       matins-reading-5: reading.ad-eum-atque-venerium-mediolan-nsis-eccl-si-sace-5748bcf0d0
@@ -2524,7 +2524,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.d-mine-iesu-christe-qui-ad-myst-rium-crucis-pr-d-6e3cbb279d
       matins-reading-3-abbreviated: reading.paulus-a-cruce-uv-d-in-lig-ria-natus-a-primo-rat-3104edb139
@@ -2539,14 +2539,14 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       title: note.s-peter-chanel-priest-and-martyr-606b2f1d86
   04-28o:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       matins-reading-3-abbreviated: reading.vitalis-miles-sanctorum-gervasii-et-protasii-pat-996fb7b8c3
       title: note.s-vitalis-martyris-8dc8f577b3
@@ -2556,7 +2556,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-be-ti-petri-m-60243b738d
       matins-reading-3-abbreviated: reading.petrus-ver-n-par-ntibus-manich-rum-h-resi-inf-ct-0c42bf49fd
@@ -2570,7 +2570,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-t-cathar-n-9c4fc7dcfb
       matins-reading-3-abbreviated: reading.cathar-na-virgo-sen-nsis-piis-orta-par-ntibus-be-9157ff878a
@@ -2588,7 +2588,7 @@ offices:
     - antiphonas-horas
     values:
       stjamesrule: Jas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-nos-nnua-apostol-rum-tu-rum-phil-ppi-et-ae97c3d34e
       lauds-gospel-antiphon: antiphon.ego-sum-via-v-ritas-et-vita-nemo-venit-ad-patrem-d5d756a1c8
@@ -2716,7 +2716,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-5860913078
       matins-reading-3-abbreviated: reading.athan-sius-ep-scopus-alexandr-nus-cath-lic-relig-2445600b0c
@@ -2783,7 +2783,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-c245a69eb4
       title: note.ss-eventii-et-theoduli-martyrum-ac-iuvenalis-epi-fc8d63c8e9
@@ -2791,14 +2791,14 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C4
+    common: commons/c4
     slots:
       title: note.s-iuvenalis-episcopi-et-confessoris-9ec97f7141
   05-03-reduced:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-27dd01fd3e
       lauds-gospel-antiphon: antiphon.f-li-ier-salem-ven-te-et-vid-te-m-rtyres-cum-cor-cd01450083
@@ -2821,7 +2821,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-m-r-ntium-consol-tor-et-in-te-sper-ntium-sa-aa91e166e7
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-m-nic-51466b4be6
@@ -2839,7 +2839,7 @@ offices:
       value: 4.01
     flags:
     - 9-lectiones
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.deus-qui-nos-nnua-be-ti-flori-ni-m-rtyris-tui-gl-c17a74ee0e
       matins-reading-4: reading.flori-num-quem-adv-rsus-gnium-ini-rias-patr-num-729ec43954
@@ -2850,7 +2850,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-5860913078
       matins-reading-3-abbreviated: reading.godeh-rdus-hon-stis-nat-libus-apud-inf-rius-alta-3d00b52c06
@@ -2865,7 +2865,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-ad-conter-ndos-eccl-si-tu-hostes-et-ad-e425fb1174
       lauds-gospel-antiphon: antiphon.sac-rdos-et-p-ntifex-et-virt-tum-pifex-pastor-bo-f6aeb36f7f
@@ -2885,7 +2885,7 @@ offices:
     - 9-lectiones
     values:
       stjamesrule: Joannes|Apo
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-conspicis-quia-nos-undique-mala-nostra-dbc0370175
       matins-reading-1: reading.incipit-ep-stola-prima-be-ti-io-nnis-ap-stoli-1a800c5c9a
@@ -2906,7 +2906,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       collect: collect.deus-pro-cuius-hon-re-glori-sus-p-ntifex-stanisl-298bd862ca
       matins-reading-3-abbreviated: reading.stanisl-us-apud-crac-viam-n-bili-g-nere-natus-qu-512d85a0de
@@ -2920,7 +2920,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.bened-ctus-huius-n-minis-sec-ndus-romdnusgenere-563b61d7eb
       matins-reading-5: reading.hic-non-uno-dumt-xat-n-mine-verum-tiam-c-lestis-8b093c0eb5
@@ -2991,7 +2991,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       matins-reading-3-abbreviated: reading.greg-rius-nazianz-nus-n-bilis-c-ppadox-ob-singul-1c5d2633f3
       matins-reading-4: reading.greg-rius-nobilis-cappadox-ex-singulari-divin-ru-9cdfc07908
@@ -3010,7 +3010,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.sancti-anton-ni-d-mine-confess-ris-tui-atque-pon-d843ac37c7
       matins-reading-3-abbreviated: reading.anton-nus-flor-nti-hon-stis-par-ntibus-natus-ab-864ce8ed9b
@@ -3022,7 +3022,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-beat-rum-m-rt-b316a12fd5
       matins-reading-3-abbreviated: reading.gordianus-iudex-cum-ad-eum-ianuarius-presbyter-u-08e8f65346
@@ -3036,7 +3036,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-4: reading.alex-nder-rom-nus-ex-patre-alex-ndro-de-vico-cap-3a4c368c00
       matins-reading-5: reading.cum-gitur-multis-rom-ut-abiurata-falsa-religi-ne-71389ef4c4
@@ -3048,7 +3048,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-94e71ce99e
       matins-reading-3-abbreviated: reading.alexander-romanus-hadri-no-imperat-re-regens-ecc-534b89fefb
@@ -3059,7 +3059,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       matins-reading-4: reading.sigism-ndus-patre-suo-gunib-ldo-burgundi-rum-reg-2b5ad96069
       matins-reading-5: reading.quo-sc-lere-vix-patr-to-sera-ductus-p-nit-ntia-s-66d86770e3
@@ -3071,7 +3071,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.semper-nos-d-mine-m-rtyrum-tu-rum-n-rei-ach-llei-f108559995
       matins-reading-3-abbreviated: reading.n-reus-et-ach-lleus-fratres-eun-chi-fl-vi-domit-a4d1a659f9
@@ -3089,7 +3089,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-ad-err-rum-ins-dias-repell-ndas-et-apos-aaec707476
       matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
@@ -3109,7 +3109,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sancti-al-46641e9236
       title: note.s-alexandri-i-pap-et-martyris-2383107e99
@@ -3117,14 +3117,14 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Sancti/02-11
+    common: sanctoral/02-11
     slots:
       matins-reading-3-abbreviated: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-465d2ff7ad
   05-14:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-ti-bonif-t-04024fc34c
       matins-reading-3-abbreviated: reading.bonifatius-civis-romanus-quod-cum-agla-nobili-ma-90f85d1ecf
@@ -3135,7 +3135,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.pasch-lis-huius-n-minis-primus-b-duo-post-st-pha-d80d9f1943
       matins-reading-5: reading.a-puer-tia-in-lateranensis-eccl-si-patriarchio-s-06046cdcd6
@@ -3148,7 +3148,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-ad-christi-nam-p-uperum-eruditi-nem-et-1dbaacc14d
       matins-reading-3-abbreviated: reading.io-nnes-bapt-sta-de-la-salle-rhemis-claro-g-nere-0c59e7dd4e
@@ -3166,7 +3166,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.da-nobis-qu-sumus-mis-ricors-deus-be-to-isidoro-fcae5af989
       matins-reading-4: reading.isid-rus-agr-cola-prope-matr-tum-hisp-ni-urbem-i-6ddd242621
@@ -3182,7 +3182,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.aux-lium-tuum-nobis-d-mine-qu-sumus-plac-tus-imp-66231bccf6
       matins-reading-3-abbreviated: reading.ub-ldus-eug-bii-in-umbria-n-bili-g-nere-natus-a-99dbfa407c
@@ -3198,7 +3198,7 @@ offices:
     - 9-lectiones
     - antiphonas-horas
     - psalmi-dominica
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-ob-invictum-be-ti-io-nnis-sacramentale-9e1c8da085
       lauds-chapter: chapter.eccl-21-28-29-2fed55addf
@@ -3243,7 +3243,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-ob-invictum-beati-ioannis-sacramentale-dbcbc3031f
       matins-reading-3-abbreviated: reading.ioannes-nepomuci-bohemi-in-oppido-natus-unde-nep-8fe8f66710
@@ -3253,7 +3253,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-pasch-lem-confess-rem-tuum-mir-f-8bb047aa2b
       matins-reading-3-abbreviated: reading.pasch-lis-baylon-paup-ribus-pi-sque-par-ntibus-i-f037ba6954
@@ -3267,7 +3267,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-hunc-diem-be-ti-ven-ntii-m-rtyris-tui-t-1bc047948a
       lauds-hymn: hymn.dum-nocte-pulsa-l-cifer-27de75e107
@@ -3282,7 +3282,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C4
+    common: commons/c4
     slots:
       title: note.s-iohn-i-pope-and-martyr-18f33c386a
   05-19:
@@ -3291,7 +3291,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-be-tum-petrum-c-lest-num-ad-summi-ponti-210a103089
       matins-reading-3-abbreviated: reading.petrus-a-n-mine-quo-p-ntifex-est-appell-tus-c-le-9eb786c66d
@@ -3304,7 +3304,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       matins-reading-3-abbreviated: reading.pudentiana-virgo-pudentis-romani-filia-parentibu-0ed6d4cc49
       title: note.s-pudentian-virginis-5383007913
@@ -3314,7 +3314,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.d-mine-iesu-qui-be-to-bernard-no-confess-ri-tuo-c0585da974
       matins-reading-3-abbreviated: reading.bernard-nus-albiz-sca-n-bili-sen-nsi-fam-lia-ort-af7c3071f9
@@ -3329,7 +3329,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.fac-nos-d-mine-iesu-in-simplicit-te-et-innoc-nti-8376668da0
       matins-reading-4: reading.felix-a-cantal-cio-in-sab-nis-hum-libus-sed-piis-12410c822c
@@ -3343,14 +3343,14 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.s-christopher-magallanes-and-companions-martyrs-05812c1231
   05-22n:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-sanct-rit-tantam-gr-tiam-conf-rre-dign-f0e152d6c3
       title: note.s-rit-de-cascia-c361fa019c
@@ -3360,7 +3360,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-io-nnem-baptistam-confessorem-t-c8785f1519
       matins-reading-4: reading.ioannes-baptista-de-rossi-veiturii-in-liguria-ho-90d8344442
@@ -3373,7 +3373,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctura-ioannera-bapt-stam-confess-rem-acb468a95b
       matins-reading-4: reading.io-nnes-bapt-sta-de-rossi-veit-rii-in-lig-ria-ho-28585a0424
@@ -3386,7 +3386,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-io-nnem-baptistam-confessorem-t-09accb3ece
       matins-reading-4: reading.ioannes-baptista-de-rossi-veiturii-in-liguria-ho-18080dd13b
@@ -3400,7 +3400,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-ad-defensi-nem-fd7f43de41
       lauds-gospel-antiphon: antiphon.ad-te-o-sancta-dei-g-nitrix-clamavimus-et-per-te-539ae22ce6
@@ -3422,7 +3422,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-in-te-sper-ntium-fortit-do-qui-be-tum-greg-1be06d4478
       matins-reading-3-abbreviated: reading.greg-rius-papa-s-ptimus-ntea-hildebr-ndus-su-n-i-d4e0bb3853
@@ -3435,7 +3435,7 @@ offices:
     flags:
     - 9-lectiones
     - gloria
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-ti-urb-ni-838acd628b
       matins-reading-3-abbreviated: reading.urbanus-romanus-alexandro-sev-ro-imperat-re-doct-97222d5b6d
@@ -3450,7 +3450,7 @@ offices:
     flags:
     - 9-lectiones
     - in-1-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-phil-ppum-confess-rem-tuum-sanct-dad0b51bbf
       matins-reading-3-abbreviated: reading.phil-ppus-n-rius-piis-honest-sque-par-ntibus-flo-847091b090
@@ -3461,7 +3461,7 @@ offices:
   05-26o:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.eleutherius-nicopoli-in-gr-cia-natus-aniceti-pon-4fbccfb33a
       matins-reading-4: reading.eleutherius-nati-ne-gr-cus-abundio-patre-natus-n-6ac526c78c
@@ -3476,7 +3476,7 @@ offices:
     - mtv
     - 9-lectiones
     - rubrica-tridentina-in-1-nocturno-lectiones-ex-commune-in-1-loco
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-bed-confess-ris-tu-87e60a950e
       matins-reading-3-abbreviated: reading.beda-pr-sbyter-girvi-in-brit-nni-et-sc-ti-f-nibu-8816a7aec3
@@ -3493,7 +3493,7 @@ offices:
     flags:
     - 9-lectiones
     - gloria
-    common: Commune/C3b
+    common: commons/c3b
     slots:
       matins-reading-4: reading.ioannes-etruscus-iustino-seniore-imperatore-rexi-de85f47e0a
       matins-reading-5: reading.text-807c78627c
@@ -3502,7 +3502,7 @@ offices:
   05-27o:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-2: reading.ioannes-etruscus-iustino-seniore-imperatore-rexi-13df140330
       matins-reading-3: reading.rebus-cum-imperatore-compositis-in-italiam-redii-a9f9e0b120
@@ -3518,7 +3518,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.deus-qui-angl-rum-gentes-pr-dicati-ne-et-mir-cul-51d7025f8c
       matins-reading-3-abbreviated: reading.august-nus-rom-in-lateran-nsi-c-n-bio-m-nachus-a-361cd5bee3
@@ -3532,7 +3532,7 @@ offices:
   05-29:
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-virginit-tis-am-tor-qui-be-tam-mar-am-magda-1b4fe6d279
       matins-reading-3-abbreviated: reading.mar-a-magdal-na-flor-nti-ill-stri-pazzi-rum-g-ne-2201195fd5
@@ -3547,7 +3547,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       matins-reading-4: reading.bonifacius-huius-n-minis-quartus-io-nnis-f-lius-dbe199cea3
       matins-reading-5: reading.statim-paternam-domum-in-monast-rium-er-xit-et-f-096271b3ec
@@ -3557,7 +3557,7 @@ offices:
     flags:
     - 9-lectiones
     - gloria
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.felix-rom-nus-patre-const-ntio-aureli-no-imperat-a55e904797
       matins-reading-4: reading.felix-rom-nus-patre-const-ntio-aureli-no-imperat-a55e904797
@@ -3573,7 +3573,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-be-to-confessori-tuo-ferdin-ndo-pr-li-r-38c7f253a4
       matins-reading-4: reading.ferdin-ndus-t-rtius-cast-lla-et-legionis-rex-cui-03b73344bc
@@ -3591,7 +3591,7 @@ offices:
     - rubrica-196-psalmi-dominica
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.conc-de-nobis-qu-sumus-d-mine-ut-qui-solemnit-te-7a8a0b5352
       lauds-chapter: chapter.sir-24-5-24-7-473fc63a6f
@@ -3639,7 +3639,7 @@ offices:
     values:
       doxology: Nat
       prefatio: Maria
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.d-mine-iesu-christe-noster-apud-patrem-medi-tor-49465a7afb
       lauds-chapter: chapter.is-55-1-0a8c055056
@@ -3686,7 +3686,7 @@ offices:
       value: 1.1
     flags:
     - 1-et-2-lectiones
-    common: Commune/C6a-1
+    common: commons/c6a-1
     slots:
       matins-reading-2: reading.petronilla-sancti-petri-filia-virgo-forma-corpor-1b1f09788a
       matins-reading-3: reading.petronilla-autem-intelligens-virginitati-sue-qua-b62cbfcf48
@@ -3703,7 +3703,7 @@ offices:
     - credo
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-dil-cti-f-lii-tui-genetr-cem-nobis-matr-4492a0d0ba
       lauds-chapter: chapter.text-c6b1acfb1c
@@ -3745,7 +3745,7 @@ offices:
     flags:
     - 9-lectiones
     - nocomm1960
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-novum-per-be-tam-angelam-sacr-rum-v-rgi-4b65b3a963
       matins-reading-3-abbreviated: reading.angela-mer-cia-piis-orta-par-ntibus-a-prima-t-te-956c4ec359
@@ -3757,7 +3757,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-qui-nos-nnua-beat-rum-m-rtyrum-tu-rum-marce-d731708fd2
       lauds-gospel-antiphon: antiphon.cum-palma-ad-regna-perven-runt-sancti-cor-nas-de-787e302323
@@ -3768,7 +3768,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2
+    common: commons/c2
     slots:
       lauds-gospel-antiphon: antiphon.text-0752f4450e
       lauds-versicle: versicle.text-50af94c170
@@ -3781,7 +3781,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.be-to-mart-no-huius-n-minis-primo-tyrannica-h-r-e27e569d55
       matins-reading-5: reading.ubi-vero-pr-d-ctus-christi-martyr-a-r-mnis-et-in-3aee12c6ce
@@ -3793,7 +3793,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-qui-nos-nnua-beat-rum-m-rtyrum-tu-rum-marce-289247056a
       title: note.ss-marcellini-petri-atque-erasmi-episcopi-martyr-a3797f51e0
@@ -3801,7 +3801,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-univ-rsum-mund-724e1ab502
       title: note.ss-caroli-lwanga-matthi-murumba-et-sociorum-mart-4f0d4c7d87
@@ -3811,7 +3811,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-franc-scum-novi-rdinis-institut-dd2ac824c0
       matins-reading-3-abbreviated: reading.franc-scus-dictus-ntea-asc-nius-ex-n-bili-fam-li-71c68c86fd
@@ -3827,7 +3827,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-multit-dinem-popul-rum-be-ti-bonif-tii-af188b0261
       matins-reading-3-abbreviated: reading.bonif-tius-ntea-winfr-dus-appell-tus-apud-anglos-6a5835e551
@@ -3848,7 +3848,7 @@ offices:
     - 12-lectiones
     - rubrica-altovadensis
     - psalmi-dominica
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-tum-norb-rtum-confess-rem-tuum-atque-67caaf152f
       matins-reading-3-abbreviated: reading.norb-rtus-nobil-ssimis-par-ntibus-natus-adol-sce-f9d31da150
@@ -3860,7 +3860,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.fac-nos-qu-sumus-d-mine-sanct-rum-m-rtyrum-tu-ru-dcc6f20949
       lauds-gospel-antiphon: antiphon.vestri-cap-lli-c-pitis-omnes-numer-ti-sunt-nol-t-02c8188435
@@ -3871,7 +3871,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.fid-les-tuos-qu-sumus-d-mine-pio-favore-pros-que-66171ea5d7
       title: note.b-ann-mari-taigi-matrisfamilias-028d69414a
@@ -3881,7 +3881,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-be-tam-margar-tam-reg-nam-ex-mia-in-p-u-c6d8d28441
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-margar-7d0ec6bc8c
@@ -3898,7 +3898,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-nos-be-ti-b-rnab-ap-stoli-tui-m-ritis-e-97cc75f5da
       matins-reading-1: reading.de-actibus-apostol-rum-3d96340303
@@ -3919,7 +3919,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-auctor-pacis-et-am-tor-carit-tis-qui-be-tum-2b2c85a83e
       matins-reading-3-abbreviated: reading.io-nnem-sahag-ni-in-hisp-nia-n-bili-g-nere-natum-2def263860
@@ -3934,7 +3934,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.leo-huius-n-minis-t-rtius-rom-nus-ex-patre-astip-6a35838670
       matins-reading-5: reading.talem-se-in-pontific-tu-exh-buit-qualem-se-ante-a6f93fb020
@@ -3944,7 +3944,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.sanct-rum-m-rtyrum-tu-rum-bas-lidis-cyr-ni-n-bor-86fe31f837
       matins-reading-3-abbreviated: reading.basilides-cyrinus-nabor-et-nazarius-romani-milit-27b0a5cb51
@@ -3956,7 +3956,7 @@ offices:
     flags:
     - sed-rubrica-195-aut-rubrica-196
     - 9-lectiones
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.eccl-siam-tuam-deus-be-ti-ant-nii-confess-ris-tu-bf16c5135f
       matins-reading-3-abbreviated: reading.ant-nius-ulyssip-ne-in-lusit-nia-hon-stis-pi-squ-902f37862a
@@ -3975,7 +3975,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-5860913078
       matins-reading-3-abbreviated: reading.basil-us-n-bilis-c-ppadox-ath-nis-una-cum-greg-r-a00d0986cc
@@ -3991,7 +3991,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.da-eccl-si-tu-qu-sumus-d-mine-sanctis-mart-ribus-8ae97fff7f
       matins-reading-3-abbreviated: reading.vitus-admodum-puer-inscio-patre-baptizatus-est-q-5d7957b844
@@ -4006,7 +4006,7 @@ offices:
     - dioecesis-monacensis-psalmi-dominica
     - dioecesis-monacensis-antiphonas-horas
     - dioecesis-monacensis-credo
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-nos-be-ti-benn-nis-pont-ficis-confessi-08c57cc053
       matins-reading-4: reading.benno-hildesima-sax-ni-civit-te-ill-stribus-geni-436c6b6bf2
@@ -4019,7 +4019,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-tum-greg-rium-confess-rem-tuum-atque-c3f7bf6dc9
       matins-reading-3-abbreviated: reading.greg-rius-barbad-cus-ven-tiis-perant-qua-fam-lia-2c4e7ef886
@@ -4030,7 +4030,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-ephr-m-confess-ris-ae7afee918
       matins-reading-3-abbreviated: reading.ephr-m-g-nere-syrus-nisib-no-patre-natus-est-adh-19150e7563
@@ -4044,7 +4044,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-1c803e4ee5
       matins-reading-3-abbreviated: reading.marcus-et-marcellianus-fratres-romani-propter-ch-8b8e820c99
@@ -4055,7 +4055,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-be-tam-iuli-nam-v-rginem-tuam-extr-mo-m-9eb6445e85
       matins-hymn: hymn.c-l-stis-agni-n-ptias-1dc6346552
@@ -4069,14 +4069,14 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       matins-reading-3-abbreviated: reading.gervasius-et-protasius-vitalis-et-val-ri-f-lii-q-c80807b3fb
       title: note.ss-gervasii-et-protasii-martyrum-152ad03923
   06-20:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.silverius-campanus-post-agapitum-proxime-pontife-b29a10a137
       matins-reading-4: reading.silverius-campanus-post-agapitum-proxime-pontife-e3b1e2c35b
@@ -4089,7 +4089,7 @@ offices:
   06-20t:
     flags:
     - 1-et-2-lectiones
-    common: Sancti/06-20
+    common: sanctoral/06-20
     slots:
       matins-reading-2: reading.silverius-campanus-post-agapitum-proxime-pontife-f29e6313d6
       matins-reading-3-abbreviated: reading.silverius-campanus-post-agapitum-proxime-pontife-b29a10a137
@@ -4099,7 +4099,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.c-l-stium-don-rum-distrib-tor-deus-qui-in-ang-li-4fda912429
       matins-reading-3-abbreviated: reading.alo-sius-ferdin-ndi-gonz-g-castelli-nis-stiver-r-2165e05fab
@@ -4116,7 +4116,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-mnia-pro-te-in-hoc-s-culo-relinqu-ntibu-ccbdb8439f
       lauds-gospel-antiphon: antiphon.euge-serve-bone-et-fid-lis-quia-in-pauca-fu-sti-0375081b63
@@ -4133,7 +4133,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       title: note.ss-achatii-et-sociorum-martyrum-6c6f2f76dd
   06-22-innocentiusv:
@@ -4142,7 +4142,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-be-tum-innoc-ntium-confess-rem-atque-po-9b8bd7db73
       matins-reading-4: reading.inocentius-ntea-petrus-de-tarentasia-dictus-anno-684ec91aa2
@@ -4153,7 +4153,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.ss-iohn-fisher-and-thomas-more-martyrs-84a9706e47
   06-22t:
@@ -4162,7 +4162,7 @@ offices:
       value: 1.1
     flags:
     - 1-et-2-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-2: reading.paul-nus-nol-ep-scopus-erud-tus-st-diis-humanit-7e272aae72
       matins-reading-3: reading.gitur-in-africam-prof-ctus-d-mino-sui-qui-regis-224cec44c4
@@ -4191,7 +4191,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-ad-sal-tem-ao-imarum-quas-tuo-preti-so-a52d6a03e0
       matins-reading-1: reading.de-ep-stola-prima-be-ti-io-nnis-ap-stoli-f4c89792ea
@@ -4266,7 +4266,7 @@ offices:
     - sed-rubrica-cisterciensis
     - 12-lectiones
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       collect: collect.deus-qui-infirmit-ti-nostr-ad-ter-ndam-sal-tis-v-23d20ed4aa
       matins-reading-3-abbreviated: reading.guli-lmus-nob-libus-par-ntibus-verc-llis-natus-v-2ed4621ff9
@@ -4283,7 +4283,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-be-tum-gallicanum-m-rtyrem-ad-tui-cogni-827cbd67c7
       matins-reading-4: reading.gallicanus-vir-consul-ris-et-triumph-li-hon-re-c-ccf199761d
@@ -4300,7 +4300,7 @@ offices:
     flags:
     - 9-lectiones
     - no-prima-vespera
-    common: Sancti/06-24
+    common: sanctoral/06-24
     slots:
       matins-reading-4: reading.sermo-sanctii-august-ni-ep-scopi-3a76c5602d
       matins-reading-5: reading.magnus-gitur-io-nnes-cuius-magnit-dini-tiam-salv-f9ca334568
@@ -4319,7 +4319,7 @@ offices:
     - 12-lectiones
     - scriptura1960
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.qu-sumus-omn-potens-deus-ut-nos-gemin-ta-l-t-tia-45f3f712c5
       lauds-gospel-antiphon: antiphon.isti-sunt-sancti-qui-pro-christi-am-re-minas-h-m-79519b2f17
@@ -4343,7 +4343,7 @@ offices:
     rank:
       name: Semiduplex
       value: 2.0
-    common: Sancti/06-24
+    common: sanctoral/06-24
     slots:
       title: note.die-tertia-infra-octavam-nativitatis-s-ioannis-b-bf043766c2
   06-27-protomartyrumsre:
@@ -4353,7 +4353,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-qui-rom-n-f-dei-primordia-copioso-m-rtyrum-a35f8d5acc
       title: note.in-commemoratione-ss-protomartyrum-sanct-roman-e-ce149c041b
@@ -4364,7 +4364,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-1570-aut-rubrica-cisterciensis-no-prima-vespera
-    common: sancti/06-24
+    common: sanctoral/sancti-06-24
     slots:
       matins-reading-4: reading.sermo-sancti-basil-i-magni-fe2acc3990
       matins-reading-5: reading.igitur-vox-d-mini-super-aquas-io-nnes-est-super-de69efbb44
@@ -4379,7 +4379,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-be-to-iren-o-m-rtyri-tuo-atque-pont-fic-0bfb502c07
       matins-reading-3-abbreviated: reading.iren-us-non-longe-ab-urbe-smyrna-natus-iam-inde-29acd0db11
@@ -4411,7 +4411,7 @@ offices:
     rank:
       name: Semiduplex
       value: 2.0
-    common: Sancti/06-24
+    common: sanctoral/06-24
     slots:
       title: note.die-quinta-infra-octavam-nativitatis-s-ioannis-b-9f246a4ff8
   06-28t:
@@ -4430,7 +4430,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '138'
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-chapter: chapter.act-12-1-3-92dda87bcb
@@ -4465,7 +4465,7 @@ offices:
     rank:
       name: Semiduplex
       value: 2.0
-    common: Sancti/06-24
+    common: sanctoral/06-24
     slots:
       title: note.die-sexta-infra-octavam-nativitatis-s-ioannis-ba-0ce3116d9d
   06-30:
@@ -4481,7 +4481,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '138'
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-multit-dinem-g-ntium-be-ti-pauli-ap-sto-b25c617471
       lauds-chapter: chapter.2-tim-4-7-8-237aa66e57
@@ -4528,14 +4528,14 @@ offices:
     - psalmi-dominica
     - gloria
     - credo
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-anniversario-dedicationis-ecclesi-cathedralis-119964a26a
   06-30n:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.first-martyrs-of-the-church-of-rome-ddb79d20dd
   06-30oct:
@@ -4544,14 +4544,14 @@ offices:
       value: 2.0
     flags:
     - no-secunda-vespera
-    common: Sancti/06-24
+    common: sanctoral/06-24
     slots:
       title: note.die-septima-infra-octavam-nativitatis-s-ioannis-8766ff0d73
   06-30octt:
     flags:
     - 9-lectiones
     - no-prima-vespera
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4617,7 +4617,7 @@ offices:
     flags:
     - 9-lectiones
     - no-prima-vespera
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4635,7 +4635,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.secunda-die-infra-octavam-dedicationis-ecclesi-c-146a3d23a2
   07-01t:
@@ -4644,7 +4644,7 @@ offices:
       value: 3.1
     flags:
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       matins-reading-4: reading.sermo-sancti-maximi-ep-scopi-0b96e8e323
       matins-reading-5: reading.hic-est-ille-quem-inspirante-deo-pr-scius-annunt-8ecce22e15
@@ -4664,7 +4664,7 @@ offices:
     - psalmi-dominica
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.f-mulis-tuis-qu-sumus-d-mine-c-l-stis-gr-ti-munu-c67d44e33a
       lauds-gospel-antiphon: antiphon.cum-aud-sset-salutati-nem-mar-el-sabeth-exclam-v-c2f64d80db
@@ -4698,7 +4698,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-c5b-in-1-loco
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-4: reading.ex-surio-tom-4-019243292c
       matins-reading-5: reading.evenit-autem-non-sine-dispositi-ne-divina-ut-ad-a8b64b39a9
@@ -4710,13 +4710,13 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.deus-qui-nos-sanct-rum-m-rtyrum-tu-rum-proc-ssi-67b2f18a56
       matins-reading-3-abbreviated: reading.quo-t-mpore-petrus-et-paulus-teneb-ntur-sub-cust-3c3ef7c72b
       title: note.ss-processi-et-martiniani-martyrum-69935c9473
   07-02o:
-    common: Sancti/07-02
+    common: sanctoral/07-02
     slots:
       lauds-psalmody: psalmody.visitatio-glori-s-v-rginis-mar-ex-s-mine-abrah-o-ee4bbf7c53
       matins-reading-4: reading.sermo-venerabilis-bed-presbyteri-2f03358fe0
@@ -4738,7 +4738,7 @@ offices:
   07-02oct:
     flags:
     - 9-lectiones
-    common: Sancti/06-29
+    common: sanctoral/06-29
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-b5c5f616cb
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4756,7 +4756,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.tertia-die-infra-octavam-dedicationis-ecclesi-ca-4e09e871e0
   07-03:
@@ -4766,7 +4766,7 @@ offices:
     flags:
     - 9-lectiones
     - commemoratio3
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-be-tum-le-nem-pont-ficem-sanct-rum-tu-r-439b5f2dd2
       matins-reading-3-abbreviated: reading.leo-sec-ndus-s-culus-hum-nis-et-div-nis-l-tteris-a63250b2f8
@@ -4780,7 +4780,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.paulus-huius-n-minis-primus-nati-ne-rom-nus-patr-d120ddf757
       matins-reading-5: reading.constant-num-copronymum-l-tteris-per-legatum-ad-69d380f88e
@@ -4789,7 +4789,7 @@ offices:
   07-03oct:
     flags:
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4813,11 +4813,11 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quarta-die-infra-octavam-dedicationis-ecclesi-ca-19b3414f13
   07-04-omnisssresp:
-    common: Sancti/aliquibus locis/07Dpost-OmnisSSRESP
+    common: sanctoral/aliquibus-locis-07dpost-omnisssresp
   07-04-udalricus:
     rank:
       name: Duplex
@@ -4828,7 +4828,7 @@ offices:
     - dioecesis-augustanae-psalmi-dominica
     - dioecesis-augustanae-antiphonas-horas
     - dioecesis-augustanae-credo
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-nos-be-ti-udalr-ci-confess-ris-tui-atqu-0f62296b08
       matins-reading-4: reading.ex-gestis-qu-habentur-in-ecclesia-augustana-a56d2a81c1
@@ -4838,7 +4838,7 @@ offices:
   07-04oct:
     flags:
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4862,7 +4862,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quinta-die-infra-octavam-dedicationis-ecclesi-ca-db7398b914
   07-05:
@@ -4871,7 +4871,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.fac-nos-d-mine-deus-superemin-ntem-iesu-christi-450c783584
       matins-reading-3-abbreviated: reading.ant-nius-mar-a-zaccar-a-crem-n-n-bili-g-nere-nat-add1db7e5c
@@ -4886,7 +4886,7 @@ offices:
     flags:
     - 9-lectiones
     - no-secunda-vespera
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-hodi-rnam-diem-apostol-rum-tu-rum-petri-9b4fed0be7
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4907,7 +4907,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.sexta-die-infra-octavam-dedicationis-ecclesi-cat-407496e8c8
   07-06:
@@ -4916,7 +4916,7 @@ offices:
       value: 4.1
     flags:
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-cuius-d-xtera-be-tum-petrum-ambul-ntem-in-f-83edbf6671
       lauds-gospel-antiphon: antiphon.gloriosi-principes-terr-quomodo-in-vita-sua-dile-e627e6341e
@@ -4934,14 +4934,14 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C6
+    common: commons/c6
     slots:
       title: note.s-mar-goretti-virginis-et-martyris-eda6455951
   07-06o:
     flags:
     - 9-lectiones
     - in-1-nocturno-lectiones-ex-commune-in-1-loco
-    common: Commune/C1
+    common: commons/c1
     slots:
       matins-reading-3: reading.1-cor-4-10-21-03c1b91b12
   07-06octded:
@@ -4956,7 +4956,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.septima-die-infra-octavam-dedicationis-ecclesi-c-1f65f1d293
   07-07:
@@ -4965,7 +4965,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-slav-ni-gentes-pe-760550fee1
       lauds-gospel-antiphon: antiphon.in-sanctit-te-et-iust-tia-servi-runt-d-mino-mnib-4d4e5adcc0
@@ -4989,7 +4989,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-be-tum-bened-ctum-pont-ficem-benedictio-76d5b44b67
       matins-reading-4: reading.bened-ctus-und-cimus-ex-hon-sta-boccassinorum-fa-3e85d1072d
@@ -5004,7 +5004,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-c5b-in-1-loco
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.deus-qui-glori-sum-pont-ficem-tuum-willib-ldum-a-411ad8e25f
       matins-reading-4: reading.ex-hod-porico-willibaldino-2cdd96cc72
@@ -5018,13 +5018,13 @@ offices:
     flags:
     - 9-lectiones
     - in-2-nocturno-lectiones-ex-c8-in-8-loco
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-octava-dedicationis-ecclesi-cathedralis-a072720a7c
   07-08:
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.clement-ssime-deus-qui-be-tam-el-sabeth-reg-nam-79ca82a609
       lauds-gospel-antiphon: antiphon.tu-gl-ria-ier-salem-tu-l-t-tia-isra-l-tu-honorif-1a42b8f6f2
@@ -5044,7 +5044,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       matins-reading-3-abbreviated: reading.chili-nus-n-bilis-scotus-in-monast-rio-m-ximam-s-16256eba85
       title: note.ss-chiliani-episcopi-et-sociorum-martyrum-ae93688d88
@@ -5054,7 +5054,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-be-ti-eugenii-confes-7a63f1a247
       matins-reading-4: reading.eugenius-huius-n-minis-t-rtius-bern-rdus-ntea-di-57e08c2e5b
@@ -5067,7 +5067,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       collect: collect.omn-potens-mitissime-deus-qui-be-tum-hadri-num-c-2b927e1585
       title: note.s-hadriani-iii-pap-et-confessoris-c4ccb3eabf
@@ -5075,7 +5075,7 @@ offices:
     flags:
     - 9-lectiones
     - in-1-nocturno-lectiones-ex-commune-in-1-loco
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       lauds-psalmody: psalmody.dum-esset-rex-in-acc-bitu-suo-nardus-mea-dedit-o-474524baab
       matins-nocturn-1-versicle: versicle.mult-fili-congregaverunt-divitias-8c16e5d5bb
@@ -5097,7 +5097,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C11
+    common: commons/c11
     slots:
       title: note.prodigiorum-beat-mari-virginis-fb567a729f
   07-09-veronicaj:
@@ -5106,7 +5106,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.d-mine-iesu-christe-qui-be-tam-veronicam-v-rgine-4d2ce488cb
       matins-reading-4: reading.veronica-de-iulianis-ntea-ursula-dicta-mercatell-2428c878a5
@@ -5117,7 +5117,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.s-augustine-zhao-rong-and-companions-martyrs-285b7b3107
   07-10:
@@ -5127,7 +5127,7 @@ offices:
     flags:
     - 9-lectiones
     - quorum-festum
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-glori-sos-835984a785
       matins-reading-3-abbreviated: reading.septem-fratres-f-lii-sanct-felicit-tis-rom-in-pe-90ced2c31d
@@ -5141,7 +5141,7 @@ offices:
   07-11:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.pius-huius-n-minis-primus-aquilei-nsis-ruffini-f-a7500cfd9e
       matins-reading-4: reading.pius-huius-n-minis-primus-aquilei-nsis-ruffini-f-07dc7c631e
@@ -5158,7 +5158,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-numquam-no-lectio93
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       matins-reading-3-abbreviated: reading.io-nnes-gualb-rtus-flor-nti-n-bili-g-nere-ortus-604c9f0fcd
       matins-reading-4: reading.io-nnes-gualbertus-flor-nti-nobili-genere-ortus-aab174fefc
@@ -5172,7 +5172,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.pr-sta-qu-sumus-d-mine-ut-sicut-nos-sanct-rum-m-a6d6fa87f8
       matins-reading-3-abbreviated: reading.sermo-sancti-august-ni-ep-scopi-18993b43b5
@@ -5180,7 +5180,7 @@ offices:
   07-13:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-3-abbreviated: reading.anacl-tus-atheni-nsis-trai-no-imperat-re-rexit-e-557691463e
       matins-reading-4: reading.anacl-tus-nati-ne-gr-cus-atheni-nsis-patre-antio-c35fd41c4e
@@ -5200,7 +5200,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.bonavent-ra-balneor-gii-in-etr-ria-natus-adol-sc-8d07f5ee9e
       matins-reading-4: reading.bonavent-ra-balneor-gii-in-etr-ria-natus-a-leth-ee2e89b365
@@ -5218,7 +5218,7 @@ offices:
     - mtv
     - sed-dioecesis-ratisbonensis
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-hodi-rna-die-be-tum-henr-cum-confess-re-bde4273ba6
       matins-reading-3-abbreviated: reading.henr-cus-cognom-nto-pius-e-duce-bav-ri-rex-germ-00d00139be
@@ -5233,7 +5233,7 @@ offices:
     flags:
     - 9-lectiones
     - antiphonas-horas
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.ex-udi-nos-deus-salut-ris-noster-ut-sicut-de-be-ae25aff6a6
       matins-reading-4: reading.ros-lia-virgo-orta-pan-rmi-660f2a222b
@@ -5248,7 +5248,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-beat-ssim-semper-v-rginis-et-genetr-cis-9d283b5b0e
       lauds-gospel-antiphon: antiphon.caput-tuum-ut-carm-lus-et-com-c-pitis-tui-sicut-78a6636eeb
@@ -5267,7 +5267,7 @@ offices:
     - no-secunda-vesperas
     values:
       doxology: Nat
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.deus-qui-beat-ssim-semper-v-rginis-et-genetr-cis-9d283b5b0e
       lauds-gospel-antiphon: antiphon.caput-tuum-ut-carm-lus-et-com-c-pitis-tui-sicut-78a6636eeb
@@ -5276,7 +5276,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-al-xium-confess-rem-tuum-in-mund-037db28245
       lauds-gospel-antiphon: antiphon.iste-cogn-vit-iust-tiam-et-vidit-mirab-lia-magna-a970af4cfa
@@ -5294,7 +5294,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.d-mine-iesu-qui-be-tam-irmeng-rdem-v-rginem-tuam-02ebbedb7b
       matins-reading-4: reading.irmengardis-nob-libus-par-ntibus-rege-ludov-co-t-b3434db99d
@@ -5307,7 +5307,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.leo-huius-n-minis-quartus-rom-nus-rod-lphi-f-liu-4c615019f4
       matins-reading-5: reading.paucis-ante-ill-us-96f4fc8417
@@ -5322,7 +5322,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-cam-llum-ad-anim-rum-in-extr-mo-4c8f6e0871
       matins-reading-1: reading.sir-34-16-20-b6ebe0a1cc
@@ -5344,7 +5344,7 @@ offices:
       value: 1.1
     flags:
     - 1-et-2-lectiones
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       matins-reading-2: reading.symphorosa-tiburtina-getulli-martyris-uxor-ex-eo-0b9492fa2b
       matins-reading-3: reading.postridie-eius-diei-qui-fuit-decimoquinto-calend-4e1314dcca
@@ -5357,7 +5357,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-ad-evangeliz-ndum-paup-ribus-et-ecclesi-09e7925cae
       matins-reading-3-abbreviated: reading.vinc-ntius-a-paulo-p-dii-in-aquit-nia-natus-iam-e6441a7f91
@@ -5374,7 +5374,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.leo-huius-n-minis-quartus-rom-nus-rod-lphi-f-liu-cca99db534
       matins-reading-5: reading.mir-culis-sact-ssimam-0a6e92f8b7
@@ -5386,7 +5386,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.symmachus-g-nere-sardus-f7a1473b45
       matins-reading-5: reading.in-commemor-tis-synodis-76c99684e4
@@ -5402,7 +5402,7 @@ offices:
     - sed-rubrica-cisterciensis
     - 3-lectiones
     - m-t-v
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-misericordi-rum-pater-per-m-rita-et-interce-15159a2faf
       matins-reading-3-abbreviated: reading.hier-nymus-e-gente-patr-cia-mili-na-ven-tiis-ort-b88e933afe
@@ -5417,14 +5417,14 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6
+    common: commons/c6
     slots:
       title: note.s-margarit-virginis-et-martyris-71633479aa
   07-21:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       matins-reading-3-abbreviated: reading.prax-des-virgo-romana-pudenti-n-v-rginis-soror-m-096ec547f0
       title: note.s-praxedis-virginis-f7ff85bfdd
@@ -5434,7 +5434,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       collect: collect.deus-qui-be-tum-bened-ctum-pont-ficem-benedictio-76d5b44b67
       matins-reading-4: reading.bened-ctus-und-cimus-ex-hon-sta-boccassinorum-fa-118865ef94
@@ -5445,7 +5445,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-ad-rdua-qu-que-pro-n-minis-tui-gl-ria-e-c2428029c9
       matins-reading-3-abbreviated: reading.laur-ntius-brund-sii-in-ap-lia-natus-adul-scens-9a39a38aec
@@ -5457,7 +5457,7 @@ offices:
     flags:
     - 9-lectiones
     - scriptura1960
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.be-t-mar-magdal-n-qu-sumus-d-mine-suffr-giis-adi-b35f6816ac
       lauds-gospel-antiphon: antiphon.mar-a-unxit-pedes-iesu-et-ext-rsit-cap-llis-suis-590852599c
@@ -5486,7 +5486,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-ad-rdua-quaque-pro-n-minis-tui-gl-ria-e-2989dedaf9
       matins-reading-3-abbreviated: reading.laurentius-piis-et-hon-stis-parentibus-brund-sii-3851df8144
@@ -5497,7 +5497,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       collect: collect.deus-fid-lium-remuner-tor-anim-rum-qui-hunc-diem-81d100a363
       matins-reading-3-abbreviated: reading.apollin-ris-cum-pr-ncipe-apostol-rum-antioch-a-r-796a2f231b
@@ -5512,7 +5512,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-be-ti-n-confess-r-e2abfaf24a
       title: note.s-liborii-episcopi-et-confessoris-28d4fe0f09
@@ -5520,14 +5520,14 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       title: note.s-christin-virginis-et-martyris-1e504c80ec
   07-24n:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       title: note.s-sharbel-makhluf-hermit-dfc597a2c5
   07-25:
@@ -5538,7 +5538,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.esto-d-mine-plebi-tu-sanctific-tor-et-custos-ut-73118a2b05
       matins-reading-4: reading.iac-bus-zebed-i-f-lius-io-nnis-ap-stoli-germ-nus-70fced5b1e
@@ -5552,7 +5552,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       title: note.s-christophori-martyris-b3dbed29b4
   07-26:
@@ -5561,7 +5561,7 @@ offices:
       value: 5.1
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-be-t-ann-gr-tiam-conf-rre-dign-tus-es-u-751c3a9078
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-ann-d6799b6f12
@@ -5573,14 +5573,14 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       title: note.s-ann-matris-b-m-v-b19ac1a176
   07-27:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       matins-reading-3-abbreviated: reading.pant-leon-nicomedi-nsis-nobilis-m-dicus-ab-hermo-bf8b53088d
       title: note.s-pantaleonis-martyris-f0d341f8f3
@@ -5596,7 +5596,7 @@ offices:
     - psalmi-dominica
     - gloria
     - credo
-    common: Commune/C8
+    common: commons/c8
     slots:
       matins-reading-1: reading.de-libro-t-rtio-regum-a35fb97643
       matins-reading-2: reading.de-libro-t-rtio-regum-b6da65cdb0
@@ -5609,7 +5609,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.sanct-rum-tu-rum-nos-d-mine-vict-ris-innoc-ntii-806d343d49
       matins-reading-3-abbreviated: reading.naz-rius-a-be-to-lino-papa-baptiz-tus-cum-in-g-l-72fb0d06fc
@@ -5628,7 +5628,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.secunda-die-infra-octavam-dedicationis-ecclesi-c-146a3d23a2
   07-29:
@@ -5637,7 +5637,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       matins-reading-3-abbreviated: reading.martha-nob-libus-et-copi-sis-par-ntibus-nata-sed-cd5b53c09b
       matins-reading-4: reading.martha-nob-libus-et-copiosis-par-ntibus-nata-sed-7ee3783e3f
@@ -5653,7 +5653,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.felix-sec-ndus-rom-nus-patre-anastasio-ex-rom-n-cac2c1cbbd
       matins-reading-5: reading.sermo-sancti-august-ni-ep-scopi-cae4fb55bd
@@ -5663,7 +5663,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.pr-sta-qu-sumus-d-mine-ut-sicut-p-pulus-christi-c9693ef84a
       title: note.ss-simplicii-faustini-et-beatricis-martyrum-4d8e92304a
@@ -5678,14 +5678,14 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.tertia-die-infra-octavam-dedicationis-ecclesi-ca-4e09e871e0
   07-30:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-qui-sanctis-tuis-abdon-et-sennen-ad-hanc-gl-d72f1fc7f7
       matins-reading-3-abbreviated: reading.abdon-et-sennen-pers-decio-imperat-re-accus-ti-q-7c4626b3bb
@@ -5696,7 +5696,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.d-mine-iesu-christo-qui-be-to-pont-fici-urb-no-p-564aabdfbb
       title: note.b-urbani-ii-pap-et-confessoris-76a0a9d2c3
@@ -5711,7 +5711,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quarta-die-infra-octavam-dedicationis-ecclesi-ca-19b3414f13
   07-31:
@@ -5722,7 +5722,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-ad-mai-rem-tui-n-minis-gl-riam-propag-n-32cc6d9cfa
       matins-reading-3-abbreviated: reading.ign-tius-nati-ne-hisp-nus-loy-l-in-cant-bria-nat-fdf1d89d35
@@ -5737,7 +5737,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5
+    common: commons/c5
     slots:
       lauds-gospel-antiphon: antiphon.simil-bo-eum-viro-sapi-nti-qui-dific-vit-domum-s-c19998bcb4
       lauds-versicle: versicle.text-3c241b111f
@@ -5754,7 +5754,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quinta-die-infra-octavam-dedicationis-ecclesi-ca-db7398b914
   07-dp:
@@ -5776,7 +5776,7 @@ offices:
       prefatio: Apostolis
       psalm5-vespera: '116'
       psalm5-vespera3: '131'
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-p-pulis-tuis-indulg-ntia-consulis-et-am-d0f2132566
       lauds-chapter: chapter.hebr-13-6c5543e3e2
@@ -5814,7 +5814,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-be-tum-petrum-ap-stolum-a-v-nculis-abso-28c40aea54
       lauds-chapter: chapter.act-12-1-3-92dda87bcb
@@ -5852,7 +5852,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.frat-rna-nos-d-mine-m-rtyrum-tu-rum-cor-na-l-t-f-c6ce4cf1ea
       matins-reading-3-abbreviated: reading.sermo-sancti-greg-rio-nazianz-ni-823ca8fa27
@@ -5868,7 +5868,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.sexta-die-infra-octavam-dedicationis-ecclesi-cat-407496e8c8
   08-02:
@@ -5878,7 +5878,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-per-be-tum-alf-nsum-mar-am-confess-rem-8bab1fa2c8
       matins-reading-3-abbreviated: reading.alf-nsus-mar-a-de-lig-rio-ne-poli-nob-libus-par-f821f29795
@@ -5893,7 +5893,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C4
+    common: commons/c4
     slots:
       title: note.s-eusebius-of-vercelli-bishop-c26062a46b
   08-02o:
@@ -5902,7 +5902,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-3-abbreviated: reading.stephanus-romanus-pontific-tum-gessit-valeri-no-edc5181c1d
       matins-reading-4: reading.text-807c78627c
@@ -5921,7 +5921,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.septima-die-infra-octavam-dedicationis-ecclesi-c-1f65f1d293
   08-03:
@@ -5930,7 +5930,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Sancti/12-26
+    common: sanctoral/12-26
     slots:
       collect: collect.da-nobis-qu-sumus-d-mine-imit-ri-quod-c-limus-ut-055796a488
       lauds-chapter: chapter.act-6-8-968501f125
@@ -5970,7 +5970,7 @@ offices:
     flags:
     - 9-lectiones
     - in-2-nocturno-lectiones-ex-c8-in-8-loco
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-octava-dedicationis-ecclesi-cathedralis-a072720a7c
   08-04:
@@ -5981,7 +5981,7 @@ offices:
     - mtv
     - 9-lectiones
     - nisi-rubrica-1963-psalmi-dominica
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-dom-nici-confess-r-8ec8e5bbc6
       matins-reading-3-abbreviated: reading.dom-nicus-calar-g-in-hisp-nia-ex-n-bili-gusman-r-1a615bae4c
@@ -5999,7 +5999,7 @@ offices:
     - sed-rubrica-196-omittitur
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       matins-reading-3-abbreviated: reading.lib-rio-summo-pont-fice-io-nnes-patr-cius-rom-nu-359d0a22c2
       matins-reading-4: reading.liberio-summo-pontifice-io-nnes-patricius-romanu-d0eddd2b08
@@ -6065,7 +6065,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.deus-qui-nos-conc-dis-sanct-rum-m-rtyrum-tu-rum-6aa5446582
       matins-reading-3-abbreviated: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-969a9e9ce3
@@ -6079,7 +6079,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-to-caiet-no-confess-ri-tuo-apost-lic-a738dfe5d8
       lauds-gospel-antiphon: antiphon.nol-te-soll-citi-esse-dic-ntes-quid-manduc-bimus-0b8820c103
@@ -6095,7 +6095,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C7
+    common: commons/c7
     slots:
       collect: collect.conc-de-mis-ricors-deus-ut-be-ta-afra-qu-mart-ri-7919276ed9
       matins-reading-3-abbreviated: reading.afra-idol-rum-c-ltui-d-dita-et-in-flagiti-rum-c-cc4052bff9
@@ -6107,7 +6107,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.s-sixti-ii-pap-et-sociorum-martyrum-1159e85986
   08-07o:
@@ -6116,7 +6116,7 @@ offices:
       value: 1.1
     flags:
     - gloria
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       collect: collect.deus-tu-rum-gl-ria-sacerd-tum-pr-sta-qu-sumus-ut-2f851b4a57
       matins-reading-3-abbreviated: reading.donatus-par-ntibus-propter-iesu-christi-fidem-in-a941713ffc
@@ -6133,7 +6133,7 @@ offices:
       doxology: Epi
       prefatio: Nat
       suffr: Maria3
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       title: note.secunda-die-infra-octavam-transfigurationis-domi-d3097349ee
   08-08:
@@ -6142,7 +6142,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       matins-reading-3-abbreviated: reading.cyr-acus-di-conus-cum-sis-nio-largo-et-smar-gdo-81e1e5851d
       matins-reading-4: reading.cyr-acus-diaconus-cum-sisinio-largo-et-smaragdo-09a2b42009
@@ -6158,7 +6158,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.deus-qui-ad-eccl-si-tu-libert-tem-et-dec-rem-pro-16a3e46b59
       matins-reading-4: reading.altm-nnus-in-sax-ni-parte-qua-p-stea-westph-li-n-7939de83ae
@@ -6176,7 +6176,7 @@ offices:
       doxology: Epi
       prefatio: Nat
       suffr: Maria3
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       title: note.tertia-die-infra-octavam-transfigurationis-domin-4afeb9a558
   08-09:
@@ -6187,7 +6187,7 @@ offices:
     - mtv
     - sed-rubrica-1960
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-sanctum-io-nne-5a3f298c77
       matins-reading-3-abbreviated: reading.io-nnes-mar-a-vianney-in-pago-dardilly-di-c-sis-8313d6dfba
@@ -6206,7 +6206,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '115'
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-be-tum-em-gdium-m-rtyrem-tuum-atque-pon-758143fe59
       lauds-gospel-antiphon: antiphon.o-virum-ineff-bilem-per-quem-nobis-ant-qua-prod-499399b017
@@ -6241,14 +6241,14 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       title: note.s-romani-martyris-3269d0d5f0
   08-09n:
     rank:
       name: Duplex optional
       value: 3.0
-    common: Commune/C6
+    common: commons/c6
     slots:
       matins-reading-3-abbreviated: reading.ex-libro-s-cypri-ni-ep-scopi-et-m-rtyris-de-disc-0ffb843e75
       title: note.s-ter-si-benedict-a-cruce-edith-stein-virginis-e-ed2af0e829
@@ -6263,7 +6263,7 @@ offices:
       doxology: Epi
       prefatio: Nat
       suffr: Maria3
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       title: note.quarta-die-infra-octavam-transfigurationis-domin-4eab3a208e
   08-09t:
@@ -6294,7 +6294,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '115'
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.da-nobis-qu-sumus-omn-potens-deus-viti-rum-nostr-1b5e7b2f72
       lauds-chapter: chapter.2-cor-9-6-e8ececefce
@@ -6348,7 +6348,7 @@ offices:
       value: 1.1
     flags:
     - quorum-festum
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.sanct-rum-m-rtyrum-tu-rum-tib-rtii-et-sus-nn-nos-5d8aa34d8e
       matins-reading-3-abbreviated: reading.tiburtius-chrom-tii-pr-fecti-urbis-f-lius-sancti-9cd8a26d4d
@@ -6361,7 +6361,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       matins-reading-4: reading.iust-nus-pr-sbyter-et-martyr-t-mpore-valeri-ni-n-1bcc959dee
       matins-reading-5: reading.quo-t-mpore-tryph-nia-d-cii-quondam-uxor-occ-lta-b5b8636cda
@@ -6374,7 +6374,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.propitiare-qu-sumus-d-mine-nobis-fam-lis-tuis-pe-998d3858b3
       matins-reading-4: reading.sancti-valent-ni-ep-scopi-corpus-cum-liquot-anno-38d8aa3c7e
@@ -6387,7 +6387,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-4: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-969a9e9ce3
       matins-reading-5: reading.sermo-sancti-august-ni-ep-scopi-25541bf70c
@@ -6400,7 +6400,7 @@ offices:
     flags:
     - 9-lectiones
     - no-prima-vespera
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-d932cd2a18
       matins-reading-5: reading.quis-nolit-ad-horam-uri-laurentii-igne-ut-ternum-81f3504910
@@ -6424,7 +6424,7 @@ offices:
       doxology: Epi
       prefatio: Nat
       suffr: Maria3
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       title: note.sexta-die-infra-octavam-transfigurationis-domini-e6679bfd1c
   08-12:
@@ -6433,7 +6433,7 @@ offices:
       value: 3.0
     flags:
     - nisi-rubrica-1570-9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       matins-reading-3-abbreviated: reading.clara-n-bilis-virgo-ass-sii-nata-in-umbria-sanct-f47b80458b
       matins-reading-4: reading.clara-n-bilis-virgo-ass-sii-nata-in-umbria-sanct-3c65397681
@@ -6446,7 +6446,7 @@ offices:
       value: 2.0
     flags:
     - 9-lectiones
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       title: note.tertia-die-infra-octavam-s-laurentii-martyris-9b26178457
   08-12octt:
@@ -6461,14 +6461,14 @@ offices:
       doxology: Epi
       prefatio: Nat
       suffr: Maria3
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       title: note.septima-die-infra-octavam-transfigurationis-domi-3aef4f7e4e
   08-13:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-beat-rum-m-rtyrum-b69c2ff75d
       matins-reading-3-abbreviated: reading.hippolytus-a-sancto-laur-ntio-baptizatus-domi-su-b4a29a1d81
@@ -6477,7 +6477,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-ut-be-torum-m-rty-38cd7a7cf8
       title: note.ss-ponti-ni-pap-et-hipp-lyti-m-rtyrum-fc4c2939de
@@ -6487,7 +6487,7 @@ offices:
       value: 2.0
     flags:
     - 9-lectiones
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       matins-reading-4: reading.ex-libro-officiorum-s-ambr-sii-ep-scopi-dd4a4b0212
       matins-reading-5: reading.lib-2-cap-28-post-medium-c7bf8a1c99
@@ -6514,7 +6514,7 @@ offices:
       doxology: Epi
       prefatio: Nat
       psalm5-vespera: '116'
-    common: Sancti/08-06
+    common: sanctoral/08-06
     slots:
       matins-reading-4: reading.sermo-sancti-cyr-lli-ep-scopi-alexandr-ni-227b8363ed
       matins-reading-5: reading.ceterum-pr-ter-admir-bile-et-arc-num-christi-gld-652c2cd1ee
@@ -6545,7 +6545,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.hormisdas-nati-ne-campanus-iusto-patre-frusinate-f31e9ec796
       matins-reading-5: reading.ubi-supr-mum-pont-ficis-munus-iniit-totum-fere-c-3252f62804
@@ -6555,7 +6555,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-nos-be-ti-eus-bii-confess-ris-tui-nnua-08653ea1cd
       title: note.s-eusebii-confessoris-390ccc7ae5
@@ -6563,7 +6563,7 @@ offices:
     rank:
       name: Duplex memorial
       value: 3.0
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       title: note.s-maximilian-mary-kolbe-priest-and-martyr-227c71b8c1
   08-14oct:
@@ -6572,7 +6572,7 @@ offices:
       value: 2.0
     flags:
     - 9-lectiones
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       matins-reading-4: reading.sermo-sancti-maximi-ep-scopi-37eabbacbb
       matins-reading-5: reading.quem-venerabilis-xystus-roman-urbis-antistes-cum-5f56c4150e
@@ -6595,7 +6595,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-immacul-tam-v-rgi-722c2b9f09
       lauds-chapter: chapter.iudith-13-22-23-943ce494f6
@@ -6646,7 +6646,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.famul-rum-tu-rum-qu-sumus-d-mine-del-ctis-ign-sc-3a980b6fe6
       lauds-chapter: chapter.sir-24-11-12-333df18469
@@ -6689,7 +6689,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-pr-mnibus-sanctis-tuis-be-tum-i-achim-g-3be51acaec
       lauds-gospel-antiphon: antiphon.laud-mus-virum-glori-sum-in-generati-ne-sua-quia-b69d1be469
@@ -6710,7 +6710,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.p-pulum-tuum-qu-sumus-d-mine-continua-piet-te-cu-dcf357c577
       matins-reading-4: reading.rochus-in-monte-pessulano-natus-quanta-in-pr-xim-119fa049f3
@@ -6724,7 +6724,7 @@ offices:
     flags:
     - 9-lectiones
     - no-prima-vespera
-    common: Sancti/08-15
+    common: sanctoral/08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6747,7 +6747,7 @@ offices:
     flags:
     - 9-lectiones
     - no-secunda-vespera
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       title: note.septima-die-infra-octavam-s-laurentii-martyris-46c269bb80
   08-17:
@@ -6757,7 +6757,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       matins-reading-3-abbreviated: reading.hyac-nthus-pol-nus-nob-libus-et-christi-nis-par-954886fa50
       matins-reading-4: reading.hyac-nthus-pol-nus-nob-libus-et-christi-nis-par-e81668a510
@@ -6772,7 +6772,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: sancti/08-15
+    common: sanctoral/sancti-08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6784,7 +6784,7 @@ offices:
       value: 3.1
     flags:
     - 9-lectiones
-    common: Sancti/08-10
+    common: sanctoral/08-10
     slots:
       collect: collect.excita-domine-in-eccl-sia-tua-sp-ritum-cui-be-tu-7e05fc179e
       matins-reading-4: reading.ex-tractatu-sancti-august-ni-ep-scopi-in-io-nnem-669f17fcae
@@ -6798,7 +6798,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.l-t-tur-eccl-sia-tua-deus-be-ti-agap-ti-m-rtyris-918b81249e
       matins-reading-3-abbreviated: reading.agapitus-pr-nest-nus-quindecim-annos-natus-aurel-74f784c2f8
@@ -6811,7 +6811,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/08-15
+    common: sanctoral/08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6840,7 +6840,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-io-nnem-confess-rem-tuum-ad-cult-2bc12ac2f3
       matins-reading-3-abbreviated: reading.io-nnes-anno-mill-simo-sexcent-simo-primo-in-pag-8662b87d11
@@ -6854,7 +6854,7 @@ offices:
       value: 2.0
     flags:
     - 9-lectiones
-    common: sancti/08-15
+    common: sanctoral/sancti-08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6885,7 +6885,7 @@ offices:
     flags:
     - sed-rubrica-1570-aut-rubrica-1617
     - 9-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       matins-reading-3-abbreviated: reading.bern-rdus-font-nis-in-burg-ndia-hon-sto-loco-nat-b88ea1e647
       matins-reading-4: reading.bern-rdus-f-ntanis-in-burg-ndia-hon-sto-loco-nat-045077f967
@@ -6898,7 +6898,7 @@ offices:
   08-20bmv:
     flags:
     - 9-lectiones
-    common: sancti/08-15
+    common: sanctoral/sancti-08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6910,7 +6910,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-be-tam-io-nnam-cfdfc12d4d
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-io-nn-fe8c0c4845
@@ -6926,7 +6926,7 @@ offices:
     flags:
     - 9-lectiones
     - no-secunda-vespera
-    common: Sancti/08-15
+    common: sanctoral/08-15
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
@@ -6955,7 +6955,7 @@ offices:
     - credo
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-in-corde-be-t-mar-1a92f65ea7
       lauds-gospel-antiphon: antiphon.extollens-vocem-qu-dam-m-lier-de-turba-dixit-ill-7afed45bf9
@@ -6993,7 +6993,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.aux-lium-tuum-nobis-d-mine-qu-sumus-plac-tus-imp-337bbb0913
       matins-reading-3-abbreviated: reading.timotheus-antiochenus-romam-veniens-melchiade-su-8f839e1e69
@@ -7004,7 +7004,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Sancti/08-15t
+    common: sanctoral/08-15t
     slots:
       matins-reading-1: reading.de-canticis-canticorum-4a738100c6
       matins-reading-2: reading.cant-8-7-9-e99e4b1737
@@ -7028,7 +7028,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-per-be-tum-phil-ppum-confess-rem-tuum-e-2a00df1678
       matins-reading-3-abbreviated: reading.phil-ppus-ex-n-bili-beniti-rum-fam-lia-flor-nti-71a2ae05e7
@@ -7050,7 +7050,7 @@ offices:
     - no-te-deum
     values:
       laudes: '2'
-    common: Commune/C1v
+    common: commons/c1v
     slots:
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-9af158df08
       matins-reading-2: reading.pr-c-pta-ergo-dom-nica-et-multa-sunt-et-unum-mul-a7fdcd6ff5
@@ -7064,7 +7064,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-huius-di-i-vener-cd35d9b04d
       matins-reading-4: reading.bartholom-us-ap-stolus-galil-us-cum-in-indiam-ci-ed58c5c3dd
@@ -7080,7 +7080,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-ludov-cum-confess-rem-tuum-de-te-35771e806f
       matins-reading-3-abbreviated: reading.ludov-cus-nonus-g-lli-rex-in-blanch-matris-sanct-3181f9ecc9
@@ -7097,7 +7097,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1b
+    common: commons/c2-1b
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-be-ti-zephyr-703ccf6996
       matins-reading-3-abbreviated: reading.zephyrinus-romanus-severo-imperatore-ad-regendam-d60f774602
@@ -7112,7 +7112,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-per-sanctum-ios-phum-confess-rem-tuum-a-8a2c75b895
       matins-reading-3-abbreviated: reading.ios-phus-calas-nctius-petr-lt-in-arag-nia-natus-e35a22e2ea
@@ -7130,7 +7130,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.ad-sto-supplicati-nibus-nostris-omn-potens-deus-f4544e15e6
       matins-reading-3-abbreviated: reading.august-nus-tag-ste-in-africa-hon-stis-par-ntibus-e2611cbb45
@@ -7142,7 +7142,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.deus-qui-be-tum-herm-tem-m-rtyrem-tuum-virt-te-c-ea5663bfd9
       title: note.s-hermetis-martyris-586861792f
@@ -7158,7 +7158,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '115'
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.sancti-io-nnis-bapt-st-pr-curs-ris-et-m-rtyris-t-2bc3b296da
       lauds-gospel-antiphon: antiphon.misso-her-des-spiculat-re-pr-c-pit-amput-ri-capu-00cb82321c
@@ -7187,7 +7187,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C7
+    common: commons/c7
     slots:
       matins-reading-3-abbreviated: reading.sabina-mulier-romana-valentini-viri-clar-ssimi-u-63de0d07d3
       title: note.s-sabin-martyris-a174d192a1
@@ -7197,7 +7197,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.bon-rum-mnium-larg-tor-omn-potens-deus-qui-be-ta-0dec2e561d
       matins-reading-3-abbreviated: reading.primus-am-ric-meridion-lis-flos-sanctit-tis-virg-32b94228c1
@@ -7209,7 +7209,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.maiest-tem-tuam-d-mine-s-pplices-exor-mus-ut-sic-c0c608dcbf
       matins-reading-3-abbreviated: reading.felix-diocletiano-et-maximiano-imperatoribus-pro-51bfc4a615
@@ -7221,7 +7221,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-in-liber-ndis-fid-libus-tuis-ab-impi-ru-6c92aa976f
       matins-reading-3-abbreviated: reading.raym-ndus-nonn-tus-cognom-nto-dictus-quia-pr-ter-1ce876b01e
@@ -7233,14 +7233,14 @@ offices:
     rank:
       name: Duplex II classis
       value: 5.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       title: note.s-ioachim-confessoris-patris-b-m-v-70615f3e05
   09-01:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       lauds-gospel-antiphon: antiphon.simil-bo-eum-viro-sapi-nti-qui-dific-vit-domum-s-c19998bcb4
       lauds-versicle: versicle.text-3c241b111f
@@ -7251,7 +7251,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.frat-rna-nos-d-mine-m-rtyrum-tu-rum-cor-na-l-t-f-75ba11bf75
       title: note.ss-duodecim-fratrum-m-rtyrum-adb03f4553
@@ -7261,7 +7261,7 @@ offices:
       value: 2.2
     flags:
     - evangelium-non-appropriatum
-    common: Sancti/09-02
+    common: sanctoral/09-02
     slots:
       collect: collect.conc-de-qu-sumus-eccl-si-tu-omn-potens-deus-ut-b-6757604dd8
       lauds-gospel-antiphon: antiphon.simil-bo-eum-viro-sapi-nti-qui-dific-vit-domum-s-c19998bcb4
@@ -7282,7 +7282,7 @@ offices:
       value: 4.0
     flags:
     - 9-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       collect: collect.da-nobis-t-rn-consolati-nis-pater-per-preces-be-12ff6c2857
       matins-reading-4: reading.nonn-sus-sub-asp-rrimo-monast-rii-sui-quod-in-so-18cf28efea
@@ -7299,7 +7299,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-ad-tu-ndam-cath-licam-fidem-et-univ-rsa-bac9440158
       matins-reading-3-abbreviated: reading.pius-papa-d-cimus-cui-nomen-ntea-ios-phus-sarto-16f1657525
@@ -7317,7 +7317,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-be-tam-rosam-sanct-rum-tu-rum-v-rginum-811e71ca21
       matins-reading-4: reading.rosa-viterbii-piis-par-ntibus-nata-ab-ipsa-inf-n-9577f89c5a
@@ -7331,7 +7331,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.laur-ntius-ex-ill-stri-iustinian-rum-fam-lia-ven-96c8794b69
       matins-reading-4: reading.laurentius-ex-illustri-iustinianorum-familia-ven-76a7d3b6f5
@@ -7344,7 +7344,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.deus-qui-inter-c-tera-pot-nti-tu-mir-cula-tiam-i-87c256261e
       matins-reading-4: reading.inter-c-tera-m-rtyrum-sepulchra-qu-in-c-met-rio-9a7b611b79
@@ -7358,7 +7358,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.omn-potens-mitissime-deus-qui-be-tum-hadrianum-c-390bd85273
       matins-reading-4: reading.hadri-nus-t-rtius-9f6f924e81
@@ -7375,7 +7375,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.f-mulis-tuis-qu-sumus-d-mine-c-l-stis-gr-ti-munu-bd6473ec84
       lauds-gospel-antiphon: antiphon.nativit-tem-hodi-rnam-perp-tu-v-rginis-genetr-ci-69e51cb404
@@ -7406,7 +7406,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       matins-reading-3-abbreviated: reading.hadrianus-iussu-maximi-ni-imperat-ris-apud-nicom-ebf6848fb6
       title: note.s-hadriani-martyris-6fafe9993b
@@ -7414,7 +7414,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.sanctus-tuus-d-mine-gorg-nius-sua-nos-intercessi-419f2324f1
       matins-reading-3-abbreviated: reading.commemoratio-s-gorgonii-martyris-1a250b74c6
@@ -7425,7 +7425,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.s-rgius-antioch-nus-g-nere-tiberio-patre-panormi-cd88d6d490
       matins-reading-5: reading.c-nones-a-gr-cis-sextas-synodo-dein-affictos-ins-8513ff1290
@@ -7440,7 +7440,7 @@ offices:
     - no-prima-vespera
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-4: reading.de-sermone-sancti-august-ni-ep-scopi-3a2f8182e3
       matins-reading-5: reading.o-beata-maria-quis-tibi-digne-valeat-iura-gratia-f3d057c2b2
@@ -7463,12 +7463,12 @@ offices:
     - no-prima-vespera
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
   09-09n:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-abr-ptos-in-servit-tem-nigr-tas-ad-agni-e2689a9bca
       matins-reading-3-abbreviated: reading.petrus-claver-hisp-nus-verd-ni-natus-societ-ti-i-9858b16ec7
@@ -7479,7 +7479,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       matins-reading-3-abbreviated: reading.nicol-us-tolent-nas-a-diut-rno-ill-us-civit-tis-3068f4228b
       matins-reading-4: reading.nicolaus-tolentinas-a-diuturno-ill-us-civit-tis-c8be39572b
@@ -7495,7 +7495,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       matins-reading-4: reading.hilarus-nati-ne-sardus-patre-crispino-g-nitus-po-a342e625d4
       matins-reading-5: reading.ab-eo-invit-tus-victorinus-nati-ne-aquitanus-pas-fab84fc35c
@@ -7509,7 +7509,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2a318e3f21
       matins-reading-8: reading.iacob-autem-genuit-ioseph-hunc-locum-obiecit-nob-46efe377c1
@@ -7519,7 +7519,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.beat-rum-m-rtyrum-tu-rum-proti-et-hyac-nthi-nos-3bc1f6d305
       matins-reading-3-abbreviated: reading.commemoratio-pro-ss-mart-proto-et-hyacintho-6dd42eed92
@@ -7532,7 +7532,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-4: reading.sermo-sancti-bernardi-abbatis-7fcb96bacd
       matins-reading-5: reading.dignum-plane-stellis-coronari-caput-quod-et-ipsi-11839c4ac3
@@ -7557,7 +7557,7 @@ offices:
     - bmv
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.conc-de-qu-sumus-omn-potens-deus-ut-fid-les-tui-92ea552c37
       matins-reading-3-abbreviated: reading.vener-bile-v-rginis-mar-nomen-quod-interpret-tum-cb01a9aa4a
@@ -7576,7 +7576,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-4: reading.sermo-sancti-io-nnis-chrys-stomi-575a7aad7b
       matins-reading-5: reading.magnum-reu-ra-mir-culum-fratres-dilect-ssimi-fui-7e1fed917b
@@ -7595,7 +7595,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-4: reading.ex-libro-sancti-epiphanii-ep-scopi-adversus-h-re-4844c3f184
       matins-reading-5: reading.hev-datum-est-operire-corpus-sensibile-propter-n-7d60f7a645
@@ -7621,7 +7621,7 @@ offices:
     - festum-domini
     values:
       psalm5-vespera: '116'
-    common: Sancti/05-03
+    common: sanctoral/05-03
     slots:
       collect: collect.deus-qui-nos-hodi-rna-die-exaltati-nis-sanct-cru-d4891835db
       lauds-psalmody: psalmody.o-magnum-piet-tis-opus-mors-m-rtua-tunc-est-in-l-0a1149a524
@@ -7645,7 +7645,7 @@ offices:
     - no-secunda-vespera
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
   09-15:
     rank:
       name: Duplex 2nd class
@@ -7654,7 +7654,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-in-cuius-passi-ne-sec-ndum-sime-nis-prophet-0a72565ca3
       lauds-chapter: chapter.lam-2-13-9675f59615
@@ -7700,7 +7700,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.ad-sto-d-mine-p-pulo-tuo-ut-be-ti-nicom-dis-m-rt-a92d6adf67
       matins-reading-3-abbreviated: reading.nicomedes-presbyter-persequ-nte-christi-nos-domi-652dc739de
@@ -7713,7 +7713,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Nat
-    common: Sancti/09-08
+    common: sanctoral/09-08
     slots:
       matins-reading-1: reading.de-canticis-canticorum-4a738100c6
       matins-reading-2: reading.cant-8-7-9-e99e4b1737
@@ -7728,7 +7728,7 @@ offices:
   09-16:
     flags:
     - 9-lectiones
-    common: Commune/C3
+    common: commons/c3
     slots:
       matins-reading-3-abbreviated: reading.corn-lius-rom-nus-gallo-et-volusi-no-imperat-rib-1cbfffd143
       matins-reading-4: reading.corn-lius-romanus-gallo-et-volusi-no-imperat-rib-8d0ac7cdb9
@@ -7739,7 +7739,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-d-mine-pr-cibus-nostris-cum-exsultati-ne-cfbdc524db
       lauds-gospel-antiphon: antiphon.ist-rum-est-enim-regnum-c-l-rum-qui-contemps-run-9c5fd14ea9
@@ -7753,7 +7753,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.d-mine-iesu-christe-qui-frigesc-nte-mundo-ad-inf-9e335e087a
       lauds-hymn: hymn.iesu-cor-na-c-lsior-1d2b2eac85
@@ -7779,7 +7779,7 @@ offices:
     flags:
     - 9-lectiones
     - scriptura1960
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-ad-unig-nitum-f-lium-tuum-exalt-tum-a-t-11350ddcc8
       lauds-gospel-antiphon: antiphon.ost-ndit-mihi-d-minus-fl-vium-aqu-viv-spl-ndidum-e74ac8701c
@@ -7802,7 +7802,7 @@ offices:
     flags:
     - 9-lectiones
     - quorum-festum
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       lauds-versicle: versicle.exs-ltent-iusti-in-consp-ctu-dei-b1cb90e526
       matins-reading-3-abbreviated: reading.ianu-rius-benev-nti-ep-scopus-diocleti-no-et-max-44045fc209
@@ -7822,7 +7822,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-1960-aut-rubrica-1570-omittitur
     - quorum-festum
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       matins-reading-4: reading.eustachius-qui-et-placidus-genere-opibus-et-mili-decdeb8024
       matins-reading-5: reading.mox-ad-visi-nis-pr-stin-locum-sicut-ei-d-minus-p-982b15a0c1
@@ -7837,7 +7837,7 @@ offices:
     flags:
     - sed-rubrica-1888
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.io-nne-huius-n-minis-sec-ndo-e-vivis-subl-to-aga-988ab596b3
       matins-reading-5: reading.egregiis-laudum-titulis-ab-ant-quis-p-tribus-dec-6fd69e974b
@@ -7847,7 +7847,7 @@ offices:
     rank:
       name: Duplex memorial
       value: 3.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.s-andrew-kim-t-gon-priest-and-paul-chong-hasang-86fd373962
   09-20o:
@@ -7865,7 +7865,7 @@ offices:
     values:
       laudes: '2'
       suffr: Maria3
-    common: Commune/C1v
+    common: commons/c1v
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-be-ti-n-ap-stoli-a974f9f26a
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-2491de2e39
@@ -7880,7 +7880,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1a
+    common: commons/c1a
     slots:
       collect: collect.be-ti-ap-stoli-et-evangel-st-matth-i-d-mine-pr-c-13bc27c7de
       matins-reading-4: reading.matth-us-qui-et-levi-ap-stolus-et-evangel-sta-ca-3c0fb7c55c
@@ -7897,7 +7897,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-tum-thomam-pont-ficem-ins-gnis-in-p-ccbf3a0af1
       lauds-gospel-antiphon: antiphon.eleem-synas-ill-us-enarr-bit-omnis-eccl-sia-sanc-6b3821f51d
@@ -7911,7 +7911,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.annue-qu-sumus-omn-potens-deus-ut-sanct-rum-m-rt-b65ef8c986
       matins-reading-3-abbreviated: reading.cum-maximi-nus-imper-tor-ducto-in-g-lliam-exerci-719edce1c3
@@ -7919,7 +7919,7 @@ offices:
   09-23:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-3-abbreviated: reading.linus-p-ntifex-volat-rris-in-etr-ria-natus-primu-bd5b667616
       matins-reading-4: reading.linus-pontifex-volaterris-in-etruria-natus-primu-cf0dfbe6d4
@@ -7930,7 +7930,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-t-thecl-v-bf78073d50
       matins-reading-3-abbreviated: reading.thecla-virgo-ex-illustribus-par-ntibus-iconii-na-3d6e181e9b
@@ -7939,7 +7939,7 @@ offices:
     rank:
       name: Duplex memorial
       value: 3.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       title: note.s-pio-of-pietrelcina-padre-pio-priest-38e8471eff
   09-24:
@@ -7951,7 +7951,7 @@ offices:
     - bmv
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-per-glorios-ssimam-f-lii-tui-matrem-ad-d3644482a3
       matins-reading-3-abbreviated: reading.quo-t-mpore-inn-meri-fid-les-sub-imm-ni-saracen-e05579edc3
@@ -7964,7 +7964,7 @@ offices:
       value: 1.1
     flags:
     - rubrica-tridentina-1-et-2-lectiones
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.beat-rum-m-rtyrum-cypri-ni-et-iust-n-nos-d-mine-918e7ca59b
       matins-reading-2: reading.cypri-nus-primum-magus-p-stea-martyr-cum-iust-na-b03526f584
@@ -7977,7 +7977,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.eus-bius-nati-ne-gr-cus-patre-m-dico-post-sanctu-2bd089cb13
       matins-reading-5: reading.sanctus-hic-p-ntifex-boni-pastdris-christi-iesu-94eeffc13c
@@ -7989,7 +7989,7 @@ offices:
       value: 3.0
     flags:
     - quorum-festum
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-qui-prim-tias-f-dei-in-bore-libus-am-ric-re-e7d9c03165
       matins-reading-3-abbreviated: reading.ex-iis-societ-tis-iesu-sod-libus-qui-m-dio-s-cul-aa836b5b33
@@ -8012,7 +8012,7 @@ offices:
     flags:
     - 9-lectiones
     - quorum-festum
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-94a902a1b3
       matins-reading-3-abbreviated: reading.cosmas-et-dami-nus-fratres-arabes-in-g-a-urbe-na-40efdceb97
@@ -8030,7 +8030,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.deus-qui-be-tum-wencesl-um-per-mart-rii-palmam-a-ec6637df2b
       matins-reading-3-abbreviated: reading.wencesl-us-boh-mi-dux-wratisl-o-patre-christi-no-8d3bb0057d
@@ -8054,7 +8054,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '137'
-    common: Sancti/05-08
+    common: sanctoral/05-08
     slots:
       matins-psalmody: psalmody.conc-ssum-est-mare-et-contr-muit-terra-ubi-arch-da27ac0cdb
       matins-reading-1: reading.de-dani-le-proph-ta-9b1a6b4eca
@@ -8075,7 +8075,7 @@ offices:
     - 9-lectiones
     - scriptura1960
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C5a
+    common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-si-tu-in-expon-ndis-sacris-script-83201282c5
       matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
@@ -8090,7 +8090,7 @@ offices:
       matins-reading-9: reading.nol-te-putare-qu-niam-veni-s-lvere-legem-aut-pro-a62ed0c93e
       title: note.s-hieronymi-presbyteris-confessoris-et-ecclesi-d-306e0a15db
   09-dt:
-    common: Sancti/09-15
+    common: sanctoral/09-15
   09-sab-oct:
     rank:
       name: Simplex
@@ -8100,7 +8100,7 @@ offices:
     - no-secunda-vesperas
     values:
       doxology: Nat
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.f-mulis-tuis-qu-sumus-d-mine-c-l-stis-gr-ti-munu-bd6473ec84
       lauds-gospel-antiphon: antiphon.nativit-tem-hodi-rnam-perp-tu-v-rginis-genetr-ci-69e51cb404
@@ -8124,7 +8124,7 @@ offices:
       value: 1.1
     flags:
     - mtv
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.remigius-ep-scopus-rhem-nsis-fl-ruit-clodov-o-re-e5ff8f42a5
       title: note.s-remigii-episcopi-et-confessoris-f877a7b461
@@ -8134,7 +8134,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.deus-qui-per-be-tum-greg-rium-pont-ficem-et-m-rt-53b85ccfa9
       matins-reading-4: reading.greg-rius-armeni-r-gibus-cretus-qui-primus-post-097d1167d3
@@ -8153,7 +8153,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '137'
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-ineff-bili-provid-ntia-sanctos-angelos-262a0ea843
       lauds-chapter: chapter.exod-23-20-21-8f78d48e6b
@@ -8201,7 +8201,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.d-mine-qui-dix-sti-nisi-effici-mini-sicut-p-rvul-9672a1ae9d
       matins-reading-3-abbreviated: reading.ter-sia-a-iesu-inf-nte-alens-nii-in-g-llia-ex-ho-242f0a0baa
@@ -8219,7 +8219,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-franc-sci-m-ritis-f98390993e
       matins-reading-3-abbreviated: reading.franc-scus-ass-sii-in-umbria-natus-patris-ex-mpl-25d7a37c04
@@ -8234,7 +8234,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a-1
+    common: commons/c3a-1
     slots:
       collect: collect.deus-qui-nos-conc-dis-sanct-rum-m-rtyrum-tu-rum-6360a83082
       matins-reading-3-abbreviated: reading.pl-cidus-rom-tert-lllo-patre-in-primis-n-bili-na-152d0e35be
@@ -8245,7 +8245,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-be-tam-gallam-2f7536ab7c
       matins-reading-4: reading.ex-libro-quarto-dialog-rum-sancti-greg-rii-pap-c-230c4072a5
@@ -8258,7 +8258,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.sancti-brun-nis-confess-ris-tui-qu-sumus-d-mine-4d62b5c8d2
       matins-reading-3-abbreviated: reading.bruno-carthusi-n-religi-nis-instit-tor-col-ni-ag-0453d63197
@@ -8276,7 +8276,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-cuius-unig-nitus-per-vitam-mortem-et-resurr-3dfc7af732
       lauds-chapter: chapter.sir-24-25-39-17-261c00183a
@@ -8321,7 +8321,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.sanct-rum-m-rtyrum-tu-rum-nos-d-mine-s-rgii-bacc-6e48ecdad5
       matins-reading-3-abbreviated: reading.from-the-sermons-of-st-augustine-bishop-1902e3b1e0
@@ -8330,7 +8330,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.ex-udi-d-mine-preces-nostras-et-interveni-nte-be-0c6348e856
       matins-reading-3-abbreviated: reading.marcus-romanus-constantino-magno-imperat-re-pont-327373f356
@@ -8344,7 +8344,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.d-mine-deus-noster-qui-be-t-birg-tt-per-f-lium-t-f177edffdb
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-birg-t-69eab1f419
@@ -8362,7 +8362,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-c1a-in-1-loco
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-io-nnem-confess-rem-tuum-ad-fide-9cd7138656
       matins-reading-3-abbreviated: reading.io-nnes-leon-rdi-non-longe-a-luc-nsi-urbe-ortus-54208441dd
@@ -8378,7 +8378,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.deus-qui-hodi-rna-die-be-tum-dion-sium-m-rtyrem-6ade1c711f
       matins-reading-3-abbreviated: reading.dionysius-atheni-nsis-unus-ex-areopag-tis-iud-ci-0202c89021
@@ -8393,7 +8393,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.d-mine-iesu-christe-ver-humilit-tis-et-ex-mplar-e8cab99016
       matins-reading-3-abbreviated: reading.franc-scus-g-ndi-dux-quartus-in-aula-c-roli-quin-6cb9fe6822
@@ -8414,7 +8414,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-de-be-t-mar-v-rginis-tero-verbum-tuum-a-4196e487b4
       lauds-chapter: chapter.sir-24-12-13-f5f5ca6c16
@@ -8453,7 +8453,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-regem-edu-rdum-confess-rem-tuum-6170adf241
       matins-reading-3-abbreviated: reading.edu-rdus-cognom-nto-conf-ssor-nepos-sancti-edu-r-737d459cc9
@@ -8467,7 +8467,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       collect: collect.deus-qui-nos-c-nspicis-ex-nostra-infirmit-te-def-3a07f37c0b
       matins-reading-3-abbreviated: reading.call-stus-rom-nus-pr-fuit-eccl-si-anton-no-helio-0675e420e6
@@ -8484,7 +8484,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.ex-udi-nos-deus-salut-ris-noster-ut-sicut-de-be-acb19d211d
       lauds-chapter: chapter.2-cor-10-17-18-543543991c
@@ -8502,7 +8502,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.deus-qui-be-tam-hedw-gem-a-s-culi-pompa-ad-h-mil-fd384b05d9
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-hedw-g-e455c1951c
@@ -8517,7 +8517,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.deus-qui-per-be-tum-victorem-confess-rem-tuum-at-3077f78aae
       matins-reading-4: reading.iictor-papa-t-rtius-desiderius-ntea-dictus-benev-4b0ad1ebd7
@@ -8530,7 +8530,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.d-mine-iesu-christe-qui-investig-biles-div-tias-3b0f3e6c43
       matins-reading-3-abbreviated: reading.margar-ta-mar-a-alac-que-in-pago-di-c-sis-august-0673e7a1e7
@@ -8549,7 +8549,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1a
+    common: commons/c1a
     slots:
       collect: collect.interv-niat-pro-nobis-qu-sumus-d-mine-sanctus-tu-96764e4b7e
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-217a49912d
@@ -8563,7 +8563,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-be-tum-petrum-confess-rem-tuum-admir-bi-081d5a1120
       matins-reading-3-abbreviated: reading.petrus-alc-ntar-in-hisp-nia-nob-libus-par-ntibus-036babeff8
@@ -8578,7 +8578,7 @@ offices:
     rank:
       name: Duplex
       value: 3.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.o-god-who-by-the-preaching-and-the-blood-of-your-49252fd9c0
       matins-reading-3-abbreviated: reading.among-the-members-of-the-society-of-jesus-who-br-ccc7610ce1
@@ -8589,7 +8589,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-sancti-io-nnis-co-90d9dd8b5b
       lauds-hymn: hymn.te-deprec-nte-c-rporum-ff8748ddc4
@@ -8604,7 +8604,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       matins-reading-3-abbreviated: reading.hilarion-ortus-tab-th-in-pal-stina-ex-par-ntibus-c56dfc8edb
       title: note.s-hilarionis-abbatis-515014ed45
@@ -8612,7 +8612,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C6b
+    common: commons/c6b
     slots:
       title: note.ss-ursul-et-sociarum-virg-et-mart-1519a5f8ca
   10-23:
@@ -8621,7 +8621,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4-1
+    common: commons/c4-1
     slots:
       collect: collect.deus-qui-be-tum-ant-nium-mar-am-confess-rem-tuum-31f31e254c
       matins-reading-3-abbreviated: reading.ant-nius-mar-a-claret-sall-ntii-in-hisp-nia-piis-c12d8c97d2
@@ -8693,7 +8693,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '137'
-    common: Sancti/05-08
+    common: sanctoral/05-08
     slots:
       collect: collect.deus-qui-be-tum-rapha-lem-arch-ngelum-tob-f-mulo-82a8f0fe18
       lauds-chapter: chapter.tob-12-12-34d45e5948
@@ -8736,7 +8736,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.beat-rum-m-rtyrum-tu-rum-d-mine-chrys-nthi-et-da-2123ac44ea
       matins-reading-3-abbreviated: reading.chrysanthus-et-dar-a-c-niuges-nobili-genere-nati-a4c2a776cc
@@ -8747,7 +8747,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.bonifacius-rom-nus-patre-iucundo-presbytero-post-e9ca8f8b15
       matins-reading-5: reading.sed-cum-eulalius-se-in-urbem-intrusisset-occasio-316e720d1f
@@ -8757,7 +8757,7 @@ offices:
     rank:
       name: Duplex
       value: 2.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.da-nobis-qu-sumus-mis-ricors-deus-be-to-isid-ro-bff41dbeef
       lauds-chapter: chapter.iac-5-7-8-d28eb7813d
@@ -8773,7 +8773,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.evar-stus-gr-cus-ex-iud-o-patre-traiano-imperat-e8aac66b6a
       matins-reading-4: reading.evaristus-gr-cus-nati-ne-patre-iud-o-g-nitus-chr-32b675dd06
@@ -8795,7 +8795,7 @@ offices:
     values:
       laudes: '2'
       suffragium: Maria3
-    common: Commune/C1v
+    common: commons/c1v
     slots:
       collect: collect.concede-qu-sumus-omn-potens-deus-ut-sicut-aposto-bce3ca1bdd
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-c8ca092597
@@ -8810,7 +8810,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.deus-qui-nos-per-be-tos-ap-stolos-tuos-sim-nem-e-098577ca4c
       lauds-gospel-antiphon: antiphon.isti-sunt-du-ol-v-et-duo-candel-bra-luc-ntia-ant-516fe828bd
@@ -8849,7 +8849,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       collect: collect.deus-qui-be-tum-siricium-confess-rem-atque-pont-03f31c035a
       matins-reading-4: reading.siricius-rom-nus-ex-presbytero-tituli-past-ris-v-5b71b8dd67
@@ -8857,7 +8857,7 @@ offices:
       matins-reading-6: reading.religi-nis-tu-nd-et-amplific-nd-st-dium-quod-san-3c3f8bb520
       title: note.s-siricii-pap-et-confessoris-ad304f506c
   10-dp:
-    common: Sancti/10-07
+    common: sanctoral/10-07
     slots:
       collect: collect.deus-cuius-unig-nitus-per-vitam-mortem-et-resurr-3dfc7af732
   10-dt-puritasbmv:
@@ -8871,7 +8871,7 @@ offices:
     values:
       doxology: Nat
       prefatio: Maria
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.da-qu-sumus-omn-potens-t-rne-deus-ut-pur-ssim-v-db47222d15
       lauds-chapter: chapter.sap-4-1-21a32d8ebd
@@ -8977,7 +8977,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '115'
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-nos-mnium-sanct-r-35fcfa551a
       lauds-chapter: chapter.apo-7-2-3-b0495c238e
@@ -9027,7 +9027,7 @@ offices:
     - responsory9
     - no-te-deum
     - rubrica-1955-aut-rubrica-1960-no-prima-vespera
-    common: Commune/C9
+    common: commons/c9
     slots:
       matins-collect: collect.d-minus-vob-scum-1eecd8ddeb
       matins-reading-1: reading.iob-7-16-21-c50266bec7
@@ -9050,7 +9050,7 @@ offices:
     - sed-feria-1
     - vespera-defunctorum
     - no-prima-vespera
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.de-sermone-venerabilis-bed-presb-teri-55d46fe3c4
       matins-reading-5: reading.ergo-agite-nunc-fratres-aggrediamur-iter-vit-rev-504476088e
@@ -9063,7 +9063,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.0
-    common: Commune/C5
+    common: commons/c5
     slots:
       title: note.s-martin-de-porres-religious-a3665979c5
   11-03oct:
@@ -9075,7 +9075,7 @@ offices:
     - quorum-festum
     - rubrica-cisterciensis-psalmi-feria
     - feria-2-matutinum-et-laudes-defunctorum
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.de-serm-ne-sancti-bed-vener-bilis-presb-teri-c6c813c09a
       matins-reading-5: reading.quapropter-nox-ibi-nulla-null-tenebr-concursus-n-4b0bc803eb
@@ -9091,7 +9091,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-cisterciensis-psalmi-dominica
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.eccl-siam-tuam-d-mine-sancti-c-roli-confess-ris-b9ed425fb8
       matins-reading-3-abbreviated: reading.c-rolus-mediol-ni-n-bili-borrom-rum-fam-lia-natu-197841ac7a
@@ -9104,7 +9104,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-sanct-rum-5677709481
       matins-reading-3-abbreviated: reading.vitalis-et-agricola-eius-dominus-in-persecuti-ne-1c49674f7b
@@ -9115,7 +9115,7 @@ offices:
       value: 2.0
     flags:
     - 9-lectiones
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       title: note.quarta-die-infra-octavam-omnium-sanctorum-ba8fc7e8ee
   11-05-reliquiae:
@@ -9126,7 +9126,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.auge-in-nobis-d-mine-resurrecti-nis-fidem-qui-in-054048ded7
       matins-reading-4: reading.ex-tractatu-sancti-io-nnis-damasc-ni-de-fide-ort-20fae4de3c
@@ -9141,7 +9141,7 @@ offices:
     - 9-lectiones
     - quorum-festum
     - ad-laudes-et-rubrica-cisterciensis-psalmi-feria
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.de-sermone-sancti-bed-venerabilis-presb-teri-0ddbcc4c8b
       matins-reading-5: reading.qui-coronam-in-persecutione-purpuream-pro-passio-69a7c7f5b4
@@ -9159,7 +9159,7 @@ offices:
     - quorum-festum
     - rubrica-cisterciensis-psalmi-feria
     - sed-feria-5-et-ad-vespera-psalmi-dominica
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.sermo-sancti-bernardi-abbatis-36cde790fc
       matins-reading-5: reading.sermo-5-de-eodem-festo-circa-medium-7b89458033
@@ -9177,7 +9177,7 @@ offices:
     - no-secunda-vespera
     - quorum-festum
     - rubrica-cisterciensis-psalmi-feria
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.sermo-sancti-ioannis-chrysostomi-b932c7aa23
       matins-reading-5: reading.neque-enim-difficile-nobis-est-quod-ab-ipsis-ger-c8a69be6f5
@@ -9193,7 +9193,7 @@ offices:
     flags:
     - 9-lectiones
     - quorum-festum
-    common: Sancti/11-01
+    common: sanctoral/11-01
     slots:
       matins-reading-4: reading.ex-libro-sancti-cypri-ni-ep-scopi-et-martyris-de-1361119947
       matins-reading-5: reading.patriam-nostram-paradisum-computamus-parentes-pa-db53fc75e2
@@ -9205,7 +9205,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-glori-sos-6c4ca938a9
       matins-reading-3-abbreviated: reading.sev-rus-severi-nus-carp-phorus-et-victor-nus-fra-7d91420399
@@ -9218,7 +9218,7 @@ offices:
     - domini
     - 9-lectiones
     - festum-domini
-    common: Commune/C8
+    common: commons/c8
     slots:
       matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-402b32721a
       matins-reading-2: reading.apo-21-12-15-314c069fea
@@ -9231,7 +9231,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.deus-qui-nos-be-ti-theod-ri-m-rtyris-tui-confess-827a301082
       matins-reading-3-abbreviated: reading.theod-rus-miles-christi-nus-maximi-no-imperat-re-e2339b959f
@@ -9242,7 +9242,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-in-corde-be-ti-andr-confess-ris-tui-per-7e171453f8
       matins-reading-3-abbreviated: reading.andr-as-avell-nus-dictus-ante-lancell-ttus-apud-87c9fd3346
@@ -9254,7 +9254,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C3a
+    common: commons/c3a
     slots:
       collect: collect.fac-nos-qu-sumus-d-mine-sanct-rum-m-rtyrum-tu-ru-44c4e2c5d5
       matins-reading-3-abbreviated: reading.tryphon-decio-imperat-re-cum-iesu-christi-fidem-e11b0f6d9c
@@ -9271,7 +9271,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.secunda-die-infra-octavam-dedicationis-archibasi-c830e7602b
   11-11:
@@ -9282,7 +9282,7 @@ offices:
     - 9-lectiones
     values:
       psalm5-vespera3: '131'
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-c-nspicis-quia-ex-nulla-nostra-virt-te-86e93af29e
       lauds-gospel-antiphon: antiphon.o-be-tum-virum-cuius-nima-parad-sum-p-ssidet-und-02fc76abdc
@@ -9313,7 +9313,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-be-ti-n-m-1ddb7261c6
       matins-reading-3-abbreviated: reading.mennas-g-ptius-christi-nus-miles-in-persecuti-ne-8146205586
@@ -9329,13 +9329,13 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.tertia-die-infra-octavam-dedicationis-archibasil-3ca257c832
   11-12:
     flags:
     - 9-lectiones
-    common: Commune/C2b-1
+    common: commons/c2b-1
     slots:
       matins-reading-3-abbreviated: reading.mart-nus-tud-rti-in-umbria-natus-in-tio-pontific-a1353769f6
       matins-reading-4: reading.martinus-tuderti-in-umbria-natus-in-tio-pontific-1437b86aa8
@@ -9357,7 +9357,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quarta-die-infra-octavam-dedicationis-archibasil-5e4fcce4a8
   11-13:
@@ -9367,7 +9367,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-dispositi-ne-mir-1771a066dc
       matins-reading-3-abbreviated: reading.d-dacus-hisp-nus-ex-ppido-sancti-nicol-i-de-port-584a304a60
@@ -9384,7 +9384,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.nicol-us-huius-n-minis-primus-nati-ne-rom-nus-pa-32f2dbff48
       matins-reading-5: reading.exstant-pl-rim-ab-eo-script-ep-stol-in-quibus-er-7c8190af42
@@ -9397,7 +9397,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.text-807c78627c
       matins-reading-5: reading.bonifacio-huius-n-minis-quarto-e-vivis-subl-to-p-8da4ae9f80
@@ -9407,7 +9407,7 @@ offices:
     rank:
       name: Semiduplex
       value: 2.2
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.d-mine-iesu-christe-qui-sanctam-v-rginem-franc-s-ad248ea444
       lauds-hymn: hymn.div-na-iesu-c-ritas-b6af16c1cf
@@ -9426,7 +9426,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.quinta-die-infra-octavam-dedicationis-archibasil-b0005d002d
   11-14:
@@ -9435,7 +9435,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.excita-qu-sumus-d-mine-in-eccl-sia-tua-sp-ritum-0adecaef1f
       matins-reading-3-abbreviated: reading.i-saphat-kuncew-tius-nob-libus-et-cath-licis-par-e9818ff8ab
@@ -9453,7 +9453,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.bonifacio-huius-n-minis-quarto-e-vivis-subl-to-p-8da4ae9f80
       matins-reading-5: reading.hic-a-domo-dei-reg-minis-in-tium-fecit-cleri-eni-d1853c93fb
@@ -9470,7 +9470,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.sexta-die-infra-octavam-dedicationis-archibasili-645738e827
   11-15:
@@ -9479,7 +9479,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-be-tum-alb-rtum-pont-ficem-tuum-atque-d-8ba446a669
       matins-reading-3-abbreviated: reading.alb-rtus-ob-singul-rem-doctr-nam-cognom-nto-magn-d581667607
@@ -9499,7 +9499,7 @@ offices:
     - ecclesi-papa
     values:
       suffr: Maria3
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.septima-die-infra-octavam-dedicationis-archibasi-3e5b541a1c
   11-16:
@@ -9510,7 +9510,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-1930-aut-rubrica-barroux
     - 12-lectiones
-    common: Commune/C6a
+    common: commons/c6a
     slots:
       collect: collect.deus-qui-in-corde-be-t-gertr-dis-v-rginis-iuc-nd-5b089e19f8
       matins-reading-3-abbreviated: reading.gertr-dis-isl-bii-in-sax-nia-nata-quinqu-nnis-in-1b918b86a6
@@ -9525,7 +9525,7 @@ offices:
     flags:
     - 9-lectiones
     - in-2-nocturno-lectiones-ex-c8-in-8-loco
-    common: Commune/C8
+    common: commons/c8
     slots:
       title: note.in-octava-dedicationis-archibasilic-ss-salvatori-1049bcf912
   11-17:
@@ -9534,7 +9534,7 @@ offices:
       value: 2.2
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.greg-rius-neoc-sar-ponti-ep-scopus-sanctit-te-do-06d90efb8d
       matins-reading-4: reading.greg-rius-neoc-sar-ponti-ep-scopus-sanctit-te-do-04d79787f9
@@ -9548,7 +9548,7 @@ offices:
     flags:
     - 9-lectiones
     - rubrica-divino-aut-rubrica-1955-festum-domini
-    common: Commune/C8
+    common: commons/c8
     slots:
       matins-reading-5: reading.illuc-constant-nus-magnus-imper-tor-oct-vo-die-p-08417e9cde
       matins-reading-6: reading.porro-vaticanam-basilicam-vetust-te-iampridem-co-b97c22633e
@@ -9556,7 +9556,7 @@ offices:
     rank:
       name: Duplex maius
       value: 3.0
-    common: Commune/C8
+    common: commons/c8
     slots:
       matins-reading-4: reading.ex-locis-sacris-qu-ab-in-tio-apud-christi-nos-ve-19edae8d0c
   11-18o:
@@ -9565,7 +9565,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C8
+    common: commons/c8
     slots:
       matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-07ae0c659f
       matins-reading-2: reading.apo-21-21-23-f679f0124c
@@ -9583,7 +9583,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C7a
+    common: commons/c7a
     slots:
       collect: collect.tu-rum-corda-fid-lium-deus-miser-tor-ill-stra-et-aff2da0dd8
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-el-sab-120ca72674
@@ -9596,7 +9596,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-3-loco
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-3-abbreviated: reading.pontianus-romanus-pr-fuit-eccl-si-alexandro-impe-6cdd8af84b
       matins-reading-4: reading.text-807c78627c
@@ -9610,7 +9610,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-be-tum-fel-cem-confess-rem-tuum-ex-er-m-af83aa8e87
       matins-reading-3-abbreviated: reading.felix-hugo-ntea-dictus-ex-reg-li-valesi-rum-fam-c13d365fbe
@@ -9630,7 +9630,7 @@ offices:
     - ipsa-virgo-virginum
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-be-tam-mar-am-semper-v-rginem-sp-ritus-2d4aa88697
       lauds-gospel-antiphon: antiphon.be-ta-es-mar-a-qu-credid-sti-perfici-ntur-in-te-e57f8ee620
@@ -9650,7 +9650,7 @@ offices:
     flags:
     - 9-lectiones
     - in-1-nocturno-lectiones-ex-commune-1-loco
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.deus-qui-nos-nnua-be-t-c-c-li-v-rginis-et-m-rtyr-c22af0c1d5
       lauds-gospel-antiphon: antiphon.dum-aur-ra-finem-daret-c-c-lia-exclam-vit-dicens-26ad10556e
@@ -9682,7 +9682,7 @@ offices:
     - 9-lectiones
     - rubrica-tridentina-in-1-nocturno-lectiones-ex-commune-in-1-loco
     - rubrica-tridentina-in-3-nocturno-lectiones-ex-c4-in-2-loco
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       collect: collect.deus-qui-nos-nnua-be-ti-clem-ntis-m-rtyris-tui-a-6180d5bf1c
       lauds-gospel-antiphon: antiphon.cum-iter-ad-mare-cep-sset-p-pulus-voce-magna-cla-829ce772e1
@@ -9704,7 +9704,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C7
+    common: commons/c7
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-be-t-felicit-fd1f7797c3
       matins-reading-3-abbreviated: reading.sermo-sancti-greg-rii-pap-cefa1b2a61
@@ -9718,7 +9718,7 @@ offices:
     - mtv
     - sed-rubrica-tridentina
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-io-nnem-confess-rem-tuum-atque-655c5023f7
       matins-reading-3-abbreviated: reading.io-nnes-a-cruce-font-beri-in-hisp-nia-piis-par-n-f5cb8199b4
@@ -9730,14 +9730,14 @@ offices:
     rank:
       name: Duplex memorial
       value: 3.0
-    common: Commune/C3
+    common: commons/c3
     slots:
       title: note.s-andre-dung-lac-and-his-companions-martyrs-1df8b91bf0
   11-24o:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.ad-sto-d-mine-supplicati-nibus-nostris-ut-qui-ex-0c18832040
       matins-reading-3-abbreviated: reading.chrys-gonus-diocleti-no-imperat-re-rom-inclusus-3c96cbcda7
@@ -9748,7 +9748,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.deus-qui-ded-sti-legem-m-ysi-in-summit-te-montis-9b2c3c6bd8
       matins-reading-3-abbreviated: reading.cathar-na-n-bilis-virgo-alexandr-na-liber-lium-r-9694b53c9a
@@ -9762,7 +9762,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       collect: collect.clement-ssime-deus-qui-sanctum-silv-strum-abb-te-b814628331
       matins-reading-3-abbreviated: reading.silv-ster-auximi-in-pic-no-n-bili-g-nere-ortus-p-3c34998c27
@@ -9779,7 +9779,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.siricius-rom-nus-ex-presbytero-tituli-past-ris-v-e52b1c8adb
       matins-reading-5: reading.religi-nis-tu-nd-et-amplific-nd-st-dium-quod-san-82cf104e72
@@ -9789,7 +9789,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2
+    common: commons/c2
     slots:
       matins-reading-3-abbreviated: reading.petrus-ep-scopus-alexandr-post-theonam-virum-san-84c05121b8
       title: note.s-petri-alexandrini-martyris-8d7dff6e11
@@ -9799,7 +9799,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.greg-rius-huius-n-minis-t-rtius-nati-ne-syrus-pa-b85645e075
       matins-reading-5: reading.cath-lic-f-dei-propugn-tor-ac-rrimus-le-nem-isau-83902cea13
@@ -9810,7 +9810,7 @@ offices:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C2a-1
+    common: commons/c2a-1
     slots:
       collect: collect.deus-qui-nos-be-ti-saturn-ni-m-rtyris-tui-conc-d-e638ecac77
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-321592c604
@@ -9824,7 +9824,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       matins-reading-4: reading.gelasius-gente-africanus-patre-val-rio-in-fel-ci-028ecb3410
       matins-reading-5: reading.eius-cura-et-st-dio-non-clerus-modo-pl-rimum-auc-1f7dcb8fd0
@@ -9837,7 +9837,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5c
+    common: commons/c5c
     slots:
       collect: collect.deus-qui-inter-c-tera-sapi-nti-tu-mir-cula-tiam-0c69537d17
       title: note.s-stanislai-kostk-confessoris-f4e2b19194
@@ -9852,7 +9852,7 @@ offices:
     values:
       psalm5-vespera: '116'
       psalm5-vespera3: '138'
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.maiest-tem-tuam-d-mine-suppl-citer-exor-mus-ut-s-9930a146b8
       lauds-chapter: chapter.rom-10-10-11-8342b732d0
@@ -9893,7 +9893,7 @@ offices:
     values:
       doxology: Nat
       prefatio: Maria
-    common: Commune/C11
+    common: commons/c11
     slots:
       matins-responsory-7: responsory.felix-namque-es-sacra-virgo-mar-a-et-omni-laude-364a69a821
       title: note.patrocinii-beat-mari-virginis-42c3a15fdc
@@ -9904,7 +9904,7 @@ offices:
     flags:
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C6-1
+    common: commons/c6-1
     slots:
       collect: collect.deus-mnium-larg-tor-bon-rum-qui-in-f-mula-tua-bi-182ec5913d
       matins-reading-3-abbreviated: reading.bibi-na-virgo-rom-na-n-bili-g-nere-nata-christi-e16251939b
@@ -9921,7 +9921,7 @@ offices:
     - 9-lectiones
     - sed-rubrica-cisterciensis
     - 3-lectiones
-    common: Commune/C5-1
+    common: commons/c5-1
     slots:
       collect: collect.deus-qui-indi-rum-gentes-be-ti-franc-sci-pr-dica-ec27eda50e
       matins-reading-3-abbreviated: reading.franc-scus-in-xav-rio-di-c-sis-pampelon-nsis-nob-9d9e54a1ed
@@ -9939,7 +9939,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.deus-qui-be-tum-petrum-chrys-logum-doct-rem-egr-a505908822
       matins-reading-3-abbreviated: reading.petrus-qui-ob-uream-eius-eloqu-ntiam-chrys-logi-310ce2901a
@@ -9954,14 +9954,14 @@ offices:
     flags:
     - rubrica-altovadensis
     - 12-lectiones
-    common: Commune/C6
+    common: commons/c6
     slots:
       title: note.s-barbar-virginis-et-martyris-b2b9ffe965
   12-05:
     rank:
       name: Simplex
       value: 1.1
-    common: Commune/C5b
+    common: commons/c5b
     slots:
       title: note.s-sabb-abbatis-cdab15bac3
   12-05-stanislausk:
@@ -9971,7 +9971,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-inter-c-tera-sapi-nti-tu-mir-cula-tiam-ae84276cc3
       matins-reading-4: reading.stanisl-us-senat-ria-kostkarum-gente-ortus-in-po-9d93d801eb
@@ -9987,7 +9987,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.deus-qui-be-tum-nicol-um-pont-ficem-inn-meris-de-a7ce24d63b
       matins-reading-3-abbreviated: reading.nicol-us-ill-stri-loco-p-tar-in-l-cia-natus-quar-4ad4093256
@@ -10002,7 +10002,7 @@ offices:
     flags:
     - mtv
     - 9-lectiones
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-tim-th-dea476f9b7
       matins-reading-2: reading.de-ep-stola-ad-titum-2d34ca8e43
@@ -10022,7 +10022,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-per-immacul-tam-v-rginis-concepti-nem-d-7fa2a2475a
       lauds-chapter: chapter.prov-8-22-24-954e058743
@@ -10072,7 +10072,7 @@ offices:
     - ant-matutinum-12-special
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.famulis-tuis-qu-sumus-domine-c-lestis-grati-munu-ba6387c252
       lauds-gospel-antiphon: antiphon.conceptionem-hodiernam-perpetu-virginis-genitric-03df60ed8d
@@ -10112,7 +10112,7 @@ offices:
     - '1'
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-c4-in-2-loco
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.eutychianus-nati-ne-tuscus-p-tria-lunensis-marin-3234527ca0
       matins-reading-5: reading.sermo-sancti-m-ximi-ep-scopi-98a70fdbec
@@ -10127,7 +10127,7 @@ offices:
     values:
       doxology: Nat
       prefatio: Maria=Conceptióne immaculáta
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-ix-7040b4cfdd
       matins-reading-5: reading.quapropter-illam-longe-ante-omnes-angelicos-spir-4272f1b73f
@@ -10140,7 +10140,7 @@ offices:
     rank:
       name: Duplex optional
       value: 2.5
-    common: Commune/C5
+    common: commons/c5
     slots:
       title: note.s-iuan-diego-95921d8a8b
   12-10-domus:
@@ -10154,7 +10154,7 @@ offices:
     - credo
     values:
       prefatio: Maria=Festivitate
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-be-t-mar-v-rginis-domum-per-incarnati-v-b17b016272
       lauds-chapter: chapter.eccl-24-1-e69f91dce9
@@ -10199,7 +10199,7 @@ offices:
     - rubrica-1888-et-feria-3-no-prima-vespera
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-ix-3842458aa4
       matins-reading-5: reading.itaque-eadem-romana-ecclesia-nihil-potius-habuit-4fcc17e820
@@ -10211,7 +10211,7 @@ offices:
   12-10o:
     flags:
     - 9-lectiones
-    common: Commune/C2b
+    common: commons/c2b
     slots:
       matins-reading-4: reading.melchiades-afer-post-eusebium-rom-nam-t-nuit-ecc-c874955eff
       matins-reading-5: reading.in-urbem-taque-hi-tres-profecti-conven-runt-cum-d90fe99658
@@ -10223,7 +10223,7 @@ offices:
     - omit-preces
     values:
       doxology: Nat
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.ex-udi-d-mine-preces-nostras-et-interveni-nte-be-8bcc8830b3
       matins-reading-3-abbreviated: reading.d-masus-hisp-nus-vir-egr-gius-et-erud-tus-in-scr-73eacc166a
@@ -10236,7 +10236,7 @@ offices:
     - rubrica-cisterciensis-psalmi-feria
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       vespers-psalmody: psalmody.tota-pulchra-es-mar-a-et-m-cula-origin-lis-non-e-749297f1ff
   12-12a:
@@ -10245,7 +10245,7 @@ offices:
       value: 2.5
     flags:
     - 9-lectiones
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-noni-02f637a794
       matins-reading-6: reading.atque-illud-in-primis-solemne-quoque-fuit-iisdem-336ff91580
@@ -10260,7 +10260,7 @@ offices:
     - rubrica-cisterciensis-psalmi-feria
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-3-abbreviated: reading.mexici-in-colle-tepeyacensi-anno-millesimo-quing-b133bc020d
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-noni-4d357eb6cc
@@ -10279,7 +10279,7 @@ offices:
     - ipsa-virgo-virginum
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-sub-beat-ssim-v-rginis-mar-singul-ri-pa-f91500f87a
       lauds-chapter: chapter.prov-8-34-35-e0bb7a2ef7
@@ -10302,7 +10302,7 @@ offices:
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
     values:
       doxology: Nat
-    common: Commune/C6
+    common: commons/c6
     slots:
       collect: collect.ex-udi-nos-deus-salut-ris-noster-ut-sicut-de-be-4eec4c7370
       lauds-gospel-antiphon: antiphon.col-mna-es-imm-bilis-l-cia-sponsa-christi-quia-o-6514eb9c50
@@ -10327,7 +10327,7 @@ offices:
   12-13bmv:
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
   12-13t:
     slots:
       matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-732c319503
@@ -10350,7 +10350,7 @@ offices:
     - feria-4-no93
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-1: reading.de-par-bolis-salom-nis-092cd43882
       matins-reading-2: reading.prov-8-18-25-9086954ec0
@@ -10370,7 +10370,7 @@ offices:
     - no93
     values:
       doxology: Nat
-    common: Sancti/12-08
+    common: sanctoral/12-08
     slots:
       matins-reading-1: reading.de-libro-g-nesis-8ca5ac7d8f
       matins-reading-2: reading.gen-3-6-8-e9fa541894
@@ -10384,7 +10384,7 @@ offices:
   12-16:
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       matins-reading-3-abbreviated: reading.eus-bius-nati-ne-sardus-rom-n-urbis-lector-post-5fc518947a
       matins-reading-4: reading.eusebius-nati-ne-sardus-roman-urbis-lector-post-dca2f3c368
@@ -10401,7 +10401,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C5
+    common: commons/c5
     slots:
       collect: collect.deus-qui-in-obstinatis-peccat-rum-c-rdibus-ad-p-d7e1c2e831
       matins-reading-4: reading.leon-rdus-e973ba2bbc
@@ -10416,7 +10416,7 @@ offices:
     - mtv
     - 9-lectiones
     - in-3-nocturno-lectiones-ex-commune-in-2-loco
-    common: Commune/C4b-1
+    common: commons/c4b-1
     slots:
       collect: collect.deus-qui-ad-tuenda-f-rtiter-sedis-apost-lic-iura-3469392789
       matins-reading-4: reading.urb-nus-quintus-p-ntifex-m-ximum-n-bili-grimoard-aa5f9a7d96
@@ -10436,7 +10436,7 @@ offices:
     values:
       laudes: '2'
       suffr: Maria1
-    common: Commune/C1v
+    common: commons/c1v
     slots:
       title: note.in-vigilia-s-thom-ap-361bb1d2fd
   12-21:
@@ -10447,7 +10447,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - antiphonas-horas
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.da-nobis-qu-sumus-d-mine-be-ti-ap-stoli-tui-thom-d0e9183149
       lauds-gospel-antiphon: antiphon.quia-vid-sti-me-thoma-credid-sti-be-ti-qui-non-v-6d5cc70d1b
@@ -10608,7 +10608,7 @@ offices:
     - antiphonas-horas
     - 9-lectiones
     - no-psalm5
-    common: Commune/C2a
+    common: commons/c2a
     slots:
       collect: collect.da-nobis-qu-sumus-d-mine-imit-ri-quod-c-limus-ut-5db9406a90
       lauds-chapter: chapter.act-6-8-968501f125
@@ -10647,7 +10647,7 @@ offices:
     - psalmi-dominica
     - antiphonas-horas
     - 9-lectiones
-    common: Commune/C1
+    common: commons/c1
     slots:
       collect: collect.eccl-siam-tuam-d-mine-ben-gnus-ill-stra-ut-be-ti-db5b648f66
       lauds-chapter: chapter.sir-15-1-2-31c76f7b00
@@ -10688,7 +10688,7 @@ offices:
     - 9-lectiones
     - no-te-deum
     - no-psalm5
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.deus-cuius-hodi-rna-die-pr-c-nium-innoc-ntes-m-r-bc687f77eb
       lauds-chapter: chapter.apo-14-1-6251993468
@@ -10729,7 +10729,7 @@ offices:
     - antiphonas-horas
     - 9-lectiones
     - no-psalm5
-    common: Commune/C3
+    common: commons/c3
     slots:
       matins-responsory-8: responsory.i-saw-under-the-altar-of-god-the-souls-of-them-t-ee5ec01529
   12-29:
@@ -10738,7 +10738,7 @@ offices:
       value: 3.0
     flags:
     - 9-lectiones
-    common: Commune/C2-1
+    common: commons/c2-1
     slots:
       collect: collect.deus-pro-cuius-eccl-sia-glori-sus-p-ntifex-thoma-1b0304668a
       matins-reading-4: reading.thomas-lond-ni-in-anglia-natus-theob-ldo-succ-ss-1a990e239a
@@ -10750,7 +10750,7 @@ offices:
       title: note.s-thom-cantuariensis-episcopi-et-martyris-b8fa0f1b74
       vespers-psalmody: psalmody.tecum-princ-pium-in-die-virt-tis-tu-in-splend-ri-947bd31487
   12-29-reduced:
-    common: Commune/C2
+    common: commons/c2
   12-29o:
     slots:
       matins-reading-1: reading.de-ctibus-apostol-rum-6504a3aea3
@@ -10766,7 +10766,7 @@ offices:
     flags:
     - 9-lectiones
     - lectio1-octnat
-    common: aliquibus locis/C4b-3
+    common: sanctoral/aliquibus-locis-c4b-3
     slots:
       matins-reading-4: reading.zosimus-gr-cus-abrahami-f-lius-post-sanctum-inno-356fcb45b7
       matins-reading-5: reading.ecclesi-stic-discipl-n-tenac-ssimus-tuit-complur-f7ff49e1ac
@@ -10779,7 +10779,7 @@ offices:
     flags:
     - 9-lectiones
     - lectio1-octnat
-    common: Commune/C4b
+    common: commons/c4b
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-be-ti-n-confess-r-68d6be366f
       matins-reading-3-abbreviated: reading.silv-ster-rom-nus-patre-ruf-no-s-vi-nte-persecut-28215da82b
@@ -10915,7 +10915,7 @@ offices:
     - credo
     values:
       prefatio: Quad5
-    common: Commune/Commune/Votiva/V6
+    common: commons/commune-votiva-v6
     slots:
       collect: collect.deus-qui-unig-niti-f-lii-tui-passi-ne-et-per-qui-4322fc6ada
       lauds-chapter: chapter.is-53-bc82300ea8
@@ -10958,7 +10958,7 @@ offices:
       vespers-psalmody: psalmody.vere-langu-res-nostros-ipse-tulit-et-dol-res-nos-a1e01eda15
       vespers-versicle: versicle.vid-bunt-in-quem-transfix-runt-a409bb0717
   quad4-5-sanguisdnjc:
-    common: Sancti/07-DP
+    common: sanctoral/07-dp
   quadp1-2-oratiodnjc:
     rank:
       name: Duplex majus
@@ -11026,7 +11026,7 @@ offices:
     - credo
     values:
       prefatio: Quad5
-    common: Commune/Commune/Votiva/V6
+    common: commons/commune-votiva-v6
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-hum-no-g-neri-ad-d73b5d9847
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-35948ba2be

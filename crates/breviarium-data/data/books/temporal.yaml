@@ -1904,7 +1904,7 @@ offices:
     - initia-cum-responsory
     values:
       rubrica-tridentina-psalm5-vespera: '113'
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       collect: collect.vota-qu-sumus-d-mine-supplic-ntis-p-puli-c-l-sti-c676238cb5
       lauds-chapter: chapter.rom-12-1-729d9b8fdb
@@ -2666,7 +2666,7 @@ offices:
     rank:
       name: Feria
       value: 1.2
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       matins-reading-1: reading.de-ep-stola-beati-pauli-ap-stoli-ad-rom-nos-1ab0c15810
       matins-reading-2: reading.rom-4-9-12-bed87f4f6d
@@ -2678,7 +2678,7 @@ offices:
       value: 1.0
     flags:
     - feria-te-deum
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-85e00735e1
       matins-reading-2: reading.rom-5-6-9-a4aabbb5a6
@@ -2697,7 +2697,7 @@ offices:
       value: 1.0
     flags:
     - feria-te-deum
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-a5c1282513
       matins-reading-2: reading.rom-6-6-11-4e36c9834b
@@ -2716,7 +2716,7 @@ offices:
       value: 1.0
     flags:
     - feria-te-deum
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-81654cdd6e
       matins-reading-2: reading.rom-7-4-6-23acfbd2b6
@@ -2735,7 +2735,7 @@ offices:
       value: 1.0
     flags:
     - feria-te-deum
-    common: Sancti/01-01
+    common: sanctoral/01-01
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-eb8d8f30ff
       matins-reading-2: reading.rom-8-5-9-2e43aed935
@@ -2752,7 +2752,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-ab169b46e1
       matins-reading-2: reading.rom-9-6-10-adb3411db1
@@ -2768,7 +2768,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-dc98dc4804
       matins-reading-2: reading.rom-12-4-8-0b66164540
@@ -2784,7 +2784,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-6911993070
       matins-reading-2: reading.rom-13-4-7-055d6f8cad
@@ -2801,7 +2801,7 @@ offices:
     - 9-lectiones
     - psalmi-dominica
     - lectio1-octnat
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       collect: collect.omn-potens-sempit-rne-deus-d-rige-actus-nostros-755e018b09
       lauds-chapter: chapter.gal-4-1-2-05114fca72
@@ -2833,7 +2833,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-13ee0eee8e
       matins-reading-2: reading.rom-14-5-8-735dacb043
@@ -2849,7 +2849,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-e0e3f2ab01
       matins-reading-2: reading.rom-15-5-11-8242e1922c
@@ -2865,7 +2865,7 @@ offices:
     flags:
     - feria-te-deum
     - infra-octavam-epiphani-domini
-    common: Sancti/01-06
+    common: sanctoral/01-06
     slots:
       matins-reading-1: reading.incipit-ep-stola-prima-be-ti-pauli-ap-stoli-ad-c-2261195e8d
       matins-reading-2: reading.1-cor-1-4-9-157b2c1bb5
@@ -2933,7 +2933,7 @@ offices:
       value: 5.0
     flags:
     - 9-lectiones
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       lauds-gospel-antiphon: antiphon.verbum-caro-factum-est-et-habit-vit-in-nobis-et-c7c137bec7
       lauds-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
@@ -2946,7 +2946,7 @@ offices:
       value: 5.0
     flags:
     - 9-lectiones
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       lauds-gospel-antiphon: antiphon.verbum-caro-factum-est-et-habit-vit-in-nobis-et-c7c137bec7
       lauds-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
@@ -2959,7 +2959,7 @@ offices:
       value: 5.0
     flags:
     - 9-lectiones
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       lauds-gospel-antiphon: antiphon.verbum-caro-factum-est-et-habit-vit-in-nobis-et-c7c137bec7
       lauds-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
@@ -2972,7 +2972,7 @@ offices:
       value: 5.0
     flags:
     - 9-lectiones
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       lauds-gospel-antiphon: antiphon.verbum-caro-factum-est-et-habit-vit-in-nobis-et-c7c137bec7
       lauds-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
@@ -2992,7 +2992,7 @@ offices:
     flags:
     - sed-rubrica-cisterciensis
     - 9-lectiones
-    common: Tempora/Nat1-0
+    common: temporal/nat1-0
     slots:
       matins-reading-1: reading.de-ep-stola-ad-rom-nos-7b9807be21
       matins-reading-2: reading.rom-2-5-8-99cee9b93a
@@ -3021,7 +3021,7 @@ offices:
     flags:
     - 9-lectiones
     - no-secunda-vespera
-    common: Sancti/12-25
+    common: sanctoral/12-25
     slots:
       lauds-gospel-antiphon: antiphon.verbum-caro-factum-est-et-habit-vit-in-nobis-et-c7c137bec7
       lauds-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
@@ -3073,7 +3073,7 @@ offices:
     - no-prima-vespera
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.deus-qui-solemnit-te-pasch-li-mundo-rem-dia-cont-ca20e88d91
       lauds-gospel-antiphon: antiphon.iesus-iunxit-se-disc-pulis-suis-in-via-et-ibat-c-2c48e7d3a1
@@ -3096,7 +3096,7 @@ offices:
     - psalmi-dominica
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-novo-semper-f-tu-mult-pl-f8b78ce580
       lauds-gospel-antiphon: antiphon.stetit-iesus-in-m-dio-discipul-rum-su-rum-et-dix-8e6259002e
@@ -3119,7 +3119,7 @@ offices:
     - psalmi-dominica
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.deus-qui-nos-resurrecti-nis-dom-nic-nnua-solemni-d85a8c3632
       lauds-gospel-antiphon: antiphon.m-ttite-in-d-xteram-nav-gii-rete-et-inveni-tis-a-d641552e82
@@ -3142,7 +3142,7 @@ offices:
     - psalmi-dominica
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.deus-qui-diversit-tem-g-ntium-in-confessi-ne-tui-a94fa59a3c
       lauds-gospel-antiphon: antiphon.mar-a-stabat-ad-monum-ntum-plorans-et-vidit-duos-e35766c7f2
@@ -3164,7 +3164,7 @@ offices:
     - psalmi-dominica
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-pasch-le-sacram-n-fca1b64fb0
       lauds-gospel-antiphon: antiphon.undecim-disc-puli-in-galil-a-vid-ntes-d-minum-ad-4f3d095ee0
@@ -3188,7 +3188,7 @@ offices:
     - no-secunda-vespera
     values:
       capitulum-versum: '2'
-    common: Pasc0-0
+    common: temporal/pasc0-0
     slots:
       collect: collect.conc-de-qu-sumus-omn-potens-deus-ut-qui-festa-pa-19e23b7091
       lauds-gospel-antiphon: antiphon.curr-bant-duo-simul-et-ille-lius-disc-pulus-pr-c-42ce15ebd5
@@ -3997,7 +3997,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.incipit-ep-stola-sec-nda-be-ti-petri-ap-stoli-d37858e374
       matins-reading-2: reading.2-pet-1-5-9-dcda14bc75
@@ -4021,7 +4021,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.de-ep-stola-sec-nda-be-ti-petri-ap-stoli-7d117be3a8
       matins-reading-2: reading.2-pet-3-8-13-5537904b7a
@@ -4045,7 +4045,7 @@ offices:
     values:
       doxology: Asc
       stjamesrule: 1 Joannes
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       collect: collect.omn-potens-sempit-rne-deus-fac-nos-tibi-semper-e-ee98267493
       lauds-chapter: chapter.1-petri-4-7-8-03ab0697b4
@@ -4077,7 +4077,7 @@ offices:
     - no-prima-vespera
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.de-ep-stola-prima-be-ti-io-nnis-ap-stoli-9a0c591139
       matins-reading-2: reading.1-ioannes-3-7-12-6938094183
@@ -4101,7 +4101,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.de-ep-stola-prima-be-ti-io-nnis-ap-stoli-baadf8b824
       matins-reading-2: reading.1-ioannes-4-7-14-aba018210e
@@ -4126,7 +4126,7 @@ offices:
     - rubrica-tridentina-aut-rubrica-divino-no-secunda-vespera
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.incipit-ep-stola-sec-nda-be-ti-io-nnis-ap-stoli-a02734fffb
       matins-reading-2: reading.2-ioannes-1-6-9-c99b670db0
@@ -4152,7 +4152,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-eph-sios-1f0e094f74
       matins-reading-2: reading.eph-4-9-14-b8995e359b
@@ -4177,7 +4177,7 @@ offices:
     - no-suffragium
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       matins-reading-1: reading.incipit-ep-stola-cath-lica-be-ti-iud-ap-stoli-54779becdc
       matins-reading-2: reading.iudas-1-5-8-5594608d64
@@ -4200,7 +4200,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Asc
-    common: Tempora/Pasc5-4
+    common: temporal/pasc5-4
     slots:
       collect: collect.omn-potens-sempit-rne-deus-fac-nos-tibi-semper-e-ee98267493
       lauds-chapter: chapter.act-1-1-2-fd56363d5b
@@ -4268,7 +4268,7 @@ offices:
     - antiphonas-horas
     - no-commemoration
     - no-prima-vespera
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.deus-qui-ap-stolis-tuis-sanctum-ded-sti-sp-ritum-bcae7de05d
       lauds-gospel-antiphon: antiphon.sic-deus-dil-xit-mundum-ut-f-lium-suum-unig-nitu-c79e1e312f
@@ -4288,7 +4288,7 @@ offices:
     - psalmi-dominica
     - antiphonas-horas
     - no-commemoration
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.adsit-nobis-qu-sumus-d-mine-virtus-sp-ritus-sanc-6089b44ad4
       lauds-gospel-antiphon: antiphon.ego-sum-stium-dicit-d-minus-per-me-si-quis-intro-80134ac55f
@@ -4312,7 +4312,7 @@ offices:
     - antiphonas-horas
     - feria-te-deum
     - no93
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.mentes-nostras-qu-sumus-d-mine-par-clitus-qui-a-8f3f709a39
       lauds-gospel-antiphon: antiphon.ego-sum-panis-vivus-dicit-d-minus-qui-de-c-lo-de-29094f7d2b
@@ -4336,7 +4336,7 @@ offices:
     - antiphonas-horas
     - feria-te-deum
     - no93
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.deus-qui-hodi-rna-die-corda-fid-lium-sancti-sp-r-4837c86f0f
       lauds-gospel-antiphon: antiphon.convoc-tis-iesus-du-decim-disc-pulis-suis-dedit-98a3937632
@@ -4359,7 +4359,7 @@ offices:
     - antiphonas-horas
     - feria-te-deum
     - no93
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.da-qu-sumus-eccl-si-tu-mis-ricors-deus-ut-sancto-0a35872082
       lauds-gospel-antiphon: antiphon.dixit-iesus-ut-sci-tis-autem-quia-f-lius-h-minis-44cda0f187
@@ -4384,7 +4384,7 @@ offices:
     - feria-te-deum
     - no93
     - no-secunda-vespera
-    common: Pasc7-0
+    common: temporal/pasc7-0
     slots:
       collect: collect.m-ntibus-nostris-qu-sumus-d-mine-sp-ritum-sanctu-9d53745641
       lauds-gospel-antiphon: antiphon.c-ritas-dei-diff-sa-est-in-c-rdibus-nostris-per-1391701808
@@ -4552,7 +4552,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       collect: collect.deus-in-te-sper-ntium-fortit-do-ad-sto-prop-tius-5ce1c4e41e
       matins-reading-1: reading.de-libro-primo-regum-61da68be33
@@ -4576,7 +4576,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       matins-reading-1: reading.de-libro-primo-regum-ee0f8bb26d
       matins-reading-2: reading.1-reg-3-8-12-da4e04581b
@@ -4598,7 +4598,7 @@ offices:
     - antiphonas-horas
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       collect: collect.sancti-n-minis-tui-d-mine-tim-rem-p-riter-et-am-4ba5589797
       lauds-chapter: chapter.1-ioann-3-13-14-307355b765
@@ -4632,7 +4632,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       matins-reading-1: reading.de-libro-primo-regum-669521336f
       matins-reading-2: reading.1-reg-5-6-8-51d1847eca
@@ -4652,7 +4652,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       lauds-gospel-antiphon: antiphon.text-0752f4450e
       matins-reading-1: reading.de-libro-primo-regum-4323971fe6
@@ -4674,7 +4674,7 @@ offices:
     - 9-lectiones
     values:
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       lauds-gospel-antiphon: antiphon.text-0752f4450e
       matins-reading-1: reading.de-libro-primo-regum-b4552fc6bd
@@ -4697,7 +4697,7 @@ offices:
     values:
       comkey: '20'
       doxology: Corp
-    common: Tempora/Pent01-4
+    common: temporal/pent01-4
     slots:
       matins-reading-1: reading.de-libro-primo-regum-5a67f6f271
       matins-reading-2: reading.1-reg-8-7-9-09d1e04f1c
@@ -4789,7 +4789,7 @@ offices:
     - symbolum-athanasium
     values:
       doxology: Heart
-    common: Tempora/Pent02-5
+    common: temporal/pent02-5
     slots:
       collect: collect.prot-ctor-in-te-sper-ntium-deus-sine-quo-nihil-e-295a391634
       lauds-chapter: chapter.1-pet-5-6-7-3218dac9c6

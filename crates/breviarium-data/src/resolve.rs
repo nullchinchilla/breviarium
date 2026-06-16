@@ -738,11 +738,9 @@ impl OfficeContext {
         let rule_values: BTreeMap<String, String> = principal_office
             .map(|office| office.values.clone())
             .unwrap_or_default();
-        let commune_ref = principal_office.and_then(|office| office.common.clone());
-        let commune_key = commune_ref
-            .as_deref()
-            .zip(principal_key.as_deref())
-            .map(|(reference, source_key)| source_reference_key(source_key, reference));
+        // `office.common` is already a canonical `book/office` key (resolved by
+        // the importer).
+        let commune_key = principal_office.and_then(|office| office.common.clone());
         let collect_reference_keys = collect_reference_keys_for_sources(
             catalog,
             primary_language,
@@ -760,8 +758,7 @@ impl OfficeContext {
                 let source_key = commemoration.catalog_key.clone()?;
                 let commune_key = catalog
                     .office(&source_key)
-                    .and_then(|office| office.common.clone())
-                    .map(|reference| source_reference_key(&source_key, &reference));
+                    .and_then(|office| office.common.clone());
                 Some(CommemorationContext {
                     source_key,
                     commune_key,
@@ -2684,48 +2681,14 @@ fn push_collect_reference_key(
     if !seen.insert(source_key.to_string()) {
         return;
     }
-    let Some(reference) = source_reference_from_key(catalog, primary_language, source_key) else {
+    // `office.common` is already a canonical `book/office` key.
+    let Some(key) = catalog.office(source_key).and_then(|o| o.common.clone()) else {
         return;
     };
-    let key = source_reference_key(source_key, &reference);
     if !keys.iter().any(|existing| existing == &key) {
         keys.push(key.clone());
     }
     push_collect_reference_key(catalog, primary_language, &key, keys, seen);
-}
-
-fn source_reference_from_key(
-    catalog: &Catalog,
-    _language: &str,
-    source_key: &str,
-) -> Option<String> {
-    catalog
-        .office(source_key)
-        .and_then(|office| office.common.clone())
-}
-
-fn source_reference_key(current_key: &str, reference: &str) -> String {
-    let reference = reference.strip_suffix(".txt").unwrap_or(reference);
-    if let Some(common) = reference.strip_prefix("Commune/") {
-        source_key(&["commons", common])
-    } else if let Some(temporal) = reference.strip_prefix("Tempora/") {
-        source_key(&["temporal", temporal])
-    } else if let Some(sanctoral) = reference.strip_prefix("Sancti/") {
-        source_key(&["sanctoral", sanctoral])
-    } else if is_commune_reference(reference) {
-        source_key(&["commons", reference])
-    } else if let Some((book, _)) = current_key.split_once('/') {
-        source_key(&[book, reference])
-    } else {
-        data_slug(reference)
-    }
-}
-
-fn is_commune_reference(reference: &str) -> bool {
-    reference
-        .strip_prefix('C')
-        .and_then(|tail| tail.chars().next())
-        .is_some_and(|ch| ch.is_ascii_digit())
 }
 
 fn source_key_category(source_key: &str) -> Option<&str> {

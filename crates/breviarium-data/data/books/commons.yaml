@@ -59,7 +59,7 @@ offices:
       nisi-rubrica-cisterciensis-special-lectio: '3'
       prefatio: Maria=veneratione
       suffr: Spiritu
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.conc-de-nos-f-mulos-tuos-qu-sumus-d-mine-deus-pe-38220de185
       lauds-chapter: chapter.sir-24-14-b7b4746e13
@@ -96,7 +96,7 @@ offices:
       nisi-rubrica-cisterciensis-special-lectio: '3'
       prefatio: Maria=veneratione
       suffr: Spiritu
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.deus-qui-de-be-t-mar-v-rginis-tero-verbum-tuum-a-8287deb4d0
       lauds-chapter: chapter.sir-24-14-8ec4e47f6b
@@ -133,7 +133,7 @@ offices:
       nisi-rubrica-cisterciensis-special-lectio: '3'
       prefatio: Maria=veneratione
       suffr: Spiritu
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.deus-qui-sal-tis-t-rn-be-t-mar-virginit-te-fec-n-00bec7e28c
       lauds-chapter: chapter.sir-24-14-8ec4e47f6b
@@ -170,7 +170,7 @@ offices:
       nisi-rubrica-cisterciensis-special-lectio: '3'
       prefatio: Maria=veneratione
       suffr: Spiritu
-    common: Commune/C10
+    common: commons/c10
     slots:
       collect: collect.deus-qui-sal-tis-t-rn-be-t-mar-virginit-te-fec-n-00bec7e28c
       lauds-chapter: chapter.sir-24-14-8ec4e47f6b
@@ -253,7 +253,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       daytime-collect: collect.deus-qui-de-be-t-mar-v-rginis-tero-verbum-tuum-a-8287deb4d0
       lauds-chapter: chapter.cant-6-8-79738155bf
@@ -330,7 +330,7 @@ offices:
     - feria-te-deum
     values:
       doxology: Nat
-    common: Commune/C11
+    common: commons/c11
     slots:
       collect: collect.deus-qui-sal-tis-t-rn-be-t-mar-virginit-te-fec-n-00bec7e28c
       daytime-collect: collect.deus-qui-de-be-t-mar-v-rginis-tero-verbum-tuum-a-b633e746f7
@@ -925,7 +925,7 @@ offices:
   c2b:
     values:
       prefatio: Apostolis
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-8e96901ae7
       lauds-chapter: chapter.iac-1-12-000c025425
@@ -966,7 +966,7 @@ offices:
   c2b-1:
     values:
       prefatio: Apostolis
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-8e96901ae7
       lauds-chapter: chapter.iac-1-12-000c025425
@@ -1007,7 +1007,7 @@ offices:
   c2b-1p:
     values:
       prefatio: Apostolis
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-8e96901ae7
       lauds-chapter: chapter.iac-1-12-319fd7a95a
@@ -1048,7 +1048,7 @@ offices:
   c2bp:
     values:
       prefatio: Apostolis
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-8e96901ae7
       lauds-chapter: chapter.iac-1-12-319fd7a95a
@@ -1087,7 +1087,7 @@ offices:
       vespers-psalmody: psalmody.qui-me-conf-ssus-f-erit-coram-hom-nibus-confit-b-6a1c172a81
       vespers-versicle: versicle.iustus-ut-palma-flor-bit-cde7a8a6ec
   c2p:
-    common: Commune/C2
+    common: commons/c2
     slots:
       collect: collect.infirmit-tem-nostram-r-spice-omn-potens-deus-et-34b3096453
       lauds-chapter: chapter.iac-1-12-000c025425
@@ -1353,7 +1353,7 @@ offices:
   c3b:
     values:
       prefatio: Apostolis
-    common: Commune/C3
+    common: commons/c3
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-2287f55bab
       lauds-chapter: chapter.sap-3-1-3-87472e732c
@@ -1393,7 +1393,7 @@ offices:
       vespers-psalmody: psalmody.omnes-sancti-quanta-passi-sunt-torm-nta-ut-sec-r-18e74e0f78
       vespers-versicle: versicle.exsult-bunt-sancti-in-gl-ria-f260a29642
   c3bp:
-    common: Commune/C3b
+    common: commons/c3b
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-2287f55bab
       lauds-chapter: chapter.sap-3-1-3-8e784cb146
@@ -1613,7 +1613,7 @@ offices:
   c4b:
     values:
       prefatio: Apostolis
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-f1c22436c1
       lauds-chapter: chapter.sir-44-16-17-27e06fb9a7
@@ -1654,7 +1654,7 @@ offices:
   c4b-1:
     values:
       prefatio: Apostolis
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-f1c22436c1
       lauds-chapter: chapter.sir-44-16-17-27e06fb9a7
@@ -1695,7 +1695,7 @@ offices:
   c4b-2:
     values:
       prefatio: Apostolis
-    common: Commune/C4a
+    common: commons/c4a
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-f1c22436c1
       lauds-chapter: chapter.sir-44-16-17-27e06fb9a7
@@ -1736,7 +1736,7 @@ offices:
   c4b-3:
     values:
       prefatio: Apostolis
-    common: Commune/C4
+    common: commons/c4
     slots:
       collect: collect.gregem-tuum-pastor-t-rne-plac-tus-int-nde-et-per-343eee7fc9
       lauds-chapter: chapter.sir-44-16-17-74216b4204
@@ -2496,7 +2496,7 @@ offices:
     values:
       prefatio: Joseph
       psalm5-vespera: '116'
-    common: Tempora/Pasc2-3
+    common: temporal/pasc2-3
     slots:
       lauds-gospel-antiphon: antiphon.ioseph-fili-david-noli-tim-re-acc-pere-mar-am-c-54a0e7dc02
       lauds-versicle: versicle.ded-sti-mihi-protecti-nem-sal-tis-tu-allel-ia-626c7a368f

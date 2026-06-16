@@ -2770,7 +2770,7 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
             books
                 .entry(book)
                 .or_default()
-                .insert(office_key, office_out(source));
+                .insert(office_key, office_out(source_key, source));
         }
     }
     for (book, offices) in &books {
@@ -2988,7 +2988,30 @@ fn book_and_office(key: &str) -> (String, String) {
 
 /// Reduces a legacy `SourceYaml` to a books-schema office: rank, parsed
 /// flags/values, the inherited common, and canonical slot → text-id.
-fn office_out(source: &SourceYaml) -> OfficeOut {
+/// Resolves a Divinum-Officium common reference (`Commune/C5`, `Sancti/01-06`,
+/// `C2b`, or a bare relative stem) to a canonical `book/office` key, so the
+/// checked-in YAML carries no DO reference syntax.
+fn resolve_common(source_key: &str, reference: &str) -> String {
+    let reference = reference.strip_suffix(".txt").unwrap_or(reference);
+    if let Some(x) = reference.strip_prefix("Commune/") {
+        format!("commons/{}", slug(x))
+    } else if let Some(x) = reference.strip_prefix("Tempora/") {
+        format!("temporal/{}", slug(x))
+    } else if let Some(x) = reference.strip_prefix("Sancti/") {
+        format!("sanctoral/{}", slug(x))
+    } else if reference
+        .strip_prefix('C')
+        .and_then(|tail| tail.chars().next())
+        .is_some_and(|ch| ch.is_ascii_digit())
+    {
+        format!("commons/{}", slug(reference))
+    } else {
+        let (book, _) = book_and_office(source_key);
+        format!("{book}/{}", slug(reference))
+    }
+}
+
+fn office_out(source_key: &str, source: &SourceYaml) -> OfficeOut {
     let mut flags = Vec::new();
     let mut values = BTreeMap::new();
     let mut common = None;
@@ -3017,6 +3040,7 @@ fn office_out(source: &SourceYaml) -> OfficeOut {
             common = rank.common.clone();
         }
     }
+    let common = common.map(|reference| resolve_common(source_key, &reference));
     let slots = source
         .sections
         .iter()

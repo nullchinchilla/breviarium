@@ -897,17 +897,8 @@ fn dispatch(
         (Hymn, arg) => resolve_hymn(catalog, language, context, arg, diagnostics),
         (Psalmody, arg) => resolve_psalmody(catalog, language, context, arg, diagnostics),
         (Matins, _) => resolve_matins_nocturns(catalog, language, context, diagnostics),
-        (ChapterBlock, "major") if hour == Hour::Vespers => {
-            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Vespers, diagnostics)
-        }
-        (ChapterBlock, "major") => {
-            resolve_major_chapter_hymn_verse(catalog, language, context, Hour::Lauds, diagnostics)
-        }
-        (ChapterBlock, _) if hour == Hour::Compline => {
-            resolve_compline_chapter_responsory_verse(catalog, language, context, diagnostics)
-        }
-        (ChapterBlock, _) => {
-            resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics)
+        (ChapterBlock, arg) => {
+            resolve_chapter_block(catalog, language, context, arg, hour, diagnostics)
         }
         (Canticle, which) => resolve_canticle(catalog, language, context, which, diagnostics),
         (Collect, arg) => resolve_collect(catalog, language, context, arg, diagnostics),
@@ -1567,6 +1558,28 @@ fn minor_psalmody_entries(
         entry.psalms.retain(|psalm| !psalm.optional);
     }
     Ok(vec![entry])
+}
+
+/// The chapter block: chapter + hymn + versicle (major hours) or chapter +
+/// short responsory + versicle (Prime / minor hours / Compline). `arg` is
+/// `major` (Lauds/Vespers) or `minor`; the hour selects the exact shape.
+fn resolve_chapter_block(
+    catalog: &Catalog,
+    language: &str,
+    context: &OfficeContext,
+    arg: &str,
+    hour: Hour,
+    diagnostics: &mut Vec<Diagnostic>,
+) -> Result<Vec<DocumentNode>, String> {
+    match (arg, hour) {
+        ("major", _) => {
+            resolve_major_chapter_hymn_verse(catalog, language, context, hour, diagnostics)
+        }
+        (_, Hour::Compline) => {
+            resolve_compline_chapter_responsory_verse(catalog, language, context, diagnostics)
+        }
+        _ => resolve_minor_chapter_responsory_verse(catalog, language, context, diagnostics),
+    }
 }
 
 fn resolve_major_chapter_hymn_verse(

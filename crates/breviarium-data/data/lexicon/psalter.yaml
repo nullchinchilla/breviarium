@@ -55,9 +55,9 @@ texts:
       - type: citation
         text: 3 = Come, O Lord, * and make no tarrying; loosen the bonds of thy people Israel.
       - type: text
-        text: 4 = God shall come from Lebanon, * and his brightness shall be as the light.
-      - type: text
-        text: 5 = Therefore I shall look unto the Lord, * I shall wait for God my Saviour.
+        text: |-
+          4 = God shall come from Lebanon, * and his brightness shall be as the light.
+          5 = Therefore I shall look unto the Lord, * I shall wait for God my Saviour.
       la:
       - type: citation
         text: 1 = Constántes estóte, * vidébitis auxílium Dómini super vos.
@@ -66,9 +66,9 @@ texts:
       - type: citation
         text: '3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.'
       - type: text
-        text: 4 = Deus a Líbano véniet, * et splendor eius sicut lumen erit.
-      - type: text
-        text: 5 = Ego autem * ad Dóminum aspíciam, et exspectábo Deum, Salvatórem meum.
+        text: |-
+          4 = Deus a Líbano véniet, * et splendor eius sicut lumen erit.
+          5 = Ego autem * ad Dóminum aspíciam, et exspectábo Deum, Salvatórem meum.
   psalmody.1-de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-abb53a2f81:
     role: psalmody
     content:
@@ -80,9 +80,9 @@ texts:
       - type: citation
         text: 3 = The Lord that shall rule * shall come forth from Zion, Emmanuel is his name, and his name is great.
       - type: text
-        text: 4 = Behold, he is my God, * and I will glorify him my father's God, and I will exalt him.
-      - type: text
-        text: 5 = The Lord our Law-giver, * the Lord our King, he cometh and will save us.
+        text: |-
+          4 = Behold, he is my God, * and I will glorify him my father's God, and I will exalt him.
+          5 = The Lord our Law-giver, * the Lord our King, he cometh and will save us.
       la:
       - type: citation
         text: 1 = De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum.
@@ -130,9 +130,9 @@ texts:
       - type: citation
         text: 3 = Behold, the fulness * of the time is come, when God sent forth his Son into the world.
       - type: text
-        text: 4 = With joy * shall ye draw water out of the wells of the Saviour.
-      - type: text
-        text: 5 = The Lord goeth forth * from his holy place; he cometh to save his people.
+        text: |-
+          4 = With joy * shall ye draw water out of the wells of the Saviour.
+          5 = The Lord goeth forth * from his holy place; he cometh to save his people.
       la:
       - type: citation
         text: '1 = Ecce, véniet * Dóminus princeps regum terræ: beáti, qui paráti sunt occúrrere illi.'
@@ -255,9 +255,9 @@ texts:
       - type: citation
         text: 3 = That thy way, O Lord, * may be known upon earth, thy saving health among all nations.
       - type: text
-        text: 4 = O Lord, * reward them that wait for thee, and let thy prophets be found faithful.
-      - type: text
-        text: 5 = The law was given by Moses, * but grace and truth came by Jesus Christ.
+        text: |-
+          4 = O Lord, * reward them that wait for thee, and let thy prophets be found faithful.
+          5 = The law was given by Moses, * but grace and truth came by Jesus Christ.
       la:
       - type: citation
         text: '1 = Roráte, cæli, désuper, * et nubes pluant iustum: aperiátur terra, et gérminet Salvatórem.'
@@ -266,9 +266,9 @@ texts:
       - type: citation
         text: 3 = Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
       - type: text
-        text: 4 = Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
-      - type: text
-        text: 5 = Lex per Móysen data est; * grátia et véritas per Iesum Christum facta est.
+        text: |-
+          4 = Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
+          5 = Lex per Móysen data est; * grátia et véritas per Iesum Christum facta est.
   psalmody.1-v-niet-d-minus-et-non-tard-bit-et-illumin-bit-e3139ace8b:
     role: psalmody
     content:
@@ -319,9 +319,9 @@ texts:
       - type: citation
         text: 3 = Let us prove ourselves * in much patience and fasting, by the armour of justice.
       - type: text
-        text: 4 = missing
-      - type: text
-        text: 5 = With the armour of justice * and in the power of God, let us prove ourselves in much patience.
+        text: |-
+          4 = missing
+          5 = With the armour of justice * and in the power of God, let us prove ourselves in much patience.
       la:
       - type: citation
         text: '1 = Vivo ego * dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur et vivat.'
@@ -710,62 +710,56 @@ texts:
     content:
       en:
       - type: text
-        text: Alleluia, * Alleluia, Alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
       - type: versicle
         text: God hath begotten us again unto a lively hope, alleluia.
       - type: response
         text: By the resurrection of Jesus Christ from the dead, alleluia.
       - type: text
-        text: Alleluia, * Alleluia, Alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
       - type: versicle
         text: God raised up Christ from the dead, alleluia.
       - type: response
         text: That your faith and hope might be in God, alleluia.
       - type: text
-        text: Alleluia, * Alleluia, Alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
       - type: versicle
         text: God has raised up the Lord, alleluia.
       - type: response
         text: And he will raise us up by his power, alleluia.
       la:
       - type: text
-        text: Allelúia, * Allelúia, Allelúia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * Allelúia, Allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Deus regeneravit nos in spem vivam, allelúia.
       - type: response
         text: Per resurrectiónem Iesu Christi ex mórtuis, allelúia.
       - type: text
-        text: Allelúia, * Allelúia, Allelúia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * Allelúia, Allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Deus suscitávit Christum a mórtuis, allelúia.
       - type: response
         text: Ut fides nostra et spes esset in Deo, allelúia.
       - type: text
-        text: Allelúia, * Allelúia, Allelúia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * Allelúia, Allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Deus et Dóminum suscitávit, allelúia.
       - type: response
@@ -775,26 +769,20 @@ texts:
     content:
       en:
       - type: text
-        text: Alleluia, * alleluia, alleluia.
-      - type: text
-        text: Alleluia, * alleluia, alleluia.
-      - type: text
-        text: Alleluia, * alleluia, alleluia.
-      - type: text
-        text: Alleluia, * alleluia, alleluia.
-      - type: text
-        text: Alleluia, * alleluia, alleluia.
+        text: |-
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
       la:
       - type: text
-        text: Allelúia, * allelúia, allelúia.
-      - type: text
-        text: Allelúia, * allelúia, allelúia.
-      - type: text
-        text: Allelúia, * allelúia, allelúia.
-      - type: text
-        text: Allelúia, * allelúia, allelúia.
-      - type: text
-        text: Allelúia, * allelúia, allelúia.
+        text: |-
+          Allelúia, * allelúia, allelúia.
+          Allelúia, * allelúia, allelúia.
+          Allelúia, * allelúia, allelúia.
+          Allelúia, * allelúia, allelúia.
+          Allelúia, * allelúia, allelúia.
   psalmody.allel-ia-allel-ia-allel-ia-allel-ia-070631c691:
     role: psalmody
     content:
@@ -2256,62 +2244,56 @@ texts:
     content:
       en:
       - type: text
-        text: Alleluia * The stone was rolled back, alleluia, from the door of the sepulchre, alleluia, alleluia.;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia * The stone was rolled back, alleluia, from the door of the sepulchre, alleluia, alleluia.;;
+          ;;
+          ;;
       - type: versicle
         text: The Lord is risen from the sepulcher, alleluia.
       - type: response
         text: He, who hangeth on the tree, alleluia.
       - type: text
-        text: 'Alleluia, * Alleluia * Whom do you seek, women? alleluia: the living among the dead? Alleluia, alleluia.;;'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Alleluia * Whom do you seek, women? alleluia: the living among the dead? Alleluia, alleluia.;;
+          ;;
+          ;;
       - type: versicle
         text: The Lord is risen indeed, alleluia.
       - type: response
         text: And hath appeared to Simon, alleluia.
       - type: text
-        text: 'Alleluia * Do not weep, Maria, alleluia: the Lord is risen, alleluia, alleluia.;;'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia * Do not weep, Maria, alleluia: the Lord is risen, alleluia, alleluia.;;
+          ;;
+          ;;
       - type: response
         text: The disciples therefore were glad, alleluia.
       - type: versicle
         text: When they saw the Lord, alleluia.
       la:
       - type: text
-        text: 'Allelúia, * lapis revolútus est, allelúia: ab óstio monuménti, allelúia, allelúia.;;'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * lapis revolútus est, allelúia: ab óstio monuménti, allelúia, allelúia.;;
+          ;;
+          ;;
       - type: versicle
         text: Surréxit Dóminus de sepúlcro, allelúia.
       - type: response
         text: Qui pro nobis pepéndit in ligno, allelúia.
       - type: text
-        text: 'Allelúia, * quem quæris, múlier? allelúia: vivéntem cum mórtuis? Allelúia, allelúia.;;'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * quem quæris, múlier? allelúia: vivéntem cum mórtuis? Allelúia, allelúia.;;
+          ;;
+          ;;
       - type: versicle
         text: Surréxit Dóminus vere, allelúia.
       - type: response
         text: Et appáruit Simóni, allelúia.
       - type: text
-        text: 'Allelúia, * noli flere María, allelúia: resurréxit Dóminus, allelúia, allelúia.;;'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * noli flere María, allelúia: resurréxit Dóminus, allelúia, allelúia.;;
+          ;;
+          ;;
       - type: versicle
         text: Gavísi sunt discípuli, allelúia.
       - type: response
@@ -2458,62 +2440,56 @@ texts:
     content:
       en:
       - type: text
-        text: Alleluia, * The stone was rolled back, alleluia, from the door of the sepulchre, alleluia, alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * The stone was rolled back, alleluia, from the door of the sepulchre, alleluia, alleluia.
+          ;;
+          ;;
       - type: versicle
         text: The Lord is risen from the sepulcher, alleluia.
       - type: response
         text: He, who hangeth on the tree, alleluia.
       - type: text
-        text: 'Alleluia, * Whom do you seek, women? alleluia: the living among the dead? alleluia, alleluia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Whom do you seek, women? alleluia: the living among the dead? alleluia, alleluia.
+          ;;
+          ;;
       - type: versicle
         text: The Lord is risen indeed, alleluia.
       - type: response
         text: And hath appeared to Simon, alleluia.
       - type: text
-        text: 'Alleluia, * Do not weep, Maria, alleluia: the Lord is risen, alleluia, alleluia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Alleluia, * Do not weep, Maria, alleluia: the Lord is risen, alleluia, alleluia.
+          ;;
+          ;;
       - type: response
         text: The disciples therefore were glad, alleluia.
       - type: versicle
         text: When they saw the Lord, alleluia.
       la:
       - type: text
-        text: 'Allelúia, * lapis revolútus est, allelúia: ab óstio monuménti, allelúia, allelúia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * lapis revolútus est, allelúia: ab óstio monuménti, allelúia, allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Surréxit Dóminus de sepúlcro, allelúia.
       - type: response
         text: Qui pro nobis pepéndit in ligno, allelúia.
       - type: text
-        text: 'Allelúia, * quem quæris múlier? allelúia: vivéntem cum mórtuis? allelúia, allelúia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * quem quæris múlier? allelúia: vivéntem cum mórtuis? allelúia, allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Surréxit Dóminus vere, allelúia.
       - type: response
         text: Et appáruit Simóni, allelúia.
       - type: text
-        text: 'Allelúia, * noli flere, María, allelúia: resurréxit Dóminus, allelúia, allelúia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Allelúia, * noli flere, María, allelúia: resurréxit Dóminus, allelúia, allelúia.
+          ;;
+          ;;
       - type: versicle
         text: Gavísi sunt discípuli, allelúia.
       - type: response
@@ -3401,26 +3377,20 @@ texts:
     content:
       en:
       - type: text
-        text: Stand still * and you shall see the salvation of the Lord.
-      - type: text
-        text: Unto thee, O Lord, * lift I up my soul; come and deliver me, O Lord, in thee do I put my trust.
-      - type: text
-        text: Come, O Lord, * and make no tarrying; loosen the bonds of thy people Israel.
-      - type: text
-        text: God shall come from Lebanon, * and his brightness shall be as the light.
-      - type: text
-        text: Therefore I shall look unto the Lord, * I shall wait for God my Saviour.
+        text: |-
+          Stand still * and you shall see the salvation of the Lord.
+          Unto thee, O Lord, * lift I up my soul; come and deliver me, O Lord, in thee do I put my trust.
+          Come, O Lord, * and make no tarrying; loosen the bonds of thy people Israel.
+          God shall come from Lebanon, * and his brightness shall be as the light.
+          Therefore I shall look unto the Lord, * I shall wait for God my Saviour.
       la:
       - type: text
-        text: Constántes estóte, * vidébitis auxílium Dómini super vos.
-      - type: text
-        text: 'Ad te, Dómine, * levávi ánimam meam: veni, et éripe me, Dómine, ad te confúgi.'
-      - type: text
-        text: 'Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.'
-      - type: text
-        text: Deus a Líbano véniet, * et splendor eius sicut lumen erit.
-      - type: text
-        text: Ego autem * ad Dóminum aspíciam, et exspectábo Deum Salvatórem meum.
+        text: |-
+          Constántes estóte, * vidébitis auxílium Dómini super vos.
+          Ad te, Dómine, * levávi ánimam meam: veni, et éripe me, Dómine, ad te confúgi.
+          Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.
+          Deus a Líbano véniet, * et splendor eius sicut lumen erit.
+          Ego autem * ad Dóminum aspíciam, et exspectábo Deum Salvatórem meum.
   psalmody.cor-contr-tum-et-humili-tum-deus-non-desp-cies-c1d76ea317:
     role: psalmody
     content:
@@ -4167,26 +4137,20 @@ texts:
     content:
       en:
       - type: text
-        text: The Lord, the Almighty, * cometh out of Zion, to save his people.
-      - type: text
-        text: Turn thee, O Lord, * at the last, and tarry not to come unto thy servants.
-      - type: text
-        text: The Lord that shall rule * shall come forth from Zion, Emmanuel is his name, and his name is great.
-      - type: text
-        text: 'Behold, he is my God, * and I will glorify him: my father''s God, and I will exalt him.'
-      - type: text
-        text: The Lord our Law-giver, * the Lord our King, he cometh and will save us.
+        text: |-
+          The Lord, the Almighty, * cometh out of Zion, to save his people.
+          Turn thee, O Lord, * at the last, and tarry not to come unto thy servants.
+          The Lord that shall rule * shall come forth from Zion, Emmanuel is his name, and his name is great.
+          Behold, he is my God, * and I will glorify him: my father's God, and I will exalt him.
+          The Lord our Law-giver, * the Lord our King, he cometh and will save us.
       la:
       - type: text
-        text: De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum.
-      - type: text
-        text: Convértere, Dómine, * aliquántulum, et ne tardes veníre ad servos tuos.
-      - type: text
-        text: De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
-      - type: text
-        text: 'Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.'
-      - type: text
-        text: Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
+        text: |-
+          De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum.
+          Convértere, Dómine, * aliquántulum, et ne tardes veníre ad servos tuos.
+          De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
+          Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.
+          Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
   psalmody.dele-d-mine-iniquit-tem-meam-77d865a09a:
     role: psalmody
     content:
@@ -4501,26 +4465,20 @@ texts:
     content:
       en:
       - type: text
-        text: 'Behold, the Lord cometh, * the Prince of the Kings of the earth: blessed are they that are ready to go forth to meet him.'
-      - type: text
-        text: When the Son of man cometh, * shall he find faith on the earth?
-      - type: text
-        text: Behold, the fulness * of the time is come, when God sent forth his Son into the world.
-      - type: text
-        text: With joy * shall ye draw water out of the wells of the Saviour.
-      - type: text
-        text: The Lord goeth forth * from his holy place he cometh to save his people.
+        text: |-
+          Behold, the Lord cometh, * the Prince of the Kings of the earth: blessed are they that are ready to go forth to meet him.
+          When the Son of man cometh, * shall he find faith on the earth?
+          Behold, the fulness * of the time is come, when God sent forth his Son into the world.
+          With joy * shall ye draw water out of the wells of the Saviour.
+          The Lord goeth forth * from his holy place he cometh to save his people.
       la:
       - type: text
-        text: 'Ecce véniet * Dóminus princeps regum terræ: beáti, qui parati sunt occúrrere illi.'
-      - type: text
-        text: Cum vénerit * Fílius hóminis, putas invéniet fidem super terram?
-      - type: text
-        text: Ecce iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
-      - type: text
-        text: Hauriétis aquas * in gáudio de fóntibus Salvatóris.
-      - type: text
-        text: 'Egrediétur * Dóminus de loco sancto suo: véniet ut salvet pópulum suum.'
+        text: |-
+          Ecce véniet * Dóminus princeps regum terræ: beáti, qui parati sunt occúrrere illi.
+          Cum vénerit * Fílius hóminis, putas invéniet fidem super terram?
+          Ecce iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
+          Hauriétis aquas * in gáudio de fóntibus Salvatóris.
+          Egrediétur * Dóminus de loco sancto suo: véniet ut salvet pópulum suum.
   psalmody.egredi-tur-d-minus-de-loco-sancto-suo-266236f87b:
     role: psalmody
     content:
@@ -4958,62 +4916,46 @@ texts:
     content:
       en:
       - type: text
-        text: You seek Jesus * who was crucified, alleluia; He is not here, for he is risen, as he said, alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          You seek Jesus * who was crucified, alleluia; He is not here, for he is risen, as he said, alleluia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
       - type: versicle
         text: The disciples therefore were glad, alleluia.
       - type: response
         text: When they saw the Lord, alleluia.
       - type: text
-        text: Come, see the place where the Lord was laid, alleluia, alleluia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Come, see the place where the Lord was laid, alleluia, alleluia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
       la:
       - type: text
-        text: 'Iesum qui crucifíxus est * quǽritis, allelúia; non est hic: surréxit enim, sicut dixit vobis, allelúia.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Iesum qui crucifíxus est * quǽritis, allelúia; non est hic: surréxit enim, sicut dixit vobis, allelúia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
       - type: versicle
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
       - type: text
-        text: Veníte * et vidéte locum ubi pósitus erat Dóminus, allelúia, allelúia.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Veníte * et vidéte locum ubi pósitus erat Dóminus, allelúia, allelúia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
   psalmody.in-consp-ctu-angel-rum-psallam-tibi-deus-meus-4a4dbb2c9b:
     role: psalmody
     content:
@@ -5242,33 +5184,25 @@ texts:
     content:
       la:
       - type: text
-        text: 'In princípio * et ante sǽcula Deus erat Verbum: † ipse natus est nobis Salvátor mundi.'
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          In princípio * et ante sǽcula Deus erat Verbum: † ipse natus est nobis Salvátor mundi.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
       - type: versicle
         text: Tamquam sponsus.
       - type: response
         text: Dóminus procédens de thálamo suo.
       - type: text
-        text: Natus * est nobis hódie Salvátor, qui est Christus Dóminus, in civitáte David.
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
-      - type: text
-        text: ;;
+        text: |-
+          Natus * est nobis hódie Salvátor, qui est Christus Dóminus, in civitáte David.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
   psalmody.incl-na-d-mine-aurem-tuam-et-ex-udi-me-18dcbd688a:
     role: psalmody
     content:
@@ -5567,26 +5501,20 @@ texts:
     content:
       en:
       - type: text
-        text: Consider how glorious is the one * who shall bring about the salvation of the peoples.
-      - type: text
-        text: His kingdom shall increase, * and of his peace there shall be no end.
-      - type: text
-        text: I, the Lord, have brought my justice near, * it shall not be afar off, and my salvation shall not delay.
-      - type: text
-        text: 'May the speech of the Lord be awaited like rain: * and the Lord our God descend like dew upon us.'
-      - type: text
-        text: Let Israel be ready * to go out to meet the Lord, for he is coming.
+        text: |-
+          Consider how glorious is the one * who shall bring about the salvation of the peoples.
+          His kingdom shall increase, * and of his peace there shall be no end.
+          I, the Lord, have brought my justice near, * it shall not be afar off, and my salvation shall not delay.
+          May the speech of the Lord be awaited like rain: * and the Lord our God descend like dew upon us.
+          Let Israel be ready * to go out to meet the Lord, for he is coming.
       la:
       - type: text
-        text: Intuémini * quam sit gloriósus iste, qui ingréditur ad salvándos pópulos.
-      - type: text
-        text: Multiplicábitur * eius impérium, et pacis non erit finis.
-      - type: text
-        text: Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
-      - type: text
-        text: 'Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Dóminus Deus noster.'
-      - type: text
-        text: Parátus esto * Israël, in occúrsum Dómini, quóniam venit.
+        text: |-
+          Intuémini * quam sit gloriósus iste, qui ingréditur ad salvándos pópulos.
+          Multiplicábitur * eius impérium, et pacis non erit finis.
+          Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
+          Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Dóminus Deus noster.
+          Parátus esto * Israël, in occúrsum Dómini, quóniam venit.
   psalmody.ipse-liber-vit-me-de-l-queo-ven-ntium-0f5d801835:
     role: psalmody
     content:
@@ -6397,26 +6325,20 @@ texts:
     content:
       en:
       - type: text
-        text: The Prophets foretold * that the Saviour should be born of the Virgin Mary.
-      - type: text
-        text: The Spirit of the Lord * is upon me, because he hath anointed me to preach the Gospel to the poor.
-      - type: text
-        text: For Zion's sake * will I not hold my peace, until her Righteous One goeth forth as brightness.
-      - type: text
-        text: Behold, the Lord cometh, * to sit among princes, and to inherit the throne of glory.
-      - type: text
-        text: 'Tell it out among the people, * and say: Behold, God, our Saviour cometh.'
+        text: |-
+          The Prophets foretold * that the Saviour should be born of the Virgin Mary.
+          The Spirit of the Lord * is upon me, because he hath anointed me to preach the Gospel to the poor.
+          For Zion's sake * will I not hold my peace, until her Righteous One goeth forth as brightness.
+          Behold, the Lord cometh, * to sit among princes, and to inherit the throne of glory.
+          Tell it out among the people, * and say: Behold, God, our Saviour cometh.
       la:
       - type: text
-        text: Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María.
-      - type: text
-        text: Spíritus * Dómini super me, evangelizáre paupéribus misit me.
-      - type: text
-        text: Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
-      - type: text
-        text: Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ téneat.
-      - type: text
-        text: 'Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.'
+        text: |-
+          Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María.
+          Spíritus * Dómini super me, evangelizáre paupéribus misit me.
+          Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
+          Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ téneat.
+          Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.
   psalmody.qui-h-bitas-in-c-lis-miser-re-nobis-d8279e4bc9:
     role: psalmody
     content:
@@ -6740,26 +6662,20 @@ texts:
     content:
       en:
       - type: text
-        text: 'Drop down, ye heavens, from above, * and let the skies pour down the Righteous One: let the earth open and bring forth the Saviour.'
-      - type: text
-        text: Send forth the Lamb, O Lord, * the Ruler of the land, from the rock of the wilderness unto the mount of the daughter of Zion.
-      - type: text
-        text: That thy way, O Lord, * may be known upon earth, thy saving health among all nations.
-      - type: text
-        text: O Lord, * reward them that wait for thee, and let thy prophets be found faithful.
-      - type: text
-        text: The law was given by Moses, * but grace and truth came by Jesus Christ.
+        text: |-
+          Drop down, ye heavens, from above, * and let the skies pour down the Righteous One: let the earth open and bring forth the Saviour.
+          Send forth the Lamb, O Lord, * the Ruler of the land, from the rock of the wilderness unto the mount of the daughter of Zion.
+          That thy way, O Lord, * may be known upon earth, thy saving health among all nations.
+          O Lord, * reward them that wait for thee, and let thy prophets be found faithful.
+          The law was given by Moses, * but grace and truth came by Jesus Christ.
       la:
       - type: text
-        text: 'Roráte, cæli, désuper, * et nubes pluant iustum: aperiátur terra, et gérminet Salvatórem.'
-      - type: text
-        text: Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.
-      - type: text
-        text: Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
-      - type: text
-        text: Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
-      - type: text
-        text: Lex per Móysen data est, * grátia et véritas per Iesum Christum facta est.
+        text: |-
+          Roráte, cæli, désuper, * et nubes pluant iustum: aperiátur terra, et gérminet Salvatórem.
+          Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.
+          Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
+          Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
+          Lex per Móysen data est, * grátia et véritas per Iesum Christum facta est.
   psalmody.rue-a-fr-mea-deus-nimam-meam-244f9b85f7:
     role: psalmody
     content:

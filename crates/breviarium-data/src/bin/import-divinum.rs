@@ -3202,6 +3202,24 @@ fn type_content(language: &str, items: &[ContentItem]) -> Vec<ContentItem> {
             other => out.push(other.clone()),
         }
     }
+    coalesce_text(out)
+}
+
+/// Merges runs of consecutive `Text` items into a single multiline `Text` item
+/// (joined by newlines). A hymn, whose source lines each became their own item,
+/// thus becomes one block — with internal blank lines preserved as stanza
+/// breaks — so it renders as one paragraph instead of one `<p>` per line.
+fn coalesce_text(items: Vec<ContentItem>) -> Vec<ContentItem> {
+    let mut out: Vec<ContentItem> = Vec::new();
+    for item in items {
+        match (out.last_mut(), &item) {
+            (Some(ContentItem::Text { text: prev }), ContentItem::Text { text: cur }) => {
+                prev.push('\n');
+                prev.push_str(cur);
+            }
+            _ => out.push(item),
+        }
+    }
     out
 }
 

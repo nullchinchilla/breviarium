@@ -472,9 +472,6 @@ offices:
       nocturn-2-versum-sabbato: note.misit-verbum-suum-et-san-vit-eos-bba5f467e0
   minor:
     slots:
-      adv-nona: chapter.isa-14-1-5e88bb70fe
-      adv-sexta: chapter.ier-23-6-1347900421
-      adv-tertia: chapter.ier-23-5-6199f32b06
       ant-4-asc: antiphon.allel-ia-asc-ndens-christus-in-altum-allel-ia-ca-63d08fd055
       ant-4-pent: antiphon.allel-ia-sp-ritus-par-clitus-allel-ia-doc-bit-vo-4c07764695
       ant-4-quad3: antiphon.m-dia-vita-in-morte-sumus-quem-qu-rimus-adiut-re-d02fa30e1e
@@ -486,63 +483,27 @@ offices:
       compline-short-reading: short-reading.1-pet-5-8-9-7272d8b1ba
       compline-short-responsory: short-responsory.in-manus-tuas-d-mine-comm-ndo-sp-ritum-meum-c2a8a19ae4
       compline-versicle: versicle.cust-di-nos-d-mine-ut-pup-llam-culi-495c4e2775
-      dominica-nona: chapter.1-cor-6-20-ce9a033c35
       dominica-nonaop: chapter.1-ioann-5-7-38592af4d6
-      dominica-sexta: chapter.gal-6-2-dc34f27e67
       dominica-sextaop: chapter.2-cor-13-13-2ae6473436
-      dominica-tertia: chapter.1-ioann-4-16-f396d66d77
-      feria-nona: chapter.1-pet-1-17-19-9f21f028ff
-      feria-sexta: chapter.rom-13-8-e7b984c4ff
-      feria-tertia: chapter.ier-17-14-c432761987
       hymnus-completorium: hymn.te-lucis-ante-t-rminum-f252b6676d
       hymnus-completorium-asc: hymn.iesu-nostra-red-mptio-6c15c746ce
       hymnus-completorium-pasch: hymn.iesu-nostra-red-mptio-ebfa6ef679
       hymnus-completorium-pent: hymn.iesu-nostra-red-mptio-c16a905b3c
       hymnus-completorium-quad: hymn.christe-qui-lux-es-et-dies-5b2a993361
       hymnus-completorium-quad5: hymn.christe-qui-lux-es-et-dies-5b2a993361
-      hymnus-nona: hymn.rerum-deus-tenax-vigor-1d9e3fdd7c
       hymnus-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-566651a48a
-      hymnus-sexta: hymn.rector-potens-verax-deus-581d2ec760
-      hymnus-tertia: hymn.nunc-sancte-nobis-sp-ritus-8e3c4585e3
       hymnusm-completorium: hymn.te-lucis-ante-t-rminum-33af4d5940
       hymnusm-nona: hymn.rerum-deus-tenax-vigor-3369fb8ae7
       hymnusm-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-2c62e8e6c8
       hymnusm-sexta: hymn.rector-potens-verax-deus-016c019c86
-      pasch-nona: chapter.1-pet-3-18-a8bffa7df8
-      pasch-sexta: chapter.1-cor-15-20-22-392630c298
-      pasch-tertia: chapter.rom-6-9-10-3a9fe886c0
       preces-dominicales: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-d31d1e6d5e
       preces-feriales: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8cb2aa5a1d
-      quad-nona: chapter.isa-58-7-87857c78d3
-      quad-sexta: chapter.isa-55-7-d10977f126
-      quad-tertia: chapter.io-l-2-12-13-bb2c6604cd
-      quad5-nona: chapter.ier-18-20-12fa5b6402
-      quad5-sexta: chapter.ier-17-18-8fb3deafef
-      quad5-tertia: chapter.ier-17-13-1f82c8da57
       responsory-adv-nonam: short-responsory.super-te-ier-salem-ori-tur-d-minus-96bac492ef
       responsory-adv-sextam: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-483df722f4
       responsory-adv-tertiam: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-86694df5f2
-      responsory-breve-adv-nona: short-responsory.super-te-ier-salem-ori-tur-d-minus-e1e890d225
-      responsory-breve-adv-sexta: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-bac61e21b5
-      responsory-breve-adv-tertia: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-1ad7c269b1
-      responsory-breve-dominica-nona: short-responsory.clam-vi-in-toto-corde-meo-ex-udi-me-d-mine-35b543c501
-      responsory-breve-dominica-sexta: short-responsory.in-t-rnum-d-mine-p-rmanet-verbum-tuum-9a2cd533d1
-      responsory-breve-dominica-tertia: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-67264b8770
-      responsory-breve-feria-nona: short-responsory.r-dime-me-d-mine-et-miser-re-mei-e46279a7fc
-      responsory-breve-feria-sexta: short-responsory.bened-cam-d-minum-in-omni-t-mpore-01801c06b9
-      responsory-breve-feria-tertia: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-a58b0ef8c9
-      responsory-breve-pasch-nona: short-responsory.gav-si-sunt-disc-puli-allel-ia-allel-ia-93796fcd1e
-      responsory-breve-pasch-sexta: short-responsory.surr-xit-d-minus-vere-allel-ia-allel-ia-770eedb388
-      responsory-breve-pasch-tertia: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-allel-ia-2599876091
       responsory-breve-pasch-tertiaop: short-responsory.resurr-xit-d-minus-allel-ia-allel-ia-c786e2b70d
-      responsory-breve-quad-nona: short-responsory.scuto-circ-mdabit-te-v-ritas-eius-6d64382519
-      responsory-breve-quad-sexta: short-responsory.sc-pulis-suis-obumbr-bit-tibi-71a5f22d4e
-      responsory-breve-quad-tertia: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-740dfb3c33
-      responsory-breve-quad5-nona: short-responsory.ne-perdas-cum-mpiis-deus-nimam-meam-2a4627552e
       responsory-breve-quad5-nonaop: short-responsory.pr-ncipes-persec-ti-sunt-me-gratis-et-a-verbis-t-e039be9e1d
-      responsory-breve-quad5-sexta: short-responsory.de-ore-le-nis-l-bera-me-d-mine-de0eeec080
       responsory-breve-quad5-sextaop: short-responsory.de-ore-le-nis-l-bera-me-d-mine-129f7df686
-      responsory-breve-quad5-tertia: short-responsory.rue-a-fr-mea-deus-nimam-meam-f118f8f97d
       responsory-breve-quad5-tertiaop: short-responsory.rue-a-fr-mea-deus-nimam-meam-224ed6c78e
       responsory-completorium-op-quad: short-responsory.in-pace-in-id-psum-d-rmiam-et-requi-scam-1ab6855d9c
       responsory-dominica-nonam: short-responsory.ab-occ-ltis-meis-munda-me-d-mine-bea4733c01
@@ -570,27 +531,80 @@ offices:
       responsory-quad5-sextam: short-responsory.de-ore-le-nis-l-bera-me-d-mine-ce0de92bb2
       responsory-quad5-tertiac: short-responsory.divis-runt-sibi-vestim-nta-mea-7c55d6632a
       responsory-quad5-tertiam: short-responsory.rue-a-fr-mea-deus-nimam-meam-5ce0f07df9
-      versum-adv-nona: versicle.veni-d-mine-et-noli-tard-re-697cb87409
-      versum-adv-sexta: versicle.mem-nto-nostri-d-mine-in-benepl-cito-p-puli-tui-948e6f58f3
-      versum-adv-tertia: versicle.tim-bunt-gentes-nomen-tuum-d-mine-a15e71f64a
-      versum-dominica-nona: versicle.ab-occ-ltis-meis-munda-me-d-mine-c2447b33c7
-      versum-dominica-sexta: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-56d46a20a6
-      versum-dominica-tertia: versicle.ego-dixi-d-mine-miser-re-mei-096cbc7e44
-      versum-feria-nona: versicle.ab-occ-ltis-meis-munda-me-d-mine-2ca39d7af1
-      versum-feria-sexta: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-375ee97bb9
-      versum-feria-tertia: versicle.adi-tor-meus-esto-ne-derel-nquas-me-8cbf944e68
-      versum-pasch-nona: versicle.mane-nob-scum-d-mine-allel-ia-420868ba16
-      versum-pasch-sexta: versicle.gav-si-sunt-disc-puli-allel-ia-684c868bd9
-      versum-pasch-tertia: versicle.surr-xit-d-minus-vere-allel-ia-55fad0a292
-      versum-quad-nona: versicle.ngelis-suis-deus-mand-vit-de-te-f7f88439c3
-      versum-quad-sexta: versicle.scuto-circ-mdabit-te-v-ritas-eius-19b06776a4
-      versum-quad-tertia: versicle.sc-pulis-suis-obumbr-bit-tibi-7a8913b2cc
-      versum-quad5-nona: versicle.ripe-me-d-mine-ab-h-mine-malo-8ac40c614b
       versum-quad5-nonaop: versicle.ripe-me-d-mine-ab-h-mine-malo-4fb9611bc5
-      versum-quad5-sexta: versicle.ne-perdas-cum-mpiis-deus-nimam-meam-7db28992b6
       versum-quad5-sextaop: versicle.ne-perdas-cum-mpiis-deus-nimam-meam-a188566715
-      versum-quad5-tertia: versicle.de-ore-le-nis-l-bera-me-d-mine-6ce45f17b2
       versum-quad5-tertiaop: versicle.de-ore-le-nis-l-bera-me-d-mine-288823dc04
+  minor-adv:
+    slots:
+      none-chapter: chapter.isa-14-1-5e88bb70fe
+      none-short-responsory: short-responsory.super-te-ier-salem-ori-tur-d-minus-e1e890d225
+      none-versicle: versicle.veni-d-mine-et-noli-tard-re-697cb87409
+      sext-chapter: chapter.ier-23-6-1347900421
+      sext-short-responsory: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-bac61e21b5
+      sext-versicle: versicle.mem-nto-nostri-d-mine-in-benepl-cito-p-puli-tui-948e6f58f3
+      terce-chapter: chapter.ier-23-5-6199f32b06
+      terce-short-responsory: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-1ad7c269b1
+      terce-versicle: versicle.tim-bunt-gentes-nomen-tuum-d-mine-a15e71f64a
+  minor-dominica:
+    slots:
+      none-chapter: chapter.1-cor-6-20-ce9a033c35
+      none-short-responsory: short-responsory.clam-vi-in-toto-corde-meo-ex-udi-me-d-mine-35b543c501
+      none-versicle: versicle.ab-occ-ltis-meis-munda-me-d-mine-c2447b33c7
+      sext-chapter: chapter.gal-6-2-dc34f27e67
+      sext-short-responsory: short-responsory.in-t-rnum-d-mine-p-rmanet-verbum-tuum-9a2cd533d1
+      sext-versicle: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-56d46a20a6
+      terce-chapter: chapter.1-ioann-4-16-f396d66d77
+      terce-short-responsory: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-67264b8770
+      terce-versicle: versicle.ego-dixi-d-mine-miser-re-mei-096cbc7e44
+  minor-feria:
+    slots:
+      none-chapter: chapter.1-pet-1-17-19-9f21f028ff
+      none-short-responsory: short-responsory.r-dime-me-d-mine-et-miser-re-mei-e46279a7fc
+      none-versicle: versicle.ab-occ-ltis-meis-munda-me-d-mine-2ca39d7af1
+      sext-chapter: chapter.rom-13-8-e7b984c4ff
+      sext-short-responsory: short-responsory.bened-cam-d-minum-in-omni-t-mpore-01801c06b9
+      sext-versicle: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-375ee97bb9
+      terce-chapter: chapter.ier-17-14-c432761987
+      terce-short-responsory: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-a58b0ef8c9
+      terce-versicle: versicle.adi-tor-meus-esto-ne-derel-nquas-me-8cbf944e68
+  minor-hymn:
+    slots:
+      none-hymn: hymn.rerum-deus-tenax-vigor-1d9e3fdd7c
+      sext-hymn: hymn.rector-potens-verax-deus-581d2ec760
+      terce-hymn: hymn.nunc-sancte-nobis-sp-ritus-8e3c4585e3
+  minor-pasch:
+    slots:
+      none-chapter: chapter.1-pet-3-18-a8bffa7df8
+      none-short-responsory: short-responsory.gav-si-sunt-disc-puli-allel-ia-allel-ia-93796fcd1e
+      none-versicle: versicle.mane-nob-scum-d-mine-allel-ia-420868ba16
+      sext-chapter: chapter.1-cor-15-20-22-392630c298
+      sext-short-responsory: short-responsory.surr-xit-d-minus-vere-allel-ia-allel-ia-770eedb388
+      sext-versicle: versicle.gav-si-sunt-disc-puli-allel-ia-684c868bd9
+      terce-chapter: chapter.rom-6-9-10-3a9fe886c0
+      terce-short-responsory: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-allel-ia-2599876091
+      terce-versicle: versicle.surr-xit-d-minus-vere-allel-ia-55fad0a292
+  minor-quad:
+    slots:
+      none-chapter: chapter.isa-58-7-87857c78d3
+      none-short-responsory: short-responsory.scuto-circ-mdabit-te-v-ritas-eius-6d64382519
+      none-versicle: versicle.ngelis-suis-deus-mand-vit-de-te-f7f88439c3
+      sext-chapter: chapter.isa-55-7-d10977f126
+      sext-short-responsory: short-responsory.sc-pulis-suis-obumbr-bit-tibi-71a5f22d4e
+      sext-versicle: versicle.scuto-circ-mdabit-te-v-ritas-eius-19b06776a4
+      terce-chapter: chapter.io-l-2-12-13-bb2c6604cd
+      terce-short-responsory: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-740dfb3c33
+      terce-versicle: versicle.sc-pulis-suis-obumbr-bit-tibi-7a8913b2cc
+  minor-quad5:
+    slots:
+      none-chapter: chapter.ier-18-20-12fa5b6402
+      none-short-responsory: short-responsory.ne-perdas-cum-mpiis-deus-nimam-meam-2a4627552e
+      none-versicle: versicle.ripe-me-d-mine-ab-h-mine-malo-8ac40c614b
+      sext-chapter: chapter.ier-17-18-8fb3deafef
+      sext-short-responsory: short-responsory.de-ore-le-nis-l-bera-me-d-mine-de0eeec080
+      sext-versicle: versicle.ne-perdas-cum-mpiis-deus-nimam-meam-7db28992b6
+      terce-chapter: chapter.ier-17-13-1f82c8da57
+      terce-short-responsory: short-responsory.rue-a-fr-mea-deus-nimam-meam-f118f8f97d
+      terce-versicle: versicle.de-ore-le-nis-l-bera-me-d-mine-6ce45f17b2
   prime:
     slots:
       adv: short-reading.isa-33-2-a3d21ca89a

@@ -1158,11 +1158,11 @@ fn resolve_hymn(
         }
         "minor-hymn" => {
             let hour =
-                minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
-            Stack::of([MINOR_SPECIAL]).doc(
+                canonical_minor_hour(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
+            Stack::of(["ordinary/minor-hymn"]).doc(
                 catalog,
                 language,
-                &format!("hymnus-{hour}"),
+                &format!("{hour}-hymn"),
                 diagnostics,
             )
         }
@@ -1818,12 +1818,11 @@ fn resolve_minor_chapter_responsory_verse(
         return Ok(nodes);
     }
 
-    let hour = minor_hour_name(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
     let canonical_hour =
         canonical_minor_hour(context.hour).ok_or_else(|| "not a minor hour".to_string())?;
     let principal = context.principal();
-    let special = Stack::of([MINOR_SPECIAL]);
-    let season = minor_special_season(context);
+    // Today's seasonal Ordinary for the minor hours, keyed by canonical slots.
+    let special = Stack::of([format!("ordinary/minor-{}", minor_special_season(context))]);
 
     let chapter_slots: Vec<String> = if context.hour == Hour::Terce {
         vec![
@@ -1836,27 +1835,22 @@ fn resolve_minor_chapter_responsory_verse(
     let chapter_refs: Vec<&str> = chapter_slots.iter().map(String::as_str).collect();
     let mut nodes = principal
         .of_slots(catalog, language, &chapter_refs, diagnostics)
-        .or_else(|_| special.doc(catalog, language, &format!("{season}-{hour}"), diagnostics))
-        .map_err(|_| format!("missing minor chapter for {hour}"))?;
+        .or_else(|_| {
+            special.doc(
+                catalog,
+                language,
+                &format!("{canonical_hour}-chapter"),
+                diagnostics,
+            )
+        })
+        .map_err(|_| format!("missing minor chapter for {canonical_hour}"))?;
 
-    for (slot, fallback_prefix, optional) in [
-        (
-            format!("{canonical_hour}-short-responsory"),
-            "responsory-breve",
-            false,
-        ),
-        (format!("{canonical_hour}-versicle"), "versum", true),
-    ] {
+    for (role, optional) in [("short-responsory", false), ("versicle", true)] {
+        let slot = format!("{canonical_hour}-{role}");
         match principal
             .doc(catalog, language, &slot, diagnostics)
-            .or_else(|_| {
-                special.doc(
-                    catalog,
-                    language,
-                    &format!("{fallback_prefix}-{season}-{hour}"),
-                    diagnostics,
-                )
-            }) {
+            .or_else(|_| special.doc(catalog, language, &slot, diagnostics))
+        {
             Ok(part) => nodes.extend(part),
             Err(_) if optional => {}
             Err(error) => return Err(error),

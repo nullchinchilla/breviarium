@@ -2775,6 +2775,7 @@ fn emit_books_lexicon(normalized: &NormalizedYaml, data_dir: &Path) -> Result<us
     }
     if let Some(ordinary) = books.get_mut("ordinary") {
         split_ordinary_major(ordinary);
+        split_ordinary_minor(ordinary);
     }
     for (book, offices) in &books {
         let path = data_dir.join("books").join(format!("{book}.yaml"));
@@ -2903,6 +2904,69 @@ fn split_ordinary_major(offices: &mut BTreeMap<String, OfficeOut>) {
 
     if !leftover.slots.is_empty() {
         offices.insert("major".to_string(), leftover);
+    }
+    for (office, slots) in new {
+        offices.insert(
+            office,
+            OfficeOut {
+                slots,
+                ..OfficeOut::default()
+            },
+        );
+    }
+}
+
+/// Splits the flat `ordinary/minor` office (DO names like `feria-tertia`,
+/// `responsory-breve-quad-sexta`, `versum-pasch-nona`) into canonical
+/// `minor-{season}` offices keyed by `{hour}-chapter` / `{hour}-short-responsory`
+/// / `{hour}-versicle`, plus `minor-hymn` for the daytime hymns. Compline and
+/// unused variant sections stay in the `minor` office.
+fn split_ordinary_minor(offices: &mut BTreeMap<String, OfficeOut>) {
+    let Some(minor) = offices.remove("minor") else {
+        return;
+    };
+    const SEASONS: &[&str] = &["dominica", "feria", "adv", "quad", "quad5", "pasch"];
+    // (DO hour name in the section key, canonical hour used in slot names)
+    const HOURS: &[(&str, &str)] = &[("tertia", "terce"), ("sexta", "sext"), ("nona", "none")];
+    let mut new = BTreeMap::<String, BTreeMap<String, String>>::new();
+    let mut put = |office: String, slot: String, id: String| {
+        new.entry(office).or_default().insert(slot, id);
+    };
+    let mut leftover = OfficeOut::default();
+
+    for (key, id) in minor.slots {
+        let mapped = (|| {
+            for (do_hour, hour) in HOURS {
+                if key == format!("hymnus-{do_hour}") {
+                    return Some(("minor-hymn".to_string(), format!("{hour}-hymn")));
+                }
+                for season in SEASONS {
+                    if key == format!("{season}-{do_hour}") {
+                        return Some((format!("minor-{season}"), format!("{hour}-chapter")));
+                    }
+                    if key == format!("responsory-breve-{season}-{do_hour}") {
+                        return Some((
+                            format!("minor-{season}"),
+                            format!("{hour}-short-responsory"),
+                        ));
+                    }
+                    if key == format!("versum-{season}-{do_hour}") {
+                        return Some((format!("minor-{season}"), format!("{hour}-versicle")));
+                    }
+                }
+            }
+            None
+        })();
+        match mapped {
+            Some((office, slot)) => put(office, slot, id),
+            None => {
+                leftover.slots.insert(key, id);
+            }
+        }
+    }
+
+    if !leftover.slots.is_empty() {
+        offices.insert("minor".to_string(), leftover);
     }
     for (office, slots) in new {
         offices.insert(

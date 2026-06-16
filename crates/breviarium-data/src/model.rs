@@ -84,8 +84,6 @@ pub enum TextRole {
     Antiphon,
     /// Psalm.
     Psalm,
-    /// Canticle.
-    Canticle,
     /// Psalmody.
     Psalmody,
     /// Lesson or reading.
@@ -98,8 +96,6 @@ pub enum TextRole {
     ShortResponsory,
     /// Versicle.
     Versicle,
-    /// Absolution.
-    Absolution,
     /// Blessing.
     Blessing,
     /// Chapter.
@@ -110,50 +106,10 @@ pub enum TextRole {
     Preces,
     /// Collect.
     Collect,
-    /// Commemoration antiphon.
-    CommemorationAntiphon,
-    /// Commemoration versicle.
-    CommemorationVersicle,
-    /// Commemoration collect.
-    CommemorationCollect,
     /// Conclusion.
     Conclusion,
     /// Final Marian antiphon.
     MarianAntiphon,
-    /// Mass introit.
-    Introit,
-    /// Kyrie.
-    Kyrie,
-    /// Gloria.
-    Gloria,
-    /// Epistle.
-    Epistle,
-    /// Gradual.
-    Gradual,
-    /// Alleluia.
-    Alleluia,
-    /// Tract.
-    Tract,
-    /// Sequence.
-    Sequence,
-    /// Gospel.
-    Gospel,
-    /// Creed.
-    Creed,
-    /// Offertory.
-    Offertory,
-    /// Secret.
-    Secret,
-    /// Preface.
-    Preface,
-    /// Communion.
-    Communion,
-    /// Postcommunion.
-    Postcommunion,
-    /// Last Gospel.
-    LastGospel,
-    /// Martyrology heading.
-    MartyrologyHeading,
     /// Martyrology entry.
     MartyrologyEntry,
     /// Rubric or rule metadata.

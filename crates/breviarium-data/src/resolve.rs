@@ -965,8 +965,8 @@ fn resolve_formula(
     let formula = |name, diagnostics: &mut _| formula_nodes(catalog, language, name, diagnostics);
     let nodes = match arg {
         "opening" => {
-            let mut nodes = formula("Deus in adjutorium", diagnostics)?;
-            let alleluia = formula_lines(catalog, language, "Alleluia", diagnostics)?;
+            let mut nodes = formula("deus-in-adjutorium", diagnostics)?;
+            let alleluia = formula_lines(catalog, language, "alleluia", diagnostics)?;
             let index = usize::from(context.facts.temporal_week.starts_with("Quad"));
             if let Some(line) = alleluia.get(index) {
                 nodes.push(DocumentNode::Text { text: line.clone() });
@@ -974,7 +974,7 @@ fn resolve_formula(
             nodes
         }
         "matins-opening" => {
-            let mut nodes = formula("Domine labia", diagnostics)?;
+            let mut nodes = formula("domine-labia", diagnostics)?;
             nodes.extend(resolve_formula(
                 catalog,
                 language,
@@ -985,13 +985,13 @@ fn resolve_formula(
             nodes
         }
         "compline-opening" => {
-            let mut nodes = formula("Jube domne", diagnostics)?;
-            nodes.extend(formula("Benedictio Completorium", diagnostics)?);
+            let mut nodes = formula("jube-domne", diagnostics)?;
+            nodes.extend(formula("benedictio-completorium", diagnostics)?);
             nodes.extend(amen_nodes());
             nodes
         }
         "examination" => {
-            let mut nodes = formula("Adjutorium nostrum", diagnostics)?;
+            let mut nodes = formula("adjutorium-nostrum", diagnostics)?;
             nodes.push(DocumentNode::Rubric {
                 text: localized_literal(
                     language,
@@ -1001,25 +1001,25 @@ fn resolve_formula(
                 .to_string(),
             });
             for name in [
-                "Pater noster",
-                "Confiteor",
-                "Misereatur",
-                "Indulgentiam",
-                "Converte nos",
+                "pater-noster",
+                "confiteor",
+                "misereatur",
+                "indulgentiam",
+                "converte-nos",
             ] {
                 nodes.extend(formula(name, diagnostics)?);
             }
             nodes
         }
-        "pretiosa" => formula("Pretiosa", diagnostics)?,
+        "pretiosa" => formula("pretiosa", diagnostics)?,
         "chapter-office" => {
-            let mut nodes = formula("Deus in adjutorium iij", diagnostics)?;
+            let mut nodes = formula("deus-in-adjutorium-iij", diagnostics)?;
             for name in [
-                "Gloria",
-                "Kyrie",
-                "Pater noster Et",
+                "gloria",
+                "kyrie",
+                "pater-noster-et",
                 "respice",
-                "Oremus",
+                "oremus",
                 "dirigere",
             ] {
                 nodes.extend(formula(name, diagnostics)?);
@@ -1027,18 +1027,18 @@ fn resolve_formula(
             nodes
         }
         "prime-conclusion" => {
-            let mut nodes = formula("Adjutorium nostrum", diagnostics)?;
-            nodes.extend(formula("Benedicite", diagnostics)?);
-            nodes.extend(formula("benedictio Prima2", diagnostics)?);
+            let mut nodes = formula("adjutorium-nostrum", diagnostics)?;
+            nodes.extend(formula("benedicite", diagnostics)?);
+            nodes.extend(formula("benedictio-prima2", diagnostics)?);
             nodes
         }
         "compline-conclusion" => {
             let mut nodes = domine_exaudi_nodes(language);
-            nodes.extend(formula("Benedicamus Domino", diagnostics)?);
+            nodes.extend(formula("benedicamus-domino", diagnostics)?);
             nodes.extend(first_formula_doc(
                 catalog,
                 language,
-                &["benedictio Completorium Final", "Benedictio Completorium2"],
+                &["benedictio-completorium-final", "benedictio-completorium2"],
                 diagnostics,
             )?);
             nodes.extend(amen_nodes());
@@ -1047,8 +1047,8 @@ fn resolve_formula(
         // "conclusion"
         _ => {
             let mut nodes = domine_exaudi_nodes(language);
-            nodes.extend(formula("Benedicamus Domino", diagnostics)?);
-            nodes.extend(formula("Fidelium animae", diagnostics)?);
+            nodes.extend(formula("benedicamus-domino", diagnostics)?);
+            nodes.extend(formula("fidelium-animae", diagnostics)?);
             nodes
         }
     };
@@ -1064,7 +1064,7 @@ fn resolve_matins_invitatory(
     let antiphon = context
         .principal()
         .antiphons(catalog, language, "matins-invitatory")
-        .or_else(|| Stack::of([MATINS_SPECIAL]).antiphons(catalog, language, "Invit"))
+        .or_else(|| Stack::of([MATINS_SPECIAL]).antiphons(catalog, language, "invit"))
         .and_then(|values| values.into_iter().next())
         .unwrap_or_default();
     let mut nodes = Vec::new();
@@ -1122,7 +1122,7 @@ fn resolve_hymn(
             Stack::of([MINOR_SPECIAL]).doc(
                 catalog,
                 language,
-                &format!("Hymnus {hour}"),
+                &format!("hymnus-{hour}"),
                 diagnostics,
             )
         }
@@ -1130,17 +1130,17 @@ fn resolve_hymn(
         _ => {
             let minor = Stack::of([MINOR_SPECIAL]);
             let season = if context.facts.temporal_week.starts_with("Quad5") {
-                "Hymnus Completorium Quad5"
+                "hymnus-completorium-quad5"
             } else if context.facts.temporal_week.starts_with("Quad") {
-                "Hymnus Completorium Quad"
+                "hymnus-completorium-quad"
             } else if context.facts.temporal_week.starts_with("Pasc") {
-                "Hymnus Completorium Pasch"
+                "hymnus-completorium-pasch"
             } else {
-                "Hymnus Completorium"
+                "hymnus-completorium"
             };
             minor
                 .doc(catalog, language, season, diagnostics)
-                .or_else(|_| minor.doc(catalog, language, "Hymnus Completorium", diagnostics))
+                .or_else(|_| minor.doc(catalog, language, "hymnus-completorium", diagnostics))
         }
     }
 }
@@ -1158,7 +1158,7 @@ fn resolve_matins_nocturns(
             Stack::of([PSALTER_MATINS]).psalmody(
                 catalog,
                 language,
-                &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
+                &format!("day{}", divinum_weekday_number(context.facts.weekday)),
             )
         })
         .ok_or_else(|| "missing Matins psalmody".to_string())?;
@@ -1275,7 +1275,7 @@ fn resolve_matins_versicle(
                 catalog,
                 language,
                 PSALTER_MATINS,
-                &format!("Day{}", divinum_weekday_number(context.facts.weekday)),
+                &format!("day{}", divinum_weekday_number(context.facts.weekday)),
             )
             .unwrap_or_default()
             .into_iter()
@@ -1370,7 +1370,7 @@ fn resolve_matins_lessons(
         ) {
             nodes.extend(resp);
         } else if lesson == 9 || (use_abbreviated_sanctoral_lesson && lesson == 3) {
-            nodes.extend(formula_nodes(catalog, language, "Te Deum", diagnostics)?);
+            nodes.extend(formula_nodes(catalog, language, "te-deum", diagnostics)?);
         }
     }
     Ok(nodes)
@@ -1382,7 +1382,7 @@ fn resolve_matins_absolution(
     nocturn: usize,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Pater noster Et", diagnostics)?;
+    let mut nodes = formula_nodes(catalog, language, "pater-noster-et", diagnostics)?;
     if let Some(line) = section_lines(catalog, language, BENEDICTIONS, "matins-absolutions")
         .and_then(|lines| lines.get(nocturn.saturating_sub(1)).cloned())
     {
@@ -1401,7 +1401,7 @@ fn resolve_matins_blessing(
     lesson: usize,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Jube domne", diagnostics)?;
+    let mut nodes = formula_nodes(catalog, language, "jube-domne", diagnostics)?;
     let section = match nocturn {
         1 => "matins-blessings-nocturn-1",
         2 => "matins-blessings-nocturn-2",
@@ -1433,7 +1433,7 @@ fn resolve_psalmody(
         "vespers" => major_psalmody_entries(catalog, language, context, Hour::Vespers)?,
         "compline" => {
             let label = weekday_table_label(context.facts.weekday);
-            let row = table_row(catalog, language, PSALTER_MINOR, "Completorium", label)
+            let row = table_row(catalog, language, PSALTER_MINOR, "completorium", label)
                 .ok_or_else(|| format!("missing Compline psalmody row `{label}`"))?;
             vec![PsalmodyEntry {
                 antiphon: row.text.unwrap_or_default(),
@@ -1465,7 +1465,7 @@ fn major_psalmody_entries(
         Hour::Lauds => (
             "lauds-psalmody",
             format!(
-                "Day{} Laudes{}",
+                "day{}-laudes{}",
                 if context.has_rule("psalmi-dominica") {
                     0
                 } else {
@@ -1477,7 +1477,7 @@ fn major_psalmody_entries(
         Hour::Vespers => (
             "vespers-psalmody",
             format!(
-                "Day{} Vespera",
+                "day{}-vespera",
                 if context.has_rule("psalmi-dominica") {
                     0
                 } else {
@@ -1583,11 +1583,11 @@ fn resolve_major_chapter_hymn_verse(
                 &["vespers-chapter", "lauds-chapter"],
                 if sunday {
                     vec![
-                        "Dominica Vespera".into(),
-                        "Responsory Dominica Vespera".into(),
+                        "dominica-vespera".into(),
+                        "responsory-dominica-vespera".into(),
                     ]
                 } else {
-                    vec!["Feria Vespera".into(), "Responsory Feria Vespera".into()]
+                    vec!["feria-vespera".into(), "responsory-feria-vespera".into()]
                 },
                 "chapter",
             ),
@@ -1599,9 +1599,9 @@ fn resolve_major_chapter_hymn_verse(
             (
                 &["vespers-versicle", "lauds-versicle"],
                 vec![if sunday {
-                    "Dominica Versum 3"
+                    "dominica-versum-3"
                 } else {
-                    "Feria Versum 3"
+                    "feria-versum-3"
                 }
                 .into()],
                 "versicle",
@@ -1612,9 +1612,9 @@ fn resolve_major_chapter_hymn_verse(
             (
                 &["lauds-chapter"],
                 vec![if sunday {
-                    "Dominica Laudes"
+                    "dominica-laudes"
                 } else {
-                    "Feria Laudes"
+                    "feria-laudes"
                 }
                 .into()],
                 "chapter",
@@ -1627,9 +1627,9 @@ fn resolve_major_chapter_hymn_verse(
             (
                 &["lauds-versicle"],
                 vec![if sunday {
-                    "Dominica Versum 2"
+                    "dominica-versum-2"
                 } else {
-                    "Feria Versum 2"
+                    "feria-versum-2"
                 }
                 .into()],
                 "versicle",
@@ -1669,28 +1669,28 @@ fn resolve_major_chapter_hymn_verse(
 }
 
 fn major_hymn_fallback_sections(context: &OfficeContext, is_vespers: bool) -> Vec<String> {
-    let hour_name = if is_vespers { "Vespera" } else { "Laudes" };
+    let hour = if is_vespers { "vespera" } else { "laudes" };
     let season = if context.facts.temporal_week.starts_with("Adv") {
-        Some("Adv")
+        Some("adv")
     } else if context.facts.temporal_week.starts_with("Quad5") {
-        Some("Quad5")
+        Some("quad5")
     } else if context.facts.temporal_week.starts_with("Quad") {
-        Some("Quad")
+        Some("quad")
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        Some("Pasch")
+        Some("pasch")
     } else {
         None
     };
     if let Some(season) = season {
         return vec![
-            format!("HymnusM {season} {hour_name}"),
-            format!("Hymnus {season} {hour_name}"),
+            format!("hymnusm-{season}-{hour}"),
+            format!("hymnus-{season}-{hour}"),
         ];
     }
     let weekday = divinum_weekday_number(context.facts.weekday);
-    let mut sections = vec![format!("Hymnus Day{weekday} {hour_name}")];
+    let mut sections = vec![format!("hymnus-day{weekday}-{hour}")];
     if is_vespers && weekday == 6 {
-        sections.push("HymnusM Day6 Vespera".to_string());
+        sections.push("hymnusm-day6-vespera".to_string());
     }
     sections
 }
@@ -1780,16 +1780,16 @@ fn resolve_minor_chapter_responsory_verse(
     if context.hour == Hour::Prime {
         let prime = Stack::of([PRIME_SPECIAL]);
         let day = if context.facts.weekday == Weekday::Sun || context.has_rule("psalmi-dominica") {
-            "Dominica"
+            "dominica"
         } else {
-            "Feria"
+            "feria"
         };
         let mut nodes = prime.doc(catalog, language, day, diagnostics)?;
         nodes.extend(prime.doc(catalog, language, "prime-short-responsory", diagnostics)?);
         if let Ok(seasonal) = prime.doc(
             catalog,
             language,
-            &format!("Responsory {}", prime_season(context)),
+            &format!("responsory-{}", prime_season(context)),
             diagnostics,
         ) {
             nodes.extend(seasonal);
@@ -1816,16 +1816,16 @@ fn resolve_minor_chapter_responsory_verse(
     let chapter_refs: Vec<&str> = chapter_slots.iter().map(String::as_str).collect();
     let mut nodes = principal
         .of_slots(catalog, language, &chapter_refs, diagnostics)
-        .or_else(|_| special.doc(catalog, language, &format!("{season} {hour}"), diagnostics))
+        .or_else(|_| special.doc(catalog, language, &format!("{season}-{hour}"), diagnostics))
         .map_err(|_| format!("missing minor chapter for {hour}"))?;
 
     for (slot, fallback_prefix, optional) in [
         (
             format!("{canonical_hour}-short-responsory"),
-            "Responsory breve",
+            "responsory-breve",
             false,
         ),
-        (format!("{canonical_hour}-versicle"), "Versum", true),
+        (format!("{canonical_hour}-versicle"), "versum", true),
     ] {
         match principal
             .doc(catalog, language, &slot, diagnostics)
@@ -1833,7 +1833,7 @@ fn resolve_minor_chapter_responsory_verse(
                 special.doc(
                     catalog,
                     language,
-                    &format!("{fallback_prefix} {season} {hour}"),
+                    &format!("{fallback_prefix}-{season}-{hour}"),
                     diagnostics,
                 )
             }) {
@@ -1870,11 +1870,11 @@ fn resolve_prime_short_reading(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = formula_nodes(catalog, language, "Jube domne", diagnostics)?;
+    let mut nodes = formula_nodes(catalog, language, "jube-domne", diagnostics)?;
     nodes.extend(formula_nodes(
         catalog,
         language,
-        "benedictio Prima",
+        "benedictio-prima",
         diagnostics,
     )?);
     nodes.extend(
@@ -1916,26 +1916,26 @@ fn resolve_collect(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
     let mut nodes = domine_exaudi_nodes(language);
-    nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
+    nodes.extend(formula_nodes(catalog, language, "oremus", diagnostics)?);
     match arg {
         "prime" => {
             nodes.extend(formula_nodes(
                 catalog,
                 language,
-                "oratio_Domine",
+                "oratio-domine",
                 diagnostics,
             )?);
             nodes.extend(formula_nodes(
                 catalog,
                 language,
-                "Per Dominum",
+                "per-dominum",
                 diagnostics,
             )?);
             nodes.extend(domine_exaudi_nodes(language));
             nodes.extend(formula_nodes(
                 catalog,
                 language,
-                "Benedicamus Domino",
+                "benedicamus-domino",
                 diagnostics,
             )?);
         }
@@ -1943,13 +1943,13 @@ fn resolve_collect(
             nodes.extend(formula_nodes(
                 catalog,
                 language,
-                "oratio_Visita",
+                "oratio-visita",
                 diagnostics,
             )?);
             nodes.extend(formula_nodes(
                 catalog,
                 language,
-                "Per Dominum",
+                "per-dominum",
                 diagnostics,
             )?);
         }
@@ -2017,7 +2017,7 @@ fn resolve_commemoration(
     if let Ok(versicle) = sources.doc(catalog, language, indexed_versicle, diagnostics) {
         nodes.extend(versicle);
     }
-    nodes.extend(formula_nodes(catalog, language, "Oremus", diagnostics)?);
+    nodes.extend(formula_nodes(catalog, language, "oremus", diagnostics)?);
     match first_collect_doc(catalog, language, context, &sources, diagnostics) {
         Ok(oratio) => nodes.extend(oratio),
         Err(reason) => nodes.push(DocumentNode::Unresolved {
@@ -2331,7 +2331,7 @@ fn psalm_nodes(
         });
     }
     if reference.number != "210" {
-        nodes.extend(formula_nodes(catalog, language, "Gloria", diagnostics).unwrap_or_default());
+        nodes.extend(formula_nodes(catalog, language, "gloria", diagnostics).unwrap_or_default());
     }
     Ok(nodes)
 }
@@ -2868,10 +2868,10 @@ fn weekday_table_label(weekday: Weekday) -> &'static str {
 
 fn minor_hour_name(hour: Hour) -> Option<&'static str> {
     match hour {
-        Hour::Prime => Some("Prima"),
-        Hour::Terce => Some("Tertia"),
-        Hour::Sext => Some("Sexta"),
-        Hour::None => Some("Nona"),
+        Hour::Prime => Some("prima"),
+        Hour::Terce => Some("tertia"),
+        Hour::Sext => Some("sexta"),
+        Hour::None => Some("nona"),
         _ => None,
     }
 }
@@ -2945,48 +2945,48 @@ fn first_nonempty_antiphon(values: Vec<String>) -> Option<String> {
 
 fn minor_special_season(context: &OfficeContext) -> &'static str {
     if context.facts.temporal_week.starts_with("Adv") {
-        "Adv"
+        "adv"
     } else if context.facts.temporal_week.starts_with("Quad5") {
-        "Quad5"
+        "quad5"
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "Quad"
+        "quad"
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        "Pasch"
+        "pasch"
     } else if context.facts.weekday == Weekday::Sun {
-        "Dominica"
+        "dominica"
     } else {
-        "Feria"
+        "feria"
     }
 }
 
 fn prime_season(context: &OfficeContext) -> &'static str {
     if context.facts.temporal_week.starts_with("Adv") {
-        "Adv"
+        "adv"
     } else if context.facts.temporal_week.starts_with("Nat") {
-        "Nat"
+        "nat"
     } else if context.facts.temporal_week.starts_with("Epi") {
-        "Epi"
+        "epi"
     } else if context.facts.temporal_week.starts_with("Quad5") {
-        "Quad5"
+        "quad5"
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "Quad"
+        "quad"
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        "Pasch"
+        "pasch"
     } else {
-        "Per Annum"
+        "per-annum"
     }
 }
 
 fn matins_ordinary_hymn_section(context: &OfficeContext) -> String {
     if context.facts.temporal_week.starts_with("Adv") {
-        "Hymnus Adv".to_string()
+        "hymnus-adv".to_string()
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "Hymnus Quad".to_string()
+        "hymnus-quad".to_string()
     } else if context.facts.temporal_week.starts_with("Pasc") {
-        "Hymnus Pasch".to_string()
+        "hymnus-pasch".to_string()
     } else {
         format!(
-            "Day{} Hymnus",
+            "day{}-hymnus",
             divinum_weekday_number(context.facts.weekday)
         )
     }
@@ -2995,18 +2995,18 @@ fn matins_ordinary_hymn_section(context: &OfficeContext) -> String {
 fn ferial_benedictus_antiphon_section(context: &OfficeContext) -> String {
     let weekday = divinum_weekday_number(context.facts.weekday);
     if weekday == 0 {
-        "Dominica Ant 2".to_string()
+        "dominica-ant-2".to_string()
     } else {
-        format!("Feria{} Ant 2", weekday + 1)
+        format!("feria{}-ant-2", weekday + 1)
     }
 }
 
 fn ferial_magnificat_antiphon_section(context: &OfficeContext) -> String {
     let weekday = divinum_weekday_number(context.facts.weekday);
     if weekday == 0 {
-        "Dominica Ant 3".to_string()
+        "dominica-ant-3".to_string()
     } else {
-        format!("Feria{} Ant 3", weekday + 1)
+        format!("feria{}-ant-3", weekday + 1)
     }
 }
 
@@ -3025,14 +3025,14 @@ fn compline_antiphon_section(context: &OfficeContext) -> &'static str {
 fn final_antiphon_section(context: &OfficeContext) -> &'static str {
     let date = context.facts.date;
     if context.facts.temporal_week.starts_with("Adv") {
-        "Advent"
+        "advent"
     } else if date.month() == 12 && date.day() >= 25 || date.month() == 1 {
-        "Nativiti"
+        "nativiti"
     } else if date >= context.facts.easter && date <= context.facts.easter + Duration::days(56) {
-        "Paschalis"
+        "paschalis"
     } else if context.facts.temporal_week.starts_with("Quad") {
-        "Quadragesimae"
+        "quadragesimae"
     } else {
-        "Postpentecost"
+        "postpentecost"
     }
 }

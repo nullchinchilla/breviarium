@@ -80,19 +80,15 @@ impl Catalog {
     }
 
     /// Returns the content nodes filling `slot` of `source_key` in `language`.
+    /// Slot names are matched exactly: the importer emits canonical kebab keys
+    /// and the resolver requests them verbatim — no runtime normalization.
     pub(crate) fn slot_nodes(
         &self,
         language: &str,
         source_key: &str,
         slot: &str,
     ) -> Option<Vec<ContentNode>> {
-        // TRANSITIONAL: the ported resolvers and the special books still carry
-        // DO-derived section names, so the query is slugged to match the slugged
-        // stored keys. This slug is deleted once the canonical slot vocabulary
-        // (`crate::slots`) is emitted by the importer and used by the resolvers,
-        // at which point lookups are exact and no raw DO survives at runtime.
-        let slot = crate::data_slug(slot);
-        let id = self.office(source_key)?.slots.get(&slot)?;
+        let id = self.office(source_key)?.slots.get(slot)?;
         self.lexicon.get(id)?.content.get(language).cloned()
     }
 

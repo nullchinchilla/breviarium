@@ -1,0 +1,446 @@
+doc_type: source_bundle
+sources:
+  psalter/major:
+    sections:
+      cistercian-ant-vespera:
+        role: psalmody
+        text_id: psalmody.laud-te-d-minum-omnes-gentes-be7466971c
+      cistercian-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-812dfcc28a
+      cistercian-vespera:
+        role: psalmody
+        text_id: psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-8140184c6c
+      day0-laudes1:
+        role: psalmody
+        text_id: psalmody.allel-ia-d-minus-regn-vit-dec-rem-nduit-allel-ia-2cdb79052b
+      day0-laudes2:
+        role: psalmody
+        text_id: psalmody.text-73d6c91b98
+      day0-vespera:
+        role: psalmody
+        text_id: psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-fc28aaf14d
+      day1-laudes1:
+        role: psalmody
+        text_id: psalmody.iubil-te-deo-in-voce-exsultati-nis-23bc82ef17
+      day1-laudes2:
+        role: psalmody
+        text_id: psalmody.miser-re-mei-deus-sec-ndum-magnam-miseric-rdiam-330ccbaf0d
+      day1-laudes3:
+        role: psalmody
+        text_id: psalmody.ecce-v-niet-d-minus-princeps-regum-terr-be-ti-qu-828df81a42
+      day1-vespera:
+        role: psalmody
+        text_id: psalmody.inclin-vit-d-minus-aurem-suam-mihi-ad617d7aed
+      day2-laudes1:
+        role: psalmody
+        text_id: psalmody.cant-te-d-mino-et-bened-cite-n-mini-eius-e43ce9621f
+      day2-laudes2:
+        role: psalmody
+        text_id: psalmody.dele-iniquit-tem-meam-d-mine-sec-ndum-multit-din-a32c39e496
+      day2-laudes3:
+        role: psalmody
+        text_id: psalmody.ror-te-c-li-d-super-et-nubes-pluant-iustum-aperi-fadcdfd709
+      day2-vespera:
+        role: psalmody
+        text_id: psalmody.qui-h-bitas-in-c-lis-miser-re-nobis-d8279e4bc9
+      day3-laudes1:
+        role: psalmody
+        text_id: psalmody.d-minus-regn-vit-exs-ltet-terra-67722242ff
+      day3-laudes2:
+        role: psalmody
+        text_id: psalmody.mplius-lava-me-d-mine-ab-iniust-tia-mea-ee26f02973
+      day3-laudes3:
+        role: psalmody
+        text_id: psalmody.proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rgin-308c170424
+      day3-vespera:
+        role: psalmody
+        text_id: psalmody.be-ti-omnes-qui-timent-d-minum-3d77aaf9b8
+      day4-laudes1:
+        role: psalmody
+        text_id: psalmody.iubil-te-in-consp-ctu-regis-d-mini-0929d1729b
+      day4-laudes2:
+        role: psalmody
+        text_id: psalmody.tibi-soli-pecc-vi-d-mine-miser-re-mei-64496ca728
+      day4-laudes3:
+        role: psalmody
+        text_id: psalmody.de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-ci-735824973d
+      day4-vespera:
+        role: psalmody
+        text_id: psalmody.ecce-quam-bonum-et-quam-iuc-ndum-habit-re-fratre-9db10f6059
+      day5-laudes1:
+        role: psalmody
+        text_id: psalmody.exalt-te-d-minum-deum-nostrum-et-ador-te-in-mont-80638f0fd7
+      day5-laudes2:
+        role: psalmody
+        text_id: psalmody.cor-contr-tum-et-humili-tum-deus-non-desp-cies-c1d76ea317
+      day5-laudes3:
+        role: psalmody
+        text_id: psalmody.const-ntes-est-te-vid-bitis-aux-lium-d-mini-supe-a8be5a3238
+      day5-vespera:
+        role: psalmody
+        text_id: psalmody.d-mine-prob-sti-me-et-cognov-sti-me-d38a1a8ac8
+      day6-laudes1:
+        role: psalmody
+        text_id: psalmody.f-lii-sion-exs-ltent-in-rege-suo-367b6b97f2
+      day6-laudes2:
+        role: psalmody
+        text_id: psalmody.ben-gne-fac-d-mine-in-bona-volunt-te-tua-sion-cfee0566e7
+      day6-laudes3:
+        role: psalmody
+        text_id: psalmody.intu-mini-quam-sit-glori-sus-iste-qui-ingr-ditur-a7b1c755fc
+      day6-vespera:
+        role: psalmody
+        text_id: psalmody.bened-ctus-d-minus-susc-ptor-meus-et-liber-tor-m-da75279813
+      daya0-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-aa529266e2
+      daya0-vespera:
+        role: psalmody
+        text_id: psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-449cd68837
+      daya1-laudes:
+        role: psalmody
+        text_id: psalmody.miser-re-mei-deus-897540fc71
+      daya1-vespera:
+        role: psalmody
+        text_id: psalmody.inclin-vit-d-minus-aurem-suam-mihi-78843d5513
+      daya2-laudes:
+        role: psalmody
+        text_id: psalmody.dele-d-mine-iniquit-tem-meam-77d865a09a
+      daya2-vespera:
+        role: psalmody
+        text_id: psalmody.in-domum-d-mini-l-t-ntes-bimus-3a4b279b6e
+      daya3-laudes:
+        role: psalmody
+        text_id: psalmody.mplius-lava-me-d-mine-ab-iniust-tia-mea-5208c999d1
+      daya3-vespera:
+        role: psalmody
+        text_id: psalmody.non-confund-tur-cum-loqu-tur-inim-cis-suis-in-po-c1da643366
+      daya4-laudes:
+        role: psalmody
+        text_id: psalmody.tibi-soli-pecc-vi-d-mine-miser-re-mei-98ee56fcaf
+      daya4-vespera:
+        role: psalmody
+        text_id: psalmody.et-omnis-mansuet-dinis-eius-246e335726
+      daya5-laudes:
+        role: psalmody
+        text_id: psalmody.sp-ritu-princip-li-conf-rma-cor-meum-deus-30ff733103
+      daya5-vespera:
+        role: psalmody
+        text_id: psalmody.in-consp-ctu-angel-rum-psallam-tibi-deus-meus-4a4dbb2c9b
+      daya6-laudes:
+        role: psalmody
+        text_id: psalmody.ben-gne-fac-in-bona-volunt-te-tua-d-mine-dc6eb1f441
+      daya6-vespera:
+        role: psalmody
+        text_id: psalmody.bened-ctus-d-minus-deus-meus-2d8953cee9
+      dayac-laudes:
+        role: psalmody
+        text_id: psalmody.text-5836dbbea1
+      dayac-laudes1:
+        role: psalmody
+        text_id: psalmody.text-5836dbbea1
+      dayac-laudes2:
+        role: psalmody
+        text_id: psalmody.text-cba46aab9f
+      dayap-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-allel-ia-allel-ia-all-bf3ac856bf
+      daycf-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-6298057e0f
+      daym6f-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-879aa8c7a7
+      daymf-canticles:
+        role: psalmody
+        text_id: psalmody.text-29b419b1ab
+      daymf-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-d9c35113ab
+      daymp-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-allel-ia-allel-ia-all-762ca73193
+      monastic-laudes:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-2f0fc3ab19
+      monastic-vespera:
+        role: psalmody
+        text_id: psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-8ec64b5bf6
+  psalter/matins:
+    sections:
+      adv-0-ant-matutinum:
+        role: psalmody
+        text_id: psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-170ce41e3d
+      adv-0-versum:
+        role: psalmody
+        text_id: psalmody.egredi-tur-d-minus-de-loco-sancto-suo-3f56fdc97a
+      adv-1-versum:
+        role: psalmody
+        text_id: psalmody.ex-sion-sp-cies-dec-ris-eius-bc0e00eab3
+      adv-2-versum:
+        role: psalmody
+        text_id: psalmody.em-tte-agnum-d-mine-dominat-rem-terr-ba22649fd4
+      adv-3-versum:
+        role: psalmody
+        text_id: psalmody.egredi-tur-d-minus-de-loco-sancto-suo-266236f87b
+      adv-6-versum:
+        role: psalmody
+        text_id: psalmody.egredi-tur-d-minus-de-loco-sancto-suo-266236f87b
+      adv0:
+        role: psalmody
+        text_id: psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-5bde3acd9e
+      advm0:
+        role: psalmody
+        text_id: psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-a24da87a49
+      bmv-versum:
+        role: psalmody
+        text_id: psalmody.diff-sa-est-gr-tia-in-l-biis-tuis-a45623f7dc
+      cantm-fest:
+        role: psalmody
+        text_id: psalmody.text-004a84b66c
+      day0:
+        role: psalmody
+        text_id: psalmody.be-tus-vir-qui-in-lege-d-mini-medit-tur-92dd53120d
+      day1:
+        role: psalmody
+        text_id: psalmody.d-minus-de-c-lo-prosp-xit-super-f-lios-h-minum-07c79c1443
+      day2:
+        role: psalmody
+        text_id: psalmody.exp-gna-d-mine-impugn-ntes-me-4aaf7a7bff
+      day3:
+        role: psalmody
+        text_id: psalmody.speci-sus-forma-pr-f-liis-h-minum-diff-sa-est-gr-4fab8b1f17
+      day31:
+        role: psalmody
+        text_id: psalmody.speci-sus-forma-pr-f-liis-h-minum-diff-sa-est-gr-28b4b9dbf0
+      day4:
+        role: psalmody
+        text_id: psalmody.in-deo-salut-re-meum-et-gl-ria-mea-et-spes-mea-i-d7aec6aa0f
+      day5:
+        role: psalmody
+        text_id: psalmody.suscit-vit-d-minus-testim-nium-in-iacob-et-legem-241e32d100
+      day6:
+        role: psalmody
+        text_id: psalmody.memor-fuit-in-s-culum-testam-nti-sui-d-minus-deu-1fd182ca1f
+      daya0:
+        role: psalmody
+        text_id: psalmody.serv-te-d-mino-in-tim-re-et-exsult-te-ei-cum-tre-4b29b42a25
+      daya1:
+        role: psalmody
+        text_id: psalmody.d-minus-def-nsor-vit-me-fb7141bd16
+      daya2:
+        role: psalmody
+        text_id: psalmody.ut-non-del-nquam-in-lingua-mea-db54149161
+      daya3:
+        role: psalmody
+        text_id: psalmody.av-rtit-d-minus-captivit-tem-plebis-su-1a09027719
+      daya4:
+        role: psalmody
+        text_id: psalmody.d-mine-deus-in-adiut-rium-meum-int-nde-8b7425d821
+      daya5:
+        role: psalmody
+        text_id: psalmody.exsult-te-deo-adiut-ri-nostro-5a86727c4a
+      daya6:
+        role: psalmody
+        text_id: psalmody.quia-mirab-lia-fecit-d-minus-b6c794c815
+      daym-nat:
+        role: psalmody
+        text_id: psalmody.in-princ-pio-et-ante-s-cula-deus-erat-verbum-ips-546d262db7
+      daym-pasch:
+        role: psalmody
+        text_id: psalmody.iesum-qui-crucif-xus-est-qu-ritis-allel-ia-non-e-adf4c32f17
+      daym0:
+        role: psalmody
+        text_id: psalmody.d-mine-in-virt-te-tua-l-t-bitur-rex-1d178a10af
+      daym1:
+        role: psalmody
+        text_id: psalmody.rectos-decet-collaud-tio-7e8085c9ae
+      daym1c:
+        role: psalmody
+        text_id: psalmody.rectos-decet-collaud-tio-35b74b3a3b
+      daym2:
+        role: psalmody
+        text_id: psalmody.adi-tor-in-tribulati-nibus-aa50701e0e
+      daym2c:
+        role: psalmody
+        text_id: psalmody.adi-tor-in-tribulati-nibus-96ae0c581c
+      daym3:
+        role: psalmody
+        text_id: psalmody.da-nobis-d-mine-aux-lium-de-tribulati-ne-fc5b4125ae
+      daym3c:
+        role: psalmody
+        text_id: psalmody.da-nobis-d-mine-aux-lium-de-tribulati-ne-4def8fa150
+      daym4:
+        role: psalmody
+        text_id: psalmody.liber-sti-virgam-heredit-tis-tu-33f49385ba
+      daym5:
+        role: psalmody
+        text_id: psalmody.incl-na-d-mine-aurem-tuam-et-ex-udi-me-b496e7ad2e
+      daym5c:
+        role: psalmody
+        text_id: psalmody.incl-na-d-mine-aurem-tuam-et-ex-udi-me-18dcbd688a
+      daym6:
+        role: psalmody
+        text_id: psalmody.clamor-meus-ad-te-v-niat-deus-0d0638c75a
+      daym6c:
+        role: psalmody
+        text_id: psalmody.clamor-meus-ad-te-v-niat-deus-24e5db2bd2
+      epi-1-versum:
+        role: psalmody
+        text_id: psalmody.omnis-terra-ad-ret-te-et-psallat-tibi-ec3b917f96
+      epi-2-versum:
+        role: psalmody
+        text_id: psalmody.reges-tharsis-et-nsul-m-nera-fferent-7146cb932f
+      epi-3-versum:
+        role: psalmody
+        text_id: psalmody.ador-te-d-minum-allel-ia-e14a8b67dd
+      nat-1-versum:
+        role: psalmody
+        text_id: psalmody.tamquam-sponsus-e520d0bd1c
+      nat-2-versum:
+        role: psalmody
+        text_id: psalmody.speci-sus-forma-pr-f-liis-h-minum-d77a218f15
+      nat-3-versum:
+        role: psalmody
+        text_id: psalmody.notum-fecit-d-minus-allel-ia-7ecd097853
+      nat24-versum:
+        role: psalmody
+        text_id: psalmody.h-die-sci-tis-quia-v-niet-d-minus-d3bf17437c
+      pasch-0-versum:
+        role: psalmody
+        text_id: psalmody.surr-xit-d-minus-de-sep-lcro-allel-ia-e0e7274ff8
+      pasch-1-versum:
+        role: psalmody
+        text_id: psalmody.surr-xit-d-minus-de-sep-lcro-allel-ia-e0e7274ff8
+      pasch-2-versum:
+        role: psalmody
+        text_id: psalmody.surr-xit-d-minus-vere-allel-ia-aa318f6898
+      pasch-3-versum:
+        role: psalmody
+        text_id: psalmody.gav-si-sunt-disc-puli-allel-ia-e49a643d90
+      pasch-6-versum:
+        role: psalmody
+        text_id: psalmody.gav-si-sunt-disc-puli-allel-ia-8145020547
+      pasch-ant-dominica:
+        role: psalmody
+        text_id: psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-cfc070b10a
+      pasch-ant-feria:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-8cee0b0a17
+      pasch0:
+        role: psalmody
+        text_id: psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-2cc6f046f4
+      paschm0:
+        role: psalmody
+        text_id: psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-aff0720171
+      quad-0-versum:
+        role: psalmody
+        text_id: psalmody.scuto-circ-mdabit-te-v-ritas-eius-7ec575bf56
+      quad-1-versum:
+        role: psalmody
+        text_id: psalmody.ipse-liber-vit-me-de-l-queo-ven-ntium-0f5d801835
+      quad-2-versum:
+        role: psalmody
+        text_id: psalmody.sc-pulis-suis-obumbr-bit-tibi-5dca3a5a24
+      quad-3-versum:
+        role: psalmody
+        text_id: psalmody.scuto-circ-mdabit-te-v-ritas-eius-7ec575bf56
+      quad-6-versum:
+        role: psalmody
+        text_id: psalmody.scuto-circ-mdabit-te-v-ritas-eius-7ec575bf56
+      quad5-0-versum:
+        role: psalmody
+        text_id: psalmody.ne-perdas-cum-mpiis-deus-nimam-meam-066e38dbc1
+      quad5-1-versum:
+        role: psalmody
+        text_id: psalmody.rue-a-fr-mea-deus-nimam-meam-244f9b85f7
+      quad5-2-versum:
+        role: psalmody
+        text_id: psalmody.de-ore-le-nis-l-bera-me-d-mine-d1cfe9bb37
+      quad5-3-versum:
+        role: psalmody
+        text_id: psalmody.ne-perdas-cum-mpiis-deus-nimam-meam-066e38dbc1
+      quad5-6-versum:
+        role: psalmody
+        text_id: psalmody.ne-perdas-cum-mpiis-deus-nimam-meam-066e38dbc1
+  psalter/minor:
+    sections:
+      adv1:
+        role: psalmody
+        text_id: psalmody.1-in-illa-die-still-bunt-montes-dulc-dinem-et-co-f220327a37
+      adv2:
+        role: psalmody
+        text_id: psalmody.1-ecce-in-n-bibus-c-li-d-minus-v-niet-cum-potest-2d36a0335a
+      adv3:
+        role: psalmody
+        text_id: psalmody.1-v-niet-d-minus-et-non-tard-bit-et-illumin-bit-e3139ace8b
+      adv4:
+        role: psalmody
+        text_id: psalmody.1-c-nite-tuba-in-sion-quia-prope-est-dies-d-mini-8f31d29336
+      adv42:
+        role: psalmody
+        text_id: psalmody.1-ecce-v-niet-d-minus-princeps-regum-terr-be-ti-461aa562b0
+      adv43:
+        role: psalmody
+        text_id: psalmody.1-ror-te-c-li-d-super-et-nubes-pluant-iustum-ape-5c93bb4e59
+      adv44:
+        role: psalmody
+        text_id: psalmody.1-proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rg-8be2f60a72
+      adv45:
+        role: psalmody
+        text_id: psalmody.1-de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-abb53a2f81
+      adv46:
+        role: psalmody
+        text_id: psalmody.1-const-ntes-est-te-vid-bitis-aux-lium-d-mini-su-0eee1dafd4
+      adv47:
+        role: psalmody
+        text_id: psalmody.1-intu-mini-quam-sit-glori-sus-iste-qui-ingr-dit-f77b38e430
+      advop:
+        role: psalmody
+        text_id: psalmody.1-veni-et-l-bera-nos-deus-noster-83a0e5f9bf
+      cistercian:
+        role: psalmody
+        text_id: psalmody.serv-te-d-mino-in-tim-re-87407697f3
+      completorium:
+        role: psalmody
+        text_id: psalmody.miser-re-mihi-d-mine-et-ex-udi-orati-nem-meam-9f0298a37a
+      monastic:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-allel-ia-070631c691
+      nona:
+        role: psalmody
+        text_id: psalmody.allel-ia-f-ciem-tuam-d-mine-ill-mina-super-servu-e1e8448857
+      pasch:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-abd2546e90
+      prima:
+        role: psalmody
+        text_id: psalmody.allel-ia-confit-mini-d-mino-qu-niam-in-s-culum-m-f9c1d108b0
+      quad:
+        role: psalmody
+        text_id: psalmody.1-vivo-ego-dicit-d-minus-nolo-mortem-peccat-ris-b2e6ea4b4f
+      quad5:
+        role: psalmody
+        text_id: psalmody.1-l-bera-me-d-mine-et-pone-me-iuxta-te-et-cui-sv-31312ab671
+      quad5-cist:
+        role: psalmody
+        text_id: psalmody.2-vide-d-mine-afflicti-nem-meam-qu-niam-er-ctus-9264e41afa
+      quad5-cist2:
+        role: psalmody
+        text_id: psalmody.2-vide-d-mine-afflicti-nem-meam-qu-niam-er-ctus-505d6d770b
+      quad5-op:
+        role: psalmody
+        text_id: psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-6aa3e27887
+      quad5-op1:
+        role: psalmody
+        text_id: psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-12a0fdc0da
+      sexta:
+        role: psalmody
+        text_id: psalmody.allel-ia-tuus-sum-ego-salvum-me-fac-d-mine-allel-5b011e49ed
+      tertia:
+        role: psalmody
+        text_id: psalmody.allel-ia-deduc-me-d-mine-in-s-mitam-mandat-rum-t-49994460e7
+      tridentinum:
+        role: psalmody
+        text_id: psalmody.allel-ia-allel-ia-allel-ia-dc25362dd9

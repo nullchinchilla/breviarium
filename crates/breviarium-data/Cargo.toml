@@ -1,0 +1,16 @@
+[package]
+name = "breviarium-data"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Embedded liturgical data catalog and lookup API for Breviarium."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+chrono = { workspace = true }
+include_dir = { workspace = true }
+ordered-float = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+yaml_serde = { workspace = true }

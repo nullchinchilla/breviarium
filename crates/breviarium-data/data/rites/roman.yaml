@@ -1,0 +1,12 @@
+doc_type: rite
+id: roman
+title: "Roman Rite"
+hours:
+  - matins
+  - lauds
+  - prime
+  - terce
+  - sext
+  - none
+  - vespers
+  - compline

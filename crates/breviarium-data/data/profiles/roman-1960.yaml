@@ -1,0 +1,9 @@
+doc_type: profile
+id: roman-1960
+title: "Roman Office, Rubrics 1960"
+rite: roman
+supported_services:
+  - office
+supported_languages:
+  - la
+  - en

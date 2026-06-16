@@ -1,0 +1,1639 @@
+doc_type: source_bundle
+sources:
+  ordinary/benedictions:
+    sections:
+      matins-absolutions:
+        role: blessing
+        text_id: blessing.ex-udi-d-mine-iesu-christe-preces-serv-rum-tu-ru-0822fb2b3c
+      matins-blessings-nocturn-1:
+        role: blessing
+        text_id: blessing.benedicti-ne-perp-tua-bened-cat-nos-pater-t-rnus-c4067861e6
+      matins-blessings-nocturn-2:
+        role: blessing
+        text_id: blessing.deus-pater-omn-potens-sit-nobis-prop-tius-et-cle-19cd36b48b
+      matins-blessings-nocturn-3:
+        role: blessing
+        text_id: blessing.ille-nos-bened-cat-qui-sine-fine-vivit-et-regnat-f262007c20
+      matins-blessings-nocturn-3-christmas:
+        role: blessing
+        text_id: blessing.evang-lica-l-ctio-sit-nobis-salus-et-prot-ctio-52f6a77faa
+  ordinary/formulae:
+    sections:
+      a-porta-inferi:
+        role: rubric
+        text_id: rubric.a-porta-nferi-6ade4d00e1
+      absolutio:
+        role: rubric
+        text_id: rubric.absolutio-e000b67726
+      ad-nocturnum:
+        role: rubric
+        text_id: rubric.ad-nocturnum-be09af2870
+      adjutorium-nostrum:
+        role: rubric
+        text_id: rubric.adiut-rium-nostrum-in-n-mine-d-mini-66c655ae9a
+      alleluia:
+        role: rubric
+        text_id: rubric.allel-ia-50f65aadb8
+      alleluia-duplex:
+        role: rubric
+        text_id: rubric.allel-ia-allel-ia-9d70e3d877
+      alleluia-simplex:
+        role: rubric
+        text_id: rubric.allel-ia-b27e65d6f2
+      amen:
+        role: rubric
+        text_id: rubric.amen-a5885b16ba
+      ant-alma-redemptoris-mater:
+        role: rubric
+        text_id: rubric.alma-redempt-ris-mater-qu-p-rvia-c-li-porta-mane-b1b4e04801
+      ant-ave-regina-caelorum:
+        role: rubric
+        text_id: rubric.ave-reg-na-c-l-rum-76ec494780
+      ant-regina-caeli:
+        role: rubric
+        text_id: rubric.reg-na-c-li-l-t-re-allel-ia-b439a22fb0
+      ant-salve-regina:
+        role: rubric
+        text_id: rubric.salve-reg-na-mater-miseric-rdi-dd8237bf5b
+      ante:
+        role: rubric
+        text_id: rubric.flexis-genibus-4a53b1e58a
+      ante-coenam:
+        role: rubric
+        text_id: rubric.ante-coenam-a2b95b9937
+      ante-prandium:
+        role: rubric
+        text_id: rubric.ante-prandium-f8e66d1318
+      antiphona:
+        role: rubric
+        text_id: rubric.antiphona-6872d8f5c8
+      antiphona-finalis-bmv:
+        role: rubric
+        text_id: rubric.antiphona-finalis-b-m-v-978ec51e2d
+      antiphonae:
+        role: rubric
+        text_id: rubric.antiphon-615c34fbdc
+      aperi:
+        role: rubric
+        text_id: rubric.peri-458ac928de
+      aportainferi:
+        role: rubric
+        text_id: rubric.a-porta-nferi-b6beeba9cb
+      ave-maria:
+        role: rubric
+        text_id: rubric.ave-mar-a-gr-tia-plena-d-minus-tecum-bened-cta-t-0ac020a1e1
+      ave-maria-parvum:
+        role: rubric
+        text_id: rubric.ave-mar-a-gr-tia-plena-d-minus-tecum-cd4e35008a
+      benedicamus-domino:
+        role: rubric
+        text_id: rubric.benedic-mus-d-mino-ecaf5b955d
+      benedicamus-domino-alleluia:
+        role: rubric
+        text_id: rubric.benedic-mus-d-mino-allel-ia-allel-ia-f3cb4f36b5
+      benedicamus-domino-alleluja:
+        role: rubric
+        text_id: rubric.benedic-mus-d-mino-allel-ia-allel-ia-f3cb4f36b5
+      benedicamus-domino1:
+        role: rubric
+        text_id: rubric.benedic-mus-d-mino-allel-ia-allel-ia-d698a4a133
+      benedicite:
+        role: rubric
+        text_id: rubric.bened-cite-14074619c0
+      benedictio:
+        role: blessing
+        text_id: blessing.benedictio-00c1605400
+      benedictio-completorium:
+        role: blessing
+        text_id: blessing.noctem-qui-tam-et-finem-perf-ctum-conc-dat-nobis-190bc5148a
+      benedictio-completorium-final:
+        role: blessing
+        text_id: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-0fc370509c
+      benedictio-completorium2:
+        role: blessing
+        text_id: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-36ccd4bf3b
+      benedictio-mensae:
+        role: blessing
+        text_id: blessing.benedictio-mens-1db99b875a
+      benedictio-prima:
+        role: blessing
+        text_id: blessing.dies-et-actus-nostros-in-sua-pace-disp-nat-d-min-20bebe3bde
+      benedictio-prima2:
+        role: blessing
+        text_id: blessing.d-minus-nos-bened-cat-et-ab-omni-malo-def-ndat-e-899b6fcd8d
+      canticum:
+        role: rubric
+        text_id: rubric.canticum-15504493a4
+      canticum-benedictus:
+        role: rubric
+        text_id: rubric.canticum-benedictus-75604121d1
+      canticum-magnificat:
+        role: rubric
+        text_id: rubric.canticum-magnificat-07ee4640b8
+      canticum-nunc-dimittis:
+        role: rubric
+        text_id: rubric.canticum-nunc-dimittis-2dfd135ed8
+      capitulum-hymnus-versus:
+        role: rubric
+        text_id: rubric.capitulum-hymnus-versus-06b0399cf9
+      capitulum-responsorium-hymnus-versus:
+        role: rubric
+        text_id: rubric.capitulum-responsorium-hymnus-versus-bed2567a4f
+      capitulum-responsorium-versus:
+        role: rubric
+        text_id: rubric.capitulum-responsorium-versus-39d9125fca
+      capitulum-responsory-versus:
+        role: rubric
+        text_id: rubric.capitulum-responsory-versus-65c3e1be8c
+      capitulum-versus:
+        role: rubric
+        text_id: rubric.capitulum-versus-792430d100
+      commemoratio:
+        role: collect
+        text_id: collect.commemoratio-2c4381b7fd
+      commemoratio-defunctorum:
+        role: collect
+        text_id: collect.commemoratio-defunctorum-69f1fbf4a8
+      commemoratio-omnium:
+        role: collect
+        text_id: collect.commemor-tio-mnium-fratrum-famili-rum-rdinis-nos-56f4bdf84a
+      commemoratio-omnium-c:
+        role: collect
+        text_id: collect.deinde-dicit-lector-commemor-tio-mnium-fratrum-f-bbe8ff32db
+      conclmart:
+        role: rubric
+        text_id: rubric.et-libi-ali-rum-plurim-rum-sanct-rum-m-rtyrum-et-b7e6f24245
+      conclusio:
+        role: rubric
+        text_id: rubric.conclusio-a609a04680
+      conclusio-cisterciensis:
+        role: rubric
+        text_id: rubric.sp-ritus-sanctus-in-te-desc-ndet-mar-a-ne-t-meas-eb2fce0396
+      confiteor:
+        role: rubric
+        text_id: rubric.conf-teor-deo-omnipot-nti-be-t-mar-semper-v-rgin-ab942c8b75
+      converte-nos:
+        role: rubric
+        text_id: rubric.conv-rte-nos-deus-salut-ris-noster-0c0e897045
+      credo:
+        role: rubric
+        text_id: rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-03deaec004
+      credo-carnis:
+        role: rubric
+        text_id: rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-ce931b9589
+      credo-secreto:
+        role: rubric
+        text_id: rubric.credo-secreto-915a962f0a
+      de-officio-capituli:
+        role: rubric
+        text_id: rubric.de-officio-capituli-c9afc0be02
+      defunctlc:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-504b079d43
+      defunctm:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-28db943827
+      defunctorum:
+        role: rubric
+        text_id: rubric.commemoratio-defunctorum-35f7a64b6d
+      defunctv:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-f028d2ccf5
+      defunctvc:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-994b3b910f
+      deo-gratias:
+        role: rubric
+        text_id: rubric.deo-gr-tias-4498595b10
+      deus-in-adjutorium:
+        role: rubric
+        text_id: rubric.deus-in-adiut-rium-meum-int-nde-e3b57da9ba
+      deus-in-adjutorium-iij:
+        role: rubric
+        text_id: rubric.deus-in-adiut-rium-meum-int-nde-d3957a81a0
+      deus-in-adjutorium-tantum:
+        role: rubric
+        text_id: rubric.deus-in-adiut-rium-meum-int-nde-3678742a86
+      deus-veniae:
+        role: rubric
+        text_id: rubric.deus-v-ni-larg-tor-et-hum-n-sal-tis-am-tor-qu-su-687d24f117
+      deusinadjutorium:
+        role: rubric
+        text_id: rubric.deus-in-adiut-rium-84e9597766
+      dirigere:
+        role: rubric
+        text_id: rubric.dir-gere-et-sanctific-re-r-gere-et-gubern-re-dig-6d126c6d56
+      divinum-auxilium:
+        role: rubric
+        text_id: rubric.div-num-aux-lium-m-neat-semper-nob-scum-66645b014e
+      divinum-officium:
+        role: rubric
+        text_id: rubric.divinum-officium-e80575a00a
+      domine-exaudi:
+        role: rubric
+        text_id: rubric.d-mine-ex-udi-orati-nem-meam-ee082be713
+      domine-labia:
+        role: rubric
+        text_id: rubric.d-mine-l-bia-mea-ap-ries-be7ebdc9fa
+      domine-labia-iij:
+        role: rubric
+        text_id: rubric.deinde-ter-dicitur-7c86cf699c
+      dominica:
+        role: rubric
+        text_id: rubric.dominic-a-65f629d860
+      dominus:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-fcda57d4d7
+      dominus-det:
+        role: rubric
+        text_id: rubric.d-minus-det-nobis-suam-pacem-0169c2e828
+      dominus-vobiscum:
+        role: rubric
+        text_id: rubric.d-minus-vob-scum-7fae21d751
+      dulce-nomen:
+        role: rubric
+        text_id: rubric.dulce-nomen-d-mini-nostri-iesu-christi-et-beat-s-f7205a1457
+      et-psalmi:
+        role: rubric
+        text_id: rubric.et-psalmi-7b164014d9
+      fidelium-animae:
+        role: rubric
+        text_id: rubric.fid-lium-nim-per-miseric-rdiam-dei-requi-scant-i-d2e3a28f06
+      gloria:
+        role: rubric
+        text_id: rubric.gl-ria-patri-et-f-lio-et-spir-tui-sancto-fafece40b5
+      gloria-omittitur:
+        role: rubric
+        text_id: rubric.gloria-omittitur-fb342004f3
+      gloria-tibi-domine:
+        role: rubric
+        text_id: rubric.gl-ria-tibi-d-mine-4f55c2fbc9
+      gloria1:
+        role: rubric
+        text_id: rubric.gl-ria-patri-et-f-lio-et-spir-tui-sancto-92c0008edf
+      hymnus:
+        role: rubric
+        text_id: rubric.hymnus-6815aed898
+      in-fine-coenae:
+        role: rubric
+        text_id: rubric.in-fine-coenae-a9b32eeb88
+      in-fine-coene:
+        role: rubric
+        text_id: rubric.in-fine-coene-99f2f75c2a
+      incipit:
+        role: rubric
+        text_id: rubric.incipit-f1a8d27a75
+      indulgentiam:
+        role: rubric
+        text_id: rubric.indulg-ntiam-absoluti-nem-et-remissi-nem-peccat-ca7980b845
+      invitatorium:
+        role: rubric
+        text_id: rubric.invitatorium-867fe7e1ab
+      itinerarium:
+        role: rubric
+        text_id: rubric.itinerarium-7d1cd9f257
+      jube-domne:
+        role: rubric
+        text_id: rubric.iube-d-mine-bened-cere-ff6b100067
+      kyrie:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-cdb65d7e11
+      laus-tibi:
+        role: rubric
+        text_id: rubric.laus-tibi-d-mine-rex-t-rn-gl-ri-0725ae96db
+      lectio:
+        role: rubric
+        text_id: rubric.lectio-fbe6e87fa4
+      lectio-brevis:
+        role: rubric
+        text_id: rubric.lectio-brevis-4587e84189
+      lectio-regulae:
+        role: rubric
+        text_id: rubric.lectio-ex-regula-s-p-n-benedicti-caput-d6011ad1a3
+      litaniae:
+        role: rubric
+        text_id: rubric.litani-8935183013
+      martyrologium:
+        role: rubric
+        text_id: rubric.martyrologium-8e0fa677e5
+      misereatur:
+        role: rubric
+        text_id: rubric.misere-tur-nostri-omn-potens-deus-et-dim-ssis-pe-254c24a5a5
+      mlitany:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-cd29520f33
+      mlitany-simplex:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-948396e2e9
+      mlitany2:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-6112af248d
+      nocturn:
+        role: rubric
+        text_id: rubric.nocturnus-02e3cbf710
+      octava:
+        role: rubric
+        text_id: rubric.octav-a-43de02a03c
+      oratio:
+        role: collect
+        text_id: collect.oratio-0a3a25105a
+      oratio-domine:
+        role: collect
+        text_id: collect.d-mine-deus-omn-potens-qui-ad-princ-pium-huius-d-f492b982ae
+      oratio-visita:
+        role: collect
+        text_id: collect.v-sita-qu-sumus-d-mine-habitati-nem-istam-et-omn-f350bb990f
+      orationes:
+        role: collect
+        text_id: collect.orationes-0ac25e2cd7
+      ordo-commendationis-animae:
+        role: rubric
+        text_id: rubric.ordo-commendationis-anim-1fe361cc9d
+      oremus:
+        role: rubric
+        text_id: rubric.or-mus-57eed00181
+      pater-ave:
+        role: rubric
+        text_id: rubric.secreto-170be6add3
+      pater-ave-l:
+        role: rubric
+        text_id: rubric.rubrica-a-laudibus-04fb5cfb7a
+      pater-noster:
+        role: rubric
+        text_id: rubric.pater-noster-qui-es-in-c-lis-sanctific-tur-nomen-6e92b1bee9
+      pater-noster-et:
+        role: rubric
+        text_id: rubric.pater-noster-qui-es-in-c-lis-sanctific-tur-nomen-ade5c04e73
+      pater-post:
+        role: rubric
+        text_id: rubric.pater-noster-2088e135e4
+      pater-post-v:
+        role: rubric
+        text_id: rubric.pater-post-v-9378a950f6
+      pater-secreto:
+        role: rubric
+        text_id: rubric.pater-secreto-2f9e2c43ed
+      pater-totum-secreto:
+        role: rubric
+        text_id: rubric.pater-totum-secreto-d73dac2b7c
+      per-christum:
+        role: rubric
+        text_id: rubric.per-christum-d-minum-nostrum-a26f540de8
+      per-dominum:
+        role: rubric
+        text_id: rubric.per-d-minum-nostrum-iesum-christum-f-lium-tuum-q-26aa4d01f5
+      per-dominum-eiusdem:
+        role: rubric
+        text_id: rubric.per-d-minum-nostrum-iesum-christum-f-lium-tuum-q-f3fd76ddb3
+      per-eumdem:
+        role: rubric
+        text_id: rubric.per-e-ndem-d-minum-nostrum-iesum-christum-f-lium-c243d677c4
+      per-eumdem-christum:
+        role: rubric
+        text_id: rubric.per-e-ndem-christum-d-minum-nostrum-e0df288f67
+      per-eundem:
+        role: rubric
+        text_id: rubric.per-e-ndem-d-minum-nostrum-iesum-christum-f-lium-0065601e46
+      post:
+        role: rubric
+        text_id: rubric.sacros-nct-et-indiv-du-trinit-ti-crucif-xi-d-min-cddd73c935
+      post-prandium:
+        role: rubric
+        text_id: rubric.post-prandium-23d8cfeed7
+      preces-dominicales:
+        role: preces
+        text_id: preces.preces-dominicales-e2e8983c3e
+      preces-dominicales-completorium:
+        role: preces
+        text_id: preces.benedictus-es-a6a6d16ad6
+      preces-dominicales-et-feriales:
+        role: preces
+        text_id: preces.preces-dominicales-et-feriales-8ed899a19d
+      preces-dominicales-primae:
+        role: preces
+        text_id: preces.et-ego-ad-te-21cc1fc2bd
+      preces-dominicales-secundae:
+        role: preces
+        text_id: preces.dign-re-d-mine-be49bb9fd3
+      preces-feriales:
+        role: preces
+        text_id: preces.preces-feriales-5f3a763993
+      preces-feriales-laudes:
+        role: preces
+        text_id: preces.ego-dixi-d269dacd02
+      preces-feriales-minora:
+        role: preces
+        text_id: preces.d-mine-deus-4a11a57d80
+      preces-feriales-prima:
+        role: preces
+        text_id: preces.ripe-me-6c657ee8d1
+      preces-feriales-vespera:
+        role: preces
+        text_id: preces.ego-dixi-4e6495af34
+      pretiosa:
+        role: rubric
+        text_id: rubric.preti-sa-in-consp-ctu-d-mini-f80dc0e929
+      psalmi:
+        role: rubric
+        text_id: rubric.psalmi-b0875b61a1
+      psalmi-antiphonae:
+        role: rubric
+        text_id: rubric.psalmi-antiphon-f9b55f2d5f
+      psalmi-cum-lectionibus:
+        role: rubric
+        text_id: rubric.psalmi-cum-lectionibus-faa26570d8
+      psalmi-dominica-antiphonae:
+        role: rubric
+        text_id: rubric.psalmi-dominica-antiphon-182e7eefdb
+      psalmi-et-antiphonae:
+        role: rubric
+        text_id: rubric.psalmi-antiphon-f9b55f2d5f
+      psalmi-graduales:
+        role: rubric
+        text_id: rubric.psalmi-graduales-ba8a4afc98
+      psalmus:
+        role: rubric
+        text_id: rubric.psalmus-1335183786
+      qui-cum-patre:
+        role: rubric
+        text_id: rubric.qui-cum-patre-et-sp-ritu-sancto-vivis-et-regnas-4f368783b1
+      qui-tecum:
+        role: rubric
+        text_id: rubric.qui-tecum-vivit-et-regnat-in-unit-te-sp-ritus-sa-e5ddae2769
+      qui-tecum-eiusdem:
+        role: rubric
+        text_id: rubric.qui-tecum-vivit-et-regnat-in-unit-te-ei-sdem-sp-caccd5e856
+      qui-tecum-in:
+        role: rubric
+        text_id: rubric.qui-tecum-vivit-et-regnat-in-s-cula-s-cul-rum-af9312e1b7
+      qui-vivis:
+        role: rubric
+        text_id: rubric.qui-vivis-et-regnas-cum-deo-patre-in-unit-te-sp-f46fc64c87
+      quorum-animae:
+        role: rubric
+        text_id: rubric.quorum-nim-piis-dmodum-reverend-rum-patrum-ac-re-92df0a6247
+      regula-vel-lectio-brevis:
+        role: rubric
+        text_id: rubric.regula-vel-lectio-brevis-a97486f2b7
+      requiem:
+        role: rubric
+        text_id: rubric.r-quiem-t-rnam-dona-eis-d-mine-a66543599f
+      requiem2:
+        role: rubric
+        text_id: rubric.r-quiem-t-rnam-dona-eis-d-mine-1e69381980
+      requiescant:
+        role: rubric
+        text_id: rubric.requi-scant-in-pace-c5b50cda6b
+      respice:
+        role: rubric
+        text_id: rubric.r-spice-in-servos-tuos-d-mine-et-in-pera-tua-et-b3c1955f5d
+      rlitany-simplex:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-948396e2e9
+      rlitany-simplex0:
+        role: rubric
+        text_id: rubric.k-rie-el-ison-christe-el-ison-k-rie-el-ison-6112af248d
+      sacrosancta:
+        role: rubric
+        text_id: rubric.sacrosancta-a072b3341b
+      sacrosanctaea:
+        role: rubric
+        text_id: rubric.sacrosanct-a-911bb70440
+      secreto:
+        role: rubric
+        text_id: rubric.secreto-38c6f91c92
+      secunda-domine-exaudi-omittitur:
+        role: rubric
+        text_id: rubric.secunda-d-mine-ex-udi-omittitur-b602efd8b1
+      septem-psalmi-paenitentiales:
+        role: rubric
+        text_id: rubric.septem-psalmi-p-nitentiales-c3b3c05355
+      suffragium:
+        role: rubric
+        text_id: rubric.suffragium-857c07470d
+      te-decet:
+        role: rubric
+        text_id: rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-727fe1d0e5
+      te-deum:
+        role: rubric
+        text_id: rubric.te-deum-laud-mus-te-d-minum-confit-mur-8ca85f2c52
+      tu-autem:
+        role: rubric
+        text_id: rubric.tu-autem-d-mine-miser-re-nobis-4127bc78b9
+      versus-in-loco:
+        role: rubric
+        text_id: rubric.versus-in-loco-capituli-4c2837319d
+      vigilia:
+        role: rubric
+        text_id: rubric.vigilia-e8576580af
+  ordinary/major:
+    sections:
+      adv-ant-17:
+        role: antiphon
+        text_id: antiphon.o-sapi-ntia-qu-ex-ore-alt-ssimi-prodi-sti-att-ng-d672aefc94
+      adv-ant-18:
+        role: antiphon
+        text_id: antiphon.o-adon-i-et-dux-domus-isra-l-qui-m-ysi-in-igne-f-651672be73
+      adv-ant-19:
+        role: antiphon
+        text_id: antiphon.o-radix-iesse-qui-stas-in-signum-popul-rum-super-e418131f6a
+      adv-ant-20:
+        role: antiphon
+        text_id: antiphon.o-clavis-david-et-sceptrum-domus-isra-l-qui-peri-7e84d037bc
+      adv-ant-21:
+        role: antiphon
+        text_id: antiphon.o-riens-splendor-lucis-t-rn-et-sol-iust-ti-veni-34a0112b26
+      adv-ant-21l:
+        role: antiphon
+        text_id: antiphon.nol-te-tim-re-quinta-enim-die-v-niet-ad-vos-d-mi-af66d2ff6f
+      adv-ant-22:
+        role: antiphon
+        text_id: antiphon.o-rex-g-ntium-et-desider-tus-e-rum-lap-sque-angu-eabf40fe0e
+      adv-ant-23:
+        role: antiphon
+        text_id: antiphon.o-emm-nuel-rex-et-l-gifer-noster-exspect-tio-g-n-353b0f3318
+      adv-ant-23l:
+        role: antiphon
+        text_id: antiphon.ecce-compl-ta-sunt-mnia-qu-dicta-sunt-per-ngelum-ec41348a7d
+      adv-laudes:
+        role: chapter
+        text_id: chapter.isa-2-3-31ef9b7b87
+      adv-laudes-c:
+        role: chapter
+        text_id: chapter.phil-3-20-21-774d1df079
+      adv-versum-0:
+        role: versicle
+        text_id: versicle.em-tte-agnum-d-mine-dominat-rem-terr-e0da5fd432
+      adv-versum-2:
+        role: versicle
+        text_id: versicle.vox-clam-ntis-in-des-rto-par-te-viam-d-mini-cf8bcbeefc
+      adv-versum-2-c:
+        role: versicle
+        text_id: versicle.em-tte-agnum-d-mine-dominat-rem-terr-e35d1f7b9c
+      adv-versum-3:
+        role: versicle
+        text_id: versicle.ror-te-c-li-d-super-et-nubes-pluant-iustum-1e6900a1e4
+      adv-vespera:
+        role: chapter
+        text_id: chapter.gen-49-10-4e5fec2238
+      asc-versum-0:
+        role: versicle
+        text_id: versicle.asc-ndo-ad-patrem-meum-et-patrem-vestrum-allel-i-870efd499f
+      dominica-ant-2:
+        role: antiphon
+        text_id: antiphon.ut-in-proprio-de-tempore-e8942e065f
+      dominica-ant-3:
+        role: antiphon
+        text_id: antiphon.ut-in-proprio-de-tempore-dd25fc9a6a
+      dominica-laudes:
+        role: chapter
+        text_id: chapter.apo-7-12-84a7697e3b
+      dominica-versum-0:
+        role: versicle
+        text_id: versicle.exc-lsus-super-omnes-gentes-d-minus-40b5ae17c8
+      dominica-versum-2:
+        role: versicle
+        text_id: versicle.d-minus-regn-vit-dec-rem-nduit-64c37349ae
+      dominica-versum-3:
+        role: versicle
+        text_id: versicle.dirig-tur-d-mine-or-tio-mea-7725eae96d
+      dominica-vespera:
+        role: chapter
+        text_id: chapter.2-cor-1-3-4-45c7345452
+      feria-ant-2:
+        role: antiphon
+        text_id: antiphon.text-0752f4450e
+      feria-ant-3:
+        role: antiphon
+        text_id: antiphon.text-0752f4450e
+      feria-laudes:
+        role: chapter
+        text_id: chapter.rom-13-12-13-f0372a924a
+      feria-versum-0:
+        role: versicle
+        text_id: versicle.fiat-miseric-rdia-tua-d-mine-super-nos-6aea6086da
+      feria-versum-2:
+        role: versicle
+        text_id: versicle.repl-ti-sumus-mane-miseric-rdia-tua-7a1442829b
+      feria-versum-2op:
+        role: versicle
+        text_id: versicle.in-matutinis-d-mine-medit-bor-in-te-a9a0b44887
+      feria-versum-3:
+        role: versicle
+        text_id: versicle.dirig-tur-d-mine-or-tio-mea-287b974bf0
+      feria-vespera:
+        role: chapter
+        text_id: chapter.2-cor-1-3-4-a611d36292
+      feria2-ant-2:
+        role: antiphon
+        text_id: antiphon.bened-ctus-d-minus-deus-isra-l-quia-visit-vit-et-3a120ab515
+      feria2-ant-3:
+        role: antiphon
+        text_id: antiphon.magn-ficat-nima-mea-d-minum-quia-resp-xit-deus-h-03a29d8ced
+      feria2c-ant-3:
+        role: antiphon
+        text_id: antiphon.exsult-vit-sp-ritus-meus-in-deo-salut-ri-meo-1cff50af25
+      feria3-ant-2:
+        role: antiphon
+        text_id: antiphon.er-xit-nobis-d-minus-cornu-sal-tis-in-domo-david-ac8bfacc9e
+      feria3-ant-3:
+        role: antiphon
+        text_id: antiphon.exsult-vit-sp-ritus-meus-in-deo-salut-ri-meo-1cff50af25
+      feria3c-ant-2:
+        role: antiphon
+        text_id: antiphon.sal-tem-ex-inim-cis-nostris-et-de-manu-mnium-qui-811598f751
+      feria3c-ant-3:
+        role: antiphon
+        text_id: antiphon.respex-sti-humilit-tem-meam-d-mine-deus-meus-194de4ffca
+      feria4-ant-2:
+        role: antiphon
+        text_id: antiphon.de-manu-mnium-qui-od-runt-nos-liber-vit-nos-d-mi-72fe322018
+      feria4-ant-3:
+        role: antiphon
+        text_id: antiphon.resp-xit-d-minus-humilit-tem-meam-et-fecit-in-me-788ec00cbf
+      feria4c-ant-3:
+        role: antiphon
+        text_id: antiphon.quia-fecit-mihi-d-minus-magna-qui-potens-est-et-cdff14af16
+      feria5-ant-2:
+        role: antiphon
+        text_id: antiphon.in-sanctit-te-servi-mus-d-mino-et-liber-bit-nos-327b9d059f
+      feria5-ant-3:
+        role: antiphon
+        text_id: antiphon.fecit-deus-pot-ntiam-in-br-cchio-suo-disp-rsit-s-29e97fdc8a
+      feria5c-ant-2:
+        role: antiphon
+        text_id: antiphon.ad-dandam-sci-ntiam-plebi-tu-d-mine-in-remissi-n-8256cfceec
+      feria6-ant-2:
+        role: antiphon
+        text_id: antiphon.per-v-scera-miseric-rdi-dei-nostri-visit-vit-nos-ec401c1560
+      feria6-ant-3:
+        role: antiphon
+        text_id: antiphon.dep-suit-d-minus-pot-ntes-de-sede-et-exalt-vit-h-fbf9e5127a
+      feria6c-ant-3:
+        role: antiphon
+        text_id: antiphon.susc-pit-deus-isra-l-p-erum-suum-sicut-loc-tus-e-4cb8d2ca26
+      feria7-ant-2:
+        role: antiphon
+        text_id: antiphon.ill-mina-d-mine-sed-ntes-in-t-nebris-et-umbra-mo-5198bac72a
+      feria7-ant-3:
+        role: antiphon
+        text_id: antiphon.susc-pit-deus-isra-l-p-erum-suum-sicut-loc-tus-e-f32320f89f
+      feria7c-ant-2:
+        role: antiphon
+        text_id: antiphon.in-viam-pacis-d-rige-nos-d-mine-0f6bddfee0
+      hymnus-adv-laudes:
+        role: hymn
+        text_id: hymn.en-clara-vox-red-rguit-5569d5224a
+      hymnus-adv-vespera:
+        role: hymn
+        text_id: hymn.cre-tor-alme-s-derum-190a7aa2e7
+      hymnus-day0-laudes:
+        role: hymn
+        text_id: hymn.ecce-iam-noctis-tenu-tur-umbra-405051d6b9
+      hymnus-day0-laudes-hiemalis:
+        role: hymn
+        text_id: hymn.t-rne-rerum-c-nditor-f7eb5cd54f
+      hymnus-day0-vespera:
+        role: hymn
+        text_id: hymn.lucis-cre-tor-ptime-a880bfca9e
+      hymnus-day1-laudes:
+        role: hymn
+        text_id: hymn.splendor-pat-rn-gl-ri-1afa66bbaf
+      hymnus-day1-vespera:
+        role: hymn
+        text_id: hymn.imm-nse-c-li-c-nditor-ac78f1d1c9
+      hymnus-day2-laudes:
+        role: hymn
+        text_id: hymn.ales-di-i-n-ntius-96c2815cc6
+      hymnus-day2-vespera:
+        role: hymn
+        text_id: hymn.tell-ris-alme-c-nditor-b999d46410
+      hymnus-day3-laudes:
+        role: hymn
+        text_id: hymn.nox-et-ten-br-et-n-bila-6955abb215
+      hymnus-day3-vespera:
+        role: hymn
+        text_id: hymn.c-li-deus-sanct-ssime-827bc9366f
+      hymnus-day4-laudes:
+        role: hymn
+        text_id: hymn.lux-ecce-surgit-urea-b55d31aa73
+      hymnus-day4-vespera:
+        role: hymn
+        text_id: hymn.magn-deus-pot-nti-f22c096fcb
+      hymnus-day5-laudes:
+        role: hymn
+        text_id: hymn.t-rna-c-li-gl-ria-ecea611d73
+      hymnus-day5-vespera:
+        role: hymn
+        text_id: hymn.h-minis-superne-c-nditor-c882049800
+      hymnus-day6-laudes:
+        role: hymn
+        text_id: hymn.aur-ra-iam-spargit-polum-2592988640
+      hymnus-day6-vespera:
+        role: hymn
+        text_id: hymn.iam-sol-rec-dit-gneus-bbb95e6226
+      hymnus-pasch-laudes:
+        role: hymn
+        text_id: hymn.aur-ra-c-lum-p-rpurat-686f4f3e67
+      hymnus-pasch-vespera:
+        role: hymn
+        text_id: hymn.ad-r-gias-agni-dapes-782a2215d1
+      hymnus-quad-laudes:
+        role: hymn
+        text_id: hymn.o-sol-sal-tis-ntimis-4e64d9647d
+      hymnus-quad-vespera:
+        role: hymn
+        text_id: hymn.audi-ben-gne-c-nditor-8bbd0ace2b
+      hymnus-quad5-laudes:
+        role: hymn
+        text_id: hymn.lustra-sex-qui-iam-per-git-345102b58a
+      hymnus-quad5-vespera:
+        role: hymn
+        text_id: hymn.vex-lla-regis-pr-deunt-f3456ff328
+      hymnusm-adv-laudes:
+        role: hymn
+        text_id: hymn.vox-clara-ecce-ntonat-77730facd4
+      hymnusm-adv-vespera:
+        role: hymn
+        text_id: hymn.c-nditor-alme-s-derum-3f07c4dff2
+      hymnusm-day0-laudes:
+        role: hymn
+        text_id: hymn.ecce-iam-noctis-tenu-tur-umbra-aeddb88f7a
+      hymnusm-day0-laudes-hiemalis:
+        role: hymn
+        text_id: hymn.t-rne-rerum-c-nditor-4230ee49c5
+      hymnusm-day0-vespera:
+        role: hymn
+        text_id: hymn.lucis-cre-tor-ptime-60557a5608
+      hymnusm-day0-vespera-hiemalis:
+        role: hymn
+        text_id: hymn.deus-cre-tor-mnium-74819c4bb9
+      hymnusm-day1-laudes:
+        role: hymn
+        text_id: hymn.splendor-pat-rn-gl-ri-1af1dd28f8
+      hymnusm-day1-vespera:
+        role: hymn
+        text_id: hymn.imm-nse-c-li-c-nditor-7a94fc1cd2
+      hymnusm-day2-laudes:
+        role: hymn
+        text_id: hymn.ales-di-i-n-ntius-6a7d6f0055
+      hymnusm-day2-vespera:
+        role: hymn
+        text_id: hymn.tell-ris-ingens-c-nditor-0a8f97f5e3
+      hymnusm-day3-laudes:
+        role: hymn
+        text_id: hymn.nox-et-ten-br-et-n-bila-5759ea5134
+      hymnusm-day3-vespera:
+        role: hymn
+        text_id: hymn.c-li-deus-sanct-ssime-14d3c5429a
+      hymnusm-day4-laudes:
+        role: hymn
+        text_id: hymn.lux-ecce-surgit-urea-ba7cc5e8f0
+      hymnusm-day4-vespera:
+        role: hymn
+        text_id: hymn.magn-deus-pot-nti-c92e39b231
+      hymnusm-day5-laudes:
+        role: hymn
+        text_id: hymn.t-rna-c-li-gl-ria-2ca8b4a2c1
+      hymnusm-day5-vespera:
+        role: hymn
+        text_id: hymn.plasm-tor-h-minis-deus-5e0a99fcaf
+      hymnusm-day6-laudes:
+        role: hymn
+        text_id: hymn.aur-ra-iam-spargit-polum-babbb90f53
+      hymnusm-day6-vespera:
+        role: hymn
+        text_id: hymn.o-lux-be-ta-tr-nitas-f46b204900
+      hymnusm-pasch-laudes:
+        role: hymn
+        text_id: hymn.aur-ra-lucis-r-tilat-748ba90804
+      hymnusm-pasch-laudesop:
+        role: hymn
+        text_id: hymn.serm-ne-blando-angelus-8eea60e69a
+      hymnusm-pasch-vespera:
+        role: hymn
+        text_id: hymn.ad-cenam-agni-pr-vidi-4a3d948b5c
+      hymnusm-quad-laudes:
+        role: hymn
+        text_id: hymn.iam-christe-sol-iust-ti-a407b2c556
+      hymnusm-quad-vespera:
+        role: hymn
+        text_id: hymn.audi-ben-gne-c-nditor-90018473d6
+      hymnusm-quad5-laudes:
+        role: hymn
+        text_id: hymn.lustris-sex-qui-iam-per-ctis-2bb259ddf2
+      hymnusm-quad5-vespera:
+        role: hymn
+        text_id: hymn.vex-lla-regis-pr-deunt-32ee565ceb
+      nat-versum-0:
+        role: versicle
+        text_id: versicle.puer-natus-est-nobis-9d35af148b
+      pasch-laudes:
+        role: chapter
+        text_id: chapter.rom-6-9-10-3a9fe886c0
+      pasch-versum-0:
+        role: versicle
+        text_id: versicle.in-resurrecti-ne-tua-christe-allel-ia-82c0447676
+      pasch-versum-2:
+        role: versicle
+        text_id: versicle.in-resurrecti-ne-tua-christe-allel-ia-d3d52696ec
+      pasch-versum-2-c:
+        role: versicle
+        text_id: versicle.d-cite-in-nati-nibus-allel-ia-40d0b65cb9
+      pasch-versum-3:
+        role: versicle
+        text_id: versicle.mane-nob-scum-d-mine-allel-ia-420868ba16
+      pasch-vespera:
+        role: chapter
+        text_id: chapter.rom-6-9-10-7da66c6345
+      pent-versum-0:
+        role: versicle
+        text_id: versicle.em-tte-sp-ritum-tuum-et-creab-ntur-allel-ia-38fe7def1d
+      preces-feriales-laudes:
+        role: chapter
+        text_id: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-4e1418f5f6
+      preces-feriales-vespera:
+        role: chapter
+        text_id: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-4e1418f5f6
+      quad-laudes:
+        role: chapter
+        text_id: chapter.isa-58-1-92aba8eb7b
+      quad-laudes-c:
+        role: chapter
+        text_id: chapter.2-cor-6-c7e74df562
+      quad-versum-0:
+        role: versicle
+        text_id: versicle.in-m-nibus-port-bunt-te-294561b4db
+      quad-versum-2:
+        role: versicle
+        text_id: versicle.ngelis-suis-deus-mand-vit-de-te-e7f63a53fc
+      quad-versum-3:
+        role: versicle
+        text_id: versicle.ngelis-suis-deus-mand-vit-de-te-1d823f93aa
+      quad-vespera:
+        role: chapter
+        text_id: chapter.io-l-2-17-242ca86891
+      quad5-laudes:
+        role: chapter
+        text_id: chapter.ier-11-19-752929659a
+      quad5-laudes-c:
+        role: chapter
+        text_id: chapter.heb-9-28-c0993bd6c1
+      quad5-versum-0:
+        role: versicle
+        text_id: versicle.int-nde-nim-me-et-l-bera-eam-5f4808dbe3
+      quad5-versum-2:
+        role: versicle
+        text_id: versicle.ripe-me-de-inim-cis-meis-deus-meus-c17acd0b71
+      quad5-versum-2-c:
+        role: versicle
+        text_id: versicle.homo-pacis-me-in-quo-sper-bam-0db813d2ce
+      quad5-versum-3:
+        role: versicle
+        text_id: versicle.ripe-me-d-mine-ab-h-mine-malo-8ac40c614b
+      quad5-versum-3-c:
+        role: versicle
+        text_id: versicle.ded-runt-in-escam-meam-fel-9edee6ac9b
+      quad5-vespera:
+        role: chapter
+        text_id: chapter.ier-11-20-ce99bd8a70
+      quadp-versum-0:
+        role: versicle
+        text_id: versicle.exc-lsus-super-omnes-gentes-d-minus-d31435eace
+      responsory-adv-laudes:
+        role: short_responsory
+        text_id: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-e6e344f013
+      responsory-adv-vespera:
+        role: short_responsory
+        text_id: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-0d737b0ee6
+      responsory-adv-vespera-c:
+        role: short_responsory
+        text_id: short-responsory.tu-ex-rgens-d-mine-miser-beris-sion-e33b910db1
+      responsory-dominica-laudes:
+        role: short_responsory
+        text_id: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-a13dfb628b
+      responsory-dominica-laudes-c:
+        role: short_responsory
+        text_id: short-responsory.h-c-est-dies-quam-fecit-d-minus-19ba813237
+      responsory-dominica-vespera:
+        role: short_responsory
+        text_id: short-responsory.quam-magnific-ta-sunt-pera-tua-d-mine-8d447901dd
+      responsory-feria-laudes:
+        role: short_responsory
+        text_id: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-c291472406
+      responsory-feria-vespera:
+        role: short_responsory
+        text_id: short-responsory.bened-cam-d-minum-in-omni-t-mpore-907b611c8d
+      responsory-feria-vespera-c:
+        role: short_responsory
+        text_id: short-responsory.adiut-rium-nostrum-in-n-mine-d-mini-2f00c046ca
+      responsory-pasch-laudes:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-allel-ia-78f84311b4
+      responsory-pasch-vespera:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-vere-allel-ia-allel-ia-0a6b5ce23d
+      responsory-quad-laudes:
+        role: short_responsory
+        text_id: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-04bd9feafd
+      responsory-quad-vespera:
+        role: short_responsory
+        text_id: short-responsory.sc-pulis-suis-obumbr-bit-tibi-b42d9ef7af
+      responsory-quad5-laudes:
+        role: short_responsory
+        text_id: short-responsory.rue-a-fr-mea-deus-nimam-meam-b45586ea12
+      responsory-quad5-vespera:
+        role: short_responsory
+        text_id: short-responsory.de-ore-le-nis-l-bera-me-d-mine-81f5972ae6
+      suffragium:
+        role: chapter
+        text_id: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-2c31f67422
+      suffragium-bmv:
+        role: chapter
+        text_id: chapter.de-beata-maria-8904713905
+      suffragium-bmv-ant:
+        role: antiphon
+        text_id: antiphon.de-beata-maria-7d302388f8
+      suffragium-bmv-antl:
+        role: antiphon
+        text_id: antiphon.de-beata-maria-9f24050e64
+      suffragium-conclusiobmv:
+        role: chapter
+        text_id: chapter.per-e-ndem-christum-d-minum-nostrum-520934e7e6
+      suffragium-deapostolis:
+        role: chapter
+        text_id: chapter.de-apostolis-97fa0e26a1
+      suffragium-deapostolisv:
+        role: chapter
+        text_id: chapter.de-apostolis-72837948fa
+      suffragium-dejoseph:
+        role: chapter
+        text_id: chapter.de-sancto-ioseph-bcbeeedfbc
+      suffragium-dejosephv:
+        role: chapter
+        text_id: chapter.de-sancto-ioseph-87b787d2e5
+      suffragium-depace:
+        role: chapter
+        text_id: chapter.de-pace-1a95f147de
+      suffragium-depatrono:
+        role: chapter
+        text_id: chapter.de-patrono-vel-titulo-ecclesi-f8d987b4c5
+      suffragium-desspn:
+        role: chapter
+        text_id: chapter.de-ss-benedicto-bernardo-et-roberto-623c5d0c42
+      suffragium-desspnv:
+        role: chapter
+        text_id: chapter.de-ss-benedicto-bernardo-et-roberto-070a36a0b4
+      suffragium-divino:
+        role: chapter
+        text_id: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-66ff66d743
+      suffragium-divino1:
+        role: chapter
+        text_id: chapter.sancti-omnes-interc-dant-pro-nobis-ad-d-minum-ff123ee4eb
+      suffragium-feriale:
+        role: chapter
+        text_id: chapter.de-cruce-e12794b574
+      suffragium-laudes:
+        role: chapter
+        text_id: chapter.de-beata-maria-e6ebf1f157
+      suffragium-paschale:
+        role: chapter
+        text_id: chapter.crucif-xus-surr-xit-a-m-rtuis-et-red-mit-nos-all-54cbb60eb7
+      suffragium-paschalev:
+        role: chapter
+        text_id: chapter.crucem-sanctam-s-biit-qui-inf-rnum-confr-git-acc-d101cd5139
+      suffragium-vespera:
+        role: chapter
+        text_id: chapter.de-beata-maria-ef3f0601f6
+      versum-et-oratio-bmv:
+        role: versicle
+        text_id: versicle.ora-pro-nobis-sancta-dei-g-netrix-bd38a845a3
+  ordinary/marian-antiphons:
+    sections:
+      advent:
+        role: marian_antiphon
+        text_id: marian-antiphon.alma-redempt-ris-mater-qu-p-rvia-c-li-porta-mane-fb4c310fbe
+      ant-ad-s-dominicum:
+        role: marian_antiphon
+        text_id: marian-antiphon.ant-o-lumen-ecclesiae-doctor-veritatis-rosa-pati-e7fd1d12f3
+      ant-finalis-cist:
+        role: marian_antiphon
+        text_id: marian-antiphon.completbmv2-1525cca786
+      ant-finalis-op:
+        role: marian_antiphon
+        text_id: marian-antiphon.salve-reg-na-mater-miseric-rdi-cebd0dee46
+      nativiti:
+        role: marian_antiphon
+        text_id: marian-antiphon.alma-redempt-ris-mater-qu-p-rvia-c-li-e2fa68e5a8
+      paschalis:
+        role: marian_antiphon
+        text_id: marian-antiphon.reg-na-c-li-l-t-re-allel-ia-7916a6fe7d
+      postpentecost:
+        role: marian_antiphon
+        text_id: marian-antiphon.salve-reg-na-mater-miseric-rdi-59a2190345
+      quadragesimae:
+        role: marian_antiphon
+        text_id: marian-antiphon.ave-reg-na-c-l-rum-c4cd570572
+  ordinary/matins:
+    sections:
+      day0-hymnus:
+        role: hymn
+        text_id: hymn.nocte-surg-ntes-vigil-mus-omnes-31f30353ab
+      day0-hymnus1:
+        role: hymn
+        text_id: hymn.primo-die-quo-tr-nitas-54f22747e1
+      day0-hymnus1m:
+        role: hymn
+        text_id: hymn.primo-di-rum-mnium-90402d3210
+      day0-hymnusm:
+        role: hymn
+        text_id: hymn.nocte-surg-ntes-vigil-mus-omnes-c0b362635e
+      day1-hymnus:
+        role: hymn
+        text_id: hymn.somno-ref-ctis-rtubus-7e627f3118
+      day1-hymnusm:
+        role: hymn
+        text_id: hymn.somno-ref-ctis-rtubus-00fcb2b01b
+      day2-hymnus:
+        role: hymn
+        text_id: hymn.consors-pat-rni-l-minis-63eb7753e8
+      day2-hymnusm:
+        role: hymn
+        text_id: hymn.consors-pat-rni-l-minis-45775bc8db
+      day3-hymnus:
+        role: hymn
+        text_id: hymn.rerum-cre-tor-ptime-039e460eb7
+      day3-hymnusm:
+        role: hymn
+        text_id: hymn.rerum-cre-tor-ptime-61da60dcc9
+      day4-hymnus:
+        role: hymn
+        text_id: hymn.nox-atra-rerum-c-ntegit-7829b41359
+      day4-hymnusm:
+        role: hymn
+        text_id: hymn.nox-atra-rerum-c-ntegit-e03f9940f3
+      day5-hymnus:
+        role: hymn
+        text_id: hymn.tu-trinit-tis-unitas-b970709677
+      day5-hymnusm:
+        role: hymn
+        text_id: hymn.tu-trinit-tis-unitas-82421ce659
+      day6-hymnus:
+        role: hymn
+        text_id: hymn.summ-parens-clem-nti-ae3fc140d1
+      day6-hymnusm:
+        role: hymn
+        text_id: hymn.summ-deus-clem-nti-9011a39165
+      hymnus-adv:
+        role: hymn
+        text_id: hymn.verbum-sup-rnum-pr-diens-86a18cd66b
+      hymnus-pasch:
+        role: hymn
+        text_id: hymn.rex-sempit-rne-c-litum-9244452d9a
+      hymnus-quad:
+        role: hymn
+        text_id: hymn.ex-more-docti-m-stico-6d8417e5d9
+      hymnus-quad5:
+        role: hymn
+        text_id: hymn.pange-lingua-glori-si-13dcaa9a6e
+      hymnusm-adv:
+        role: hymn
+        text_id: hymn.verbum-sup-rnum-pr-diens-6beccf4b5a
+      hymnusm-pasch:
+        role: hymn
+        text_id: hymn.rex-sempit-rne-d-mine-5413c77774
+      hymnusm-quad:
+        role: hymn
+        text_id: hymn.ex-more-docti-m-stico-b2ac8d1eca
+      hymnusm-quad5:
+        role: hymn
+        text_id: hymn.pange-lingua-glori-si-3d5b131d36
+      invit:
+        role: invitatory
+        text_id: invitatory.dominica-d-minum-qui-fecit-nos-ven-te-ador-mus-05b9e58b8f
+      invit-adv:
+        role: invitatory
+        text_id: invitatory.regem-vent-rum-d-minum-ven-te-ador-mus-f9ed5484cf
+      invit-adv3:
+        role: invitatory
+        text_id: invitatory.prope-est-iam-d-minus-ven-te-ador-mus-a9cf58bd4a
+      invit-pasch:
+        role: invitatory
+        text_id: invitatory.surr-xit-d-minus-vere-allel-ia-c941ce8474
+      invit-quad:
+        role: invitatory
+        text_id: invitatory.non-sit-vobis-vanum-mane-s-rgere-ante-lucem-quia-e54575c704
+      invit-quad5:
+        role: invitatory
+        text_id: invitatory.h-die-si-vocem-d-mini-audi-ritis-nol-te-obdur-re-295cb3a4fd
+      invit-quad5-op:
+        role: invitatory
+        text_id: invitatory.ador-mus-d-minum-qui-nos-red-mit-per-crucem-c9ac7ffa5a
+      invit-trid:
+        role: invitatory
+        text_id: invitatory.dominica-ador-mus-d-minum-qui-fecit-nos-f1e6e81eb5
+      invit-tridc:
+        role: invitatory
+        text_id: invitatory.dominica-ador-mus-d-minum-qui-fecit-nos-62c0b07764
+      mm-capitulum:
+        role: note
+        text_id: note.1-cor-16-13-14-fda122f062
+      mm-capitulum-adv:
+        role: note
+        text_id: note.titus-2-12-13-d7b1ed23cb
+      mm-capitulum-epi:
+        role: note
+        text_id: note.isa-60-4-5-14014601d9
+      mm-capitulum-nat:
+        role: note
+        text_id: note.isa-9-6-1562106cfb
+      mm-capitulum-pasch:
+        role: note
+        text_id: note.rom-6-4-cc46c68999
+      mm-capitulum-quad:
+        role: note
+        text_id: note.isa-1-16-18-cc9fd27543
+      mm-capitulum-quad5:
+        role: note
+        text_id: note.ier-11-18-19-fc1d77c5d6
+      mm-lb-pasch:
+        role: note
+        text_id: note.osea-6-1-3-000d567027
+      mm-lb1:
+        role: note
+        text_id: note.lam-2-19-7840a9fc7d
+      mm-lb2:
+        role: note
+        text_id: note.prov-3-19-20-35433d15e2
+      mm-lb2c:
+        role: note
+        text_id: note.prov-3-19-20-6955cee034
+      mm-lb3:
+        role: note
+        text_id: note.sap-1-1-2-4b453981ec
+      mm-lb3c:
+        role: note
+        text_id: note.sap-1-1-2-ddf3a6fcb6
+      mm-lb4:
+        role: note
+        text_id: note.sap-3-9-f64b1cc9c0
+      mm-lb4c:
+        role: note
+        text_id: note.sap-3-9-4d3c03138c
+      mm-lb5:
+        role: note
+        text_id: note.sap-1-6-7-094f876cbb
+      mm-lb6:
+        role: note
+        text_id: note.eccl-12-2-3-c9b502b8c0
+      mm-lb6c:
+        role: note
+        text_id: note.eccl-12-2-3-63f3bea6c8
+      nocturn-2-versum-feria6:
+        role: note
+        text_id: note.d-minus-in-sion-magnus-e59491c5cf
+      nocturn-2-versum-sabbato:
+        role: note
+        text_id: note.misit-verbum-suum-et-san-vit-eos-bba5f467e0
+  ordinary/minor:
+    sections:
+      adv-nona:
+        role: chapter
+        text_id: chapter.isa-14-1-5e88bb70fe
+      adv-sexta:
+        role: chapter
+        text_id: chapter.ier-23-6-1347900421
+      adv-tertia:
+        role: chapter
+        text_id: chapter.ier-23-5-6199f32b06
+      ant-4-asc:
+        role: antiphon
+        text_id: antiphon.allel-ia-asc-ndens-christus-in-altum-allel-ia-ca-63d08fd055
+      ant-4-pent:
+        role: antiphon
+        text_id: antiphon.allel-ia-sp-ritus-par-clitus-allel-ia-doc-bit-vo-4c07764695
+      ant-4-quad3:
+        role: antiphon
+        text_id: antiphon.m-dia-vita-in-morte-sumus-quem-qu-rimus-adiut-re-d02fa30e1e
+      compline-chapter:
+        role: chapter
+        text_id: chapter.ier-14-9-5d4cf9979b
+      compline-gospel-antiphon:
+        role: antiphon
+        text_id: antiphon.salva-nos-d-mine-vigil-ntes-cust-di-nos-dormi-nt-984a585d52
+      compline-gospel-antiphon-easter:
+        role: antiphon
+        text_id: antiphon.allel-ia-resurr-xit-d-minus-allel-ia-sicut-dixit-1fbc34c983
+      compline-gospel-antiphon-lent:
+        role: antiphon
+        text_id: antiphon.ev-gila-super-nos-t-rne-salv-tor-ne-nos-appreh-n-9c45721793
+      compline-gospel-antiphon-passiontide:
+        role: antiphon
+        text_id: antiphon.o-rex-glori-se-inter-sanctos-tuos-qui-semper-es-a5c4706bd5
+      compline-short-reading:
+        role: short_reading
+        text_id: short-reading.1-pet-5-8-9-7272d8b1ba
+      compline-short-responsory:
+        role: short_responsory
+        text_id: short-responsory.in-manus-tuas-d-mine-comm-ndo-sp-ritum-meum-c2a8a19ae4
+      compline-versicle:
+        role: versicle
+        text_id: versicle.cust-di-nos-d-mine-ut-pup-llam-culi-495c4e2775
+      dominica-nona:
+        role: chapter
+        text_id: chapter.1-cor-6-20-ce9a033c35
+      dominica-nonaop:
+        role: chapter
+        text_id: chapter.1-ioann-5-7-38592af4d6
+      dominica-sexta:
+        role: chapter
+        text_id: chapter.gal-6-2-dc34f27e67
+      dominica-sextaop:
+        role: chapter
+        text_id: chapter.2-cor-13-13-2ae6473436
+      dominica-tertia:
+        role: chapter
+        text_id: chapter.1-ioann-4-16-f396d66d77
+      feria-nona:
+        role: chapter
+        text_id: chapter.1-pet-1-17-19-9f21f028ff
+      feria-sexta:
+        role: chapter
+        text_id: chapter.rom-13-8-e7b984c4ff
+      feria-tertia:
+        role: chapter
+        text_id: chapter.ier-17-14-c432761987
+      hymnus-completorium:
+        role: hymn
+        text_id: hymn.te-lucis-ante-t-rminum-f252b6676d
+      hymnus-completorium-asc:
+        role: hymn
+        text_id: hymn.iesu-nostra-red-mptio-6c15c746ce
+      hymnus-completorium-pasch:
+        role: hymn
+        text_id: hymn.iesu-nostra-red-mptio-ebfa6ef679
+      hymnus-completorium-pent:
+        role: hymn
+        text_id: hymn.iesu-nostra-red-mptio-c16a905b3c
+      hymnus-completorium-quad:
+        role: hymn
+        text_id: hymn.christe-qui-lux-es-et-dies-5b2a993361
+      hymnus-completorium-quad5:
+        role: hymn
+        text_id: hymn.christe-qui-lux-es-et-dies-5b2a993361
+      hymnus-nona:
+        role: hymn
+        text_id: hymn.rerum-deus-tenax-vigor-1d9e3fdd7c
+      hymnus-pasc7-tertia:
+        role: hymn
+        text_id: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-566651a48a
+      hymnus-sexta:
+        role: hymn
+        text_id: hymn.rector-potens-verax-deus-581d2ec760
+      hymnus-tertia:
+        role: hymn
+        text_id: hymn.nunc-sancte-nobis-sp-ritus-8e3c4585e3
+      hymnusm-completorium:
+        role: hymn
+        text_id: hymn.te-lucis-ante-t-rminum-33af4d5940
+      hymnusm-nona:
+        role: hymn
+        text_id: hymn.rerum-deus-tenax-vigor-3369fb8ae7
+      hymnusm-pasc7-tertia:
+        role: hymn
+        text_id: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-2c62e8e6c8
+      hymnusm-sexta:
+        role: hymn
+        text_id: hymn.rector-potens-verax-deus-016c019c86
+      pasch-nona:
+        role: chapter
+        text_id: chapter.1-pet-3-18-a8bffa7df8
+      pasch-sexta:
+        role: chapter
+        text_id: chapter.1-cor-15-20-22-392630c298
+      pasch-tertia:
+        role: chapter
+        text_id: chapter.rom-6-9-10-3a9fe886c0
+      preces-dominicales:
+        role: chapter
+        text_id: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-d31d1e6d5e
+      preces-feriales:
+        role: chapter
+        text_id: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8cb2aa5a1d
+      quad-nona:
+        role: chapter
+        text_id: chapter.isa-58-7-87857c78d3
+      quad-sexta:
+        role: chapter
+        text_id: chapter.isa-55-7-d10977f126
+      quad-tertia:
+        role: chapter
+        text_id: chapter.io-l-2-12-13-bb2c6604cd
+      quad5-nona:
+        role: chapter
+        text_id: chapter.ier-18-20-12fa5b6402
+      quad5-sexta:
+        role: chapter
+        text_id: chapter.ier-17-18-8fb3deafef
+      quad5-tertia:
+        role: chapter
+        text_id: chapter.ier-17-13-1f82c8da57
+      responsory-adv-nonam:
+        role: short_responsory
+        text_id: short-responsory.super-te-ier-salem-ori-tur-d-minus-96bac492ef
+      responsory-adv-sextam:
+        role: short_responsory
+        text_id: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-483df722f4
+      responsory-adv-tertiam:
+        role: short_responsory
+        text_id: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-86694df5f2
+      responsory-breve-adv-nona:
+        role: short_responsory
+        text_id: short-responsory.super-te-ier-salem-ori-tur-d-minus-e1e890d225
+      responsory-breve-adv-sexta:
+        role: short_responsory
+        text_id: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-bac61e21b5
+      responsory-breve-adv-tertia:
+        role: short_responsory
+        text_id: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-1ad7c269b1
+      responsory-breve-dominica-nona:
+        role: short_responsory
+        text_id: short-responsory.clam-vi-in-toto-corde-meo-ex-udi-me-d-mine-35b543c501
+      responsory-breve-dominica-sexta:
+        role: short_responsory
+        text_id: short-responsory.in-t-rnum-d-mine-p-rmanet-verbum-tuum-9a2cd533d1
+      responsory-breve-dominica-tertia:
+        role: short_responsory
+        text_id: short-responsory.incl-na-cor-meum-deus-in-testim-nia-tua-67264b8770
+      responsory-breve-feria-nona:
+        role: short_responsory
+        text_id: short-responsory.r-dime-me-d-mine-et-miser-re-mei-e46279a7fc
+      responsory-breve-feria-sexta:
+        role: short_responsory
+        text_id: short-responsory.bened-cam-d-minum-in-omni-t-mpore-01801c06b9
+      responsory-breve-feria-tertia:
+        role: short_responsory
+        text_id: short-responsory.sana-nimam-meam-quia-pecc-vi-tibi-a58b0ef8c9
+      responsory-breve-pasch-nona:
+        role: short_responsory
+        text_id: short-responsory.gav-si-sunt-disc-puli-allel-ia-allel-ia-93796fcd1e
+      responsory-breve-pasch-sexta:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-vere-allel-ia-allel-ia-770eedb388
+      responsory-breve-pasch-tertia:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-allel-ia-2599876091
+      responsory-breve-pasch-tertiaop:
+        role: short_responsory
+        text_id: short-responsory.resurr-xit-d-minus-allel-ia-allel-ia-c786e2b70d
+      responsory-breve-quad-nona:
+        role: short_responsory
+        text_id: short-responsory.scuto-circ-mdabit-te-v-ritas-eius-6d64382519
+      responsory-breve-quad-sexta:
+        role: short_responsory
+        text_id: short-responsory.sc-pulis-suis-obumbr-bit-tibi-71a5f22d4e
+      responsory-breve-quad-tertia:
+        role: short_responsory
+        text_id: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-740dfb3c33
+      responsory-breve-quad5-nona:
+        role: short_responsory
+        text_id: short-responsory.ne-perdas-cum-mpiis-deus-nimam-meam-2a4627552e
+      responsory-breve-quad5-nonaop:
+        role: short_responsory
+        text_id: short-responsory.pr-ncipes-persec-ti-sunt-me-gratis-et-a-verbis-t-e039be9e1d
+      responsory-breve-quad5-sexta:
+        role: short_responsory
+        text_id: short-responsory.de-ore-le-nis-l-bera-me-d-mine-de0eeec080
+      responsory-breve-quad5-sextaop:
+        role: short_responsory
+        text_id: short-responsory.de-ore-le-nis-l-bera-me-d-mine-129f7df686
+      responsory-breve-quad5-tertia:
+        role: short_responsory
+        text_id: short-responsory.rue-a-fr-mea-deus-nimam-meam-f118f8f97d
+      responsory-breve-quad5-tertiaop:
+        role: short_responsory
+        text_id: short-responsory.rue-a-fr-mea-deus-nimam-meam-224ed6c78e
+      responsory-completorium-op-quad:
+        role: short_responsory
+        text_id: short-responsory.in-pace-in-id-psum-d-rmiam-et-requi-scam-1ab6855d9c
+      responsory-dominica-nonam:
+        role: short_responsory
+        text_id: short-responsory.ab-occ-ltis-meis-munda-me-d-mine-bea4733c01
+      responsory-dominica-sextam:
+        role: short_responsory
+        text_id: short-responsory.d-minus-regit-me-et-nihil-mihi-d-erit-0e9b10c080
+      responsory-dominica-tertiam:
+        role: short_responsory
+        text_id: short-responsory.ego-dixi-d-mine-miser-re-mei-0ecfcb5bb6
+      responsory-feria-nonam:
+        role: short_responsory
+        text_id: short-responsory.ab-occ-ltis-meis-munda-me-d-mine-bea4733c01
+      responsory-feria-sextam:
+        role: short_responsory
+        text_id: short-responsory.d-minus-regit-me-et-nihil-mihi-d-erit-0e9b10c080
+      responsory-feria-tertiam:
+        role: short_responsory
+        text_id: short-responsory.adi-tor-meus-esto-ne-derel-nquas-me-41cf2fe263
+      responsory-pasch-nonac:
+        role: short_responsory
+        text_id: short-responsory.cognov-runt-d-minum-allel-ia-03c320b3e9
+      responsory-pasch-nonam:
+        role: short_responsory
+        text_id: short-responsory.gav-si-sunt-disc-puli-allel-ia-8a7beb962a
+      responsory-pasch-sextam:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-vere-allel-ia-cfa6c49397
+      responsory-pasch-tertiam:
+        role: short_responsory
+        text_id: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-587f551e9b
+      responsory-quad-nonam:
+        role: short_responsory
+        text_id: short-responsory.scuto-circ-mdabit-te-v-ritas-eius-badf860725
+      responsory-quad-nonaop:
+        role: short_responsory
+        text_id: short-responsory.s-pties-in-die-laudem-dixi-tibi-d-mine-deus-meus-11b2ef3d8e
+      responsory-quad-sextam:
+        role: short_responsory
+        text_id: short-responsory.sc-pulis-suis-obumbr-bit-tibi-a537074b21
+      responsory-quad-sextaop:
+        role: short_responsory
+        text_id: short-responsory.ab-omni-via-mala-proh-bui-pedes-meos-55aed7debc
+      responsory-quad-tertiac:
+        role: short_responsory
+        text_id: short-responsory.dicet-d-mino-susc-ptor-meus-es-tu-et-ref-gium-me-34434dcfde
+      responsory-quad-tertiam:
+        role: short_responsory
+        text_id: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-c07c86e928
+      responsory-quad-tertiaop:
+        role: short_responsory
+        text_id: short-responsory.part-cipem-me-fac-deus-mnium-tim-ntium-te-6a895469e2
+      responsory-quad3-nonaop:
+        role: short_responsory
+        text_id: short-responsory.decl-ra-super-nos-deus-cea905e2c2
+      responsory-quad3-sextaop:
+        role: short_responsory
+        text_id: short-responsory.servus-tuus-ego-sum-c8faf5f283
+      responsory-quad3-tertiaop:
+        role: short_responsory
+        text_id: short-responsory.bonum-mihi-d-mine-quod-humili-sti-me-d7bc5776c0
+      responsory-quad5-nonam:
+        role: short_responsory
+        text_id: short-responsory.ne-perdas-cum-mpiis-deus-nimam-meam-eb6aa05f26
+      responsory-quad5-sextac:
+        role: short_responsory
+        text_id: short-responsory.insurrex-runt-in-me-testes-in-qui-ae9308c627
+      responsory-quad5-sextam:
+        role: short_responsory
+        text_id: short-responsory.de-ore-le-nis-l-bera-me-d-mine-ce0de92bb2
+      responsory-quad5-tertiac:
+        role: short_responsory
+        text_id: short-responsory.divis-runt-sibi-vestim-nta-mea-7c55d6632a
+      responsory-quad5-tertiam:
+        role: short_responsory
+        text_id: short-responsory.rue-a-fr-mea-deus-nimam-meam-5ce0f07df9
+      versum-adv-nona:
+        role: versicle
+        text_id: versicle.veni-d-mine-et-noli-tard-re-697cb87409
+      versum-adv-sexta:
+        role: versicle
+        text_id: versicle.mem-nto-nostri-d-mine-in-benepl-cito-p-puli-tui-948e6f58f3
+      versum-adv-tertia:
+        role: versicle
+        text_id: versicle.tim-bunt-gentes-nomen-tuum-d-mine-a15e71f64a
+      versum-dominica-nona:
+        role: versicle
+        text_id: versicle.ab-occ-ltis-meis-munda-me-d-mine-c2447b33c7
+      versum-dominica-sexta:
+        role: versicle
+        text_id: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-56d46a20a6
+      versum-dominica-tertia:
+        role: versicle
+        text_id: versicle.ego-dixi-d-mine-miser-re-mei-096cbc7e44
+      versum-feria-nona:
+        role: versicle
+        text_id: versicle.ab-occ-ltis-meis-munda-me-d-mine-2ca39d7af1
+      versum-feria-sexta:
+        role: versicle
+        text_id: versicle.d-minus-regit-me-et-nihil-mihi-d-erit-375ee97bb9
+      versum-feria-tertia:
+        role: versicle
+        text_id: versicle.adi-tor-meus-esto-ne-derel-nquas-me-8cbf944e68
+      versum-pasch-nona:
+        role: versicle
+        text_id: versicle.mane-nob-scum-d-mine-allel-ia-420868ba16
+      versum-pasch-sexta:
+        role: versicle
+        text_id: versicle.gav-si-sunt-disc-puli-allel-ia-684c868bd9
+      versum-pasch-tertia:
+        role: versicle
+        text_id: versicle.surr-xit-d-minus-vere-allel-ia-55fad0a292
+      versum-quad-nona:
+        role: versicle
+        text_id: versicle.ngelis-suis-deus-mand-vit-de-te-f7f88439c3
+      versum-quad-sexta:
+        role: versicle
+        text_id: versicle.scuto-circ-mdabit-te-v-ritas-eius-19b06776a4
+      versum-quad-tertia:
+        role: versicle
+        text_id: versicle.sc-pulis-suis-obumbr-bit-tibi-7a8913b2cc
+      versum-quad5-nona:
+        role: versicle
+        text_id: versicle.ripe-me-d-mine-ab-h-mine-malo-8ac40c614b
+      versum-quad5-nonaop:
+        role: versicle
+        text_id: versicle.ripe-me-d-mine-ab-h-mine-malo-4fb9611bc5
+      versum-quad5-sexta:
+        role: versicle
+        text_id: versicle.ne-perdas-cum-mpiis-deus-nimam-meam-7db28992b6
+      versum-quad5-sextaop:
+        role: versicle
+        text_id: versicle.ne-perdas-cum-mpiis-deus-nimam-meam-a188566715
+      versum-quad5-tertia:
+        role: versicle
+        text_id: versicle.de-ore-le-nis-l-bera-me-d-mine-6ce45f17b2
+      versum-quad5-tertiaop:
+        role: versicle
+        text_id: versicle.de-ore-le-nis-l-bera-me-d-mine-288823dc04
+  ordinary/prime:
+    sections:
+      adv:
+        role: short_reading
+        text_id: short-reading.isa-33-2-a3d21ca89a
+      asc:
+        role: short_reading
+        text_id: short-reading.act-1-11-0b5a1bb3af
+      commemoratio-defunctorum:
+        role: short_reading
+        text_id: short-reading.deinde-dicit-lector-commemor-tio-mnium-fratrum-f-8bed7f27f2
+      dominica:
+        role: short_reading
+        text_id: short-reading.1-tim-1-17-b79b561d93
+      epi:
+        role: short_reading
+        text_id: short-reading.isa-60-6-444c7ad4f8
+      feria:
+        role: short_reading
+        text_id: short-reading.zach-8-19-09b7e144a5
+      hymnusm-prima:
+        role: hymn
+        text_id: hymn.iam-lucis-orto-s-dere-2014925616
+      nat:
+        role: short_reading
+        text_id: short-reading.heb-1-11-12-4610c9c9e9
+      pasch:
+        role: short_reading
+        text_id: short-reading.col-3-1-2-3168062998
+      pent:
+        role: short_reading
+        text_id: short-reading.act-2-11-e613f569cd
+      per-annum:
+        role: short_reading
+        text_id: short-reading.2-thess-3-5-330a490e38
+      preces-dominicales-prima-1:
+        role: short_reading
+        text_id: short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-5b24fdfcb6
+      preces-dominicales-prima-2:
+        role: short_reading
+        text_id: short-reading.adiut-rium-nostrum-in-n-mine-d-mini-14f86be6ab
+      preces-feriales-prima:
+        role: short_reading
+        text_id: short-reading.ripe-me-364d192ed8
+      prime-hymn:
+        role: hymn
+        text_id: hymn.iam-lucis-orto-s-dere-6e9435eec1
+      prime-short-responsory:
+        role: short_responsory
+        text_id: short-responsory.christe-fili-dei-vivi-miser-re-nobis-df8edff6b0
+      prime-versicle:
+        role: versicle
+        text_id: versicle.exs-rge-christe-diuva-nos-16e4aca95e
+      quad:
+        role: short_reading
+        text_id: short-reading.isa-55-6-1cfc4619c8
+      quad5:
+        role: short_reading
+        text_id: short-reading.isa-50-6-7-da2838c584
+      responsory-adv:
+        role: short_responsory
+        text_id: short-responsory.qui-vent-rus-es-in-mundum-63776ebc3e
+      responsory-asc:
+        role: short_responsory
+        text_id: short-responsory.qui-scandis-super-s-dera-bafdba417e
+      responsory-corp:
+        role: short_responsory
+        text_id: short-responsory.qui-natus-est-de-mar-a-v-rgine-91627df661
+      responsory-epi:
+        role: short_responsory
+        text_id: short-responsory.qui-apparu-sti-h-die-97cc88adc8
+      responsory-heart:
+        role: short_responsory
+        text_id: short-responsory.qui-corde-fundis-gr-tiam-ddfb5ec433
+      responsory-nat:
+        role: short_responsory
+        text_id: short-responsory.qui-natus-es-de-mar-a-v-rgine-0c20c6a186
+      responsory-pasch:
+        role: short_responsory
+        text_id: short-responsory.qui-surrex-sti-a-m-rtuis-50d0a8ba55
+      responsory-pent:
+        role: short_responsory
+        text_id: short-responsory.qui-sedes-ad-d-xteram-patris-0b4e905840

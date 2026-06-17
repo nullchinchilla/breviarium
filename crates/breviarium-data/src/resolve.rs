@@ -1355,6 +1355,9 @@ fn resolve_matins_lessons(
         ) {
             nodes.extend(resp);
         } else if lesson == 9 || (use_abbreviated_sanctoral_lesson && lesson == 3) {
+            nodes.push(DocumentNode::Heading {
+                text: "Te Deum".to_string(),
+            });
             nodes.extend(formula_nodes(catalog, language, "te-deum", diagnostics)?);
         }
     }

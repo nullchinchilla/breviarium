@@ -2237,8 +2237,8 @@ fn clean_canonical_text(language: &str, text: &str) -> String {
     output = output.replace("<font color=red>*</font>", "*");
     output = strip_html_tags(&output);
     output = decode_html_entities(&output);
-    output = output.replace("+++", "✙︎");
-    output = output.replace('+', "✠");
+    // Keep the raw cross markers (`+`, `++`, `+++`) so the renderer can style
+    // them itself (special glyph, colour, …); do not bake in `✠`/`✙` here.
     output = output.replace('_', " ");
     output = output.replace("/:", "(").replace(":/", ")");
     while output.contains("((") || output.contains("))") {

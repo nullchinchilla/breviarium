@@ -37,7 +37,7 @@ offices:
       a-porta-inferi: rubric.a-porta-nferi-6ade4d00e1
       absolutio: rubric.absolutio-e000b67726
       ad-nocturnum: rubric.ad-nocturnum-be09af2870
-      adjutorium-nostrum: rubric.adiut-rium-nostrum-in-n-mine-d-mini-66c655ae9a
+      adjutorium-nostrum: rubric.adiut-rium-nostrum-in-n-mine-d-mini-ea43b97fa4
       alleluia: rubric.allel-ia-50f65aadb8
       alleluia-duplex: rubric.allel-ia-allel-ia-9d70e3d877
       alleluia-simplex: rubric.allel-ia-b27e65d6f2
@@ -63,11 +63,11 @@ offices:
       benedicite: rubric.bened-cite-14074619c0
       benedictio: blessing.benedictio-00c1605400
       benedictio-completorium: blessing.noctem-qui-tam-et-finem-perf-ctum-conc-dat-nobis-190bc5148a
-      benedictio-completorium-final: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-0fc370509c
-      benedictio-completorium2: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-36ccd4bf3b
+      benedictio-completorium-final: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-7b82e718e7
+      benedictio-completorium2: blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-02d776ac20
       benedictio-mensae: blessing.benedictio-mens-1db99b875a
       benedictio-prima: blessing.dies-et-actus-nostros-in-sua-pace-disp-nat-d-min-20bebe3bde
-      benedictio-prima2: blessing.d-minus-nos-bened-cat-et-ab-omni-malo-def-ndat-e-899b6fcd8d
+      benedictio-prima2: blessing.d-minus-nos-bened-cat-et-ab-omni-malo-def-ndat-e-3b10ef51c5
       canticum: rubric.canticum-15504493a4
       canticum-benedictus: rubric.canticum-benedictus-75604121d1
       canticum-magnificat: rubric.canticum-magnificat-07ee4640b8
@@ -85,27 +85,27 @@ offices:
       conclusio: rubric.conclusio-a609a04680
       conclusio-cisterciensis: rubric.sp-ritus-sanctus-in-te-desc-ndet-mar-a-ne-t-meas-eb2fce0396
       confiteor: rubric.conf-teor-deo-omnipot-nti-be-t-mar-semper-v-rgin-ab942c8b75
-      converte-nos: rubric.conv-rte-nos-deus-salut-ris-noster-0c0e897045
+      converte-nos: rubric.conv-rte-nos-deus-salut-ris-noster-acd2554903
       credo: rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-03deaec004
       credo-carnis: rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-ce931b9589
       credo-secreto: rubric.credo-secreto-915a962f0a
       de-officio-capituli: rubric.de-officio-capituli-c9afc0be02
-      defunctlc: rubric.d-minus-vob-scum-504b079d43
+      defunctlc: rubric.d-minus-vob-scum-817a6c67e4
       defunctm: rubric.d-minus-vob-scum-28db943827
       defunctorum: rubric.commemoratio-defunctorum-35f7a64b6d
       defunctv: rubric.d-minus-vob-scum-f028d2ccf5
-      defunctvc: rubric.d-minus-vob-scum-994b3b910f
+      defunctvc: rubric.d-minus-vob-scum-8a5fe52abd
       deo-gratias: rubric.deo-gr-tias-4498595b10
-      deus-in-adjutorium: rubric.deus-in-adiut-rium-meum-int-nde-e3b57da9ba
+      deus-in-adjutorium: rubric.deus-in-adiut-rium-meum-int-nde-6c18bfe198
       deus-in-adjutorium-iij: rubric.deus-in-adiut-rium-meum-int-nde-d3957a81a0
       deus-in-adjutorium-tantum: rubric.deus-in-adiut-rium-meum-int-nde-3678742a86
       deus-veniae: rubric.deus-v-ni-larg-tor-et-hum-n-sal-tis-am-tor-qu-su-687d24f117
       deusinadjutorium: rubric.deus-in-adiut-rium-84e9597766
       dirigere: rubric.dir-gere-et-sanctific-re-r-gere-et-gubern-re-dig-6d126c6d56
-      divinum-auxilium: rubric.div-num-aux-lium-m-neat-semper-nob-scum-66645b014e
+      divinum-auxilium: rubric.div-num-aux-lium-m-neat-semper-nob-scum-cf9ffb5775
       divinum-officium: rubric.divinum-officium-e80575a00a
       domine-exaudi: rubric.d-mine-ex-udi-orati-nem-meam-ee082be713
-      domine-labia: rubric.d-mine-l-bia-mea-ap-ries-be7ebdc9fa
+      domine-labia: rubric.d-mine-l-bia-mea-ap-ries-dbfae3d6b0
       domine-labia-iij: rubric.deinde-ter-dicitur-7c86cf699c
       dominica: rubric.dominic-a-65f629d860
       dominus: rubric.d-minus-vob-scum-fcda57d4d7
@@ -122,7 +122,7 @@ offices:
       in-fine-coenae: rubric.in-fine-coenae-a9b32eeb88
       in-fine-coene: rubric.in-fine-coene-99f2f75c2a
       incipit: rubric.incipit-f1a8d27a75
-      indulgentiam: rubric.indulg-ntiam-absoluti-nem-et-remissi-nem-peccat-ca7980b845
+      indulgentiam: rubric.indulg-ntiam-absoluti-nem-et-remissi-nem-peccat-6df743e203
       invitatorium: rubric.invitatorium-867fe7e1ab
       itinerarium: rubric.itinerarium-7d1cd9f257
       jube-domne: rubric.iube-d-mine-bened-cere-ff6b100067
@@ -198,7 +198,7 @@ offices:
       secunda-domine-exaudi-omittitur: rubric.secunda-d-mine-ex-udi-omittitur-b602efd8b1
       septem-psalmi-paenitentiales: rubric.septem-psalmi-p-nitentiales-c3b3c05355
       suffragium: rubric.suffragium-857c07470d
-      te-decet: rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-727fe1d0e5
+      te-decet: rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-288c011952
       te-deum: rubric.te-deum-laud-mus-te-d-minum-confit-mur-8ca85f2c52
       tu-autem: rubric.tu-autem-d-mine-miser-re-nobis-4127bc78b9
       versus-in-loco: rubric.versus-in-loco-capituli-4c2837319d
@@ -641,8 +641,8 @@ offices:
     slots:
       commemoratio-defunctorum: short-reading.deinde-dicit-lector-commemor-tio-mnium-fratrum-f-8bed7f27f2
       hymnusm-prima: hymn.iam-lucis-orto-s-dere-2014925616
-      preces-dominicales-prima-1: short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-5b24fdfcb6
-      preces-dominicales-prima-2: short-reading.adiut-rium-nostrum-in-n-mine-d-mini-14f86be6ab
+      preces-dominicales-prima-1: short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8a5965bcb0
+      preces-dominicales-prima-2: short-reading.adiut-rium-nostrum-in-n-mine-d-mini-7a6d41f165
       preces-feriales-prima: short-reading.ripe-me-364d192ed8
   prime-adv:
     slots:

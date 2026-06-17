@@ -333,21 +333,21 @@ texts:
       la:
       - type: rubric
         text: ut in Proprio de Tempore
-  blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-0fc370509c:
-    role: blessing
-    content:
-      la:
-      - type: blessing
-        text: Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus Sanctus.
-  blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-36ccd4bf3b:
+  blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-02d776ac20:
     role: blessing
     content:
       en:
       - type: blessing
-        text: The almighty and merciful Lord, ✠ the Father, the Son and the Holy Spirit, bless us and keep us.
+        text: The almighty and merciful Lord, + the Father, the Son and the Holy Spirit, bless us and keep us.
       la:
       - type: blessing
-        text: Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus Sanctus.
+        text: Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
+  blessing.bened-cat-et-cust-diat-nos-omn-potens-et-mis-ric-7b82e718e7:
+    role: blessing
+    content:
+      la:
+      - type: blessing
+        text: Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
   blessing.benedicti-ne-perp-tua-bened-cat-nos-pater-t-rnus-c4067861e6:
     role: blessing
     content:
@@ -384,15 +384,15 @@ texts:
       la:
       - type: text
         text: Benedictio mensæ
-  blessing.d-minus-nos-bened-cat-et-ab-omni-malo-def-ndat-e-899b6fcd8d:
+  blessing.d-minus-nos-bened-cat-et-ab-omni-malo-def-ndat-e-3b10ef51c5:
     role: blessing
     content:
       en:
       - type: blessing
-        text: May the Lord bless us, ✠ protect us from all evil and bring us to everlasting life. And may the souls of the faithful, through the mercy of God, rest in peace.
+        text: May the Lord bless us, + protect us from all evil and bring us to everlasting life. And may the souls of the faithful, through the mercy of God, rest in peace.
       la:
       - type: blessing
-        text: Dóminus nos benedícat, ✠ et ab omni malo deféndat, et ad vitam perdúcat ætérnam. Et fidélium ánimæ per misericórdiam Dei requiéscant in pace.
+        text: Dóminus nos benedícat, + et ab omni malo deféndat, et ad vitam perdúcat ætérnam. Et fidélium ánimæ per misericórdiam Dei requiéscant in pace.
   blessing.deus-pater-omn-potens-sit-nobis-prop-tius-et-cle-19cd36b48b:
     role: blessing
     content:
@@ -7812,17 +7812,17 @@ texts:
       la:
       - type: text
         text: Ad Nocturnum
-  rubric.adiut-rium-nostrum-in-n-mine-d-mini-66c655ae9a:
+  rubric.adiut-rium-nostrum-in-n-mine-d-mini-ea43b97fa4:
     role: rubric
     content:
       en:
       - type: versicle
-        text: Our help is ✠ in the name of the Lord,
+        text: Our help is + in the name of the Lord,
       - type: response
         text: Who made heaven and earth.
       la:
       - type: versicle
-        text: Adiutórium nostrum ✠ in nómine Dómini.
+        text: Adiutórium nostrum + in nómine Dómini.
       - type: response
         text: Qui fecit cælum et terram.
   rubric.allel-ia-50f65aadb8:
@@ -8142,17 +8142,17 @@ texts:
       la:
       - type: text
         text: 'Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: (percutit sibi pectus) mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.'
-  rubric.conv-rte-nos-deus-salut-ris-noster-0c0e897045:
+  rubric.conv-rte-nos-deus-salut-ris-noster-acd2554903:
     role: rubric
     content:
       en:
       - type: versicle
-        text: 'Turn us then, ✙︎ O God, our saviour:'
+        text: 'Turn us then, +++ O God, our saviour:'
       - type: response
         text: And let thy anger cease from us.
       la:
       - type: versicle
-        text: Convérte nos ✙︎ Deus, salutáris noster.
+        text: Convérte nos +++ Deus, salutáris noster.
       - type: response
         text: Et avérte iram tuam a nobis.
   rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-03deaec004:
@@ -8204,17 +8204,17 @@ texts:
         text: Dómine, exáudi oratiónem meam.
       - type: response
         text: Et clamor meus ad te véniat.
-  rubric.d-mine-l-bia-mea-ap-ries-be7ebdc9fa:
+  rubric.d-mine-l-bia-mea-ap-ries-dbfae3d6b0:
     role: rubric
     content:
       en:
       - type: versicle
-        text: O Lord, ✠✠ open thou my lips.
+        text: O Lord, ++ open thou my lips.
       - type: response
         text: And my mouth shall declare thy praise.
       la:
       - type: versicle
-        text: Dómine, lábia ✠✠ mea apéries.
+        text: Dómine, lábia ++ mea apéries.
       - type: response
         text: Et os meum annuntiábit laudem tuam.
   rubric.d-minus-det-nobis-suam-pacem-0169c2e828:
@@ -8267,31 +8267,6 @@ texts:
         text: Deo grátias.
       - type: heading
         text: Post Laudes diei dicuntur %Matutinum et Laudes Defunctorum%.
-  rubric.d-minus-vob-scum-504b079d43:
-    role: rubric
-    content:
-      la:
-      - type: versicle
-        text: Dóminus vobíscum.
-      - type: response
-        text: Et cum spíritu tuo.
-      - type: versicle
-        text: Dómine, exáudi oratiónem meam.
-      - type: response
-        text: Et clamor meus ad te véniat.
-      - type: rubric
-        text: secunda «Domine, exaudi» omittitur
-      - type: versicle
-        text: Benedicámus Dómino.
-      - type: response
-        text: Deo grátias.
-      - type: text
-        text: |-
-          Divínum auxílium ✠ máneat semper nobíscum.
-          Et cum frátribus nostris abséntibus. Amen.
-          Et cum frátribus nostris abséntibus.
-      - type: heading
-        text: Post Laudes diei dicuntur %Laudes Defunctorum%.
   rubric.d-minus-vob-scum-7fae21d751:
     role: rubric
     content:
@@ -8301,7 +8276,7 @@ texts:
       la:
       - type: text
         text: Dóminus vobíscum
-  rubric.d-minus-vob-scum-994b3b910f:
+  rubric.d-minus-vob-scum-817a6c67e4:
     role: rubric
     content:
       la:
@@ -8321,7 +8296,32 @@ texts:
         text: Deo grátias.
       - type: text
         text: |-
-          Divínum auxílium ✠ máneat semper nobíscum.
+          Divínum auxílium + máneat semper nobíscum.
+          Et cum frátribus nostris abséntibus. Amen.
+          Et cum frátribus nostris abséntibus.
+      - type: heading
+        text: Post Laudes diei dicuntur %Laudes Defunctorum%.
+  rubric.d-minus-vob-scum-8a5fe52abd:
+    role: rubric
+    content:
+      la:
+      - type: versicle
+        text: Dóminus vobíscum.
+      - type: response
+        text: Et cum spíritu tuo.
+      - type: versicle
+        text: Dómine, exáudi oratiónem meam.
+      - type: response
+        text: Et clamor meus ad te véniat.
+      - type: rubric
+        text: secunda «Domine, exaudi» omittitur
+      - type: versicle
+        text: Benedicámus Dómino.
+      - type: response
+        text: Deo grátias.
+      - type: text
+        text: |-
+          Divínum auxílium + máneat semper nobíscum.
           Et cum frátribus nostris abséntibus. Amen.
           Et cum frátribus nostris abséntibus.
       - type: heading
@@ -8432,6 +8432,27 @@ texts:
         text: Deus in adiutórium meum inténde.
       - type: response
         text: Dómine, ad adiuvándum me festína.
+  rubric.deus-in-adiut-rium-meum-int-nde-6c18bfe198:
+    role: rubric
+    content:
+      en:
+      - type: versicle
+        text: O God, + come to my assistance;
+      - type: response
+        text: O Lord, make haste to help me.
+      - type: text
+        text: |-
+          Glory be to the Father, and to the Son, * and to the Holy Ghost.
+          As it was in the beginning, is now, * and ever shall be, world without end. Amen.
+      la:
+      - type: versicle
+        text: Deus + in adiutórium meum inténde.
+      - type: response
+        text: Dómine, ad adiuvándum me festína.
+      - type: text
+        text: |-
+          Glória Patri, et Fílio, * et Spirítui Sancto.
+          Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
   rubric.deus-in-adiut-rium-meum-int-nde-d3957a81a0:
     role: rubric
     content:
@@ -8451,27 +8472,6 @@ texts:
         text: Deus in adiutórium meum inténde.
       - type: response
         text: Dómine, ad adiuvándum me festína.
-  rubric.deus-in-adiut-rium-meum-int-nde-e3b57da9ba:
-    role: rubric
-    content:
-      en:
-      - type: versicle
-        text: O God, ✠ come to my assistance;
-      - type: response
-        text: O Lord, make haste to help me.
-      - type: text
-        text: |-
-          Glory be to the Father, and to the Son, * and to the Holy Ghost.
-          As it was in the beginning, is now, * and ever shall be, world without end. Amen.
-      la:
-      - type: versicle
-        text: Deus ✠ in adiutórium meum inténde.
-      - type: response
-        text: Dómine, ad adiuvándum me festína.
-      - type: text
-        text: |-
-          Glória Patri, et Fílio, * et Spirítui Sancto.
-          Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
   rubric.deus-v-ni-larg-tor-et-hum-n-sal-tis-am-tor-qu-su-687d24f117:
     role: rubric
     content:
@@ -8490,18 +8490,18 @@ texts:
       la:
       - type: text
         text: 'Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.'
-  rubric.div-num-aux-lium-m-neat-semper-nob-scum-66645b014e:
+  rubric.div-num-aux-lium-m-neat-semper-nob-scum-cf9ffb5775:
     role: rubric
     content:
       en:
       - type: text
         text: |-
-          May the divine assistance ✠ remain with us always.
+          May the divine assistance + remain with us always.
           And with our brothers, who are absent. Amen.
       la:
       - type: text
         text: |-
-          Divínum auxílium ✠ máneat semper nobíscum.
+          Divínum auxílium + máneat semper nobíscum.
           Et cum frátribus nostris abséntibus. Amen.
           Et cum frátribus nostris abséntibus.
   rubric.divinum-officium-e80575a00a:
@@ -8661,15 +8661,15 @@ texts:
       la:
       - type: text
         text: '#Incipit'
-  rubric.indulg-ntiam-absoluti-nem-et-remissi-nem-peccat-ca7980b845:
+  rubric.indulg-ntiam-absoluti-nem-et-remissi-nem-peccat-6df743e203:
     role: rubric
     content:
       en:
       - type: text
-        text: May the almighty ✠ and merciful Lord grant us pardon, absolution and remission of our sins. Amen.
+        text: May the almighty + and merciful Lord grant us pardon, absolution and remission of our sins. Amen.
       la:
       - type: text
-        text: Indulgéntiam, ✠ absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
+        text: Indulgéntiam, + absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
   rubric.invitatorium-867fe7e1ab:
     role: rubric
     content:
@@ -9465,7 +9465,7 @@ texts:
       la:
       - type: text
         text: '#Suffragium'
-  rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-727fe1d0e5:
+  rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-288c011952:
     role: rubric
     content:
       en:
@@ -9473,7 +9473,7 @@ texts:
         text: 'Thou art worthy of praise, thou art worthy of hymns, to Thee be glory: to God the Father and the Son with the Holy Ghost, world without end. Amen.'
       la:
       - type: text
-        text: 'Te decet laus, ✠ te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spíritu Sancto in sǽcula sæculórum. Amen.'
+        text: 'Te decet laus, + te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spíritu Sancto in sǽcula sæculórum. Amen.'
   rubric.te-deum-laud-mus-te-d-minum-confit-mur-8ca85f2c52:
     role: rubric
     content:
@@ -9654,19 +9654,19 @@ texts:
         text: Act. 2:11
       - type: text
         text: 'Iudǽi quoque, et Prosélyti, Cretes, et Arabes: audívimus eos loquéntes nostris linguis magnália Dei.'
-  short-reading.adiut-rium-nostrum-in-n-mine-d-mini-14f86be6ab:
+  short-reading.adiut-rium-nostrum-in-n-mine-d-mini-7a6d41f165:
     role: short_reading
     content:
       la:
       - type: versicle
-        text: Adiutórium nostrum ✠ in nómine Dómini.
+        text: Adiutórium nostrum + in nómine Dómini.
       - type: response
         text: Qui fecit cælum et terram.
       - type: text
         text: |-
           Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: (percutit sibi pectus) mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
           Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. Amen.
-          Indulgéntiam, ✠ absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
+          Indulgéntiam, + absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
           Dignáre, Dómine …
       - type: versicle
         text: Dómine, exáudi oratiónem meam.
@@ -9821,7 +9821,7 @@ texts:
         text: Isa 60:6
       - type: text
         text: Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes.
-  short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-5b24fdfcb6:
+  short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8a5965bcb0:
     role: short_reading
     content:
       la:
@@ -9848,14 +9848,14 @@ texts:
       - type: text
         text: Et ego ad te …
       - type: versicle
-        text: Adiutórium nostrum ✠ in nómine Dómini.
+        text: Adiutórium nostrum + in nómine Dómini.
       - type: response
         text: Qui fecit cælum et terram.
       - type: text
         text: |-
           Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: (percutit sibi pectus) mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Ioánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
           Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. Amen.
-          Indulgéntiam, ✠ absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
+          Indulgéntiam, + absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. Amen.
           Dignáre, Dómine …
       - type: versicle
         text: Dómine, exáudi oratiónem meam.

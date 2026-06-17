@@ -11335,14 +11335,14 @@ texts:
         text: '2:15 Dóminum formidábunt adversárii eius: * et super ipsos in cælis tonábit:'
       - type: citation
         text: 2:16 Dóminus iudicábit fines terræ, et dabit impérium regi suo, * et sublimábit cornu Christi sui.
-  psalm.canticum-b-mari-virginis-luc-1-46-55-5f41167a84:
+  psalm.canticum-b-mari-virginis-luc-1-46-55-8ee224217f:
     role: psalm
     content:
       en:
       - type: citation
         text: (Canticle of the Blessed Virgin * Luke 1:46-55)
       - type: citation
-        text: 1:46 My soul ✠ * doth magnify the Lord.
+        text: 1:46 My soul + * doth magnify the Lord.
       - type: citation
         text: 1:47 And my spirit hath rejoiced * in God my Saviour.
       - type: citation
@@ -11365,7 +11365,7 @@ texts:
       - type: citation
         text: (Canticum B. Mariæ Virginis * Luc. 1:46-55)
       - type: citation
-        text: 1:46 Magníficat ✠ * ánima mea Dóminum.
+        text: 1:46 Magníficat + * ánima mea Dóminum.
       - type: citation
         text: '1:47 Et exsultávit spíritus meus: * in Deo, salutári meo.'
       - type: citation
@@ -13582,14 +13582,14 @@ texts:
         text: 3:5 In paucis vexáti, in multis bene disponéntur, * quóniam Deus tentávit eos, et invénit illos dignos se.
       - type: citation
         text: 3:6 Tamquam aurum in fornáce probávit illos, † et quasi holocáusti hóstiam accépit illos, * et in témpore erit respéctus illórum.
-  psalm.canticum-simeonis-luc-2-29-32-e6f9651a0c:
+  psalm.canticum-simeonis-luc-2-29-32-553081fe0c:
     role: psalm
     content:
       en:
       - type: citation
         text: (Canticle of Simeon * Luke 2:29-32)
       - type: citation
-        text: 2:29 Now thou dost dismiss thy servant, O Lord, ✠ * according to thy word in peace;
+        text: 2:29 Now thou dost dismiss thy servant, O Lord, + * according to thy word in peace;
       - type: citation
         text: 2:30 Because my eyes have seen * thy salvation,
       - type: citation
@@ -13600,7 +13600,7 @@ texts:
       - type: citation
         text: (Canticum Simeonis * Luc. 2:29-32)
       - type: citation
-        text: '2:29 Nunc dimíttis ✠ servum tuum, Dómine, * secúndum verbum tuum in pace:'
+        text: '2:29 Nunc dimíttis + servum tuum, Dómine, * secúndum verbum tuum in pace:'
       - type: citation
         text: 2:30 Quia vidérunt óculi mei * salutáre tuum,
       - type: citation
@@ -13941,14 +13941,14 @@ texts:
         text: '3:75 (Fit reverentia:) Benedicámus Patrem et Fílium cum Sancto Spíritu: * laudémus et superexaltémus eum in sǽcula.'
       - type: citation
         text: '3:56 Benedíctus es, Dómine, in firmaménto cæli: * et laudábilis, et gloriósus, et superexaltátus in sǽcula.'
-  psalm.canticum-zachari-luc-1-68-79-2ef5289c82:
+  psalm.canticum-zachari-luc-1-68-79-9d57b4ae04:
     role: psalm
     content:
       en:
       - type: citation
         text: (Canticle of Zacharias * Luke 1:68-79)
       - type: citation
-        text: '1:68 Blessed be the Lord ✠ God of Israel; * because he hath visited and wrought the redemption of his people:'
+        text: '1:68 Blessed be the Lord + God of Israel; * because he hath visited and wrought the redemption of his people:'
       - type: citation
         text: '1:69 And hath raised up an horn of salvation to us, * in the house of David his servant:'
       - type: citation
@@ -13975,7 +13975,7 @@ texts:
       - type: citation
         text: (Canticum Zachariæ * Luc. 1:68-79)
       - type: citation
-        text: '1:68 Benedíctus ✠ Dóminus, Deus Israël: * quia visitávit, et fecit redemptiónem plebis suæ:'
+        text: '1:68 Benedíctus + Dóminus, Deus Israël: * quia visitávit, et fecit redemptiónem plebis suæ:'
       - type: citation
         text: '1:69 Et eréxit cornu salútis nobis: * in domo David, púeri sui.'
       - type: citation

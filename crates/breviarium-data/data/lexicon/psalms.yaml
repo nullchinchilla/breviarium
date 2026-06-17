@@ -11262,12 +11262,14 @@ texts:
         text: '99:3b Pópulus eius, et oves páscuæ eius: ‡ (4a) introíte portas eius in confessióne, * átria eius in hymnis: confitémini illi.'
       - type: citation
         text: '99:4b Laudáte nomen eius: (5) quóniam suávis est Dóminus, † in ætérnum misericórdia eius, * et usque in generatiónem et generatiónem véritas eius.'
-  psalm.canticum-ann-3-reg-2-1-16-b1db4d2b47:
+  psalm.canticum-ann-3-reg-2-1-16-e3359a9686:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Anna
       - type: citation
-        text: (Canticle of Anna * 1 Sam 2:1-16)
+        text: 1 Sam 2:1-16
       - type: citation
         text: '2:1 My heart hath rejoiced in the Lord, * and my horn is exalted in my God:'
       - type: citation
@@ -11301,8 +11303,10 @@ texts:
       - type: citation
         text: 2:16 The Lord shall judge the ends of the earth, and he shall give empire to his king, * and shall exalt the horn of his Christ.
       la:
+      - type: heading
+        text: Canticum Annæ
       - type: citation
-        text: (Canticum Annæ * 3 Reg 2:1-16)
+        text: 3 Reg 2:1-16
       - type: citation
         text: 2:1 Exsultávit cor meum in Dómino, * et exaltátum est cornu meum in Deo meo.
       - type: citation
@@ -11335,12 +11339,14 @@ texts:
         text: '2:15 Dóminum formidábunt adversárii eius: * et super ipsos in cælis tonábit:'
       - type: citation
         text: 2:16 Dóminus iudicábit fines terræ, et dabit impérium regi suo, * et sublimábit cornu Christi sui.
-  psalm.canticum-b-mari-virginis-luc-1-46-55-8ee224217f:
+  psalm.canticum-b-mari-virginis-luc-1-46-55-ce5eba84a7:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of the Blessed Virgin
       - type: citation
-        text: (Canticle of the Blessed Virgin * Luke 1:46-55)
+        text: Luke 1:46-55
       - type: citation
         text: 1:46 My soul + * doth magnify the Lord.
       - type: citation
@@ -11362,8 +11368,10 @@ texts:
       - type: citation
         text: 1:55 As he spoke to our fathers, * to Abraham and to his seed for ever.
       la:
+      - type: heading
+        text: Canticum B. Mariæ Virginis
       - type: citation
-        text: (Canticum B. Mariæ Virginis * Luc. 1:46-55)
+        text: Luc. 1:46-55
       - type: citation
         text: 1:46 Magníficat + * ánima mea Dóminum.
       - type: citation
@@ -11384,12 +11392,14 @@ texts:
         text: '1:54 Suscépit Israël púerum suum: * recordátus misericórdiæ suæ.'
       - type: citation
         text: '1:55 Sicut locútus est ad patres nostros: * Ábraham, et sémini eius in sǽcula.'
-  psalm.canticum-david-1-par-29-10-13-fcf342453d:
+  psalm.canticum-david-1-par-29-10-13-cee63960d7:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of David
       - type: citation
-        text: (Canticle of David * 1 Chron. 29:10-13)
+        text: 1 Chron. 29:10-13
       - type: citation
         text: 29:10 Blessed art thou, O Lord the God of Israel, our father * from eternity to eternity.
       - type: citation
@@ -11405,8 +11415,10 @@ texts:
       - type: citation
         text: 29:13 Now therefore our God we give thanks to thee, * and we praise thy glorious name.
       la:
+      - type: heading
+        text: Canticum David
       - type: citation
-        text: (Canticum David * 1 Par. 29:10-13)
+        text: 1 Par. 29:10-13
       - type: citation
         text: 29:10 Benedíctus es, Dómine, Deus Israël patris nostri, * ab ætérno in ætérnum.
       - type: citation
@@ -11421,12 +11433,14 @@ texts:
         text: '29:12 In manu tua virtus et poténtia: * in manu tua magnitúdo, et impérium ómnium.'
       - type: citation
         text: 29:13 Nunc ígitur, Deus noster, confitémur tibi, * et laudámus nomen tuum ínclitum.
-  psalm.canticum-ecclesiastic-eccli-14-22-15-3-4-15-6-18f24c4ae7:
+  psalm.canticum-ecclesiastic-eccli-14-22-15-3-4-15-6-614f525dac:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Ecclesiasticae
       - type: citation
-        text: (Canticum Ecclesiasticae * Eccli 14:22;15:3-4;15:6)
+        text: Eccli 14:22;15:3-4;15:6
       - type: citation
         text: 4:22 Blessed is the man that shall continue in wisdom, and that shall meditate in his justice, * and in his mind shall think of the all-seeing eye of God.
       - type: citation
@@ -11436,8 +11450,10 @@ texts:
       - type: citation
         text: 15:6 And shall cause him to inherit an everlasting name * the Lord our God.
       la:
+      - type: heading
+        text: Canticum Ecclesiasticæ
       - type: citation
-        text: (Canticum Ecclesiasticæ * Eccli 14:22;15:3-4;15:6)
+        text: Eccli 14:22;15:3-4;15:6
       - type: citation
         text: 14:22 Beátus vir qui in sapiéntia morábitur, † et qui in iustítia sua meditábitur, * et in sensu cogitábit circumspectiónem Dei.
       - type: citation
@@ -11446,12 +11462,14 @@ texts:
         text: '15:4 Et firmábitur in illo, et non flectétur: † et continébit illum, et non confundétur: * et exaltábit illum apud próximos suos.'
       - type: citation
         text: 15:6 Et nómine ætérno hæreditábit illum * Dóminus Deus noster.
-  psalm.canticum-ecclesiastic-eccli-31-8-11-630091e60c:
+  psalm.canticum-ecclesiastic-eccli-31-8-11-b3eda217fd:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Ecclesiaticae
       - type: citation
-        text: (Canticum Ecclesiaticae * Eccli 31:8-11)
+        text: Eccli 31:8-11
       - type: citation
         text: '31:8 Blessed is the man that is found without blemish: and that hath not gone after gold, * nor put his trust in money nor in treasures.'
       - type: citation
@@ -11463,8 +11481,10 @@ texts:
       - type: citation
         text: 31:11 Therefore are his goods established in the Lord, * and all the church of the saints shall declare his alms.
       la:
+      - type: heading
+        text: Canticum Ecclesiasticæ
       - type: citation
-        text: (Canticum Ecclesiasticæ * Eccli 31:8-11)
+        text: Eccli 31:8-11
       - type: citation
         text: 31:8 Beátus vir, qui invéntus est sine mácula,† et qui post aurum non ábiit, * nec sperávit in pecúnia et thesáuris.
       - type: citation
@@ -11475,12 +11495,14 @@ texts:
         text: 31:10 Qui pótuit tránsgredi, et non est transgréssus; * fácere mala, et non fecit.
       - type: citation
         text: 31:11 Ideo stabilíta sunt bona illíus in Dómino, * et eleemósynas illíus enarrábit omnis ecclésia sanctórum.
-  psalm.canticum-ecclesiastic-eccli-39-17-21-4caf5911ca:
+  psalm.canticum-ecclesiastic-eccli-39-17-21-41463ad122:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Ecclesiasticae
       - type: citation
-        text: (Canticum Ecclesiasticae * Eccli 39:17-21)
+        text: Eccli 39:17-21
       - type: citation
         text: '39:17 By a voice he saith: Hear me, ye divine offspring, and bud forth as the rose planted by the brooks of waters.'
       - type: citation
@@ -11492,8 +11514,10 @@ texts:
       - type: citation
         text: 39:21 All the works of the Lord are exceeding good.
       la:
+      - type: heading
+        text: Canticum Ecclesiasticæ
       - type: citation
-        text: (Canticum Ecclesiasticæ * Eccli 39:17-21)
+        text: Eccli 39:17-21
       - type: citation
         text: 39:17 Obaudíte me, divíni fructus, * et quasi rosa plantáta super rivos aquárum fructificáte.
       - type: citation
@@ -11504,12 +11528,14 @@ texts:
         text: 39:20 Date nómini eius magnificéntiam, † et confitémini illi in voce labiórum vestrórum, * et in cánticis labiórum, et cítharis;
       - type: citation
         text: '39:21 Et sic dicétis in confessióne: * Opera Dómini univérsa bona valde.'
-  psalm.canticum-ecclesiastici-sir-36-1-16-9ddaf600b8:
+  psalm.canticum-ecclesiastici-sir-36-1-16-211966064d:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Ecclesiasticus
       - type: citation
-        text: (Canticle of Ecclesiasticus * Sir 36:1-16)
+        text: Sir 36:1-16
       - type: citation
         text: '36:1 Have mercy upon us, O God of all, and behold us, * and shew us the light of thy mercies:'
       - type: citation
@@ -11543,8 +11569,10 @@ texts:
       - type: citation
         text: 36:16 Fill Sion with thy unspeakable words, * and thy people with thy glory.
       la:
+      - type: heading
+        text: Canticum Ecclesiastici
       - type: citation
-        text: (Canticum Ecclesiastici * Sir 36:1-16)
+        text: Sir 36:1-16
       - type: citation
         text: '36:1 Miserére nostri, Deus ómnium, et réspice nos, * et osténde nobis lucem miseratiónum tuárum:'
       - type: citation
@@ -11577,12 +11605,14 @@ texts:
         text: 36:15 Miserére civitáti sanctificatiónis tuæ Ierúsalem, * civitáti requiéi tuæ.
       - type: citation
         text: 36:16 Reple Sion inenarrabílibus verbis tuis, * et glória tua pópulum tuum.
-  psalm.canticum-eccli-36-14-19-e662339ded:
+  psalm.canticum-eccli-36-14-19-0c9edc3fe1:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Ecclesiasticae
       - type: citation
-        text: (Canticum Ecclesiasticae * Eccli 36:14-19)
+        text: Eccli 36:14-19
       - type: citation
         text: '36:14 Have mercy on thy people, upon whom thy name is invoked: and upon Israel, whom thou hast raised up to be thy firstborn.'
       - type: citation
@@ -11596,8 +11626,10 @@ texts:
       - type: citation
         text: 36:19 According to the blessing of Aaron over thy people, and direct us into the way of justice, and let all know that dwell upon the earth, that thou art God the beholder of all ages.
       la:
+      - type: heading
+        text: Canticum
       - type: citation
-        text: (Canticum * Eccli 36:14-19)
+        text: Eccli 36:14-19
       - type: citation
         text: '36:14 Miserére plebi tuæ, super quam invocátum est nomen tuum: * et Israël quem coæquásti primogénito tuo.'
       - type: citation
@@ -11612,12 +11644,14 @@ texts:
         text: '36:18 Et exáudi oratiónes servórum tuórum, secúndum benedictiónem Aaron de pópulo tuo: * et dírige nos in viam iustítiæ.'
       - type: citation
         text: 36:19 Et sciant omnes qui hábitant terram, * quia tu es Deus conspéctor sæculórum.
-  psalm.canticum-eiusdem-isa-33-13-18-4b817ed640:
+  psalm.canticum-eiusdem-isa-33-13-18-9f8bce4500:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 33:13-18)
+        text: Isa 33:13-18
       - type: citation
         text: 33:13 Hear, you that are far off, what I have done, and you that are near know my strength.
       - type: citation
@@ -11631,8 +11665,10 @@ texts:
       - type: citation
         text: '33:18 Thy heart shall meditate fear: where is the learned? where is he that pondereth the words of the law? where is the teacher of little ones?'
       la:
+      - type: heading
+        text: Canticum eiusdem
       - type: citation
-        text: (Canticum eiusdem * Isa 33:13-18)
+        text: Isa 33:13-18
       - type: citation
         text: 33:13 Audíte, qui longe estis, quæ fécerim; * et cognóscite, vicíni, fortitúdinem meam.
       - type: citation
@@ -11647,12 +11683,14 @@ texts:
         text: '33:17 Iste in excélsis habitábit; † muniménta saxórum sublímitas eius: * panis ei datus est, aquæ eius fidéles sunt.'
       - type: citation
         text: 33:18 Regem in decóre suo vidébunt óculi eius, † cernent terram de longe. * Cor tuum meditábitur timórem.
-  psalm.canticum-eiusdem-isa-42-10-16-eefcced18e:
+  psalm.canticum-eiusdem-isa-42-10-16-6273b9dc18:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 42:10-16)
+        text: Isa 42:10-16
       - type: citation
         text: 42:10 Sing ye to the Lord a new song, * his praise is from the ends of the earth.
       - type: citation
@@ -11678,8 +11716,10 @@ texts:
       - type: citation
         text: 42:16 I will make darkness light before them, * and crooked things straight.
       la:
+      - type: heading
+        text: Canticum eiusdem
       - type: citation
-        text: (Canticum eiusdem * Isa 42:10-16)
+        text: Isa 42:10-16
       - type: citation
         text: 42:10 Cantáte Dómino cánticum novum, * laus eius ab extrémis terræ,
       - type: citation
@@ -11704,12 +11744,14 @@ texts:
         text: 42:16 Et ducam cæcos in viam quam nésciunt, * et in sémitis quas ignoravérunt ambuláre eos fáciam.
       - type: citation
         text: 42:16 Ponam ténebras coram eis in lucem, * et prava in recta.
-  psalm.canticum-eiusdem-isa-49-7-13-2c8622f656:
+  psalm.canticum-eiusdem-isa-49-7-13-3a590b0f0b:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 49:7-13)
+        text: Isa 49:7-13
       - type: citation
         text: 49:7 Thus saith the Lord the redeemer of Israel, his Holy One, to the soul that is despised, * to the nation that is abhorred, to the servant of rulers.
       - type: citation
@@ -11731,8 +11773,10 @@ texts:
       - type: citation
         text: '49:13 Give praise, O ye heavens, and rejoice, O earth, ye mountains, give praise with jubilation: * because the Lord hath comforted his people, and will have mercy on his poor ones.'
       la:
+      - type: heading
+        text: Canticum eiusdem
       - type: citation
-        text: (Canticum eiusdem * Isa 49:7-13)
+        text: Isa 49:7-13
       - type: citation
         text: 49:7 Hæc dicit Dóminus redémptor Israël, sanctus eius, ad contemptíbilem ánimam, * ad abominátam gentem, ad servum dominórum.
       - type: citation
@@ -11753,12 +11797,14 @@ texts:
         text: 49:12 Ecce isti de longe vénient, et ecce illi ab aquilóne et mari, * et isti de terra austráli.
       - type: citation
         text: '49:13 Laudáte cæli, et exsúlta terra, iubiláte montes laudem: * quia consolátus est Dóminus pópulum suum, et páuperum suórum miserébitur.'
-  psalm.canticum-ezechi-isa-38-10-24-af955c5dc9:
+  psalm.canticum-ezechi-isa-38-10-24-1d5840d74a:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Ezechias
       - type: citation
-        text: (Canticle of Ezechias * Isa 38:10-23)
+        text: Isa 38:10-23
       - type: citation
         text: '38:10 I said: In the midst of my days * I shall go to the gates of hell:'
       - type: citation
@@ -11790,8 +11836,10 @@ texts:
       - type: citation
         text: 38:24 O Lord, save me, and we will sing our psalms all the days of our life * in the house of the Lord.
       la:
+      - type: heading
+        text: Canticum Ezechiæ
       - type: citation
-        text: (Canticum Ezechiæ * Isa 38:10-24)
+        text: Isa 38:10-24
       - type: citation
         text: '38:10 Ego dixi: In dimídio diérum meórum * vadam ad portas ínferi.'
       - type: citation
@@ -11822,12 +11870,14 @@ texts:
         text: '38:23 Vivens vivens ipse confitébitur tibi, sicut et ego hódie: * pater fíliis notam fáciet veritátem tuam.'
       - type: citation
         text: 38:24 Dómine, salvum me fac * et psalmos nostros cantábimus cunctis diébus vitæ nostræ in domo Dómini.
-  psalm.canticum-ezechielis-ez-36-24-28-636bd439e1:
+  psalm.canticum-ezechielis-ez-36-24-28-008bffe4ae:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Ezechiel
       - type: citation
-        text: (Canticle of Ezechiel * Ez 36:24-28)
+        text: Ez 36:24-28
       - type: citation
         text: 36:24 For I will take you from among the Gentiles, and will gather you together out of all the countries, * and will bring you into your own land.
       - type: citation
@@ -11841,8 +11891,10 @@ texts:
       - type: citation
         text: 36:28 And you shall dwell in the land which I gave to your fathers, * and you shall be my people, and I will be your God.
       la:
+      - type: heading
+        text: Canticum Ezechielis
       - type: citation
-        text: (Canticum Ezechielis * Ez 36:24-28)
+        text: Ez 36:24-28
       - type: citation
         text: 36:24 Tollam quippe vos de géntibus, et congregábo vos de univérsis terris, * et addúcam vos in terram vestram.
       - type: citation
@@ -11855,12 +11907,14 @@ texts:
         text: '36:27 Et spíritum meum ponam in médio vestri: * et fáciam ut in præcéptis meis ambulétis, et iudícia mea custodiátis et operémini.'
       - type: citation
         text: '36:28 Et habitábitis in terra quam dedi pátribus vestris: * et éritis mihi in pópulum, et ego ero vobis in Deum.'
-  psalm.canticum-habacuc-hab-3-1-6-f65cd5046e:
+  psalm.canticum-habacuc-hab-3-1-6-d99f1d4e23:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Habacuc
       - type: citation
-        text: (Canticum Habacuc * Hab 3:1-6)
+        text: Hab 3:1-6
       - type: citation
         text: 3:1 O Lord, I have heard thy hearing, * and was afraid.
       - type: citation
@@ -11882,8 +11936,10 @@ texts:
       - type: citation
         text: 3:6 The hills of the world were bowed down * by the journeys of his eternity.
       la:
+      - type: heading
+        text: Canticum Habacuc
       - type: citation
-        text: (Canticum Habacuc * Hab 3:1-6)
+        text: Hab 3:1-6
       - type: citation
         text: 3:1 Dómine audívi auditiónem tuam, * et tímui.
       - type: citation
@@ -11904,12 +11960,14 @@ texts:
         text: '3:6 Aspéxit, et dissólvit Gentes: * et contríti sunt montes sǽculi:'
       - type: citation
         text: 3:6 Incurváti sunt colles mundi, * ab itinéribus æternitátis eius.
-  psalm.canticum-habacuc-hab-3-2-33-f606377c65:
+  psalm.canticum-habacuc-hab-3-2-33-a5525f35fe:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Habacuc
       - type: citation
-        text: (Canticle of Habacuc * Hab 3:2-33)
+        text: Hab 3:2-33
       - type: citation
         text: 3:2 O Lord, I have heard thy hearing, * and was afraid.
       - type: citation
@@ -11975,8 +12033,10 @@ texts:
       - type: citation
         text: 3:33 And he the conqueror will lead me upon my high places * singing psalms.
       la:
+      - type: heading
+        text: Canticum Habacuc
       - type: citation
-        text: (Canticum Habacuc * Hab 3:2-33)
+        text: Hab 3:2-33
       - type: citation
         text: 3:2 Dómine, audívi auditiónem tuam, * et tímui.
       - type: citation
@@ -12041,12 +12101,14 @@ texts:
         text: '3:32 Deus Dóminus fortitúdo mea: * et ponet pedes meos quasi cervórum.'
       - type: citation
         text: 3:33 Et super excélsa mea dedúcet me victor * in psalmis canéntem.
-  psalm.canticum-ibid-10-17-21-40a36472f7:
+  psalm.canticum-ibid-10-17-21-c2958641fe:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Sapientiae
       - type: citation
-        text: (Canticum Sapientiae * Sap 10:17-21)
+        text: Sap 10:17-21
       - type: citation
         text: '10:17 And God rendered to the just the wages of their labours, * and conducted them in a wonderful way:'
       - type: citation
@@ -12060,8 +12122,10 @@ texts:
       - type: citation
         text: 10:21 And they praised with one accord your victorious hand, for wisdom opened the mouth of the dumb, * and made the tongues of infants eloquent.
       la:
+      - type: heading
+        text: Canticum
       - type: citation
-        text: (Canticum * Ibid. 10:17-21)
+        text: Ibid. 10:17-21
       - type: citation
         text: '10:17 Réddidit Deus iustis mercédem labórum suórum, * et dedúxit illos in via mirábili:'
       - type: citation
@@ -12074,12 +12138,14 @@ texts:
         text: 10:20 Ideo iusti tulérunt spólia impiórum, * et decantavérunt, Dómine, nomen sanctum tuum,
       - type: citation
         text: '10:21 Et victrícem manum tuam laudavérunt páriter: † quóniam sapiéntia apéruit os mutórum, * et línguas infántium fecit disértas.'
-  psalm.canticum-ibid-v-13-19-116920c902:
+  psalm.canticum-ibid-v-13-19-4dec0ea96f:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Habacuc
       - type: citation
-        text: (Canticum Habacuc * Hab 3:13-19)
+        text: Hab 3:13-19
       - type: citation
         text: '3:13 Thou wentest forth for the salvation of thy people: * for salvation with thy Christ.'
       - type: citation
@@ -12141,12 +12207,14 @@ texts:
         text: '3:19 Deus Dóminus fortitúdo mea: * et ponet pedes meos quasi cervórum.'
       - type: citation
         text: 3:19 Et super excélsa mea dedúcet me victor * in psalmis canéntem.
-  psalm.canticum-ibid-v-7-12-8b44b57475:
+  psalm.canticum-ibid-v-7-12-d7ca26ff7b:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Habacuc
       - type: citation
-        text: (Canticum Habacuc * Hab 3:7-12)
+        text: Hab 3:7-12
       - type: citation
         text: 3:7 I saw the tents of Ethiopia for their iniquity, * the curtains of the land of Madian shall be troubled.
       - type: citation
@@ -12184,12 +12252,14 @@ texts:
         text: 3:11 Sol et luna stetérunt in habitáculo suo, † in luce sagittárum tuárum, * ibunt in splendóre fulgurántis hastæ tuæ.
       - type: citation
         text: '3:12 In frémitu conculcábis terram: * in furóre obstupefácies Gentes.'
-  psalm.canticum-ieremi-ier-14-17-21-c61f80d8e8:
+  psalm.canticum-ieremi-ier-14-17-21-158e9ed5dc:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Jeremias
       - type: citation
-        text: (Canticle of Jeremias * Jer 14:17-21)
+        text: Jer 14:17-21
       - type: citation
         text: 14:17 Let my eyes shed down tears night and day, * and let them not cease,
       - type: citation
@@ -12211,8 +12281,10 @@ texts:
       - type: citation
         text: 14:21 Remember, * break not thy covenant with us.
       la:
+      - type: heading
+        text: Canticum Ieremiæ
       - type: citation
-        text: (Canticum Ieremiæ * Ier 14:17-21)
+        text: Ier 14:17-21
       - type: citation
         text: 14:17 Dedúcant óculi mei lácrymam per noctem et diem, * et non táceant,
       - type: citation
@@ -12233,12 +12305,14 @@ texts:
         text: '14:21 Ne des nos in oppróbrium, propter nomen tuum, * neque fácias nobis contuméliam sólii glóriæ tuæ:'
       - type: citation
         text: 14:21 Recordáre, * ne írritum fácias fœdus tuum nobíscum.
-  psalm.canticum-ieremi-ier-17-7-8-2ed12678a3:
+  psalm.canticum-ieremi-ier-17-7-8-188f1f7ef2:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Jeremiae
       - type: citation
-        text: (Canticum Jeremiae * Jer 17:7-8)
+        text: Jer 17:7-8
       - type: citation
         text: 17:7 Blessed be the man that trusteth in the Lord, * and the Lord shall be his confidence.
       - type: citation
@@ -12246,20 +12320,24 @@ texts:
       - type: citation
         text: 17:8 And the leaf thereof shall be green, and in the time of drought it shall not be solicitous, * neither shall it cease at any time to bring forth fruit.
       la:
+      - type: heading
+        text: Canticum Ieremiæ
       - type: citation
-        text: (Canticum Ieremiæ * Ier 17:7-8)
+        text: Ier 17:7-8
       - type: citation
         text: 17:7 Benedíctus vir qui confídit in Dómino, * et erit Dóminus fidúcia eius.
       - type: citation
         text: 17:8 Et erit quasi lignum quod transplantátur super aquas, † quod ad humórem mittit radíces suas, * et non timébit cum vénerit æstus.
       - type: citation
         text: 17:8 Et erit fólium eius víride, † et in témpore siccitátis non erit sollícitum, * nec aliquándo désinet fácere fructum.
-  psalm.canticum-ieremi-ier-31-10-18-28e187ab1a:
+  psalm.canticum-ieremi-ier-31-10-18-5250e438d5:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Jeremias
       - type: citation
-        text: (Canticle of Jeremias * Jer 31:10-18)
+        text: Jer 31:10-18
       - type: citation
         text: 31:10 Hear the word of the Lord, O ye nations, * and declare it in the islands that are afar off,
       - type: citation
@@ -12279,8 +12357,10 @@ texts:
       - type: citation
         text: '31:18 And I will fill the soul of the priests with fatness: * and my people shall be filled with my good things.'
       la:
+      - type: heading
+        text: Canticum Ieremiæ
       - type: citation
-        text: (Canticum Ieremiæ * Ier 31:10-18)
+        text: Ier 31:10-18
       - type: citation
         text: 31:10 Audíte verbum Dómini, gentes, * et annuntiáte in ínsulis, quæ procul sunt,
       - type: citation
@@ -12299,12 +12379,14 @@ texts:
         text: 31:17 Et convértam luctum eórum in gáudium, * et consolábor eos, et lætificábo a dolóre suo.
       - type: citation
         text: '31:18 Et inebriábo ánimam sacerdótum pinguédine: * et pópulus meus bonis meis adimplébitur.'
-  psalm.canticum-ieremi-ier-7-2-7-5a1cef080f:
+  psalm.canticum-ieremi-ier-7-2-7-e8e0473dae:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Jeremiae
       - type: citation
-        text: (Canticum Jeremiae * Jer 7:2-7)
+        text: Jer 7:2-7
       - type: citation
         text: '7:2 Stand in the gate of the house of the Lord, and proclaim there this word, and say: Hear ye the word of the Lord, all ye men of Juda, that enter in at these gates, to adore the Lord.'
       - type: citation
@@ -12322,8 +12404,10 @@ texts:
       - type: citation
         text: '7:7 I will dwell with you in this place: in the land, which I gave to your fathers from the beginning and for evermore.'
       la:
+      - type: heading
+        text: Canticum Ieremiæ
       - type: citation
-        text: (Canticum Ieremiæ * Ier 7:2-7)
+        text: Ier 7:2-7
       - type: citation
         text: 7:2 Audíte verbum Dómini, omnis Iuda, * qui ingredímini per portas has ut adorétis Dóminum.
       - type: citation
@@ -12340,12 +12424,14 @@ texts:
         text: '7:6 Nec sánguinem innocéntem effudéritis in loco hoc, * et post deos aliénos non ambulavéritis in malum vobismetípsis:'
       - type: citation
         text: 7:7 Habitábo vobíscum in loco isto, * in terra quam dedi pátribus vestris a sǽculo et usque in sǽculum.
-  psalm.canticum-isai-isa-12-1-7-836d00f96b:
+  psalm.canticum-isai-isa-12-1-7-0dc50b43de:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Isaias
       - type: citation
-        text: (Canticle of Isaias * Isa 12:1-7)
+        text: Isa 12:1-7
       - type: citation
         text: '12:1 I will give thanks to thee, O Lord, for thou wast angry with me: * thy wrath is turned away, and thou hast comforted me.'
       - type: citation
@@ -12361,8 +12447,10 @@ texts:
       - type: citation
         text: '12:7 Rejoice, and praise, O thou habitation of Sion: * for great is he that is in the midst of thee the Holy One of Israel.'
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 12:1-7)
+        text: Isa 12:1-7
       - type: citation
         text: '12:1 Confitébor tibi, Dómine, quóniam irátus es mihi: * convérsus est furor tuus, et consolátus es me.'
       - type: citation
@@ -12377,12 +12465,14 @@ texts:
         text: '12:6 Cantáte Dómino quóniam magnífice fecit: * annuntiáte hoc in univérsa terra.'
       - type: citation
         text: '12:7 Exsúlta, et lauda, habitátio Sion: * quia magnus in médio tui Sanctus Israël.'
-  psalm.canticum-isai-isa-2-2-3-fc39fd249a:
+  psalm.canticum-isai-isa-2-2-3-8fa84619b2:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 2:2-3)
+        text: Isa 2:2-3
       - type: citation
         text: 2:2 And in the last days the mountain of the house of the Lord shall be prepared on the top of mountains,
       - type: citation
@@ -12394,8 +12484,10 @@ texts:
       - type: citation
         text: 2:3 for the law shall come forth from Sion, and the word of the Lord from Jerusalem.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 2:2-3)
+        text: Isa 2:2-3
       - type: citation
         text: '2:2 Et erit in novíssimis diébus: præparátus mons domus Dómini * in vértice móntium,'
       - type: citation
@@ -12406,12 +12498,14 @@ texts:
         text: '2:3 Et docébit nos vias suas, * et ambulábimus in sémitis eius:'
       - type: citation
         text: 2:3 Quia de Sion exíbit lex, * et verbum Dómini de Ierúsalem.
-  psalm.canticum-isai-isa-26-1-12-f1deec4a5a:
+  psalm.canticum-isai-isa-26-1-12-fb9ad502c7:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 26:1-12)
+        text: Isa 26:1-12
       - type: citation
         text: 26:1 Sion the city of our strength a saviour, * a wall and a bulwark shall be set therein.
       - type: citation
@@ -12441,8 +12535,10 @@ texts:
       - type: citation
         text: '26:12 Lord, thou wilt give us peace: * for thou hast wrought all our works for us.'
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 26:1-12)
+        text: Isa 26:1-12
       - type: citation
         text: 26:1 Urbs fortitúdinis nostræ Sion salvátor, * ponétur in ea murus et antemurále.
       - type: citation
@@ -12471,12 +12567,14 @@ texts:
         text: '26:11 Dómine exaltétur manus tua, et non vídeant: * vídeant, et confundántur zelántes pópuli: et ignis hostes tuos dévoret.'
       - type: citation
         text: '26:12 Dómine dabis pacem nobis: * ómnia enim ópera nostra operátus es nobis.'
-  psalm.canticum-isai-isa-33-2-10-73ae86b7cd:
+  psalm.canticum-isai-isa-33-2-10-8ae5387b2e:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 33:2-10)
+        text: Isa 33:2-10
       - type: citation
         text: '33:2 O Lord, have mercy on us: for we have waited for thee: be thou our arm in the morning, and our salvation in the time of trouble.'
       - type: citation
@@ -12496,8 +12594,10 @@ texts:
       - type: citation
         text: '33:10 Now will I rise up, saith the Lord: now will I be exalted, now will I lift up myself.'
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 33:2-10)
+        text: Isa 33:2-10
       - type: citation
         text: 33:2 Dómine, miserére nostri, te enim exspectávimus; † esto bráchium nostrum in mane, * et salus nostra in témpore tribulatiónis.
       - type: citation
@@ -12518,12 +12618,14 @@ texts:
         text: 33:9 Et factus est Saron sicut desértum, * et concússa est Basan, et Carmélus.
       - type: citation
         text: 33:10 Nunc consúrgam, dicit Dóminus; * nunc exaltábor, nunc sublevábor.
-  psalm.canticum-isai-isa-40-10-17-a14d72e57a:
+  psalm.canticum-isai-isa-40-10-17-c34b96df9e:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 40:10-17)
+        text: Isa 40:10-17
       - type: citation
         text: '40:10 Behold the Lord God shall come with strength, * and his arm shall rule:'
       - type: citation
@@ -12545,8 +12647,10 @@ texts:
       - type: citation
         text: 40:17 All nations are before him as if they had no being at all, * and are counted to him as nothing, and vanity.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 40:10-17)
+        text: Isa 40:10-17
       - type: citation
         text: '40:10 Ecce Dóminus Deus in fortitúdine véniet, * et bráchium eius dominábitur:'
       - type: citation
@@ -12567,12 +12671,14 @@ texts:
         text: 40:16 Ecce ínsulæ quasi pulvis exíguus. Et Líbanus non suffíciet ad succendéndum, * et animália eius non suffícient ad holocáustum.
       - type: citation
         text: 40:17 Omnes gentes quasi non sint, sic sunt coram eo, * et quasi níhilum et ináne reputátæ sunt ei.
-  psalm.canticum-isai-isa-45-15-30-a7faa9460e:
+  psalm.canticum-isai-isa-45-15-30-1260c42cf2:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Isaias
       - type: citation
-        text: (Canticle of Isaias * Isa 45:15-30)
+        text: Isa 45:15-30
       - type: citation
         text: 45:15 Verily thou art a hidden God, * the God of Israel the saviour.
       - type: citation
@@ -12606,8 +12712,10 @@ texts:
       - type: citation
         text: 45:30 In the Lord shall all the seed * of Israel be justified and praised.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 45:15-30)
+        text: Isa 45:15-30
       - type: citation
         text: 45:15 Vere tu es Deus abscónditus, * Deus Israël, Salvátor.
       - type: citation
@@ -12640,12 +12748,14 @@ texts:
         text: '45:29 Ergo in Dómino, dicet, meæ sunt iustítiæ et impérium: * ad eum vénient, et confundéntur omnes qui repúgnant ei.'
       - type: citation
         text: 45:30 In Dómino iustificábitur, et laudábitur * omne semen Israël.
-  psalm.canticum-isai-isa-61-10-11-62-1-3-92b055b326:
+  psalm.canticum-isai-isa-61-10-11-62-1-3-01b42cdc7e:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 61:10-11; 62:1-3)
+        text: Isa 61:10-11; 62:1-3
       - type: citation
         text: '61:10 I will greatly rejoice in the Lord, and my soul shall be joyful in my God: for he hath clothed me with the garments of salvation: and with the robe of justice he hath covered me, as a bridegroom decked with a crown, and as a bride adorned with her jewels.'
       - type: citation
@@ -12657,8 +12767,10 @@ texts:
       - type: citation
         text: 62:3 And thou shalt be a crown of glory in the hand of the Lord, and a royal diadem in the hand of thy God.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 61:10-11; 62:1-3)
+        text: Isa 61:10-11; 62:1-3
       - type: citation
         text: '61:10 Gaudens gaudébo in Dómino, * et exsultábit ánima mea in Deo meo:'
       - type: citation
@@ -12675,12 +12787,14 @@ texts:
         text: 62:2 Et vocábitur tibi nomen novum, * quod os Dómini nominábit.
       - type: citation
         text: 62:3 Et eris coróna glóriæ in manu Dómini, * et diadéma regni in manu Dei tui.
-  psalm.canticum-isai-isa-61-6-9-e8a49f0d34:
+  psalm.canticum-isai-isa-61-6-9-dc6b47eae4:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 61:6-9)
+        text: Isa 61:6-9
       - type: citation
         text: '61:6 But you shall be called the priests of the Lord: * to you it shall be said: You ministers of our God:'
       - type: citation
@@ -12698,8 +12812,10 @@ texts:
       - type: citation
         text: 61:9 All that shall see them, shall know them, * that these are the seed which the Lord has blessed.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 61:6-9)
+        text: Isa 61:6-9
       - type: citation
         text: '61:6 Vos autem sacerdótes Dómini vocabímini: * minístri Dei nostri, dicétur vobis:'
       - type: citation
@@ -12716,12 +12832,14 @@ texts:
         text: '61:9 Et scient in géntibus semen eórum, * et germen eórum in médio populórum:'
       - type: citation
         text: 61:9 Omnes qui víderint eos cognóscent illos, * quia isti sunt semen, cui benedíxit Dóminus.
-  psalm.canticum-isai-isa-62-4-7-4c104285b4:
+  psalm.canticum-isai-isa-62-4-7-d1aef3097d:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 62:4-7)
+        text: Isa 62:4-7
       - type: citation
         text: '62:4 Thou shalt no more be called Forsaken: and thy land shall no more be called Desolate: but thou shalt be called My pleasure in her, and thy land inhabited. Because the Lord hath been well pleased with thee: and thy land shall be inhabited.'
       - type: citation
@@ -12731,8 +12849,10 @@ texts:
       - type: citation
         text: 62:7 And give him no silence till he establish, and till he make Jerusalem a praise in the earth.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 62:4-7)
+        text: Isa 62:4-7
       - type: citation
         text: '62:4 Non vocáberis ultra Derelícta, * et terra tua non vocábitur ámplius Desoláta:'
       - type: citation
@@ -12747,12 +12867,14 @@ texts:
         text: 62:6 Super muros tuos, Ierúsalem, constítui custódes; * tota die et tota nocte in perpétuum non tacébunt.
       - type: citation
         text: 62:6 Qui reminiscímini Dómini, ne taceátis, † et ne detis siléntium ei, * donec stabíliat et donec ponat Ierúsalem laudem in terra.
-  psalm.canticum-isai-isa-63-1-5-7941d173ba:
+  psalm.canticum-isai-isa-63-1-5-cc983d9b6c:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 63:1-5)
+        text: Isa 63:1-5
       - type: citation
         text: 63:1 Who is this that cometh from Edom, with dyed garments from Bosra,
       - type: citation
@@ -12774,8 +12896,10 @@ texts:
       - type: citation
         text: 63:5 And my own arm hath saved for me, and my indignation itself hath helped me.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 63:1-5)
+        text: Isa 63:1-5
       - type: citation
         text: 63:1 Quis est iste, qui venit de Edom, * tinctis véstibus de Bosra?
       - type: citation
@@ -12796,12 +12920,14 @@ texts:
         text: '63:5 Circumspéxi, et non erat auxiliátor; * quæsívi, et non fuit qui adiuváret:'
       - type: citation
         text: 63:5 Et salvávit mihi bráchium meum, * et indignátio mea ipsa auxiliáta est mihi.
-  psalm.canticum-isai-isa-66-10-16-85e1565d6c:
+  psalm.canticum-isai-isa-66-10-16-335fb70a03:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 66:10-16)
+        text: Isa 66:10-16
       - type: citation
         text: '66:10 Rejoice with Jerusalem, and be glad with her, * all you that love her:'
       - type: citation
@@ -12823,8 +12949,10 @@ texts:
       - type: citation
         text: 66:16 For the Lord shall judge by fire, and by his sword unto all flesh, * and the slain of the Lord shall be many.
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 66:10-16)
+        text: Isa 66:10-16
       - type: citation
         text: '66:10 Lætámini cum Ierúsalem et exsultáte in ea, * omnes qui dilígitis eam:'
       - type: citation
@@ -12845,12 +12973,14 @@ texts:
         text: '66:15 Quia ecce Dóminus in igne véniet, et quasi turbo quadrígæ eius, * réddere in indignatióne furórem suum et increpatiónem suam in flamma ignis:'
       - type: citation
         text: '66:16 Quia in igne Dóminus diiudicábit, et in gládio suo ad omnem carnem: * et multiplicabúntur interfécti a Dómino,'
-  psalm.canticum-isai-isa-9-2-7-c8d8220b08:
+  psalm.canticum-isai-isa-9-2-7-3cd686765e:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Isaiae
       - type: citation
-        text: (Canticum Isaiae * Isa 9:2-7)
+        text: Isa 9:2-7
       - type: citation
         text: '9:2 The people that walked in darkness, * have seen a great light:'
       - type: citation
@@ -12876,8 +13006,10 @@ texts:
       - type: citation
         text: '9:7 From henceforth and for ever: * The zeal of the Lord of hosts will perform this.'
       la:
+      - type: heading
+        text: Canticum Isaiæ
       - type: citation
-        text: (Canticum Isaiæ * Isa 9:2-7)
+        text: Isa 9:2-7
       - type: citation
         text: 9:2 Pópulus, qui ambulábat in ténebris, * vidit lucem magnam.
       - type: citation
@@ -12902,12 +13034,14 @@ texts:
         text: 9:7 Super sólium David, et super regnum eius sedébit, * ut confírmet illud et corróboret in iudício et iustítia,
       - type: citation
         text: '9:7 Ámodo et usque in sempitérnum: * zelus Dómini exercítuum fáciet hoc.'
-  psalm.canticum-iudith-iudith-16-15-22-ef32162625:
+  psalm.canticum-iudith-iudith-16-15-22-d1a4d58937:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Judith
       - type: citation
-        text: (Canticle of Judith * Judith 16:15-22)
+        text: Judith 16:15-22
       - type: citation
         text: 16:15 Let us sing a hymn to the Lord, * let us sing a new hymn to our God.
       - type: citation
@@ -12925,8 +13059,10 @@ texts:
       - type: citation
         text: 16:22 For he will give fire, and worms into their flesh, * that they may burn, and may feel for ever.
       la:
+      - type: heading
+        text: Canticum Iudith
       - type: citation
-        text: (Canticum Iudith * Iudith 16:15-22)
+        text: Iudith 16:15-22
       - type: citation
         text: 16:15 Hymnum cantémus Dómino, * hymnum novum cantémus Deo nostro.
       - type: citation
@@ -12943,12 +13079,14 @@ texts:
         text: '16:21 Væ genti insurgénti super genus meum: Dóminus enim omnípotens vindicábit in eis, * in die iudícii visitábit illos.'
       - type: citation
         text: 16:22 Dabit enim ignem, et vermes in carnes eórum, * ut urántur, et séntiant usque in sempitérnum.
-  psalm.canticum-moysis-deut-32-1-65-512e592910:
+  psalm.canticum-moysis-deut-32-1-65-c9e40f627d:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Moses
       - type: citation
-        text: (Canticle of Moses * Deut 32:1-65)
+        text: Deut 32:1-65
       - type: citation
         text: 32:1 Hear, O ye heavens, the things I speak, * let the earth give ear to the words of my mouth.
       - type: citation
@@ -13080,8 +13218,10 @@ texts:
       - type: citation
         text: 32:65 and will render vengeance to their enemies, * and he will be merciful to the land of his people.
       la:
+      - type: heading
+        text: Canticum Moysis
       - type: citation
-        text: (Canticum Moysis * Deut 32:1-65)
+        text: Deut 32:1-65
       - type: citation
         text: '32:1 Audíte, cæli, quæ loquor: * áudiat terra verba oris mei.'
       - type: citation
@@ -13212,12 +13352,14 @@ texts:
         text: '32:64 Laudáte, gentes, pópulum eius, * quia sánguinem servórum suórum ulciscétur:'
       - type: citation
         text: 32:65 Et vindíctam retríbuet in hostes eórum, * et propítius erit terræ pópuli sui.
-  psalm.canticum-moysis-exod-15-1-22-fb039d7463:
+  psalm.canticum-moysis-exod-15-1-22-4c1d80f9a6:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Moses
       - type: citation
-        text: (Canticle of Moses * Exod. 15:1-22)
+        text: Exod. 15:1-22
       - type: citation
         text: '15:1 Let us sing to the Lord: for he is gloriously magnified, * the horse and the rider he hath thrown into the sea.'
       - type: citation
@@ -13263,8 +13405,10 @@ texts:
       - type: citation
         text: 15:22 But the children of Israel walked on dry ground * in the midst thereof.
       la:
+      - type: heading
+        text: Canticum Moysis
       - type: citation
-        text: (Canticum Moysis * Exod. 15:1-22)
+        text: Exod. 15:1-22
       - type: citation
         text: '15:1 Cantémus Dómino: glorióse enim magnificátus est, * equum et ascensórem deiécit in mare.'
       - type: citation
@@ -13309,12 +13453,14 @@ texts:
         text: '15:21 Ingréssus est enim eques Phárao cum cúrribus et equítibus eius in mare: * et redúxit super eos Dóminus aquas maris:'
       - type: citation
         text: 15:22 Fílii autem Israël ambulavérunt per siccum * in médio eius.
-  psalm.canticum-ose-osea-6-1-6-7201994228:
+  psalm.canticum-ose-osea-6-1-6-683fbf2397:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Osee
       - type: citation
-        text: (Canticum Osee * Osea 6:1-6)
+        text: Osea 6:1-6
       - type: citation
         text: '6:1 Come, and let us return to the Lord: for he hath taken us, and he will heal us: he will strike, and he will cure us.'
       - type: citation
@@ -13330,8 +13476,10 @@ texts:
       - type: citation
         text: '6:6 For I desired mercy, and not sacrifice: and the knowledge of God more than holocausts.'
       la:
+      - type: heading
+        text: Canticum Oseæ
       - type: citation
-        text: (Canticum Oseæ * Osea 6:1-6)
+        text: Osea 6:1-6
       - type: citation
         text: 6:1 Veníte, et revertámur ad Dóminum, † quia ipse cepit, et sanábit nos; * percútiet, et curábit nos.
       - type: citation
@@ -13346,12 +13494,14 @@ texts:
         text: '6:5 Propter hoc dolávi in prophétis; † occídi eos in verbis oris mei: * et iudícia tua quasi lux egrediéntur.'
       - type: citation
         text: 6:6 Quia misericórdiam vólui, et non sacrifícium; * et sciéntiam Dei plus quam holocáusta.
-  psalm.canticum-proverb-prov-9-1-6-10-12-9c2ab0f295:
+  psalm.canticum-proverb-prov-9-1-6-10-12-0771c73fd6:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Proverb
       - type: citation
-        text: (Canticum Proverb * Prov. 9:1-6, 10-12)
+        text: Prov. 9:1-6, 10-12
       - type: citation
         text: 9:1 Wisdom has built herself a house, she has hewn her out seven pillars.
       - type: citation
@@ -13371,8 +13521,10 @@ texts:
       - type: citation
         text: '9:12 If you be wise, you shall be so to yourself: and if a scorner, you alone shall bear the evil.'
       la:
+      - type: heading
+        text: Canticum Proverb
       - type: citation
-        text: (Canticum Proverb * Prov. 9:1-6, 10-12)
+        text: Prov. 9:1-6, 10-12
       - type: citation
         text: '9:1 Sapiéntia ædificávit sibi domum: * excídit colúmnas septem.'
       - type: citation
@@ -13487,12 +13639,14 @@ texts:
           Ad cuius advéntum omnes hómines resúrgere habent cum corpóribus suis; * et redditúri sunt de factis própriis ratiónem.
           Et qui bona egérunt, ibunt in vitam ætérnam: * qui vero mala, in ignem ætérnum.
           Hæc est fides cathólica, * quam nisi quisque fidéliter firmitérque credíderit, salvus esse non póterit.
-  psalm.canticum-sap-3-7-9-e031536bba:
+  psalm.canticum-sap-3-7-9-155403b655:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Sapientiae
       - type: citation
-        text: (Canticum Sapientiae * Sap 3:7-9)
+        text: Sap 3:7-9
       - type: citation
         text: 3:7 The just shall shine, * and shall run to and fro like sparks among the reeds.
       - type: citation
@@ -13502,8 +13656,10 @@ texts:
       - type: citation
         text: 3:9 For grace * and peace is to his elect.
       la:
+      - type: heading
+        text: Canticum
       - type: citation
-        text: (Canticum * Sap 3:7-9)
+        text: Sap 3:7-9
       - type: citation
         text: 3:7 Fulgébunt iusti, * et tamquam scintíllæ in arundinéto discúrrent.
       - type: citation
@@ -13512,12 +13668,14 @@ texts:
         text: '3:9 Qui confídunt in illo, intélligent veritátem, * et fidéles in dilectióne acquiéscent illi:'
       - type: citation
         text: 3:9 Quóniam donum * et pax est eléctis eius.
-  psalm.canticum-sapienti-sap-16-20-21-26-29-17-1-5b032cf605:
+  psalm.canticum-sapienti-sap-16-20-21-26-29-17-1-74faaef3f4:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Sapientiæ
       - type: citation
-        text: (Canticum Sapientiæ * Sap 16:20-21, 26, 29; 17:1)
+        text: Sap 16:20-21, 26, 29; 17:1
       - type: citation
         text: 16:20 You did feed your people with the food of angels, and gave them bread from heaven prepared without labour,
       - type: citation
@@ -13533,8 +13691,10 @@ texts:
       - type: citation
         text: '17:1 For your judgments, O Lord, are great, and your words cannot be expressed: therefore undisciplined souls have erred.'
       la:
+      - type: heading
+        text: Canticum Sapientiæ
       - type: citation
-        text: (Canticum Sapientiæ * Sap 16:20-21, 26, 29; 17:1)
+        text: Sap 16:20-21, 26, 29; 17:1
       - type: citation
         text: 16:20 Angelórum esca nutrivísti pópulum tuum, * et parátum panem de cælo præstitísti illis sine labóre,
       - type: citation
@@ -13549,12 +13709,14 @@ texts:
         text: 16:29 Ingráti enim spes tamquam hibernális glácies tabéscet, * et dispériet tamquam aqua supervácua.
       - type: citation
         text: '17:1 Magna sunt enim iudícia tua, Dómine, † et inenarrabília verba tua: * propter hoc indisciplinátæ ánimæ erravérunt.'
-  psalm.canticum-sapienti-sap-3-1-6-87a9f0432d:
+  psalm.canticum-sapienti-sap-3-1-6-4b0c1bc770:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Sapientiae
       - type: citation
-        text: (Canticum Sapientiae * Sap 3:1-6)
+        text: Sap 3:1-6
       - type: citation
         text: 3:1 But the souls of the just are in the hand of God, * and the torment of death shall not touch them.
       - type: citation
@@ -13568,8 +13730,10 @@ texts:
       - type: citation
         text: 3:6 As gold in the furnace he hath proved them, † and as a victim of a holocaust he hath received them, * and in time there shall be respect had to them
       la:
+      - type: heading
+        text: Canticum Sapientiæ
       - type: citation
-        text: (Canticum Sapientiæ * Sap 3:1-6)
+        text: Sap 3:1-6
       - type: citation
         text: 3:1 Iustórum autem ánimæ in manu Dei sunt, * et non tangent illos torméntum mortis.
       - type: citation
@@ -13582,12 +13746,14 @@ texts:
         text: 3:5 In paucis vexáti, in multis bene disponéntur, * quóniam Deus tentávit eos, et invénit illos dignos se.
       - type: citation
         text: 3:6 Tamquam aurum in fornáce probávit illos, † et quasi holocáusti hóstiam accépit illos, * et in témpore erit respéctus illórum.
-  psalm.canticum-simeonis-luc-2-29-32-553081fe0c:
+  psalm.canticum-simeonis-luc-2-29-32-3181b4f94a:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Simeon
       - type: citation
-        text: (Canticle of Simeon * Luke 2:29-32)
+        text: Luke 2:29-32
       - type: citation
         text: 2:29 Now thou dost dismiss thy servant, O Lord, + * according to thy word in peace;
       - type: citation
@@ -13597,8 +13763,10 @@ texts:
       - type: citation
         text: 2:32 A light to the revelation of the Gentiles, * and the glory of thy people Israel.
       la:
+      - type: heading
+        text: Canticum Simeonis
       - type: citation
-        text: (Canticum Simeonis * Luc. 2:29-32)
+        text: Luc. 2:29-32
       - type: citation
         text: '2:29 Nunc dimíttis + servum tuum, Dómine, * secúndum verbum tuum in pace:'
       - type: citation
@@ -13607,12 +13775,14 @@ texts:
         text: 2:31 Quod parásti * ante fáciem ómnium populórum,
       - type: citation
         text: 2:32 Lumen ad revelatiónem géntium, * et glóriam plebis tuæ Israël.
-  psalm.canticum-sophoni-soph-3-8-13-36eafb8017:
+  psalm.canticum-sophoni-soph-3-8-13-e3a282a2f5:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Sophonee
       - type: citation
-        text: (Canticum Sophonee * Soph 3:8-13)
+        text: Soph 3:8-13
       - type: citation
         text: '3:8 Wherefore expect me, saith the Lord, in the day of my resurrection that is to come, for my judgment is to assemble the Gentiles, and to gather the kingdoms:'
       - type: citation
@@ -13634,8 +13804,10 @@ texts:
       - type: citation
         text: 3:13 For they shall feed, and shall lie down, and there shall be none to make them afraid..
       la:
+      - type: heading
+        text: Canticum Sophoniæ
       - type: citation
-        text: (Canticum Sophoniæ * Soph 3:8-13)
+        text: Soph 3:8-13
       - type: citation
         text: '3:8 Exspécta me, dicit Dóminus, in die resurrectiónis meæ in futúrum: * quia iudícium meum ut cóngregem gentes, et cólligam regna,'
       - type: citation
@@ -13656,12 +13828,14 @@ texts:
         text: '3:13 Relíquiæ Israël non fácient iniquitátem, † nec loquéntur mendácium, * et non inveniétur in ore eórum lingua dolósa:'
       - type: citation
         text: 3:13 Quóniam ipsi pascéntur, et accubábunt, * et non erit qui extérreat.
-  psalm.canticum-thren-5-1-7-15-17-19-21-491910ec7f:
+  psalm.canticum-thren-5-1-7-15-17-19-21-ab6789fd66:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle from Lamentations
       - type: citation
-        text: (Canticle from Lamentations * Lam 5:1-7,15-17,19-21)
+        text: Lam 5:1-7,15-17,19-21
       - type: citation
         text: '5:1 Remember, O Lord, what is come upon us: * consider and behold our reproach.'
       - type: citation
@@ -13689,8 +13863,10 @@ texts:
       - type: citation
         text: '5:21 Convert us, O Lord, to thee, and we shall be converted: * renew our days, as from the beginning.'
       la:
+      - type: heading
+        text: Canticum
       - type: citation
-        text: (Canticum * Thren. 5:1-7,15-17,19-21)
+        text: Thren. 5:1-7,15-17,19-21
       - type: citation
         text: '5:1 Recordáre Dómine quid accíderit nobis: * intuére et réspice oppróbrium nostrum.'
       - type: citation
@@ -13717,12 +13893,14 @@ texts:
         text: 5:20 Quare in perpétuum obliviscéris nostri, * derelínques nos in longitúdine diérum?
       - type: citation
         text: '5:21 Convérte nos Dómine ad te, et convertémur: * ínnova dies nostros, sicut a princípio.'
-  psalm.canticum-tobi-tob-13-1-11-a7ba23f4c8:
+  psalm.canticum-tobi-tob-13-1-11-845cf716ca:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Tobias
       - type: citation
-        text: (Canticle of Tobias * Tob. 13:1-11)
+        text: Tob. 13:1-11
       - type: citation
         text: '13:1 Thou art great, O Lord, for ever, * and thy kingdom is unto all ages:'
       - type: citation
@@ -13746,8 +13924,10 @@ texts:
       - type: citation
         text: 13:11 Bless ye the Lord, all his elect, * keep days of joy, and give glory to him.
       la:
+      - type: heading
+        text: Canticum Tobiæ
       - type: citation
-        text: (Canticum Tobiæ * Tob. 13:1-11)
+        text: Tob. 13:1-11
       - type: citation
         text: '13:1 Magnus es, Dómine, in ætérnum, * et in ómnia sǽcula regnum tuum:'
       - type: citation
@@ -13770,12 +13950,14 @@ texts:
         text: 13:10 Ego autem, et ánima mea * in eo lætábimur.
       - type: citation
         text: '13:11 Benedícite Dóminum, omnes elécti eius: * ágite dies lætítiæ, et confitémini illi.'
-  psalm.canticum-tobi-tob-13-10-17-2bf5c31f10:
+  psalm.canticum-tobi-tob-13-10-17-0150da972d:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticum Tobiae
       - type: citation
-        text: (Canticum Tobiae * Tob 13:10-17)
+        text: Tob 13:10-17
       - type: citation
         text: 13:10 Bless ye the Lord, all his elect, keep days of joy, and give glory to him.
       - type: citation
@@ -13795,8 +13977,10 @@ texts:
       - type: citation
         text: 13:17 But thou shalt rejoice in thy children, because they shall all be blessed, and shall be gathered together to the Lord.
       la:
+      - type: heading
+        text: Canticum Tobiæ
       - type: citation
-        text: (Canticum Tobiæ * Tob 13:10-17)
+        text: Tob 13:10-17
       - type: citation
         text: '13:10 Benedícite Dóminum omnes elécti eius: * ágite dies lætítiæ, et confitémini illi.'
       - type: citation
@@ -13815,12 +13999,14 @@ texts:
         text: '13:16 Maledícti erunt qui contémpserint te, et condemnáti erunt omnes qui blasphemáverint te: * benedictíque erunt qui ædificáverint te.'
       - type: citation
         text: 13:17 Tu autem lætáberis in fíliis tuis, * quóniam omnes benedicéntur, et congregabúntur ad Dóminum.
-  psalm.canticum-trium-puerorum-dan-3-52-57-2dee627a78:
+  psalm.canticum-trium-puerorum-dan-3-52-57-27d7882c68:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of the Three Young Men
       - type: citation
-        text: (Canticle of the Three Young Men * Dan 3:52-57)
+        text: Dan 3:52-57
       - type: citation
         text: '3:52 Blessed art thou, O Lord the God of our fathers: * and worthy to be praised, and glorified, and exalted above all for ever:'
       - type: citation
@@ -13836,8 +14022,10 @@ texts:
       - type: citation
         text: '3:58 All ye works of the Lord, bless the Lord: * praise and exalt him above all for ever.'
       la:
+      - type: heading
+        text: Canticum Trium Puerorum
       - type: citation
-        text: (Canticum Trium Puerorum * Dan 3:52-57)
+        text: Dan 3:52-57
       - type: citation
         text: '3:52 Benedíctus es, Dómine, Deus patrum nostrórum: * et laudábilis, et gloriósus, et superexaltátus in sǽcula.'
       - type: citation
@@ -13852,12 +14040,14 @@ texts:
         text: '3:57 Benedíctus es in firmaménto cæli: * et laudábilis, et gloriósus in sǽcula.'
       - type: citation
         text: '3:58 Benedícite, ómnia ópera Dómini, Dómino: * laudáte, et superexaltáte eum in sǽcula.'
-  psalm.canticum-trium-puerorum-dan-3-57-88-56-31c3bfa27c:
+  psalm.canticum-trium-puerorum-dan-3-57-88-56-3f52409fd2:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of the Three Young Men
       - type: citation
-        text: (Canticle of the Three Young Men * Dan 3:57-88,56)
+        text: Dan 3:57-88,56
       - type: citation
         text: '3:57 All ye works of the Lord, bless the Lord: * praise and exalt him above all for ever.'
       - type: citation
@@ -13899,8 +14089,10 @@ texts:
       - type: citation
         text: '3:56 Blessed art thou, O Lord, in the firmament of heaven: * and worthy of praise, and glorious for ever.'
       la:
+      - type: heading
+        text: Canticum Trium Puerorum
       - type: citation
-        text: (Canticum Trium Puerorum * Dan 3:57-88,56)
+        text: Dan 3:57-88,56
       - type: citation
         text: '3:57 Benedícite, ómnia ópera Dómini, Dómino: * laudáte et superexaltáte eum in sǽcula.'
       - type: citation
@@ -13941,12 +14133,14 @@ texts:
         text: '3:75 (Fit reverentia:) Benedicámus Patrem et Fílium cum Sancto Spíritu: * laudémus et superexaltémus eum in sǽcula.'
       - type: citation
         text: '3:56 Benedíctus es, Dómine, in firmaménto cæli: * et laudábilis, et gloriósus, et superexaltátus in sǽcula.'
-  psalm.canticum-zachari-luc-1-68-79-9d57b4ae04:
+  psalm.canticum-zachari-luc-1-68-79-1fcedf672a:
     role: psalm
     content:
       en:
+      - type: heading
+        text: Canticle of Zacharias
       - type: citation
-        text: (Canticle of Zacharias * Luke 1:68-79)
+        text: Luke 1:68-79
       - type: citation
         text: '1:68 Blessed be the Lord + God of Israel; * because he hath visited and wrought the redemption of his people:'
       - type: citation
@@ -13972,8 +14166,10 @@ texts:
       - type: citation
         text: '1:79 To enlighten them that sit in darkness, and in the shadow of death: * to direct our feet into the way of peace.'
       la:
+      - type: heading
+        text: Canticum Zachariæ
       - type: citation
-        text: (Canticum Zachariæ * Luc. 1:68-79)
+        text: Luc. 1:68-79
       - type: citation
         text: '1:68 Benedíctus + Dóminus, Deus Israël: * quia visitávit, et fecit redemptiónem plebis suæ:'
       - type: citation

@@ -1,334 +1,266 @@
 texts:
-  psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-12a0fdc0da:
+  psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-d0d4b66e6f:
     role: psalmody
     content:
       la:
-      - type: citation
-        text: '1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.'
-  psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-6aa3e27887:
-    role: psalmody
-    content:
-      la:
-      - type: citation
-        text: '1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.'
-      - type: citation
-        text: 2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
-      - type: citation
-        text: 3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
+      - type: text
+        text: |-
+          1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.
+          2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
+          3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
       - type: table_row
         label: '4'
       - type: text
         text: 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
-  psalmody.1-c-nite-tuba-in-sion-quia-prope-est-dies-d-mini-8f31d29336:
+  psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-f5dccdd3e3:
     role: psalmody
     content:
-      en:
-      - type: citation
-        text: '1 = Blow ye the trumpet * in Sion, for the day of the Lord is near: behold, he shall come to save us, alleluia, alleluia.'
-      - type: citation
-        text: '2 = Behold, he shall come * the desire of all nations: and the house of the Lord shall be filled with glory, alleluia.'
-      - type: citation
-        text: '3 = The crooked * shall become straight, and the rough ways plain: come, O Lord, and do not tarry, alleluia.'
-      - type: citation
-        text: '4 = The Lord shall come, * go ye out to meet him and say: a mighty Prince, of whose kingdom there shall be no end: God, the Strong One, Ruler, Prince of peace, alleluia, alleluia.'
-      - type: text
-        text: 5 = Thy almighty Word, * O Lord, shall come from the royal throne, alleluia.
       la:
-      - type: citation
-        text: '1 = Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúia, allelúia.'
-      - type: citation
-        text: '2 = Ecce véniet * desiderátus cunctis Géntibus: et replébitur glória domus Dómini, allelúia.'
-      - type: citation
-        text: '3 = Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.'
-      - type: citation
-        text: '4 = Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni eius non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúia, allelúia.'
       - type: text
-        text: 5 = Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúia.
-  psalmody.1-const-ntes-est-te-vid-bitis-aux-lium-d-mini-su-0eee1dafd4:
+        text: '1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.'
+  psalmody.1-c-nite-tuba-in-sion-quia-prope-est-dies-d-mini-fdad16dc6d:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = Stand still * and you shall see the salvation of the Lord.
-      - type: citation
-        text: 2 = Unto thee, O Lord, * lift I up my soul; come and deliver me, O Lord, in thee do I put my trust.
-      - type: citation
-        text: 3 = Come, O Lord, * and make no tarrying; loosen the bonds of thy people Israel.
       - type: text
         text: |-
+          1 = Blow ye the trumpet * in Sion, for the day of the Lord is near: behold, he shall come to save us, alleluia, alleluia.
+          2 = Behold, he shall come * the desire of all nations: and the house of the Lord shall be filled with glory, alleluia.
+          3 = The crooked * shall become straight, and the rough ways plain: come, O Lord, and do not tarry, alleluia.
+          4 = The Lord shall come, * go ye out to meet him and say: a mighty Prince, of whose kingdom there shall be no end: God, the Strong One, Ruler, Prince of peace, alleluia, alleluia.
+          5 = Thy almighty Word, * O Lord, shall come from the royal throne, alleluia.
+      la:
+      - type: text
+        text: |-
+          1 = Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúia, allelúia.
+          2 = Ecce véniet * desiderátus cunctis Géntibus: et replébitur glória domus Dómini, allelúia.
+          3 = Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.
+          4 = Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni eius non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúia, allelúia.
+          5 = Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúia.
+  psalmody.1-const-ntes-est-te-vid-bitis-aux-lium-d-mini-su-8f06c781ef:
+    role: psalmody
+    content:
+      en:
+      - type: text
+        text: |-
+          1 = Stand still * and you shall see the salvation of the Lord.
+          2 = Unto thee, O Lord, * lift I up my soul; come and deliver me, O Lord, in thee do I put my trust.
+          3 = Come, O Lord, * and make no tarrying; loosen the bonds of thy people Israel.
           4 = God shall come from Lebanon, * and his brightness shall be as the light.
           5 = Therefore I shall look unto the Lord, * I shall wait for God my Saviour.
       la:
-      - type: citation
-        text: 1 = Constántes estóte, * vidébitis auxílium Dómini super vos.
-      - type: citation
-        text: '2 = Ad te, Dómine, * levávi ánimam meam: veni, et éripe me, Dómine, ad te confúgi.'
-      - type: citation
-        text: '3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.'
       - type: text
         text: |-
+          1 = Constántes estóte, * vidébitis auxílium Dómini super vos.
+          2 = Ad te, Dómine, * levávi ánimam meam: veni, et éripe me, Dómine, ad te confúgi.
+          3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.
           4 = Deus a Líbano véniet, * et splendor eius sicut lumen erit.
           5 = Ego autem * ad Dóminum aspíciam, et exspectábo Deum, Salvatórem meum.
-  psalmody.1-de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-abb53a2f81:
+  psalmody.1-de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-2b7d6ccb47:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = The Lord, the Almighty, * cometh out of Zion, to save his people.
-      - type: citation
-        text: 2 = Turn thee, O Lord, * at the last, and tarry not to come unto thy servants.
-      - type: citation
-        text: 3 = The Lord that shall rule * shall come forth from Zion, Emmanuel is his name, and his name is great.
       - type: text
         text: |-
+          1 = The Lord, the Almighty, * cometh out of Zion, to save his people.
+          2 = Turn thee, O Lord, * at the last, and tarry not to come unto thy servants.
+          3 = The Lord that shall rule * shall come forth from Zion, Emmanuel is his name, and his name is great.
           4 = Behold, he is my God, * and I will glorify him my father's God, and I will exalt him.
           5 = The Lord our Law-giver, * the Lord our King, he cometh and will save us.
       la:
-      - type: citation
-        text: 1 = De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum.
-      - type: citation
-        text: 2 = Convértere, Dómine, * aliquántulum, et ne tardes veníre ad servos tuos.
-      - type: citation
-        text: 3 = De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
-      - type: citation
-        text: '4 = Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.'
-      - type: text
-        text: 5 = Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
-  psalmody.1-ecce-in-n-bibus-c-li-d-minus-v-niet-cum-potest-2d36a0335a:
-    role: psalmody
-    content:
-      en:
-      - type: citation
-        text: 1 = Behold in the clouds of heaven * the Lord is coming with great power and majesty, alleluia.
-      - type: citation
-        text: '2 = Sion, the city of our strength, * a saviour, a wall and a bulwark shall be set therein: open ye the gates, because God is with us, alleluia.'
-      - type: citation
-        text: '3 = Behold, the Lord shall appear, * and he shall not lie: if he make any delay, wait for him: for he shall surely come, and shall not be slack, alleluia.'
-      - type: citation
-        text: '4 = The mountains and the hills * shall sing praise before God, and all the trees of the country shall clap their hands: for the Lord God shall come into his eternal kingdom, alleluia, alleluia.'
-      - type: text
-        text: 5 = Behold, our Lord * shall come with power, and give light to the eyes of his servants, alleluia.
-      la:
-      - type: citation
-        text: 1 = Ecce in núbibus cæli * Dóminus véniet cum potestáte magna, allelúia.
-      - type: citation
-        text: '2 = Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúia.'
-      - type: citation
-        text: '3 = Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúia.'
-      - type: citation
-        text: '4 = Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúia, allelúia.'
-      - type: text
-        text: 5 = Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúia.
-  psalmody.1-ecce-v-niet-d-minus-princeps-regum-terr-be-ti-461aa562b0:
-    role: psalmody
-    content:
-      en:
-      - type: citation
-        text: '1 = Behold, the Lord cometh, * the Prince of the Kings of the earth: blessed are they that are ready to go forth to meet him.'
-      - type: citation
-        text: 2 = When the Son of man cometh, * shall he find faith on the earth?
-      - type: citation
-        text: 3 = Behold, the fulness * of the time is come, when God sent forth his Son into the world.
       - type: text
         text: |-
+          1 = De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum.
+          2 = Convértere, Dómine, * aliquántulum, et ne tardes veníre ad servos tuos.
+          3 = De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
+          4 = Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.
+          5 = Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
+  psalmody.1-ecce-in-n-bibus-c-li-d-minus-v-niet-cum-potest-2ad0f05d68:
+    role: psalmody
+    content:
+      en:
+      - type: text
+        text: |-
+          1 = Behold in the clouds of heaven * the Lord is coming with great power and majesty, alleluia.
+          2 = Sion, the city of our strength, * a saviour, a wall and a bulwark shall be set therein: open ye the gates, because God is with us, alleluia.
+          3 = Behold, the Lord shall appear, * and he shall not lie: if he make any delay, wait for him: for he shall surely come, and shall not be slack, alleluia.
+          4 = The mountains and the hills * shall sing praise before God, and all the trees of the country shall clap their hands: for the Lord God shall come into his eternal kingdom, alleluia, alleluia.
+          5 = Behold, our Lord * shall come with power, and give light to the eyes of his servants, alleluia.
+      la:
+      - type: text
+        text: |-
+          1 = Ecce in núbibus cæli * Dóminus véniet cum potestáte magna, allelúia.
+          2 = Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúia.
+          3 = Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúia.
+          4 = Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúia, allelúia.
+          5 = Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúia.
+  psalmody.1-ecce-v-niet-d-minus-princeps-regum-terr-be-ti-a11daf8e38:
+    role: psalmody
+    content:
+      en:
+      - type: text
+        text: |-
+          1 = Behold, the Lord cometh, * the Prince of the Kings of the earth: blessed are they that are ready to go forth to meet him.
+          2 = When the Son of man cometh, * shall he find faith on the earth?
+          3 = Behold, the fulness * of the time is come, when God sent forth his Son into the world.
           4 = With joy * shall ye draw water out of the wells of the Saviour.
           5 = The Lord goeth forth * from his holy place; he cometh to save his people.
       la:
-      - type: citation
-        text: '1 = Ecce, véniet * Dóminus princeps regum terræ: beáti, qui paráti sunt occúrrere illi.'
-      - type: citation
-        text: 2 = Cum vénerit * Fílius hóminis, putas, invéniet fidem super terram?
-      - type: citation
-        text: 3 = Ecce, iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
       - type: text
-        text: 4 = Hauriétis aquas * in gáudio de fóntibus Salvatóris.
-      - type: citation
-        text: '5 = Egrediétur * Dóminus de loco sancto suo: véniet, ut salvet pópulum suum.'
-  psalmody.1-in-illa-die-still-bunt-montes-dulc-dinem-et-co-f220327a37:
+        text: |-
+          1 = Ecce, véniet * Dóminus princeps regum terræ: beáti, qui paráti sunt occúrrere illi.
+          2 = Cum vénerit * Fílius hóminis, putas, invéniet fidem super terram?
+          3 = Ecce, iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
+          4 = Hauriétis aquas * in gáudio de fóntibus Salvatóris.
+          5 = Egrediétur * Dóminus de loco sancto suo: véniet, ut salvet pópulum suum.
+  psalmody.1-in-illa-die-still-bunt-montes-dulc-dinem-et-co-a197218495:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = In that day * the mountains shall drop sweetness, and the hills shall flow with milk and honey, alleluia.
-      - type: citation
-        text: 2 = Rejoice greatly, * O daughter of Sion, shout for joy, O daughter of Jerusalem, alleluia.
-      - type: citation
-        text: '3 = Behold the Lord will come, * and all his Saints with him: and in that day there shall be a great light, alleluia.'
-      - type: citation
-        text: '4 = All ye that thirst, * come to the waters: seek the Lord, while he may be found, alleluia.'
       - type: text
-        text: 5 = Behold, there will come * a great Prophet, and he shall renew Jerusalem, alleluia.
+        text: |-
+          1 = In that day * the mountains shall drop sweetness, and the hills shall flow with milk and honey, alleluia.
+          2 = Rejoice greatly, * O daughter of Sion, shout for joy, O daughter of Jerusalem, alleluia.
+          3 = Behold the Lord will come, * and all his Saints with him: and in that day there shall be a great light, alleluia.
+          4 = All ye that thirst, * come to the waters: seek the Lord, while he may be found, alleluia.
+          5 = Behold, there will come * a great Prophet, and he shall renew Jerusalem, alleluia.
       la:
-      - type: citation
-        text: 1 = In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúia.
-      - type: citation
-        text: 2 = Iucundáre, * fília Sion, et exsúlta satis, fília Ierúsalem, allelúia.
-      - type: citation
-        text: '3 = Ecce Dóminus véniet, * et omnes Sancti eius cum eo: et erit in die illa lux magna, allelúia.'
-      - type: citation
-        text: '4 = Omnes sitiéntes, * veníte ad aquas: quærite Dóminum, dum inveníri potest, allelúia.'
       - type: text
-        text: 5 = Ecce véniet * Prophéta magnus, et ipse renovábit Ierúsalem, allelúia.
-  psalmody.1-intu-mini-quam-sit-glori-sus-iste-qui-ingr-dit-f77b38e430:
+        text: |-
+          1 = In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúia.
+          2 = Iucundáre, * fília Sion, et exsúlta satis, fília Ierúsalem, allelúia.
+          3 = Ecce Dóminus véniet, * et omnes Sancti eius cum eo: et erit in die illa lux magna, allelúia.
+          4 = Omnes sitiéntes, * veníte ad aquas: quærite Dóminum, dum inveníri potest, allelúia.
+          5 = Ecce véniet * Prophéta magnus, et ipse renovábit Ierúsalem, allelúia.
+  psalmody.1-intu-mini-quam-sit-glori-sus-iste-qui-ingr-dit-6a99d5ee4c:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = Consider how glorious is the one * who shall bring about the salvation of the peoples.
-      - type: citation
-        text: 2 = His kingdom shall increase, * and of his peace there shall be no end.
-      - type: citation
-        text: 3 = I, the Lord, have brought my justice near, * it shall not be afar off, and my salvation shall not delay.
-      - type: citation
-        text: '4 = May the speech of the Lord be awaited like rain: * and the Lord our God descend like dew upon us.'
       - type: text
-        text: 5 = Let Israel be ready * to go out to meet the Lord, for he is coming.
+        text: |-
+          1 = Consider how glorious is the one * who shall bring about the salvation of the peoples.
+          2 = His kingdom shall increase, * and of his peace there shall be no end.
+          3 = I, the Lord, have brought my justice near, * it shall not be afar off, and my salvation shall not delay.
+          4 = May the speech of the Lord be awaited like rain: * and the Lord our God descend like dew upon us.
+          5 = Let Israel be ready * to go out to meet the Lord, for he is coming.
       la:
-      - type: citation
-        text: 1 = Intuémini, * quam sit gloriósus iste, qui ingréditur ad salvándos pópulos.
-      - type: citation
-        text: 2 = Multiplicábitur * eius impérium, et pacis non erit finis.
-      - type: citation
-        text: 3 = Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
-      - type: citation
-        text: '4 = Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Deus noster.'
       - type: text
-        text: 5 = Parátus esto, * Israël, in occúrsum Dómini, quóniam venit.
-  psalmody.1-l-bera-me-d-mine-et-pone-me-iuxta-te-et-cui-sv-31312ab671:
+        text: |-
+          1 = Intuémini, * quam sit gloriósus iste, qui ingréditur ad salvándos pópulos.
+          2 = Multiplicábitur * eius impérium, et pacis non erit finis.
+          3 = Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
+          4 = Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Deus noster.
+          5 = Parátus esto, * Israël, in occúrsum Dómini, quóniam venit.
+  psalmody.1-l-bera-me-d-mine-et-pone-me-iuxta-te-et-cui-sv-93ec356077:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = Deliver me, O Lord, * and set me beside thee, and any man's hand may fight against me.
-      - type: citation
-        text: 2 = O Lord, thou hast judged * the cause of my soul, thou the Redeemer of my life.
-      - type: citation
-        text: 3 = O my people, * what have I done to thee, or in what have I grieved thee? Testify against me.
+      - type: text
+        text: |-
+          1 = Deliver me, O Lord, * and set me beside thee, and any man's hand may fight against me.
+          2 = O Lord, thou hast judged * the cause of my soul, thou the Redeemer of my life.
+          3 = O my people, * what have I done to thee, or in what have I grieved thee? Testify against me.
       - type: table_row
         label: '4'
       - type: text
         text: 5 = Did they not reward me evil for good? * For they dug a pit for my soul.
       la:
-      - type: citation
-        text: '1 = Líbera me, Dómine, * et pone me iuxta te: et cuiúsvis manus pugnet contra me.'
-      - type: citation
-        text: 2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
-      - type: citation
-        text: 3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
+      - type: text
+        text: |-
+          1 = Líbera me, Dómine, * et pone me iuxta te: et cuiúsvis manus pugnet contra me.
+          2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
+          3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
       - type: table_row
         label: '4'
       - type: text
         text: 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
-  psalmody.1-proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rg-8be2f60a72:
+  psalmody.1-proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rg-da8310e3b1:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = The Prophets foretold * that the Saviour should be born of the Virgin Mary.
-      - type: citation
-        text: 2 = The Spirit of the Lord * is upon me, because he hath anointed me to preach the Gospel to the poor.
-      - type: citation
-        text: 3 = For Zion's sake * will I not hold my peace, until her Righteous One goeth forth as brightness.
-      - type: text
-        text: 4 = Behold, the Lord cometh, * to sit among princes, and to inherit the throne of glory.
-      - type: citation
-        text: '5 = Tell it out among the people, * and say: Behold, God, our Saviour cometh.'
-      la:
-      - type: citation
-        text: 1 = Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María.
-      - type: citation
-        text: 2 = Spíritus * Dómini super me, evangelizáre paupéribus misit me.
-      - type: citation
-        text: 3 = Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
-      - type: text
-        text: 4 = Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ ténuit.
-      - type: citation
-        text: '5 = Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.'
-  psalmody.1-ror-te-c-li-d-super-et-nubes-pluant-iustum-ape-5c93bb4e59:
-    role: psalmody
-    content:
-      en:
-      - type: citation
-        text: '1 = Drop down, ye heavens, from above, * and let the skies pour down the Righteous One: let the earth open and bring forth the Saviour.'
-      - type: citation
-        text: 2 = Send forth the Lamb, O Lord, * the Ruler of the land, from the rock of the wilderness unto the mount of the daughter of Zion.
-      - type: citation
-        text: 3 = That thy way, O Lord, * may be known upon earth, thy saving health among all nations.
       - type: text
         text: |-
+          1 = The Prophets foretold * that the Saviour should be born of the Virgin Mary.
+          2 = The Spirit of the Lord * is upon me, because he hath anointed me to preach the Gospel to the poor.
+          3 = For Zion's sake * will I not hold my peace, until her Righteous One goeth forth as brightness.
+          4 = Behold, the Lord cometh, * to sit among princes, and to inherit the throne of glory.
+          5 = Tell it out among the people, * and say: Behold, God, our Saviour cometh.
+      la:
+      - type: text
+        text: |-
+          1 = Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María.
+          2 = Spíritus * Dómini super me, evangelizáre paupéribus misit me.
+          3 = Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
+          4 = Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ ténuit.
+          5 = Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.
+  psalmody.1-ror-te-c-li-d-super-et-nubes-pluant-iustum-ape-922da112f4:
+    role: psalmody
+    content:
+      en:
+      - type: text
+        text: |-
+          1 = Drop down, ye heavens, from above, * and let the skies pour down the Righteous One: let the earth open and bring forth the Saviour.
+          2 = Send forth the Lamb, O Lord, * the Ruler of the land, from the rock of the wilderness unto the mount of the daughter of Zion.
+          3 = That thy way, O Lord, * may be known upon earth, thy saving health among all nations.
           4 = O Lord, * reward them that wait for thee, and let thy prophets be found faithful.
           5 = The law was given by Moses, * but grace and truth came by Jesus Christ.
       la:
-      - type: citation
-        text: '1 = Roráte, cæli, désuper, * et nubes pluant iustum: aperiátur terra, et gérminet Salvatórem.'
-      - type: citation
-        text: 2 = Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.
-      - type: citation
-        text: 3 = Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
       - type: text
         text: |-
+          1 = Roráte, cæli, désuper, * et nubes pluant iustum: aperiátur terra, et gérminet Salvatórem.
+          2 = Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.
+          3 = Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
           4 = Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
           5 = Lex per Móysen data est; * grátia et véritas per Iesum Christum facta est.
-  psalmody.1-v-niet-d-minus-et-non-tard-bit-et-illumin-bit-e3139ace8b:
+  psalmody.1-v-niet-d-minus-et-non-tard-bit-et-illumin-bit-5fa04192e5:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = The Lord shall come, * and he will not delay; he will bring to light the hidden things of darkness, and will manifest himself to all peoples, alleluia.
-      - type: citation
-        text: 2 = Rejoice Jerusalem, * with great joy, for a Saviour shall come to thee, alleluia.
-      - type: citation
-        text: 3 = I will give salvation in Zion, * and unto Jerusalem my glory, alleluia.
-      - type: citation
-        text: '4 = Every mountain and hill * shall be made low: and the crooked shall become straight, and the rough ways plain: come, O Lord, and do not tarry, alleluia.'
       - type: text
-        text: 5 = Let us live in justice and godliness, * looking for the blessed hope and coming of the Lord, alleluia.
+        text: |-
+          1 = The Lord shall come, * and he will not delay; he will bring to light the hidden things of darkness, and will manifest himself to all peoples, alleluia.
+          2 = Rejoice Jerusalem, * with great joy, for a Saviour shall come to thee, alleluia.
+          3 = I will give salvation in Zion, * and unto Jerusalem my glory, alleluia.
+          4 = Every mountain and hill * shall be made low: and the crooked shall become straight, and the rough ways plain: come, O Lord, and do not tarry, alleluia.
+          5 = Let us live in justice and godliness, * looking for the blessed hope and coming of the Lord, alleluia.
       la:
-      - type: citation
-        text: 1 = Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúia.
-      - type: citation
-        text: 2 = Ierúsalem, gaude * gáudio magno, quia véniet tibi Salvátor, allelúia.
-      - type: citation
-        text: 3 = Dabo in Sion * salútem, et in Ierúsalem glóriam meam, allelúia.
-      - type: citation
-        text: '4 = Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.'
       - type: text
-        text: 5 = Iuste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini.
-  psalmody.1-veni-et-l-bera-nos-deus-noster-83a0e5f9bf:
+        text: |-
+          1 = Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúia.
+          2 = Ierúsalem, gaude * gáudio magno, quia véniet tibi Salvátor, allelúia.
+          3 = Dabo in Sion * salútem, et in Ierúsalem glóriam meam, allelúia.
+          4 = Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.
+          5 = Iuste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini.
+  psalmody.1-veni-et-l-bera-nos-deus-noster-6f8406a21a:
     role: psalmody
     content:
       la:
-      - type: citation
-        text: 1 = Veni et líbera nos, Deus noster.
-      - type: citation
-        text: '3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.'
-      - type: citation
-        text: 3 = Tuam, Dómine, éxcite poténtiam, et veni ad salvándum nos.
+      - type: text
+        text: |-
+          1 = Veni et líbera nos, Deus noster.
+          3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.
+          3 = Tuam, Dómine, éxcite poténtiam, et veni ad salvándum nos.
       - type: table_row
         label: '4'
       - type: text
         text: 5 = In tuo advéntu érue nos, Dómine.
-  psalmody.1-vivo-ego-dicit-d-minus-nolo-mortem-peccat-ris-b2e6ea4b4f:
+  psalmody.1-vivo-ego-dicit-d-minus-nolo-mortem-peccat-ris-520ced6ff5:
     role: psalmody
     content:
       en:
-      - type: citation
-        text: 1 = As I live, * saith the Lord, I have no pleasure in the death of the sinner, but rather that he be converted and live.
-      - type: citation
-        text: 2 = Behold now is the day * of repentance, to redeem sin, and to save the soul.
-      - type: citation
-        text: 3 = Let us prove ourselves * in much patience and fasting, by the armour of justice.
       - type: text
         text: |-
+          1 = As I live, * saith the Lord, I have no pleasure in the death of the sinner, but rather that he be converted and live.
+          2 = Behold now is the day * of repentance, to redeem sin, and to save the soul.
+          3 = Let us prove ourselves * in much patience and fasting, by the armour of justice.
           4 = missing
           5 = With the armour of justice * and in the power of God, let us prove ourselves in much patience.
       la:
-      - type: citation
-        text: '1 = Vivo ego * dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur et vivat.'
-      - type: citation
-        text: 2 = Advenérunt nobis * dies pœniténtiæ ad rediménda peccáta, ad salvándas ánimas.
-      - type: citation
-        text: 3 = Commendémus nosmetípsos * in multa patiéntia, in ieiúniis multis, per arma iustítiæ.
+      - type: text
+        text: |-
+          1 = Vivo ego * dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur et vivat.
+          2 = Advenérunt nobis * dies pœniténtiæ ad rediménda peccáta, ad salvándas ánimas.
+          3 = Commendémus nosmetípsos * in multa patiéntia, in ieiúniis multis, per arma iustítiæ.
       - type: table_row
         label: '4'
       - type: text
@@ -337,7 +269,7 @@ texts:
     role: psalmody
     content:
       la:
-      - type: citation
+      - type: text
         text: 2 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
   psalmody.2-vide-d-mine-afflicti-nem-meam-qu-niam-er-ctus-9264e41afa:
     role: psalmody
@@ -345,14 +277,12 @@ texts:
       la:
       - type: table_row
         label: '1'
-      - type: citation
-        text: 2 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
-      - type: citation
-        text: 2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
-      - type: citation
-        text: 3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
       - type: text
-        text: 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+        text: |-
+          2 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
+          2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
+          3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
+          5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
   psalmody.adi-tor-in-tribulati-nibus-96ae0c581c:
     role: psalmody
     content:

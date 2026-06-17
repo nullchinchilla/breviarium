@@ -30,9 +30,9 @@ offices:
       matins-nocturn-3-versicle: versicle.notum-fecit-d-minus-allel-ia-5d7ef72465
       matins-psalmody: psalmody.d-minus-dixit-ad-me-f-lius-meus-es-tu-ego-h-die-cb220dc6dc
       matins-reading-4: reading.sermo-sancti-le-nis-pap-bc6320eb5d
-      matins-reading-5: reading.div-na-est-enim-auct-ritas-cui-cr-dimus-div-na-e-64bfda82a1
+      matins-reading-5: reading.div-na-est-enim-auct-ritas-cui-cr-dimus-div-na-e-2fee5d08b8
       matins-reading-6: reading.in-utr-que-ergo-nat-ra-idem-est-dei-f-lius-nostr-ac56bec287
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-00213e9a3e
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-fed269f967
       matins-reading-8: reading.sed-qu-niam-prona-quadam-cupidit-te-pecc-ndi-hum-dec84ffc6c
       matins-reading-9: reading.solus-enim-per-mnia-ex-natis-de-f-mina-sanctus-d-f6e16c0242
       matins-responsory-1: responsory.ecce-agnus-dei-ecce-qui-tollit-pecc-ta-mundi-ecc-795d706ac7
@@ -60,13 +60,13 @@ offices:
     common: sanctoral/12-26
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-prim-tias-m-rtyru-26ac1fa2bf
-      matins-reading-1: reading.de-actibus-apostolorum-4c74df0bf6
-      matins-reading-2: reading.acts-7-55-58-5d20cc1080
-      matins-reading-3: reading.acts-7-59-8-1-2-ea2116fa65
+      matins-reading-1: reading.de-actibus-apostolorum-008b6c904d
+      matins-reading-2: reading.acts-7-55-58-70f1628715
+      matins-reading-3: reading.acts-7-59-8-1-2-0486ca8389
       matins-reading-3-abbreviated: reading.sermo-sancti-august-ni-ep-scopi-37dc91f816
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-1517ccf081
       matins-reading-5: reading.christus-ergo-caput-m-rtyrum-prior-passus-est-pr-98f2ee7876
-      matins-reading-6: reading.qui-cum-lapidar-tur-non-solum-non-exspect-bat-de-dd892702ce
+      matins-reading-6: reading.qui-cum-lapidar-tur-non-solum-non-exspect-bat-de-a493132c86
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-343bf4bcda
       matins-reading-8: reading.ecce-relinqu-tur-vobis-domus-vestra-des-rta-hoc-5009d38239
       matins-reading-9: reading.dico-enim-vobis-non-me-vid-bitis-modo-donec-dic-29d84340d3
@@ -86,9 +86,9 @@ offices:
       prefatio: Apostolis
     common: sanctoral/12-27
     slots:
-      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-dd4e4d50df
-      matins-reading-2: reading.apo-4-5-8-1754914a4b
-      matins-reading-3: reading.apo-4-8-11-62629fdfdf
+      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-58a999f06c
+      matins-reading-2: reading.apo-4-5-8-1fcd59f0bf
+      matins-reading-3: reading.apo-4-8-11-2401b3179c
       matins-reading-3-abbreviated: reading.ex-tractatu-sancti-august-ni-ep-scopi-in-io-nnem-843b0b2baa
       matins-reading-4: reading.ex-tractatu-sancti-august-ni-ep-scopi-in-io-nnem-58cb3fc100
       matins-reading-5: reading.huic-tant-sublimit-ti-princ-pii-tiam-c-tera-c-ng-f8bd6cc2c3
@@ -197,13 +197,13 @@ offices:
       matins-nocturn-2-versicle: versicle.reges-tharsis-et-nsul-m-nera-fferent-13f86c7914
       matins-nocturn-3-versicle: versicle.ador-te-d-minum-allel-ia-3d08b46d6d
       matins-psalmody: psalmody.aff-rte-d-mino-f-lii-dei-ador-te-d-minum-in-aula-b4f7957117
-      matins-reading-1: reading.de-isa-a-proph-ta-1d4bede202
-      matins-reading-2: reading.isa-60-1-6-4be42cf939
-      matins-reading-3: reading.isa-61-10-11-62-1-2270c17504
+      matins-reading-1: reading.de-isa-a-proph-ta-d910008676
+      matins-reading-2: reading.isa-60-1-6-eb8c70a80b
+      matins-reading-3: reading.isa-61-10-11-62-1-459f8a288b
       matins-reading-4: reading.sermo-sancti-le-nis-pap-fd148b3af9
       matins-reading-5: reading.nam-et-s-v-tia-her-dis-volens-prim-rdia-susp-cti-fc630852d7
       matins-reading-6: reading.agnosc-mus-ergo-dilect-ssimi-in-magis-adorat-rib-491805460c
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-573ee43a37
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-818739478a
       matins-reading-8: reading.et-not-ndum-quod-redempt-rem-nostrum-cum-iam-per-8bb9bed2fa
       matins-reading-9: reading.omnia-quippe-elem-nta-auct-rem-suum-ven-sse-test-05884a025f
       matins-responsory-1: responsory.h-die-in-iord-ne-baptiz-to-d-mino-ap-rti-sunt-c-17eb371679
@@ -279,7 +279,7 @@ offices:
       matins-reading-6: reading.iam-vero-quod-adem-stella-qu-magos-perd-xit-ad-l-2f9dd0615d
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-0d6a46dd5f
       matins-reading-8: reading.et-sunt-nonnulli-qui-hunc-et-deum-et-regem-fat-n-628473bf86
-      matins-reading-9: reading.quamvis-in-auro-thure-et-myrrha-intelligi-et-ali-5b0a4fcd47
+      matins-reading-9: reading.quamvis-in-auro-thure-et-myrrha-intelligi-et-ali-abaa46d0a4
       matins-responsory-1: responsory.tria-sunt-m-nera-preti-sa-qu-obtul-runt-magi-d-m-9689dbf03d
       matins-responsory-2: responsory.in-col-mb-sp-cie-sp-ritus-sanctus-visus-est-pat-de51c1d8f1
       matins-responsory-3: responsory.reges-tharsis-et-nsul-m-nera-fferent-04202af32b
@@ -303,7 +303,7 @@ offices:
       matins-reading-6: reading.dedit-ergo-aspici-ntibus-intell-ctum-qui-pr-stit-e2ea923ed9
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-0144d91885
       matins-reading-8: reading.per-aliam-ergo-viam-ad-regi-nem-nostram-regr-dim-be48863bf4
-      matins-reading-9: reading.puni-mus-fletibus-culpas-et-cum-psalmist-voce-pr-2344ed1d29
+      matins-reading-9: reading.puni-mus-fletibus-culpas-et-cum-psalmist-voce-pr-185e3409a1
       matins-responsory-1: responsory.tria-sunt-m-nera-preti-sa-qu-obtul-runt-magi-d-m-9689dbf03d
       matins-responsory-2: responsory.in-col-mb-sp-cie-sp-ritus-sanctus-visus-est-pat-de51c1d8f1
       matins-responsory-3: responsory.reges-tharsis-et-nsul-m-nera-fferent-04202af32b
@@ -385,9 +385,9 @@ offices:
       matins-reading-4: reading.sermo-sancti-le-nis-pap-ede62d083a
       matins-reading-5: reading.in-quo-f-dei-nostr-magnum-pr-s-dium-provid-ntia-e5acfec160
       matins-reading-6: reading.ad-robor-ndam-ergo-hanc-fidem-qu-contra-omnes-pr-e6d8828b96
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-f1021d915a
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-cea8981a29
       matins-reading-8: reading.nisi-enim-res-ita-se-hab-ret-cum-mnia-qu-istic-v-02d3006d1f
-      matins-reading-9: reading.et-resp-nso-acc-pto-in-somnis-ne-red-rent-ad-her-413bd5642b
+      matins-reading-9: reading.et-resp-nso-acc-pto-in-somnis-ne-red-rent-ad-her-49791d78b9
       matins-responsory-1: responsory.h-die-in-iord-ne-baptiz-to-d-mino-ap-rti-sunt-c-17eb371679
       matins-responsory-2: responsory.in-col-mb-sp-cie-sp-ritus-sanctus-visus-est-pat-de51c1d8f1
       matins-responsory-3: responsory.reges-tharsis-et-nsul-m-nera-fferent-04202af32b
@@ -445,7 +445,7 @@ offices:
       matins-reading-6: reading.asc-ndit-iesus-de-aqua-secum-quod-mmodo-dem-rsum-3a11cfa30f
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-aab2923ede
       matins-reading-8: reading.quid-ergo-per-col-mbam-d-dicit-ne-mendax-p-stea-4480e1a797
-      matins-reading-9: reading.ipsi-sancti-intell-gite-fratres-boni-pertin-ntes-aae56472b8
+      matins-reading-9: reading.ipsi-sancti-intell-gite-fratres-boni-pertin-ntes-1a29ca9a62
       matins-responsory-1: responsory.h-die-in-iord-ne-baptiz-to-d-mino-ap-rti-sunt-c-17eb371679
       matins-responsory-2: responsory.in-col-mb-sp-cie-sp-ritus-sanctus-visus-est-pat-de51c1d8f1
       matins-responsory-3: responsory.reges-tharsis-et-nsul-m-nera-fferent-04202af32b
@@ -461,7 +461,7 @@ offices:
     - 12-lectiones
     common: commons/c4
     slots:
-      matins-reading-3-abbreviated: reading.hil-rius-in-aquit-nia-n-bili-g-nere-natus-doctr-28d560bd8f
+      matins-reading-3-abbreviated: reading.hil-rius-in-aquit-nia-n-bili-g-nere-natus-doctr-475c37b15f
       matins-reading-4: reading.hil-rius-in-aquit-nia-n-bili-g-nere-natus-doctr-a65cd6906e
       matins-reading-5: reading.quadri-nnio-post-co-cto-conc-lio-ad-sel-uciam-is-a1f14d9e5f
       matins-reading-6: reading.magna-de-nceps-tranquillit-te-pictav-rum-eccl-si-6c081d6025
@@ -553,9 +553,9 @@ offices:
       lauds-versicle: versicle.ex-ltent-eum-in-eccl-sia-plebis-1417d40011
       matins-hymn: hymn.quodc-mque-in-orbe-n-xibus-rev-nxeris-94c27abac4
       matins-invitatory: invitatory.tu-es-pastor-vium-princeps-apostol-rum-tibi-tr-d-e514990254
-      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-233c1b1a39
-      matins-reading-2: reading.1-pet-1-6-9-3e6766ffd1
-      matins-reading-3: reading.1-pet-1-10-12-171c78636a
+      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-2a3021c6f6
+      matins-reading-2: reading.1-pet-1-6-9-a8a13b0fca
+      matins-reading-3: reading.1-pet-1-10-12-ca0f082d90
       matins-reading-4: reading.sermo-sancti-le-nis-pap-e6d8f4edfd
       matins-reading-5: reading.hic-conculc-nd-philosoph-opini-nes-hic-dissolv-n-4606797fa3
       matins-reading-6: reading.iam-p-pulos-qui-ex-circumcisi-ne-cred-derant-eru-d5bc835b71
@@ -614,7 +614,7 @@ offices:
       matins-reading-5: reading.his-aliisque-virtutibus-imbutus-ad-supremum-perf-47f96a80eb
       matins-reading-6: reading.sciens-igitur-rex-futurorum-pr-scius-mortem-sibi-95676aceb4
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-137966506c
-      matins-reading-8: reading.certe-cum-se-sequ-ntibus-nova-mand-ta-prop-neret-57cbf8c018
+      matins-reading-8: reading.certe-cum-se-sequ-ntibus-nova-mand-ta-prop-neret-2328630ef5
       matins-reading-9: reading.ad-se-autem-nobis-veni-ntibus-d-minus-pr-c-pit-u-28b12df2b5
       title: note.s-canuti-regis-et-martyrum-30ab63e0eb
   01-20:
@@ -716,8 +716,8 @@ offices:
       lauds-psalmody: psalmody.despons-tio-glori-s-v-rginis-mar-ex-s-mine-abrah-4102826fa0
       lauds-versicle: versicle.despons-tio-est-h-die-sanct-mar-v-rginis-1c32052af1
       matins-invitatory: invitatory.desponsati-nem-v-rginis-mari-celebremus-christum-d537bbd2d2
-      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-b44b8fe96e
-      matins-reading-2: reading.cant-1-5-9-585c4a1b94
+      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-4ffa10a3a8
+      matins-reading-2: reading.cant-1-5-9-482ff5ebb1
       matins-reading-3: reading.cant-1-10-16-0d139394bf
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-1c8cf26182
       matins-reading-5: reading.conveniens-ergo-erat-ut-suaviter-quoque-mnia-c-l-2be0131871
@@ -757,7 +757,7 @@ offices:
       matins-reading-3-abbreviated: reading.tim-theus-lystris-in-lyca-nia-natus-ex-patre-gen-cac2a01999
       matins-reading-4: reading.tim-theus-lystris-in-lyca-nia-natus-ex-patre-gen-f0e7867171
       matins-reading-5: reading.ad-quem-ap-stolus-duas-ep-stolas-scripsit-lteram-6e2fb771b9
-      matins-reading-6: reading.sermo-sancti-august-ni-ep-scopi-6e33123775
+      matins-reading-6: reading.sermo-sancti-august-ni-ep-scopi-fc3d9ce165
       title: note.s-timothei-episcopi-et-martyris-94e3f1150c
   01-25:
     rank:
@@ -774,10 +774,10 @@ offices:
       lauds-gospel-antiphon: antiphon.vos-qui-sec-ti-estis-me-sed-bitis-super-sedes-iu-330863e878
       lauds-psalmody: psalmody.ego-plant-vi-ap-llo-rig-vit-deus-autem-increm-nt-0ae849f3b7
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-conversi-ne-doct-ris-g-e80f213384
-      matins-reading-1: reading.de-actibus-apostol-rum-a8cf026814
-      matins-reading-2: reading.act-9-6-9-e96094c5a3
-      matins-reading-3: reading.act-9-10-16-8ac3f284d8
-      matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-d8ab4476e7
+      matins-reading-1: reading.de-actibus-apostol-rum-eb5dca40df
+      matins-reading-2: reading.act-9-6-9-f95b9ba9bf
+      matins-reading-3: reading.act-9-10-16-ea979a04ec
+      matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-9c264d93f0
       matins-reading-5: reading.quid-ergo-lupus-rapax-semper-absit-sed-qui-mane-abce554e19
       matins-reading-6: reading.ibat-spirans-et-anh-lans-c-des-hoc-est-mane-r-pi-69eeb61ca4
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-cd606066ed
@@ -801,9 +801,9 @@ offices:
     - psalmi-dominica
     common: sanctoral/01-25
     slots:
-      matins-reading-1: reading.de-actibus-apostol-rum-a8cf026814
-      matins-reading-2: reading.act-9-6-9-e96094c5a3
-      matins-reading-4: reading.act-9-10-16-10cb8af654
+      matins-reading-1: reading.de-actibus-apostol-rum-eb5dca40df
+      matins-reading-2: reading.act-9-6-9-f95b9ba9bf
+      matins-reading-4: reading.act-9-10-16-406f408391
       matins-responsory-1: responsory.qui-oper-tus-est-petro-in-apostol-tum-oper-tus-e-e94936a913
       matins-responsory-3: responsory.bonum-cert-men-cert-vi-cursum-consumm-vi-fidem-s-982281ed1b
       title: note.in-conversione-s-pauli-apostoli-ff649af94f
@@ -816,8 +816,8 @@ offices:
     common: commons/c2-1
     slots:
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-a7bf2dfaf0
-      matins-reading-5: reading.de-expositione-sancti-ambr-sii-ep-scopi-in-psalm-b47e0f09bc
-      matins-reading-6: reading.vere-frustra-impugnatur-qui-apud-impios-et-infid-007aff8ad8
+      matins-reading-5: reading.de-expositione-sancti-ambr-sii-ep-scopi-in-psalm-7f42d96732
+      matins-reading-6: reading.vere-frustra-impugnatur-qui-apud-impios-et-infid-55def52971
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-466cc8f7d0
       matins-reading-8: reading.taque-id-quod-a-se-dictum-est-cum-libert-te-f-de-aae6fd34a7
       matins-reading-9: reading.nol-te-tim-re-eos-qui-occ-dunt-corpus-nullus-git-f01a7470a6
@@ -944,7 +944,7 @@ offices:
       matins-reading-3-abbreviated: reading.io-nnes-bosco-h-mili-loco-natus-post-rumn-sam-in-a4d95a8553
       matins-reading-4: reading.io-nnes-bosco-humili-loco-natus-apud-castum-novu-69407cfd55
       matins-reading-5: reading.voti-tandem-compos-effectus-cheriensem-civit-tem-3215eda2c0
-      matins-reading-6: reading.anim-rum-enim-studio-flagrans-nulli-pep-rcit-lab-781a1330b2
+      matins-reading-6: reading.anim-rum-enim-studio-flagrans-nulli-pep-rcit-lab-16f2a802b8
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-4aa9c3068e
       matins-reading-8: reading.improbus-inquis-difficile-toler-tur-atque-ideo-d-368310c11d
       matins-reading-9: reading.nihil-quippe-tam-preti-sum-est-quam-nima-quid-en-e1a76d2a8a
@@ -981,14 +981,14 @@ offices:
       lauds-gospel-antiphon: antiphon.cum-ind-cerent-p-erum-iesum-par-ntes-eius-acc-pi-40a58b4638
       lauds-psalmody: psalmody.s-meon-iustus-et-timor-tus-exspect-bat-redempti-8b0d085831
       matins-invitatory: invitatory.ecce-venit-ad-templum-sanctum-suum-domin-tor-d-m-c10f55d637
-      matins-reading-1: reading.de-libro-exodi-82deb6b335
-      matins-reading-2: reading.de-libro-lev-tici-671c3bbbc1
-      matins-reading-3: reading.lev-12-6-8-6dcf7bd88f
+      matins-reading-1: reading.de-libro-exodi-f6e7535fcf
+      matins-reading-2: reading.de-libro-lev-tici-dbe5b7430e
+      matins-reading-3: reading.lev-12-6-8-e975b35375
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-9d26b871de
       matins-reading-5: reading.differeb-tur-ex-re-de-s-culo-ut-vid-ret-natum-pe-244a62d1b6
-      matins-reading-6: reading.in-isto-quidem-s-culo-diu-esse-nol-bat-et-christ-63f2af9204
+      matins-reading-6: reading.in-isto-quidem-s-culo-diu-esse-nol-bat-et-christ-40efc8fdbf
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-2a5d7c441a
-      matins-reading-8: reading.et-bene-iustus-qui-non-suam-sed-p-puli-gr-tiam-r-e5a0b2c899
+      matins-reading-8: reading.et-bene-iustus-qui-non-suam-sed-p-puli-gr-tiam-r-3816e449c4
       matins-reading-9: reading.sed-qui-vult-dim-tti-v-niat-in-templum-v-niat-in-70b648dcbc
       matins-responsory-1: responsory.ad-rna-th-lamum-tuum-sion-et-s-scipe-regem-chris-20909ae851
       matins-responsory-2: responsory.postquam-impl-ti-sunt-dies-purgati-nis-mar-sec-n-7d5578ce43
@@ -1108,8 +1108,8 @@ offices:
     slots:
       collect: collect.deus-qui-be-tum-titum-confess-rem-tuum-atque-pon-2e6bb18540
       matins-reading-3-abbreviated: reading.titus-cret-nsium-ep-scopus-qui-inter-disc-pulos-1e00a72cac
-      matins-reading-4: reading.titus-cretensium-episcopum-vix-pauli-ap-stoli-ve-ff4bb807a4
-      matins-reading-5: reading.quam-ob-rem-corinthum-ab-ap-stolo-missus-ea-sapi-c3f06cb985
+      matins-reading-4: reading.titus-cretensium-episcopum-vix-pauli-ap-stoli-ve-eda490ee56
+      matins-reading-5: reading.quam-ob-rem-corinthum-ab-ap-stolo-missus-ea-sapi-e450816508
       matins-reading-6: reading.itaque-tamquam-luc-rna-inter-eos-qui-in-idololat-8211e1865a
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
@@ -1244,9 +1244,9 @@ offices:
       matins-nocturn-2-versicle: versicle.adiuv-bit-eam-deus-vultu-suo-8a0513bb35
       matins-nocturn-3-versicle: versicle.diff-sa-est-gr-tia-in-l-biis-tuis-c903bc6010
       matins-psalmody: psalmody.ave-gr-tia-plena-d-minus-tecum-7b4a804481
-      matins-reading-1: reading.de-par-bolis-salom-nis-092cd43882
-      matins-reading-2: reading.prov-8-18-25-d2e5088264
-      matins-reading-3: reading.prov-8-34-36-9-1-5-ebf9b6a3e5
+      matins-reading-1: reading.de-par-bolis-salom-nis-5f689711a2
+      matins-reading-2: reading.prov-8-18-25-baacc30103
+      matins-reading-3: reading.prov-8-34-36-9-1-5-869ef7d1b5
       matins-reading-3-abbreviated: reading.anno-quarto-a-dogm-tica-definiti-ne-de-immacul-t-c9345c7000
       matins-reading-4: reading.anno-quarto-a-dogm-tica-definiti-ne-de-immacul-t-711399b5be
       matins-reading-5: reading.percrebresc-nte-fama-benefici-rum-qu-in-sacro-sp-08b5a5a635
@@ -1392,14 +1392,14 @@ offices:
       lauds-versicle: versicle.ex-ltent-eum-in-eccl-sia-plebis-1417d40011
       matins-hymn: hymn.quodc-mque-in-orbe-n-xibus-rev-nxeris-94c27abac4
       matins-invitatory: invitatory.tu-es-pastor-vium-princeps-apostol-rum-tibi-tr-d-e514990254
-      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-233c1b1a39
-      matins-reading-2: reading.1-pet-1-6-9-3e6766ffd1
-      matins-reading-3: reading.1-pet-1-10-12-171c78636a
+      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-2a3021c6f6
+      matins-reading-2: reading.1-pet-1-6-9-a8a13b0fca
+      matins-reading-3: reading.1-pet-1-10-12-ca0f082d90
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-079a6d67c5
       matins-reading-5: reading.petrum-taque-fundam-ntum-eccl-si-d-minus-nomin-v-cb456fe093
       matins-reading-6: reading.quod-nat-lis-ergo-c-thedr-h-die-c-litur-sacerdot-5a43561401
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2008cdc920
-      matins-reading-8: reading.et-ego-inquit-dico-tibi-hoc-est-sicut-pater-meus-c014d1f2ac
+      matins-reading-8: reading.et-ego-inquit-dico-tibi-hoc-est-sicut-pater-meus-7393026e72
       matins-reading-9: reading.hanc-confessi-nem-port-nferi-non-ten-bunt-mortis-3319963e4c
       matins-responsory-1: responsory.simon-petre-ntequam-de-navi-voc-rem-te-novi-te-e-a8c4b42073
       matins-responsory-2: responsory.si-d-ligis-me-simon-petre-pasce-oves-meas-d-mine-6c9beaa2d5
@@ -1453,9 +1453,9 @@ offices:
     common: commons/c1
     slots:
       collect: collect.deus-qui-be-tum-matth-am-apostol-rum-tu-rum-coll-300cd6f823
-      matins-reading-1: reading.de-actibus-apostol-rum-2ae656c0b5
-      matins-reading-2: reading.acts-1-19-22-59cf27f826
-      matins-reading-3: reading.acts-1-23-26-51cc74841c
+      matins-reading-1: reading.de-actibus-apostol-rum-56191ca56f
+      matins-reading-2: reading.acts-1-19-22-0d25e9622d
+      matins-reading-3: reading.acts-1-23-26-708f27f2d8
       matins-reading-4: reading.de-expositi-ne-sancti-august-ni-ep-scopi-super-p-888f963ec6
       matins-reading-5: reading.si-du-decim-sell-ibi-sunt-non-est-ubi-s-deat-t-r-c614cd168f
       matins-reading-6: reading.et-deo-quia-ndique-ven-tur-ad-iudic-ndum-du-deci-a620037a31
@@ -1588,7 +1588,7 @@ offices:
     common: commons/c7b
     slots:
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-beat-rum-pe-7857cfe4c0
-      matins-reading-1: reading.de-libro-ecclesi-stici-54dad62329
+      matins-reading-1: reading.de-libro-ecclesi-stici-ea32a7c655
       matins-reading-3-abbreviated: reading.perp-tua-et-fel-citas-in-persecuti-ne-sev-ri-imp-b8290a748e
       matins-reading-4: reading.perpetua-et-felicitas-in-persecutione-severi-imp-d0eeb462c6
       matins-reading-5: reading.felicitas-vero-instante-spectaculo-die-cum-octo-aa13f0b31e
@@ -1617,7 +1617,7 @@ offices:
     common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-thom-confess-ris-t-2f7c08d936
-      matins-reading-3-abbreviated: reading.thomas-aqu-nas-nob-libus-par-ntibus-natus-iam-ad-2bc0fbb846
+      matins-reading-3-abbreviated: reading.thomas-aqu-nas-nob-libus-par-ntibus-natus-iam-ad-0e35e23bb0
       matins-reading-4: reading.pr-cl-rum-christi-ni-orbis-decus-et-eccl-si-lume-0a4034485a
       matins-reading-5: reading.emissus-e-castro-per-fenestram-neapolim-red-citu-235e61da8b
       matins-reading-6: reading.a-summo-pontifice-urbano-quarto-romam-vocatus-ei-1e6d3d7dc3
@@ -1635,8 +1635,8 @@ offices:
       matins-reading-4: reading.io-nnes-de-deo-ex-catholicis-piisque-par-ntibus-d38ef6bb47
       matins-reading-5: reading.paup-ribus-grotis-quos-propriis-quandoque-humeri-6872245af0
       matins-reading-6: reading.multiplici-asperit-tum-genere-demiss-ssima-obedi-13ba712059
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-aedfceb333
-      matins-reading-8: reading.quam-ob-rem-simile-est-huic-qu-niam-hoc-illud-in-8a90572d8c
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-7d41705a3d
+      matins-reading-8: reading.quam-ob-rem-simile-est-huic-qu-niam-hoc-illud-in-08f77a1546
       matins-reading-9: reading.si-ergo-diligere-deum-diligere-proximum-est-nam-02798e3f1b
       title: note.s-ioannis-de-deo-confessoris-6ea6195ed0
   03-09:
@@ -1649,7 +1649,7 @@ offices:
     slots:
       collect: collect.deus-qui-be-tam-franc-scam-f-mulam-tuam-inter-c-5449f89cc8
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-t-franc-78a2a1ac2b
-      matins-reading-1: reading.de-par-bolis-salom-nis-134e6b720d
+      matins-reading-1: reading.de-par-bolis-salom-nis-c5fbb67c9c
       matins-reading-3-abbreviated: reading.franc-sca-n-bilis-matr-na-rom-na-ndecim-annos-na-9772588bec
       matins-reading-4: reading.francisca-nobilis-matrona-romana-ab-ineunte-tate-deb2f20908
       matins-reading-5: reading.viro-defuncto-ad-pr-dictam-oblatarum-domum-convo-4195c59797
@@ -1680,9 +1680,9 @@ offices:
     common: commons/c4a
     slots:
       collect: collect.deus-qui-nim-f-muli-tui-greg-rii-t-rn-beatit-din-920e36c8c9
-      matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
+      matins-reading-1: reading.de-libro-ecclesi-stici-c952db4d7a
       matins-reading-3-abbreviated: reading.greg-rius-magnus-rom-nus-gordi-ni-senat-ris-f-li-2612dc4e7d
-      matins-reading-4: reading.greg-rius-magnus-rom-nus-gordi-ni-senat-ris-f-li-4170c943fc
+      matins-reading-4: reading.greg-rius-magnus-rom-nus-gordi-ni-senat-ris-f-li-f3c9254534
       matins-reading-5: reading.romam-r-diens-pel-gio-pestil-ntia-subl-to-summo-6832725c0a
       matins-reading-6: reading.eccl-siam-orn-vit-sanct-ssimis-instit-tis-et-l-g-24a30bfe73
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-e34529e706
@@ -1749,7 +1749,7 @@ offices:
       matins-reading-4: reading.cyrillus-hierosolymitanus-a-teneris-annis-divina-2a405f4e11
       matins-reading-5: reading.in-episcopatu-iniurias-multas-et-calamitates-non-c299feaa3a
       matins-reading-6: reading.venerandi-huius-pr-sulis-sanctitatem-c-lestibus-8c16c33429
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-81f7ccc341
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-7f85ebfb6b
       matins-reading-8: reading.h-c-cum-scirent-sancti-eiusmodi-tenu-runt-su-con-37e58c8ae0
       title: note.s-cyrilli-episcopi-hierosolymitani-confessoris-e-56f41bb0cd
   03-19:
@@ -1776,9 +1776,9 @@ offices:
       matins-nocturn-2-versicle: versicle.magna-est-gl-ria-eius-in-salut-ri-tuo-9e5a83791b
       matins-nocturn-3-versicle: versicle.iustus-germin-bit-sicut-l-lium-41249fe3a2
       matins-psalmody: psalmody.asc-ndit-ioseph-a-galil-a-de-civit-te-n-zareth-i-3abfaf7d6f
-      matins-reading-1: reading.de-libro-g-nesis-7e6efa4f4b
-      matins-reading-2: reading.gen-41-37-40-7b2779ffd7
-      matins-reading-3: reading.gen-41-41-44-094deff1ab
+      matins-reading-1: reading.de-libro-g-nesis-dcb0a54d3a
+      matins-reading-2: reading.gen-41-37-40-097542b049
+      matins-reading-3: reading.gen-41-41-44-6df0ee45a7
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-29c34d1ce6
       matins-reading-5: reading.s-quidem-ille-ioseph-frat-rna-ex-inv-dia-v-nditu-a71afd20a7
       matins-reading-6: reading.ille-frum-nta-serv-vit-non-sibi-sed-omni-p-pulo-53a802bcb4
@@ -1832,12 +1832,12 @@ offices:
     - 9-lectiones
     common: commons/c5b
     slots:
-      matins-reading-1: reading.de-libro-ecclesiastici-42fa06f481
-      matins-reading-2: reading.sir-44-6-9-55a9e6e926
-      matins-reading-3: reading.sir-44-10-15-a8caaa5c51
+      matins-reading-1: reading.de-libro-ecclesiastici-402b97bd81
+      matins-reading-2: reading.sir-44-6-9-31a1db65db
+      matins-reading-3: reading.sir-44-10-15-c202c595a6
       matins-reading-3-abbreviated: reading.bened-ctus-n-rsi-n-bili-g-nere-ortus-rom-liber-l-8629b9fd08
       matins-reading-4: reading.bened-ctus-n-rsi-n-bili-g-nere-ortus-rom-liber-l-7becb6edce
-      matins-reading-5: reading.sed-cum-multi-ad-eum-quot-die-disc-puli-conven-r-05024d108c
+      matins-reading-5: reading.sed-cum-multi-ad-eum-quot-die-disc-puli-conven-r-2c67cefd6c
       matins-reading-6: reading.qui-liquot-m-nsibus-ntequam-e-vita-migr-ret-pr-m-4c30c22db3
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-d4780dec2b
       matins-reading-8: reading.in-regenerati-ne-cum-s-derit-f-lius-h-minis-in-s-42927b55ad
@@ -1873,9 +1873,9 @@ offices:
       matins-hymn: hymn.christe-sanct-rum-decus-angel-rum-9668d31ce4
       matins-invitatory: invitatory.regem-archangel-rum-d-minum-ven-te-ador-mus-1809f1152c
       matins-psalmody: psalmody.dixit-angelus-g-briel-ad-dani-lem-int-llige-f-li-6915cec0d9
-      matins-reading-1: reading.de-dani-le-proph-ta-4f433556c5
-      matins-reading-2: reading.dan-9-24-25-b3ae1cc26c
-      matins-reading-3: reading.dan-9-26-27-0548bcf526
+      matins-reading-1: reading.de-dani-le-proph-ta-0813e0af7e
+      matins-reading-2: reading.dan-9-24-25-61efda8116
+      matins-reading-3: reading.dan-9-26-27-ded26d1a99
       matins-reading-3-abbreviated: reading.sermo-sancti-bed-vener-bilis-presb-teri-c7310016e4
       matins-reading-4: reading.sermo-sancti-bed-vener-bilis-presb-teri-ba5ee23320
       matins-reading-5: reading.angelus-deprecati-nem-dicens-exaud-tam-partum-co-1b1feac2fa
@@ -1917,9 +1917,9 @@ offices:
       lauds-psalmody: psalmody.missus-est-g-briel-angelus-ad-mar-am-v-rginem-de-5eec18e4a2
       lauds-versicle: versicle.ave-mar-a-gr-tia-plena-allel-ia-d9a5fbc320
       matins-invitatory: invitatory.ave-mar-a-gr-tia-plena-d-minus-tecum-allel-ia-aa44f78a74
-      matins-reading-1: reading.de-isa-a-proph-ta-35bb923733
-      matins-reading-2: reading.isa-11-1-5-891b265d7f
-      matins-reading-3: reading.isa-35-1-7-433398d6c8
+      matins-reading-1: reading.de-isa-a-proph-ta-48f6239f34
+      matins-reading-2: reading.isa-11-1-5-3c2d08c0f6
+      matins-reading-3: reading.isa-35-1-7-de2af3bd8b
       matins-reading-4: reading.sermo-sancti-le-nis-pap-7e6fd89b70
       matins-reading-5: reading.nam-quia-gloriab-tur-di-bolus-h-minem-sua-fraude-e787473dce
       matins-reading-6: reading.adveni-ntibus-ergo-temp-ribus-dilect-ssimi-qu-re-93c1838777
@@ -1958,8 +1958,8 @@ offices:
     slots:
       collect: collect.omn-potens-sempit-rne-deus-qui-ad-cultum-sacr-ru-386e281696
       lauds-versicle: versicle.text-3c241b111f
-      matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
-      matins-reading-2: reading.sir-39-6-10-1a015191a1
+      matins-reading-1: reading.de-libro-ecclesi-stici-c952db4d7a
+      matins-reading-2: reading.sir-39-6-10-8b7d7dbf94
       matins-reading-3: reading.sir-39-11-14-ab86655c2f
       matins-reading-4: reading.io-nnes-a-p-trio-loco-damascenus-dictus-nobili-g-accd1ecf71
       matins-reading-5: reading.in-religi-ne-vit-pal-stra-pr-clari-ra-virt-tum-e-193aa23322
@@ -1995,9 +1995,9 @@ offices:
       matins-reading-4: reading.ioannes-capistrani-in-pelignis-ortus-et-perusium-a46152cdfe
       matins-reading-5: reading.pr-dicationi-verbi-dei-sedulo-incumbens-italiam-57c8f44179
       matins-reading-6: reading.cum-callistus-tertius-ipso-potissimum-deprecante-fce13ce4f8
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-f01ca4fdce
-      matins-reading-8: reading.omnibus-his-modis-apostoli-sunt-missi-pr-dicare-8f5c1f66a1
-      matins-reading-9: reading.tria-autem-sunt-signa-evidentia-quibus-probatur-c14a14c7d3
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-91a20733e9
+      matins-reading-8: reading.omnibus-his-modis-apostoli-sunt-missi-pr-dicare-3a7dd2136a
+      matins-reading-9: reading.tria-autem-sunt-signa-evidentia-quibus-probatur-cd82ae971b
       title: note.s-ioannis-a-capistrano-confessoris-817ec9c84b
   03-28-xystusiii:
     rank:
@@ -2027,7 +2027,7 @@ offices:
     common: commons/c5-1
     slots:
       collect: collect.deus-hum-lium-celsit-do-qui-be-tum-franc-scum-co-87ba2ff3c4
-      matins-reading-3-abbreviated: reading.franc-scus-paul-in-cal-bria-natus-est-adul-scens-660e5f4843
+      matins-reading-3-abbreviated: reading.franc-scus-paul-in-cal-bria-natus-est-adul-scens-44df1b30ba
       matins-reading-4: reading.franc-scus-paul-quod-est-cal-bri-ppidum-loco-h-m-fb03249504
       matins-reading-5: reading.erat-in-eo-mir-fica-loqu-ndi-gr-tia-perp-tuam-vi-a27c646976
       matins-reading-6: reading.multis-mir-culis-servi-sui-sanctit-tem-deus-test-d418df870b
@@ -2049,7 +2049,7 @@ offices:
       matins-reading-6: reading.scripsit-isidorus-libros-etymologiarum-et-de-ecc-f30f3909d5
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-cae8aec074
       matins-reading-8: reading.huius-sermo-debet-esse-purus-simplex-apertus-ple-4667781ec7
-      matins-reading-9: reading.tenebit-quoque-illam-supereminentem-donis-omnibu-073cdde83c
+      matins-reading-9: reading.tenebit-quoque-illam-supereminentem-donis-omnibu-ac4fe3630f
       title: note.s-isidori-episcopi-confessoris-et-ecclesi-doctor-02ded77016
   04-05:
     rank:
@@ -2131,9 +2131,9 @@ offices:
     common: commons/c4
     slots:
       collect: collect.ex-udi-qu-sumus-d-mine-preces-nostras-quas-in-be-5860913078
-      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-233c1b1a39
-      matins-reading-2: reading.1-pet-1-6-12-aeb938c813
-      matins-reading-3: reading.1-pet-1-13-21-c780e4296d
+      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-petri-ap-stoli-2a3021c6f6
+      matins-reading-2: reading.1-pet-1-6-12-61f91db824
+      matins-reading-3: reading.1-pet-1-13-21-2dc47ed790
       matins-reading-3-abbreviated: reading.leo-primus-etr-scus-eo-t-mpore-pr-fuit-eccl-si-c-605c9bc88f
       matins-reading-4: reading.leo-primus-etruscus-eo-tempore-pr-fuit-ecclesi-c-03144f7cdf
       matins-reading-5: reading.leo-autem-rom-singulari-omnium-l-titia-exceptus-3d59be3b32
@@ -2183,15 +2183,15 @@ offices:
       collect: collect.deus-qui-be-tum-hermeneg-ldum-m-rtyrem-tuum-c-l-c6366fdaea
       lauds-hymn: hymn.nullis-te-g-nitor-bland-tiis-trahit-b0f1ded555
       matins-hymn: hymn.reg-li-s-lio-fortis-ib-ri-cb0b840410
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-53470a0a2b
-      matins-reading-2: reading.rom-8-28-34-fbbca95ba9
-      matins-reading-3: reading.rom-8-35-39-dd358b64ae
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-876fa70816
+      matins-reading-2: reading.rom-8-28-34-68de67dc33
+      matins-reading-3: reading.rom-8-35-39-7af0822a4c
       matins-reading-3-abbreviated: reading.ex-libro-dialog-rum-sancti-greg-rii-pap-0ce7f58d91
       matins-reading-4: reading.ex-libro-dialogorum-sancti-gregorii-pap-430833bca8
       matins-reading-5: reading.superveniente-autem-paschalis-festivitatis-die-i-42ebc18172
       matins-reading-6: reading.quidam-tiam-ferunt-quod-illic-nocturno-tempore-a-dd631cbe74
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e629ebf846
-      matins-reading-8: reading.sed-ad-h-c-aud-ta-inard-scit-nimus-iamque-illic-ce78d13911
+      matins-reading-8: reading.sed-ad-h-c-aud-ta-inard-scit-nimus-iamque-illic-83f61badd2
       matins-reading-9: reading.sed-percont-ri-libet-qu-modo-par-ntes-et-carn-li-9447def260
       title: note.s-hermenegildi-martyris-6c525f4d3a
       vespers-hymn: hymn.reg-li-s-lio-fortis-ib-ri-061bafe67f
@@ -2205,9 +2205,9 @@ offices:
     common: commons/c2a
     slots:
       collect: collect.deus-qui-per-stult-tiam-crucis-emin-ntem-iesu-ch-fd6a20a1ae
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-53470a0a2b
-      matins-reading-2: reading.rom-8-28-34-fbbca95ba9
-      matins-reading-3: reading.rom-8-35-39-dd358b64ae
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-876fa70816
+      matins-reading-2: reading.rom-8-28-34-68de67dc33
+      matins-reading-3: reading.rom-8-35-39-7af0822a4c
       matins-reading-3-abbreviated: reading.iust-nus-prisci-f-lius-ex-gr-co-g-nere-fl-vi-ne-0ad5efd0b0
       matins-reading-4: reading.iust-nus-prisci-f-lius-ex-gr-co-genere-flavi-ne-2aa04d66ae
       matins-reading-5: reading.inter-pr-clar-ssima-iustini-pera-bin-eminent-f-d-1a9ada799e
@@ -2396,9 +2396,9 @@ offices:
       lauds-hymn: hymn.m-rtale-pectus-ntimo-1811e17cfe
       lauds-versicle: versicle.ora-pro-nobis-be-te-conr-de-allel-ia-016c599fba
       matins-hymn: hymn.christe-virt-tum-d-corans-cor-na-206748b65b
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-corinthios-7d5a56fde8
-      matins-reading-2: reading.1-cor-2-1-5-9a80c19a9a
-      matins-reading-3: reading.1-cor-2-12-16-379da14edf
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-corinthios-132673569d
+      matins-reading-2: reading.1-cor-2-1-5-ccd0ae86b5
+      matins-reading-3: reading.1-cor-2-12-16-853f77faa4
       matins-reading-3-abbreviated: reading.conr-dus-in-v-culo-parzham-di-c-sis-passavi-nsis-012e22fb26
       matins-reading-4: reading.conr-dus-in-rur-li-pr-dio-ad-ppodum-parzham-in-d-f2d05ddebf
       matins-reading-5: reading.statim-ab-em-ssa-professi-ne-ad-sanct-ann-conv-n-34d500db78
@@ -2428,7 +2428,7 @@ offices:
       matins-reading-3-abbreviated: reading.soter-fundis-in-camp-nia-natus-sanc-vit-ne-sacr-cdcee99b45
       matins-reading-4: reading.soter-fundis-in-camp-nia-natus-sanc-vit-ne-sacr-790ec14d56
       matins-reading-5: reading.caius-d-lmata-ex-genere-diocleti-ni-imperat-ris-8164ce855d
-      matins-reading-6: reading.sermo-sancti-ambr-sii-ep-scopi-f8d23233c0
+      matins-reading-6: reading.sermo-sancti-ambr-sii-ep-scopi-0e3a7dd886
       title: note.ss-soteris-et-caii-summorum-pontificum-et-martyr-ae87c5e763
   04-23:
     flags:
@@ -2476,7 +2476,7 @@ offices:
       collect: collect.deus-qui-be-tum-marcum-evangel-stam-tuum-evang-l-7d20a8eb7e
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-3440730ff8
       matins-reading-5: reading.d-nique-philo-disert-ssimus-iud-rum-videns-alexa-2b5a0db410
-      matins-reading-6: reading.de-expositi-ne-sancti-greg-rii-pap-super-ezechi-e0babe4888
+      matins-reading-6: reading.de-expositi-ne-sancti-greg-rii-pap-super-ezechi-3e11ecf417
       title: note.s-marci-evangelist-de5a69ff85
   04-26:
     flags:
@@ -2486,7 +2486,7 @@ offices:
       matins-reading-3-abbreviated: reading.cletus-rom-nus-imperat-ribus-vespasi-no-et-tito-41df687e2a
       matins-reading-4: reading.cletus-romanus-patre-miliano-de-regione-quinta-e-eb5ac33eff
       matins-reading-5: reading.marcellinus-romanus-ab-anno-ducentesimo-nonagesi-79a41ac549
-      matins-reading-6: reading.sermo-sancti-ambr-sii-ep-scopi-ab723cb1a7
+      matins-reading-6: reading.sermo-sancti-ambr-sii-ep-scopi-99e8cca4c8
       title: note.ss-cleti-et-marcellini-summorum-pontificum-et-ma-acabf499ad
   04-27:
     flags:
@@ -2533,7 +2533,7 @@ offices:
       matins-reading-6: reading.tanta-in-eius-p-ctore-aleb-tur-divin-carit-tis-f-3b9070f77b
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.s-pauli-a-cruce-confessoris-44513d19d5
   04-28n:
     rank:
@@ -2574,7 +2574,7 @@ offices:
     slots:
       collect: collect.da-qu-sumus-omn-potens-deus-ut-qui-be-t-cathar-n-9c4fc7dcfb
       matins-reading-3-abbreviated: reading.cathar-na-virgo-sen-nsis-piis-orta-par-ntibus-be-9157ff878a
-      matins-reading-4: reading.catharina-virgo-senensis-piis-orta-parentibus-be-e49b501142
+      matins-reading-4: reading.catharina-virgo-senensis-piis-orta-parentibus-be-d38bcaf573
       matins-reading-5: reading.cum-pisis-immoraretur-die-dominico-refecta-cibo-24591c8668
       matins-reading-6: reading.doctrina-eius-infusa-non-acquisita-fuit-sacrarum-f9f5d4d98a
       title: note.s-catharin-senensis-virginis-d4e77ba7b3
@@ -2593,9 +2593,9 @@ offices:
       collect: collect.deus-qui-nos-nnua-apostol-rum-tu-rum-phil-ppi-et-ae97c3d34e
       lauds-gospel-antiphon: antiphon.ego-sum-via-v-ritas-et-vita-nemo-venit-ad-patrem-d5d756a1c8
       lauds-psalmody: psalmody.d-mine-ost-nde-nobis-patrem-et-s-fficit-nobis-al-4ea444afb9
-      matins-reading-1: reading.incipit-ep-stola-cath-lica-be-ti-iac-bi-ap-stoli-4b768ad2dd
-      matins-reading-2: reading.ias-1-6-11-f667f6f07b
-      matins-reading-3: reading.ias-1-12-16-ce0e891485
+      matins-reading-1: reading.incipit-ep-stola-cath-lica-be-ti-iac-bi-ap-stoli-bfac7bf30f
+      matins-reading-2: reading.ias-1-6-11-3f63f5ef29
+      matins-reading-3: reading.ias-1-12-16-f23945edf3
       matins-reading-4: reading.phil-ppus-beths-id-natus-unus-ex-du-decim-ap-sto-16cc55a1a0
       matins-reading-5: reading.iac-bus-frater-d-mini-cognom-nto-iustus-ab-ine-n-18e65df990
       matins-reading-6: reading.tanta-autem-erat-iac-bi-vit-s-nctitas-ut-f-mbria-d027585f9b
@@ -2629,9 +2629,9 @@ offices:
       matins-nocturn-2-versicle: versicle.o-magnam-dignit-tem-lab-ris-allel-ia-44b987e6c0
       matins-nocturn-3-versicle: versicle.verbum-dei-per-quod-facta-sunt-mnia-allel-ia-ea3e6fb23f
       matins-psalmody: psalmody.exit-homo-ad-opus-suum-et-ad-lab-rem-suum-usque-1990953f12
-      matins-reading-1: reading.de-libro-g-nesis-cae453af9c
-      matins-reading-2: reading.gen-2-7-9-15-5abfb3b099
-      matins-reading-3: reading.gen-3-17-19-23-24-af19f7a58c
+      matins-reading-1: reading.de-libro-g-nesis-679dd1efa1
+      matins-reading-2: reading.gen-2-7-9-15-69cf6c583d
+      matins-reading-3: reading.gen-3-17-19-23-24-4fb306fba7
       matins-reading-4: reading.ex-actis-pii-pap-xii-96f06b3491
       matins-reading-5: reading.de-hac-autem-eccl-si-sollicit-dine-erga-c-tum-op-0a9777ca08
       matins-reading-6: reading.quo-autem-hum-ni-lab-ris-d-gnitas-et-princ-pia-q-653b6ff7c9
@@ -2682,14 +2682,14 @@ offices:
       matins-nocturn-2-versicle: versicle.r-spice-de-c-lo-et-vide-et-v-sita-v-neam-istam-a-173755a92b
       matins-nocturn-3-versicle: versicle.invoc-vi-d-minum-patrem-d-mini-mei-allel-ia-b5082d41a4
       matins-psalmody: psalmody.angelus-d-mini-app-ruit-in-somnis-ioseph-dicens-e44e5b94c1
-      matins-reading-1: reading.de-libro-genesis-0f0ce8b3e6
-      matins-reading-2: reading.gen-41-37-43-ee982237ae
-      matins-reading-3: reading.gen-41-44-49-4ef9f119e5
-      matins-reading-4: reading.sermo-sancti-bernardini-senensis-5dc9441750
+      matins-reading-1: reading.de-libro-genesis-c322b5591a
+      matins-reading-2: reading.gen-41-37-43-808a6d2889
+      matins-reading-3: reading.gen-41-44-49-0015e73d9b
+      matins-reading-4: reading.sermo-sancti-bernardini-senensis-40911b6e29
       matins-reading-5: reading.si-c-mpares-eum-ad-totam-eccl-siam-christi-nonne-0e54c900dd
       matins-reading-6: reading.profecto-dubit-ndum-non-est-quod-christus-famili-6158778521
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-2329f6f193
-      matins-reading-8: reading.cum-enim-necesse-sit-utroque-evangelista-vera-na-ff8d15f8e7
+      matins-reading-8: reading.cum-enim-necesse-sit-utroque-evangelista-vera-na-22807910bc
       matins-reading-9: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-860de2cb88
       matins-responsory-1: responsory.clam-vit-p-pulus-ad-regem-alim-nta-petens-1bfc856f6c
       matins-responsory-2: responsory.fecit-me-deus-quasi-patrem-regis-et-d-minum-univ-6c6a99dbde
@@ -2752,9 +2752,9 @@ offices:
       matins-nocturn-2-versicle: versicle.ador-mus-te-christe-et-bened-cimus-tibi-206e91b878
       matins-nocturn-3-versicle: versicle.omnis-terra-ad-ret-te-et-psallat-tibi-a9a29ca17e
       matins-psalmody: psalmody.inv-nt-crucis-festa-rec-limus-cuius-pr-c-nium-un-9bd7bd2b04
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-g-latas-2a4954911a
-      matins-reading-2: reading.de-ep-stola-ad-philipp-nses-12aa6dc1d1
-      matins-reading-3: reading.de-ep-stola-ad-coloss-nses-3a0b318362
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-g-latas-1c701963a2
+      matins-reading-2: reading.de-ep-stola-ad-philipp-nses-02668704b9
+      matins-reading-3: reading.de-ep-stola-ad-coloss-nses-86311fbdad
       matins-reading-4: reading.post-ins-gnem-vict-riam-quam-constant-nus-imper-6b256b2517
       matins-reading-5: reading.itaque-loco-crucis-purg-to-alte-def-ss-tres-cruc-d7c898fe8c
       matins-reading-6: reading.h-lena-salut-ri-cruce-inv-nta-magnificent-ssimam-19aa4ebaa6
@@ -2811,7 +2811,7 @@ offices:
       value: 5.2
     slots:
       lauds-psalmody: psalmody.helena-constantini-mater-ierusalem-petiit-allelu-95284ab71b
-      matins-reading-3: reading.de-ep-stola-ad-coloss-nses-ba85b28d06
+      matins-reading-3: reading.de-ep-stola-ad-coloss-nses-f72d9509bc
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-3b46d75c99
       matins-reading-8: reading.si-ergo-nicod-mus-de-illis-multis-erat-qui-cred-cfee40fc6e
       vespers-psalmody: psalmody.helena-constantini-mater-ierusalem-petiit-allelu-95284ab71b
@@ -2829,8 +2829,8 @@ offices:
       matins-reading-4: reading.monica-sancti-august-ni-dupliciter-mater-quia-eu-68227d3a38
       matins-reading-5: reading.mox-in-africam-redeuntes-cum-ad-ostia-tiberina-c-b7ef77a302
       matins-reading-6: reading.ex-libro-9-conf-cap-12-195ea47b73
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-f05bb7501c
-      matins-reading-8: reading.tres-autem-m-rtuos-inven-mus-a-d-mino-resuscitat-b86bb0be1f
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-0be61bee7a
+      matins-reading-8: reading.tres-autem-m-rtuos-inven-mus-a-d-mino-resuscitat-360f08a8d3
       matins-reading-9: reading.quem-dmodum-qui-videt-litteras-in-c-dice-ptime-s-4ff0071cea
       title: note.s-monic-vidu-2514187c75
   05-04-florianus:
@@ -2888,13 +2888,13 @@ offices:
     common: commons/c1
     slots:
       collect: collect.deus-qui-conspicis-quia-nos-undique-mala-nostra-dbc0370175
-      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-io-nnis-ap-stoli-1a800c5c9a
+      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-io-nnis-ap-stoli-720bf00524
       matins-reading-2: reading.1-ioannes-1-6-10-0e07114cdd
-      matins-reading-3: reading.1-ioannes-2-1-5-6fb71023a3
+      matins-reading-3: reading.1-ioannes-2-1-5-59b3085da4
       matins-reading-3-abbreviated: reading.ex-libro-sancti-hier-nymi-presb-teri-contra-iovi-5a3310e2f0
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-contra-iovi-15026dc0ad
       matins-reading-5: reading.fuit-autem-io-nnes-et-ap-stolus-et-evangel-sta-e-5216c538ea
-      matins-reading-6: reading.sed-et-ipsum-eius-evang-lium-multum-distat-a-c-t-3c5d48a67b
+      matins-reading-6: reading.sed-et-ipsum-eius-evang-lium-multum-distat-a-c-t-210ad051da
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-6264c6b888
       matins-reading-8: reading.mater-p-stulat-et-d-minus-disc-pulis-l-quitur-in-877756f572
       matins-reading-9: reading.qu-ritur-qu-modo-c-licem-mart-rii-f-lii-zebed-i-2fcbc19a48
@@ -2956,9 +2956,9 @@ offices:
       matins-nocturn-2-versicle: versicle.asc-ndit-fumus-ar-matum-in-consp-ctu-d-mini-05091eacfc
       matins-nocturn-3-versicle: versicle.in-consp-ctu-angel-rum-psallam-tibi-deus-meus-86672a2377
       matins-psalmody: psalmody.conc-ssum-est-mare-et-contr-muit-terra-ubi-arch-b77cd08a30
-      matins-reading-1: reading.de-dani-le-proph-ta-9b1a6b4eca
-      matins-reading-2: reading.dan-10-4-8-7db90c27b0
-      matins-reading-3: reading.dan-10-9-14-c42a572a3e
+      matins-reading-1: reading.de-dani-le-proph-ta-9e9f10c409
+      matins-reading-2: reading.dan-10-4-8-9971270847
+      matins-reading-3: reading.dan-10-9-14-c106dc27c9
       matins-reading-3-abbreviated: reading.be-tum-micha-lem-arch-ngelum-s-pius-hom-nibus-ap-06d4a7fcd8
       matins-reading-4: reading.be-tum-micha-lem-arch-ngelum-s-pius-hom-nibus-ap-072e7e0002
       matins-reading-5: reading.factum-est-enim-ut-ex-gr-gibus-arment-rum-garg-n-e729e10d21
@@ -2995,7 +2995,7 @@ offices:
     slots:
       matins-reading-3-abbreviated: reading.greg-rius-nazianz-nus-n-bilis-c-ppadox-ob-singul-1c5d2633f3
       matins-reading-4: reading.greg-rius-nobilis-cappadox-ex-singulari-divin-ru-9cdfc07908
-      matins-reading-5: reading.greg-rius-gitur-aliqu-ndo-domum-reversus-primum-7f4bea8745
+      matins-reading-5: reading.greg-rius-gitur-aliqu-ndo-domum-reversus-primum-b9897bcf0d
       matins-reading-6: reading.scripsit-autem-multa-et-soluta-orati-ne-et-versi-18b83c1806
       title: note.s-gregorii-nazianzeni-episcopi-confessoris-et-ec-952975cf01
   05-09t:
@@ -3092,8 +3092,8 @@ offices:
     common: commons/c4a
     slots:
       collect: collect.deus-qui-ad-err-rum-ins-dias-repell-ndas-et-apos-aaec707476
-      matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
-      matins-reading-2: reading.sir-39-6-10-1a015191a1
+      matins-reading-1: reading.de-libro-ecclesi-stici-c952db4d7a
+      matins-reading-2: reading.sir-39-6-10-8b7d7dbf94
       matins-reading-3: reading.sir-39-11-14-ab86655c2f
       matins-reading-3-abbreviated: reading.rob-rtus-politi-nus-e-patr-cia-bellarmin-rum-gen-43129101d3
       matins-reading-4: reading.robertus-politianus-e-patr-cia-bellarmin-rum-gen-439a658781
@@ -3211,12 +3211,12 @@ offices:
       matins-nocturn-2-versicle: versicle.pone-d-mine-cust-diam-ori-meo-allel-ia-06554c9023
       matins-nocturn-3-versicle: versicle.dixi-cust-diam-vias-meas-allel-ia-9b144032f6
       matins-psalmody: psalmody.erit-lumen-israel-in-igne-et-sanctus-eius-in-fla-f3490a1c16
-      matins-reading-1: reading.de-libri-ecclesi-stici-678dfee35a
-      matins-reading-2: reading.eccli-28-21-25-9f74f2b8f4
-      matins-reading-3: reading.eccli-28-26-30-c3064cc1b0
+      matins-reading-1: reading.de-libri-ecclesi-stici-19744d899b
+      matins-reading-2: reading.eccli-28-21-25-72894c1c05
+      matins-reading-3: reading.eccli-28-26-30-a518bc76e3
       matins-reading-4: reading.io-nnes-nepom-ci-boh-mi-ppido-unde-nepomuceni-co-54781015ae
       matins-reading-5: reading.r-giis-illum-eleem-synis-in-p-uperes-erog-ndis-p-7219863dc6
-      matins-reading-6: reading.sacr-legum-f-cinus-clam-patr-tum-et-m-rtyris-gl-de5fbcceeb
+      matins-reading-6: reading.sacr-legum-f-cinus-clam-patr-tum-et-m-rtyris-gl-16fd7f65ce
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-7ea24c0fde
       matins-reading-8: reading.gl-dius-tel-rum-mnium-telum-acut-ssimum-est-in-q-02ca8e3bfd
       matins-reading-9: reading.pergit-de-nde-e-dem-pr-cept-rum-et-intellig-nti-6e16744822
@@ -3425,7 +3425,7 @@ offices:
     common: commons/c4b
     slots:
       collect: collect.deus-in-te-sper-ntium-fortit-do-qui-be-tum-greg-1be06d4478
-      matins-reading-3-abbreviated: reading.greg-rius-papa-s-ptimus-ntea-hildebr-ndus-su-n-i-d4e0bb3853
+      matins-reading-3-abbreviated: reading.greg-rius-papa-s-ptimus-ntea-hildebr-ndus-su-n-i-5d0a69dbec
       matins-reading-4: reading.greg-rius-papa-septimus-antea-hildebrandus-su-n-a26710c491
       matins-reading-5: reading.mortuo-alexandro-secundo-invitus-et-m-rens-un-ni-11b311c958
       matins-reading-6: reading.dum-miss-rum-solemnia-per-geret-visa-est-viris-p-a2b7befd10
@@ -3454,7 +3454,7 @@ offices:
     slots:
       collect: collect.deus-qui-be-tum-phil-ppum-confess-rem-tuum-sanct-dad0b51bbf
       matins-reading-3-abbreviated: reading.phil-ppus-n-rius-piis-honest-sque-par-ntibus-flo-847091b090
-      matins-reading-4: reading.philippus-nerius-piis-honestisque-par-ntibus-flo-2c3abbb73b
+      matins-reading-4: reading.philippus-nerius-piis-honestisque-par-ntibus-flo-8155155cfd
       matins-reading-5: reading.caritate-dei-vulner-tus-languebat-iugiter-tantoq-f3ae2a4d13
       matins-reading-6: reading.prophet-dono-fuit-illustris-et-in-anim-rum-sensi-a8b2460def
       title: note.s-philippi-neri-confessoris-alm-urbis-patroni-se-011f4be056
@@ -3527,7 +3527,7 @@ offices:
       matins-reading-6: reading.dispositis-eius-ecclesi-rebus-synodum-habuit-aug-a7b7e32c46
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-f28c49a2d3
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dicandum-discipulos-dominu-d7efbb714d
-      matins-reading-9: reading.hinc-namque-eisdem-pr-dicatoribus-isaias-dicit-p-239f3a43e9
+      matins-reading-9: reading.hinc-namque-eisdem-pr-dicatoribus-isaias-dicit-p-f477cdad09
       title: note.s-augustini-episcopi-et-confessoris-529a4de151
   05-29:
     flags:
@@ -3535,10 +3535,10 @@ offices:
     common: commons/c6a
     slots:
       collect: collect.deus-virginit-tis-am-tor-qui-be-tam-mar-am-magda-1b4fe6d279
-      matins-reading-3-abbreviated: reading.mar-a-magdal-na-flor-nti-ill-stri-pazzi-rum-g-ne-2201195fd5
+      matins-reading-3-abbreviated: reading.mar-a-magdal-na-flor-nti-ill-stri-pazzi-rum-g-ne-b67b172b6d
       matins-reading-4: reading.maria-magdalena-illustri-ri-pazzi-rum-genere-flo-cd6dd762ea
       matins-reading-5: reading.tanto-igne-divini-amoris-stu-bat-ut-ei-fer-ndo-i-ee46111011
-      matins-reading-6: reading.carit-te-erga-pr-ximum-singul-riter-en-tuit-nam-0c020d883e
+      matins-reading-6: reading.carit-te-erga-pr-ximum-singul-riter-en-tuit-nam-b48114d21f
       title: note.s-mari-magdalen-de-pazzis-virginis-ffb7cd03cf
   05-29-bonifatiusiv:
     rank:
@@ -3603,9 +3603,9 @@ offices:
       matins-nocturn-2-versicle: versicle.stabat-iuxta-crucem-iesu-mater-eius-allel-ia-d6f61b4d89
       matins-nocturn-3-versicle: versicle.be-tam-me-dicent-omnes-generati-nes-allel-ia-01e3e7881c
       matins-psalmody: psalmody.benedicta-tu-in-muli-ribus-et-bened-ctus-fructus-a5d9081d6e
-      matins-reading-1: reading.de-libro-ecclesi-stici-14c05d1cb6
+      matins-reading-1: reading.de-libro-ecclesi-stici-742fe3b5b3
       matins-reading-2: reading.sir-24-14-16-50e54ea4d0
-      matins-reading-3: reading.sir-24-24-30-90953b1ce5
+      matins-reading-3: reading.sir-24-24-30-cf379f5357
       matins-reading-4: reading.sermo-sancti-petri-can-sii-presb-teri-f92e37dd4a
       matins-reading-5: reading.magnus-athan-sius-persp-cue-dixit-mar-am-non-mod-7ebadff013
       matins-reading-6: reading.ex-l-tteris-enc-clicis-pii-pap-duod-cimi-935ce3d021
@@ -3653,9 +3653,9 @@ offices:
       matins-nocturn-2-versicle: versicle.nostras-deprecati-nes-ne-desp-cias-bbff27831c
       matins-nocturn-3-versicle: versicle.a-per-culis-cunctis-l-bera-nos-semper-bb171e8dab
       matins-psalmody: psalmody.fons-hort-rum-p-teus-aqu-rum-viv-ntium-qu-fluunt-03d0f3cf36
-      matins-reading-1: reading.de-libro-ecclesi-stici-14c05d1cb6
-      matins-reading-2: reading.sir-24-22-31-3a8b328957
-      matins-reading-3: reading.sir-24-41-46-4c906cb66e
+      matins-reading-1: reading.de-libro-ecclesi-stici-742fe3b5b3
+      matins-reading-2: reading.sir-24-22-31-4e2b9f4100
+      matins-reading-3: reading.sir-24-41-46-7a33cc5527
       matins-reading-4: reading.ex-or-tione-sancti-ephr-m-syri-di-coni-ad-de-par-98d4311e15
       matins-reading-5: reading.sermo-sancti-germ-ni-ep-scopi-constantinopolit-n-b45a920a8c
       matins-reading-6: reading.sermo-sancti-bern-rdi-abbatis-90f7191c7e
@@ -3717,9 +3717,9 @@ offices:
       matins-nocturn-2-versicle: versicle.ven-runt-mihi-mnia-bona-p-riter-cum-illa-allel-i-84a013db62
       matins-nocturn-3-versicle: versicle.sub-tuum-pr-s-dium-conf-gimus-allel-ia-c0171d170e
       matins-psalmody: psalmody.tu-ref-gium-nostrum-tu-auxili-trix-nostra-virgo-2fb1168764
-      matins-reading-1: reading.de-par-bolis-salom-nis-eb808e0bf2
-      matins-reading-2: reading.prov-3-21-26-1f0dd322b9
-      matins-reading-3: reading.prov-8-12-17-e3a5a7361c
+      matins-reading-1: reading.de-par-bolis-salom-nis-322ce3b9cf
+      matins-reading-2: reading.prov-3-21-26-cda821c94c
+      matins-reading-3: reading.prov-8-12-17-85b563d1f1
       matins-reading-4: reading.bav-ri-regi-nes-quarum-teste-ipso-summo-pont-fic-bca55e1678
       matins-reading-5: reading.cultus-ist-us-mari-ni-faut-res-exstit-runt-pr-c-b71f57f864
       matins-reading-6: reading.quibus-ali-sque-docum-ntis-lucul-nter-app-ret-re-5b35fca1cb
@@ -3814,7 +3814,7 @@ offices:
     common: commons/c5
     slots:
       collect: collect.deus-qui-be-tum-franc-scum-novi-rdinis-institut-dd2ac824c0
-      matins-reading-3-abbreviated: reading.franc-scus-dictus-ntea-asc-nius-ex-n-bili-fam-li-71c68c86fd
+      matins-reading-3-abbreviated: reading.franc-scus-dictus-ntea-asc-nius-ex-n-bili-fam-li-be5636f701
       matins-reading-4: reading.franc-scus-dictus-ntea-asc-nius-ex-n-bili-fam-li-00f82d9e18
       matins-reading-5: reading.sol-mni-em-ssa-professi-ne-ob-singul-rem-eius-in-45da20203c
       matins-reading-6: reading.humilit-te-deo-exc-lluit-ut-romam-v-niens-in-p-u-966ec1481f
@@ -3901,8 +3901,8 @@ offices:
     common: commons/c1
     slots:
       collect: collect.deus-qui-nos-be-ti-b-rnab-ap-stoli-tui-m-ritis-e-97cc75f5da
-      matins-reading-1: reading.de-actibus-apostol-rum-3d96340303
-      matins-reading-2: reading.act-13-48-52-263dd2d89a
+      matins-reading-1: reading.de-actibus-apostol-rum-0d4bba049c
+      matins-reading-2: reading.act-13-48-52-b767030bcf
       matins-reading-3: reading.act-14-1-3-637f945657
       matins-reading-3-abbreviated: reading.b-rnabas-lev-tes-c-prius-g-nere-cum-paulo-ap-sto-9a4b186a06
       matins-reading-4: reading.b-rnabas-lev-tes-c-prius-g-nere-qui-et-ioseph-cu-b32d3645b5
@@ -4194,15 +4194,15 @@ offices:
     common: commons/c5
     slots:
       collect: collect.deus-qui-ad-sal-tem-ao-imarum-quas-tuo-preti-so-a52d6a03e0
-      matins-reading-1: reading.de-ep-stola-prima-be-ti-io-nnis-ap-stoli-f4c89792ea
-      matins-reading-2: reading.1-ioannes-2-1-7-0080244db4
-      matins-reading-3: reading.1-ioannes-5-5-9-0b08f8003d
+      matins-reading-1: reading.de-ep-stola-prima-be-ti-io-nnis-ap-stoli-29d09aa549
+      matins-reading-2: reading.1-ioannes-2-1-7-b5cd8f45fb
+      matins-reading-3: reading.1-ioannes-5-5-9-4b242a3ae7
       matins-reading-4: reading.gaspar-rom-in-exqu-liis-3ff9d221a8
       matins-reading-5: reading.in-p-blica-rerum-e1d727e861
       matins-reading-6: reading.probe-noscens-380daf4295
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-9d596c02e5
       matins-reading-8: reading.neque-tenim-in-universo-mundo-tanta-fidelium-mes-8fdaf171bb
-      matins-reading-9: reading.signa-autem-eos-qui-credituri-sunt-h-c-sequ-ntur-078ff344ef
+      matins-reading-9: reading.signa-autem-eos-qui-credituri-sunt-h-c-sequ-ntur-c960d24969
       title: note.b-gasparis-del-bufalo-confessoris-cd1dbfa700
       vespers-gospel-antiphon: antiphon.quam-pulchri-super-montes-pedes-annunti-ntis-et-d9999a02d4
   06-24:
@@ -4229,12 +4229,12 @@ offices:
       matins-nocturn-2-versicle: versicle.inter-natos-mul-erum-non-surr-xit-maior-4bd021360f
       matins-nocturn-3-versicle: versicle.el-sabeth-zachar-magnum-virum-g-nuit-e013f73178
       matins-psalmody: psalmody.pri-squam-te-form-rem-in-tero-novi-te-et-ntequam-1d4b03d969
-      matins-reading-1: reading.incipit-liber-ierem-proph-t-949cfe40ab
-      matins-reading-2: reading.ier-1-6-10-716fecad2e
-      matins-reading-3: reading.ier-1-17-19-f3b7943c65
+      matins-reading-1: reading.incipit-liber-ierem-proph-t-95ef88df78
+      matins-reading-2: reading.ier-1-6-10-2529ce9923
+      matins-reading-3: reading.ier-1-17-19-6b0de04bbe
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-7250c653e2
       matins-reading-5: reading.quod-autem-nondum-natus-de-secr-to-mat-rni-teri-66bcaa1880
-      matins-reading-6: reading.quod-autem-io-nnes-in-c-rcere-constit-tus-ad-chr-fcf7b8bb9f
+      matins-reading-6: reading.quod-autem-io-nnes-in-c-rcere-constit-tus-ad-chr-66872860d2
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-05e350fb51
       matins-reading-8: reading.neque-enim-ullam-inf-nti-sensit-t-tem-qui-supra-da639c8e91
       matins-reading-9: reading.io-nnes-est-inquit-nomen-eius-hoc-est-non-nos-ei-52af80ac2d
@@ -4382,7 +4382,7 @@ offices:
     common: commons/c2
     slots:
       collect: collect.deus-qui-be-to-iren-o-m-rtyri-tuo-atque-pont-fic-0bfb502c07
-      matins-reading-3-abbreviated: reading.iren-us-non-longe-ab-urbe-smyrna-natus-iam-inde-29acd0db11
+      matins-reading-3-abbreviated: reading.iren-us-non-longe-ab-urbe-smyrna-natus-iam-inde-d4805d00ba
       matins-reading-4: reading.iren-us-non-longe-ab-urbe-smyrna-in-asia-procons-3a8c507730
       matins-reading-5: reading.cum-m-rtyres-ipsi-clerusque-lugdun-nsis-de-pace-543afe17c2
       matins-reading-6: reading.multa-scripsit-qu-eusebius-c-sari-nsis-et-sanctu-9611db2c1f
@@ -4437,13 +4437,13 @@ offices:
       lauds-gospel-antiphon: antiphon.quodc-mque-lig-veris-super-terram-erit-lig-tum-e-19298a747f
       lauds-hymn: hymn.be-te-pastor-petre-clemens-ccipe-3761b3f92e
       lauds-psalmody: psalmody.petrus-et-io-nnes-ascend-bant-in-templum-ad-hora-017beb0590
-      matins-reading-1: reading.de-actibus-apostol-rum-5f9df780b2
-      matins-reading-2: reading.act-3-6-10-fe3b05f016
-      matins-reading-3: reading.act-3-11-16-f1f3b6d292
+      matins-reading-1: reading.de-actibus-apostol-rum-c75ae0f7b1
+      matins-reading-2: reading.act-3-6-10-7379a092e1
+      matins-reading-3: reading.act-3-11-16-ee75f3fc58
       matins-reading-4: reading.sermo-sancti-le-nis-pap-7c5f461f45
       matins-reading-5: reading.isti-sunt-patres-tui-ver-que-past-res-qui-te-reg-97deb197ad
       matins-reading-6: reading.dispos-tio-namque-div-nitus-peri-m-xime-congru-b-c9f73882c1
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-818d7b222d
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-df3d0217ab
       matins-reading-8: reading.vos-autem-quem-me-esse-d-citis-prudens-lector-at-a2f91b24f5
       matins-reading-9: reading.resp-ndens-autem-iesus-dixit-ei-be-tus-es-simon-c6d277cb0c
       matins-responsory-1: responsory.simon-petre-ntequam-de-navi-voc-rem-te-novi-te-e-a8c4b42073
@@ -4494,14 +4494,14 @@ offices:
       matins-nocturn-2-versicle: versicle.const-tues-eos-pr-ncipes-super-omnem-terram-dcc995d97c
       matins-nocturn-3-versicle: versicle.nimis-honor-ti-sunt-am-ci-tui-deus-4c094e5e37
       matins-psalmody: psalmody.qui-oper-tus-est-petro-in-apostol-tum-oper-tus-e-91b4a4e925
-      matins-reading-1: reading.de-actibus-apostol-rum-4c1d46f017
-      matins-reading-2: reading.act-13-5-8-9aa88b4a57
-      matins-reading-3: reading.act-13-9-13-c343eeabba
-      matins-reading-3-abbreviated: reading.ex-libro-sancti-august-ni-ep-scopi-de-gr-tia-et-815191cc8a
-      matins-reading-4: reading.ex-libro-sancti-august-ni-ep-scopi-de-gr-tia-et-ca58de6c3b
+      matins-reading-1: reading.de-actibus-apostol-rum-881d6bd0a1
+      matins-reading-2: reading.act-13-5-8-131e4b095d
+      matins-reading-3: reading.act-13-9-13-35b62dfd18
+      matins-reading-3-abbreviated: reading.ex-libro-sancti-august-ni-ep-scopi-de-gr-tia-et-eae6739f1b
+      matins-reading-4: reading.ex-libro-sancti-august-ni-ep-scopi-de-gr-tia-et-83457f032e
       matins-reading-5: reading.pro-nde-consider-mus-ipsa-m-rita-ap-stoli-pauli-6ef9e2b6a4
-      matins-reading-6: reading.bonum-inquit-cert-men-cert-vi-qu-ro-qua-virt-te-401542b77b
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2ee8cbc1e4
+      matins-reading-6: reading.bonum-inquit-cert-men-cert-vi-qu-ro-qua-virt-te-19cce90b53
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-39039925ba
       matins-reading-8: reading.sed-inspici-mus-quam-prud-ntiam-xigit-serp-ntis-db1d537cdc
       matins-reading-9: reading.quod-si-rebus-ipsis-id-ita-f-eri-vid-re-des-dera-ab7ce82c52
       matins-responsory-1: responsory.qui-oper-tus-est-petro-in-apostol-tum-oper-tus-e-e94936a913
@@ -4584,13 +4584,13 @@ offices:
       matins-nocturn-2-versicle: versicle.sanguis-iesu-christi-f-lii-dei-be73463091
       matins-nocturn-3-versicle: versicle.christus-dil-xit-nos-bead1a634b
       matins-psalmody: psalmody.postquam-consumm-ti-sunt-dies-octo-ut-circumcide-ff3733663d
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-hebr-os-71f42e1181
-      matins-reading-2: reading.heb-9-16-22-50cb6378c0
-      matins-reading-3: reading.heb-10-19-24-5ae4b26e05
-      matins-reading-4: reading.sermo-sancti-io-nnis-chrys-stomi-c6becc4340
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-hebr-os-7818dbddb9
+      matins-reading-2: reading.heb-9-16-22-a6e3dc239c
+      matins-reading-3: reading.heb-10-19-24-aa9dd51061
+      matins-reading-4: reading.sermo-sancti-io-nnis-chrys-stomi-61f55fbb69
       matins-reading-5: reading.nam-sicut-regn-ntium-st-tu-qu-sine-causa-sunt-et-88f3fb9269
       matins-reading-6: reading.sic-et-de-illo-agno-factum-est-iud-i-ovem-occid-8ac5d8a999
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-7f96aef0cd
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-502478e99e
       matins-reading-8: reading.enarrat-in-psalm-95-n-5-dd5fe84fbf
       matins-reading-9: reading.sermo-31-alias-344-2343bcb484
       matins-responsory-1: responsory.iesus-ut-sanctific-ret-per-suum-s-nguinem-p-pulu-ea014da9fa
@@ -4647,7 +4647,7 @@ offices:
     common: commons/c1
     slots:
       matins-reading-4: reading.sermo-sancti-maximi-ep-scopi-0b96e8e323
-      matins-reading-5: reading.hic-est-ille-quem-inspirante-deo-pr-scius-annunt-8ecce22e15
+      matins-reading-5: reading.hic-est-ille-quem-inspirante-deo-pr-scius-annunt-e9eaf47462
       matins-reading-6: reading.quibus-perspectis-advertite-dilectissimi-quantam-033c725a40
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-a6dc33ef75
       matins-reading-8: reading.scripsit-enim-dicens-ioannes-est-nomen-eius-et-h-dca41f8e41
@@ -4671,9 +4671,9 @@ offices:
       lauds-psalmody: psalmody.exs-rgens-mar-a-biit-in-mont-na-cum-festinati-ne-14e5c0c7af
       lauds-versicle: versicle.bened-cta-tu-in-muli-ribus-b66f98f80c
       matins-invitatory: invitatory.visitati-nem-v-rginis-mar-celebr-mus-christum-ei-83a29ff187
-      matins-reading-1: reading.de-c-nticis-cantic-rum-3857cc1500
-      matins-reading-2: reading.cant-2-8-13-91da5cbee4
-      matins-reading-3: reading.cant-2-13-17-9f80c204ec
+      matins-reading-1: reading.de-c-nticis-cantic-rum-092cfd41f5
+      matins-reading-2: reading.cant-2-8-13-8014e9a46e
+      matins-reading-3: reading.cant-2-13-17-cfcab475f4
       matins-reading-4: reading.sermo-sancti-io-nnis-chrys-stomi-5fd6b7b866
       matins-reading-5: reading.vides-o-dil-cte-quam-sit-novum-et-admir-bile-mys-72fe9d983e
       matins-reading-6: reading.sed-dic-nobis-io-nnes-cum-adhuc-in-tenebr-so-mat-eb54082741
@@ -4875,10 +4875,10 @@ offices:
     slots:
       collect: collect.fac-nos-d-mine-deus-superemin-ntem-iesu-christi-450c783584
       matins-reading-3-abbreviated: reading.ant-nius-mar-a-zaccar-a-crem-n-n-bili-g-nere-nat-add1db7e5c
-      matins-reading-4: reading.antonius-maria-zaccar-a-cremon-in-insubria-nobil-64d85f15a1
+      matins-reading-4: reading.antonius-maria-zaccar-a-cremon-in-insubria-nobil-e4854d1037
       matins-reading-5: reading.mediolani-cum-secum-agitaret-uberi-res-in-rem-ch-aee4bdd4b1
       matins-reading-6: reading.illud-tiam-memor-ndum-quod-in-iesum-crucifixum-a-046457b1f6
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-8e6056fc58
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-5a703acf5a
       matins-reading-8: reading.quo-sequendus-est-d-minus-quo-iit-novimus-resurr-35ea8bdbef
       matins-reading-9: reading.tolle-crucem-tuam-et-s-quere-d-minum-crux-enim-n-d102fac36e
       title: note.s-antonii-mari-zaccaria-confessoris-1b533f7d82
@@ -4943,7 +4943,7 @@ offices:
     - in-1-nocturno-lectiones-ex-commune-in-1-loco
     common: commons/c1
     slots:
-      matins-reading-3: reading.1-cor-4-10-21-03c1b91b12
+      matins-reading-3: reading.1-cor-4-10-21-70debf5134
   07-06octded:
     rank:
       name: Semiduplex
@@ -4978,7 +4978,7 @@ offices:
       matins-reading-6: reading.apud-io-nnem-octavum-qui-hadri-no-successerat-te-6e58f36cec
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.ss-cyrilli-et-methodii-pont-et-conf-e722092a58
       vespers-gospel-antiphon: antiphon.isti-sunt-viri-sancti-facti-am-ci-dei-div-n-veri-a5c7a00d90
       vespers-hymn: hymn.s-dibus-c-li-n-tidis-rec-ptos-9e29ba2d21
@@ -5130,7 +5130,7 @@ offices:
     common: commons/c3
     slots:
       collect: collect.pr-sta-qu-sumus-omn-potens-deus-ut-qui-glori-sos-835984a785
-      matins-reading-3-abbreviated: reading.septem-fratres-f-lii-sanct-felicit-tis-rom-in-pe-90ced2c31d
+      matins-reading-3-abbreviated: reading.septem-fratres-f-lii-sanct-felicit-tis-rom-in-pe-e17a0335d6
       matins-reading-4: reading.septem-fratres-f-lii-sanct-felicit-tis-rom-in-pe-91cbbc8dae
       matins-reading-5: reading.rufina-et-secunda-sorores-v-rgines-roman-reiecto-f3eec7472f
       matins-reading-6: reading.sermo-sancti-august-ni-ep-scopi-967625f271
@@ -5184,8 +5184,8 @@ offices:
     slots:
       matins-reading-3-abbreviated: reading.anacl-tus-atheni-nsis-trai-no-imperat-re-rexit-e-557691463e
       matins-reading-4: reading.anacl-tus-nati-ne-gr-cus-atheni-nsis-patre-antio-c35fd41c4e
-      matins-reading-5: reading.hic-principi-apostol-rum-mem-riam-seu-eccl-siam-fd808c49a0
-      matins-reading-6: reading.res-ab-eo-gest-quas-mirificas-fu-sse-multis-argu-89e15b39cb
+      matins-reading-5: reading.hic-principi-apostol-rum-mem-riam-seu-eccl-siam-7add91b118
+      matins-reading-6: reading.res-ab-eo-gest-quas-mirificas-fu-sse-multis-argu-1d17ccb3c6
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-7e78a85d35
       matins-reading-8: reading.delectet-ergo-mentem-magnitudo-pr-miorum-sed-non-2a75cfd92e
       matins-reading-9: reading.quasi-enim-per-odium-diligitur-qui-carnaliter-sa-b6dccf6ffb
@@ -5325,16 +5325,16 @@ offices:
     common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-cam-llum-ad-anim-rum-in-extr-mo-4c8f6e0871
-      matins-reading-1: reading.sir-34-16-20-b6ebe0a1cc
+      matins-reading-1: reading.sir-34-16-20-0f70891e01
       matins-reading-2: reading.cam-llus-buccl-nici-theat-n-di-c-sis-ppido-ex-n-6161760b31
       matins-reading-3: reading.mirum-est-qua-alacrit-te-nullis-fractus-lab-ribu-4ddac60d28
       matins-reading-3-abbreviated: reading.cam-llus-buccl-nici-in-theat-n-di-c-sis-ppido-ex-4d895830fd
       matins-reading-4: reading.camillus-buccl-nici-theatin-di-cesis-oppido-ex-n-5b699fda21
       matins-reading-5: reading.romam-profectus-in-nosocom-um-quod-insanab-lium-835b2b4ca6
-      matins-reading-6: reading.arcti-ribus-hisce-vinculis-grot-ntium-ministerio-28664c4062
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-8d4c6d1f34
+      matins-reading-6: reading.arcti-ribus-hisce-vinculis-grot-ntium-ministerio-5689cf03e9
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-e7f7f1ff9b
       matins-reading-8: reading.ubi-ergo-caritas-est-quid-est-quod-possit-de-sse-c708f08e0f
-      matins-reading-9: reading.hoc-ergo-pr-c-ptum-d-mini-teneamus-ut-nos-invice-bd51adb604
+      matins-reading-9: reading.hoc-ergo-pr-c-ptum-d-mini-teneamus-ut-nos-invice-505c13bb54
       matins-responsory-2: responsory.am-vit-eum-d-minus-et-orn-vit-eum-stolam-gl-ri-n-d86d8c186f
       matins-responsory-3: responsory.o-be-ti-viri-n-sancta-pr-c-nia-o-in-stim-bilis-d-ed65b87a74
       title: note.s-camilli-de-lellis-confessoris-ffe820ea8f
@@ -5366,7 +5366,7 @@ offices:
       matins-reading-6: reading.nullum-fuit-calamit-tis-genus-cui-paterne-non-oc-0af498df4b
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.s-vincentii-a-paulo-confessoris-865fd2ecf5
   07-19-leoivsymmachus:
     rank:
@@ -5448,7 +5448,7 @@ offices:
     common: commons/c5a
     slots:
       collect: collect.deus-qui-ad-rdua-qu-que-pro-n-minis-tui-gl-ria-e-c2428029c9
-      matins-reading-3-abbreviated: reading.laur-ntius-brund-sii-in-ap-lia-natus-adul-scens-9a39a38aec
+      matins-reading-3-abbreviated: reading.laur-ntius-brund-sii-in-ap-lia-natus-adul-scens-c5fcae004f
       title: note.s-laurentii-a-brundusio-confessoris-et-ecclesi-d-39d7285199
   07-22:
     rank:
@@ -5465,9 +5465,9 @@ offices:
       lauds-versicle: versicle.el-git-eam-deus-et-pr-el-git-eam-02641097fc
       matins-hymn: hymn.mar-a-castis-sculis-4ae2b75fb9
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-conversi-ne-mar-magdal-8acfa4115e
-      matins-reading-1: reading.de-canticis-cantic-rum-e4fb88e251
-      matins-reading-2: reading.cant-8-1-4-ee17d07006
-      matins-reading-3: reading.cant-8-5-7-0c06b45a56
+      matins-reading-1: reading.de-canticis-cantic-rum-5ab400d49a
+      matins-reading-2: reading.cant-8-1-4-7ae86cdba5
+      matins-reading-3: reading.cant-8-5-7-bc8c1de355
       matins-reading-3-abbreviated: reading.sermo-sancti-greg-rii-pap-000b24cf23
       matins-reading-4: reading.sermo-sancti-greg-rii-pap-9548a81852
       matins-reading-5: reading.qu-s-vit-ergo-prius-et-m-nime-inv-nit-persever-v-52f4d62f94
@@ -5541,11 +5541,11 @@ offices:
     common: commons/c1
     slots:
       collect: collect.esto-d-mine-plebi-tu-sanctific-tor-et-custos-ut-73118a2b05
-      matins-reading-4: reading.iac-bus-zebed-i-f-lius-io-nnis-ap-stoli-germ-nus-70fced5b1e
+      matins-reading-4: reading.iac-bus-zebed-i-f-lius-io-nnis-ap-stoli-germ-nus-eaa836bd64
       matins-reading-5: reading.post-iesu-christi-asc-nsum-in-c-lum-in-iud-a-et-2469e08872
       matins-reading-6: reading.ad-suppl-cium-cum-raper-ntur-p-tiit-ille-a-iac-b-3f6cd8ffee
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-a93315fbe4
-      matins-reading-8: reading.illi-vero-cum-erub-scerent-et-verec-ndia-prohibe-c217cd99b3
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-e0fffaaf23
+      matins-reading-8: reading.illi-vero-cum-erub-scerent-et-verec-ndia-prohibe-e62ab42042
       matins-reading-9: reading.et-adi-cit-pot-stis-b-bere-c-licem-quem-ego-bibi-8883e8fcf4
       title: note.s-iacobi-apostoli-d9285844e4
   07-25cc:
@@ -5599,8 +5599,8 @@ offices:
     common: commons/c8
     slots:
       matins-reading-1: reading.de-libro-t-rtio-regum-a35fb97643
-      matins-reading-2: reading.de-libro-t-rtio-regum-b6da65cdb0
-      matins-reading-3: reading.3-reg-8-64-66-aa7d4030f4
+      matins-reading-2: reading.de-libro-t-rtio-regum-5a45dfa538
+      matins-reading-3: reading.3-reg-8-64-66-d7bc1e0a36
       matins-reading-6: reading.ex-actis-ecclesi-passaviensis-c02df1a20d
       title: note.in-anniversario-dedicationis-ecclesi-cathedralis-119964a26a
   07-28:
@@ -5615,7 +5615,7 @@ offices:
       matins-reading-3-abbreviated: reading.naz-rius-a-be-to-lino-papa-baptiz-tus-cum-in-g-l-72fb0d06fc
       matins-reading-4: reading.victor-in-africa-natus-sev-ro-imperat-re-rexit-e-02ca477aa4
       matins-reading-5: reading.innocentius-alban-nsis-sancti-hier-nymi-et-augus-25ff223a77
-      matins-reading-6: reading.nazarius-a-beato-lino-papa-baptizatus-cum-in-g-l-7b8485c0ed
+      matins-reading-6: reading.nazarius-a-beato-lino-papa-baptizatus-cum-in-g-l-e5b4959df2
       title: note.ss-nazarii-et-celsi-martyrum-victoris-i-pap-et-m-de6474f258
   07-28octded:
     rank:
@@ -5645,7 +5645,7 @@ offices:
       matins-reading-6: reading.martha-autem-mir-bili-vit-sanctit-te-et-caritate-0a02ea96bb
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e106084b36
       matins-reading-8: reading.susc-pit-eum-martha-sicut-solent-s-scipi-peregri-15789a2139
-      matins-reading-9: reading.sic-ergo-susceptus-est-d-minus-tamquam-hospes-qu-cf75695440
+      matins-reading-9: reading.sic-ergo-susceptus-est-d-minus-tamquam-hospes-qu-87eda831d0
       title: note.s-marth-virginis-0f5acd3a07
   07-29-felixii:
     rank:
@@ -5731,7 +5731,7 @@ offices:
       matins-reading-6: reading.sed-in-primis-inter-catholicos-instaurare-piet-t-523373b841
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.s-ignatii-confessoris-99c8108faf
   07-31-bathonis:
     rank:
@@ -5787,8 +5787,8 @@ offices:
       matins-hymn: hymn.t-rna-christi-m-nera-1291664b20
       matins-invitatory: invitatory.christum-pr-ncipem-past-rum-ven-te-ador-mus-573710fe8f
       matins-reading-1: reading.de-libro-ecclesi-stici-4681d6148c
-      matins-reading-2: reading.eccl-44-6-9-835768f426
-      matins-reading-3: reading.eccl-44-10-15-7d5736baea
+      matins-reading-2: reading.eccl-44-6-9-e8de1c746e
+      matins-reading-3: reading.eccl-44-10-15-f4fe7bbbb6
       matins-reading-4: reading.sermo-sancti-bern-rdi-abbatis-6f9804afca
       matins-reading-5: reading.laetemur-quod-pontifices-nostri-ascenderunt-ad-c-ee3ad1ba23
       matins-reading-6: reading.benedictus-dominus-deus-qui-tantorum-pontificum-bf8788c21e
@@ -5824,8 +5824,8 @@ offices:
       lauds-versicle: versicle.tu-es-petrus-16b584bd93
       matins-hymn: hymn.quodc-mque-in-orbe-n-xibus-rev-nxeris-94c27abac4
       matins-reading-1: reading.de-actibus-apostol-rum-9d1636cfee
-      matins-reading-2: reading.act-12-6-8-9544154fbd
-      matins-reading-3: reading.act-12-9-11-72fcf5a95b
+      matins-reading-2: reading.act-12-6-8-88a3f89b1e
+      matins-reading-3: reading.act-12-9-11-edf554f24d
       matins-reading-3-abbreviated: reading.theod-sio-iuni-re-imper-nte-eud-cia-eius-uxor-ie-68958a8bfe
       matins-reading-4: reading.theod-sio-iuni-re-imper-nte-cum-eud-cia-eius-uxo-8853ca2689
       matins-reading-5: reading.cum-gitur-p-ntifex-rom-nam-cat-nam-cum-ea-qu-ier-576effce89
@@ -5887,7 +5887,7 @@ offices:
       matins-reading-6: reading.ab-ecclesi-sticis-dignit-tibus-sibi-obl-tis-cons-990b26c2b7
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.s-alfonsi-mari-de-ligorio-episcopi-confessoris-e-a3d79c1a67
   08-02n:
     rank:
@@ -5904,7 +5904,7 @@ offices:
     - 9-lectiones
     common: commons/c2b-1
     slots:
-      matins-reading-3-abbreviated: reading.stephanus-romanus-pontific-tum-gessit-valeri-no-edc5181c1d
+      matins-reading-3-abbreviated: reading.stephanus-romanus-pontific-tum-gessit-valeri-no-e12574ee90
       matins-reading-4: reading.text-807c78627c
       matins-reading-5: reading.text-807c78627c
       matins-reading-6: reading.text-807c78627c
@@ -5938,9 +5938,9 @@ offices:
       lauds-psalmody: psalmody.lapidav-runt-st-phanum-et-ipse-invoc-bat-d-minum-227a03c6af
       lauds-versicle: versicle.sepeli-runt-st-phanum-viri-timor-ti-ac3d708e6e
       matins-invitatory: invitatory.regem-m-rtyrum-d-minum-ven-te-ador-mus-733e69023e
-      matins-reading-1: reading.de-actibus-apostolorum-939a86dcbc
-      matins-reading-2: reading.acts-7-55-58-09f5372c66
-      matins-reading-3: reading.acts-7-59-8-1-2-58a9e20dd2
+      matins-reading-1: reading.de-actibus-apostolorum-af90734829
+      matins-reading-2: reading.acts-7-55-58-6a13d38b34
+      matins-reading-3: reading.acts-7-59-8-1-2-742253a1c1
       matins-reading-3-abbreviated: reading.sanct-rum-c-rpora-st-phani-protom-rtyris-gamali-2f21c13083
       matins-reading-4: reading.sanct-rum-c-rpora-stephani-protom-rtyris-gamali-f257d19943
       matins-reading-5: reading.quibus-auditis-ierosolym-rum-ant-stes-finitim-ru-423ab6af18
@@ -5984,7 +5984,7 @@ offices:
     common: commons/c5
     slots:
       collect: collect.deus-qui-eccl-siam-tuam-be-ti-dom-nici-confess-r-8ec8e5bbc6
-      matins-reading-3-abbreviated: reading.dom-nicus-calar-g-in-hisp-nia-ex-n-bili-gusman-r-1a615bae4c
+      matins-reading-3-abbreviated: reading.dom-nicus-calar-g-in-hisp-nia-ex-n-bili-gusman-r-763f5ba14a
       matins-reading-4: reading.dominicus-calar-g-in-hisp-nia-ex-nobili-gusman-r-a888a07a88
       matins-reading-5: reading.huius-autem-ingenium-ac-virtus-maxime-enituit-in-189e63a7b1
       matins-reading-6: reading.verum-cum-eius-pera-ub-que-terr-rum-monasteria-i-56b3def76b
@@ -6031,11 +6031,11 @@ offices:
       matins-nocturn-2-versicle: versicle.gl-ria-et-hon-re-coron-sti-eum-d-mine-f12bd98a9c
       matins-nocturn-3-versicle: versicle.magna-est-gl-ria-eius-in-salut-ri-tuo-9e5a83791b
       matins-psalmody: psalmody.paulo-minus-ab-angelis-minor-tus-gl-ria-et-hon-r-e4ab7ade87
-      matins-reading-1: reading.de-ep-stola-sec-nda-be-ti-petri-ap-stoli-c97d25836c
-      matins-reading-2: reading.2-pet-1-15-17-fddaaba9cf
-      matins-reading-3: reading.2-pet-1-18-21-c4b1ddf659
+      matins-reading-1: reading.de-ep-stola-sec-nda-be-ti-petri-ap-stoli-33f9843566
+      matins-reading-2: reading.2-pet-1-15-17-c9607c5be2
+      matins-reading-3: reading.2-pet-1-18-21-08b762e1e1
       matins-reading-4: reading.sermo-sancti-le-nis-pap-8ca0c3663a
-      matins-reading-5: reading.confirm-ndis-vero-ap-stolis-et-ad-omnem-sci-ntia-88af999d29
+      matins-reading-5: reading.confirm-ndis-vero-ap-stolis-et-ad-omnem-sci-ntia-0f1cb5cab4
       matins-reading-6: reading.his-ergo-sacrament-rum-revelati-nibus-petrus-ap-ddf9faced1
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-ba21df904f
       matins-reading-8: reading.et-vide-quid-agit-cum-de-regno-et-de-geh-nna-dis-62468c8ca1
@@ -6068,7 +6068,7 @@ offices:
     common: commons/c3a
     slots:
       collect: collect.deus-qui-nos-conc-dis-sanct-rum-m-rtyrum-tu-rum-6aa5446582
-      matins-reading-3-abbreviated: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-969a9e9ce3
+      matins-reading-3-abbreviated: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-18cc964999
       matins-reading-4: reading.xystus-secundus-atheniensis-ex-phil-sopho-christ-b36f14c3ec
       matins-reading-5: reading.qua-impiet-te-constant-ssime-recus-ta-cum-ad-mar-cd8d3c8017
       matins-reading-6: reading.e-dem-igitur-die-interfectus-est-una-cum-felic-s-08c10819a3
@@ -6087,7 +6087,7 @@ offices:
       matins-reading-4: reading.caietanus-nobili-thien-a-gente-vic-nti-ortus-sta-5d9e1a0823
       matins-reading-5: reading.collapsam-ecclesiastic-rum-discipl-nam-ad-formam-a07ea5f59a
       matins-reading-6: reading.divini-cultus-studium-nit-rem-domus-dei-sacr-rum-25d6438e98
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-c95b56944b
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-5622eedb8e
       matins-reading-8: reading.ideo-inquit-dico-vobis-non-hab-re-sollicit-dinem-ab064f9b36
       title: note.s-caietani-confessoris-13d8d93c4d
       vespers-gospel-antiphon: antiphon.qu-rite-primum-regnum-dei-et-iust-tiam-eius-et-h-96d5b5c5b9
@@ -6150,7 +6150,7 @@ offices:
       matins-reading-6: reading.quis-est-enim-qui-e-rum-volens-m-rito-copul-ri-n-582358aabe
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-9d596c02e5
       matins-reading-8: reading.neque-tenim-in-universo-mundo-tanta-fidelium-mes-8fdaf171bb
-      matins-reading-9: reading.signa-autem-eos-qui-credituri-sunt-h-c-sequ-ntur-078ff344ef
+      matins-reading-9: reading.signa-autem-eos-qui-credituri-sunt-h-c-sequ-ntur-c960d24969
       title: note.ss-cyriaci-largi-et-smaragdi-martyrum-763ce35d5b
   08-08-altmannus:
     rank:
@@ -6215,9 +6215,9 @@ offices:
       lauds-versicle: versicle.ora-pro-nobis-sancte-em-gdi-db913ed562
       matins-hymn: hymn.imperas-saxo-latitans-rep-nte-cdb28ffd25
       matins-psalmody: psalmody.text-d2c8dee782
-      matins-reading-1: reading.de-libro-ecclesi-stici-c82ad205ce
+      matins-reading-1: reading.de-libro-ecclesi-stici-5243dc3d87
       matins-reading-2: reading.eccl-10-15-19-d2cb185a80
-      matins-reading-3: reading.eccl-16-16-19-d8ec59c15b
+      matins-reading-3: reading.eccl-16-16-19-be0d486098
       matins-reading-4: reading.em-dius-e-n-bili-franc-rum-db1442fdbe
       matins-reading-5: reading.mox-culis-c-ci-coram-9a8016bf2d
       matins-reading-6: reading.multis-in-it-nere-a8586882b6
@@ -6280,7 +6280,7 @@ offices:
     slots:
       collect: collect.ad-sto-d-mine-supplicati-nibus-nostris-et-interc-4f3132d1a5
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-6e4b843d2c
-      matins-reading-2: reading.certe-cum-se-sequ-ntibus-nova-mand-ta-prop-neret-c3c9f8a503
+      matins-reading-2: reading.certe-cum-se-sequ-ntibus-nova-mand-ta-prop-neret-cd1ca631b0
       matins-reading-3: reading.ad-se-autem-nobis-veni-ntibus-d-minus-pr-c-pit-u-6a0d474fd8
       title: note.in-vigilia-s-laurentii-mart-060ddee11e
   08-10:
@@ -6306,15 +6306,15 @@ offices:
       matins-nocturn-2-versicle: versicle.posu-sti-d-mine-super-caput-eius-34ea0ea413
       matins-nocturn-3-versicle: versicle.magna-est-gl-ria-eius-in-salut-ri-tuo-9e5a83791b
       matins-psalmody: psalmody.quo-progr-deris-sine-f-lio-pater-quo-sac-rdos-sa-2730aef3f1
-      matins-reading-1: reading.de-libro-ecclesi-stici-54dad62329
-      matins-reading-2: reading.sir-51-8-13-1a10c3f2a2
+      matins-reading-1: reading.de-libro-ecclesi-stici-ea32a7c655
+      matins-reading-2: reading.sir-51-8-13-9c1e5d14ee
       matins-reading-3: reading.sir-51-14-17-4b25c08879
       matins-reading-4: reading.sermo-sancti-le-nis-pap-089c0162bf
       matins-reading-5: reading.fremit-ergo-pr-do-frustr-tus-et-in-dium-religi-n-5ff4321379
       matins-reading-6: reading.nihil-btines-nihil-pr-ficis-s-va-crud-litas-subt-f61f18e1eb
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-9a020130f0
       matins-reading-8: reading.hoc-autem-quod-post-rius-dixi-magis-hab-re-vid-t-5194f82cc2
-      matins-reading-9: reading.sed-vide-ne-tibi-subr-pat-ut-te-psum-velis-inter-e95d6af9ea
+      matins-reading-9: reading.sed-vide-ne-tibi-subr-pat-ut-te-psum-velis-inter-a71497d7b4
       matins-responsory-1: responsory.lev-ta-laur-ntius-bonum-opus-oper-tus-est-qui-pe-363b93c414
       matins-responsory-2: responsory.puer-meus-noli-tim-re-quia-ego-tecum-sum-dicit-d-066036fd77
       matins-responsory-3: responsory.strinx-runt-c-rporis-membra-p-sita-super-crat-cu-c649c4e8aa
@@ -6389,7 +6389,7 @@ offices:
     - 9-lectiones
     common: commons/c2
     slots:
-      matins-reading-4: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-969a9e9ce3
+      matins-reading-4: reading.xystus-sec-ndus-atheni-nsis-ex-phil-sopho-christ-18cc964999
       matins-reading-5: reading.sermo-sancti-august-ni-ep-scopi-25541bf70c
       matins-reading-6: reading.vicina-c-rporis-morte-non-morieb-tur-in-nimo-pas-9fc8db9787
       title: note.s-xysti-ii-pap-et-martyris-01c5cef548
@@ -6492,7 +6492,7 @@ offices:
       matins-reading-4: reading.ex-libro-officiorum-s-ambr-sii-ep-scopi-dd4a4b0212
       matins-reading-5: reading.lib-2-cap-28-post-medium-c7bf8a1c99
       matins-reading-6: reading.numquid-dictum-est-sancto-laurentio-non-debuisti-085221f87e
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-abe4332dcb
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-78ca70a414
       matins-reading-8: reading.cum-ergo-auditis-fratres-dominum-dicentem-ubi-eg-8663330933
       matins-responsory-4: responsory.quo-progr-deris-sine-f-lio-pater-quo-sac-rdos-sa-746a380fab
       matins-responsory-5: responsory.noli-me-derel-nquere-pater-sancte-quia-thes-uros-2aa7a27559
@@ -6609,9 +6609,9 @@ offices:
       matins-nocturn-2-versicle: versicle.ass-mpta-est-mar-a-in-c-lum-gaudent-angeli-73ac6c6b90
       matins-nocturn-3-versicle: versicle.mar-a-virgo-ass-mpta-est-ad-th-reum-th-lamum-23ac1a8d1d
       matins-psalmody: psalmody.exalt-ta-est-sancta-dei-g-netrix-super-choros-an-ea1308ecd1
-      matins-reading-1: reading.de-libro-g-nesis-73168c5a35
-      matins-reading-2: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-8c38666a56
-      matins-reading-3: reading.1-cor-15-53-57-b1104b679b
+      matins-reading-1: reading.de-libro-g-nesis-f848545b8c
+      matins-reading-2: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-ef9da22ef8
+      matins-reading-3: reading.1-cor-15-53-57-a2c619f7a6
       matins-reading-4: reading.sermo-sancti-io-nnis-damasc-ni-f0cbacbbc8
       matins-reading-5: reading.h-die-virgo-immacul-ta-qu-nullis-terr-nis-inquin-29c0c49df5
       matins-reading-6: reading.ex-actis-pii-pap-duod-cimi-ff67af9ecb
@@ -6658,8 +6658,8 @@ offices:
       matins-nocturn-2-versicle: versicle.ass-mpta-est-mar-a-in-c-lum-gaudent-angeli-73ac6c6b90
       matins-nocturn-3-versicle: versicle.mar-a-virgo-ass-mpta-est-ad-th-reum-th-lamum-23ac1a8d1d
       matins-psalmody: psalmody.exalt-ta-est-sancta-dei-g-netrix-super-choros-an-0c1e4f6357
-      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-b44b8fe96e
-      matins-reading-2: reading.cant-1-5-9-585c4a1b94
+      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-4ffa10a3a8
+      matins-reading-2: reading.cant-1-5-9-482ff5ebb1
       matins-reading-3: reading.cant-1-10-16-0d139394bf
       matins-reading-4: reading.sermo-sancti-io-nnis-damasc-ni-8f86be6984
       matins-reading-5: reading.h-die-virgo-immacul-ta-qu-nullis-terr-nis-inquin-84531bf6f9
@@ -6696,7 +6696,7 @@ offices:
       lauds-versicle: versicle.potens-in-terra-erit-semen-eius-57c6fb38ed
       matins-reading-4: reading.sermo-sancti-epiph-nii-ep-scopi-8f546b6e31
       matins-reading-5: reading.sermo-sancti-io-nnis-damasc-ni-b7d2d80bb3
-      matins-reading-6: reading.exs-lta-i-achim-qu-niam-ex-f-lia-tua-f-lius-natu-59a1cffd4b
+      matins-reading-6: reading.exs-lta-i-achim-qu-niam-ex-f-lia-tua-f-lius-natu-1275287d21
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-9c6cad9e21
       matins-reading-8: reading.igitur-ex-stirpe-nathan-f-lii-david-levi-g-nuit-1ab5a842f2
       matins-reading-9: reading.porro-heli-qui-ex-tribu-nathan-erat-nullis-l-ber-1c028ba838
@@ -6728,9 +6728,9 @@ offices:
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
-      matins-reading-1: reading.de-canticis-canticorum-fe587dc8be
-      matins-reading-2: reading.cant-2-8-13-441a808a4a
-      matins-reading-3: reading.cant-2-13-17-638feda9c9
+      matins-reading-1: reading.de-canticis-canticorum-242645098b
+      matins-reading-2: reading.cant-2-8-13-e069695d70
+      matins-reading-3: reading.cant-2-13-17-f723e3843a
       matins-reading-4: reading.sermo-sancti-io-nnis-damasc-ni-8f86be6984
       matins-reading-5: reading.h-die-virgo-immacul-ta-qu-nullis-terr-nis-inquin-84531bf6f9
       matins-reading-6: reading.heva-qu-serpentis-suggestioni-assensum-pr-buit-p-87defc7218
@@ -6759,7 +6759,7 @@ offices:
     - 9-lectiones
     common: commons/c5
     slots:
-      matins-reading-3-abbreviated: reading.hyac-nthus-pol-nus-nob-libus-et-christi-nis-par-954886fa50
+      matins-reading-3-abbreviated: reading.hyac-nthus-pol-nus-nob-libus-et-christi-nis-par-40eee2a187
       matins-reading-4: reading.hyac-nthus-pol-nus-nob-libus-et-christi-nis-par-e81668a510
       matins-reading-5: reading.carit-te-in-deum-fervens-integras-s-pe-noctes-fu-94e61ed38d
       matins-reading-6: reading.sanct-ssime-viri-studium-erga-proxim-rum-sal-tem-49249a6129
@@ -6815,9 +6815,9 @@ offices:
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
-      matins-reading-1: reading.de-canticis-canticorum-698f204a40
-      matins-reading-2: reading.cant-4-7-10-c7937a9bac
-      matins-reading-3: reading.cant-4-11-15-0425e8cd69
+      matins-reading-1: reading.de-canticis-canticorum-75184ab095
+      matins-reading-2: reading.cant-4-7-10-2ce50e8eb3
+      matins-reading-3: reading.cant-4-11-15-96d33a73b9
       matins-reading-4: reading.ex-constitutione-apostolica-pii-pap-duodecimi-3150c168c4
       matins-reading-5: reading.maxime-autem-illud-memorandum-est-inde-a-s-culo-0080b201e4
       matins-reading-6: reading.idcirco-augusta-dei-mater-iesu-christo-inde-ab-o-c2696e2c14
@@ -6844,7 +6844,7 @@ offices:
     slots:
       collect: collect.deus-qui-be-tum-io-nnem-confess-rem-tuum-ad-cult-2bc12ac2f3
       matins-reading-3-abbreviated: reading.io-nnes-anno-mill-simo-sexcent-simo-primo-in-pag-8662b87d11
-      matins-reading-4: reading.ioannes-anno-millesimo-sexcentesimo-primo-in-pag-707a84de02
+      matins-reading-4: reading.ioannes-anno-millesimo-sexcentesimo-primo-in-pag-2af5c0fec8
       matins-reading-5: reading.quinque-igitur-sacerdotes-sibi-consocians-anno-m-5bafe9cd36
       matins-reading-6: reading.singulare-eius-studium-emicuit-in-salutari-devot-1957a231f7
       title: note.s-ioannis-eudes-confessoris-3aae07579b
@@ -6858,9 +6858,9 @@ offices:
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
-      matins-reading-1: reading.cant-5-8-12-c243d71fb8
-      matins-reading-2: reading.cant-6-1-5-85d1567a14
-      matins-reading-3: reading.cant-6-8-12-e11bc01489
+      matins-reading-1: reading.cant-5-8-12-a65db3e04b
+      matins-reading-2: reading.cant-6-1-5-bf701e39dd
+      matins-reading-3: reading.cant-6-8-12-57f8c190ba
       matins-reading-4: reading.sermo-sancti-bernardi-abbatis-92b0ddaaee
       matins-reading-5: reading.sed-et-illud-quis-cogitare-sufficiat-quam-glorio-6447db62cb
       matins-reading-6: reading.felicia-prorsus-oscula-labiis-impressa-lactentis-6653ff2a89
@@ -6893,7 +6893,7 @@ offices:
       matins-reading-6: reading.multa-pr-t-rea-scripsit-in-quibus-app-ret-eum-do-071df530e7
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e503900f5d
       matins-reading-8: reading.ecce-enim-binos-ad-pr-dic-ndum-disc-pulos-d-minu-ad20e93abc
-      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-8ce78d7e6f
+      matins-reading-9: reading.hinc-namque-e-sdem-pr-dicat-ribus-isa-as-dicit-p-54a73011ec
       title: note.s-bernardi-abbatis-et-ecclesi-doctoris-df65af9f73
   08-20bmv:
     flags:
@@ -6930,9 +6930,9 @@ offices:
     slots:
       lauds-gospel-antiphon: antiphon.be-ta-dei-g-netrix-mar-a-virgo-perp-tua-templum-b84575d822
       lauds-versicle: versicle.eccli-24-26-28-322ddb1e1a
-      matins-reading-1: reading.de-canticis-canticorum-78c076c22b
-      matins-reading-2: reading.cant-7-6-13-96cbd32696
-      matins-reading-3: reading.cant-8-1-4-3921b85a6e
+      matins-reading-1: reading.de-canticis-canticorum-f17ceb763a
+      matins-reading-2: reading.cant-7-6-13-e3ff4fa576
+      matins-reading-3: reading.cant-8-1-4-ca5e420947
       matins-reading-4: reading.sermo-sancti-bernardi-abb-tis-694c2836eb
       matins-reading-5: reading.sed-et-illud-quis-cogit-re-suffici-t-quam-glori-4deb5ce42a
       matins-reading-6: reading.christi-generati-nem-et-mar-assumpti-nem-quis-en-4c619e3787
@@ -6965,9 +6965,9 @@ offices:
       matins-nocturn-2-versicle: versicle.fortis-est-ut-mors-dilectio-ec4b97171b
       matins-nocturn-3-versicle: versicle.ego-dil-cto-meo-ee76e44c04
       matins-psalmody: psalmody.bened-cta-tu-inter-mul-eres-et-bened-ctus-fructu-6fb45c2335
-      matins-reading-1: reading.de-canticis-canticorum-8bbb604c4c
-      matins-reading-2: reading.cant-5-1-2-5-6-1ee7bef41e
-      matins-reading-3: reading.cant-5-9-10-16-17-6-3-8-f60bd2e26d
+      matins-reading-1: reading.de-canticis-canticorum-4e5e395fce
+      matins-reading-2: reading.cant-5-1-2-5-6-2ee8090af7
+      matins-reading-3: reading.cant-5-9-10-16-17-6-3-8-6a393bbf9f
       matins-reading-4: reading.sermo-sancti-bernard-ni-sen-nsis-0c811d2d0f
       matins-reading-5: reading.de-hoc-gitur-corde-quasi-de-forn-ce-div-ni-ard-r-830bb3890e
       matins-reading-6: reading.ex-ecclesiasticis-documentis-051f980ec9
@@ -7006,9 +7006,9 @@ offices:
     - 9-lectiones
     common: sanctoral/08-15t
     slots:
-      matins-reading-1: reading.de-canticis-canticorum-4a738100c6
-      matins-reading-2: reading.cant-8-7-9-e99e4b1737
-      matins-reading-3: reading.cant-8-10-14-76b93a806f
+      matins-reading-1: reading.de-canticis-canticorum-59db59fb40
+      matins-reading-2: reading.cant-8-7-9-693cc239f4
+      matins-reading-3: reading.cant-8-10-14-06d7719ed3
       matins-reading-4: reading.de-sermone-sancti-bernardi-abbatis-1ae0687e6f
       matins-reading-5: reading.verumtamen-non-hoc-tantum-si-diligenter-attendas-db3584eef0
       matins-reading-6: reading.ecce-iam-quibus-potiumus-votis-ascendentem-te-ad-95ac2adcd3
@@ -7070,7 +7070,7 @@ offices:
       matins-reading-4: reading.bartholom-us-ap-stolus-galil-us-cum-in-indiam-ci-ed58c5c3dd
       matins-reading-5: reading.ibi-pol-mium-regem-et-c-niugem-eius-ac-pr-t-rea-853cfb0dce
       matins-reading-6: reading.eius-corpus-alb-ni-qu-est-urbs-mai-ris-arm-ni-ub-62af473412
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-93a688a9c0
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-c62b5638c8
       matins-reading-8: reading.et-erat-inquit-pern-ctans-in-orati-ne-dei-sp-cie-212e0d60cb
       matins-reading-9: reading.voc-vit-inquit-disc-pulos-suos-et-el-git-du-deci-9dabe3405e
       title: note.s-bartholom-i-apostoli-469094637c
@@ -7163,14 +7163,14 @@ offices:
       collect: collect.sancti-io-nnis-bapt-st-pr-curs-ris-et-m-rtyris-t-2bc3b296da
       lauds-gospel-antiphon: antiphon.misso-her-des-spiculat-re-pr-c-pit-amput-ri-capu-00cb82321c
       lauds-psalmody: psalmody.her-des-enim-t-nuit-et-lig-vit-io-nnem-et-p-suit-88f7bb972b
-      matins-reading-1: reading.incipit-liber-ierem-proph-t-949cfe40ab
-      matins-reading-2: reading.ier-1-6-10-716fecad2e
-      matins-reading-3: reading.ier-1-17-19-f3b7943c65
+      matins-reading-1: reading.incipit-liber-ierem-proph-t-95ef88df78
+      matins-reading-2: reading.ier-1-6-10-2529ce9923
+      matins-reading-3: reading.ier-1-17-19-6b0de04bbe
       matins-reading-3-abbreviated: reading.ex-libro-sancti-ambr-sii-ep-scopi-de-virg-nibus-b738ec28f1
       matins-reading-4: reading.ex-libro-sancti-ambr-sii-ep-scopi-de-virg-nibus-b1bf3cde6a
       matins-reading-5: reading.quis-non-cum-e-conv-vio-ad-carcerem-cursari-vid-a40e37329c
       matins-reading-6: reading.intu-re-rex-acerb-ssime-tuo-spectacula-digna-con-6703a86961
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-26a4e7a104
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-34fdcf8c29
       matins-reading-8: reading.quid-enim-ille-diceret-nisi-quo-plenus-erat-et-q-b276a2556e
       matins-responsory-1: responsory.misit-her-des-rex-manus-ac-t-nuit-io-nnem-et-vin-352e47162c
       matins-responsory-2: responsory.io-nnes-bapt-sta-argu-bat-her-dem-c4745ef12d
@@ -7305,7 +7305,7 @@ offices:
       matins-reading-3-abbreviated: reading.pius-papa-d-cimus-cui-nomen-ntea-ios-phus-sarto-16f1657525
       matins-reading-4: reading.pius-papa-d-cimus-cui-nomen-ntea-ios-phus-sarto-7ff74bd887
       matins-reading-5: reading.boni-past-ris-nullam-partem-d-serens-eo-m-xime-c-883212a997
-      matins-reading-6: reading.in-petri-c-thedra-constit-tus-nihil-de-pr-stina-dc2019dcf6
+      matins-reading-6: reading.in-petri-c-thedra-constit-tus-nihil-de-pr-stina-4b23c7eeba
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-ea45a2cdf7
       matins-reading-8: reading.contra-hos-ergo-v-gilat-t-tidem-inculc-ta-ista-v-3a8bcc417a
       matins-reading-9: reading.m-rito-d-citur-petro-d-ligis-me-et-resp-ndet-amo-301fc1252d
@@ -7334,9 +7334,9 @@ offices:
     common: commons/c4
     slots:
       matins-reading-3-abbreviated: reading.laur-ntius-ex-ill-stri-iustinian-rum-fam-lia-ven-96c8794b69
-      matins-reading-4: reading.laurentius-ex-illustri-iustinianorum-familia-ven-76a7d3b6f5
-      matins-reading-5: reading.ab-eugenio-quarto-patri-episcopus-designatus-que-caeb4c0b22
-      matins-reading-6: reading.lacrimarum-dono-insignitus-omnipotenti-deo-placa-e921f3d2a5
+      matins-reading-4: reading.laurentius-ex-illustri-iustinianorum-familia-ven-5ac5b0bea7
+      matins-reading-5: reading.ab-eugenio-quarto-patri-episcopus-designatus-que-557d578f82
+      matins-reading-6: reading.lacrimarum-dono-insignitus-omnipotenti-deo-placa-69cf5811cf
       title: note.s-laurentii-iustiniani-episcopi-et-confessoris-9cb30fd665
   09-06-philumena:
     rank:
@@ -7382,14 +7382,14 @@ offices:
       lauds-psalmody: psalmody.nat-vitas-glori-s-v-rginis-mar-ex-s-mine-abrah-o-26ebc93774
       lauds-versicle: versicle.nat-vitas-est-h-die-sanct-mar-v-rginis-092d4226b5
       matins-invitatory: invitatory.nativit-tem-v-rginis-mar-celebr-mus-christum-eiu-651bf6bb29
-      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-b44b8fe96e
-      matins-reading-2: reading.cant-1-5-9-585c4a1b94
+      matins-reading-1: reading.inc-piunt-c-ntica-cantic-rum-4ffa10a3a8
+      matins-reading-2: reading.cant-1-5-9-482ff5ebb1
       matins-reading-3: reading.cant-1-10-16-0d139394bf
-      matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-ff9fd2f06f
+      matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-797543bb15
       matins-reading-5: reading.heva-enim-luxit-ista-exsult-vit-heva-l-crimas-ma-55caf8de33
       matins-reading-6: reading.plaudat-nunc-rganis-mar-a-et-inter-vel-ces-art-c-aa08aeafbc
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-9845303ac2
-      matins-reading-8: reading.ideo-autem-c-teris-pr-term-ssis-horum-f-lium-nun-a2913b2393
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-a3d6e5954f
+      matins-reading-8: reading.ideo-autem-c-teris-pr-term-ssis-horum-f-lium-nun-bcf1d24a20
       matins-reading-9: reading.iacob-autem-g-nuit-ioseph-hunc-locum-obi-cit-nob-6dc7a24d46
       matins-responsory-1: responsory.h-die-nata-est-be-ta-virgo-mar-a-ex-prog-nie-dav-66e734ee80
       matins-responsory-2: responsory.beat-ssim-v-rginis-mar-nativit-tem-devot-ssime-c-64a4394a0a
@@ -7536,7 +7536,7 @@ offices:
     slots:
       matins-reading-4: reading.sermo-sancti-bernardi-abbatis-7fcb96bacd
       matins-reading-5: reading.dignum-plane-stellis-coronari-caput-quod-et-ipsi-11839c4ac3
-      matins-reading-6: reading.quid-ergo-sidereum-micat-in-generatione-mari-pla-5f55d4601a
+      matins-reading-6: reading.quid-ergo-sidereum-micat-in-generatione-mari-pla-b0c0786716
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-36de324920
       matins-reading-8: reading.quod-vero-ioseph-potius-quam-mari-nativitas-rece-3fe0ba685a
       matins-responsory-4: responsory.nat-vitas-glori-s-v-rginis-mar-ex-s-mine-abrah-o-83a608e600
@@ -7561,7 +7561,7 @@ offices:
     slots:
       collect: collect.conc-de-qu-sumus-omn-potens-deus-ut-fid-les-tui-92ea552c37
       matins-reading-3-abbreviated: reading.vener-bile-v-rginis-mar-nomen-quod-interpret-tum-cb01a9aa4a
-      matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-4b2f193bcc
+      matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-ab134b1c90
       matins-reading-5: reading.o-quisquis-te-int-lligis-in-huius-s-culi-profl-v-1c32c44309
       matins-reading-6: reading.in-per-culis-in-ang-stiis-in-rebus-d-biis-mar-am-2a4521a6b8
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-672f12fc13
@@ -7627,14 +7627,14 @@ offices:
       lauds-psalmody: psalmody.o-magnum-piet-tis-opus-mors-m-rtua-tunc-est-in-l-0a1149a524
       matins-invitatory: invitatory.christum-regem-pro-nobis-in-cruce-exalt-tum-ven-5ff312df13
       matins-psalmody: psalmody.n-bile-lignum-exalt-tur-christi-fides-r-tilat-du-3085f64eb5
-      matins-reading-1: reading.de-libro-n-meri-c960ff07e2
-      matins-reading-2: reading.num-21-4-6-b96ecfb696
-      matins-reading-3: reading.num-21-6-9-35666b12ff
+      matins-reading-1: reading.de-libro-n-meri-345dff6d95
+      matins-reading-2: reading.num-21-4-6-18d1abf2e9
+      matins-reading-3: reading.num-21-6-9-f9d86b4f9b
       matins-reading-3-abbreviated: reading.sancta-crux-d-mini-ab-h-lena-in-monte-calv-ri-co-76dde21036
       matins-reading-4: reading.ch-sroas-pers-rum-rex-extr-mis-phoc-imp-rii-temp-7bfe81f731
       matins-reading-5: reading.quibus-cl-dibus-fractus-ch-sroas-in-fuga-qua-tra-b1e450e274
       matins-reading-6: reading.quod-factum-ill-stri-mir-culo-commend-tum-est-na-c2bc2bcc1a
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-2ca061a0a3
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-1a3eb0093c
       matins-reading-8: reading.o-admir-bilis-pot-ntia-crucis-o-ineff-bilis-gl-r-0beaa4690a
       matins-reading-9: reading.trax-sti-d-mine-mnia-ad-te-ut-quod-in-uno-iud-te-84b74d5650
       matins-responsory-3: responsory.h-c-est-arbor-dign-ssima-in-parad-si-m-dio-situ-d73d66f19d
@@ -7668,9 +7668,9 @@ offices:
       matins-nocturn-2-versicle: versicle.fasc-culus-myrrh-dil-ctus-meus-mihi-9e15cadeb4
       matins-nocturn-3-versicle: versicle.per-te-sal-tem-hauri-mus-virgo-mar-a-8f54b76f6a
       matins-psalmody: psalmody.multiplic-ti-sunt-qui-tr-bulant-me-multi-ins-rgu-562422b102
-      matins-reading-1: reading.de-ierem-a-proph-ta-8571f99e3b
-      matins-reading-2: reading.lam-2-13-15-16-db35331039
-      matins-reading-3: reading.lam-2-17-18-2b7002ce55
+      matins-reading-1: reading.de-ierem-a-proph-ta-19621e1810
+      matins-reading-2: reading.lam-2-13-15-16-ddbb8f21eb
+      matins-reading-3: reading.lam-2-17-18-ac552adf82
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-9552f099ab
       matins-reading-5: reading.tuam-ergo-pertrans-vit-nimam-vis-dol-ris-ut-plus-3f0e474c5e
       matins-reading-6: reading.non-mir-mini-fratres-quod-mar-a-martyr-in-nima-f-01520138ad
@@ -7715,9 +7715,9 @@ offices:
       doxology: Nat
     common: sanctoral/09-08
     slots:
-      matins-reading-1: reading.de-canticis-canticorum-4a738100c6
-      matins-reading-2: reading.cant-8-7-9-e99e4b1737
-      matins-reading-3: reading.cant-8-10-14-76b93a806f
+      matins-reading-1: reading.de-canticis-canticorum-59db59fb40
+      matins-reading-2: reading.cant-8-7-9-693cc239f4
+      matins-reading-3: reading.cant-8-10-14-06d7719ed3
       matins-reading-4: reading.sermo-sancti-cyrilli-ep-scopi-alexandrini-a3e6c4ab8d
       matins-reading-5: reading.per-te-trinitas-sanctificatur-per-te-crux-pretio-ddc9dde54c
       matins-reading-6: reading.te-adiutrice-gentes-veniunt-ad-p-nitentiam-quid-cde00d9a00
@@ -7759,8 +7759,8 @@ offices:
       lauds-hymn: hymn.iesu-cor-na-c-lsior-1d2b2eac85
       matins-hymn: hymn.iste-conf-ssor-d-mini-col-ntes-1f0713bb63
       matins-reading-1: reading.de-epistola-be-ti-pauli-ap-stoli-ad-g-latas-d4faf8b01c
-      matins-reading-2: reading.gal-6-7-13-60e5786df9
-      matins-reading-3: reading.gal-6-14-18-5edadc6b2b
+      matins-reading-2: reading.gal-6-7-13-e8f491a221
+      matins-reading-3: reading.gal-6-14-18-c0670d5cd8
       matins-reading-3-abbreviated: reading.franc-scus-singul-ri-privil-gio-retro-ctis-s-cul-3cc79fe1f3
       matins-reading-4: reading.ex-commentariis-sancti-bonaventur-episcopi-b1cf1ed65a
       matins-reading-5: reading.intell-xit-quidem-illo-doc-nte-interius-qui-et-a-d09c584bf9
@@ -7783,9 +7783,9 @@ offices:
     slots:
       collect: collect.deus-qui-ad-unig-nitum-f-lium-tuum-exalt-tum-a-t-11350ddcc8
       lauds-gospel-antiphon: antiphon.ost-ndit-mihi-d-minus-fl-vium-aqu-viv-spl-ndidum-e74ac8701c
-      matins-reading-1: reading.de-epistola-secunda-be-ti-pauli-ap-stoli-ad-cori-3af9d98652
-      matins-reading-2: reading.2-cor-5-1-8-020c8e10ac
-      matins-reading-3: reading.2-cor-12-1-9-ba811e314d
+      matins-reading-1: reading.de-epistola-secunda-be-ti-pauli-ap-stoli-ad-cori-5739134cdf
+      matins-reading-2: reading.2-cor-5-1-8-89483d0d83
+      matins-reading-3: reading.2-cor-12-1-9-d0305ef9d8
       matins-reading-3-abbreviated: reading.ios-phus-a-cupert-no-piis-par-ntibus-ortus-adol-73287cbafa
       matins-reading-4: reading.iosephus-a-cupertino-oppido-in-salentinis-di-ces-48196f4512
       matins-reading-5: reading.eluxit-pr-cipue-ardent-ssima-eius-caritas-in-ext-adc52ab800
@@ -7885,8 +7885,8 @@ offices:
       collect: collect.be-ti-ap-stoli-et-evangel-st-matth-i-d-mine-pr-c-13bc27c7de
       matins-reading-4: reading.matth-us-qui-et-levi-ap-stolus-et-evangel-sta-ca-3c0fb7c55c
       matins-reading-5: reading.illo-gitur-in-primis-mir-culo-quo-regis-f-liam-a-1cfec368e6
-      matins-reading-6: reading.de-expositi-ne-sancti-greg-rii-pap-super-ezechi-e0babe4888
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2c36e654d8
+      matins-reading-6: reading.de-expositi-ne-sancti-greg-rii-pap-super-ezechi-3e11ecf417
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-a56d729508
       matins-reading-8: reading.arguit-in-hoc-loco-porph-rius-et-iuli-nus-aug-st-d72bae9c0c
       matins-reading-9: reading.et-factum-est-discumb-nte-eo-in-domo-ecce-multi-2da36287ab
       title: note.s-matth-i-apostoli-et-evangelist-1a4be24ce4
@@ -7924,7 +7924,7 @@ offices:
       matins-reading-3-abbreviated: reading.linus-p-ntifex-volat-rris-in-etr-ria-natus-primu-bd5b667616
       matins-reading-4: reading.linus-pontifex-volaterris-in-etruria-natus-primu-cf0dfbe6d4
       matins-reading-5: reading.de-expositi-ne-sancti-ambr-sii-ep-scopi-in-psalm-b2263bd3ce
-      matins-reading-6: reading.vere-frustra-impugn-tur-qui-apud-mpios-et-infido-436e6d09eb
+      matins-reading-6: reading.vere-frustra-impugn-tur-qui-apud-mpios-et-infido-90b3952b26
       title: note.s-lini-pap-et-martyris-1464cbc29e
   09-23cc:
     rank:
@@ -8057,15 +8057,15 @@ offices:
     common: sanctoral/05-08
     slots:
       matins-psalmody: psalmody.conc-ssum-est-mare-et-contr-muit-terra-ubi-arch-da27ac0cdb
-      matins-reading-1: reading.de-dani-le-proph-ta-9b1a6b4eca
-      matins-reading-2: reading.dan-10-4-8-7db90c27b0
-      matins-reading-3: reading.dan-10-9-14-c42a572a3e
-      matins-reading-4: reading.sermo-sancti-greg-rii-pap-5d227b006e
-      matins-reading-5: reading.sci-ndum-vero-quod-angel-rum-voc-bulum-nomen-est-02e3968bc5
-      matins-reading-6: reading.et-qu-ties-mir-virt-tis-liquid-gitur-m-cha-l-mit-8b988d3976
+      matins-reading-1: reading.de-dani-le-proph-ta-9e9f10c409
+      matins-reading-2: reading.dan-10-4-8-9971270847
+      matins-reading-3: reading.dan-10-9-14-c106dc27c9
+      matins-reading-4: reading.sermo-sancti-greg-rii-pap-ecc8456a46
+      matins-reading-5: reading.sci-ndum-vero-quod-angel-rum-voc-bulum-nomen-est-d31e0d1828
+      matins-reading-6: reading.et-qu-ties-mir-virt-tis-liquid-gitur-m-cha-l-mit-ae2e807d28
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-352f29b021
       matins-reading-8: reading.si-autem-manus-tua-vel-pes-tuus-scandal-zat-te-a-049455c907
-      matins-reading-9: reading.dico-vobis-quia-angeli-e-rum-in-c-lis-semper-vid-9ab16a4991
+      matins-reading-9: reading.dico-vobis-quia-angeli-e-rum-in-c-lis-semper-vid-5601aa7540
       title: note.in-dedicatione-s-micha-lis-archangelis-2004a71ac6
   09-30:
     rank:
@@ -8078,8 +8078,8 @@ offices:
     common: commons/c5a
     slots:
       collect: collect.deus-qui-eccl-si-tu-in-expon-ndis-sacris-script-83201282c5
-      matins-reading-1: reading.de-libro-ecclesi-stici-64217be798
-      matins-reading-2: reading.sir-39-6-10-1a015191a1
+      matins-reading-1: reading.de-libro-ecclesi-stici-c952db4d7a
+      matins-reading-2: reading.sir-39-6-10-8b7d7dbf94
       matins-reading-3: reading.sir-39-11-14-ab86655c2f
       matins-reading-3-abbreviated: reading.hier-nymus-strid-ne-in-dalm-tia-natus-rom-adol-s-762052a951
       matins-reading-4: reading.hieronymus-eusebii-f-lius-stridone-in-dalmatia-c-b40ff26389
@@ -8167,9 +8167,9 @@ offices:
       matins-nocturn-2-versicle: versicle.asc-ndit-fumus-ar-matum-in-consp-ctu-d-mini-05091eacfc
       matins-nocturn-3-versicle: versicle.in-consp-ctu-angel-rum-psallam-tibi-deus-meus-86672a2377
       matins-psalmody: psalmody.d-minus-deus-c-li-et-terr-ipse-mittet-angelum-su-07fcf3d127
-      matins-reading-1: reading.de-libro-exodi-576bfed07c
-      matins-reading-2: reading.de-zachar-a-proph-ta-e65c49ee3e
-      matins-reading-3: reading.zach-2-1-5-930b5dbdcd
+      matins-reading-1: reading.de-libro-exodi-fdc0e3e5a3
+      matins-reading-2: reading.de-zachar-a-proph-ta-eb83e250fa
+      matins-reading-3: reading.zach-2-1-5-6f3a6825f1
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-9e4c19c30b
       matins-reading-5: reading.quantam-tibi-debet-hoc-verbum-inf-rre-rever-ntia-152d70bdd0
       matins-reading-6: reading.in-ipso-taque-fratres-affectu-se-dilig-mus-angel-33d8c4839d
@@ -8225,7 +8225,7 @@ offices:
       matins-reading-3-abbreviated: reading.franc-scus-ass-sii-in-umbria-natus-patris-ex-mpl-25d7a37c04
       matins-reading-4: reading.franc-scus-ass-sii-in-umbria-natus-patris-ex-mpl-a104f85c2a
       matins-reading-5: reading.cum-autem-illud-ex-evang-lio-aud-sset-nol-te-pos-d3568192f4
-      matins-reading-6: reading.multis-gitur-exstr-ctis-su-fam-li-domic-liis-se-543be96d2c
+      matins-reading-6: reading.multis-gitur-exstr-ctis-su-fam-li-domic-liis-se-0bb14c9445
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-31e45c93de
       matins-reading-8: reading.magnus-esse-vis-a-m-nimo-ncipe-c-gitas-magnam-f-f500f0cea6
       matins-reading-9: reading.quod-est-fast-gium-constru-nd-f-bric-quam-mol-mu-2aac7d1386
@@ -8249,7 +8249,7 @@ offices:
     slots:
       collect: collect.omn-potens-et-mis-ricors-deus-qui-be-tam-gallam-2f7536ab7c
       matins-reading-4: reading.ex-libro-quarto-dialog-rum-sancti-greg-rii-pap-c-230c4072a5
-      matins-reading-5: reading.mox-ergo-ut-eius-mar-tus-def-nctus-est-abi-cto-s-3ff43d1022
+      matins-reading-5: reading.mox-ergo-ut-eius-mar-tus-def-nctus-est-abi-cto-s-263acfb84b
       matins-reading-6: reading.sed-quia-quamdam-sanctimonialem-f-minam-in-e-dem-b4d780b061
       title: note.s-gall-vidu-4740127362
   10-06:
@@ -8290,9 +8290,9 @@ offices:
       matins-nocturn-2-versicle: versicle.post-partum-virgo-inviol-ta-permans-sti-5c08eac071
       matins-nocturn-3-versicle: versicle.speci-sa-facta-es-et-su-vis-a3a91a61d7
       matins-psalmody: psalmody.angelus-g-briel-nunti-vit-mar-et-conc-pit-de-sp-e4087eb1b0
-      matins-reading-1: reading.de-libro-ecclesi-stici-0c00798be0
-      matins-reading-2: reading.sir-24-17-22-dcabf0884c
-      matins-reading-3: reading.sir-24-24-31-41907144fa
+      matins-reading-1: reading.de-libro-ecclesi-stici-381e22e6fa
+      matins-reading-2: reading.sir-24-17-22-51cbd3da3d
+      matins-reading-3: reading.sir-24-24-31-215a6a5cc3
       matins-reading-4: reading.cum-albig-nsium-h-resis-per-tolos-tium-regi-nem-5223aa0f14
       matins-reading-5: reading.innumer-biles-porro-fructus-ex-hac-tam-salut-ri-e519b8a6f4
       matins-reading-6: reading.clemens-vero-und-cimus-nimo-r-putans-ins-gnem-p-09cf1f2888
@@ -8381,7 +8381,7 @@ offices:
     common: commons/c3a
     slots:
       collect: collect.deus-qui-hodi-rna-die-be-tum-dion-sium-m-rtyrem-6ade1c711f
-      matins-reading-3-abbreviated: reading.dionysius-atheni-nsis-unus-ex-areopag-tis-iud-ci-0202c89021
+      matins-reading-3-abbreviated: reading.dionysius-atheni-nsis-unus-ex-areopag-tis-iud-ci-3fc22400ef
       matins-reading-4: reading.dionysius-atheniensis-unus-ex-areopagitis-iudici-7de396295e
       matins-reading-5: reading.itaque-et-baptizatus-est-ab-apostolo-et-athenien-8545cf9a91
       matins-reading-6: reading.sed-ea-tormentorum-genera-omnibus-forti-ac-liben-b12a004808
@@ -8425,9 +8425,9 @@ offices:
       matins-hymn: hymn.c-lo-red-mptor-pr-tulit-5bda19571a
       matins-invitatory: invitatory.maternit-tem-be-t-mar-v-rginis-celebr-mus-christ-1d894620ca
       matins-nocturn-3-versicle: versicle.fecit-mihi-magna-qui-potens-est-bbd4388bcf
-      matins-reading-1: reading.de-libro-ecclesi-stici-14c05d1cb6
-      matins-reading-2: reading.sir-24-12-16-6310856399
-      matins-reading-3: reading.sir-24-17-23-1d1c335694
+      matins-reading-1: reading.de-libro-ecclesi-stici-742fe3b5b3
+      matins-reading-2: reading.sir-24-12-16-f0ef91c912
+      matins-reading-3: reading.sir-24-17-23-ffb92954d2
       matins-reading-4: reading.sermo-sancti-le-nis-pap-afd39718eb
       matins-reading-5: reading.sermo-2-de-nativitate-domini-95ca93ae8d
       matins-reading-6: reading.oportuit-ut-primam-genitr-cis-integrit-tem-nasce-a572154b00
@@ -8475,7 +8475,7 @@ offices:
       matins-reading-5: reading.eiusdem-piet-tis-fuit-quod-be-ti-calepodii-presb-03260c3e95
       matins-reading-6: reading.sedit-callistus-annos-quinque-mensem-unum-dies-d-14fc2ead81
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2008cdc920
-      matins-reading-8: reading.et-ego-inquit-dico-tibi-hoc-est-sicut-pater-meus-c014d1f2ac
+      matins-reading-8: reading.et-ego-inquit-dico-tibi-hoc-est-sicut-pater-meus-7393026e72
       matins-reading-9: reading.hanc-confessi-nem-port-nferi-non-ten-bunt-mortis-3319963e4c
       title: note.s-callisti-pap-et-martyris-5588f6a0f9
   10-15:
@@ -8490,7 +8490,7 @@ offices:
       lauds-chapter: chapter.2-cor-10-17-18-543543991c
       lauds-hymn: hymn.h-c-est-dies-qua-c-ndid-d2cf7570b0
       matins-hymn: hymn.regis-sup-rni-n-ntia-451a060bf8
-      matins-reading-3-abbreviated: reading.ter-sia-piis-nobilib-sque-par-ntibus-abul-in-his-0a3bbc830f
+      matins-reading-3-abbreviated: reading.ter-sia-piis-nobilib-sque-par-ntibus-abul-in-his-17e2caf15d
       matins-reading-4: reading.teresia-virgo-nata-est-abul-in-hisp-nia-par-ntib-0ee8ffcda4
       matins-reading-5: reading.angelicis-dit-ta-virt-tibus-non-modo-propriam-se-35874f5d71
       matins-reading-6: reading.cum-autem-assidua-ederet-exempla-virt-tum-tam-an-a23efa339e
@@ -8533,7 +8533,7 @@ offices:
     common: commons/c6a
     slots:
       collect: collect.d-mine-iesu-christe-qui-investig-biles-div-tias-3b0f3e6c43
-      matins-reading-3-abbreviated: reading.margar-ta-mar-a-alac-que-in-pago-di-c-sis-august-0673e7a1e7
+      matins-reading-3-abbreviated: reading.margar-ta-mar-a-alac-que-in-pago-di-c-sis-august-77172edab6
       matins-reading-4: reading.margarita-maria-alac-que-in-pago-di-cesis-august-59d8e4e563
       matins-reading-5: reading.ordinem-visitati-nis-ingressa-statim-religios-vi-45381fcfb8
       matins-reading-6: reading.ut-iussa-redemptoris-impleret-margarita-omni-dil-50f905607b
@@ -8552,9 +8552,9 @@ offices:
     common: commons/c1a
     slots:
       collect: collect.interv-niat-pro-nobis-qu-sumus-d-mine-sanctus-tu-96764e4b7e
-      matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-217a49912d
-      matins-reading-5: reading.igitur-per-odos-pauli-et-thecl-et-totam-baptiz-t-8b9f5c8b62
-      matins-reading-6: reading.lucam-autem-non-solum-ab-ap-stolo-paulo-didic-ss-e5f002a671
+      matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-08db35565a
+      matins-reading-5: reading.igitur-per-odos-pauli-et-thecl-et-totam-baptiz-t-548413a0f6
+      matins-reading-6: reading.lucam-autem-non-solum-ab-ap-stolo-paulo-didic-ss-3ce9f44ade
       title: note.s-luc-evangelist-167aae1002
   10-19:
     rank:
@@ -8652,9 +8652,9 @@ offices:
       matins-nocturn-2-versicle: versicle.mem-nto-nostri-d-mine-in-benepl-cito-p-puli-tui-c1050d2440
       matins-nocturn-3-versicle: versicle.notam-fec-sti-in-g-ntibus-virt-tem-tuam-34c22d74c6
       matins-psalmody: psalmody.voce-mea-ad-d-minum-clam-vi-et-exaud-vit-me-de-m-caff9a3c1c
-      matins-reading-1: reading.de-isa-a-proph-ta-80c773e99f
-      matins-reading-2: reading.isa-51-6-8-9fe3906c82
-      matins-reading-3: reading.de-epistola-beati-pauli-ap-stoli-ad-hebr-os-34e9f24943
+      matins-reading-1: reading.de-isa-a-proph-ta-6049db4f93
+      matins-reading-2: reading.isa-51-6-8-5ff554f15a
+      matins-reading-3: reading.de-epistola-beati-pauli-ap-stoli-ad-hebr-os-8978ae30d4
       matins-reading-4: reading.sermo-sancti-le-nis-pap-66427dbff1
       matins-reading-5: reading.quod-qu-modo-impl-tum-sit-io-nnes-ap-stolus-doce-4f46bb6b85
       matins-reading-6: reading.dic-nte-taque-d-mino-diliges-d-minum-deum-tuum-e-94ff401cc7
@@ -8707,9 +8707,9 @@ offices:
       matins-nocturn-2-versicle: versicle.asc-ndit-fumus-ar-matum-in-consp-ctu-d-mini-05091eacfc
       matins-nocturn-3-versicle: versicle.appreh-ndit-angelus-r-pha-l-d-m-nium-6de27ef569
       matins-psalmody: psalmody.egr-ssus-tob-as-inv-nit-i-venem-pr-c-nctum-et-qu-e8646a71fc
-      matins-reading-1: reading.de-libro-tob-dc405b8752
-      matins-reading-2: reading.tob-12-5-13-501661ad57
-      matins-reading-3: reading.tob-12-14-22-51316c68f1
+      matins-reading-1: reading.de-libro-tob-e5c63ad5cc
+      matins-reading-2: reading.tob-12-5-13-69476dece1
+      matins-reading-3: reading.tob-12-14-22-cb5e7cd36b
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-4ffc729b74
       matins-reading-5: reading.cont-nuo-ngelus-gaudet-de-cogitata-merc-de-qui-m-ef15052937
       matins-reading-6: reading.s-bito-patefacto-myst-rii-c-lestis-hon-re-voce-r-195baad8d4
@@ -8799,8 +8799,8 @@ offices:
     slots:
       collect: collect.concede-qu-sumus-omn-potens-deus-ut-sicut-aposto-bce3ca1bdd
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-c8ca092597
-      matins-reading-2: reading.quid-ergo-est-ego-sum-vitis-vera-numquid-ut-dder-1d171d62d8
-      matins-reading-3: reading.ego-sum-inquit-vitis-vera-et-pater-meus-agr-cola-312805a79a
+      matins-reading-2: reading.quid-ergo-est-ego-sum-vitis-vera-numquid-ut-dder-b09ad16624
+      matins-reading-3: reading.ego-sum-inquit-vitis-vera-et-pater-meus-agr-cola-54a8d26281
       title: note.in-vigilia-ss-simonis-et-iud-ap-ac40147594
   10-28:
     rank:
@@ -8814,14 +8814,14 @@ offices:
     slots:
       collect: collect.deus-qui-nos-per-be-tos-ap-stolos-tuos-sim-nem-e-098577ca4c
       lauds-gospel-antiphon: antiphon.isti-sunt-du-ol-v-et-duo-candel-bra-luc-ntia-ant-516fe828bd
-      matins-reading-1: reading.incipit-ep-stola-cath-lica-be-ti-iud-ap-stoli-54779becdc
-      matins-reading-2: reading.iudas-1-5-8-5594608d64
-      matins-reading-3: reading.iudas-1-9-13-4e36ac7b37
+      matins-reading-1: reading.incipit-ep-stola-cath-lica-be-ti-iud-ap-stoli-266c57072c
+      matins-reading-2: reading.iudas-1-5-8-fc09519475
+      matins-reading-3: reading.iudas-1-9-13-148c92b914
       matins-reading-4: reading.simon-chanan-us-qui-et-zel-tes-et-thadd-us-qui-e-3e5f3bb9a8
-      matins-reading-5: reading.sermo-sancti-greg-rii-pap-d454d979df
-      matins-reading-6: reading.quot-ergo-sunt-bona-pr-dic-ntium-tot-sunt-ornam-8c1815f6ad
+      matins-reading-5: reading.sermo-sancti-greg-rii-pap-7ffb3ada47
+      matins-reading-6: reading.quot-ergo-sunt-bona-pr-dic-ntium-tot-sunt-ornam-c2e72557ed
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-9cdd8b80b3
-      matins-reading-8: reading.c-ritas-ergo-est-fructus-noster-quam-def-nit-ap-71a9b7d9a8
+      matins-reading-8: reading.c-ritas-ergo-est-fructus-noster-quam-def-nit-ap-e36451047e
       matins-reading-9: reading.quis-autem-bene-gaudet-qui-bonum-non-d-ligit-und-1f2520dc9a
       title: note.ss-simonis-et-iud-apostolorum-c7e4230980
   10-31:
@@ -8882,12 +8882,12 @@ offices:
       matins-nocturn-1-versicle: versicle.ven-runt-mihi-mnia-bona-p-riter-cum-illa-a793a317ea
       matins-nocturn-2-versicle: versicle.post-partum-virgo-inviol-ta-permans-sti-5c08eac071
       matins-nocturn-3-versicle: versicle.inven-sti-gr-tiam-apud-deum-3441dadf01
-      matins-reading-1: reading.de-c-nticis-cantic-rum-195e30f0f9
+      matins-reading-1: reading.de-c-nticis-cantic-rum-71c969ae7b
       matins-reading-2: reading.de-canticis-canticorum-3924c63744
-      matins-reading-3: reading.cant-4-8-12-bf81b0c0c7
+      matins-reading-3: reading.cant-4-8-12-a52a5a0c58
       matins-reading-4: reading.sermo-sancti-ambr-sii-episcopi-bf1b8ab2da
       matins-reading-5: reading.nam-de-ceteris-eius-virtutibus-quid-loquar-virgo-82f42a85a4
-      matins-reading-6: reading.ex-sancto-petro-chrysologo-serm-143-h-c-dedit-c-27d9834022
+      matins-reading-6: reading.ex-sancto-petro-chrysologo-serm-143-h-c-dedit-c-9ba1ac0768
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-19f9b39849
       matins-reading-8: reading.deum-hui-smodi-decebat-nat-vitas-qua-nonnisi-de-1b2e6b09e5
       matins-reading-9: reading.o-admir-bilem-et-omni-hon-re-dignissimam-v-rgine-4dd253a9e0
@@ -8929,8 +8929,8 @@ offices:
       matins-nocturn-3-versicle: versicle.ador-bunt-eum-omnes-reges-terr-4ee57eb066
       matins-psalmody: psalmody.ego-autem-constit-tus-sum-rex-ab-eo-super-sion-m-512b4cfa39
       matins-reading-1: reading.de-epistola-be-ti-pauli-ap-stoli-ad-coloss-nses-0e8d9143de
-      matins-reading-2: reading.col-1-9-17-df90d8f96e
-      matins-reading-3: reading.col-1-18-23-8ac5bd0c8c
+      matins-reading-2: reading.col-1-9-17-91a370bab5
+      matins-reading-3: reading.col-1-18-23-b80bbb9183
       matins-reading-4: reading.ex-l-tteris-enc-clicis-pii-pap-und-cimi-cacd484173
       matins-reading-5: reading.quo-autem-h-c-d-mini-nostri-d-gnitas-et-pot-stas-5a622b3ce7
       matins-reading-6: reading.ver-mtamen-ei-smodi-regnum-pr-c-puo-quodam-modo-5126e4f5c9
@@ -8987,15 +8987,15 @@ offices:
       matins-hymn: hymn.plac-re-christe-s-rvulis-be64ada5e3
       matins-invitatory: invitatory.regem-regum-d-minum-ven-te-ador-mus-quia-ipse-es-596ac9b809
       matins-psalmody: psalmody.novit-d-minus-viam-iust-rum-qui-in-lege-eius-med-5f73bf6376
-      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-e70c98a13a
-      matins-reading-2: reading.apo-5-1-8-7d1a3c8c6e
-      matins-reading-3: reading.apo-5-9-14-6c31ae414a
+      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-94803d7ee0
+      matins-reading-2: reading.apo-5-1-8-d9ca5413f2
+      matins-reading-3: reading.apo-5-9-14-48af1805e8
       matins-reading-4: reading.sermo-sancti-bed-vener-bilis-presb-teri-dbbfab7aa2
       matins-reading-5: reading.o-vere-be-ta-mater-eccl-sia-quam-sic-honor-div-n-3b084e2a01
-      matins-reading-6: reading.dei-enim-ineff-bilis-et-imm-nsa-b-nitas-tiam-hoc-bc5a194671
+      matins-reading-6: reading.dei-enim-ineff-bilis-et-imm-nsa-b-nitas-tiam-hoc-8df2f1a59c
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-2ef81191f8
-      matins-reading-8: reading.nec-mirum-est-quod-dantur-pr-c-pta-mai-ra-propte-49369424e5
-      matins-reading-9: reading.quid-ergo-dicit-be-ti-p-uperes-sp-ritu-qu-niam-i-af3fdeef88
+      matins-reading-8: reading.nec-mirum-est-quod-dantur-pr-c-pta-mai-ra-propte-009c4ecd33
+      matins-reading-9: reading.quid-ergo-dicit-be-ti-p-uperes-sp-ritu-qu-niam-i-ab4b70be11
       matins-responsory-1: responsory.vidi-d-minum-sed-ntem-super-s-lium-exc-lsum-et-e-ef8dbad5fd
       matins-responsory-2: responsory.be-ta-es-virgo-mar-a-dei-g-netrix-qu-credid-sti-f93bb892fc
       matins-responsory-3: responsory.in-consp-ctu-angel-rum-psallam-tibi-b7b468f7c5
@@ -9030,15 +9030,15 @@ offices:
     common: commons/c9
     slots:
       matins-collect: collect.d-minus-vob-scum-1eecd8ddeb
-      matins-reading-1: reading.iob-7-16-21-c50266bec7
-      matins-reading-2: reading.iob-14-1-6-97e07c6b8a
-      matins-reading-3: reading.iob-19-20-27-16b18ec11d
+      matins-reading-1: reading.iob-7-16-21-e2d1c43a99
+      matins-reading-2: reading.iob-14-1-6-7fc60741ed
+      matins-reading-3: reading.iob-19-20-27-764fc146b6
       matins-reading-4: reading.ex-libro-sancti-august-ni-ep-scopi-de-cura-pro-m-41c8fe67b0
       matins-reading-5: reading.cap-4-e66c9cf562
       matins-reading-6: reading.cap-18-404bd91556
-      matins-reading-7: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-796fdf9426
-      matins-reading-8: reading.1-cor-15-35-44-e92a39e84c
-      matins-reading-9: reading.1-cor-15-51-58-c261395a1d
+      matins-reading-7: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-304ea52062
+      matins-reading-8: reading.1-cor-15-35-44-7c28bb0113
+      matins-reading-9: reading.1-cor-15-51-58-ec46956813
       matins-responsory-9: responsory.deliver-me-o-lord-from-eternal-death-in-that-awf-a1bd033d9b
   11-02oct:
     rank:
@@ -9220,9 +9220,9 @@ offices:
     - festum-domini
     common: commons/c8
     slots:
-      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-402b32721a
-      matins-reading-2: reading.apo-21-12-15-314c069fea
-      matins-reading-3: reading.apo-21-16-18-f82c7bb2ff
+      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-a8cdee09f3
+      matins-reading-2: reading.apo-21-12-15-dae2307189
+      matins-reading-3: reading.apo-21-16-18-c770d28e1a
       matins-reading-4: reading.ritus-quos-in-consecr-ndis-eccl-siis-et-alt-ribu-f673907b20
       matins-reading-5: reading.sed-ubi-constant-nus-imper-tor-per-bapt-smi-sacr-4bef06ee12
       matins-reading-6: reading.quod-si-be-tus-silv-ster-p-stea-in-consecrati-ne-38e6e79b98
@@ -9246,7 +9246,7 @@ offices:
     slots:
       collect: collect.deus-qui-in-corde-be-ti-andr-confess-ris-tui-per-7e171453f8
       matins-reading-3-abbreviated: reading.andr-as-avell-nus-dictus-ante-lancell-ttus-apud-87c9fd3346
-      matins-reading-4: reading.andreas-avellinus-dictus-antea-lancellottus-apud-baab8b6eda
+      matins-reading-4: reading.andreas-avellinus-dictus-antea-lancellottus-apud-5a75c8e994
       matins-reading-5: reading.arctioris-taque-vit-curriculum-lacri-studio-ingr-5b1eccc6f3
       matins-reading-6: reading.pl-ribus-in-locis-cleric-rum-regul-rium-ordinem-7230e93486
       title: note.s-andre-avellini-confessoris-b95f4320ce
@@ -9289,9 +9289,9 @@ offices:
       lauds-psalmody: psalmody.dix-runt-disc-puli-ad-be-tum-mart-num-cur-nos-pa-06d529f46a
       matins-invitatory: invitatory.laud-mus-deum-nostrum-in-confessi-ne-be-ti-mart-606fdada92
       matins-psalmody: psalmody.mart-nus-adhuc-catech-menus-hac-me-veste-cont-xi-bc6cba221b
-      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-tim-th-dea476f9b7
-      matins-reading-2: reading.de-ep-stola-ad-titum-2d34ca8e43
-      matins-reading-3: reading.titus-2-1-8-5cc4784155
+      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-tim-th-610e70fe32
+      matins-reading-2: reading.de-ep-stola-ad-titum-751a5d2835
+      matins-reading-3: reading.titus-2-1-8-0a26fdb090
       matins-reading-3-abbreviated: reading.mart-nus-sab-ri-in-pann-nia-natus-cum-d-cimum-at-f2931cfe52
       matins-reading-4: reading.mart-nus-sab-ri-in-pann-nia-natus-cum-d-cimum-at-8161d2e87f
       matins-reading-5: reading.decem-et-octo-annos-cum-hab-ret-baptiz-tus-est-q-a10f84045d
@@ -9443,7 +9443,7 @@ offices:
       matins-reading-5: reading.hac-dignitate-auctus-nihil-de-priori-viv-ndi-rat-7b0677f324
       matins-reading-6: reading.tot-catholic-fidei-increm-nta-perditissim-rum-h-6f901d9eea
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-347b2708a9
-      matins-reading-8: reading.quod-superiori-tempore-ezechiel-his-verbis-insec-dc4108930c
+      matins-reading-8: reading.quod-superiori-tempore-ezechiel-his-verbis-insec-5d0b5955bb
       matins-reading-9: reading.verum-ab-utroque-se-dissidere-ostendit-christus-2932b6d02c
       title: note.s-iosaphat-episcopi-et-martyris-088941103c
   11-14-deusdedit:
@@ -9567,16 +9567,16 @@ offices:
     - 9-lectiones
     common: commons/c8
     slots:
-      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-07ae0c659f
-      matins-reading-2: reading.apo-21-21-23-f679f0124c
-      matins-reading-3: reading.apo-21-24-27-03e2c7718e
+      matins-reading-1: reading.de-libro-apocal-psis-be-ti-io-nnis-ap-stoli-fb126e35cb
+      matins-reading-2: reading.apo-21-21-23-b349d93687
+      matins-reading-3: reading.apo-21-24-27-84c1b808cf
       matins-reading-3-abbreviated: reading.ex-locis-sacris-qu-ab-in-tio-apud-christi-nos-ve-19edae8d0c
       matins-reading-4: reading.ex-locis-sacris-qu-olim-apud-christi-nos-venerat-713c148dab
       matins-reading-5: reading.illuc-constant-nus-magnus-imper-tor-oct-vo-die-p-12b152c35b
       matins-reading-6: reading.bas-licam-item-pauli-ap-stoli-via-osti-nsi-ab-e-a1d193b692
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e7ebf5a4d8
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-7fa16a0602
       matins-reading-8: reading.pus-llus-taque-zach-us-syc-morum-s-biit-et-d-min-1e0d6c40c2
-      matins-reading-9: reading.quasi-enim-syc-morum-nos-asc-ndere-d-minus-pr-ci-33b81f2895
+      matins-reading-9: reading.quasi-enim-syc-morum-nos-asc-ndere-d-minus-pr-ci-360630ca34
   11-19:
     rank:
       name: Duplex
@@ -9613,7 +9613,7 @@ offices:
     common: commons/c5-1
     slots:
       collect: collect.deus-qui-be-tum-fel-cem-confess-rem-tuum-ex-er-m-af83aa8e87
-      matins-reading-3-abbreviated: reading.felix-hugo-ntea-dictus-ex-reg-li-valesi-rum-fam-c13d365fbe
+      matins-reading-3-abbreviated: reading.felix-hugo-ntea-dictus-ex-reg-li-valesi-rum-fam-c8022cdf34
       matins-reading-4: reading.felix-hugo-ntea-dictus-ex-regali-valesi-rum-fam-0a53250a6a
       matins-reading-5: reading.post-exactam-laudab-liter-adolesc-ntiam-c-pit-ex-1e35358c17
       matins-reading-6: reading.regula-propria-ex-summi-pontificis-innocentii-co-d139dd2237
@@ -9721,10 +9721,10 @@ offices:
     common: commons/c5
     slots:
       collect: collect.deus-qui-sanctum-io-nnem-confess-rem-tuum-atque-655c5023f7
-      matins-reading-3-abbreviated: reading.io-nnes-a-cruce-font-beri-in-hisp-nia-piis-par-n-f5cb8199b4
+      matins-reading-3-abbreviated: reading.io-nnes-a-cruce-font-beri-in-hisp-nia-piis-par-n-59d225ab7b
       matins-reading-4: reading.io-nnes-a-cruce-font-beri-in-hisp-nia-piis-par-n-2d87537e68
       matins-reading-5: reading.singulari-vit-austerit-te-et-mnium-virt-tum-pr-s-1bd1c8c697
-      matins-reading-6: reading.virginit-tem-perpetuo-coluit-impudent-sque-mulie-5c733d208f
+      matins-reading-6: reading.virginit-tem-perpetuo-coluit-impudent-sque-mulie-43861c0275
       title: note.s-ioannis-a-cruce-confessoris-et-ecclesi-doctori-14c4aa09ac
   11-24n:
     rank:
@@ -9740,7 +9740,7 @@ offices:
     common: commons/c2a
     slots:
       collect: collect.ad-sto-d-mine-supplicati-nibus-nostris-ut-qui-ex-0c18832040
-      matins-reading-3-abbreviated: reading.chrys-gonus-diocleti-no-imperat-re-rom-inclusus-3c96cbcda7
+      matins-reading-3-abbreviated: reading.chrys-gonus-diocleti-no-imperat-re-rom-inclusus-33a42cb454
       title: note.s-chrysogoni-martyris-d9f0d931f9
   11-25:
     rank:
@@ -9814,7 +9814,7 @@ offices:
     slots:
       collect: collect.deus-qui-nos-be-ti-saturn-ni-m-rtyris-tui-conc-d-e638ecac77
       matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-321592c604
-      matins-reading-2: reading.videamus-sequentia-ecce-agnus-dei-hoc-ioannes-et-8a5a824ff6
+      matins-reading-2: reading.videamus-sequentia-ecce-agnus-dei-hoc-ioannes-et-150e546d50
       matins-reading-3: reading.modo-ergo-quod-illum-sequuntur-isti-duo-non-quas-61c06d0c8d
       title: note.s-saturnini-martyris-5fe82219f5
   11-29-gelasiusi:
@@ -9859,9 +9859,9 @@ offices:
       lauds-gospel-antiphon: antiphon.conc-de-nobis-h-minem-iustum-redde-nobis-h-minem-e01b543e78
       lauds-psalmody: psalmody.salve-crux-preti-sa-s-scipe-disc-pulum-eius-qui-93118001a4
       matins-psalmody: psalmody.vidit-d-minus-petrum-et-andr-am-et-voc-vit-eos-6f5c958f35
-      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-4958414c1e
-      matins-reading-2: reading.rom-10-10-15-aa46852964
-      matins-reading-3: reading.rom-10-16-21-0308b2951d
+      matins-reading-1: reading.de-ep-stola-be-ti-pauli-ap-stoli-ad-rom-nos-0bfe20ca82
+      matins-reading-2: reading.rom-10-10-15-f53abbd66a
+      matins-reading-3: reading.rom-10-16-21-f02376a920
       matins-reading-4: reading.andr-as-ap-stolus-beths-id-natus-qui-est-galil-v-3803a94f4d
       matins-reading-5: reading.tum-g-as-ir-tus-d-sine-inquit-christum-iact-re-c-4ab2e256f9
       matins-reading-6: reading.igitur-paulo-post-in-trib-nal-prod-ctum-cum-g-as-ec5b27d6c8
@@ -9942,7 +9942,7 @@ offices:
     common: commons/c4a
     slots:
       collect: collect.deus-qui-be-tum-petrum-chrys-logum-doct-rem-egr-a505908822
-      matins-reading-3-abbreviated: reading.petrus-qui-ob-uream-eius-eloqu-ntiam-chrys-logi-310ce2901a
+      matins-reading-3-abbreviated: reading.petrus-qui-ob-uream-eius-eloqu-ntiam-chrys-logi-ecc27675b7
       matins-reading-4: reading.petrus-qui-ob-auream-eius-eloqu-ntiam-chrys-logi-4ef644d8dc
       matins-reading-5: reading.petrus-gitur-licet-invitus-in-archipr-sulem-cons-2c273932b0
       matins-reading-6: reading.dum-publice-serm-nes-haberet-ad-p-pulum-adeo-veh-1a8931b7ef
@@ -10004,9 +10004,9 @@ offices:
     - 9-lectiones
     common: commons/c4a
     slots:
-      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-tim-th-dea476f9b7
-      matins-reading-2: reading.de-ep-stola-ad-titum-2d34ca8e43
-      matins-reading-3: reading.titus-2-1-8-5cc4784155
+      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-tim-th-610e70fe32
+      matins-reading-2: reading.de-ep-stola-ad-titum-751a5d2835
+      matins-reading-3: reading.titus-2-1-8-0a26fdb090
       matins-reading-3-abbreviated: reading.ambr-sius-ep-scopus-mediolan-nsis-ambr-sii-civis-af3ba8c094
       matins-reading-4: reading.ambr-sius-ep-scopus-mediolan-nsis-ambr-sii-civis-5a5d345272
       matins-reading-5: reading.recus-nte-illo-et-e-rum-pr-cibus-resist-nte-arde-6415e0f7ff
@@ -10035,11 +10035,11 @@ offices:
       matins-nocturn-2-versicle: versicle.in-hoc-cogn-vi-qu-niam-volu-sti-me-b08376c8c1
       matins-nocturn-3-versicle: versicle.exalt-bo-te-d-mine-qu-niam-suscep-sti-me-ef954c254c
       matins-psalmody: psalmody.admir-bile-est-nomen-tuum-d-mine-in-univ-rsa-ter-9982f60f67
-      matins-reading-1: reading.de-libro-g-nesis-8ca5ac7d8f
-      matins-reading-2: reading.gen-3-6-8-e9fa541894
-      matins-reading-3: reading.gen-3-9-15-0fec9e71a4
-      matins-reading-4: reading.sermo-sancti-hier-nymi-presb-teri-a6d7882624
-      matins-reading-5: reading.non-imm-rito-gitur-ven-re-de-l-bano-iub-tur-quia-9eb9094453
+      matins-reading-1: reading.de-libro-g-nesis-8b6d945613
+      matins-reading-2: reading.gen-3-6-8-8d64744328
+      matins-reading-3: reading.gen-3-9-15-88984d3215
+      matins-reading-4: reading.sermo-sancti-hier-nymi-presb-teri-bc226e49d5
+      matins-reading-5: reading.non-imm-rito-gitur-ven-re-de-l-bano-iub-tur-quia-00826cf7a0
       matins-reading-6: reading.ex-actis-pii-pap-noni-4ab051183c
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-fd7daf24fe
       matins-reading-8: reading.ave-dei-mons-pr-p-nguis-et-umbr-sus-in-quo-enutr-7e525f7d21
@@ -10079,14 +10079,14 @@ offices:
       lauds-psalmody: psalmody.conceptio-glorios-virginis-mari-ex-semine-abrah-ab05cb43af
       lauds-versicle: versicle.conceptio-est-hodie-sanct-mari-virginis-925f533a21
       matins-invitatory: invitatory.conceptionem-virginis-mari-celebremus-christum-e-3cc3d3d086
-      matins-reading-1: reading.sir-24-5-13-454f93f62c
-      matins-reading-2: reading.sir-24-14-21-b9b24d1841
-      matins-reading-3: reading.sir-24-22-31-3a8b328957
+      matins-reading-1: reading.sir-24-5-13-4a8381bc5b
+      matins-reading-2: reading.sir-24-14-21-f5290fc55b
+      matins-reading-3: reading.sir-24-22-31-4e2b9f4100
       matins-reading-4: reading.sermo-sancti-ambr-sii-episcopi-bf1b8ab2da
       matins-reading-5: reading.nam-de-ceteris-eius-virtutibus-quid-loquar-virgo-82f42a85a4
       matins-reading-6: reading.quando-ista-vel-vultu-l-sit-parentes-quando-diss-07589670b3
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-9845303ac2
-      matins-reading-8: reading.ideo-autem-c-teris-pr-term-ssis-horum-f-lium-nun-a2913b2393
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-a3d6e5954f
+      matins-reading-8: reading.ideo-autem-c-teris-pr-term-ssis-horum-f-lium-nun-bcf1d24a20
       matins-reading-9: reading.iacob-autem-g-nuit-ioseph-hunc-locum-obi-cit-nob-6dc7a24d46
       matins-responsory-1: responsory.h-die-nobis-c-l-rum-rex-de-v-rgine-nasci-dign-tu-24a993af9c
       matins-responsory-2: responsory.h-die-nobis-de-c-lo-pax-vera-desc-ndit-1eb0389efb
@@ -10168,9 +10168,9 @@ offices:
       matins-nocturn-2-versicle: versicle.d-mine-dil-xi-dec-rem-domus-tu-d1bba5b9e7
       matins-nocturn-3-versicle: versicle.domum-tuam-d-mine-decet-sanctit-do-bf4dacac5b
       matins-psalmody: psalmody.elev-ta-est-magnific-ntia-tua-super-c-los-98cea9c185
-      matins-reading-1: reading.de-libro-t-rtio-regum-b6da65cdb0
-      matins-reading-2: reading.3-reg-8-33-36-ddf852e033
-      matins-reading-3: reading.3-reg-8-38-43-c1217565d9
+      matins-reading-1: reading.de-libro-t-rtio-regum-5a45dfa538
+      matins-reading-2: reading.3-reg-8-33-36-7ead792ae3
+      matins-reading-3: reading.3-reg-8-38-43-798fb93867
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-c3a400980f
       matins-reading-5: reading.utrum-autem-et-qu-tuor-principales-virt-tes-tamq-ab402542ca
       matins-reading-6: reading.iust-ti-autem-pr-se-fert-ins-gne-ubi-se-anc-llam-d1c3c576f0
@@ -10309,7 +10309,7 @@ offices:
       lauds-psalmody: psalmody.or-nte-sancta-l-cia-app-ruit-ei-be-ta-agatha-et-1162778867
       matins-reading-3-abbreviated: reading.l-cia-virgo-syracus-na-g-nere-et-christi-na-fide-5ae4c3d10b
       matins-reading-4: reading.l-cia-virgo-syracusana-genere-et-christiana-fide-d39135b252
-      matins-reading-5: reading.quod-ubi-resciv-sset-is-cui-eam-par-ntes-contra-9b6c9af076
+      matins-reading-5: reading.quod-ubi-resciv-sset-is-cui-eam-par-ntes-contra-f3f8f5316a
       matins-reading-6: reading.quam-cum-paschasius-interrogasset-estne-in-te-sp-f453c9f273
       matins-responsory-4: responsory.l-cia-virgo-quid-a-me-petis-quod-ipsa-p-teris-pr-efe770c1d9
       matins-responsory-5: responsory.rog-vi-d-minum-meum-iesum-christum-ut-ignis-iste-ed9bc57658
@@ -10330,9 +10330,9 @@ offices:
     common: sanctoral/12-08
   12-13t:
     slots:
-      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-732c319503
-      matins-reading-2: reading.1-cor-7-32-35-2b255c1098
-      matins-reading-3: reading.1-cor-7-36-40-8c3629fb1a
+      matins-reading-1: reading.de-ep-stola-prima-be-ti-pauli-ap-stoli-ad-cor-nt-c42568d4d2
+      matins-reading-2: reading.1-cor-7-32-35-2178082e71
+      matins-reading-3: reading.1-cor-7-36-40-9daa799bfb
       matins-responsory-1: responsory.l-cia-virgo-quid-a-me-petis-quod-ipsa-p-teris-pr-efe770c1d9
       matins-responsory-2: responsory.rog-vi-d-minum-meum-iesum-christum-ut-ignis-iste-ed9bc57658
       matins-responsory-3: responsory.grata-facta-est-a-d-mino-in-cert-mine-quia-apud-160838d22f
@@ -10352,9 +10352,9 @@ offices:
       doxology: Nat
     common: sanctoral/12-08
     slots:
-      matins-reading-1: reading.de-par-bolis-salom-nis-092cd43882
-      matins-reading-2: reading.prov-8-18-25-9086954ec0
-      matins-reading-3: reading.prov-8-34-36-9-1-5-96a354d362
+      matins-reading-1: reading.de-par-bolis-salom-nis-5f689711a2
+      matins-reading-2: reading.prov-8-18-25-047910c9af
+      matins-reading-3: reading.prov-8-34-36-9-1-5-8ba710454f
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-ix-0dde60de1f
       matins-reading-5: reading.et-re-quidem-vera-hanc-de-immacul-ta-beat-ssim-v-32e7032f89
       matins-reading-6: reading.quapropter-enarr-ntes-verba-quibus-deus-pr-par-t-91fd83fd4a
@@ -10372,9 +10372,9 @@ offices:
       doxology: Nat
     common: sanctoral/12-08
     slots:
-      matins-reading-1: reading.de-libro-g-nesis-8ca5ac7d8f
-      matins-reading-2: reading.gen-3-6-8-e9fa541894
-      matins-reading-3: reading.gen-3-9-15-0fec9e71a4
+      matins-reading-1: reading.de-libro-g-nesis-8b6d945613
+      matins-reading-2: reading.gen-3-6-8-8d64744328
+      matins-reading-3: reading.gen-3-9-15-88984d3215
       matins-reading-4: reading.ex-bulla-dogmatica-pii-pap-ix-0f718cb5b1
       matins-reading-5: reading.itaque-plurimum-in-d-mino-confisi-advenisse-t-mp-800f3c052c
       matins-reading-6: reading.quare-postquam-numquam-interm-simus-in-humilitat-150e5778eb
@@ -10452,8 +10452,8 @@ offices:
       collect: collect.da-nobis-qu-sumus-d-mine-be-ti-ap-stoli-tui-thom-d0e9183149
       lauds-gospel-antiphon: antiphon.quia-vid-sti-me-thoma-credid-sti-be-ti-qui-non-v-6d5cc70d1b
       matins-reading-4: reading.thomas-ap-stolus-qui-et-d-dymus-galil-us-post-ac-4f33107aa3
-      matins-reading-5: reading.sermo-sancti-greg-rii-pap-d454d979df
-      matins-reading-6: reading.quot-ergo-sunt-bona-pr-dic-ntium-tot-sunt-ornam-8c1815f6ad
+      matins-reading-5: reading.sermo-sancti-greg-rii-pap-7ffb3ada47
+      matins-reading-6: reading.quot-ergo-sunt-bona-pr-dic-ntium-tot-sunt-ornam-c2e72557ed
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-f80712ae1b
       matins-reading-8: reading.sic-quippe-disc-pulum-d-minus-post-resurrecti-ne-8806681770
       matins-reading-9: reading.dum-ergo-vidit-thomas-dum-palp-vit-cur-ei-d-citu-071c40abe5
@@ -10502,12 +10502,12 @@ offices:
     - no93
     slots:
       lauds-gospel-antiphon: antiphon.ori-tur-sicut-sol-salv-tor-mundi-et-desc-ndet-in-64bc869c5f
-      matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-9353929673
-      matins-reading-2: reading.antequam-conven-rent-inv-nta-est-in-tero-habens-0455262794
-      matins-reading-3: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-f209e09fa6
+      matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-f8039b9e3e
+      matins-reading-2: reading.antequam-conven-rent-inv-nta-est-in-tero-habens-6abe7df60e
+      matins-reading-3: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-654ac47c22
       matins-reading-4: reading.sermo-sancti-le-nis-pap-b34d0f30dc
-      matins-reading-5: reading.causa-autem-reparati-nis-nostr-non-est-nisi-mise-c7dfb634ce
-      matins-reading-6: reading.quod-qu-modo-impl-tum-sit-io-nnes-ap-stolus-doce-9bcaa01ee7
+      matins-reading-5: reading.causa-autem-reparati-nis-nostr-non-est-nisi-mise-3f5c4c8cc1
+      matins-reading-6: reading.quod-qu-modo-impl-tum-sit-io-nnes-ap-stolus-doce-50da423c85
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-b7e97bd198
       matins-reading-8: reading.antequam-conven-rent-inv-nta-est-in-tero-habens-9b053bb42f
       matins-reading-9: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-2cf3c63ebd
@@ -10529,12 +10529,12 @@ offices:
     - no93
     slots:
       lauds-gospel-antiphon: antiphon.ori-tur-sicut-sol-salv-tor-mundi-et-desc-ndet-in-64bc869c5f
-      matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-9353929673
-      matins-reading-2: reading.antequam-conven-rent-inv-nta-est-in-tero-habens-0455262794
-      matins-reading-3: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-f209e09fa6
+      matins-reading-1: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-f8039b9e3e
+      matins-reading-2: reading.antequam-conven-rent-inv-nta-est-in-tero-habens-6abe7df60e
+      matins-reading-3: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-654ac47c22
       matins-reading-4: reading.sermo-sancti-le-nis-pap-b34d0f30dc
-      matins-reading-5: reading.causa-autem-reparati-nis-nostr-non-est-nisi-mise-c7dfb634ce
-      matins-reading-6: reading.quod-qu-modo-impl-tum-sit-io-nnes-ap-stolus-doce-9bcaa01ee7
+      matins-reading-5: reading.causa-autem-reparati-nis-nostr-non-est-nisi-mise-3f5c4c8cc1
+      matins-reading-6: reading.quod-qu-modo-impl-tum-sit-io-nnes-ap-stolus-doce-50da423c85
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-matth-um-feb364875f
       matins-reading-8: reading.ioseph-autem-vir-eius-cum-esset-iustus-et-nollet-2cf3c63ebd
       matins-reading-9: reading.ioseph-fili-david-noli-tim-re-acc-pere-mar-am-ux-5475e8d217
@@ -10571,14 +10571,14 @@ offices:
       matins-nocturn-2-versicle: versicle.speci-sus-forma-pr-f-liis-h-minum-ad77b9fcbc
       matins-nocturn-3-versicle: versicle.ipse-invoc-bit-me-allel-ia-b70f01fe82
       matins-psalmody: psalmody.d-minus-dixit-ad-me-f-lius-meus-es-tu-ego-h-die-d8a8fa4beb
-      matins-reading-1: reading.isa-9-1-6-a6dbe7f017
-      matins-reading-2: reading.isa-40-1-8-e38cd73799
-      matins-reading-3: reading.isa-52-1-6-fa8263f855
+      matins-reading-1: reading.isa-9-1-6-2b8536cf3a
+      matins-reading-2: reading.isa-40-1-8-b62d7690dc
+      matins-reading-3: reading.isa-52-1-6-4ba4f36d39
       matins-reading-4: reading.sermo-sancti-le-nis-pap-acf6105a4a
       matins-reading-5: reading.in-quo-confl-ctu-pro-nobis-nito-magno-et-mir-bil-30b80cf889
-      matins-reading-6: reading.ag-mus-ergo-dilect-ssimi-gr-tias-deo-patri-per-f-a3d45a1377
-      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-f521b830c1
-      matins-reading-8: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-e1ba61f022
+      matins-reading-6: reading.ag-mus-ergo-dilect-ssimi-gr-tias-deo-patri-per-f-dcc65836f4
+      matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-4449b86967
+      matins-reading-8: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-aedfb4ce55
       matins-reading-9: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-c360558d9c
       matins-responsory-1: responsory.h-die-nobis-c-l-rum-rex-de-v-rgine-nasci-dign-tu-24a993af9c
       matins-responsory-2: responsory.h-die-nobis-de-c-lo-pax-vera-desc-ndit-1eb0389efb
@@ -10616,9 +10616,9 @@ offices:
       lauds-psalmody: psalmody.lapidav-runt-st-phanum-et-ipse-invoc-bat-d-minum-227a03c6af
       lauds-versicle: versicle.sepeli-runt-st-phanum-viri-timor-ti-ac3d708e6e
       matins-invitatory: invitatory.christum-natum-qui-be-tum-h-die-coron-vit-st-pha-53d48a6f93
-      matins-reading-1: reading.de-actibus-apostol-rum-2c111b00e9
-      matins-reading-2: reading.act-6-7-10-7-54-b4a89dafbd
-      matins-reading-3: reading.act-7-55-59-3d6941831b
+      matins-reading-1: reading.de-actibus-apostol-rum-f347337a53
+      matins-reading-2: reading.act-6-7-10-7-54-3e1bd54f1f
+      matins-reading-3: reading.act-7-55-59-004e61d058
       matins-reading-4: reading.sermo-sancti-fulg-ntii-ep-scopi-880fbe08bc
       matins-reading-5: reading.asc-ndit-iste-lapid-ntibus-iud-is-quia-ille-desc-0e293fb190
       matins-reading-6: reading.necess-rium-tamen-nobis-est-fratres-agn-scere-qu-7e21c3123d
@@ -10654,9 +10654,9 @@ offices:
       lauds-gospel-antiphon: antiphon.iste-est-io-nnes-qui-supra-pectus-d-mini-in-cena-dba6b5e501
       lauds-psalmody: psalmody.valde-honor-ndus-est-be-tus-io-nnes-qui-supra-pe-8104aadad8
       lauds-versicle: versicle.hic-est-disc-pulus-ille-qui-testim-nium-p-rhibet-672119a386
-      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-io-nnis-ap-stoli-1a800c5c9a
+      matins-reading-1: reading.incipit-ep-stola-prima-be-ti-io-nnis-ap-stoli-720bf00524
       matins-reading-2: reading.1-ioannes-1-6-10-0e07114cdd
-      matins-reading-3: reading.1-ioannes-2-1-5-6fb71023a3
+      matins-reading-3: reading.1-ioannes-2-1-5-59b3085da4
       matins-reading-4: reading.ex-libro-sancti-hier-nymi-presb-teri-de-script-r-f6aea49d14
       matins-reading-5: reading.quarto-d-cimo-gitur-anno-sec-ndam-post-ner-nem-p-789bfb3367
       matins-reading-6: reading.ex-comment-riis-ei-sdem-in-ep-stolam-ad-g-latas-2bb4778d5c
@@ -10697,9 +10697,9 @@ offices:
       lauds-psalmody: psalmody.her-des-ir-tus-occ-dit-multos-p-eros-in-b-thlehe-913df96c45
       lauds-versicle: versicle.her-des-ir-tus-occ-dit-multos-p-eros-48f06f2dc1
       matins-hymn: hymn.audit-tyr-nnus-nxius-875706b6ce
-      matins-reading-1: reading.de-ierem-a-proph-ta-535efb22e8
-      matins-reading-2: reading.ier-31-18-20-3fc5c68d13
-      matins-reading-3: reading.ier-31-21-23-1625c3c190
+      matins-reading-1: reading.de-ierem-a-proph-ta-e677f9ef2b
+      matins-reading-2: reading.ier-31-18-20-3cf8a34c5f
+      matins-reading-3: reading.ier-31-21-23-fddcd11649
       matins-reading-4: reading.sermo-sancti-august-ni-ep-scopi-ed8d86e388
       matins-reading-5: reading.be-ta-es-o-b-thlehem-terra-iuda-qu-her-dis-regis-0e36bd4e62
       matins-reading-6: reading.ali-rum-quidem-preti-sa-mors-m-rtyrum-laudem-in-94c01b4643
@@ -10745,7 +10745,7 @@ offices:
       matins-reading-5: reading.c-ntulit-gitur-se-ad-alex-ndrum-t-rtium-pont-fic-638bf2afcd
       matins-reading-6: reading.ex-qua-regis-voce-nef-rii-sat-llites-sper-ntes-g-c792d33005
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-57ca8cfc7f
-      matins-reading-8: reading.quod-superi-ri-t-mpore-ez-chiel-his-verbis-insec-fa8bab593e
+      matins-reading-8: reading.quod-superi-ri-t-mpore-ez-chiel-his-verbis-insec-af08bf342a
       matins-reading-9: reading.verum-ab-utr-que-se-dissid-re-ost-ndit-christus-549b112e9c
       title: note.s-thom-cantuariensis-episcopi-et-martyris-b8fa0f1b74
       vespers-psalmody: psalmody.tecum-princ-pium-in-die-virt-tis-tu-in-splend-ri-947bd31487
@@ -10753,9 +10753,9 @@ offices:
     common: commons/c2
   12-29o:
     slots:
-      matins-reading-1: reading.de-ctibus-apostol-rum-6504a3aea3
+      matins-reading-1: reading.de-ctibus-apostol-rum-81c0700b81
       matins-reading-2: reading.acts-20-25-31-e1bf516db8
-      matins-reading-3: reading.acts-20-32-38-78145f20ae
+      matins-reading-3: reading.acts-20-32-38-32107377a1
       matins-responsory-1: responsory.text-c9d31a2e1c
       matins-responsory-2: responsory.text-654d5f6c73
       matins-responsory-3: responsory.text-bb0d7c4de1
@@ -10821,9 +10821,9 @@ offices:
       matins-nocturn-2-versicle: versicle.ipse-vulner-tus-est-propter-iniquit-tes-nostras-de725d4762
       matins-nocturn-3-versicle: versicle.discipl-na-pacis-nostr-super-eum-b29170ce41
       matins-psalmody: psalmody.ad-iesum-autem-cum-ven-ssent-non-freg-runt-eius-cf0d260fa7
-      matins-reading-1: reading.de-zachar-a-proph-ta-8a52275cca
-      matins-reading-2: reading.zach-13-1-5-bf6641587f
-      matins-reading-3: reading.zach-13-6-9-9c4d7e24de
+      matins-reading-1: reading.de-zachar-a-proph-ta-07c40baee3
+      matins-reading-2: reading.zach-13-1-5-8d68718c63
+      matins-reading-3: reading.zach-13-6-9-ef331cab20
       matins-reading-4: reading.sermo-innoc-ntii-pap-sexti-4e1671d5a2
       matins-reading-5: reading.h-c-latus-ipsum-aperi-ndo-sacratissimas-i-nuas-n-c90e694f76
       matins-reading-6: reading.quid-enim-v-lnere-et-plagis-hui-smodi-s-nctius-q-efbc809f81
@@ -10876,12 +10876,12 @@ offices:
       matins-nocturn-2-versicle: versicle.adoramus-te-christe-et-bened-cimus-tibi-fd91728741
       matins-nocturn-3-versicle: versicle.omnis-terra-ad-ret-te-et-psallat-tibi-82bc35a0c1
       matins-psalmody: psalmody.rubrum-est-indumentum-tuum-et-vestim-nta-tua-sic-e0511c5a6d
-      matins-reading-1: reading.de-isa-a-proph-ta-ea262e190d
-      matins-reading-2: reading.isa-53-6-9-44a40eb1e4
+      matins-reading-1: reading.de-isa-a-proph-ta-ae8f328e6d
+      matins-reading-2: reading.isa-53-6-9-fae9aa5657
       matins-reading-3: reading.isa-53-10-12-7766280902
       matins-reading-4: reading.sermo-sancti-ambr-sii-ep-scopi-00e475ce18
       matins-reading-5: reading.vesti-ergo-et-tu-d-mini-corpus-gl-ria-sua-ut-et-d90bbcc887
-      matins-reading-6: reading.hunc-ioseph-iustum-lucas-dixit-matth-us-divitem-7b02691b75
+      matins-reading-6: reading.hunc-ioseph-iustum-lucas-dixit-matth-us-divitem-51450b70ba
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-marcum-f4e34dc620
       matins-reading-8: reading.venit-inquit-ioseph-ab-arimath-a-n-bilis-decurio-f1659cad35
       matins-responsory-1: responsory.ecce-v-dimus-eum-non-habentem-sp-ciem-neque-dec-a91ac5bffd
@@ -10929,12 +10929,12 @@ offices:
       matins-nocturn-2-versicle: versicle.vere-langu-res-nostros-ipse-tulit-bde5a815c8
       matins-nocturn-3-versicle: versicle.ipse-vulner-tus-est-propter-iniquit-tes-nostras-de725d4762
       matins-psalmody: psalmody.quis-est-qui-venit-de-edom-tinctis-v-stibus-de-b-e3fda60a64
-      matins-reading-1: reading.de-isa-a-proph-ta-ea262e190d
-      matins-reading-2: reading.isa-53-6-10-094d471269
-      matins-reading-3: reading.is-63-1-5-f40cfe5bca
+      matins-reading-1: reading.de-isa-a-proph-ta-ae8f328e6d
+      matins-reading-2: reading.isa-53-6-10-cf79426f7c
+      matins-reading-3: reading.is-63-1-5-e3201cd8ad
       matins-reading-4: reading.de-serm-ne-sancti-bern-rdi-abb-tis-6c82c0d040
       matins-reading-5: reading.vide-qu-modo-hoc-flore-ros-flor-erit-optima-viti-97a162ab74
-      matins-reading-6: reading.ex-e-dem-divo-bern-rdo-38e99dd113
+      matins-reading-6: reading.ex-e-dem-divo-bern-rdo-7da5827e75
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-io-nnem-2d94c53ee8
       matins-reading-8: reading.consumm-tum-esse-ait-impietatis-iudaic-modum-et-2a38cdc7f5
       matins-responsory-1: responsory.gratificavit-nos-deus-in-dil-cto-f-lio-suo-ef7f6febda
@@ -10986,11 +10986,11 @@ offices:
       matins-nocturn-2-versicle: versicle.pater-mi-si-poss-bile-est-356c535888
       matins-nocturn-3-versicle: versicle.vigil-te-et-or-te-7a3d985a1c
       matins-psalmody: psalmody.ante-orati-nem-pr-para-nimam-tuam-et-noli-esse-q-fc830887f4
-      matins-reading-1: reading.de-libro-tobi-8f1c6ee482
-      matins-reading-2: reading.de-epistola-beati-iac-bi-ap-stoli-6fc9b75795
-      matins-reading-3: reading.de-epistola-beati-pauli-ap-stoli-ad-hebr-os-c5f09b05d2
+      matins-reading-1: reading.de-libro-tobi-52c6f324d7
+      matins-reading-2: reading.de-epistola-beati-iac-bi-ap-stoli-314e2fbe35
+      matins-reading-3: reading.de-epistola-beati-pauli-ap-stoli-ad-hebr-os-dcdb06d872
       matins-reading-4: reading.ex-tractatu-sancti-cypri-ni-ep-scopi-et-m-rtyris-e6abf9f94b
-      matins-reading-5: reading.ex-comment-riis-sancti-anselmi-ep-scopi-in-epist-6aba80260c
+      matins-reading-5: reading.ex-comment-riis-sancti-anselmi-ep-scopi-in-epist-20a35d5fe6
       matins-reading-6: reading.et-btulit-has-cum-clamore-valido-id-est-cum-inte-e12197cc57
       matins-reading-7: reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-9bf83be94d
       matins-reading-8: reading.de-nde-verb-rum-ips-rum-proprietatem-consideremu-59f9b527eb
@@ -11071,8 +11071,8 @@ offices:
       matins-nocturn-2-versicle: versicle.posu-sti-d-mine-super-caput-eius-bfcd6f6a4e
       matins-nocturn-3-versicle: versicle.cor-na-urea-super-caput-eius-416df6490c
       matins-psalmody: psalmody.erit-tamquam-lignum-quod-plant-tum-est-secus-dec-6a6a620c81
-      matins-reading-1: reading.de-isa-a-proph-ta-ea262e190d
-      matins-reading-2: reading.isa-53-6-8-b11a4e8594
+      matins-reading-1: reading.de-isa-a-proph-ta-ae8f328e6d
+      matins-reading-2: reading.isa-53-6-8-3e364864bf
       matins-reading-3: reading.isa-53-9-11-128d4d307b
       matins-reading-4: reading.sermo-sancti-bern-rdi-abb-tis-87d33e62ed
       matins-reading-5: reading.serm-41-in-cant-baf9b05cc8

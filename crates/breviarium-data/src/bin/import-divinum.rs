@@ -2170,7 +2170,7 @@ fn semantic_content_lines(language: &str, text: &str) -> Vec<ContentItem> {
             output.push(ContentItem::Text { text: rest });
         } else if let Some(rest) = strip_prefix(&line, "r.") {
             output.push(ContentItem::Prayer { text: rest });
-        } else if looks_like_citation(&line) {
+        } else if starts_with_verse_number(&line) {
             output.push(ContentItem::Citation { text: line });
         } else {
             output.push(ContentItem::Text { text: line });
@@ -3267,7 +3267,7 @@ fn semantic_split(language: &str, text: &str) -> Vec<ContentItem> {
             nodes.push(classify(rest));
         } else if let Some(rest) = strip_role(&line, "r.") {
             nodes.push(ContentItem::Prayer { text: rest });
-        } else if looks_like_cite(&line) {
+        } else if starts_with_verse_number(&line) {
             nodes.push(ContentItem::Citation { text: line });
         } else {
             nodes.push(classify(line));
@@ -3290,7 +3290,7 @@ fn marker_item(text: &str) -> ContentItem {
 }
 
 fn classify(line: String) -> ContentItem {
-    if looks_like_cite(&line) {
+    if starts_with_verse_number(&line) {
         ContentItem::Citation { text: line }
     } else if line.eq_ignore_ascii_case("oremus.") || line.eq_ignore_ascii_case("let us pray.") {
         ContentItem::Prayer { text: line }
@@ -3350,6 +3350,28 @@ fn looks_like_cite(text: &str) -> bool {
             || text.starts_with("1 ")
             || text.starts_with("2 ")
             || text.starts_with("3 "))
+}
+
+/// Whether a body line begins with a verse number (`<chapter>:<verse>`), e.g.
+/// `1:1 Beátus vir…`. Used to classify psalm verses as citations WITHOUT
+/// mis-flagging verse-numbered prose like `1 And Samuel said…: Behold…` (which
+/// merely contains a colon). Scripture references themselves arrive `!`-marked
+/// and are still detected by `looks_like_cite`.
+fn starts_with_verse_number(line: &str) -> bool {
+    let bytes = line.as_bytes();
+    let mut i = 0;
+    while i < bytes.len() && bytes[i].is_ascii_digit() {
+        i += 1;
+    }
+    if i == 0 || bytes.get(i) != Some(&b':') {
+        return false;
+    }
+    i += 1;
+    let after_colon = i;
+    while i < bytes.len() && bytes[i].is_ascii_digit() {
+        i += 1;
+    }
+    i > after_colon
 }
 
 /// Splits a flat source key into its (book, book-relative office key).

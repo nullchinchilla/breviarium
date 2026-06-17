@@ -3157,6 +3157,11 @@ fn type_content(language: &str, items: &[ContentItem]) -> Vec<ContentItem> {
     let mut out = Vec::new();
     for item in items {
         match item {
+            // A blank line (a stanza break) — kept so `coalesce_text` joins it
+            // into the block as a blank line; `semantic_split("")` would drop it.
+            ContentItem::Text { text } if text.is_empty() => out.push(ContentItem::Text {
+                text: String::new(),
+            }),
             ContentItem::Text { text } => out.extend(semantic_split(language, text)),
             ContentItem::Heading { text } => out.push(ContentItem::Heading {
                 text: clean_text(text),

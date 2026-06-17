@@ -675,6 +675,8 @@ texts:
       la:
       - type: antiphon
         text: Beáta Dei Génitrix Virgo María, Sanctíque omnes intercédant pro nobis ad Dóminum.
+      - type: text
+        text: ''
       - type: versicle
         text: Mirificávit Dóminus Sanctos suos.
       - type: response
@@ -697,6 +699,8 @@ texts:
         text: (sed commune C1[012] dicitur)
       - type: antiphon
         text: Sancti omnes intercédant pro nobis ad Dóminum.
+      - type: text
+        text: ''
       - type: versicle
         text: Mirificávit Dóminus Sanctos suos.
       - type: response
@@ -719,6 +723,8 @@ texts:
         text: (sed tempore paschali)
       - type: antiphon
         text: Crucifíxus surréxit a mórtuis, et redémit nos, allelúia, allelúia.
+      - type: text
+        text: ''
       - type: versicle
         text: Dícite in natiónibus, allelúia.
       - type: response
@@ -737,6 +743,8 @@ texts:
       en:
       - type: antiphon
         text: May the Blessed Virgin Mary, Mother of God, and all the Saints intercede for us with the Lord.
+      - type: text
+        text: ''
       - type: versicle
         text: 'The Lord hath made his holy one wonderful:'
       - type: response
@@ -758,6 +766,8 @@ texts:
       la:
       - type: antiphon
         text: Beáta Dei Génitrix Virgo María, Sanctíque omnes intercédant pro nobis ad Dóminum.
+      - type: text
+        text: ''
       - type: versicle
         text: Mirificávit Dóminus Sanctos suos.
       - type: response
@@ -800,6 +810,8 @@ texts:
       en:
       - type: antiphon
         text: He that was crucified is risen from the dead, and hath redeemed us. Alleluia, Alleluia.
+      - type: text
+        text: ''
       - type: versicle
         text: Say among the heathen, Alleluia
       - type: response
@@ -815,6 +827,8 @@ texts:
       la:
       - type: antiphon
         text: Crucifíxus surréxit a mórtuis, et redémit nos, allelúia, allelúia.
+      - type: text
+        text: ''
       - type: versicle
         text: Dícite in natiónibus, allelúia.
       - type: response
@@ -835,6 +849,8 @@ texts:
         text: Commemoration of the Holy Apostles Peter and Paul
       - type: antiphon
         text: Peter the Apostle, and Paul the Teacher of the Gentiles, have taught us thy law, O Lord.
+      - type: text
+        text: ''
       - type: versicle
         text: Thou shalt make them princes over all the earth.
       - type: response
@@ -848,6 +864,8 @@ texts:
         text: De Apostolis
       - type: antiphon
         text: Petrus Apóstolus, et Paulus Doctor Géntium, ipsi nos docuérunt legem tuam Dómine.
+      - type: text
+        text: ''
       - type: versicle
         text: Constítues eos príncipes super omnem terram.
       - type: response
@@ -864,6 +882,8 @@ texts:
         text: Commemoration of the Holy Apostles Peter and Paul
       - type: antiphon
         text: These are glorious princes over all the earth, they loved one another in their lives, and in their death they were not divided.
+      - type: text
+        text: ''
       - type: versicle
         text: Their sound is gone out through all the earth.
       - type: text
@@ -877,6 +897,8 @@ texts:
         text: De Apostolis
       - type: antiphon
         text: Gloriósi príncipes terræ, quómodo in vita sua dilexérunt se, ita et in morte non sunt separáti.
+      - type: text
+        text: ''
       - type: versicle
         text: In omnem terram exívit sonus eórum.
       - type: response
@@ -900,7 +922,7 @@ texts:
       - type: response
         text: Ut digni efficiámur promissiónibus Christi.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
           (sed tempore post partum loco horum versuum dicuntur)
@@ -931,7 +953,7 @@ texts:
       - type: response
         text: Ut digni efficiámur promissiónibus Christi.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
           (sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
@@ -939,6 +961,7 @@ texts:
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -948,7 +971,7 @@ texts:
       - type: response
         text: Da mihi virtútem contra hostes tuos.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Concéde, miséricors Deus, fragilitáti nostræ præsídium; ut, qui sanctæ Dei Genetrícis memóriam ágimus; intercessiónis eius auxílio, a nostris iniquitátibus resurgámus. Per eúndem Christum Dóminum nostrum. Amen.
           (sed Adventus dicitur)
@@ -963,7 +986,7 @@ texts:
       - type: response
         text: Et concépit de Spíritu Sancto.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut, qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus; per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum. Amen.
           (sed Nativitatis aut Epiphaniæ aut post partum dicitur)
@@ -978,7 +1001,7 @@ texts:
       - type: response
         text: Dei Génetrix, intercéde pro nobis.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Iesum Christum Fílium tuum. Amen.
           (sed Paschali dicitur)
@@ -1010,6 +1033,8 @@ texts:
         text: De sancto Ioseph
       - type: antiphon
         text: Ipse Iesus erat incípiens quasi annórum trigínta ut putabátur fílius Ioseph. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Os iusti meditábitur sapiéntiam. (Allelúia.)
       - type: response
@@ -1053,6 +1078,8 @@ texts:
         text: De Pace
       - type: antiphon
         text: Da pacem Dómine in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Fiat pax in virtúte tua. (Allelúia.)
       - type: response
@@ -1080,7 +1107,7 @@ texts:
       - type: response
         text: Ut digni efficiámur promissiónibus Christi.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
           (sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis loco horum versuum dicitur)
@@ -1088,6 +1115,7 @@ texts:
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -1097,7 +1125,7 @@ texts:
       - type: response
         text: Da mihi virtútem contra hostes tuos.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Concéde, miséricors Deus, fragilitáti nostræ præsídium; ut, qui sanctæ Dei Genetrícis memóriam ágimus; intercessiónis eius auxílio, a nostris iniquitátibus resurgámus. Per eúndem Christum Dóminum nostrum. Amen.
           (sed Adventus loco horum versuum dicitur)
@@ -1112,7 +1140,7 @@ texts:
       - type: response
         text: Et concépit de Spíritu Sancto.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut, qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus; per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum. Amen.
           (sed Nativitatis aut Epiphaniæ aut post partum loco horum versuum dicitur)
@@ -1127,7 +1155,7 @@ texts:
       - type: response
         text: Dei Génetrix, intercéde pro nobis.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Iesum Christum Fílium tuum. Amen.
           (sed Paschali loco horum versuum dicitur)
@@ -1159,6 +1187,8 @@ texts:
         text: De sancto Ioseph
       - type: antiphon
         text: Ipse Iesus erat incípiens quasi annórum trigínta ut putabátur fílius Ioseph. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Os iusti meditábitur sapiéntiam. (Allelúia.)
       - type: response
@@ -1202,6 +1232,8 @@ texts:
         text: De Pace
       - type: antiphon
         text: Da pacem Dómine in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Fiat pax in virtúte tua. (Allelúia.)
       - type: response
@@ -1222,6 +1254,8 @@ texts:
         text: De cruce
       - type: antiphon
         text: Deliver us from our enemies, O thou our God, by the sign of the Cross.
+      - type: text
+        text: ''
       - type: versicle
         text: Let all the earth adore thee, and sing to thee.
       - type: response
@@ -1235,6 +1269,8 @@ texts:
         text: De cruce
       - type: antiphon
         text: Per signum Crucis de inimícis nostris líbera nos, Deus noster.
+      - type: text
+        text: ''
       - type: versicle
         text: Omnis terra adóret te, et psallat tibi.
       - type: response
@@ -1251,6 +1287,8 @@ texts:
         text: For Peace
       - type: antiphon
         text: Give peace in our time, O Lord, because there is no one else who fights for us, if not You, our God.
+      - type: text
+        text: ''
       - type: versicle
         text: Peace be within thy walls.
       - type: response
@@ -1268,6 +1306,8 @@ texts:
         text: De Pace
       - type: antiphon
         text: Da pacem Dómine in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Fiat pax in virtúte tua. (Allelúia.)
       - type: response
@@ -1296,6 +1336,8 @@ texts:
         text: Commemoration of St. Joseph
       - type: antiphon
         text: Behold a faithful and wise servant whom his Lord hath made ruler over His household.
+      - type: text
+        text: ''
       - type: versicle
         text: Glory and riches shall be in his house.
       - type: response
@@ -1309,6 +1351,8 @@ texts:
         text: De sancto Ioseph
       - type: antiphon
         text: Ecce fidélis servus et prudens, quem constítuit Dóminus super famíliam suam. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Glória et divítiæ in domo eius. (Allelúia.)
       - type: response
@@ -1325,6 +1369,8 @@ texts:
         text: Commemoration of St. Joseph
       - type: antiphon
         text: Jesus himself began to be about thirty years of age, being (as was supposed) the son of Joseph.
+      - type: text
+        text: ''
       - type: versicle
         text: The mouth of the righteous speaketh wisdom.
       - type: response
@@ -1344,6 +1390,8 @@ texts:
         text: De sancto Ioseph
       - type: antiphon
         text: Ipse Iesus erat incípiens quasi annórum trigínta ut putabátur fílius Ioseph. (Allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Os iusti meditábitur sapiéntiam. (Allelúia.)
       - type: response
@@ -1366,6 +1414,8 @@ texts:
         text: De SS. Benedicto, Bernardo et Roberto
       - type: antiphon
         text: Sancti per fidem vicérunt regna, operáti sunt iustítiam, adépti sunt, repromissiónes. (Allelúia, allelúia.)
+      - type: text
+        text: ''
       - type: versicle
         text: Beáti quos elegísti, Dómine. (Allelúia.)
       - type: response
@@ -1858,6 +1908,8 @@ texts:
       en:
       - type: antiphon
         text: May all the Saints intercede for us with the Lord.
+      - type: text
+        text: ''
       - type: versicle
         text: 'The Lord hath made his holy one wonderful:'
       - type: response
@@ -1879,6 +1931,8 @@ texts:
       la:
       - type: antiphon
         text: Sancti omnes intercédant pro nobis ad Dóminum.
+      - type: text
+        text: ''
       - type: versicle
         text: Mirificávit Dóminus Sanctos suos.
       - type: response
@@ -1976,30 +2030,37 @@ texts:
           Et stolis albis cándidi,
           Post tránsitum maris Rubri,
           Christo canámus Príncipi.
+
           Cuius corpus sanctíssimum,
           In ara crucis tórridum,
           Cruóre eius róseo
           Gustándo vívimus Deo.
+
           Protécti Paschæ véspere
           A devastánte Angelo,
           Erépti de duríssimo
           Pharaónis império.
+
           Iam Pascha nostrum Christus est,
           Qui immolátus agnus est:
           Sinceritátis ázyma,
           Caro eius obláta est.
+
           O vere digna hóstia,
           Per quam fracta sunt tártara,
           Redémpta plebs captiváta,
           Réddita vitæ prǽmia.
+
           Consúrgit Christus túmulo,
           Victor redit de bárathro,
           Tyránnum trudens vínculo,
           Et Paradísum réserans.
+
           Quǽsumus, Auctor ómnium,
           In hoc pascháli gáudio,
           Ab omni mortis ímpetu
           Tuum defénde pópulum.
+
           Glória tibi Dómine,
           Qui surrexíst[i] a mórtuis,
           Cum Patr[e] et Sancto Spíritu,
@@ -2015,30 +2076,37 @@ texts:
           Praise to our victorious King,
           Who hath washed us in the tide
           Flowing from his piercèd side.
+
           Praise we him whose love divine
           Gives the guests his blood for wine,
           Gives his body for the feast,
           Love the victim, love the priest.
+
           Where the paschal blood is poured,
           Death’s dark angel sheathes his sword;
           Israel’s hosts triumphant go
           Through the wave that drowns the foe.
+
           Christ, the Lamb whose blood was shed,
           Paschal victim, paschal bread;
           With sincerity and love
           Eat we manna from above.
+
           Mighty victim from the sky,
           Powers of hell beneath thee lie;
           Death is conquered in the fight;
           Thou hast brought us life and light.
+
           Now thy banner thou dost wave;
           Vanquished Satan and the grave;
           Angels join his praise to tell —
           See o’erthrown the prince of hell.
+
           Paschal triumph, paschal joy,
           Only sin can this destroy;
           From the death of sin set free,
           Souls re-born, dear Lord, in Thee.
+
           * Hymns of glory, songs of praise,
           Father, unto thee we raise;
           Risen Lord, all praise to thee,
@@ -2051,30 +2119,37 @@ texts:
           Stolis amícti cándidis,
           Post tránsitum Maris Rubri,
           Christo canámus Príncipi:
+
           Divína cuius cáritas
           Sacrum propínat sánguinem,
           Almíque membra córporis
           Amor sacérdos ímmolat.
+
           Sparsum cruórem póstibus
           Vastátor horret Ángelus:
           Fugítque divísum mare;
           Mergúntur hostes flúctibus.
+
           Iam Pascha nostrum Christus est
           Paschális idem víctima,
           Et pura puris méntibus
           Sinceritátis ázyma.
+
           O vera cæli víctima,
           Subiécta cui sunt tártara,
           Solúta mortis víncula,
           Recépta vitæ prǽmia.
+
           Victor, subáctis ínferis,
           Trophǽa Christus éxplicat;
           Cælóque apérto, súbditum
           Regem tenebrárum trahit.
+
           Ut sis perénne méntibus
           Paschále, Iesu, gáudium,
           A morte dira críminum
           Vitæ renátos líbera.
+
           * Deo Patri sit glória,
           Et Fílio, qui a mórtuis
           Surréxit, ac Paráclito,
@@ -2090,18 +2165,22 @@ texts:
           Lucem propínquam prǽcinit:
           Nos excitátor méntium
           Iam Christus ad vitam vocat.
+
           Auférte, clamat, léctulos,
           Ægro sopóre désides:
           Castíque, rect[i], ac sóbrii
           Vig[i]láte, iam sum próximus.
+
           Iesum ciámus vócibus,
           Flentes, precántes, sóbrii:
           Inténta supplicátio
           Dormíre cor mundum vetat.
+
           Tu, Christe, somnum díscute:
           Tu rumpe noctis víncula:
           Tu solve peccátum vetus,
           Novúmque lumen íngere.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -2117,18 +2196,22 @@ texts:
           Sounds before the dawn is grey,
           Christ, who brings the spirit’s day,
           Calls us, close at hand:
+
           Wake! he cries, and for my sake,
           From your eyes dull slumbers shake!
           Sober, righteous, chaste, awake!
           At the door I stand!
+
           Lord, to thee we lift on high
           Fervent prayer and bitter cry:
           Hearts aroused to pray and sigh
           May not slumber more:
+
           Break the sleep of death and time,
           Forged by Adam’s ancient crime;
           And the light of Eden’s prime
           To the world restore!
+
           Unto God the Father, Son,
           Holy Spirit, Three in One,
           One in Three, be glory done,
@@ -2141,18 +2224,22 @@ texts:
           Lucem propínquam prǽcinit:
           Nos excitátor méntium
           Iam Christus ad vitam vocat.
+
           Auférte, clamat, léctulos,
           Ægro sopóre désides:
           Castíque, recti, ac sóbrii
           Vigiláte, iam sum próximus.
+
           Iesum ciámus vócibus,
           Flentes, precántes, sóbrii:
           Inténta supplicátio
           Dormíre cor mundum vetat.
+
           Tu, Christe, somnum díscute:
           Tu rumpe noctis víncula:
           Tu solve peccátum vetus,
           Novúmque lumen íngere.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -2168,18 +2255,22 @@ texts:
           To mark the cry, to know the tear
           Before thy throne of mercy spent
           In this thy holy fast of Lent.
+
           Our hearts are open, Lord, to thee:
           Thou knowest our infirmity;
           Pour out on all who seek thy face
           Abundance of thy pardoning grace.
+
           Our sins are many, this we know;
           Spare us, good Lord, thy mercy show;
           And for the honour of thy name
           Our fainting souls to life reclaim.
+
           Give us the self-control that springs
           From discipline of outward things,
           That fasting inward secretly
           The soul may purely dwell with thee.
+
           We pray thee, Holy Trinity,
           One God, unchanging Unity,
           That we from this our abstinence
@@ -2192,18 +2283,22 @@ texts:
           Nostras preces cum flétibus,
           In hoc sacro ieiúnio
           Fusas quadragenário.
+
           Scrutátor alme córdium,
           Infírma tu scis vírium:
           Ad te revérsis éxhibe
           Remissiónis grátiam.
+
           Multum quidem peccávimus,
           Sed parce confiténtibus:
           Ad nóminis laudem tui
           Confer medélam lánguidis.
+
           Concéde nostrum cónteri
           Corpus per abstinéntiam;
           Culpæ ut relínquant pábulum
           Ieiúna corda críminum.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas;
           Ut fructuósa sint tuis
@@ -2219,18 +2314,22 @@ texts:
           Nostras preces cum flétibus,
           In hoc sacro ieiúnio
           Fusas quadragenário.
+
           Scrutátor alme córdium,
           Infírma tu scis vírium:
           Ad te revérsis éxhibe
           Remissiónis grátiam.
+
           Multum quidem peccávimus,
           Sed parce confiténtibus:
           Ad laudem tui nóminis
           Confer medélam lánguidis.
+
           Concéde nostrum cónteri
           Corpus per abstinéntiam;
           Culpæ ut relínquant pábulum
           Ieiúna corda críminum.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas;
           Ut fructuósa sint tuis
@@ -2246,22 +2345,27 @@ texts:
           When rang the skies with shouts of praise;
           Earth joined the joyful hymn to swell,
           That brought despair to vanquished hell.
+
           He comes victorious from the grave,
           The Lord omnipotent to save,
           And brings with him to light of day
           The saints who long imprisoned lay.
+
           Vain is the cavern’s three-fold ward —
           The stone, the seal, the armed guard;
           O death, no more thine arm we fear,
           The Victor’s tomb is now thy bier.
+
           Let hymns of joy to grief succeed,
           We know that Christ is risen indeed;
           We hear his white-robed angel’s voice,
           And in our risen Lord rejoice.
+
           With Christ we died, with Christ we rose,
           When at the font his name we chose;
           Oh, let not sin our robes defile,
           And turn to grief the paschal smile.
+
           * To God the Father let us sing,
           To God the Son, our risen King,
           And equally let us adore
@@ -2274,22 +2378,27 @@ texts:
           Æther resúltat láudibus,
           Mundus triúmphans iúbilat,
           Horrens avérnus ínfremit:
+
           Rex ille dum fortíssimus
           De mortis inférno specu
           Patrum senátum líberum
           Edúcit ad vitæ iubar.
+
           Cuius sepúlcrum plúrimo
           Custóde signábat lapis,
           Victor triúmphat, et suo
           Mortem sepúlcro fúnerat.
+
           Sat fúneri, sat lácrimis,
           Sat est datum dolóribus:
           Surréxit exstínctor necis,
           Clamat corúscans Ángelus.
+
           Ut sis perénne méntibus
           Paschále, Iesu, gáudium,
           A morte dira críminum
           Vitæ renátos líbera.
+
           * Deo Patri sit glória,
           Et Fílio, qui a mórtuis
           Surréxit, ac Paráclito,
@@ -2305,14 +2414,17 @@ texts:
           Its golden shower, as day flows in;
           Fast mount the pointed shafts of light:
           Farewell to darkness and to sin!
+
           Away, ye midnight phantoms all!
           Away, despondence and despair!
           Whatever guilt the night has brought,
           Now let it vanish into air.
+
           So, Lord, when that last morning breaks,
           Looking to which we sigh and pray,
           O may it to thy minstrels prove
           The dawning of a better day.
+
           To God the Father glory be,
           And to his sole-begotten Son;
           Glory, O Holy Ghost, to thee,
@@ -2325,14 +2437,17 @@ texts:
           Terris dies illábitur:
           Lucis resúltat spículum:
           Discédat omne lúbricum.
+
           Phantásma noctis éxsulet:
           Mentis reátus córruat:
           Quidquid ténebris hórridum
           Nox áttulit culpæ, cadat.
+
           Ut mane, quod nos últimum
           Hic deprecámur cérnui,
           Cum luce nobis éffluat,
           Hoc dum canóre cóncrepat.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -2348,14 +2463,17 @@ texts:
           Terris dies illábitur:
           Lucis resúltat spículum:
           Discédat omne lúbricum.
+
           Phantásma noctis décidat:
           Mentis reátus súbruat:
           Quidquid ténebris hórridum
           Nox áttulit culpæ, cadat.
+
           Ut mane, quod nos últimum
           Hic deprecámur cérnui,
           Cum luce nobis éffluat,
           Hoc dum canóre cóncrepat.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -2371,22 +2489,27 @@ texts:
           Cælum láudibus íntonat,
           Mundus exsúltans iúbilat,
           Gemens inférnus úlulat:
+
           Cum Rex ille fortíssimus,
           Mortis confráctis víribus,
           Pede concúlcans tártara,
           Solvit a pœna míseros.
+
           Ille qui clausus lápide
           Custodítur sub mílite,
           Triúmphans pompa nóbili,
           Victor surgit de fúnere.
+
           Solútis iam gemítibus,
           Et inférni dolóribus,
           Quia surréxit Dóminus,
           Respléndens clamat Ángelus.
+
           Quǽsumus, Auctor ómnium,
           In hoc pascháli gáudio,
           Ab omni mortis ímpetu
           Tuum defénde pópulum.
+
           Glória tibi Dómine,
           Qui surrexíst[i] a mórtuis,
           Cum Patr[e] et Sancto Spíritu,
@@ -2402,18 +2525,22 @@ texts:
           Qui lúcidas centrum poli
           Candóre pingis ígneo,
           Augens decóro lúmine:
+
           Quarto die qui flámmeam
           Solis rotam constítuens,
           Lunæ minístras órdinem,
           Vagósque cursus síderum:
+
           Ut nóctibus, vel lúmini
           Diremptiónis términum,
           Primórdiis et ménsium
           Signum dares notíssimum;
+
           Illúmina cor hóminum,
           Abstérge sordes méntium:
           Resólve culpæ vínculum:
           Evérte moles críminum.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -2429,18 +2556,22 @@ texts:
           And all its shining hosts on high,
           And painting it with fiery light,
           Made it so beauteous and so bright:
+
           Thou, when the fourth day was begun,
           Didst frame the circle of the sun,
           And set the moon for ordered change,
           And planets for their wider range:
+
           To night and day, by certain line,
           Their varying bounds thou didst assign;
           And gav’st a signal, known and meet,
           For months begun and months complete.
+
           Enlighten thou the hearts of men:
           Polluted souls make pure again:
           Unloose the bands of guilt within:
           Remove the burden of our sin.
+
           Grant this, O Father, ever One
           With Christ thy sole-begotten Son,
           Whom, with the Spirit we adore,
@@ -2453,18 +2584,22 @@ texts:
           Qui lúcidas mundi plagas
           Candóre pingis ígneo,
           Augens decóro lúmine:
+
           Quarto die qui flámmeam
           Dum solis accéndis rotam,
           Lunæ minístras órdinem,
           Vagósque cursus síderum:
+
           Ut nóctibus, vel lúmini
           Diremptiónis términum,
           Primórdiis et ménsium
           Signum dares notíssimum;
+
           Expélle noctem córdium:
           Abstérge sordes méntium:
           Resólve culpæ vínculum:
           Evérte moles críminum.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -2480,22 +2615,27 @@ texts:
           Ætérna lux credéntium,
           Christe, Redémptor ómnium,
           Exáudi preces súpplicum.
+
           Qui cóndolens intéritu
           Mortis períre sǽculum,
           Salvásti mundum lánguidum,
           Donans reis remédium,
+
           Vergénte mundi véspere,
           Uti sponsus de thálamo,
           Egréssus honestíssima
           Vírginis matris cláusula.
+
           Cuius forti poténtiæ
           Genu curvántur ómnia;
           Cæléstia, terréstria
           Nutu faténtur súbdita.
+
           Te deprecámur, hágie,
           Ventúre iudex sǽculi,
           Consérva nos in témpore
           Hostis a telo pérfidi.
+
           Laus, honor, virtus, glória,
           Deo Patri, et Fílio,
           Sancto simul Paráclito,
@@ -2511,18 +2651,22 @@ texts:
           Noctis tenébras détegis,
           Lucísque lumen créderis,
           Lumen beátum prǽdicans.
+
           Precámur sancte Dómine,
           defénde nos in hac nocte:
           Sit nobis in te réquies,
           Quiétam noctem tríbue.
+
           Ne gravis somnus írruat,
           Nec hostis nos subrípiat,
           Nec caro illi conséntiens
           Nos tibi reos státuat.
+
           Oculi somnum cápiant,
           Cor ad te semper vígilet:
           Déxtera tua prótegat
           Fámulos, qui te díligunt.
+
           Defénsor noster áspice,
           Insidiántes réprime,
           Gubérna tuos fámulos,
@@ -2531,10 +2675,12 @@ texts:
       - type: text
         text: |-
           Quos Sánguine mercátus es.
+
           Meménto nostri, Dómine,
           In gravi isto córpore:
           Qui es defénsor ánimæ,
           Adésto nobis, Dómine.
+
           Præsta Pater omnípotens,
           Per Iesum Christum Dóminum,
           Qui tecum in perpétuum
@@ -2550,14 +2696,17 @@ texts:
           Lux ipse lucis, et dies,
           Noctem canéndo rúmpimus:
           Assíste postulántibus.
+
           Aufer ténebras méntium,
           Fuga catérvas dǽmonum,
           Expélle somnoléntiam,
           Ne pigritántes óbruat.
+
           Sic, Christe, nobis ómnibus
           Indúlgeas credéntibus,
           Ut prosit exorántibus,
           Quod præcinéntes psállimus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -2573,14 +2722,17 @@ texts:
           Co-equal in thy Father’s light:
           Assist us, as with prayer and psalm
           Thy servants break the twilight calm.
+
           All darkness from our minds dispel,
           And turn to flight the hosts of hell:
           Bid sleepfulness our eyelids fly,
           Lest overwhelmed in sloth we lie.
+
           Jesu, thy pardon, kind and free,
           Bestow on us who trust in thee:
           And as thy praises we declare,
           O with acceptance hear our prayer.
+
           O Father, that we ask be done,
           Through Jesus Christ, thine only Son;
           Who, with the Holy Ghost and thee,
@@ -2593,14 +2745,17 @@ texts:
           Lux ipse lucis, et dies,
           Noctem canéndo rúmpimus:
           Assíste postulántibus.
+
           Aufer ténebras méntium,
           Fuga catérvas dǽmonum,
           Expélle somnoléntiam,
           Ne pigritántes óbruat.
+
           Sic, Christe, nobis ómnibus
           Indúlgeas credéntibus,
           Ut prosit exorántibus,
           Quod præcinéntes psállimus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -2616,22 +2771,27 @@ texts:
           Eternal light of faithful souls,
           Jesus, Redeemer of mankind,
           Our humble prayers vouchsafe to mind.
+
           Who, lest the fraud of hell’s black king
           Should all men to destruction bring,
           Didst, by an act of generous love,
           The fainting world’s physician prove.
+
           Who, that thou mightst our ransom pay
           And wash the stains of sin away,
           Wouldst from a Virgin’s womb proceed
           And on the cross a victim bleed.
+
           Whose glorious power, whose saving name
           No sooner any voice can frame,
           But heaven and earth and hell agree
           To honour them with trembling knee.
+
           Thee, Christ, who at the latter day
           Shalt be our Judge, we humbly pray
           Such arms of heavenly grace to send
           As may thy Church from foes defend.
+
           Be glory given and honour done
           To God the Father and the Son
           And to the Holy Ghost on high,
@@ -2644,22 +2804,27 @@ texts:
           Ætérna lux credéntium,
           Iesu, Redémptor ómnium,
           Inténde votis súpplicum.
+
           Qui dǽmonis ne fráudibus
           Períret orbis, ímpetu
           Amóris actus, lánguidi
           Mundi medéla factus es.
+
           Commúne qui mundi nefas
           Ut expiáres, ad crucem
           E Vírginis sacrário
           Intácta prodis víctima.
+
           Cuius potéstas glóriæ
           Noménque cum primum sonat,
           Et cǽlites et ínferi
           Treménte curvántur genu.
+
           Te deprecámur últimæ
           Magnum diéi Iúdicem,
           Armis supérnæ grátiæ
           Defénde nos ab hóstibus.
+
           Virtus, honor, laus, glória
           Deo Patri cum Fílio,
           Sancto simul Paráclito,
@@ -2675,30 +2840,37 @@ texts:
           políque rector, véstiens
           diem decóro lúmine,
           noctem sopóris grátia,
+
           Artus solútos ut quies
           reddat labóris úsui
           mentésque fessas állevet
           luctúsque solvat ánxios,
+
           Grates perácto iam die
           et noctis exórtu preces,
           voti reos ut ádiuves,
           hymnum canéntes sólvimus.
+
           Te cordis ima cóncinant,
           te vox canóra cóncrepet,
           te díligat castus amor,
           te mens adóret sóbria,
+
           Ut cum profúnda cláuserit
           diem calígo nóctium,
           fides ténebras nésciat
           et nox fide relúceat.
+
           Dormíre mentem ne sinas,
           dormíre culpa nóverit,
           castis fides refrígerans,
           somni vapórem témperet.
+
           Exúta sensu lúbrico,
           te cordis alta sómnient;
           nec hostis ínvidi dolo,
           pavor quiétos súscitet.
+
           Christum rogámus, et Patrem,
           Christi Patrísque Spíritum;
           Unum potens per ómnia,
@@ -2714,10 +2886,12 @@ texts:
           Lightsome and blushing, dawn of day returneth;
           Fervent in spirit, to the world’s Creator
           Pray we devoutly:
+
           That he may pity sinners in their sighing,
           Banish all troubles, kindly health bestowing;
           And may he grant us, of his countless blessings,
           Peace that is endless.
+
           This be our portion, God forever blessed,
           Father eternal, Son, and Holy Spirit,
           Whose is the glory, which through all creation
@@ -2730,10 +2904,12 @@ texts:
           Lux et auróræ rútilans corúscat:
           Súpplices rerum Dóminum canóra
           Voce precémur:
+
           Ut reos culpæ miserátus omnem
           Pellat angórem, tríbuat salútem,
           Donet et nobis bona sempitérnæ
           Múnera pacis.
+
           Præstet hoc nobis Déitas beáta
           Patris, ac Nati, paritérque Sancti
           Spíritus, cuius résonat per omnem
@@ -2749,10 +2925,12 @@ texts:
           Lucis auróra rútilans corúscat:
           Súpplices rerum Dóminum canóra
           Voce precémur:
+
           Ut Deus nostri miserátus, omnem
           Pellat languórem, tríbuat salútem,
           Donet et nobis bona sempitérnæ
           Múnera pacis.
+
           Præstet hoc nobis Déitas beáta
           Patris, ac Nati, paritérque Sancti
           Spíritus, cuius réboat in omni
@@ -2768,18 +2946,22 @@ texts:
           “Christ is nigh,” it seems to say;
           “Cast away the dreams of darkness,
           O ye children of the day.”
+
           Startled at the solemn warning,
           Let the earth-bound soul arise;
           Christ, her sun, all sloth dispelling,
           Shines upon the morning skies.
+
           Lo, the Lamb, so long expected,
           Comes with pardon down from heaven;
           Let us haste, with tears of sorrow,
           One and all to be forgiven.
+
           So when next he comes with glory,
           Wrapping all the earth in fear,
           May he then as our defender
           On the clouds of heaven appear.
+
           Honour, glory, virtue, merit,
           To the Father and the Son,
           With the co-eternal Spirit,
@@ -2792,18 +2974,22 @@ texts:
           Obscúra quæque, pérsonans:
           Procul fugéntur sómnia,
           Ab alto Iesus prómicat.
+
           Mens iam resúrgat, tórpida,
           Non ámplius iacens humi:
           Sidus refúlget iam novum,
           Ut tollat omne nóxium.
+
           En Agnus ad nos míttitur
           Laxáre gratis débitum:
           Omnes simul cum lácrimis
           Precémur indulgéntiam.
+
           Ut cum secúndo fúlserit,
           Metúque mundum cínxerit,
           Non pro reátu púniat,
           Sed nos pius tunc prótegat.
+
           Virtus, honor, laus, glória
           Deo Patri cum Fílio,
           Sancto simul Paráclito,
@@ -2819,34 +3005,42 @@ texts:
           We keep in solemn course once more:
           The fast to all men known, and bound
           In forty days of yearly round.
+
           The law and seers that were of old
           In diverse ways this Lent foretold,
           Which Christ, all seasons’ King and Guide,
           In after ages sanctified.
+
           More sparing therefore let us make
           The words we speak, the food we take,
           Our sleep and mirth, —and closer barred
           Be every sense in holy guard.
+
           Avoid the evil thoughts that roll
           Like waters o’er the heedless soul;
           Nor let the foe occasion find
           Our souls in slavery to bind.
+
           In prayer together let us fall,
           And cry for mercy, one and all,
           And weep before the Judge’s feet,
           And his avenging wrath entreat.
+
           Thy grace have we offended sore,
           By sins, O God, which we deplore;
           But pour upon us from on high,
           O pardoning One, thy clemency.
+
           Remember thou, though frail we be,
           That yet thine handiwork are we;
           Nor let the honour of thy name
           Be by another put to shame.
+
           Forgive the sin that we have wrought;
           Increase the good that we have sought:
           That we at length, our wanderings o'er,
           May please thee here and evermore.
+
           Grant O thou Blessed Trinity,
           Grant, O Essential Unity,
           That this our fast of forty days
@@ -2859,34 +3053,42 @@ texts:
           Servémus hoc ieiúnium,
           Deno diérum círculo
           Ducto quater notíssimo.
+
           Lex et prophétæ prímitus
           Hoc prætulérunt, póstmodum
           Christus sacrávit, ómnium
           Rex atque factor témporum.
+
           Utámur ergo párcius
           Verbis, cibis et pótibus,
           Somno, iocis, et árctius
           Perstémus in custódia.
+
           Vitémus autem nóxia,
           Quæ súbruunt mentes vagas:
           Nullúmque demus cállidi
           Hostis locum tyránnidi.
+
           Flectámus iram víndicem,
           Plorémus ante Iúdicem,
           Clamémus ore súpplici,
           Dicámus omnes cérnui:
+
           Nostris malis offéndimus
           Tuam, Deus, cleméntiam:
           Effúnde nobis désuper,
           Remíssor, indulgéntiam.
+
           Meménto quod sumus tui,
           Licet cadúci, plásmatis:
           Ne des honórem nóminis
           Tui, precámur, álteri.
+
           Laxa malum, quod fécimus,
           Auge bonum, quod póscimus:
           Placére quo tandem tibi
           Possímus hic, et pérpetim.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas,
           Ut fructuósa sint tuis
@@ -2902,34 +3104,42 @@ texts:
           Servémus hoc ieiúnium,
           Deno diérum círculo
           Ducto quater notíssimo.
+
           Lex et prophétæ prímitus
           Hoc prætulérunt, póstmodum
           Christus sacrávit, ómnium
           Rex atque factor témporum.
+
           Utámur ergo párcius
           Verbis, cibis et pótibus,
           Somno, iocis, et árctius
           Perstémus in custódia.
+
           Vitémus autem péssima,
           Quæ súbruunt mentes vagas:
           Nullúmque demus cállidi
           Hostis locum tyránnidi.
+
           Flectámus iram víndicem,
           Plorémus ante Iúdicem,
           Clamémus ore súpplici,
           Dicámus omnes cérnui:
+
           Nostris malis offéndimus
           Tuam, Deus, cleméntiam:
           Effúnde nobis désuper,
           Remíssor, indulgéntiam.
+
           Meménto quod sumus tui,
           Licet cadúci, plásmatis:
           Ne des honórem nóminis
           Tui, precámur, álteri.
+
           Laxa malum, quod fécimus,
           Auge bonum, quod póscimus:
           Placére quo tandem tibi
           Possímus hic, et pérpetim.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas,
           Ut fructuósa sint tuis
@@ -2940,34 +3150,42 @@ texts:
           Servémus hoc ieiúnium,
           Deno diérum círculo
           Ducto quater notíssimo.
+
           Lex et prophétæ prímitus
           Hoc prætulérunt, póstmodum
           Christus sacrávit, ómnium
           Rex atque factor témporum.
+
           Utámur ergo párcius
           Verbis, cibis et pótibus,
           Somno, iocis, et árctius
           Perstémus in custódia.
+
           Vitémus autem nóxia,
           Quæ súbruunt mentes vagas:
           Nullúmque demus cállidi
           Hostis locum tyránnidi.
+
           Flectámus iram víndicem,
           Plorémus ante Iúdicem,
           Clamémus atque sínguli,
           Dicámus omnes cérnui:
+
           Nostris malis offéndimus
           Tuam, Deus, cleméntiam:
           Effúnde nobis désuper,
           Remíssor, indulgéntiam.
+
           Meménto quod sumus tui,
           Licet cadúci, plásmatis:
           Ne des honórem nóminis
           Tui, precámur, álteri.
+
           Laxa malum, quod fécimus,
           Auge bonum, quod póscimus:
           Placére quo tandem tibi
           Possímus hic, et pérpetim.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas,
           Ut fructuósa sint tuis
@@ -2979,14 +3197,17 @@ texts:
           Tuam, Deus, cleméntiam:
           Effúnde nobis désuper,
           Remíssor, indulgéntiam.
+
           Meménto quod sumus tui,
           Licet cadúci, plásmatis:
           Ne des honórem nóminis
           Tui, precámur, álteri.
+
           Laxa malum, quod fécimus,
           Auge bonum, quod póscimus:
           Placére quo tandem tibi
           Possímus hic, et pérpetim.
+
           Præsta, beáta Trínitas,
           Concéde, simplex Únitas,
           Ut fructuósa sint tuis
@@ -3002,18 +3223,22 @@ texts:
           Dost order all things, God alone;
           By whose decree the teeming earth
           To reptile and to beast gave birth:
+
           The mighty forms that fill the land,
           Instinct with life at thy command,
           Are given subdued to humankind
           For service in their rank assigned.
+
           From all thy servants drive away
           Whate’er of thought impure to-day
           Hath been with open action blent,
           Or mingled with the heart’s intent.
+
           In heaven thine endless joys bestow,
           And grant thy gifts of grace below;
           From chains of strife our souls release,
           Bind fast the gentle bands of peace.
+
           Grant this, O Father, ever One
           With Christ, thy sole-begotten Son,
           Whom, with the Spirit we adore,
@@ -3026,18 +3251,22 @@ texts:
           Qui cuncta solus órdinans,
           Humum iubes prodúcere
           Reptántis et feræ genus:
+
           Et magna rerum córpora,
           Dictu iubéntis vívida,
           Per témporum certas vices
           Obtemperáre sérvulis:
+
           Repélle, quod cupídinis
           Ciénte vi nos ímpetit,
           Aut móribus se súggerit,
           Aut áctibus se intérserit.
+
           Da gaudiórum prǽmia,
           Da gratiárum múnera:
           Dissólve litis víncula:
           Astrínge pacis fœ́dera.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3053,18 +3282,22 @@ texts:
           Mentis diéscant ténebræ:
           Virtútum ut lux rédeat,
           Terris diem cum réparas.
+
           Dans tempus acceptábile,
           Et pǽnitens cor tríbue,
           Convértat ut benígnitas
           Quos longa suffert píetas.
+
           Quiddámque pæniténtiæ
           Da ferre, quamvis grávium,
           Maióre tuo múnere,
           Quo démptio fit críminum.
+
           Dies venit, dies tua,
           In qua reflórent ómnia:
           Lætémur in hac ad tuam
           Per hanc redúcti grátiam.
+
           Te rerum univérsitas,
           Clemens, adóret, Trínitas,
           Et nos novi per véniam,
@@ -3080,18 +3313,22 @@ texts:
           Deum precémur súpplices,
           Ut in diúrnis áctibus
           Nos servet a nocéntibus.
+
           Linguam refrénans témperet,
           Ne litis horror ínsonet:
           Visum fovéndo cóntegat,
           Ne vanitátes háuriat.
+
           Sint pura cordis íntima,
           Absístat et vecórdia;
           Carnis terat supérbiam
           Potus cibíque párcitas.
+
           Ut, cum dies abscésserit,
           Noctémque sors redúxerit,
           Mundi per abstinéntiam
           Ipsi canámus glóriam.
+
           * Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3107,18 +3344,22 @@ texts:
           Lowly of heart, our God we pray
           That he from harm may keep us free
           In all the deeds this day shall see.
+
           May fear of him our tongues restrain,
           Lest strife unguarded speech should stain:
           His favouring care our guardian be,
           Lest our eyes feed on vanity.
+
           May every heart be pure from sin
           And folly find no place therein:
           Scant need of food, excess denied,
           Wear down in us the body's pride.
+
           That when the light of day is gone,
           And night in course shall follow on.
           We, free from cares the world affords,
           May chant the praise that is our Lord's.
+
           * All laud to God the Father be,
           All praise, Eternal Son, to thee:
           All glory, as is ever meet,
@@ -3131,18 +3372,22 @@ texts:
           Deum precémur súpplices,
           Ut in diúrnis áctibus
           Nos servet a nocéntibus.
+
           Linguam refrénans témperet,
           Ne litis horror ínsonet:
           Visum fovéndo cóntegat,
           Ne vanitátes háuriat.
+
           Sint pura cordis íntima,
           Absístat et vecórdia;
           Carnis terat supérbiam
           Potus cibíque párcitas.
+
           Ut, cum dies abscésserit,
           Noctémque sors redúxerit,
           Mundi per abstinéntiam
           Ipsi canámus glóriam.
+
           * Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3158,10 +3403,12 @@ texts:
           To thee, great source of light, we pray;
           Blest Three in One, to every heart
           Thy beams of life and love impart.
+
           At early dawn, at close of day,
           To thee our vows we humbly pay;
           May we, mid joys that never end,
           With thy bright saints in homage bend.
+
           To God the Father, and the Son,
           And Holy Spirit, Three in One,
           Be endless glory, as before
@@ -3174,10 +3421,12 @@ texts:
           Tu, lux perénnis, Únitas,
           Nostris, beáta Trínitas,
           Infúnde lumen córdibus.
+
           Te mane laudum cármine,
           Te deprecámur véspere;
           Dignéris ut te súpplices
           Laudémus inter cǽlites.
+
           Patri, simúlque Fílio,
           Tibíque, Sancte Spíritus,
           Sicut fuit, sit iúgiter
@@ -3193,18 +3442,22 @@ texts:
           Amor et desidérium,
           Deus Creátor ómnium,
           Homo in fine témporum:
+
           Quæ te vicit cleméntia,
           Ut ferres nostra crímina,
           Crudélem mortem pátiens,
           Ut nos a morte tólleres!
+
           Inférni claustra pénetrans,
           Tuos captívos rédimens,
           Victor triúmpho nóbili
           Ad dextram Patris résidens.
+
           Ipsa te cogat píetas,
           Ut mala nostra súperes
           Parcénd[o], et voti cómpotes
           Nos tuo vultu sáties.
+
           Tu esto nostrum gáudium,
           Qui es futúrus prǽmium,
           Sit nostra in te glória,
@@ -3224,14 +3477,17 @@ texts:
           Amor et desidérium,
           Deus Creátor ómnium,
           Homo in fine témporum:
+
           Quæ te vicit cleméntia,
           Ut ferres nostra crímina,
           Crudélem mortem pátiens,
           Ut nos a morte tólleres!
+
           Inférni claustra pénetrans,
           Tuos captívos rédimens,
           Victor triúmpho nóbili
           Ad dextram Patris résidens.
+
           Ipsa te cogat píetas,
           Ut mala nostra súperes
           Parcénd[o], et voti cómpotes
@@ -3250,14 +3506,17 @@ texts:
           Amor et desidérium,
           Deus Creátor ómnium,
           Homo in fine témporum:
+
           Quæ te vicit cleméntia,
           Ut ferres nostra crímina,
           Crudélem mortem pátiens,
           Ut nos a morte tólleres!
+
           Inférni claustra pénetrans,
           Tuos captívos rédimens,
           Victor triúmpho nóbili
           Ad dextram Patris résidens.
+
           Ipsa te cogat píetas,
           Ut mala nostra súperes
           Parcénd[o], et voti cómpotes
@@ -3266,6 +3525,7 @@ texts:
           In hoc pascháli gáudio,
           Ab omni mortis ímpetu
           Tuum defénde pópulum.
+
           Glória tibi Dómine,
           Qui surrexíst[i] a mórtuis,
           Cum Patr[e] et Sancto Spíritu,
@@ -3281,18 +3541,22 @@ texts:
           Qui mixta ne confúnderent,
           Aquæ fluénta dívidens,
           Cælum dedísti límitem.
+
           Firmans locum cæléstibus,
           Simúlque terræ rívulis;
           Ut unda flammas témperet,
           Terræ solum ne díssipent.
+
           Infúnde nunc, piíssime,
           Donum perénnis grátiæ:
           Fraudis novæ ne cásibus
           Nos error átterat vetus.
+
           Lucem fides invéniat:
           Sic lúminis iubar ferat:
           Ut vana cuncta próterat:
           Hanc falsa nulla cómprimant.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3308,18 +3572,22 @@ texts:
           Who wouldest not the floods on high
           With earthly waters to confound,
           But mad’st the firmament their bound;
+
           The floods above thou didst ordain;
           The floods below thou didst restrain:
           That moisture might attemper heat,
           Lest the parched earth should ruin meet.
+
           Upon our souls, good Lord, bestow
           Thy gift of grace in endless flow:
           Lest some renewed deceit or wile
           Of former sin should us beguile.
+
           Let faith discover heav’nly light;
           So shall its rays direct us right:
           And let this faith each error chase,
           And never give to falsehood place.
+
           Grant this, O Father, ever One
           With Christ, thy sole-begotten Son,
           And Holy Ghost, whom all adore,
@@ -3332,18 +3600,22 @@ texts:
           Qui mixta ne confúnderent,
           Aquæ fluénta dívidens,
           Cælum dedísti límitem.
+
           Firmans locum cæléstibus,
           Simúlque terræ rívulis;
           Ut unda flammas témperet,
           Terræ solum ne díssipent.
+
           Infúnde nunc, piíssime,
           Donum perénnis grátiæ:
           Fraudis novæ ne cásibus
           Nos error átterat vetus.
+
           Lucem fides adáugeat:
           Sic lúminis iubar ferat:
           Hæc vana cuncta próterat:
           Hanc falsa nulla cómprimant.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3359,18 +3631,22 @@ texts:
           Lucem diérum próferens,
           Primórdiis lucis novæ,
           Mundi parans oríginem:
+
           Qui mane iunctum vésperi
           Diem vocári prǽcipis:
           Tetrum chaos illábitur,
           Audi preces cum flétibus.
+
           Ne mens graváta crímine,
           Vitæ sit exsul múnere,
           Dum nil perénne cógitat,
           Seséque culpis ílligat.
+
           Cælórum pulset íntimum,
           Vitále tollat prǽmium:
           Vitémus omne nóxium:
           Purgémus omne péssimum.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3386,18 +3662,22 @@ texts:
           Who mak’st the day with radiance bright,
           And o’er the forming world didst call
           The light from chaos first of all;
+
           Whose wisdom joined in meet array
           The morn and eve, and named them day:
           Night comes with all its darkling fears;
           Regard thy people’s prayers and tears.
+
           Lest, sunk in sin, and whelmed with strife,
           They lose the gift of endless life;
           While thinking but the thoughts of time,
           They weave new chains of woe and crime.
+
           But grant them grace that they may strain
           The heavenly gate and prize to gain:
           Each harmful lure aside to cast,
           And purge away each error past.
+
           * O Father, that we ask be done,
           Through Jesus Christ, thine only Son;
           Who, with the Holy Ghost and thee,
@@ -3410,18 +3690,22 @@ texts:
           Lucem diérum próferens,
           Primórdiis lucis novæ,
           Mundi parans oríginem:
+
           Qui mane iunctum vésperi
           Diem vocári prǽcipis:
           Illábitur tetrum chaos,
           Audi preces cum flétibus.
+
           Ne mens graváta crímine,
           Vitæ sit exsul múnere,
           Dum nil perénne cógitat,
           Seséque culpis ílligat.
+
           Cæléste pulset óstium:
           Vitále tollat prǽmium:
           Vitémus omne nóxium:
           Purgémus omne péssimum.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3439,30 +3723,35 @@ texts:
           For that this he freely willed:
           On the cross the Lamb is lifted,
           Where his life-blood shall be spilled.
+
           He endured the nails, the spitting,
           Vinegar, and spear, and reed;
           From that holy body broken
           Blood and water forth proceed:
           Earth, and stars, and sky, and ocean,
           By that flood from stain are free.
+
           Faithful cross! above all other,
           One and only noble tree!
           None in foliage, none in blossom,
           None in fruit thy peers may be;
           Sweetest wood and sweetest iron!
           Sweetest weight is hung on thee.
+
           Bend thy boughs, O tree of glory!
           Thy relaxing sinews bend;
           For awhile the ancient rigour,
           That thy birth bestowed, suspend;
           And the King of heavenly beauty
           On thy bosom gently tend!
+
           Thou alone wast counted worthy
           This world's ransom to uphold;
           For a shipwrecked race preparing
           Harbour, like the ark of old;
           With the sacred blood anointed
           From the smitten Lamb that rolled.
+
           To the Trinity be glory
           Everlasting, as is meet;
           Equal to the Father, equal
@@ -3479,30 +3768,35 @@ texts:
           Passióni déditus,
           Agnus in Crucis levátur
           Immolándus stípite.
+
           Felle potus ecce languet,
           Spina, clavi, láncea,
           Mite corpus perforárunt,
           Unda manat, et cruor:
           Terra, pontus, astra, mundus,
           Quo lavántur flúmine!
+
           Crux fidélis, inter omnes
           Arbor una nóbilis:
           Silva talem nulla profert
           Fronde, flore, gérmine:
           Dulce ferrum, dulce lignum
           Dulce pondus sústinent.
+
           Flecte ramos, arbor alta,
           Tensa laxa víscera,
           Et rigor lentéscat ille,
           Quem dedit natívitas:
           Et supérni membra Regis
           Tende miti stípite.
+
           Sola digna tu fuísti
           Ferre mundi víctimam;
           Atque portum præparáre
           Arca mundo náufrago,
           Quam sacer cruor perúnxit,
           Fusus Agni córpore.
+
           Sempitérna sit beátæ
           Trinitáti glória:
           Æqua Patri, Filióque,
@@ -3522,30 +3816,35 @@ texts:
           Passióni déditus,
           Agnus in Crucis levátur
           Immolándus stípite.
+
           Hic acétum, fel, arúndo,
           Sputa, clavi, láncea:
           Mite corpus perforátur,
           Sanguis, unda prófluit:
           Terra, pontus, astra, mundus,
           Quo lavántur flúmine!
+
           Crux fidélis, inter omnes
           Arbor una nóbilis:
           Nulla silva talem profert
           Fronde, flore, gérmine:
           Dulce lignum, dulces clavos,
           Dulce pondus sústinet.
+
           Flecte ramos, arbor alta,
           Tensa laxa víscera,
           Et rigor lentéscat ille,
           Quem dedit natívitas:
           Ut supérni membra Regis
           Miti tendas stípite.
+
           Sola digna tu fuísti
           Ferre sæcli prétium,
           Atque portum præparáre
           Nauta mundo náufrago,
           Quem sacer cruor perúnxit,
           Fusus Agni córpore.
+
           Glória et honor Deo
           Usquequáqu[e] altíssimo:
           Una Patri, Filióque,
@@ -3563,18 +3862,22 @@ texts:
           Let no more our darkened eyes
           Snare us, tangled by surprise
           In the maze of sin!
+
           From false words and thoughts impure
           Let this light, serene and sure,
           Keep our lips without secure,
           Keep our souls within.
+
           So may we the day-time spend,
           That, till life’s temptations end,
           Tongue, nor hand, nor eye offend!
           One, above us all,
+
           Views in his revealing ray
           All we do, and think, and say,
           Watching us from break of day
           Till the twilight fall.
+
           Unto God the Father, Son,
           Holy Spirit, Three in One,
           One in Three, be glory done,
@@ -3587,18 +3890,22 @@ texts:
           Pallens facéssat cǽcitas,
           Quæ nosmet in præceps diu
           Erróre traxit dévio.
+
           Hæc lux serénum cónferat,
           Purósque nos præstet sibi:
           Nihil loquámur súbdolum:
           Volvámus obscúrum nihil.
+
           Sic tota decúrrat dies,
           Ne lingua mendax, ne manus
           Oculíve peccent lúbrici,
           Ne noxa corpus ínquinet.
+
           Speculátor astat désuper,
           Qui nos diébus ómnibus,
           Actúsque nostros próspicit
           A luce prima in vésperum.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3614,18 +3921,22 @@ texts:
           Pallens facéssat cǽcitas,
           Quæ nosmet in præceps diu
           Erróre traxit dévio.
+
           Hæc lux serénum cónferat,
           Purósque nos præstet sibi:
           Nihil loquámur súbdolum:
           Volvámus obscúrum nihil.
+
           Sic tota decúrrat dies,
           Ne lingua mendax, ne manus
           Oculív[e] peccent lúbrici,
           Ne noxa corpus ínquinet.
+
           Spec[u]látor astat désuper,
           Qui nos diébus ómnibus,
           Actúsque nostros próspicit
           A luce prim[a] in vésperum.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3641,18 +3952,22 @@ texts:
           Qui ex aquis ortum genus
           Partim remíttis gúrgiti,
           Partim levas in áëra.
+
           Demérsa lymphis ímprimens,
           Subvécta cælis írrigans:
           Ut stirpe ab una pródita,
           Divérsa rápiant loca:
+
           Largíre cunctis sérvulis,
           Quos mundat unda Sánguinis,
           Nescíre lapsus críminum,
           Nec ferre mortis tǽdium.
+
           Ut culpa nullum déprimat:
           Nullum levet iactántia:
           Elísa mens ne cóncidat:
           Eláta mens ne córruat.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3668,18 +3983,22 @@ texts:
           Who bad’st the water’s birth divide;
           Part in the heavens to take their flight,
           And part in ocean’s deep to hide;
+
           These low obscured, on airy wing
           Exalted those, that either race,
           Though from one element they spring,
           Might serve thee in a different place.
+
           Grant, Lord, that we thy servants all,
           Saved by thy tide of cleansing blood,
           No more ’neath sin's dominion fall,
           Nor fear the thought of death’s dark flood!
+
           Thy varied love each spirit bless,
           The humble cheer, the high control;
           Check in each heart its proud excess,
           But raise the meek and contrite soul!
+
           This boon, O Father, we entreat,
           This blessing grant, Eternal Son,
           And Holy Ghost, the Paraclete,
@@ -3692,18 +4011,22 @@ texts:
           Qui fértili natos aqua
           Partim relínquis gúrgiti,
           Partim levas in áëra.
+
           Demérsa lymphis ímprimens,
           Subvécta cælis érigens:
           Ut stirpe ab una pródita,
           Divérsa répleant loca:
+
           Largíre cunctis sérvulis,
           Quos mundat unda Sánguinis,
           Nescíre lapsus críminum,
           Nec ferre mortis tǽdium.
+
           Ut culpa nullum déprimat:
           Nullum éfferat iactántia:
           Elísa mens ne cóncidat:
           Eláta mens ne córruat.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3719,10 +4042,12 @@ texts:
           Chant we the holy psalmody of David,
           Hymns to our Master, with a voice concordant,
           Sweetly intoning.
+
           So may our Monarch pitifully hear us,
           That we may merit with his saints to enter
           Mansions eternal, therewithal possessing
           Joy beatific.
+
           This be our portion, God forever blessed,
           Father eternal, Son, and Holy Spirit,
           Whose is the glory, which through all creation
@@ -3735,10 +4060,12 @@ texts:
           Semper in psalmis meditémur, atque
           Voce concórdi Dómino canámus
           Dúlciter hymnos.
+
           Ut pio Regi páriter canéntes,
           Cum suis Sanctis mereámur aulam
           Íngredi cæli, simul et perénnem
           Dúcere vitam.
+
           Præstet hoc nobis Déitas beáta
           Patris, ac Nati, paritérque Sancti
           Spíritus, cuius résonat per omnem
@@ -3754,10 +4081,12 @@ texts:
           Semper in psalmis meditémur, atque
           Víribus totis Dómino canámus
           Dúlciter hymnos.
+
           Ut pio Regi páriter canéntes,
           Cum suis Sanctis mereámur aulam
           Íngredi cæli, simul et beátam
           Dúcere vitam.
+
           Præstet hoc nobis Déitas beáta
           Patris, ac Nati, paritérque Sancti
           Spíritus, cuius réboat per omnem
@@ -3773,18 +4102,22 @@ texts:
           The varied hues of earth in shade;
           Before Thee, righteous Judge of all,
           We contrite in confession fall.
+
           Take far away our load of sin,
           Our soiled minds make clean within:
           Thy sov’reign grace, O Christ, impart,
           From all offence to guard our heart.
+
           For lo! our mind is dull and cold,
           Envenomed by sin’s baneful hold:
           Fain would it now the darkness flee,
           And seek, Redeemer, unto Thee.
+
           Far from it drive the shades of night,
           Its inmost darkness put to flight;
           Till in the daylight of the blest
           It joys to find itself at rest.
+
           Almighty Father, hear our cry,
           Through Jesus Christ, our Lord most High,
           Who, with the Holy Ghost and Thee,
@@ -3797,18 +4130,22 @@ texts:
           Terræ colóres ómnium:
           Nos confiténtes póscimus
           Te, iuste iudex córdium.
+
           Ut áuferas piácula,
           Sordésque mentis ábluas:
           Donésque, Christe, grátiam,
           Ut arceántur crímina.
+
           Mens ecce torpet ímpia,
           Quam culpa mordet nóxia:
           Obscúra gestit tóllere,
           Et te, Redémptor, quǽrere.
+
           Repélle tu calíginem
           Intrínsecus quam máxime,
           Ut in beáto gáudeat
           Se collocári lúmine.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3824,18 +4161,22 @@ texts:
           Terræ colóres ómnium:
           Nos confiténtes póscimus
           Te, iuste iudex córdium.
+
           Ut áuferas piácula,
           Sordésque mentis ábluas:
           Donésque, Christe, grátiam,
           Ut arceántur crímina.
+
           Mens ecce torpet ímpia,
           Quam culpa mordet nóxia:
           Obscúra gestit tóllere,
           Et te, Redémptor, quǽrere.
+
           Repélle tu calíginem
           Intrínsecus quam máxime,
           Ut in beáto gáudeat
           Se collocári lúmine.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3851,18 +4192,22 @@ texts:
           Confúsa mund[i] et túrbida:
           Lux intrat, albéscit polus:
           Christus venit: discédite.
+
           Calígo terræ scínditur
           Percússa solis spículo,
           Rebúsque iam color redit,
           Vultu niténtis síderis.
+
           Te, Christe, solum nóvimus:
           Te mente pur[a] et simplici,
           Flend[o] et canéndo quǽsumus,
           Inténde nostris sénsibus.
+
           Sunt multa fucis íllita,
           Quæ luce purgéntur tua:
           Tu, lux Eói síderis,
           Vultu serén[o] illúmina.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3878,18 +4223,22 @@ texts:
           Hence, vain shadows of the night!
           Mists that dim our mortal sight,
           Christ is come! Depart!
+
           Darkness routed lifts her wings
           As the radiance upwards springs:
           Through the world of wakened things
           Life and colour dart.
+
           Thee, O Christ, alone we know:
           Singing even in our woe,
           With pure hearts to thee we go:
           On our senses shine!
+
           In thy beams be purged away
           All that leads our thoughts astray!
           Through our spirits, King of day,
           Pour thy light divine!
+
           Unto God the Father, Son,
           Holy Spirit, Three in One,
           One in Three, be glory done,
@@ -3902,18 +4251,22 @@ texts:
           Confúsa mundi et túrbida:
           Lux intrat, albéscit polus:
           Christus venit: discédite.
+
           Calígo terræ scínditur
           Percússa solis spículo,
           Rebúsque iam color redit,
           Vultu niténtis síderis.
+
           Te, Christe, solum nóvimus:
           Te mente pura et simplici,
           Flendo et canéndo quǽsumus,
           Inténde nostris sénsibus.
+
           Sunt multa fucis íllita,
           Quæ luce purgéntur tua:
           Tu, vera lux cæléstium,
           Vultu seréno illúmina.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3929,10 +4282,12 @@ texts:
           Art with the Father and the Son,
           It is the hour, our souls possess
           With thy full flood of holiness.
+
           Let flesh and heart and lips and mind
           Sound forth our witness to mankind;
           And love light up our mortal frame,
           Till others catch the living flame.
+
           * Almighty Father, hear our cry,
           Through Jesus Christ, our Lord most High,
           Who, with the Holy Ghost and thee,
@@ -3945,10 +4300,12 @@ texts:
           Unum Patri cum Fílio,
           Dignáre promptus íngeri
           Nostro refúsus péctori.
+
           Os, lingua, mens, sensus, vigor
           Confessiónem pérsonent.
           Flamméscat igne cáritas,
           Accéndat ardor próximos.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -3964,10 +4321,12 @@ texts:
           To thee, great source of light, we pray;
           Blest Three in One, to every heart
           Thy beams of life and love impart.
+
           At early dawn, at close of day,
           To thee our vows we humbly pay;
           May we, mid joys that never end,
           With thy bright saints in homage bend.
+
           To God the Father, and the Son,
           And Holy Spirit, Three in One,
           Be endless glory, as before
@@ -3980,10 +4339,12 @@ texts:
           Et principális Únitas,
           Iam sol recédit ígneus,
           Infúnde lumen córdibus.
+
           Te mane laudum cármine,
           Te deprecémur véspere:
           Te nostra supplex glória
           Per cuncta laudet sǽcula.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -3999,18 +4360,22 @@ texts:
           Within our inmost bosoms shine,
           With light all darkness drive away
           And give the world a better day.
+
           Now days of grace with mercy flow,
           O Lord, the gift of tears bestow,
           To wash our stains in every part,
           Whilst heavenly fire consumes the heart.
+
           Rise, crystal tears, from that same source
           From whence our sins derive their course;
           Nor cease, till hardened hearts relent,
           And softened by your streams, repent.
+
           Behold, the happy days return,
           The days of joy for them that mourn;
           May we of their indulgence share,
           And bless the God that grants our prayer.
+
           May heaven and earth aloud proclaim
           The Trinity’s almighty fame;
           And we, restored to grace, rejoice
@@ -4023,18 +4388,22 @@ texts:
           Iesu, refúlge méntibus,
           Dum, nocte pulsa, grátior
           Orbi dies renáscitur.
+
           Dans tempus acceptábile,
           Da lacrimárum rívulis
           Laváre cordis víctimam,
           Quam læta adúrat cáritas.
+
           Quo fonte manávit nefas,
           Fluent perénnes lácrimæ,
           Si virga pœniténtiæ
           Cordis rigórem cónterat.
+
           Dies venit, dies tua,
           In qua reflórent ómnia:
           Lætémur et nos in viam
           Tua redúcti déxtera.
+
           Te prona mundi máchina,
           Clemens, adóret, Trínitas,
           Et nos novi per grátiam
@@ -4052,30 +4421,35 @@ texts:
           Sound the high triumphal lay:
           Tell how Christ, the world's Redeemer,
           As a victim won the day.
+
           God, his Maker, sorely grieving
           That the first-made Adam fell,
           When he ate the fruit of sorrow,
           Whose reward was death and hell,
           Noted then this wood, the ruin
           Of the ancient wood to quell.
+
           For the work of our salvation
           Needs would have his order so,
           And the multiform deceiver's
           Art by art would overthrow,
           And from thence would bring the med'cine
           Whence the insult of the foe.
+
           Wherefore, when the sacred fullness
           Of the appointed time was come,
           This world's Maker left his Father,
           Sent the heav'nly mansion from,
           And proceeded, God Incarnate,
           Of the Virgin's holy womb.
+
           Weeps the infant in the manger
           That in Bethlehem's stable stands;
           And his limbs the Virgin Mother
           Doth compose in swaddling bands,
           Meetly thus in linen folding
           Of her God the feet and hands.
+
           To the Trinity be glory
           Everlasting, as is meet;
           Equal to the Father, equal
@@ -4092,30 +4466,35 @@ texts:
           Dic triúmphum nóbilem,
           Quáliter Redémptor orbis
           Immolátus vícerit.
+
           De paréntis protoplásti
           Fraude Factor cóndolens,
           Quando pomi noxiális
           In necem morsu ruit,
           Ipse lignum tunc notávit,
           Damna ligni ut sólveret.
+
           Hoc opus nostræ salútis
           Ordo depopóscerat,
           Multifórmis proditóris
           Ars ut artem fálleret,
           Et medélam ferret inde,
           Hostis unde lǽserat.
+
           Quando venit ergo sacri
           Plenitúdo témporis,
           Missus est ab arce Patris
           Natus, orbis Cónditor,
           Atque ventre virgináli
           Carne amíctus pródiit.
+
           Vagit infans inter arcta
           Cónditus præsépia:
           Membra pannis involúta
           Virgo Mater álligat:
           Et Dei manus pedésque
           Stricta cingit fáscia.
+
           Sempitérna sit beátæ
           Trinitáti glória,
           Æqua Patri, Filióque;
@@ -4135,30 +4514,35 @@ texts:
           Sound the high triumphal lay:
           Tell how Christ, the world's Redeemer,
           As a victim won the day.
+
           God, his Maker, sorely grieving
           That the first-made Adam fell,
           When he ate the fruit of sorrow,
           Whose reward was death and hell,
           Noted then this wood, the ruin
           Of the ancient wood to quell.
+
           For the work of our salvation
           Needs would have his order so,
           And the multiform deceiver's
           Art by art would overthrow,
           And from thence would bring the med'cine
           Whence the insult of the foe.
+
           Wherefore, when the sacred fullness
           Of the appointed time was come,
           This world's Maker left his Father,
           Sent the heav'nly mansion from,
           And proceeded, God Incarnate,
           Of the Virgin's holy womb.
+
           Weeps the infant in the manger
           That in Bethlehem's stable stands;
           And his limbs the Virgin Mother
           Doth compose in swaddling bands,
           Meetly thus in linen folding
           Of her God the feet and hands.
+
           To the Trinity be glory
           Everlasting, as is meet;
           Equal to the Father, equal
@@ -4175,24 +4559,28 @@ texts:
           Dic triúmphum nóbilem,
           Quáliter Redémptor orbis
           Immolátus vícerit.
+
           De paréntis protoplásti
           Fraude Factor cóndolens,
           Quando pomi noxiális
           Morsu in mortem córruit,
           Ipse lignum tunc notávit,
           Damna ligni ut sólveret.
+
           Hoc opus nostræ salútis
           Ordo depopóscerat,
           Multifórmis proditóris
           Ars ut artem fálleret,
           Et medélam ferret inde,
           Hostis unde lǽserat.
+
           Quando venit ergo sacri
           Plenitúdo témporis,
           Missus est ab arce Patris
           Natus, orbis Cónditor,
           Atque ventre virgináli
           Carne amíctus pródiit.
+
           Vagit infans inter arcta
           Cónditus præsépia:
           Membra pannis involúta
@@ -4216,18 +4604,22 @@ texts:
           Qui cuncta solus órdinans,
           Humum iubes prodúcere
           Reptántis et feræ genus:
+
           Qui magna rerum córpora,
           Dictu iubéntis vívida,
           Ut sérviant per órdinem,
           Subdens dedísti hómini:
+
           Repélle, a servis tuis,
           Quidquid per immundítiam,
           Aut móribus se súggerit,
           Aut áctibus se intérserit.
+
           Da gaudiórum prǽmia,
           Da gratiárum múnera:
           Dissólve litis víncula:
           Astrínge pacis fœ́dera.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4245,26 +4637,32 @@ texts:
           Mentes tuórum vísita,
           Imple supérna grátia,
           Quæ tu creásti péctora.
+
           Qui Paráclitus díceris,
           Donum Dei altíssimi,
           Fons vivus, ignis, cáritas,
           Et spiritális únctio.
+
           Tu septifórmis múnere,
           Dextræ Dei tu dígitus,
           Tu rite promíssum Patris,
           Sermóne ditans gúttura.
+
           Accénde lumen sénsibus:
           Infúnde amórem córdibus:
           Infírma nostri córporis
           Virtúte firmans pérpeti.
+
           Hostem repéllas lóngius,
           Pacémque dones prótinus:
           Ductóre sic te prǽvio
           Vitémus omne nóxium.
+
           Per te sciámus da Patrem,
           Noscámus atque Fílium,
           Te utriúsque Spíritum
           Credámus omni témpore.
+
           * Deo Patri sit glória,
           Et Fílio, qui a mórtuis
           Surréxit, ac Paráclito,
@@ -4282,26 +4680,32 @@ texts:
           Come, visit every soul of Thine,
           And fill with Thy celestial flame
           The hearts which Thou Thyself didst frame.
+
           O gift of God, Thine is the sweet
           Consoling name of Paraclete
           And spring of life and fire and love
           And unction flowing from above.
+
           The mystic sevenfold gifts are Thine,
           Finger of God's right hand divine;
           The Father's promise sent to teach
           The tongue a rich and heavenly speech.
+
           Kindle with fire brought from above
           Each sense, and fill our hearts with love;
           And grant our flesh, so weak and frail,
           The strength of Thine which cannot fail.
+
           Drive far away our deadly foe,
           And grant us Thy true peace to know;
           So we, led by Thy guidance still,
           May safely pass through every ill.
+
           To us, through Thee, the grace be shown
           To know the Father and the Son;
           And Spirit of Them both, may we
           Forever rest our faith in Thee.
+
           To Sire and Son be praises meet,
           And to the Holy Paraclete;
           And may Christ send us from above
@@ -4316,26 +4720,32 @@ texts:
           Mentes tuórum vísita,
           Imple supérna grátia,
           Quæ tu creásti péctora.
+
           Qui díceris Paráclitus,
           Altíssimi donum Dei,
           Fons vivus, ignis, cáritas,
           Et spiritális únctio.
+
           Tu septifórmis múnere,
           Dígitus patérnæ déxteræ,
           Tu rite promíssum Patris,
           Sermóne ditans gúttura.
+
           Accénde lumen sénsibus:
           Infúnde amórem córdibus:
           Infírma nostri córporis
           Virtúte firmans pérpeti.
+
           Hostem repéllas lóngius,
           Pacémque dones prótinus:
           Ductóre sic te prǽvio
           Vitémus omne nóxium.
+
           Per te sciámus da Patrem,
           Noscámus atque Fílium,
           Teque utriúsque Spíritum
           Credámus omni témpore.
+
           * Deo Patri sit glória,
           Et Fílio, qui a mórtuis
           Surréxit, ac Paráclito,
@@ -4351,30 +4761,37 @@ texts:
           First formed the earth by sure decree,
           The day its Maker rose again,
           And vanquished death, and burst our chain.
+
           Away with sleep and slothful ease
           We raise our hearts and bend our knees,
           And early seek the Lord of all,
           Obedient to the Prophet's call.
+
           That He may hearken to our prayer,
           Stretch forth His strong right arm to spare,
           And ev'ry past offense forgiven,
           Restore us to our home in heaven.
+
           Assembled here this holy day,
           This holiest hour we raise the lay,
           And O that He to whom we sing,
           May now reward our offering!
+
           O Father of unclouded light!
           Keep us this day as in thy sight,
           In word and deed that we may be
           From ev'ry touch of evil free.
+
           That this our body's mortal frame
           May know no sin, and fear no shame,
           Nor fire hereafter be the end
           Of passions which our bosom rend.
+
           Redeemer of the world, we pray
           That thou wouldst wash our sins away,
           And give us, of Thy boundless grace,
           The blessings of the heavenly place.
+
           Most Holy Father, hear our cry,
           Through Jesus Christ our Lord most High
           Who, with the Holy Ghost and thee
@@ -4387,34 +4804,42 @@ texts:
           Quo mundus extat cónditus,
           Vel quo resúrgens Cónditor
           Nos morte victa líberat.
+
           Pulsis procul torpóribus
           Surgámus omnes ócius,
           Et nocte quærámus pium
           Sicut prophétam nóvimus.
+
           Nostras preces ut áudiat,
           Suámque dextram pórrigat:
           Et expiátos sórdibus
           Reddat polórum sédibus.
+
           Ut quique sacratíssimo
           Huius diéi témpore
           Horis quiétis psállimus,
           Donis beátis múneret.
+
           Iam nunc patérna cláritas
           Te postulámus áffatim:
           Absit libído sórdidans
           Et omnis actus nóxius.
+
           Ne fœda sit, vel lúbrica
           Compágo nostri córporis,
           Per quem Avérni ígnibus
           Ipsi cremémur ácrius.
+
           Ob hoc Redémptor, quǽsumus,
           Ut probra nostra díluas,
           Vitæ perénnis cómmoda
           Nobis benígne cónferas.
+
           Quo carnis actu éxsules
           Effécti ipsi cælibes,
           Ut præstolámur cérnui,
           Melos canámus glóriæ.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4430,30 +4855,37 @@ texts:
           First formed the earth by sure decree,
           The day its Maker rose again,
           And vanquished death, and burst our chain.
+
           Away with sleep and slothful ease
           We raise our hearts and bend our knees,
           And early seek the Lord of all,
           Obedient to the Prophet's call.
+
           That He may hearken to our prayer,
           Stretch forth His strong right arm to spare,
           And ev'ry past offense forgiven,
           Restore us to our home in heaven.
+
           Assembled here this holy day,
           This holiest hour we raise the lay,
           And O that He to whom we sing,
           May now reward our offering!
+
           O Father of unclouded light!
           Keep us this day as in thy sight,
           In word and deed that we may be
           From ev'ry touch of evil free.
+
           That this our body's mortal frame
           May know no sin, and fear no shame,
           Nor fire hereafter be the end
           Of passions which our bosom rend.
+
           Redeemer of the world, we pray
           That thou wouldst wash our sins away,
           And give us, of Thy boundless grace,
           The blessings of the heavenly place.
+
           Most Holy Father, hear our cry,
           Through Jesus Christ our Lord most High
           Who, with the Holy Ghost and thee
@@ -4466,30 +4898,37 @@ texts:
           Beáta mundum cóndidit,
           Vel quo resúrgens Cónditor
           Nos, morte victa, líberat:
+
           Pulsis procul torpóribus,
           Surgámus omnes ócius,
           Et nocte quærámus Deum,
           Prophéta sicut prǽcipit:
+
           Nostras preces ut áudiat
           Suámque dextram pórrigat,
           Et expiátos sórdibus
           Reddat polórum sédibus:
+
           Ut, quique sacratíssimo
           Huius diéi témpore
           Horis quiétis psállimus,
           Donis beátis múneret.
+
           Iam nunc, patérna cláritas,
           Te postulámus áffatim:
           Absint faces libídinis,
           Et omnis actus nóxius.
+
           Ne fœda sit, vel lúbrica
           Compágo nostri córporis,
           Ob cuius ignes ígnibus
           Avérnus urat ácrius.
+
           Mundi Redémptor, quǽsumus,
           Tu probra nostra díluas;
           Nobísque largus cómmoda
           Vitæ perénnis cónferas.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4505,10 +4944,12 @@ texts:
           Qui témperas rerum vices,
           Splendóre mane ínstruis,
           Et ígnibus merídiem:
+
           Exstíngue flammas lítium,
           Aufer calórem nóxium,
           Confer salútem córporum,
           Verámque pacem córdium.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4518,10 +4959,12 @@ texts:
           Qui témperas rerum vices,
           Splendóre mane illúminas,
           Et ígnibus merídiem:
+
           Exstíngue flammas lítium,
           Aufer calórem nóxium,
           Confer salútem córporum,
           Verámque pacem córdium.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4537,10 +4980,12 @@ texts:
           Who orderest time and change aright,
           Who send’st the early morning ray,
           And light’st the glow of perfect day:
+
           Extinguish thou each sinful fire,
           And banish every ill desire;
           And while thou keep’st the body whole,
           Shed forth thy peace upon the soul.
+
           * Almighty Father, hear our cry,
           Through Jesus Christ, our Lord most High,
           Who, with the Holy Ghost and thee,
@@ -4553,10 +4998,12 @@ texts:
           Qui témperas rerum vices,
           Splendóre mane illúminas,
           Et ígnibus merídiem:
+
           Exstíngue flammas lítium,
           Aufer calórem nóxium,
           Confer salútem córporum,
           Verámque pacem córdium.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4572,18 +5019,22 @@ texts:
           Lord, with thy touch divine,
           Cast out the slumbers of the soul,
           The rest that is not thine.
+
           Look down, Eternal Holiness,
           And wash the sins away,
           Of those, who, rising to confess,
           Outstrip the lingering day.
+
           Our hearts and hands by night, O Lord,
           We lift them in Our need;
           As holy Psalmists give the word,
           And holy Paul the deed.
+
           Each sin to thee of years gone by,
           Each hidden stain lies bare;
           We shrink not from thine awful eye,
           But pray that thou wouldst spare.
+
           Grant this, O Father, Only Son
           And Spirit, God of grace,
           To whom all worship shall be done
@@ -4596,18 +5047,22 @@ texts:
           Rectórque noster, áspice:
           Nos a quiéte nóxia
           Mersos sopóre líbera.
+
           Te, sancte Christe, póscimus,
           Ignósce culpis ómnibus:
           Ad confiténdum súrgimus,
           Morásque noctis rúmpimus.
+
           Mentes manúsque tóllimus,
           Prophéta sicut nóctibus
           Nobis geréndum prǽcipit,
           Paulúsque gestis cénsuit.
+
           Vides malum, quod fécimus:
           Occúlta nostra pándimus:
           Preces geméntes fúndimus,
           Dimítte quod peccávimus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4623,18 +5078,22 @@ texts:
           Rectórque noster, áspice:
           Nos a quiéte nóxia
           Mersos sopóre líbera.
+
           Te, sancte Christe, póscimus,
           Ignósce tu criminibus:
           Ad confiténdum súrgimus,
           Morásque noctis rúmpimus.
+
           Mentes manúsque tóllimus,
           Prophéta sicut nóctibus
           Nobis geréndum prǽcipit,
           Paulúsque gestis cénsuit.
+
           Vides malum, quod fécimus:
           Occúlta nostra pándimus:
           Preces geméntes fúndimus,
           Dimítte quod peccávimus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4650,10 +5109,12 @@ texts:
           Who ever dost thyself unmoved abide,
           Yet day by day the light in due gradation
           From hour to hour through all its changes guide:
+
           Grant to life’s day a calm unclouded ending,
           An eve untouched by shadows of decay,
           The brightness of a holy death-bed blending
           With dawning glories of th’ eternal day.
+
           * Hear us, O Father, gracious and forgiving,
           And thou, O Christ, the co-eternal Word,
           Who, with the Holy Ghost, by all things living
@@ -4666,10 +5127,12 @@ texts:
           Immótus in te pérmanens,
           Lucis diúrnæ témpora
           Succéssibus detérminans:
+
           Largíre lumen véspere,
           Quo vita nusquam décidat,
           Sed prǽmium mortis sacræ
           Perénnis instet glória.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4685,10 +5148,12 @@ texts:
           Immótus in te pérmanens,
           Lucis diúrnæ témpora
           Succéssibus detérminans:
+
           Largíre clarum véspere,
           Quo vita nusquam décidat,
           Sed prǽmium mortis sacræ
           Perénnis instet glória.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4704,30 +5169,37 @@ texts:
           Creator, unto thee we sing,
           With God the Father ever One,
           Co-equal, co-eternal Son.
+
           Thy hand, when first the world began,
           Made in thine own pure image man,
           And linked to Adam, sprung from earth,
           A living soul of heavenly birth.
+
           And when by craft the envious foe
           Had marred thy noblest work below,
           Clothed in our flesh, thou didst restore
           The image thou hadst made before.
+
           Once wast thou born of Mary's womb;
           And now, new-born from out the tomb,
           O Christ, thou bidd'st us rise with thee
           From death to immortality.
+
           Eternal Shepherd, thou dost lave
           Thy flock in pure baptismal wave,
           That mystic bath, that grave of sin,
           Where ransomed souls new life begin.
+
           Redeemer, thou for us didst deign
           To hang upon the Cross of pain,
           And give for us the lavish price
           Of thine own blood in sacrifice.
+
           Grant, Lord, in thee each faithful mind
           Unceasing paschal joy may find;
           And from the death of sin set free
           Souls newly born to life by thee.
+
           To thee, once dead, who now dost live,
           All glory, Lord, thy people give,
           Whom, with the Father, we adore,
@@ -4740,30 +5212,37 @@ texts:
           Rerum Creátor ómnium,
           Æquális ante sǽcula
           Semper Parénti Fílius:
+
           Nascénte qui mundo Faber
           Imáginem vultus tui
           Tradens Adámo, nóbilem
           Limo iugásti spíritum.
+
           Cum livor et fraus dǽmonis
           Fœdásset humánum genus:
           Tu, carne amíctus, pérditam
           Formam refórmas ártifex.
+
           Qui, natus olim e Vírgine,
           Nunc e sepúlcro násceris,
           Tecúmque nos a mórtuis
           Iubes sepúltos súrgere.
+
           Qui, pastor ætérnus, gregem
           Aqua lavas baptísmatis:
           Hæc est lavácrum méntium:
           Hæc est sepúlcrum críminum.
+
           Nobis diu qui débitæ
           Redémptor affíxus cruci,
           Nostræ dedísti pródigus
           Prétium salútis sánguinem.
+
           Ut sis perénne méntibus
           Paschále, Iesu, gáudium,
           A morte dira críminum
           Vitæ renátos líbera.
+
           * Deo Patri sit glória,
           Et Fílio, qui a mórtuis
           Surréxit, ac Paráclito,
@@ -4779,10 +5258,12 @@ texts:
           Creator, unto thee we sing,
           With God the Father ever One,
           Co-equal, co-eternal Son.
+
           Thy hand, when first the world began,
           Made in thine own pure image man,
           And linked to Adam, sprung from earth,
           A living soul of heavenly birth.
+
           And when by craft the envious foe
           Had marred thy noblest work below,
           Clothed in our flesh, thou didst restore
@@ -4795,14 +5276,17 @@ texts:
           And now, new-born from out the tomb,
           O Christ, thou bidd'st us rise with thee
           From death to immortality.
+
           Eternal Shepherd, thou dost lave
           Thy flock in pure baptismal wave,
           That mystic bath, that grave of sin,
           Where ransomed souls new life begin.
+
           Redeemer, thou for us didst deign
           To hang upon the Cross of pain,
           And give for us the lavish price
           Of thine own blood in sacrifice.
+
           Grant, Lord, in thee each faithful mind
           Unceasing paschal joy may find;
           And from the death of sin set free
@@ -4819,34 +5303,42 @@ texts:
           Rerum Creátor ómnium,
           Qui eras ante sǽcula
           Semper cum Patre Fílius:
+
           Qui mundi in primórdio
           Adam plásmasti hóminem:
           Cui tuæ imágini
           Vultum dedísti símilem.
+
           Quem diábolus decéperat,
           Hostis humáni géneris,
           Cuius tu formam córporis
           Assúmere dignátus es:
+
           Ut hóminem redímeres,
           Quem ante iam plasmáveras:
           Et nos Deo coniúngeres,
           Per carnis contubérnium.
+
           Quem éditum ex Vírgine
           Pavéscit omnis ánima:
           Per quem et nos resúrgere
           Devóta mente crédimus.
+
           Qui nobis in Baptísmate
           Donásti indulgéntiam,
           Qui tenebámur vínculis
           Ligáti consciéntiæ.
+
           Qui Crucem propter hóminem
           Suscípere dignátus es:
           Dedísti tuum sánguinem
           Nostræ salútis prétium.
+
           Quǽsumus Auctor ómnium,
           In hoc Pascháli gáudio,
           Ab omni mortis ímpetu
           Tuum defénde pópulum.
+
           Glória tibi Dómine,
           Qui surrexísti a mórtuis,
           Cum Patre et Sancto Spíritu,
@@ -4862,30 +5354,37 @@ texts:
           Predíxit muliéribus:
           In Galilǽa Dóminus
           Vidéndus est quantócius.
+
           Illæ dum pergunt cóncite
           Apóstolis hoc dícere,
           Vidéntes eum vívere,
           Osculántur pedes Dómini.
+
           Quo ágnito discípuli
           In Galilǽam própere
           Pergunt vidére fáciem
           Desiderátam Dómini.
+
           Claro pascháli gáudio
           Sol mundo nitet rádio,
           Cum Christum iam Apóstoli
           Visu cernunt corpóreo.
+
           Osténsa sibi vúlnera,
           In Christi carne fúlgida,
           Resurrexísse Dóminum
           Voce faténtur pública.
+
           Rex Christe clementíssime,
           Tu corda nostra pósside:
           Ut tibi laudes débitas
           Reddámus omni témpore.
+
           Quǽsumus, Auctor ómnium,
           In hoc pascháli gáudio,
           Ab omni mortis ímpetu
           Tuum defénde pópulum.
+
           Glória tibi Dómine,
           Qui surrexísti a mórtuis,
           Cum Patre et Sancto Spíritu
@@ -4901,18 +5400,22 @@ texts:
           Spreto cubíli, súrgimus:
           Nobis, Pater, canéntibus
           Adésse te depóscimus.
+
           Te lingua primum cóncinat,
           Te mentis ardor ámbiat:
           Ut áctuum sequéntium
           Tu, Sancte, sis exórdium.
+
           Cedant tenébræ lúmini,
           Et nox diúrno síderi,
           Ut culpa, quam nox íntulit,
           Lucis labáscat múnere.
+
           Precámur iídem súpplices,
           Noxas ut omnes ámputes,
           Et ore te canéntium
           Laudéris in perpetuum.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4928,18 +5431,22 @@ texts:
           And sloth cast off, in prayer we bow;
           And while we sing thy praises dear,
           O Father, be thou present here.
+
           To thee our earliest morning song,
           To thee our hearts full powers belong;
           And thou, O Holy One, prevent
           Each following action and intent.
+
           As shades at morning flee away,
           And night before the star of day;
           So each transgression of the night
           Be purged by thee, celestial Light!
+
           Cut off, we pray thee, each offense,
           And every lust of thought and sense:
           That by their lips who thee adore
           Thou mayst be praised forevermore.
+
           Grant this, O Father ever One
           With Christ, thy sole-begotten Son,
           And Holy Ghost, whom all adore,
@@ -4952,18 +5459,22 @@ texts:
           Spreto cubíli, súrgimus:
           Nobis, Pater, canéntibus
           Adésse te depóscimus.
+
           Te lingua primum cóncinat,
           Te mentis ardor ámbiat:
           Ut áctuum sequéntium
           Tu, Sancte, sis exórdium.
+
           Cedant tenébræ lúmini,
           Et nox diúrno síderi,
           Ut culpa, quam nox íntulit,
           Lucis labáscat múnere.
+
           Precámur iídem súpplices,
           Noxas ut omnes ámputes,
           Et ore te canéntium
           Laudéris omni témpore.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -4979,34 +5490,42 @@ texts:
           De luce lucem próferens,
           Lux lucis, et fons lúminis,
           Diem dies illúminans:
+
           Verúsque sol illábere,
           Micans nitóre pérpeti:
           Iubárque Sancti Spíritus
           Infúnde nostris sénsibus.
+
           Votis vocémus et Patrem,
           Patrem perénnis glóriæ,
           Patrem poténtis grátiæ,
           Culpam reléget lúbricam.
+
           Confírmet actus strénuos:
           Dentes retúndat ínvidi:
           Casus secúndet ásperos,
           Donet geréndi grátiam.
+
           Mentem gubérnet et regat,
           Casto, fidéli córpore:
           Fides calóre férveat,
           Fraudis venéna nésciat.
+
           Christúsque nobis sit cibus,
           Potúsque noster sit fides:
           Læti bibámus sóbriam
           Ebrietátem spíritus.
+
           Lætus dies hic tránseat,
           Pudor sit ut dilúculum,
           Fides velut merídies,
           Crepúsculum mens nésciat.
+
           Auróra cursus próvehit,
           Auróra totus pródeat,
           In Patre totus Fílius,
           Et totus in Verbo Pater.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5022,34 +5541,42 @@ texts:
           O thou that bringest light from light,
           O light of light, light’s living spring,
           O day, all days illumining.
+
           O thou true sun, on us thy glance
           Let fall in royal radiance,
           The Spirit’s sanctifying beam
           Upon our earthly senses stream.
+
           The Father too our prayers implore,
           Father of glory evermore,
           The Father of all grace and might,
           To banish sin from our delight:
+
           To guide whate’er we nobly do,
           With love all envy to subdue,
           To make ill-fortune turn to fair,
           And give us grace our wrongs to bear.
+
           Our mind be in his keeping placed,
           Our body true to him and chaste,
           Where only faith her fire shall feed,
           And burn the tares of Satan’s seed.
+
           And Christ to us for food shall be,
           From him our drink that welleth free,
           The Spirit’s wine, that maketh whole,
           And mocking not, exalts the soul.
+
           Rejoicing may this day go hence,
           Like virgin dawn our innocence,
           Like fiery noon our faith appear,
           Nor know the gloom of twilight drear.
+
           Morn in her rosy car is borne;
           Let him come forth our perfect morn,
           The Word in God the Father One,
           The Father perfect in the Son.
+
           All laud to God the Father be;
           All praise, Eternal Son, to thee;
           All glory, as is ever meet,
@@ -5062,34 +5589,42 @@ texts:
           De luce lucem próferens,
           Lux lucis, et fons lúminis,
           Diem dies illúminans:
+
           Verúsque sol illábere,
           Micans nitóre pérpeti:
           Iubárque Sancti Spíritus
           Infúnde nostris sénsibus.
+
           Votis vocémus et Patrem,
           Patrem poténtis grátiæ,
           Patrem perénnis glóriæ:
           Culpam reléget lúbricam.
+
           Confírmet actus strénuos:
           Dentes retúndat ínvidi:
           Casus secúndet ásperos:
           Agénda recte dírigat.
+
           Mentem gubérnet et regat:
           Sit pura nobis cástitas:
           Fides calóre férveat,
           Fraudis venéna nésciat.
+
           Christúsque nobis sit cibus,
           Potúsque noster sit fides:
           Læti bibámus sóbriam
           Profusiónem Spíritus.
+
           Lætus dies hic tránseat:
           Pudor sit ut dilúculum:
           Fides velut merídies:
           Crepúsculum mens nésciat.
+
           Auróra lucem próvehit,
           Cum luce nobis pródeat
           In Patre totus Fílius,
           Et totus in Verbo Pater.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5105,18 +5640,22 @@ texts:
           Thou Ruler of this earthly sphere;
           In substance one, in persons three,
           Dread Trinity in Unity!
+
           Do thou in love accept our lays
           Of mingled penitence and praise;
           And set our hearts from error free,
           More fully to rejoice in thee.
+
           Our reins and hearts in pity heal,
           And with thy chastening fires anneal;
           Gird Thou our loins, each passion quell,
           And every harmful lust expel.
+
           Now as our anthems, upward borne,
           Awake the silence of the morn,
           Enrich us with thy gifts of grace,
           From heaven, thy blissful dwelling-place!
+
           Hear thou our prayer, Almighty King!
           Hear thou our praises, while we sing,
           Adoring with the heavenly host,
@@ -5129,18 +5668,22 @@ texts:
           Mundíque Factor máchinæ,
           Unus potentiáliter,
           Trinúsque personáliter:
+
           Nostros pius cum cánticis
           Fletus benígne súscipe:
           Quo corde puro sórdibus
           Te perfruámur lárgius.
+
           Lumbos, iecúrque mórbidum
           Adúre igni cóngruo,
           Accíncti ut sint pérpetim,
           Luxu remóto péssimo.
+
           Ut quique horas nóctium
           Nunc concinéndo rúmpimus,
           Donis beátæ pátriæ
           Ditémur omnes áffatim
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5156,18 +5699,22 @@ texts:
           Thou Ruler of this earthly sphere;
           In substance one, in persons three,
           Dread Trinity in Unity!
+
           Do thou in love accept our lays
           Of mingled penitence and praise;
           And set our hearts from error free,
           More fully to rejoice in thee.
+
           Our reins and hearts in pity heal,
           And with thy chastening fires anneal;
           Gird Thou our loins, each passion quell,
           And every harmful lust expel.
+
           Now as our anthems, upward borne,
           Awake the silence of the morn,
           Enrich us with thy gifts of grace,
           From heaven, thy blissful dwelling-place!
+
           Hear thou our prayer, Almighty King!
           Hear thou our praises, while we sing,
           Adoring with the heavenly host,
@@ -5180,18 +5727,22 @@ texts:
           Mundi regis qui máchinam,
           Uníus et substántiæ,
           Trinúsque persónis Deus:
+
           Nostros pius cum cánticis
           Fletus benígne súscipe:
           Ut corde puro sórdium
           Te perfruámur lárgius.
+
           Lumbos, iecúrque mórbidum
           Flammis adúre cóngruis,
           Accíncti ut artus éxcubent,
           Luxu remóto péssimo.
+
           Quicúmque ut horas nóctium
           Nunc concinéndo rúmpimus,
           Ditémur omnes áffatim
           Donis beátæ pátriæ.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5207,22 +5758,27 @@ texts:
           Beáta spes mortálium,
           Celsi Tonántis Únice,
           Castǽque proles Vírginis:
+
           Da déxteram surgéntibus,
           Exsúrgat et mens sóbria,
           Flagrans et in laudem Dei
           Grates repéndat débitas.
+
           Ortus refúlget Lúcifer,
           Sparsámque lucem núntiat:
           Cadit calígo nóctium:
           Lux sancta nos illúminet.
+
           Manénsque nostris sénsibus,
           Noctem repéllat sǽculi,
           Omníque fine diéi
           Purgáta servet péctora.
+
           Quæsíta iam primum fides
           Radícet altis sénsibus:
           Secúnda spes congáudeat,
           Qua maior exstat cáritas.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5238,22 +5794,27 @@ texts:
           Our only hope, in mercy given;
           Child of a Virgin meek and pure;
           Son of the Highest evermore:
+
           Grant us thine aid thy praise to sing,
           As opening days new duties bring;
           That with the light our life may be
           Renewed and sanctified by thee.
+
           The morning star fades from the sky,
           The sun breaks forth; night’s shadows fly:
           O Thou, true Light, upon us shine:
           Our darkness turn to light divine.
+
           Within us grant thy light to dwell;
           And from our souls dark sins expel;
           Cleanse thou our minds from stain of ill,
           And with thy peace our bosoms fill.
+
           To us strong faith forever give,
           With joyous hope, in thee to live;
           That life’s rough way may ever be
           Made strong and pure by charity.
+
           All laud to God the Father be,
           All praise, Eternal Son, to thee:
           All glory, as is ever meet,
@@ -5266,22 +5827,27 @@ texts:
           Beáta spes mortálium,
           Summi Tonántis Únice,
           Castǽque proles Vírginis:
+
           Da déxteram surgéntibus,
           Exsúrgat et mens sóbria,
           Flagrans et in laudem Dei
           Grates repéndat débitas.
+
           Ortus refúlget Lúcifer,
           Præítque solem núntius:
           Cadunt tenébræ nóctium:
           Lux sancta nos illúminet.
+
           Manénsque nostris sénsibus,
           Noctem repéllat sǽculi,
           Omníque fine témporis
           Purgáta servet péctora.
+
           Quæsíta iam primum fides
           In corde radíces agat:
           Secúnda spes congáudeat,
           Qua maior exstat cáritas.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5297,34 +5863,42 @@ texts:
           Noctem diémque qui regis,
           Et témporum das témpora,
           Ut álleves fastídium.
+
           Præco diéi iam sonat,
           Noctis profúndæ pérvigil,
           Noctúrna lux viántibus,
           A nocte noctem ségregans.
+
           Hoc excitátus Lúcifer
           Solvit polum calígine,
           Hoc omnis errónum cohors
           Viam nocéndi déserit.
+
           Hoc nauta vires cólligit,
           Pontíque mitéscunt freta:
           Hoc, ipsa Petr[a] Ecclésiæ,
           Canénte, culpam díluit.
+
           Surgámus ergo strénue,
           Gallus iacéntes éxcitat,
           Et somnoléntos íncrepat,
           Gallus negántes árguit.
+
           Gallo canénte spes redit,
           Ægris salus refúnditur,
           Mucro latrónis cónditur,
           Lapsis fides revértitur.
+
           Iesu labéntes réspice,
           Et nos vidéndo córrige:
           Si réspicis, lapsus cadunt,
           Fletúque culpa sólvitur.
+
           Tu lux refúlge sénsibus,
           Mentísque somnum díscute:
           Te nostra vox primum sonet,
           Et vota solvámus tibi.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5340,34 +5914,42 @@ texts:
           Who day and night about dost bring:
           Who weary mortals to relieve,
           Dost in their times the seasons give:
+
           Now the shrill cock proclaims the day,
           And calls the sun’s awak’ning ray
           The wand’ring pilgrim’s guiding light,
           That marks the watches night by night.
+
           Roused at the note, the morning star
           Heaven’s dusky veil uplifts afar:
           Night’s vagrant bands no longer roam,
           But from their dark ways hie them home.
+
           The encouraged sailor’s fears are o’er,
           The foaming billows rage no more:
           Lo! e’en the very Church’s rock
           Melts at the crowing of the cock.
+
           O let us then like men arise;
           The cock rebukes our slumbering eyes,
           Bestirs who still in sleep would lie,
           And shames who would their Lord deny.
+
           New hope his clarion-note awakes,
           Sickness the feeble frame forsakes,
           The robber sheathes his lawless sword,
           Faith to the fallen is restored.
+
           Look on us, Jesu, when we fall,
           And with thy look our souls recall:
           If thou but look, our sins are gone,
           And with due tears our pardon won.
+
           Shed through our hearts thy piercing ray,
           Our souls’ dull slumber drive away:
           Thy name be first on every tongue,
           To thee our earliest praises sung.
+
           All laud to God the Father be,
           All praise, Eternal Son, to thee,
           All glory, as is ever meet,
@@ -5380,34 +5962,42 @@ texts:
           Noctem diémque qui regis,
           Et témporum das témpora,
           Ut álleves fastídium.
+
           Noctúrna lux viántibus
           A nocte noctem ségregans,
           Præco diéi iam sonat,
           Iubárque solis évocat.
+
           Hoc excitátus Lúcifer
           Solvit polum calígine:
           Hoc omnis errónum cohors
           Viam nocéndi déserit.
+
           Hoc nauta vires cólligit,
           Pontíque mitéscunt freta:
           Hoc, ipsa petra Ecclésiæ,
           Canénte, culpam díluit.
+
           Surgámus ergo strénue:
           Gallus iacéntes éxcitat,
           Et somnoléntos íncrepat,
           Gallus negántes árguit.
+
           Gallo canénte, spes redit,
           Ægris salus refúnditur,
           Mucro latrónis cónditur,
           Lapsis fides revértitur.
+
           Iesu, labántes réspice,
           Et nos vidéndo córrige:
           Si réspicis, labes cadunt,
           Fletúque culpa sólvitur.
+
           Tu, lux, refúlge sénsibus,
           Mentísque somnum díscute:
           Te nostra vox primum sonet,
           Et vota solvámus tibi.
+
           Deo Patri sit glória,
           Eiúsque soli Fílio,
           Cum Spíritu Paráclito,
@@ -5423,10 +6013,12 @@ texts:
           Rerum Creátor, póscimus,
           Ut sólita cleméntia
           Sis præsul ad custódiam.
+
           Procul recédant sómnia,
           Et nóctium phantásmata;
           Hostémque nostrum cómprime,
           Ne polluántur córpora.
+
           * Præsta, Pater omnípotens,
           Per Iesum Christum Dóminum,
           Qui tecum in perpétuum
@@ -5442,10 +6034,12 @@ texts:
           Creator of the world, we pray
           That with thy wonted favor thou
           Wouldst be our guard and keeper now.
+
           From all ill dreams defend our eyes,
           From nightly fears and fantasies;
           Tread under foot our ghostly foe,
           That no pollution we may know.
+
           * O Father, that we ask be done,
           Through Jesus Christ, thine only Son;
           Who, with the Holy Ghost and thee,
@@ -5458,10 +6052,12 @@ texts:
           Rerum Creátor, póscimus,
           Ut pro tua cleméntia
           Sis præsul et custódia.
+
           Procul recédant sómnia,
           Et nóctium phantásmata;
           Hostémque nostrum cómprime,
           Ne polluántur córpora.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5477,18 +6073,22 @@ texts:
           Raised from the sea the solid land;
           And drove each billowy heap away,
           And bade the earth stand firm for aye:
+
           That so, with flowers of golden hue,
           The seeds of each it might renew;
           And fruit-trees bearing fruit might yield,
           And pleasant pasture of the field:
+
           Our spirit’s rankling wounds efface
           With dewy freshness of thy grace:
           That grief may cleanse each deed of ill,
           And o’er each lust may triumph still.
+
           Let every soul thy law obey,
           And keep from every evil way;
           Rejoice each promised good to win,
           And flee from every mortal sin.
+
           Hear thou our prayer, Almighty King!
           Hear thou our praises, while we sing,
           Adoring with the heavenly host,
@@ -5501,18 +6101,22 @@ texts:
           Mundi solum qui séparans,
           Pulsis aquæ moléstiis,
           Terram dedísti immóbilem:
+
           Ut germen aptum próferens,
           Fulvis decóra flóribus,
           Fecúnda fructu sísteret,
           Pastúmque gratum rédderet.
+
           Mentis perústæ vúlnera
           Munda viróre grátiæ:
           Ut facta fletu díluat,
           Motúsque pravos átterat.
+
           Iussis tuis obtémperet:
           Nullis malis appróximet:
           Bonis repléri gáudeat,
           Et mortis ictum nésciat.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5528,18 +6132,22 @@ texts:
           Mundi solum qui éruens,
           Pulsis aquæ moléstiis,
           Terram dedíst[i] immóbilem:
+
           Ut germen aptum próferens,
           Fulvis decóra flóribus,
           Fecúnda fructu sísteret,
           Pastúmque gratum rédderet.
+
           Mentis perústæ vúlnera
           Munda viróre grátiæ:
           Ut facta fletu díluat,
           Motúsque pravos átterat.
+
           Iussis tuis obtémperet:
           Nullis malis appróximet:
           Bonis repléri gáudeat,
           Et mortis actum nésciat.
+
           Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5555,22 +6163,27 @@ texts:
           Orbem poténter quæ regis,
           Atténde laudis cánticum,
           Quod excubántes psállimus.
+
           Nam léctulo consúrgimus
           Noctis quiéto témpore,
           Ut flagitémus vúlnerum
           A te medélam ómnium.
+
           Quo fraude quidquid dǽmonum
           In nóctibus delíquimus,
           Abstérgat illud cǽlitus
           Tuæ potéstas glóriæ.
+
           Ne corpus adsit sórdidum,
           Nec torpor instet córdium,
           Ne críminis contágio
           Tepéscat ardor spíritus.
+
           Ob hoc, Redémptor, quǽsumus,
           Reple tuo nos lúmine,
           Per quod diérum círculis
           Nullis ruámus áctibus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5586,22 +6199,27 @@ texts:
           Who rulest all things mightily:
           Bow down to hear the songs of praise
           Which, freed from bonds of sleep, we raise.
+
           While lingers yet the peace of night,
           We rouse us from our slumbers light:
           That might of instant prayer may win
           The healing balm for wounds of sin.
+
           If, by the wiles of Satan caught,
           This night-time we have sinned in aught,
           That sin Thy glorious power to-day,
           From heaven descending, cleanse away.
+
           Let naught impure our bodies stain,
           No laggard sloth our souls detain,
           No taint of sin our spirits know,
           To chill the fervor of their glow.
+
           Wherefore, Redeemer grant that we
           Fulfilled with thine own light may be:
           That, in our course, from day to day,
           By no misdeed we fall away.
+
           Grant this, O Father ever One
           With Christ, thy sole-begotten Son,
           And Holy Ghost, whom all adore,
@@ -5614,22 +6232,27 @@ texts:
           Orbem poténter quæ regis,
           Atténde laudis cánticum,
           Quod excubántes psállimus.
+
           Nam léctulo consúrgimus
           Noctis quiéto témpore,
           Ut flagitémus ómnium
           A te medélam vúlnerum.
+
           Quo fraude quidquid dǽmonum
           In nóctibus delíquimus,
           Abstérgat illud cǽlitus
           Tuæ potéstas glóriæ.
+
           Ne corpus astet sórdidum,
           Nec torpor instet córdium,
           Ne críminis contágio
           Tepéscat ardor spíritus.
+
           Ob hoc, Redémptor, quǽsumus,
           Reple tuo nos lúmine,
           Per quod diérum círculis
           Nullis ruámus áctibus.
+
           * Præsta, Pater piíssime,
           Patríque compar Únice,
           Cum Spíritu Paráclito
@@ -5645,18 +6268,22 @@ texts:
           Sent down from God's eternal clime,
           To save mankind by mortal birth
           Into a world of change and time;
+
           Enlighten our hearts; vain hopes destroy;
           And in thy love's consuming fire
           Fill all the soul with heavenly joy,
           And melt the dross of low desire.
+
           So when the Judge of quick and dead
           Shall bid his awful summons come,
           To whelm the guilty soul with dread,
           And call the blessed to their home.
+
           Saved from the whirling, black abyss,
           Forevermore to us be given
           To share the feast of saintly bliss,
           And see the face of God in heaven.
+
           To God the Father and the Son
           Our songs with one accord we raise;
           And to the Holy Spirit, One
@@ -5669,18 +6296,22 @@ texts:
           A Patre olim éxiens,
           Qui natus orbi súbvenis,
           Cursu declívi témporis.
+
           Illúmina nunc péctora,
           Tuóque amóre cóncrema;
           Audíto ut præcónio
           Sint pulsa tandem lúbrica.
+
           Iudéxque cum post áderis
           Rimári facta péctoris,
           Reddens vicem pro ábditis,
           Iustísque regnum pro bonis.
+
           Non demum arctémur malis
           Pro qualitáte críminis;
           Sed cum beátis cómpotes
           Simus perénnes cælibes.
+
           Laus, honor, virtus, glória,
           Deo Patri, et Fílio,
           Sancto simul Paráclito,
@@ -5696,18 +6327,22 @@ texts:
           Sent down from God's eternal clime,
           To save mankind by mortal birth
           Into a world of change and time;
+
           Enlighten our hearts; vain hopes destroy;
           And in thy love's consuming fire
           Fill all the soul with heavenly joy,
           And melt the dross of low desire.
+
           So when the Judge of quick and dead
           Shall bid his awful summons come,
           To whelm the guilty soul with dread,
           And call the blessed to their home.
+
           Saved from the whirling, black abyss,
           Forevermore to us be given
           To share the feast of saintly bliss,
           And see the face of God in heaven.
+
           To God the Father and the Son
           Our songs with one accord we raise;
           And to the Holy Spirit, One
@@ -5720,18 +6355,22 @@ texts:
           E Patris ætérni sinu,
           Qui natus orbi súbvenis,
           Labénte cursu témporis:
+
           Illúmina nunc péctora,
           Tuóque amóre cóncrema;
           Ut cor cadúca déserens
           Cæli volúptas ímpleat.
+
           Ut, cum tribúnal Iúdicis
           Damnábit igni nóxios,
           Et vox amíca débitum
           Vocábit ad cælum pios;
+
           Non esca flammárum nigros
           Volvámur inter túrbines,
           Vultu Dei sed cómpotes
           Cæli fruámur gáudiis.
+
           * Patri, simúlque Fílio,
           Tibíque, Sancte Spíritus,
           Sicut fuit, sit iúgiter
@@ -5747,28 +6386,34 @@ texts:
           Fulget Crucis mystérium,
           Quo carne carnis Cónditor
           Suspénsus est patíbulo.
+
           Quo vulnerátus ínsuper
           Mucróne diro lánceæ,
           Ut nos laváret crímine,
           Manávit und[a] et sánguine.
+
           Impléta sunt quæ cóncinit
           David fidéli cármine,
           Dicens: In natiónibus
           Regnávit a ligno Deus.
+
           Arbor decór[a] et fúlgida,
           Ornáta Regis púrpura,
           Elécta digno stípite
           Tam sancta membra tángere.
+
           Beáta, cuius bráchiis
           Sæcli pepéndit prétium,
           Statéra facta córporis,
           Prædámque tulit tártari.
+
           (nisi rubrica cisterciensis)
       - type: heading
         text: Sequens stropha dicitur flexis genibus.
       - type: text
         text: |-
           (nisi rubrica cisterciensis)
+
           O Crux, ave, spes única,
           In hac triúmphi glória
           (sed tempore Passionis)
@@ -5777,6 +6422,7 @@ texts:
           In hoc Pascháli gáudio
           Auge piis iustítiam,
           Reísque dona véniam.
+
           Te summa, Deus, Trínitas,
           Colláudet omnis spíritus:
           Quos per Crucis mystérium
@@ -5792,18 +6438,22 @@ texts:
           Now shines the cross’s mystery;
           Upon it Life did death endure,
           And yet by death did life procure.
+
           Who, wounded with a direful spear,
           Did, purposely to wash us clear
           From stain of sin, pour out a flood
           Of precious water mixed with blood.
+
           That which the prophet-king of old
           Hath in mysterious verse foretold,
           Is now accomplished, whilst we see
           God ruling nations from a tree.
+
           O lovely and refulgent tree,
           Adorned with purpled majesty;
           Culled from a worthy stock, to bear
           Those limbs which sanctifièd were.
+
           Blest tree, whose happy branches bore
           The wealth that did the world restore;
           The beam that did that body weigh
@@ -5820,6 +6470,7 @@ texts:
           Thou joy of Eastertide, avail
           To give fresh merit to the saint,
           And pardon to the penitent.
+
           Blest Trinity, salvation’s spring,
           May every soul thy praises sing;
           To those thou grantest conquest by
@@ -5832,18 +6483,22 @@ texts:
           Fulget Crucis mystérium,
           Qua Vita mortem pértulit,
           Et morte vitam prótulit.
+
           Quæ, vulneráta lánceæ
           Mucróne diro, críminum
           Ut nos laváret sórdibus,
           Manávit unda et sánguine.
+
           Impléta sunt quæ cóncinit
           David fidéli cármine,
           Dicéndo natiónibus:
           Regnávit a ligno Deus.
+
           Arbor decóra et fúlgida,
           Ornáta Regis púrpura,
           Elécta digno stípite
           Tam sancta membra tángere.
+
           Beáta, cuius brácchiis
           Prétium pepéndit sǽculi,
           Statéra facta córporis,
@@ -5860,6 +6515,7 @@ texts:
           Paschále quæ fers gáudium
           Piis adáuge grátiam,
           Reísque dele crímina.
+
           Te, fons salútis, Trínitas,
           Colláudet omnis spíritus:
           Quibus Crucis victóriam
@@ -5875,18 +6531,22 @@ texts:
           Obscúra quæque íncrepat:
           Pellántur éminus sómnia;
           Ab æthre Christus prómicat.
+
           Mens iam resúrgat tórpida
           Quæ sorde exstat sáucia;
           Sidus refúlget iam novum,
           Ut tollat omne nóxium.
+
           E sursum Agnus míttitur
           Laxáre gratis débitum:
           Omnes pro indulgéntia
           Vocem demus cum lácrimis,
+
           Secúndo ut cum fúlserit,
           Mundúmque horror cínxerit,
           Non pro reátu púniat,
           Sed nos pius tunc prótegat.
+
           Laus, honor, virtus, glória,
           Deo Patri, et Fílio,
           Sancto simul Paráclito,
@@ -6035,7 +6695,7 @@ texts:
     content:
       en:
       - type: text
-        text: |-
+        text: |
           Mother of Christ, hear thou thy people's cry
           Star of the deep and Portal of the sky!
           Mother of Him who thee from nothing made.
@@ -6052,7 +6712,7 @@ texts:
         text: 'O God, who, by the fruitful virginity of blessed Mary, hast bestowed upon mankind the reward of eternal salvation: grant, we beseech thee, that we may experience her intercession, through whom we have been made worthy to receive the author of life, Our Lord Jesus Christ thy Son. Amen.'
       la:
       - type: text
-        text: |-
+        text: |
           Alma Redemptóris Mater, quæ pérvia cæli
           Porta manes, et stella maris, succúrre cadénti,
           Súrgere qui curat, pópulo: tu quæ genuísti,
@@ -6072,7 +6732,7 @@ texts:
     content:
       en:
       - type: text
-        text: |-
+        text: |
           Mother of Christ, hear thou thy people's cry
           Star of the deep and Portal of the sky!
           Mother of Him who thee from nothing made.
@@ -6089,7 +6749,7 @@ texts:
         text: 'Pour forth, we beseech thee, O Lord, thy grace into our hearts: that as we have known the incarnation of thy Son Jesus Christ by the message of an Angel, so too by his Cross and passion may we be brought to the glory of his resurrection. Through the same Christ our Lord. Amen.'
       la:
       - type: text
-        text: |-
+        text: |
           Alma Redemptóris Mater, quæ pérvia cæli porta manes,
           et stella maris, succúrre cadénti,
           Súrgere qui curat, pópulo: tu quæ genuísti,
@@ -6146,11 +6806,12 @@ texts:
     content:
       en:
       - type: text
-        text: |-
+        text: |
           Hail, O Queen of heaven, enthroned!
           Hail, by Angels Mistress owned!
           Root of Jesse, Gate of morn,
           Whence the world's true Light was born:
+
           Glorious Virgin, joy to thee,
           Loveliest whom in heaven they see:
           Fairest thou, where all are fair,
@@ -6165,11 +6826,12 @@ texts:
         text: Grant, O merciful God, to our weak natures thy protection, that we who commemorate the holy Mother of God may, by the help of her intercession, arise from our iniquities. Through the same Christ our Lord. Amen.
       la:
       - type: text
-        text: |-
+        text: |
           Ave, Regína cælórum,
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -6200,13 +6862,14 @@ texts:
           Et Iesum, benedíctum fructum ventris tui,
           nobis post hoc exsílium osténde.
           O clemens, o pia, o dulcis Virgo María.
+
           (Allelúia.)
       - type: antiphon
         text: Ave María, grátia plena, * Dóminus tecum.
       - type: antiphon
         text: Ave María, grátia plena, * Dóminus tecum.
       - type: text
-        text: |-
+        text: |
           Salve, Regína, mater misericórdiæ;
           vita, dulcédo et spes nóstra, salve.
           Ad te clamámus éxsules fílii Hevæ.
@@ -6230,7 +6893,7 @@ texts:
     content:
       en:
       - type: text
-        text: |-
+        text: |
           O Queen of heaven rejoice! alleluia:
           For He whom thou didst merit to bear, alleluia,
           Hath arisen as he said, alleluia.
@@ -6245,7 +6908,7 @@ texts:
         text: O God, who gave joy to the world through the resurrection of thy Son, our Lord Jesus Christ; grant, we beseech thee, that through his Mother, the Virgin Mary, we may obtain the joys of everlasting life. Through the same Christ our Lord. Amen.
       la:
       - type: text
-        text: |-
+        text: |
           Regína cæli, lætáre, allelúia;
           Quia quem meruísti portáre, allelúia,
           Resurréxit, sicut dixit, allelúia:
@@ -6263,7 +6926,7 @@ texts:
     content:
       en:
       - type: text
-        text: |-
+        text: |
           Hail holy Queen, Mother of Mercy,
           our life, our sweetness, and our hope.
           To thee do we cry, poor banished children of Eve.
@@ -6284,7 +6947,7 @@ texts:
         text: O almighty, everlasting God, who by the cooperation of the Holy Spirit, didst prepare the body and soul of Mary, glorious Virgin and Mother, to become a worthy dwelling for Thy Son; grant that we who rejoice in her commemoration may, by her gracious intercession, be delivered from present evils and from everlasting death. Through the same Christ our Lord. Amen.
       la:
       - type: text
-        text: |-
+        text: |
           Salve, Regína, mater misericórdiæ;
           vita, dulcédo et spes nóstra, salve.
           Ad te clamámus éxsules fílii Hevæ.
@@ -6325,13 +6988,14 @@ texts:
       - type: response
         text: Ut digni efficiámur promissiónibus Christi.~
       - type: text
-        text: |-
+        text: |
           Orémus.~
           Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cuius commemoratióne lætámur, eius pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúndem Christum Dóminum nostrum. Amen.~
           Ave, Regína cælórum,
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -7204,7 +7868,7 @@ texts:
         text: Mother of Christ
       la:
       - type: text
-        text: |-
+        text: |
           Alma Redemptóris Mater, quæ pérvia cæli porta manes,
           et stella maris, succúrre cadénti,
           Súrgere qui curat, pópulo: tu quæ genuísti,
@@ -7216,7 +7880,7 @@ texts:
       - type: response
         text: Et concépit de Spíritu Sancto.
       - type: text
-        text: |-
+        text: |
           Orémus.
           Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut, qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus; per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum. Amen.
           (sed tempore Nativitatis aut tempore Epiphaniæ aut tempore post Epiphaniam aut tempore Septuagesimæ dicitur)
@@ -7310,11 +7974,12 @@ texts:
         text: Hail, O Queen of heaven
       la:
       - type: text
-        text: |-
+        text: |
           Ave, Regína cælórum,
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -8518,7 +9183,7 @@ texts:
         text: O Queen of heaven rejoice
       la:
       - type: text
-        text: |-
+        text: |
           Regína cæli, lætáre, allelúia;
           Quia quem meruísti portáre, allelúia,
           Resurréxit, sicut dixit, allelúia:
@@ -8570,10 +9235,14 @@ texts:
         text: To the Most Holy and undivided Trinity, to the Manhood of our Lord Jesus Christ Crucified, to the fruitful Virginity of the most blessed and most glorious Mary, always a Virgin, and to the holiness of all the Saints be ascribed everlasting praise, honour, and glory, by all creatures, and to us be granted the forgiveness of all our sins, world without end.
       - type: response
         text: Amen.
+      - type: text
+        text: ''
       - type: versicle
         text: Blessed be the womb of the Virgin Mary which bore the Son of the Eternal Father.
       - type: response
         text: And blessed be the paps which gave suck to Christ our Lord.
+      - type: text
+        text: ''
       - type: prayer
         text: Our Father
       - type: prayer
@@ -8583,12 +9252,16 @@ texts:
         text: Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Iesu Christi humanitáti, beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ fœcúndæ integritáti, et ómnium Sanctórum universitáti sit sempitérna laus, honor, virtus et glória ab omni creatúra, nobísque remíssio ómnium peccatórum, per infiníta sǽcula sæculórum.
       - type: response
         text: Amen.
+      - type: text
+        text: ''
       - type: versicle
         text: Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium.
       - type: response
         text: Et beáta úbera, quæ lactavérunt Christum Dóminum.
       - type: text
-        text: (Et dicitur secreto) Pater noster. (et) Ave Maria.
+        text: |2-
+
+          (Et dicitur secreto) Pater noster. (et) Ave Maria.
   rubric.sacrosanct-a-911bb70440:
     role: rubric
     content:
@@ -8612,7 +9285,7 @@ texts:
         text: Hail holy Queen
       la:
       - type: text
-        text: |-
+        text: |
           Salve, Regína, mater misericórdiæ;
           vita, dulcédo et spes nóstra, salve.
           Ad te clamámus éxsules fílii Hevæ.
@@ -8647,13 +9320,14 @@ texts:
       - type: response
         text: Ut digni efficiámur promissiónibus Christi.~
       - type: text
-        text: |-
+        text: |
           Orémus.~
           Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cuius commemoratióne lætámur, eius pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúndem Christum Dóminum nostrum. Amen.~
           Ave, Regína cælórum,
           Ave, Dómina Angelórum:
           Salve radix, salve porta,
           Ex qua mundo lux est orta:
+
           Gaude, Virgo gloriósa,
           Super omnes speciósa,
           Vale, o valde decóra,
@@ -8699,13 +9373,14 @@ texts:
           Et Iesum, benedíctum fructum ventris tui,
           nobis post hoc exsílium osténde.
           O clemens, o pia, o dulcis Virgo María.
+
           (Allelúia.)
       - type: antiphon
         text: Ave María, grátia plena, * Dóminus tecum.
       - type: antiphon
         text: Ave María, grátia plena, * Dóminus tecum.
       - type: text
-        text: |-
+        text: |
           Salve, Regína, mater misericórdiæ;
           vita, dulcédo et spes nóstra, salve.
           Ad te clamámus éxsules fílii Hevæ.
@@ -8769,6 +9444,8 @@ texts:
       la:
       - type: antiphon
         text: Spíritus sanctus in te descéndet, María, ne tímeas, habébis in útero Fílium Dei.
+      - type: text
+        text: ''
       - type: versicle
         text: Ecce ancílla Dómini.
       - type: response
@@ -10005,6 +10682,8 @@ texts:
         text: Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
       - type: response
         text: Partícipem me fac, Deus, ómnium timéntium te,
+      - type: text
+        text: ''
       - type: versicle
         text: 'Dicet Dómino: Suscéptor meus es tu.'
       - type: response

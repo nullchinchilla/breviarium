@@ -1036,11 +1036,24 @@ fn resolve_matins_invitatory(
     context: &OfficeContext,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
+    // Proper invitatory antiphon, else the ferial one chosen by weekday. The
+    // ordinary `[Invit]` lists one antiphon per weekday, each prefixed
+    // `<DayName> = `, plus a Sunday variant (index 7) used in Jan–Mar (DO
+    // `specmatins::invitatorium`).
     let antiphon = context
         .principal()
         .antiphons(catalog, language, "matins-invitatory")
-        .or_else(|| Stack::of(["ordinary/matins"]).antiphons(catalog, language, "invitatory"))
         .and_then(|values| values.into_iter().next())
+        .or_else(|| {
+            let lines =
+                Stack::of(["ordinary/matins"]).antiphons(catalog, language, "invitatory")?;
+            let mut index = divinum_weekday_number(context.facts.weekday) as usize;
+            if index == 0 && context.facts.date.month() < 4 {
+                index = 7;
+            }
+            lines.get(index).or_else(|| lines.first()).cloned()
+        })
+        .map(|antiphon| strip_day_prefix(&antiphon))
         .unwrap_or_default();
     let mut nodes = Vec::new();
     if !antiphon.is_empty() {
@@ -2756,6 +2769,15 @@ fn close_antiphon(antiphon: &str) -> String {
         .replace('*', "")
         .trim()
         .to_string()
+}
+
+/// Strips a `<DayName> = ` selector prefix from a ferial antiphon line, matching
+/// DO's `s/^.*?\=\s*//`. Lines without `=` are returned unchanged.
+fn strip_day_prefix(line: &str) -> String {
+    match line.split_once('=') {
+        Some((_, rest)) => rest.trim_start().to_string(),
+        None => line.to_string(),
+    }
 }
 
 fn normalize_rule_id(input: &str) -> String {

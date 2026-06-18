@@ -38,6 +38,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -268,8 +269,58 @@ def node_prose(node):
     return None
 
 
+# A leading `chapter:verse` marker (`1:46`, `127:3a`), matching the resolver's
+# `has_verse_prefix` in resolve.rs.
+_VERSE_PREFIX = re.compile(r"^(\d+:\d+[a-z]?)(?=\s|$)")
+
+
+def restore_verse_prefixes(en2_nodes, la_nodes) -> bool:
+    """Re-attach `chapter:verse` markers the translation dropped from verses.
+
+    The resolver tells a psalm/canticle verse from its title/citation preamble
+    by the leading `N:M` number (``has_verse_prefix`` / ``psalm_nodes`` in
+    resolve.rs). Some translated lines lost that marker, so whole canticles
+    (the Magnificat, Benedictus, Isaian canticles, …) were mis-rendered as
+    citations with no verse text. en2 mirrors la node-for-node and line-for-line,
+    so copy each missing prefix verbatim from the parallel Latin line. Mutates
+    ``en2_nodes`` in place; returns whether anything changed."""
+    touched = False
+    for i, node in enumerate(en2_nodes):
+        if i >= len(la_nodes):
+            break
+        la_field = node_prose(la_nodes[i])
+        en2_field = node_prose(node)
+        if not la_field or not en2_field:
+            continue
+        la_lines = la_field[1].split("\n")
+        en2_lines = en2_field[1].split("\n")
+        if len(la_lines) != len(en2_lines):
+            continue  # translation reflowed this block; can't align lines safely
+        changed = False
+        for j, (la_line, en2_line) in enumerate(zip(la_lines, en2_lines)):
+            match = _VERSE_PREFIX.match(la_line.strip())
+            if not match:
+                continue
+            prefix = match.group(1)
+            existing = _VERSE_PREFIX.match(en2_line.strip())
+            if existing and existing.group(1) == prefix:
+                continue
+            stripped = en2_line.lstrip()
+            lead = en2_line[: len(en2_line) - len(stripped)]
+            en2_lines[j] = f"{lead}{prefix} {stripped}"
+            changed = True
+        if changed:
+            node[en2_field[0]] = "\n".join(en2_lines)
+            touched = True
+    return touched
+
+
 def cmd_fixups(args) -> int:
-    hymns = salves = 0
+    only = getattr(args, "only", "all")
+    do_hymns = only in ("all", "hymns")
+    do_salve = only in ("all", "salve")
+    do_verses = only in ("all", "verses")
+    hymns = salves = verses = 0
     for path in lexicon_files():
         text = path.read_text(encoding="utf-8")
         lines = text.splitlines(keepends=True)
@@ -297,32 +348,40 @@ def cmd_fixups(args) -> int:
             en2_nodes = cont["en2"]
             new_nodes = None
 
-            if entry.get("role") == "hymn" and "en" in cont:
+            if do_hymns and entry.get("role") == "hymn" and "en" in cont:
                 # change 2: hymns use the metrical en translation verbatim.
                 new_nodes = copy.deepcopy(cont["en"])
                 if new_nodes != en2_nodes:
                     hymns += 1
-            else:
-                # change 3: Salve Regina → traditional translation. en2 nodes
-                # mirror la 1:1, so match on the parallel la node's prose.
+            elif entry.get("role") != "hymn" or "en" not in cont:
+                # en2 nodes mirror la 1:1, so corrections key off the parallel
+                # la node's prose.
                 la_nodes = cont.get("la") or []
                 candidate = copy.deepcopy(en2_nodes)
                 touched = False
-                for i, node in enumerate(candidate):
-                    if i >= len(la_nodes):
-                        break
-                    la_field = node_prose(la_nodes[i])
-                    en2_field = node_prose(node)
-                    if (
-                        la_field
-                        and en2_field
-                        and la_field[1].startswith(_SALVE_PREFIX)
-                    ):
-                        node[en2_field[0]] = salve_regina_en2(la_field[1])
-                        touched = True
+                # change 3: Salve Regina → traditional translation.
+                if do_salve:
+                    for i, node in enumerate(candidate):
+                        if i >= len(la_nodes):
+                            break
+                        la_field = node_prose(la_nodes[i])
+                        en2_field = node_prose(node)
+                        if (
+                            la_field
+                            and en2_field
+                            and la_field[1].startswith(_SALVE_PREFIX)
+                        ):
+                            node[en2_field[0]] = salve_regina_en2(la_field[1])
+                            touched = True
+                    if touched:
+                        salves += 1
+                # change 4: restore dropped chapter:verse markers so psalm and
+                # canticle verses are not mis-rendered as citations.
+                if do_verses and restore_verse_prefixes(candidate, la_nodes):
+                    verses += 1
+                    touched = True
                 if touched:
                     new_nodes = candidate
-                    salves += 1
 
             if new_nodes is None or new_nodes == en2_nodes:
                 continue
@@ -342,6 +401,7 @@ def cmd_fixups(args) -> int:
 
     print(f"hymn en2 blocks set to en : {hymns}")
     print(f"Salve Regina en2 rewritten: {salves}")
+    print(f"verse-prefixes restored in: {verses}")
     if args.dry_run:
         print("(dry run — no files written)")
     return 0
@@ -363,9 +423,16 @@ def main(argv=None) -> int:
 
     p_fx = sub.add_parser(
         "fixups",
-        help="post-apply en2 corrections: hymns use en, Salve Regina traditional",
+        help="post-apply en2 corrections: hymns use en, Salve Regina traditional, "
+        "restore dropped verse numbers",
     )
     p_fx.add_argument("--dry-run", action="store_true", help="don't write files")
+    p_fx.add_argument(
+        "--only",
+        choices=("all", "hymns", "salve", "verses"),
+        default="all",
+        help="apply only one correction (default: all)",
+    )
     p_fx.set_defaults(func=cmd_fixups)
 
     args = parser.parse_args(argv)

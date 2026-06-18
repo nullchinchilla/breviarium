@@ -2,38 +2,82 @@ use dioxus::prelude::*;
 use serde::{Deserialize, Serialize};
 
 #[component]
-pub fn Officium(date: String, hour: String) -> Element {
-    let route_date = date.clone();
-    let route_hour = hour.clone();
-    let office = use_loader(move || load_office(route_date.clone(), route_hour.clone()))?;
-    let office = office();
+pub fn Officium(date: ReadSignal<String>, hour: ReadSignal<String>) -> Element {
+    // The backend resolves one language per request, so we load each language
+    // independently and zip the parallel block lists here for side-by-side
+    // display. Block structure is language-independent, so the blocks line up by
+    // position across languages.
+    let latin_date = date.clone();
+    let latin_hour = hour.clone();
+    let latin = use_loader(move || load_office(latin_date(), latin_hour(), "la".to_string()))?;
+    let english_date = date.clone();
+    let english_hour = hour.clone();
+    let english =
+        use_loader(move || load_office(english_date(), english_hour(), "en2".to_string()))?;
+    let latin = latin();
+    let english = english();
+
+    // Metadata (titles, navigation, diagnostics) is taken from the Latin
+    // document; only the per-block line lists are zipped together.
+    let office = &latin;
+    let blocks = latin
+        .blocks
+        .iter()
+        .enumerate()
+        .map(|(index, latin_block)| {
+            let empty: &[LineView] = &[];
+            let english_lines = english
+                .blocks
+                .get(index)
+                .map(|block| block.lines.as_slice())
+                .unwrap_or(empty);
+            let row_count = latin_block.lines.len().max(english_lines.len());
+            let rows = (0..row_count)
+                .map(|row| OfficeRowView {
+                    cells: vec![
+                        OfficeCellView {
+                            lang: "la".to_string(),
+                            line: latin_block.lines.get(row).cloned(),
+                        },
+                        OfficeCellView {
+                            lang: "en".to_string(),
+                            line: english_lines.get(row).cloned(),
+                        },
+                    ],
+                })
+                .collect();
+            ZippedBlock {
+                title: latin_block.title.clone(),
+                class: latin_block.class.clone(),
+                rows,
+            }
+        })
+        .collect::<Vec<_>>();
 
     rsx! {
         document::Title { "{office.page_title}" }
 
-        main { class: "container",
+        main { class: "container officium",
             header {
                 nav {
                     ul {
-                        li { strong { "Breviarium" } }
+                        li {  "Breviarium" }
                     }
                     ul {
-                        li { a { href: "{office.previous_date_path}", "Previous day" } }
-                        li { a { href: "{office.next_date_path}", "Next day" } }
+                        li { Link { to: "{office.previous_date_path}", "Previous day" } }
+                        li { Link { to: "{office.next_date_path}", "Next day" } }
                     }
                 }
-                h1 { "{office.title}" }
+                h1 { class: "date", "{office.title}" }
                 p {
                     "{office.date_label} · {office.hour_label}"
-                    br {}
-                    small { "{office.profile_label}" }
                 }
                 nav {
                     ul {
                         for link in &office.hour_links {
                             li {
-                                a {
-                                    href: "{link.href}",
+                                Link {
+                                    to: "{link.href}",
                                     aria_current: if link.current { "page" } else { "false" },
                                     "{link.label}"
                                 }
@@ -44,28 +88,27 @@ pub fn Officium(date: String, hour: String) -> Element {
             }
 
             if !office.diagnostics.is_empty() {
-                article {
-                    header { strong { "Diagnostics" } }
-                    ul {
-                        for diagnostic in &office.diagnostics {
-                            li { "{diagnostic}" }
-                        }
+                strong { "Diagnostics" } br{}
+                ul {
+                    for diagnostic in &office.diagnostics {
+                        li { "{diagnostic}" }
                     }
                 }
             }
 
-            for block in office.blocks {
-                section {
-                    h2 { "{block.title}" }
-                    div { class: "grid",
-                        for column in block.columns {
-                            article {
-                                header { h3 { "{column.title}" } }
-                                if let Some(reason) = &column.missing {
-                                    p { mark { "Missing: {reason}" } }
-                                }
-                                for line in column.lines {
-                                    OfficeLine { line }
+            for block in blocks {
+                section { class: "block {block.class}",
+                    h2 { class: "block-title", "{block.title}" }
+                    // Each row is one logical line (an antiphon, a whole psalm, a
+                    // versicle…) with the languages interleaved side by side, so a
+                    // single psalm — not a whole section — is the unit of a row.
+                    for row in block.rows {
+                        div { class: "row columns",
+                            for cell in row.cells {
+                                div { class: "lang lang-{cell.lang}",
+                                    if let Some(line) = cell.line {
+                                        OfficeLine { line }
+                                    }
                                 }
                             }
                         }
@@ -79,305 +122,218 @@ pub fn Officium(date: String, hour: String) -> Element {
 #[component]
 fn OfficeLine(line: LineView) -> Element {
     match line.kind {
-        LineKind::Text => rsx! { p { "{line.text}" } },
-        LineKind::Marker => rsx! { p { small { em { "{line.text}" } } } },
-        LineKind::Rubric => rsx! { p { small { "{line.text}" } } },
-        LineKind::Unresolved => rsx! { p { mark { "{line.text}" } } },
+        // Each source line is parsed into inline segments: a leading versicle /
+        // response / verse-number marker, and `+`/`++` crosses, each wrapped in
+        // its own classed span so the stylesheet can present them.
+        LineKind::Text => rsx! {
+            p { class: "{line.class}",
+                for (index , text_line) in line.text.lines().enumerate() {
+                    if index > 0 {
+                        br {}
+                    }
+                    for segment in parse_line(text_line) {
+                        {render_segment(segment)}
+                    }
+                }
+            }
+        },
+        LineKind::Marker => rsx! { p { class: "{line.class}",  "{line.text}" } },
+        LineKind::Rubric => rsx! { p { class: "{line.class}",  "{line.text}" } },
+        LineKind::Unresolved => rsx! { p { class: "{line.class}", mark { "{line.text}" } } },
+    }
+}
+
+/// One inline segment of a rendered text line.
+enum Segment {
+    Text(String),
+    /// Versicle marker `V.` → ℣.
+    Versicle,
+    /// Response marker `R.` / `R.br.` → ℟.
+    Response,
+    /// Antiphon marker `Ant.`.
+    Antiphon,
+    /// Verse number at the start of a psalm line, e.g. `39:2`.
+    Verse(String),
+    /// A single cross `+`.
+    Cross,
+    /// A double cross `++`.
+    CrossDouble,
+}
+
+/// Splits a text line into [`Segment`]s: an optional leading versicle/response/
+/// verse marker, then the body tokenized into text and cross markers.
+fn parse_line(line: &str) -> Vec<Segment> {
+    let mut out = Vec::new();
+    let body = if let Some(rest) = line.strip_prefix("V. ") {
+        out.push(Segment::Versicle);
+        out.push(Segment::Text(" ".to_string()));
+        rest
+    } else if let Some(rest) = line.strip_prefix("R.br. ") {
+        out.push(Segment::Response);
+        out.push(Segment::Text(" ".to_string()));
+        rest
+    } else if let Some(rest) = line.strip_prefix("R. ") {
+        out.push(Segment::Response);
+        out.push(Segment::Text(" ".to_string()));
+        rest
+    } else if let Some(rest) = line.strip_prefix("Ant. ") {
+        out.push(Segment::Antiphon);
+        out.push(Segment::Text(" ".to_string()));
+        rest
+    } else if let Some((marker, rest)) = split_verse_marker(line) {
+        out.push(Segment::Verse(marker.to_string()));
+        out.push(Segment::Text(" ".to_string()));
+        rest
+    } else {
+        line
+    };
+    tokenize_crosses(body, &mut out);
+    out
+}
+
+/// A leading psalm verse number (`<digits>:<digits>[letter]`) followed by a
+/// space or end of line, e.g. `39:2`, `1:1a`. Returns `(marker, rest)`.
+fn split_verse_marker(line: &str) -> Option<(&str, &str)> {
+    let bytes = line.as_bytes();
+    let mut i = 0;
+    while i < bytes.len() && bytes[i].is_ascii_digit() {
+        i += 1;
+    }
+    if i == 0 || i >= bytes.len() || bytes[i] != b':' {
+        return None;
+    }
+    i += 1;
+    let after_colon = i;
+    while i < bytes.len() && bytes[i].is_ascii_digit() {
+        i += 1;
+    }
+    if i == after_colon {
+        return None;
+    }
+    if i < bytes.len() && bytes[i].is_ascii_alphabetic() {
+        i += 1;
+    }
+    match bytes.get(i) {
+        None => Some((line, "")),
+        Some(b' ') => Some((&line[..i], line[i..].trim_start())),
+        Some(_) => None,
+    }
+}
+
+/// Tokenizes `text` into text runs and `+`/`++` cross segments.
+fn tokenize_crosses(text: &str, out: &mut Vec<Segment>) {
+    let mut buffer = String::new();
+    let mut chars = text.chars().peekable();
+    while let Some(ch) = chars.next() {
+        if ch == '+' {
+            if !buffer.is_empty() {
+                out.push(Segment::Text(std::mem::take(&mut buffer)));
+            }
+            if chars.peek() == Some(&'+') {
+                chars.next();
+                out.push(Segment::CrossDouble);
+            } else {
+                out.push(Segment::Cross);
+            }
+        } else {
+            buffer.push(ch);
+        }
+    }
+    if !buffer.is_empty() {
+        out.push(Segment::Text(buffer));
+    }
+}
+
+fn render_segment(segment: Segment) -> Element {
+    match segment {
+        Segment::Text(text) => rsx! { "{text}" },
+        Segment::Versicle => rsx! { span { class: "versicle-mark", "℣" } },
+        Segment::Response => rsx! { span { class: "response-mark", "℟" } },
+        Segment::Antiphon => rsx! { span { class: "antiphon-mark", "Ant." } },
+        Segment::Verse(marker) => rsx! { span { class: "verse-marker", "{marker}" } },
+        Segment::Cross => rsx! { span { class: "cross", "✠" } },
+        Segment::CrossDouble => rsx! { span { class: "cross cross-double", "+" } },
     }
 }
 
 #[server]
-async fn load_office(date: String, hour: String) -> std::result::Result<OfficeView, ServerFnError> {
-    #[cfg(feature = "server")]
-    {
-        use breviarium_data::{Breviarium, OfficeColumnContent, OfficeRequest};
-        use chrono::{Duration, NaiveDate};
-
-        let parsed_date = NaiveDate::parse_from_str(&date, "%Y%m%d")
-            .map_err(|error| ServerFnError::new(format!("invalid date `{date}`: {error}")))?;
-        let parsed_hour = parse_data_hour(&hour)
-            .ok_or_else(|| ServerFnError::new(format!("unknown Office hour `{hour}`")))?;
-
-        let mut request = OfficeRequest::new(parsed_date, parsed_hour);
-        request.languages = vec!["la".to_string(), "en".to_string()];
-
-        let engine = Breviarium::embedded().map_err(|error| {
-            ServerFnError::new(format!("failed to load embedded data: {error}"))
-        })?;
-        let office = engine
-            .resolve_office(request)
-            .map_err(|error| ServerFnError::new(format!("failed to resolve Office: {error}")))?;
-
-        let date_path = parsed_date.format("%Y%m%d").to_string();
-        let hour_path = canonical_hour_path(parsed_hour).to_string();
-        let title = office
-            .principal
-            .title
-            .clone()
-            .unwrap_or_else(|| office.principal.id.clone());
-        let page_title = format!("{title} - {}", display_hour(parsed_hour));
-        let previous_date = parsed_date - Duration::days(1);
-        let next_date = parsed_date + Duration::days(1);
-        let diagnostics = office
-            .diagnostics
-            .iter()
-            .map(|diagnostic| format!("{}: {}", diagnostic.code, diagnostic.message))
-            .collect::<Vec<_>>();
-        let blocks = office
-            .blocks
-            .iter()
-            .map(|block| {
-                let fallback_title = format!("{:?}", block.role);
-                let columns = block
-                    .columns
-                    .iter()
-                    .map(|column| {
-                        let title = column.title.clone().unwrap_or_else(|| {
-                            format!("{} - {fallback_title}", language_label(&column.language))
-                        });
-                        match &column.content {
-                            OfficeColumnContent::Resolved { nodes } => OfficeColumnView {
-                                title,
-                                missing: None,
-                                lines: document_lines(&column.language, nodes),
-                            },
-                            OfficeColumnContent::Missing { reason } => OfficeColumnView {
-                                title,
-                                missing: Some(reason.clone()),
-                                lines: Vec::new(),
-                            },
-                            _ => OfficeColumnView {
-                                title,
-                                missing: Some("unknown content state".to_string()),
-                                lines: Vec::new(),
-                            },
-                        }
-                    })
-                    .collect();
-                OfficeBlockView {
-                    title: block
-                        .columns
-                        .iter()
-                        .find_map(|column| column.title.clone())
-                        .unwrap_or(fallback_title),
-                    columns,
-                }
-            })
-            .collect();
-
-        Ok(OfficeView {
-            page_title,
-            title,
-            date_label: parsed_date.format("%B %-d, %Y").to_string(),
-            hour_label: display_hour(parsed_hour).to_string(),
-            profile_label: office.profile,
-            previous_date_path: format!(
-                "/officium/{}/{}",
-                previous_date.format("%Y%m%d"),
-                hour_path
-            ),
-            next_date_path: format!("/officium/{}/{}", next_date.format("%Y%m%d"), hour_path),
-            hour_links: hour_links(&date_path, &hour_path),
-            blocks,
-            diagnostics,
-        })
-    }
-
-    #[cfg(not(feature = "server"))]
-    {
-        let _ = (date, hour);
-        unreachable!("server functions are executed by the server runtime")
-    }
+async fn load_office(
+    date: String,
+    hour: String,
+    language: String,
+) -> std::result::Result<OfficeView, ServerFnError> {
+    crate::server::resolve_office_view(date, hour, language).map_err(ServerFnError::new)
 }
 
-#[cfg(feature = "server")]
-fn parse_data_hour(value: &str) -> Option<breviarium_data::Hour> {
-    use breviarium_data::Hour;
-
-    match value.to_ascii_lowercase().as_str() {
-        "matins" | "matutinum" => Some(Hour::Matins),
-        "lauds" | "laudes" => Some(Hour::Lauds),
-        "prime" | "prima" => Some(Hour::Prime),
-        "terce" | "tertia" => Some(Hour::Terce),
-        "sext" | "sexta" => Some(Hour::Sext),
-        "none" | "nona" => Some(Hour::None),
-        "vespers" | "vespera" | "vesperae" => Some(Hour::Vespers),
-        "compline" | "completorium" => Some(Hour::Compline),
-        _ => None,
-    }
-}
-
-#[cfg(feature = "server")]
-fn canonical_hour_path(hour: breviarium_data::Hour) -> &'static str {
-    use breviarium_data::Hour;
-
-    match hour {
-        Hour::Matins => "matutinum",
-        Hour::Lauds => "laudes",
-        Hour::Prime => "prima",
-        Hour::Terce => "tertia",
-        Hour::Sext => "sexta",
-        Hour::None => "nona",
-        Hour::Vespers => "vesperae",
-        Hour::Compline => "completorium",
-        _ => "office",
-    }
-}
-
-#[cfg(feature = "server")]
-fn display_hour(hour: breviarium_data::Hour) -> &'static str {
-    use breviarium_data::Hour;
-
-    match hour {
-        Hour::Matins => "Matins",
-        Hour::Lauds => "Lauds",
-        Hour::Prime => "Prime",
-        Hour::Terce => "Terce",
-        Hour::Sext => "Sext",
-        Hour::None => "None",
-        Hour::Vespers => "Vespers",
-        Hour::Compline => "Compline",
-        _ => "Office",
-    }
-}
-
-#[cfg(feature = "server")]
-fn language_label(language: &str) -> &'static str {
-    match language {
-        "la" => "Latin",
-        "en" => "English",
-        _ => "Text",
-    }
-}
-
-#[cfg(feature = "server")]
-fn document_lines(language: &str, nodes: &[breviarium_data::DocumentNode]) -> Vec<LineView> {
-    use breviarium_data::DocumentNode;
-
-    let mut lines = Vec::new();
-    for node in nodes {
-        match node {
-            DocumentNode::Text { .. }
-            | DocumentNode::Versicle { .. }
-            | DocumentNode::Response { .. }
-            | DocumentNode::ShortResponse { .. }
-            | DocumentNode::Antiphon { .. }
-            | DocumentNode::Prayer { .. }
-            | DocumentNode::Blessing { .. }
-            | DocumentNode::Amen => push_lines(
-                &mut lines,
-                LineKind::Text,
-                &node.plain_text_for_language(language),
-            ),
-            DocumentNode::Heading { .. }
-            | DocumentNode::Marker { .. }
-            | DocumentNode::Citation { .. } => push_lines(
-                &mut lines,
-                LineKind::Marker,
-                &node.plain_text_for_language(language),
-            ),
-            DocumentNode::Rubric { .. } => push_lines(
-                &mut lines,
-                LineKind::Rubric,
-                &node.plain_text_for_language(language),
-            ),
-            DocumentNode::Unresolved {
-                kind,
-                value,
-                reason,
-            } => lines.push(LineView {
-                kind: LineKind::Unresolved,
-                text: format!("unresolved {kind}: {value}; {reason}"),
-            }),
-            _ => lines.push(LineView {
-                kind: LineKind::Unresolved,
-                text: "unknown output node".to_string(),
-            }),
-        }
-    }
-    lines
-}
-
-#[cfg(feature = "server")]
-fn push_lines(lines: &mut Vec<LineView>, kind: LineKind, text: &str) {
-    if text.is_empty() {
-        lines.push(LineView {
-            kind,
-            text: String::new(),
-        });
-        return;
-    }
-
-    lines.extend(text.lines().map(|line| LineView {
-        kind,
-        text: line.to_string(),
-    }));
-}
-
-#[cfg(feature = "server")]
-fn hour_links(date_path: &str, current_hour: &str) -> Vec<HourLinkView> {
-    [
-        ("matutinum", "Matins"),
-        ("laudes", "Lauds"),
-        ("prima", "Prime"),
-        ("tertia", "Terce"),
-        ("sexta", "Sext"),
-        ("nona", "None"),
-        ("vesperae", "Vespers"),
-        ("completorium", "Compline"),
-    ]
-    .into_iter()
-    .map(|(hour, label)| HourLinkView {
-        label: label.to_string(),
-        href: format!("/officium/{date_path}/{hour}"),
-        current: hour == current_hour,
-    })
-    .collect()
-}
-
-#[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-struct OfficeView {
-    page_title: String,
+/// A block with its languages zipped into side-by-side rows, ready to render.
+/// Built client-side in [`Officium`] from the per-language [`OfficeBlockView`]s.
+struct ZippedBlock {
     title: String,
-    date_label: String,
-    hour_label: String,
-    profile_label: String,
-    previous_date_path: String,
-    next_date_path: String,
-    hour_links: Vec<HourLinkView>,
-    blocks: Vec<OfficeBlockView>,
-    diagnostics: Vec<String>,
+    class: String,
+    rows: Vec<OfficeRowView>,
+}
+
+/// One language's resolved Office, plus the navigation/title metadata that is
+/// the same for every language. The [`Officium`] component loads one of these
+/// per language and zips their `blocks` together for display.
+#[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
+pub(crate) struct OfficeView {
+    pub(crate) page_title: String,
+    pub(crate) title: String,
+    pub(crate) date_label: String,
+    pub(crate) hour_label: String,
+    pub(crate) profile_label: String,
+    pub(crate) previous_date_path: String,
+    pub(crate) next_date_path: String,
+    pub(crate) hour_links: Vec<HourLinkView>,
+    pub(crate) blocks: Vec<OfficeBlockView>,
+    pub(crate) diagnostics: Vec<String>,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-struct HourLinkView {
-    label: String,
-    href: String,
-    current: bool,
+pub(crate) struct HourLinkView {
+    pub(crate) label: String,
+    pub(crate) href: String,
+    pub(crate) current: bool,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-struct OfficeBlockView {
-    title: String,
-    columns: Vec<OfficeColumnView>,
+pub(crate) struct OfficeBlockView {
+    pub(crate) title: String,
+    /// Section class derived from the block's semantic role.
+    pub(crate) class: String,
+    /// This language's logical lines for the block, in order. Block structure is
+    /// language-independent, so these line up by position with the other
+    /// languages' blocks when zipped into rows for display.
+    pub(crate) lines: Vec<LineView>,
+}
+
+/// A single display row, with one cell per language, built client-side by
+/// zipping the per-language [`OfficeBlockView::lines`].
+#[derive(Clone, Debug, PartialEq)]
+struct OfficeRowView {
+    cells: Vec<OfficeCellView>,
+}
+
+#[derive(Clone, Debug, PartialEq)]
+struct OfficeCellView {
+    lang: String,
+    /// The line for this language, or `None` if this language has fewer lines.
+    line: Option<LineView>,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-struct OfficeColumnView {
-    title: String,
-    missing: Option<String>,
-    lines: Vec<LineView>,
-}
-
-#[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-struct LineView {
-    kind: LineKind,
-    text: String,
+pub(crate) struct LineView {
+    pub(crate) kind: LineKind,
+    /// Semantic CSS class derived from the source node type (`versicle`,
+    /// `response`, `antiphon`, `hymn`-bearing `text`, …).
+    pub(crate) class: String,
+    pub(crate) text: String,
 }
 
 #[derive(Clone, Copy, Debug, Deserialize, Serialize, PartialEq)]
 #[serde(rename_all = "snake_case")]
-enum LineKind {
+pub(crate) enum LineKind {
     Text,
     Marker,
     Rubric,

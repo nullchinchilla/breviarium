@@ -87,6 +87,15 @@ pub(crate) struct RawLexEntry {
     pub content: BTreeMap<LanguageId, Vec<ContentNode>>,
 }
 
+/// Resolver-emitted localized phrases (versicle/response formulae, structural
+/// titles, inline rubric words) keyed by a stable id, one column per language.
+/// Keeps these strings out of code so any language overrides them via data.
+#[derive(Clone, Debug, Default, Deserialize)]
+pub(crate) struct PhrasesFile {
+    #[serde(default)]
+    pub phrases: BTreeMap<String, BTreeMap<LanguageId, String>>,
+}
+
 /// Rubrical profile (`roman-1960`).
 #[derive(Clone, Debug, Deserialize)]
 pub(crate) struct RawProfile {

@@ -4,9 +4,9 @@
 //! `breviarium-data` embeds YAML data at compile time and exposes a typed API
 //! for resolving Office hours. The YAML format is normalized into two layers:
 //! reusable multilingual corpus texts, and liturgical source sections that
-//! reference those corpus texts by ID. Divinum Officium source syntax is
-//! consumed by the importer; runtime code sees ordinary records such as
-//! antiphons, psalm references, rank metadata, and rule tokens.
+//! reference those corpus texts by ID. The corpus is fully expanded ahead of
+//! time; runtime code sees ordinary records such as antiphons, psalm
+//! references, rank metadata, and rule tokens.
 //!
 //! # Example
 //!

@@ -1,4 +1,4 @@
-use breviarium_data::{Breviarium, DocumentNode, Hour, OfficeColumnContent, OfficeRequest};
+use breviarium_data::{Breviarium, DocumentNode, Hour, OfficeBlockContent, OfficeRequest};
 use chrono::{Datelike, Duration, NaiveDate};
 use std::env;
 
@@ -47,24 +47,23 @@ fn run() -> Result<(), String> {
 
     while date.year() == year {
         for hour in HOURS {
-            let mut request = OfficeRequest::new(date, hour);
-            request.languages = languages.clone();
-            match engine.resolve_office(request) {
-                Ok(office) => {
-                    resolved += 1;
-                    for diagnostic in &office.diagnostics {
-                        diagnostics.push(format!(
-                            "{} {} {}: {}",
-                            date,
-                            hour.as_str(),
-                            diagnostic.code,
-                            diagnostic.message
-                        ));
-                    }
-                    for block in &office.blocks {
-                        for column in &block.columns {
-                            match &column.content {
-                                OfficeColumnContent::Resolved { nodes } => {
+            for language in &languages {
+                let request = OfficeRequest::new(date, hour).with_language(language.clone());
+                match engine.resolve_office(request) {
+                    Ok(office) => {
+                        resolved += 1;
+                        for diagnostic in &office.diagnostics {
+                            diagnostics.push(format!(
+                                "{} {} [{language}] {}: {}",
+                                date,
+                                hour.as_str(),
+                                diagnostic.code,
+                                diagnostic.message
+                            ));
+                        }
+                        for block in &office.blocks {
+                            match &block.content {
+                                OfficeBlockContent::Resolved { nodes } => {
                                     for node in nodes {
                                         if let DocumentNode::Unresolved {
                                             kind,
@@ -73,10 +72,9 @@ fn run() -> Result<(), String> {
                                         } = node
                                         {
                                             unresolved_nodes.push(format!(
-                                                "{} {} {} {} {}: {}",
+                                                "{} {} {language} {} {}: {}",
                                                 date,
                                                 hour.as_str(),
-                                                column.language,
                                                 kind,
                                                 value,
                                                 reason
@@ -84,13 +82,12 @@ fn run() -> Result<(), String> {
                                         }
                                     }
                                 }
-                                OfficeColumnContent::Missing { reason } => {
+                                OfficeBlockContent::Missing { reason } => {
                                     missing_columns.push(format!(
-                                        "{} {} {} {}: {}",
+                                        "{} {} {} {language}: {}",
                                         date,
                                         hour.as_str(),
                                         block.id,
-                                        column.language,
                                         reason
                                     ));
                                 }
@@ -98,8 +95,9 @@ fn run() -> Result<(), String> {
                             }
                         }
                     }
+                    Err(error) => hard_failures
+                        .push(format!("{date} {} [{language}]: {error}", hour.as_str())),
                 }
-                Err(error) => hard_failures.push(format!("{date} {}: {error}", hour.as_str())),
             }
         }
         date += Duration::days(1);

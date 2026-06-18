@@ -30,29 +30,31 @@ Open http://localhost:8080.
 
 ## Data Crate
 
-`breviarium-data` embeds a semantic YAML migration of the Divinum Officium
-Office, Mass, Martyrology, table, and chant corpus. The YAML is normalized into
-reusable multilingual corpus texts plus liturgical source sections that refer to
-those texts by ID. Its primary resolver API is `Breviarium::resolve_office`,
-which returns structured Office documents for a date, hour, profile, and
-language list. Requested languages are returned as side-by-side columns; the
-resolver reports a missing column when a requested translation is unavailable
-instead of silently falling back to Latin.
+`breviarium-data` embeds a semantic YAML corpus of the Office, Mass,
+Martyrology, table, and chant texts. The YAML is normalized into reusable
+multilingual corpus texts plus liturgical source sections that refer to those
+texts by ID. Its primary resolver API is `Breviarium::resolve_office`, which
+returns structured Office documents for a date, hour, profile, and language
+list. Requested languages are returned as side-by-side columns; the resolver
+reports a missing column when a requested translation is unavailable instead of
+silently falling back to Latin.
 
-The embedded YAML lives in `crates/breviarium-data/data`. The catalog loader
-recursively discovers every YAML file under that tree, so there is no manifest
-to maintain. Normal runtime lookup does not read external files.
+The embedded YAML in `crates/breviarium-data/data` is the source of truth. The
+catalog loader recursively discovers every YAML file under that tree, so there
+is no manifest to maintain. Normal runtime lookup does not read external files.
 
-Regenerate the migrated corpus from a local Divinum Officium checkout:
+### `en2` translation
 
-```sh
-cargo run -p breviarium-data --bin import-divinum -- /tmp/divinum-officium-master
-```
-
-Export Latin corpus strings for a new `en2` translation:
+The `en2` column is produced by `crates/breviarium-data/tools/en2.py`, which
+walks the Latin (`la`) column of the lexicon. It keys translations on the Latin
+source string, so `apply` is idempotent and re-runnable.
 
 ```sh
-cargo run -p breviarium-data --bin export-translation -- \
-  /tmp/to_translate.json \
-  /tmp/to_translate.sidecar.json
+# 1. Extract the unique Latin strings as a JSON array for the translator:
+python3 crates/breviarium-data/tools/en2.py extract
+#    → crates/breviarium-data/en2/latin.json
+
+# 2. Translate that array (preserving length and order), then inject the
+#    en2 column back into the lexicon:
+python3 crates/breviarium-data/tools/en2.py apply crates/breviarium-data/en2/english.json
 ```

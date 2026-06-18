@@ -21,7 +21,7 @@ pub fn office_date_facts(date: NaiveDate) -> Result<DateFacts, DataError> {
     }
     let temporal_week = temporal_week_key(date, false)?;
     let weekday = date.weekday();
-    let day = divinum_weekday_number(weekday);
+    let day = liturgical_weekday_number(weekday);
     let temporal_stem = if temporal_week.starts_with("Nat") {
         temporal_week.clone()
     } else {
@@ -52,7 +52,7 @@ pub(crate) fn gregorian_easter(year: i32) -> Option<NaiveDate> {
     NaiveDate::from_ymd_opt(year, month as u32, day as u32)
 }
 
-/// Divinum Officium temporal week stem for a date (`Adv1`, `Nat25`, `Epi3`,
+/// Temporal week stem for a date (`Adv1`, `Nat25`, `Epi3`,
 /// `Quadp1`, `Quad2`, `Pasc0`, `Pent07`, …). `mass` selects the Mass variant of
 /// the post-Pentecost/Epiphany resumption naming.
 pub(crate) fn temporal_week_key(date: NaiveDate, mass: bool) -> Result<String, DataError> {
@@ -71,7 +71,7 @@ pub(crate) fn temporal_week_key(date: NaiveDate, mass: bool) -> Result<String, D
         }
         return Ok(format!("Nat{day}"));
     }
-    let ordtime = 6 + 7 - divinum_weekday_number(weekday_for(year, 1, 6)?);
+    let ordtime = 6 + 7 - liturgical_weekday_number(weekday_for(year, 1, 6)?);
     if month == 1 && t < ordtime {
         return Ok(format!("Nat{day:02}"));
     }
@@ -120,7 +120,7 @@ fn advent1_ordinal(year: i32) -> Result<i32, DataError> {
         NaiveDate::from_ymd_opt(year, 12, 25).ok_or_else(|| DataError::UnsupportedScope {
             message: format!("could not construct Christmas for {year}"),
         })?;
-    let christmas_dow = match divinum_weekday_number(christmas.weekday()) {
+    let christmas_dow = match liturgical_weekday_number(christmas.weekday()) {
         0 => 7,
         day => day,
     };
@@ -144,7 +144,7 @@ fn weekday_for(year: i32, month: u32, day: u32) -> Result<Weekday, DataError> {
 }
 
 /// Fixed-calendar `MM-DD` key, folding the Gregorian leap day so Feb 24–29 map
-/// to the Divinum Officium bissextile convention.
+/// to the bissextile (leap-day) convention.
 pub(crate) fn sanctoral_key(date: NaiveDate) -> String {
     let month = date.month();
     let mut day = date.day();
@@ -162,8 +162,8 @@ fn is_leap_year(year: i32) -> bool {
     (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0))
 }
 
-/// Sunday = 0, Monday = 1, …, Saturday = 6 (Divinum Officium convention).
-pub(crate) fn divinum_weekday_number(weekday: Weekday) -> i32 {
+/// Sunday = 0, Monday = 1, …, Saturday = 6 (liturgical weekday convention).
+pub(crate) fn liturgical_weekday_number(weekday: Weekday) -> i32 {
     weekday.num_days_from_sunday() as i32
 }
 
@@ -183,8 +183,8 @@ mod tests {
     }
 
     #[test]
-    fn facts_match_golden_headers() {
-        // Cross-checked against the frozen golden dump headers.
+    fn facts_match_known_days() {
+        // Cross-checked against reference tables for these dates.
         let jan1 = office_date_facts(date(2026, 1, 1)).unwrap();
         assert_eq!(jan1.temporal_week, "Nat01");
         assert_eq!(jan1.temporal_stem, "Nat01");

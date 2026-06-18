@@ -1,20 +1,18 @@
-//! Canonical slot vocabulary — the single contract between the importer (which
-//! emits these slot names into source bundles) and the resolver (which looks
-//! them up). The `Slot` table in `resolve.rs` references exactly these names.
+//! Canonical slot vocabulary — the contract the resolver looks slot names up
+//! against. The `Slot` table in `resolve.rs` references exactly these names.
 //!
 //! Two namespaces exist today:
 //!
 //! 1. **Canonical** lowercase-hyphen names (`lauds-hymn`, `vespers-versicle`,
 //!    `matins-psalmody`, …). The proper/common source bundles already use these.
-//! 2. **DO-flavored** section names (`Capitulum`, `Hymnus`, `Ant 2`, `Versum 3`,
+//! 2. **Legacy** section names (`Capitulum`, `Hymnus`, `Ant 2`, `Versum 3`,
 //!    …) still used by the ferial/seasonal *special* sources (psalter/ordinary)
 //!    and the fixed formulae.
 //!
-//! [`do_aliases`] is the **temporary bridge**: while the data still carries
-//! DO-flavored section names in the special sources, `catalog::lookup` falls
-//! back through these aliases. Once `import-divinum` emits canonical names
-//! everywhere (Execution plan step 5), this bridge is deleted and every lookup
-//! is direct.
+//! [`section_aliases`] is the bridge: while the data still carries legacy
+//! section names in the special sources, `catalog::lookup` falls back through
+//! these aliases. Once the special sources use canonical names everywhere, this
+//! bridge can be deleted and every lookup is direct.
 //!
 //! Genuinely occurrence-dependent choices (1st vs 2nd Vespers versicle order,
 //! commemoration antiphons, seasonal psalter scheme, seasonal hymn variants) are
@@ -102,8 +100,8 @@ pub const CANONICAL: &[&str] = &[
     "daytime-collect",
 ];
 
-/// Temporary DO-name → canonical bridge for the legacy special sources. Maps a
-/// canonical slot to the ordered DO-flavored section name(s) the resolver should
+/// Legacy section-name → canonical bridge for the special sources. Maps a
+/// canonical slot to the ordered legacy section name(s) the resolver should
 /// try in the psalter/ordinary books. Empty for slots that only ever appear
 /// under their canonical name. Ordering reflects the documented fallback chains
 /// in `ARCHITECTURE.md`.
@@ -111,9 +109,9 @@ pub const CANONICAL: &[&str] = &[
 /// NOTE: multi-candidate orders that are *occurrence-dependent* (e.g. Vespers
 /// `Versum 3`/`1`/`2` by 1st-vs-2nd Vespers) are intentionally left to the
 /// handlers; entries here are the position-independent fallbacks only.
-pub fn do_aliases(slot: &str) -> &'static [&'static str] {
+pub fn section_aliases(slot: &str) -> &'static [&'static str] {
     match slot {
-        // formulae keep their DO names in the ordinary book for now
+        // formulae keep their legacy section names in the ordinary book for now
         "deus-in-adjutorium" => &["Deus in adjutorium"],
         "domine-labia" => &["Domine labia"],
         "te-deum" => &["Te Deum"],
@@ -161,8 +159,8 @@ mod tests {
     #[test]
     fn aliases_only_reference_known_slots() {
         for name in CANONICAL {
-            // do_aliases must be callable for every canonical slot.
-            let _ = do_aliases(name);
+            // section_aliases must be callable for every canonical slot.
+            let _ = section_aliases(name);
         }
     }
 }

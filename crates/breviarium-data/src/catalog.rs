@@ -11,7 +11,7 @@
 //! reach the data only through [`section_nodes`], so swapping this layer left
 //! them untouched.
 
-use crate::schema::{BookFile, LexiconFile, RawProfile};
+use crate::schema::{BookFile, LexiconFile, PhrasesFile, RawProfile};
 use crate::{ContentNode, DataError, TextRole, DATA_DIR};
 use std::collections::{BTreeMap, BTreeSet};
 
@@ -65,6 +65,8 @@ pub struct Catalog {
     books: BTreeMap<String, BTreeMap<String, Office>>,
     lexicon: BTreeMap<String, LexEntry>,
     profiles: BTreeMap<String, Profile>,
+    /// Resolver-emitted localized phrases: id → language → text.
+    phrases: BTreeMap<String, BTreeMap<String, String>>,
 }
 
 impl Catalog {
@@ -95,6 +97,17 @@ impl Catalog {
     /// Looks up a rubrical profile.
     pub fn profile(&self, id: &str) -> Option<&Profile> {
         self.profiles.get(id)
+    }
+
+    /// Returns the localized `phrase` for `language`, falling back to the Latin
+    /// (`la`) column when the language is absent, and to the id itself when the
+    /// phrase is undefined (a visible signal of a missing entry).
+    pub(crate) fn phrase<'a>(&'a self, language: &str, id: &'a str) -> &'a str {
+        let by_lang = self.phrases.get(id);
+        by_lang
+            .and_then(|m| m.get(language).or_else(|| m.get("la")))
+            .map(String::as_str)
+            .unwrap_or(id)
     }
 
     /// Iterates the reusable lexicon texts (used by translation export).
@@ -163,6 +176,9 @@ pub(crate) fn load_catalog() -> Result<Catalog, DataError> {
                     supported_languages: raw.supported_languages,
                 },
             );
+        } else if path == "phrases.yaml" {
+            let file: PhrasesFile = crate::load_yaml(&path)?;
+            catalog.phrases = file.phrases;
         }
         // rites/ and the legacy corpus/+sources/ are ignored.
     }

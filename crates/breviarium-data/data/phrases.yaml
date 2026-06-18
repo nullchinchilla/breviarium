@@ -1,0 +1,41 @@
+doc_type: phrases
+# Localized strings the resolver emits directly (not slot-filled corpus text):
+# fixed versicle/response formulae, structural titles, and inline rubric words.
+# One column per language; `la` is the fallback when a language is absent.
+phrases:
+  preces-omit:
+    la: omittitur
+    en: omit
+    en2: omit
+  examination-rubric:
+    la: Examen conscientiae vel Pater Noster totum secreto.
+    en: There follows an examination of conscience, or the Our Father said silently.
+    en2: There follows an examination of conscience, or the Our Father said silently.
+  commemoration-prefix:
+    la: Commemoratio
+    en: Commemoration of
+    en2: Commemoration of
+  domine-exaudi-versicle:
+    la: Dómine, exáudi oratiónem meam.
+    en: O Lord, hear my prayer.
+    en2: O Lord, hear my prayer.
+  domine-exaudi-response:
+    la: Et clamor meus ad te véniat.
+    en: And let my cry come unto thee.
+    en2: And let my cry come unto you.
+  divinum-auxilium-versicle:
+    la: Divínum auxílium ✠ máneat semper nobíscum.
+    en: May the divine assistance ✠ remain with us always.
+    en2: May the divine assistance ✠ remain with us always.
+  nocturn-title:
+    la: Nocturnus
+    en: Nocturn
+    en2: Nocturn
+  lesson-title:
+    la: Lectio
+    en: Reading
+    en2: Reading
+  psalm-title:
+    la: Psalmus
+    en: Psalm
+    en2: Psalm

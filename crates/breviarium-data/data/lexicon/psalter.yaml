@@ -12,12 +12,25 @@ texts:
         label: '4'
       - type: text
         text: 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+      en2:
+      - type: text
+        text: |-
+          1 = The souls of the wicked raged against me: and my heart was heavy on their account.
+          2 = You have judged, O Lord, * the cause of my soul; you, O Lord my God, are the defender of my life.
+          3 = O my people, * what have I done to you? Or in what have I been a burden to you? Answer me.
+      - type: table_row
+        label: '4'
+      - type: text
+        text: 5 = Is evil rendered * for good, because they have dug a pit for my soul?
   psalmody.1-anim-impi-rum-frem-bant-adv-rsum-me-et-grav-tu-f5dccdd3e3:
     role: psalmody
     content:
       la:
       - type: text
         text: '1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.'
+      en2:
+      - type: text
+        text: '1 = The souls of the wicked raged against me: and my heart was heavy on their account.'
   psalmody.1-c-nite-tuba-in-sion-quia-prope-est-dies-d-mini-fdad16dc6d:
     role: psalmody
     content:
@@ -37,6 +50,14 @@ texts:
           3 = Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.
           4 = Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni eius non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúia, allelúia.
           5 = Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúia.
+      en2:
+      - type: text
+        text: |-
+          1 = Blow the trumpet * in Sion, for the day of the Lord is near: behold, he will come to save us, alleluia, alleluia.
+          2 = Behold, he will come, * the One desired by all the nations: and the house of the Lord shall be filled with glory, alleluia.
+          3 = The crooked ways * shall be made straight, and the rough ways into smooth paths: come, O Lord, and delay not, alleluia.
+          4 = The Lord will come, * go out to meet him, saying: Great is his dominion, and of his kingdom there shall be no end: God, the Mighty, the Ruler, the Prince of peace, alleluia, alleluia.
+          5 = Your almighty Word, * O Lord, will come from his royal throne, alleluia.
   psalmody.1-const-ntes-est-te-vid-bitis-aux-lium-d-mini-su-8f06c781ef:
     role: psalmody
     content:
@@ -56,6 +77,14 @@ texts:
           3 = Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.
           4 = Deus a Líbano véniet, * et splendor eius sicut lumen erit.
           5 = Ego autem * ad Dóminum aspíciam, et exspectábo Deum, Salvatórem meum.
+      en2:
+      - type: text
+        text: |-
+          1 = Stand firm, * and you shall see the help of the Lord upon you.
+          2 = To you, O Lord, * I have lifted up my soul: come and deliver me, O Lord; in you I have taken refuge.
+          3 = Come, O Lord, * and delay not: forgive the sins of your people Israel.
+          4 = God will come from Lebanon, * and his brightness shall be like the light.
+          5 = But I * will look to the Lord, and will wait for God my Savior.
   psalmody.1-de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-2b7d6ccb47:
     role: psalmody
     content:
@@ -75,6 +104,14 @@ texts:
           3 = De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
           4 = Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.
           5 = Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
+      en2:
+      - type: text
+        text: |-
+          1 = From Sion * the almighty Lord will come, to save his people.
+          2 = Turn to us, O Lord, * for a little while, and delay not in coming to your servants.
+          3 = From Sion * he will come who is to reign, the Lord Emmanuel, great is his name.
+          4 = This is my God, * and I will honor him: the God of my father, and I will exalt him.
+          5 = The Lord * is our lawgiver, the Lord is our King; he himself will come and save us.
   psalmody.1-ecce-in-n-bibus-c-li-d-minus-v-niet-cum-potest-2ad0f05d68:
     role: psalmody
     content:
@@ -94,6 +131,14 @@ texts:
           3 = Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúia.
           4 = Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúia, allelúia.
           5 = Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúia.
+      en2:
+      - type: text
+        text: |-
+          1 = Behold, in the clouds of heaven * the Lord will come with great power, alleluia.
+          2 = Our city of strength * is Sion; the Savior shall be set up as its wall and bulwark: open the gates, for God is with us, alleluia.
+          3 = Behold, the Lord will appear, * and will not lie: if he tarry, wait for him, for he will come and will not delay, alleluia.
+          4 = The mountains and hills * shall sing praise before God, and all the trees of the forest shall clap their hands: for the Lord the Ruler shall come into the eternal kingdom, alleluia, alleluia.
+          5 = Behold, our Lord * will come with power, and will enlighten the eyes of his servants, alleluia.
   psalmody.1-ecce-v-niet-d-minus-princeps-regum-terr-be-ti-a11daf8e38:
     role: psalmody
     content:
@@ -113,6 +158,14 @@ texts:
           3 = Ecce, iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
           4 = Hauriétis aquas * in gáudio de fóntibus Salvatóris.
           5 = Egrediétur * Dóminus de loco sancto suo: véniet, ut salvet pópulum suum.
+      en2:
+      - type: text
+        text: |-
+          1 = Behold, the Lord shall come, * the prince of the kings of the earth: blessed are they who are prepared to meet him.
+          2 = When the Son of Man comes, * do you think he will find faith on earth?
+          3 = Behold, now the fullness of time has come, * in which God sent his Son into the world.
+          4 = You shall draw waters * with joy from the fountains of the Savior.
+          5 = The Lord * will go forth from his holy place: he will come to save his people.
   psalmody.1-in-illa-die-still-bunt-montes-dulc-dinem-et-co-a197218495:
     role: psalmody
     content:
@@ -132,6 +185,14 @@ texts:
           3 = Ecce Dóminus véniet, * et omnes Sancti eius cum eo: et erit in die illa lux magna, allelúia.
           4 = Omnes sitiéntes, * veníte ad aquas: quærite Dóminum, dum inveníri potest, allelúia.
           5 = Ecce véniet * Prophéta magnus, et ipse renovábit Ierúsalem, allelúia.
+      en2:
+      - type: text
+        text: |-
+          1 = In that day * the mountains shall drip sweetness, and the hills shall flow with milk and honey, alleluia.
+          2 = Rejoice, * O daughter of Sion, and exult greatly, O daughter of Jerusalem, alleluia.
+          3 = Behold, the Lord will come, * and all his Saints with him: and there shall be great light on that day, alleluia.
+          4 = All you who thirst, * come to the waters: seek the Lord while he may be found, alleluia.
+          5 = Behold, the great Prophet will come, * and he himself will renew Jerusalem, alleluia.
   psalmody.1-intu-mini-quam-sit-glori-sus-iste-qui-ingr-dit-6a99d5ee4c:
     role: psalmody
     content:
@@ -151,6 +212,14 @@ texts:
           3 = Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
           4 = Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Deus noster.
           5 = Parátus esto, * Israël, in occúrsum Dómini, quóniam venit.
+      en2:
+      - type: text
+        text: |-
+          1 = Consider * how glorious is he who enters to save the peoples.
+          2 = His dominion * shall be multiplied, and of peace there shall be no end.
+          3 = I, the Lord, * have brought my justice near; it shall not be far off, and my salvation shall not delay.
+          4 = May the word of the Lord be awaited * as rain, and may our God descend upon us as dew.
+          5 = Be ready, * O Israel, to meet the Lord, for he comes.
   psalmody.1-l-bera-me-d-mine-et-pone-me-iuxta-te-et-cui-sv-93ec356077:
     role: psalmody
     content:
@@ -174,6 +243,16 @@ texts:
         label: '4'
       - type: text
         text: 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+      en2:
+      - type: text
+        text: |-
+          1 = Deliver me, O Lord, * and set me beside you: and let any man's hand fight against me.
+          2 = You have judged, O Lord, * the cause of my soul; you, O Lord my God, are the defender of my life.
+          3 = O my people, * what have I done to you? Or in what have I been a burden to you? Answer me.
+      - type: table_row
+        label: '4'
+      - type: text
+        text: 5 = Is evil rendered * for good, because they have dug a pit for my soul?
   psalmody.1-proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rg-da8310e3b1:
     role: psalmody
     content:
@@ -193,6 +272,14 @@ texts:
           3 = Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
           4 = Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ ténuit.
           5 = Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.
+      en2:
+      - type: text
+        text: |-
+          1 = The Prophets proclaimed * that the Savior would be born of the Virgin Mary.
+          2 = The Spirit * of the Lord is upon me; he has sent me to bring good news to the poor.
+          3 = For the sake of Sion * I will not be silent, until her just One goes forth like splendor.
+          4 = Behold, the Lord will come * to sit with princes, and he has held the throne of glory.
+          5 = Proclaim to the peoples * and say: Behold, our God the Savior will come.
   psalmody.1-ror-te-c-li-d-super-et-nubes-pluant-iustum-ape-922da112f4:
     role: psalmody
     content:
@@ -212,6 +299,14 @@ texts:
           3 = Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
           4 = Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
           5 = Lex per Móysen data est; * grátia et véritas per Iesum Christum facta est.
+      en2:
+      - type: text
+        text: |-
+          1 = Drop dew, O heavens, from above, * and let the clouds rain down the Just One: let the earth be opened, and bud forth a Savior.
+          2 = Send forth the Lamb, O Lord, * the Ruler of the earth, from the rock of the desert, to the mountain of the daughter of Sion.
+          3 = That we may know, O Lord, * your way upon the earth, your salvation among all the nations.
+          4 = Give reward, O Lord, * to those who wait for you, that your prophets may be found faithful.
+          5 = The law was given through Moses; * grace and truth were made through Jesus Christ.
   psalmody.1-v-niet-d-minus-et-non-tard-bit-et-illumin-bit-5fa04192e5:
     role: psalmody
     content:
@@ -231,6 +326,14 @@ texts:
           3 = Dabo in Sion * salútem, et in Ierúsalem glóriam meam, allelúia.
           4 = Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúia.
           5 = Iuste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini.
+      en2:
+      - type: text
+        text: |-
+          1 = The Lord will come * and will not delay, and will illuminate the hidden things of darkness, and will manifest himself to all nations, alleluia.
+          2 = Jerusalem, rejoice * with great joy, for your Savior will come to you, alleluia.
+          3 = I will give salvation in Sion, * and my glory in Jerusalem, alleluia.
+          4 = The mountains and all the hills * shall be humbled: and the crooked ways shall be made straight, and the rough ways into smooth paths: come, O Lord, and delay not, alleluia.
+          5 = Let us live justly and devoutly, * awaiting the blessed hope and the coming of the Lord.
   psalmody.1-veni-et-l-bera-nos-deus-noster-6f8406a21a:
     role: psalmody
     content:
@@ -244,6 +347,16 @@ texts:
         label: '4'
       - type: text
         text: 5 = In tuo advéntu érue nos, Dómine.
+      en2:
+      - type: text
+        text: |-
+          1 = Come and deliver us, O our God.
+          3 = Come, O Lord, * and delay not: forgive the sins of your people Israel.
+          3 = Stir up your power, O Lord, and come to save us.
+      - type: table_row
+        label: '4'
+      - type: text
+        text: 5 = In your coming * deliver us, O Lord.
   psalmody.1-vivo-ego-dicit-d-minus-nolo-mortem-peccat-ris-520ced6ff5:
     role: psalmody
     content:
@@ -265,12 +378,25 @@ texts:
         label: '4'
       - type: text
         text: 5 = Per arma iustítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia.
+      en2:
+      - type: text
+        text: |-
+          1 = As I live, * says the Lord: I do not will the death of the sinner, but rather that he be converted and live.
+          2 = The days of penance have come upon us * to redeem our sins, to save our souls.
+          3 = Let us commend ourselves * in much patience, in many fastings, through the weapons of justice.
+      - type: table_row
+        label: '4'
+      - type: text
+        text: 5 = Through the weapons of justice * let us commend ourselves in the power of God with much patience.
   psalmody.2-vide-d-mine-afflicti-nem-meam-qu-niam-er-ctus-505d6d770b:
     role: psalmody
     content:
       la:
       - type: text
         text: 2 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
+      en2:
+      - type: text
+        text: 2 = Look, O Lord, * upon my affliction, for the enemy has risen up against me.
   psalmody.2-vide-d-mine-afflicti-nem-meam-qu-niam-er-ctus-9264e41afa:
     role: psalmody
     content:
@@ -283,6 +409,15 @@ texts:
           2 = Iudicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
           3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
           5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+      en2:
+      - type: table_row
+        label: '1'
+      - type: text
+        text: |-
+          2 = Look, O Lord, * upon my affliction, for the enemy has risen up against me.
+          2 = You have judged, O Lord, * the cause of my soul; you, O Lord my God, are the defender of my life.
+          3 = O my people, * what have I done to you? Or in what have I been a burden to you? Answer me.
+          5 = Is evil rendered * for good, because they have dug a pit for my soul?
   psalmody.adi-tor-in-tribulati-nibus-96ae0c581c:
     role: psalmody
     content:
@@ -333,6 +468,59 @@ texts:
         - number: '55'
       - type: psalmody
         antiphon: Iusta iudicáte * fílii hóminum
+        psalms:
+        - number: '57'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '58'
+      en2:
+      - type: psalmody
+        antiphon: Helper * in tribulations
+        psalms:
+        - number: '45'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '46'
+      - type: psalmody
+        antiphon: Hear with your ears, * you who dwell on the earth.
+        psalms:
+        - number: '47'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '48'
+      - type: psalmody
+        antiphon: The God of gods, * the Lord has spoken
+        psalms:
+        - number: '49'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '51'
+      - type: versicle
+        text: Offer to God * a sacrifice of praise.
+      - type: response
+        text: And pay your vows * to the Most High.
+      - type: psalmody
+        antiphon: The Lord has turned away * the captivity of his people
+        psalms:
+        - number: '52'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '53'
+      - type: psalmody
+        antiphon: Give heed to me, * and hear me
+        psalms:
+        - number: '54'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '55'
+      - type: psalmody
+        antiphon: Judge rightly, * O sons of men
         psalms:
         - number: '57'
       - type: psalmody
@@ -448,6 +636,59 @@ texts:
         antiphon: ''
         psalms:
         - number: '58'
+      en2:
+      - type: psalmody
+        antiphon: Helper * in tribulations
+        psalms:
+        - number: '45'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '46'
+      - type: psalmody
+        antiphon: Great is the Lord * and exceedingly worthy of praise
+        psalms:
+        - number: '47'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '48'
+      - type: psalmody
+        antiphon: The God of gods, * the Lord has spoken
+        psalms:
+        - number: '49'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '51'
+      - type: versicle
+        text: Offer to God * a sacrifice of praise.
+      - type: response
+        text: And pay your vows * to the Most High.
+      - type: psalmody
+        antiphon: The Lord has turned away * the captivity of his people
+        psalms:
+        - number: '52'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '53'
+      - type: psalmody
+        antiphon: Give heed to me, * and hear me
+        psalms:
+        - number: '54'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '55'
+      - type: psalmody
+        antiphon: Judge rightly, * O sons of men
+        psalms:
+        - number: '57'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '58'
   psalmody.ador-te-d-minum-allel-ia-e14a8b67dd:
     role: psalmody
     content:
@@ -461,6 +702,11 @@ texts:
         text: Adoráte Dóminum, allelúia.
       - type: response
         text: In aula sancta eius, allelúia.
+      en2:
+      - type: versicle
+        text: Adore the Lord, alleluia.
+      - type: response
+        text: In his holy court, alleluia.
   psalmody.allel-ia-allel-ia-2f0fc3ab19:
     role: psalmody
     content:
@@ -514,6 +760,29 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '117'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.allel-ia-allel-ia-812dfcc28a:
     role: psalmody
     content:
@@ -536,6 +805,29 @@ texts:
         - number: '210'
       - type: psalmody
         antiphon: Allelúia, * allelúia, allelúia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '117'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
         psalms:
         - number: '148'
         - number: '149'
@@ -568,6 +860,35 @@ texts:
           end: '13'
       - type: psalmody
         antiphon: Allelúia, * allelúia, allelúia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '117'
+          start: '1'
+          end: 7b
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '142'
+          start: 8a
+          end: 12b
+      - type: psalmody
+        antiphon: Show us, O Lord, * the light of your mercies.
+        psalms:
+        - number: '216'
+          start: '1'
+          end: '13'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
         psalms:
         - number: '148'
         - number: '149'
@@ -611,6 +932,24 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia
+        psalms:
+        - number: '92'
+        - number: '99'
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God.'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.allel-ia-allel-ia-allel-ia-6298057e0f:
     role: psalmody
     content:
@@ -631,6 +970,27 @@ texts:
         - number: '210'
       - type: psalmody
         antiphon: Allelúia, * allelúia, allelúia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: text
+        text: Alleluia, * alleluia, alleluia
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '99'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
         psalms:
         - number: '148'
         - number: '149'
@@ -694,6 +1054,34 @@ texts:
         text: Deus et Dóminum suscitávit, allelúia.
       - type: response
         text: Et nos suscitábit per virtútem suam, allelúia.
+      en2:
+      - type: text
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: God has regenerated us unto a living hope, alleluia.
+      - type: response
+        text: Through the Resurrection of Jesus Christ from the dead, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: God has raised Christ from the dead, alleluia.
+      - type: response
+        text: That our faith and hope might be in God, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * Alleluia, Alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: God has also raised up the Lord, alleluia.
+      - type: response
+        text: And he will raise us up also by his power, alleluia.
   psalmody.allel-ia-allel-ia-allel-ia-abd2546e90:
     role: psalmody
     content:
@@ -713,6 +1101,14 @@ texts:
           Allelúia, * allelúia, allelúia.
           Allelúia, * allelúia, allelúia.
           Allelúia, * allelúia, allelúia.
+      en2:
+      - type: text
+        text: |-
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
+          Alleluia, * alleluia, alleluia.
   psalmody.allel-ia-allel-ia-allel-ia-allel-ia-070631c691:
     role: psalmody
     content:
@@ -1093,6 +1489,201 @@ texts:
         - number: '125'
         - number: '126'
         - number: '127'
+      en2:
+      - type: table_row
+        label: Prima Dominica
+        text: Alleluia, * alleluia, alleluia (alleluia)
+        psalms:
+        - number: '118'
+          start: '1'
+          end: '8'
+        - number: '118'
+          start: '9'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '24'
+        - number: '118'
+          start: '25'
+          end: '32'
+      - type: table_row
+        label: Prima Feria II
+        text: 'Serve the Lord * with fear: and rejoice before him with trembling.'
+        psalms:
+        - number: '1'
+        - number: '2'
+        - number: '6'
+      - type: table_row
+        label: Prima Feria III
+        text: 'God is a just judge, * mighty and patient: is he angry every day?'
+        psalms:
+        - number: '7'
+        - number: '8'
+        - number: '9'
+          start: '2'
+          end: '19'
+      - type: table_row
+        label: Prima Feria IV
+        text: Arise, O Lord, * let not man prevail.
+        psalms:
+        - number: '9'
+          start: '20'
+          end: '39'
+        - number: '10'
+        - number: '11'
+      - type: table_row
+        label: Prima Feria V
+        text: I will sing to the Lord, * who has given good things to me.
+        psalms:
+        - number: '12'
+        - number: '13'
+        - number: '14'
+      - type: table_row
+        label: Prima Feria VI
+        text: I have no need of your goods, * in you I have hoped; preserve me, O Lord.
+        psalms:
+        - number: '15'
+        - number: '16'
+        - number: '17'
+          start: '2'
+          end: '25'
+      - type: table_row
+        label: Prima Sabbato
+        text: The Lord lives, * and blessed be God my salvation.
+        psalms:
+        - number: '17'
+          start: '26'
+          end: '51'
+        - number: '18'
+        - number: '19'
+      - type: table_row
+        label: Prima Festis
+        text: Alleluia, * alleluia, alleluia (alleluia)
+        psalms:
+        - number: '118'
+          start: '1'
+          end: '8'
+        - number: '118'
+          start: '9'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '24'
+        - number: '118'
+          start: '25'
+          end: '32'
+      - type: table_row
+        label: Tertia Dominica
+        text: Alleluia, * alleluia, alleluia (alleluia)
+        psalms:
+        - number: '118'
+          start: '33'
+          end: '40'
+        - number: '118'
+          start: '41'
+          end: '48'
+        - number: '118'
+          start: '49'
+          end: '56'
+      - type: table_row
+        label: Tertia Feria II
+        text: Help me, * and I shall be saved, O Lord.
+        psalms:
+        - number: '118'
+          start: '105'
+          end: '112'
+        - number: '118'
+          start: '113'
+          end: '120'
+        - number: '118'
+          start: '121'
+          end: '128'
+      - type: table_row
+        label: Tertia Feria
+        text: I cried out, * and he heard me.
+        psalms:
+        - number: '119'
+        - number: '120'
+        - number: '121'
+      - type: table_row
+        label: Sexta Dominica
+        text: Alleluia, * alleluia, alleluia (alleluia)
+        psalms:
+        - number: '118'
+          start: '57'
+          end: '64'
+        - number: '118'
+          start: '65'
+          end: '72'
+        - number: '118'
+          start: '73'
+          end: '80'
+      - type: table_row
+        label: Sexta Feria II
+        text: Look upon me, * and have mercy on me, O Lord.
+        psalms:
+        - number: '118'
+          start: '129'
+          end: '136'
+        - number: '118'
+          start: '137'
+          end: '144'
+        - number: '118'
+          start: '145'
+          end: '152'
+      - type: table_row
+        label: Sexta Feria
+        text: You who dwell * in the heavens, have mercy on us.
+        psalms:
+        - number: '122'
+        - number: '123'
+        - number: '124'
+      - type: table_row
+        label: Nona Dominica
+        text: Alleluia, * alleluia, alleluia (alleluia)
+        psalms:
+        - number: '118'
+          start: '81'
+          end: '88'
+        - number: '118'
+          start: '89'
+          end: '96'
+        - number: '118'
+          start: '97'
+          end: '104'
+      - type: table_row
+        label: Nona Feria II
+        text: 'Let your hand be upon me, * O Lord, to save me: for I have chosen your commandments.'
+        psalms:
+        - number: '118'
+          start: '153'
+          end: '160'
+        - number: '118'
+          start: '161'
+          end: '168'
+        - number: '118'
+          start: '169'
+          end: '176'
+      - type: table_row
+        label: Nona Feria II
+        text: Let your hand be upon me, * O Lord, to save me, for I have longed for your commandments.
+        psalms:
+        - number: '118'
+          start: '153'
+          end: '160'
+        - number: '118'
+          start: '161'
+          end: '168'
+        - number: '118'
+          start: '169'
+          end: '176'
+      - type: table_row
+        label: Nona Feria
+        text: Blessed are all * who fear the Lord.
+        psalms:
+        - number: '125'
+        - number: '126'
+        - number: '127'
   psalmody.allel-ia-allel-ia-allel-ia-allel-ia-allel-ia-all-762ca73193:
     role: psalmody
     content:
@@ -1130,6 +1721,23 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia.
+        psalms:
+        - number: '92'
+        - number: '99'
+        - number: '62'
+      - type: psalmody
+        antiphon: Christ is risen * from the tomb, who delivered the three young men from the burning fiery furnace, alleluia.
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.allel-ia-allel-ia-allel-ia-allel-ia-allel-ia-all-bf3ac856bf:
     role: psalmody
     content:
@@ -1147,6 +1755,24 @@ texts:
         - number: '210'
       - type: psalmody
         antiphon: Allelúia, * allelúia, allelúia.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia.
+        psalms:
+        - number: '92'
+        - number: '99'
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: Christ is risen * from the tomb, who delivered the three young men from the burning fiery furnace, alleluia.
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia.
         psalms:
         - number: '148'
         - number: '149'
@@ -1542,6 +2168,200 @@ texts:
           end: '6'
         - number: '90'
         - number: '133'
+      en2:
+      - type: table_row
+        label: Prima Dominica
+        text: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '53'
+        - number: '117'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Dominica SQP
+        psalms:
+        - number: '53'
+        - number: '92'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Feria II
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '23'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Feria III
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '24'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Feria IV
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '25'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Feria V
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '22'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Feria VI
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '21'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Sabbato
+        text: Blessed * are those who walk in the law of the Lord
+        psalms:
+        - number: '53'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Prima Festis
+        text: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '53'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: Tertia Dominica
+        text: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '118'
+          start: '33'
+          end: '48'
+        - number: '118'
+          start: '49'
+          end: '64'
+        - number: '118'
+          start: '65'
+          end: '80'
+      - type: table_row
+        label: Tertia Feria
+        text: Lead me * in the path of your commandments
+        psalms:
+        - number: '118'
+          start: '33'
+          end: '48'
+        - number: '118'
+          start: '49'
+          end: '64'
+        - number: '118'
+          start: '65'
+          end: '80'
+      - type: table_row
+        label: Sexta Dominica
+        text: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '118'
+          start: '81'
+          end: '96'
+        - number: '118'
+          start: '97'
+          end: '112'
+        - number: '118'
+          start: '113'
+          end: '128'
+      - type: table_row
+        label: Sexta Feria
+        text: Help me * and I shall be saved, O Lord
+        psalms:
+        - number: '118'
+          start: '81'
+          end: '96'
+        - number: '118'
+          start: '97'
+          end: '112'
+        - number: '118'
+          start: '113'
+          end: '128'
+      - type: table_row
+        label: Nona Dominica
+        text: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '118'
+          start: '129'
+          end: '144'
+        - number: '118'
+          start: '145'
+          end: '160'
+        - number: '118'
+          start: '161'
+          end: '176'
+      - type: table_row
+        label: Nona Feria
+        text: Look * upon me, and have mercy on me, O Lord
+        psalms:
+        - number: '118'
+          start: '129'
+          end: '144'
+        - number: '118'
+          start: '145'
+          end: '160'
+        - number: '118'
+          start: '161'
+          end: '176'
+      - type: table_row
+        label: Completorium
+        text: Have mercy * on me, O Lord, and hear my prayer
+        psalms:
+        - number: '4'
+        - number: '30'
+          start: '2'
+          end: '6'
+        - number: '90'
+        - number: '133'
   psalmody.allel-ia-allel-ia-d9c35113ab:
     role: psalmody
     content:
@@ -1587,6 +2407,29 @@ texts:
         - number: '210'
       - type: psalmody
         antiphon: Allelúia, * allelúia, allelúia
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * alleluia
+        psalms:
+        - number: '92'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '99'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
         psalms:
         - number: '148'
         - number: '149'
@@ -1774,6 +2617,96 @@ texts:
         - number: '107'
         - number: '149'
           optional: true
+      en2:
+      - type: table_row
+        label: sunday
+        text: Alleluia, * give praise to the Lord, for his mercy endures for ever, alleluia, alleluia.
+        psalms:
+        - number: '117'
+        - number: '118'
+          start: '1'
+          end: '16'
+        - number: '118'
+          start: '17'
+          end: '32'
+      - type: table_row
+        label: monday
+        text: The innocent of hands * and pure of heart shall ascend the mountain of the Lord.
+        psalms:
+        - number: '23'
+        - number: '18'
+          start: '2'
+          end: 7b
+        - number: '18'
+          start: '8'
+          end: 15b
+        - number: '46'
+          optional: true
+      - type: table_row
+        label: tuesday
+        text: My God, * in you I trust; I shall not be put to shame.
+        psalms:
+        - number: '24'
+          start: '1'
+          end: '7'
+        - number: '24'
+          start: '8'
+          end: '14'
+        - number: '24'
+          start: '15'
+          end: '22'
+        - number: '95'
+          optional: true
+      - type: table_row
+        label: wednesday
+        text: 'Your mercy, * O Lord, is before my eyes: and I have been pleasing in your truth.'
+        psalms:
+        - number: '25'
+        - number: '51'
+        - number: '52'
+        - number: '96'
+          optional: true
+      - type: table_row
+        label: thursday
+        text: In a place of pasture * there the Lord has settled me.
+        psalms:
+        - number: '22'
+        - number: '71'
+          start: '2'
+          end: '8'
+        - number: '71'
+          start: '9'
+          end: '19'
+        - number: '97'
+          optional: true
+      - type: table_row
+        label: friday
+        text: 'Do not depart from me, * O Lord: for tribulation is near: for there is none to help.'
+        psalms:
+        - number: '21'
+          start: '2'
+          end: '12'
+        - number: '21'
+          start: '13'
+          end: '23'
+        - number: '21'
+          start: '24'
+          end: '32'
+        - number: '98'
+          optional: true
+      - type: table_row
+        label: saturday
+        text: 'Be exalted, O Lord, * you who judge the earth: render retribution to the proud.'
+        psalms:
+        - number: '93'
+          start: '1'
+          end: '11'
+        - number: '93'
+          start: '12'
+          end: '23'
+        - number: '107'
+        - number: '149'
+          optional: true
   psalmody.allel-ia-d-minus-regn-vit-dec-rem-nduit-allel-ia-2cdb79052b:
     role: psalmody
     content:
@@ -1817,6 +2750,27 @@ texts:
         - number: '210'
       - type: psalmody
         antiphon: Allelúia, * laudáte Dóminum de cælis, allelúia, allelúia.
+        psalms:
+        - number: '148'
+      en2:
+      - type: psalmody
+        antiphon: Alleluia, * the Lord has reigned, he has put on glory, alleluia, alleluia.
+        psalms:
+        - number: '92'
+      - type: psalmody
+        antiphon: Shout with joy * to God, all the earth, alleluia.
+        psalms:
+        - number: '99'
+      - type: psalmody
+        antiphon: 'I will bless you * in my life, O Lord: and in your name I will lift up my hands, alleluia.'
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: 'Three young men * were cast into the furnace by order of the king, not fearing the flame of fire, saying: Blessed be God, alleluia.'
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: Alleluia, * praise the Lord from the heavens, alleluia, alleluia.
         psalms:
         - number: '148'
   psalmody.allel-ia-deduc-me-d-mine-in-s-mitam-mandat-rum-t-49994460e7:
@@ -1984,6 +2938,92 @@ texts:
       - type: table_row
         label: saturday
         text: 'Clamor meus, * Dómine, ad te pervéniat: non avértas fáciem tuam a me.'
+        psalms:
+        - number: '101'
+          start: '2'
+          end: '13'
+        - number: '101'
+          start: '14'
+          end: '23'
+        - number: '101'
+          start: '24'
+          end: '29'
+      en2:
+      - type: table_row
+        label: sunday
+        text: Alleluia, * lead me, O Lord, in the path of your commandments, alleluia, alleluia.
+        psalms:
+        - number: '118'
+          start: '33'
+          end: '48'
+        - number: '118'
+          start: '49'
+          end: '64'
+        - number: '118'
+          start: '65'
+          end: '80'
+      - type: table_row
+        label: monday
+        text: The Lord * is my light and my salvation.
+        psalms:
+        - number: '26'
+          start: '1'
+          end: '6'
+        - number: '26'
+          start: '7'
+          end: '14'
+        - number: '27'
+      - type: table_row
+        label: tuesday
+        text: The Lord looked upon me * and heard my supplication.
+        psalms:
+        - number: '39'
+          start: '2'
+          end: '9'
+        - number: '39'
+          start: '10'
+          end: '14'
+        - number: '39'
+          start: '15'
+          end: '18'
+      - type: table_row
+        label: wednesday
+        text: 'God is my helper: * and the Lord is the sustainer of my soul.'
+        psalms:
+        - number: '53'
+        - number: '54'
+          start: '2'
+          end: '16'
+        - number: '54'
+          start: '17'
+          end: '24'
+      - type: table_row
+        label: thursday
+        text: How good * is God to Israel, to those who are upright in heart.
+        psalms:
+        - number: '72'
+          start: '1'
+          end: '9'
+        - number: '72'
+          start: '10'
+          end: '17'
+        - number: '72'
+          start: '18'
+          end: '28'
+      - type: table_row
+        label: friday
+        text: Stir up your power, O Lord, * that you may save us.
+        psalms:
+        - number: '79'
+          start: '2'
+          end: '8'
+        - number: '79'
+          start: '9'
+          end: '20'
+        - number: '81'
+      - type: table_row
+        label: saturday
+        text: 'Let my cry, * O Lord, come before you: turn not your face away from me.'
         psalms:
         - number: '101'
           start: '2'
@@ -2169,6 +3209,92 @@ texts:
         - number: '108'
           start: '22'
           end: '31'
+      en2:
+      - type: table_row
+        label: sunday
+        text: Alleluia, * let your face, O Lord, shine upon your servant, alleluia, alleluia.
+        psalms:
+        - number: '118'
+          start: '129'
+          end: '144'
+        - number: '118'
+          start: '145'
+          end: '160'
+        - number: '118'
+          start: '161'
+          end: '176'
+      - type: table_row
+        label: monday
+        text: Rejoice in the Lord, O you righteous, * and glory, all you upright of heart.
+        psalms:
+        - number: '31'
+        - number: '32'
+          start: '1'
+          end: '11'
+        - number: '32'
+          start: '12'
+          end: '22'
+      - type: table_row
+        label: tuesday
+        text: You have saved us, * O Lord, and we will praise your name for ever.
+        psalms:
+        - number: '43'
+          start: '2'
+          end: '9'
+        - number: '43'
+          start: '10'
+          end: '20'
+        - number: '43'
+          start: '21'
+          end: '26'
+      - type: table_row
+        label: wednesday
+        text: O my God, * your mercy shall go before me.
+        psalms:
+        - number: '58'
+          start: '2'
+          end: '11'
+        - number: '58'
+          start: '12'
+          end: '18'
+        - number: '59'
+      - type: table_row
+        label: thursday
+        text: 'We shall invoke * your name, O Lord: we shall declare your wondrous works.'
+        psalms:
+        - number: '74'
+        - number: '75'
+          start: '2'
+          end: '7'
+        - number: '75'
+          start: '8'
+          end: '13'
+      - type: table_row
+        label: friday
+        text: Mercy and truth * shall go before your face, O Lord.
+        psalms:
+        - number: '88'
+          start: '2'
+          end: '19'
+        - number: '88'
+          start: '20'
+          end: '38'
+        - number: '88'
+          start: '39'
+          end: '53'
+      - type: table_row
+        label: saturday
+        text: Be not silent, O God, * for they have surrounded me with words of hatred.
+        psalms:
+        - number: '108'
+          start: '2'
+          end: '13'
+        - number: '108'
+          start: '14'
+          end: '21'
+        - number: '108'
+          start: '22'
+          end: '31'
   psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-2cc6f046f4:
     role: psalmody
     content:
@@ -2228,6 +3354,34 @@ texts:
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
+      en2:
+      - type: text
+        text: |-
+          Alleluia, * the stone has been rolled away, alleluia: from the door of the tomb, alleluia, alleluia.;;
+          ;;
+          ;;
+      - type: versicle
+        text: The Lord has risen from the tomb, alleluia.
+      - type: response
+        text: Who for us hung upon the wood, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * whom do you seek, O woman? alleluia: the living one among the dead? Alleluia, alleluia.;;
+          ;;
+          ;;
+      - type: versicle
+        text: The Lord is truly risen, alleluia.
+      - type: response
+        text: And he appeared to Simon, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * weep not, Mary, alleluia: the Lord is risen, alleluia, alleluia.;;
+          ;;
+          ;;
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
   psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-aff0720171:
     role: psalmody
     content:
@@ -2365,6 +3519,73 @@ texts:
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
+      en2:
+      - type: psalmody
+        antiphon: 'Alleluia, * the stone has been rolled away, alleluia: from the door of the tomb, alleluia, alleluia.'
+        psalms:
+        - number: '20'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '21'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '22'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '23'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '25'
+      - type: versicle
+        text: The Lord has risen from the tomb, alleluia.
+      - type: response
+        text: Who for us hung upon the wood, alleluia.
+      - type: psalmody
+        antiphon: 'Alleluia, * whom do you seek, O woman? alleluia: the living one among the dead? alleluia, alleluia.'
+        psalms:
+        - number: '26'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '27'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '28'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '29'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '30'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '31'
+      - type: versicle
+        text: The Lord is truly risen, alleluia.
+      - type: response
+        text: And he appeared to Simon, alleluia.
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia.
+        psalms:
+        - number: '243'
+        - number: '244'
+        - number: '245'
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
   psalmody.allel-ia-lapis-revol-tus-est-allel-ia-ab-stio-mo-cfc070b10a:
     role: psalmody
     content:
@@ -2424,6 +3645,34 @@ texts:
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
+      en2:
+      - type: text
+        text: |-
+          Alleluia, * the stone has been rolled away, alleluia: from the door of the tomb, alleluia, alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: The Lord has risen from the tomb, alleluia.
+      - type: response
+        text: Who for us hung upon the wood, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * whom do you seek, O woman? alleluia: the living one among the dead? alleluia, alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: The Lord is truly risen, alleluia.
+      - type: response
+        text: And he appeared to Simon, alleluia.
+      - type: text
+        text: |-
+          Alleluia, * weep not, Mary, alleluia: the Lord is risen, alleluia, alleluia.
+          ;;
+          ;;
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
   psalmody.allel-ia-tuus-sum-ego-salvum-me-fac-d-mine-allel-5b011e49ed:
     role: psalmody
     content:
@@ -2591,6 +3840,88 @@ texts:
         - number: '103'
           start: '24'
           end: '35'
+      en2:
+      - type: table_row
+        label: sunday
+        text: Alleluia, * I am yours, save me, O Lord, alleluia, alleluia.
+        psalms:
+        - number: '118'
+          start: '81'
+          end: '96'
+        - number: '118'
+          start: '97'
+          end: '112'
+        - number: '118'
+          start: '113'
+          end: '128'
+      - type: table_row
+        label: monday
+        text: In your justice * deliver me, O Lord.
+        psalms:
+        - number: '30'
+          start: '2'
+          end: '9'
+        - number: '30'
+          start: '10'
+          end: '19'
+        - number: '30'
+          start: '20'
+          end: '25'
+      - type: table_row
+        label: tuesday
+        text: 'You have received me, O Lord: * and strengthened me in your sight.'
+        psalms:
+        - number: '40'
+        - number: '41'
+          start: '2'
+          end: '6'
+        - number: '41'
+          start: '7'
+          end: '12'
+      - type: table_row
+        label: wednesday
+        text: In God I have put my trust, * I will not fear what man can do to me.
+        psalms:
+        - number: '55'
+        - number: '56'
+        - number: '57'
+      - type: table_row
+        label: thursday
+        text: Be mindful * of your congregation, O Lord, which you have possessed from the beginning.
+        psalms:
+        - number: '73'
+          start: '1'
+          end: '9'
+        - number: '73'
+          start: '10'
+          end: '17'
+        - number: '73'
+          start: '18'
+          end: '23'
+      - type: table_row
+        label: friday
+        text: Blessed are they who dwell * in your house, O Lord.
+        psalms:
+        - number: '83'
+          start: '2'
+          end: '8'
+        - number: '83'
+          start: '9'
+          end: '13'
+        - number: '86'
+      - type: table_row
+        label: saturday
+        text: O Lord, my God, * you are greatly glorified.
+        psalms:
+        - number: '103'
+          start: '1'
+          end: '12'
+        - number: '103'
+          start: '13'
+          end: '23'
+        - number: '103'
+          start: '24'
+          end: '35'
   psalmody.av-rtit-d-minus-captivit-tem-plebis-su-1a09027719:
     role: psalmody
     content:
@@ -2664,6 +3995,41 @@ texts:
         text: Deus, vitam meam annuntiávi tibi.
       - type: response
         text: Posuísti lácrimas meas in conspéctu tuo.
+      en2:
+      - type: psalmody
+        antiphon: The Lord has turned * the captivity of his people.
+        psalms:
+        - number: '52'
+        - number: '54'
+      - type: psalmody
+        antiphon: For * in you my soul trusts.
+        psalms:
+        - number: '55'
+        - number: '56'
+      - type: psalmody
+        antiphon: Judge righteously, * O you sons of men.
+        psalms:
+        - number: '57'
+        - number: '58'
+      - type: psalmody
+        antiphon: Grant us, * O Lord, help in our tribulation.
+        psalms:
+        - number: '59'
+        - number: '60'
+      - type: psalmody
+        antiphon: Shall not my soul * be subject to God?
+        psalms:
+        - number: '61'
+        - number: '63'
+      - type: psalmody
+        antiphon: Bless our God, * O you nations.
+        psalms:
+        - number: '65'
+        - number: '67'
+      - type: versicle
+        text: O God, I have declared my life to you.
+      - type: response
+        text: You have placed my tears in your sight.
   psalmody.be-ti-omnes-qui-timent-d-minum-3d77aaf9b8:
     role: psalmody
     content:
@@ -2707,6 +4073,27 @@ texts:
         - number: '130'
       - type: psalmody
         antiphon: Elégit Dóminus * Sion in habitatiónem sibi.
+        psalms:
+        - number: '131'
+      en2:
+      - type: psalmody
+        antiphon: Blessed are all * who fear the Lord.
+        psalms:
+        - number: '127'
+      - type: psalmody
+        antiphon: Let all who hate Sion * be put to shame.
+        psalms:
+        - number: '128'
+      - type: psalmody
+        antiphon: Out of the depths * I have cried to you, O Lord.
+        psalms:
+        - number: '129'
+      - type: psalmody
+        antiphon: O Lord, * my heart is not exalted.
+        psalms:
+        - number: '130'
+      - type: psalmody
+        antiphon: The Lord has chosen * Sion as his dwelling.
         psalms:
         - number: '131'
   psalmody.be-tus-vir-qui-in-lege-d-mini-medit-tur-92dd53120d:
@@ -2826,6 +4213,63 @@ texts:
         text: Prævenérunt óculi mei ad te dilúculo.
       - type: response
         text: Ut meditárer elóquia tua, Dómine.
+      en2:
+      - type: psalmody
+        antiphon: Blessed is the man * who meditates on the law of the Lord.
+        psalms:
+        - number: '1'
+      - type: psalmody
+        antiphon: Serve the Lord * in fear, and rejoice before him with trembling.
+        psalms:
+        - number: '2'
+      - type: psalmody
+        antiphon: Arise, * O Lord, save me, O my God.
+        psalms:
+        - number: '3'
+      - type: versicle
+        text: In the night I remembered your name, O Lord.
+      - type: response
+        text: And I have kept your law.
+      - type: psalmody
+        antiphon: How wonderful * is your name, O Lord, throughout all the earth!
+        psalms:
+        - number: '8'
+      - type: psalmody
+        antiphon: You sit upon the throne, * O you who judge with justice.
+        psalms:
+        - number: '9'
+          start: '2'
+          end: '11'
+      - type: psalmody
+        antiphon: Arise, O Lord, * let not man prevail.
+        psalms:
+        - number: '9'
+          start: '12'
+          end: '21'
+      - type: versicle
+        text: At midnight I arose to give you praise.
+      - type: response
+        text: Above the judgments of your justice.
+      - type: psalmody
+        antiphon: Why, O Lord, * have you withdrawn far away?
+        psalms:
+        - number: '9'
+          start: '22'
+          end: '32'
+      - type: psalmody
+        antiphon: Arise, * O Lord God, let your hand be exalted.
+        psalms:
+        - number: '9'
+          start: '33'
+          end: '39'
+      - type: psalmody
+        antiphon: The Lord is just * and has loved justice.
+        psalms:
+        - number: '10'
+      - type: versicle
+        text: My eyes have gone before you at dawn.
+      - type: response
+        text: That I might meditate on your words, O Lord.
   psalmody.ben-gne-fac-d-mine-in-bona-volunt-te-tua-sion-cfee0566e7:
     role: psalmody
     content:
@@ -2883,6 +4327,33 @@ texts:
         antiphon: Laudáte * Dóminum secúndum multitúdinem magnitúdinis eius.
         psalms:
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Deal graciously, O Lord, * with Sion in your good will.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: The Lord our God is righteous, * and there is no iniquity in him.
+        psalms:
+        - number: '91'
+      - type: psalmody
+        antiphon: From the fear of the enemy * deliver, O Lord, my soul.
+        psalms:
+        - number: '63'
+      - type: psalmody
+        antiphon: The Lord will have mercy on his servants * and will be favorable to the land of his people.
+        psalms:
+        - number: '226'
+      - type: psalmody
+        antiphon: The Lord will have mercy on his servants * and will be favorable to the land of his people.
+        psalms:
+        - number: '226'
+          start: '1'
+          end: '27'
+      - type: psalmody
+        antiphon: Praise * the Lord according to the greatness of his majesty.
+        psalms:
+        - number: '150'
   psalmody.ben-gne-fac-in-bona-volunt-te-tua-d-mine-dc6eb1f441:
     role: psalmody
     content:
@@ -2934,6 +4405,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Deal graciously, * O Lord, in your good will.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: It is good * to give praise to the Lord.
+        psalms:
+        - number: '91'
+      - type: psalmody
+        antiphon: Let all the ends of the earth * fear the Lord.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: Ascribe greatness * to our God.
+        psalms:
+        - number: '226'
+      - type: psalmody
+        antiphon: Praise God * with well-sounding cymbals.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.bened-ctus-d-minus-deus-meus-2d8953cee9:
     role: psalmody
     content:
@@ -2977,6 +4472,27 @@ texts:
         - number: '146'
       - type: psalmody
         antiphon: Lauda * Ierúsalem Dóminum.
+        psalms:
+        - number: '147'
+      en2:
+      - type: psalmody
+        antiphon: Blessed * is the Lord my God.
+        psalms:
+        - number: '143'
+      - type: psalmody
+        antiphon: Every day * I will bless you, O Lord.
+        psalms:
+        - number: '144'
+      - type: psalmody
+        antiphon: I will praise * my God in my life.
+        psalms:
+        - number: '145'
+      - type: psalmody
+        antiphon: Let praise of our God * be joyful.
+        psalms:
+        - number: '146'
+      - type: psalmody
+        antiphon: Praise the Lord, * O Jerusalem.
         psalms:
         - number: '147'
   psalmody.bened-ctus-d-minus-susc-ptor-meus-et-liber-tor-m-da75279813:
@@ -3044,6 +4560,37 @@ texts:
         - number: '144'
           start: 13b
           end: '21'
+      en2:
+      - type: psalmody
+        antiphon: Blessed is the Lord * my defender and my deliverer.
+        psalms:
+        - number: '143'
+          start: '1'
+          end: '8'
+      - type: psalmody
+        antiphon: Blessed is the people * whose God is the Lord.
+        psalms:
+        - number: '143'
+          start: '9'
+          end: '15'
+      - type: psalmody
+        antiphon: 'Great is the Lord * and greatly to be praised: and of his greatness there is no end.'
+        psalms:
+        - number: '144'
+          start: '1'
+          end: '7'
+      - type: psalmody
+        antiphon: 'The Lord is gracious * to all: and his mercies are over all his works.'
+        psalms:
+        - number: '144'
+          start: '8'
+          end: 13a
+      - type: psalmody
+        antiphon: 'The Lord is faithful * in all his words: and holy in all his works.'
+        psalms:
+        - number: '144'
+          start: 13b
+          end: '21'
   psalmody.cant-te-d-mino-et-bened-cite-n-mini-eius-e43ce9621f:
     role: psalmody
     content:
@@ -3087,6 +4634,27 @@ texts:
         - number: '212'
       - type: psalmody
         antiphon: Laudáte * nomen Dómini, qui statis in domo Dómini.
+        psalms:
+        - number: '134'
+      en2:
+      - type: psalmody
+        antiphon: Sing to the Lord * and bless his name.
+        psalms:
+        - number: '95'
+      - type: psalmody
+        antiphon: The salvation of my countenance, * my God.
+        psalms:
+        - number: '42'
+      - type: psalmody
+        antiphon: Let your face shine upon us, * O Lord.
+        psalms:
+        - number: '66'
+      - type: psalmody
+        antiphon: Exalt * the King of ages in your works.
+        psalms:
+        - number: '212'
+      - type: psalmody
+        antiphon: Praise * the name of the Lord, you who stand in the house of the Lord.
         psalms:
         - number: '134'
   psalmody.clamor-meus-ad-te-v-niat-deus-0d0638c75a:
@@ -3230,6 +4798,75 @@ texts:
         antiphon: ''
         psalms:
         - number: '108'
+      en2:
+      - type: psalmody
+        antiphon: Let my cry * come to you, O God.
+        psalms:
+        - number: '101'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '102'
+      - type: psalmody
+        antiphon: Bless * the Lord, O my soul.
+        psalms:
+        - number: '103'
+          start: '1'
+          end: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '103'
+          start: '25'
+          end: '35'
+      - type: psalmody
+        antiphon: Let the heart * of those who seek the Lord rejoice.
+        psalms:
+        - number: '104'
+          start: '1'
+          end: '22'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '104'
+          start: '23'
+          end: '45'
+      - type: versicle
+        text: O Lord, hear my prayer.
+      - type: response
+        text: And let my cry come before you.
+      - type: psalmody
+        antiphon: Visit us, * O Lord, with your salvation.
+        psalms:
+        - number: '105'
+          start: '1'
+          end: '31'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '105'
+          start: '32'
+          end: '48'
+      - type: psalmody
+        antiphon: From my necessities * rescue me, O Lord.
+        psalms:
+        - number: '106'
+          start: '1'
+          end: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '106'
+          start: '25'
+          end: '43'
+      - type: psalmody
+        antiphon: I will confess * to the Lord with my whole mouth.
+        psalms:
+        - number: '107'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '108'
   psalmody.clamor-meus-ad-te-v-niat-deus-24e5db2bd2:
     role: psalmody
     content:
@@ -3302,6 +4939,75 @@ texts:
         antiphon: ''
         psalms:
         - number: '108'
+      en2:
+      - type: psalmody
+        antiphon: Let my cry * come to you, O God.
+        psalms:
+        - number: '101'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '102'
+      - type: psalmody
+        antiphon: Bless * the Lord, O my soul.
+        psalms:
+        - number: '103'
+          start: '1'
+          end: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '103'
+          start: '25'
+          end: '35'
+      - type: psalmody
+        antiphon: Let the heart * of those who seek the Lord rejoice.
+        psalms:
+        - number: '104'
+          start: '1'
+          end: '22'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '104'
+          start: '23'
+          end: '45'
+      - type: versicle
+        text: Seek the Lord and be strengthened.
+      - type: response
+        text: Seek his face always.
+      - type: psalmody
+        antiphon: Visit us, * O Lord, with your salvation.
+        psalms:
+        - number: '105'
+          start: '1'
+          end: '31'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '105'
+          start: '32'
+          end: '48'
+      - type: psalmody
+        antiphon: From my necessities * rescue me, O Lord.
+        psalms:
+        - number: '106'
+          start: '1'
+          end: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '106'
+          start: '25'
+          end: '43'
+      - type: psalmody
+        antiphon: I will confess * to the Lord with my whole mouth.
+        psalms:
+        - number: '107'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '108'
   psalmody.const-ntes-est-te-vid-bitis-aux-lium-d-mini-supe-a8be5a3238:
     role: psalmody
     content:
@@ -3321,6 +5027,14 @@ texts:
           Veni, Dómine, * et noli tardáre: reláxa facínora plebi tuæ Israël.
           Deus a Líbano véniet, * et splendor eius sicut lumen erit.
           Ego autem * ad Dóminum aspíciam, et exspectábo Deum Salvatórem meum.
+      en2:
+      - type: text
+        text: |-
+          Stand firm, * and you shall see the help of the Lord upon you.
+          To you, O Lord, * I have lifted up my soul: come, and deliver me, O Lord, in you I have taken refuge.
+          Come, O Lord, * and delay not: forgive the transgressions of your people Israel.
+          God will come from Lebanon, * and his splendor shall be as the light.
+          But I * will look to the Lord, and will wait for God my Savior.
   psalmody.cor-contr-tum-et-humili-tum-deus-non-desp-cies-c1d76ea317:
     role: psalmody
     content:
@@ -3364,6 +5078,27 @@ texts:
         - number: '225'
       - type: psalmody
         antiphon: Lauda * Deum tuum, Sion, qui annúntiat iudícia sua Israël.
+        psalms:
+        - number: '147'
+      en2:
+      - type: psalmody
+        antiphon: A contrite * and humble heart, O God, you will not despise.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: For your name's sake, * O Lord, you will give me life in your justice.
+        psalms:
+        - number: '142'
+      - type: psalmody
+        antiphon: O God, turning back * you will give us life, and your people will rejoice in you.
+        psalms:
+        - number: '84'
+      - type: psalmody
+        antiphon: When you are angry, * O Lord, you will remember mercy.
+        psalms:
+        - number: '225'
+      - type: psalmody
+        antiphon: Praise * your God, O Zion, who declares his judgments to Israel.
         psalms:
         - number: '147'
   psalmody.d-mine-deus-in-adiut-rium-meum-int-nde-8b7425d821:
@@ -3439,6 +5174,41 @@ texts:
         text: Gaudébunt lábia mea cum cantávero tibi.
       - type: response
         text: Et ánima mea, quam redemísti.
+      en2:
+      - type: psalmody
+        antiphon: O Lord God, * come to my assistance.
+        psalms:
+        - number: '68'
+        - number: '69'
+      - type: psalmody
+        antiphon: Be to me, * O Lord, a protecting God.
+        psalms:
+        - number: '70'
+        - number: '71'
+      - type: psalmody
+        antiphon: You have freed the rod * of your inheritance.
+        psalms:
+        - number: '72'
+        - number: '73'
+      - type: psalmody
+        antiphon: And we will call upon * your name, O Lord.
+        psalms:
+        - number: '74'
+        - number: '75'
+      - type: psalmody
+        antiphon: You are God * who works wonders.
+        psalms:
+        - number: '76'
+        - number: '77'
+      - type: psalmody
+        antiphon: Be merciful * to my sins, O Lord.
+        psalms:
+        - number: '78'
+        - number: '79'
+      - type: versicle
+        text: My lips will rejoice when I sing to you.
+      - type: response
+        text: And my soul, which you have redeemed.
   psalmody.d-mine-in-virt-te-tua-l-t-bitur-rex-1d178a10af:
     role: psalmody
     content:
@@ -3576,6 +5346,73 @@ texts:
         text: Exaltáre Dómine in virtúte tua.
       - type: response
         text: Cantábimus et psallémus virtútes tuas.
+      en2:
+      - type: psalmody
+        antiphon: O Lord, * in your power the king shall rejoice.
+        psalms:
+        - number: '20'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '21'
+      - type: psalmody
+        antiphon: 'The Lord governs me * and I shall lack nothing: in a place of pasture he has set me down.'
+        psalms:
+        - number: '22'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '23'
+      - type: psalmody
+        antiphon: My eyes * are ever toward the Lord.
+        psalms:
+        - number: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '25'
+      - type: versicle
+        text: I remembered your name, O Lord, in the night.
+      - type: response
+        text: And I have kept your law.
+      - type: psalmody
+        antiphon: The Lord * is the defender of my life.
+        psalms:
+        - number: '26'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '27'
+      - type: psalmody
+        antiphon: Adore * the Lord in his holy court.
+        psalms:
+        - number: '28'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '29'
+      - type: psalmody
+        antiphon: In your justice * deliver me, O Lord.
+        psalms:
+        - number: '30'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '31'
+      - type: versicle
+        text: At midnight I arose to give you praise.
+      - type: response
+        text: Above the justice of your justification.
+      - type: psalmody
+        antiphon: Alleluia, * alleluia, alleluia
+        psalms:
+        - number: '266'
+        - number: '267'
+        - number: '268'
+      - type: versicle
+        text: Be exalted, O Lord, in your power.
+      - type: response
+        text: We will sing and proclaim your mighty deeds.
   psalmody.d-mine-prob-sti-me-et-cognov-sti-me-d38a1a8ac8:
     role: psalmody
     content:
@@ -3627,6 +5464,31 @@ texts:
         - number: '140'
       - type: psalmody
         antiphon: Educ de custódia * ánimam meam, Dómine, ad confiténdum nómini tuo.
+        psalms:
+        - number: '141'
+      en2:
+      - type: psalmody
+        antiphon: O Lord, * you have searched me and known me.
+        psalms:
+        - number: '138'
+          start: '1'
+          end: '13'
+      - type: psalmody
+        antiphon: Wonderful are your works, * O Lord, and my soul knows it well.
+        psalms:
+        - number: '138'
+          start: '14'
+          end: '24'
+      - type: psalmody
+        antiphon: Do not forsake me, * O Lord, the strength of my salvation.
+        psalms:
+        - number: '139'
+      - type: psalmody
+        antiphon: O Lord, * I have cried to you, hear me.
+        psalms:
+        - number: '140'
+      - type: psalmody
+        antiphon: Lead my soul * out of prison, O Lord, to confess your name.
         psalms:
         - number: '141'
   psalmody.d-minus-de-c-lo-prosp-xit-super-f-lios-h-minum-07c79c1443:
@@ -3742,6 +5604,61 @@ texts:
         text: Psállite Dómino sancti eius.
       - type: response
         text: Et confitémini memóriæ sanctitátis eius.
+      en2:
+      - type: psalmody
+        antiphon: The Lord * has looked down from heaven upon the children of men.
+        psalms:
+        - number: '13'
+      - type: psalmody
+        antiphon: He who does justice * shall rest on your holy mountain, O Lord.
+        psalms:
+        - number: '14'
+      - type: psalmody
+        antiphon: Incline, O Lord, * your ear to me, and hear my words.
+        psalms:
+        - number: '16'
+      - type: versicle
+        text: Show forth, O Lord, your mercies.
+      - type: response
+        text: You who save those who trust in you.
+      - type: psalmody
+        antiphon: I will love you, * O Lord, my strength.
+        psalms:
+        - number: '17'
+          start: '2'
+          end: 16b
+      - type: psalmody
+        antiphon: The Lord will repay me * according to my justice.
+        psalms:
+        - number: '17'
+          start: '17'
+          end: '35'
+      - type: psalmody
+        antiphon: The Lord lives, * and blessed be God my salvation.
+        psalms:
+        - number: '17'
+          start: 36a
+          end: '51'
+      - type: versicle
+        text: I will confess you among the nations, O Lord.
+      - type: response
+        text: And to your name I will sing a psalm.
+      - type: psalmody
+        antiphon: May the Lord hear you * in the day of tribulation.
+        psalms:
+        - number: '19'
+      - type: psalmody
+        antiphon: O Lord, * in your power the king shall rejoice.
+        psalms:
+        - number: '20'
+      - type: psalmody
+        antiphon: I will exalt you, * O Lord, for you have upheld me.
+        psalms:
+        - number: '29'
+      - type: versicle
+        text: Sing to the Lord, you his holy ones.
+      - type: response
+        text: And give thanks at the remembrance of his holiness.
   psalmody.d-minus-def-nsor-vit-me-fb7141bd16:
     role: psalmody
     content:
@@ -3815,6 +5732,41 @@ texts:
         text: Dómine in cælo misericórdia tua.
       - type: response
         text: Et véritas tua usque ad nubes.
+      en2:
+      - type: psalmody
+        antiphon: The Lord is the defender * of my life.
+        psalms:
+        - number: '26'
+        - number: '27'
+      - type: psalmody
+        antiphon: Adore * the Lord in his holy court.
+        psalms:
+        - number: '28'
+        - number: '29'
+      - type: psalmody
+        antiphon: In your justice * deliver me, O Lord.
+        psalms:
+        - number: '30'
+        - number: '31'
+      - type: psalmody
+        antiphon: Praise is fitting * for the upright.
+        psalms:
+        - number: '32'
+        - number: '33'
+      - type: psalmody
+        antiphon: Fight against * those who fight against me.
+        psalms:
+        - number: '34'
+        - number: '35'
+      - type: psalmody
+        antiphon: Reveal * your way to the Lord.
+        psalms:
+        - number: '36'
+        - number: '37'
+      - type: versicle
+        text: O Lord, your mercy is in heaven.
+      - type: response
+        text: And your truth reaches to the clouds.
   psalmody.d-minus-regn-vit-exs-ltet-terra-67722242ff:
     role: psalmody
     content:
@@ -3858,6 +5810,27 @@ texts:
         - number: '213'
       - type: psalmody
         antiphon: Laudábo Deum meum * in vita mea.
+        psalms:
+        - number: '145'
+      en2:
+      - type: psalmody
+        antiphon: The Lord has reigned, * let the earth rejoice.
+        psalms:
+        - number: '96'
+      - type: psalmody
+        antiphon: A hymn is fitting for you, * O God, in Zion.
+        psalms:
+        - number: '64'
+      - type: psalmody
+        antiphon: To you, O Lord, I will sing a psalm, * and I will understand in the immaculate way.
+        psalms:
+        - number: '100'
+      - type: psalmody
+        antiphon: O Lord, you are great, * and glorious in your power.
+        psalms:
+        - number: '213'
+      - type: psalmody
+        antiphon: I will praise my God * all my life.
         psalms:
         - number: '145'
   psalmody.da-nobis-d-mine-aux-lium-de-tribulati-ne-4def8fa150:
@@ -3918,6 +5891,67 @@ texts:
         - number: '70'
       - type: psalmody
         antiphon: Tenuísti, * Dómine, manum déxteram meam.
+        psalms:
+        - number: '71'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '72'
+      en2:
+      - type: psalmody
+        antiphon: Grant us, O Lord, * help from tribulation.
+        psalms:
+        - number: '59'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '60'
+      - type: psalmody
+        antiphon: Bless, * O nations, our God.
+        psalms:
+        - number: '61'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '65'
+      - type: psalmody
+        antiphon: In the assemblies, * bless the Lord.
+        psalms:
+        - number: '67'
+          start: '2'
+          end: '19'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '67'
+          start: '20'
+          end: '36'
+      - type: versicle
+        text: Command, O God, your power.
+      - type: response
+        text: Confirm this, O God, which you have wrought in us.
+      - type: psalmody
+        antiphon: Seek the Lord * and your soul shall live.
+        psalms:
+        - number: '68'
+          start: '2'
+          end: '16'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '68'
+          start: '17'
+          end: '37'
+      - type: psalmody
+        antiphon: Be to me, * O Lord, a protecting God.
+        psalms:
+        - number: '69'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '70'
+      - type: psalmody
+        antiphon: You have held * my right hand, O Lord.
         psalms:
         - number: '71'
       - type: psalmody
@@ -4049,6 +6083,67 @@ texts:
         antiphon: ''
         psalms:
         - number: '72'
+      en2:
+      - type: psalmody
+        antiphon: Grant us, O Lord, * help from tribulation.
+        psalms:
+        - number: '59'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '60'
+      - type: psalmody
+        antiphon: Bless, * O nations, our God.
+        psalms:
+        - number: '61'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '65'
+      - type: psalmody
+        antiphon: In the assemblies, * bless the Lord.
+        psalms:
+        - number: '67'
+          start: '2'
+          end: '19'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '67'
+          start: '20'
+          end: '36'
+      - type: versicle
+        text: Bless our God, O nations.
+      - type: response
+        text: And make the voice of his praise to be heard.
+      - type: psalmody
+        antiphon: Seek the Lord * and your soul shall live.
+        psalms:
+        - number: '68'
+          start: '2'
+          end: '16'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '68'
+          start: '17'
+          end: '37'
+      - type: psalmody
+        antiphon: O Lord * God, come to my assistance.
+        psalms:
+        - number: '69'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '70'
+      - type: psalmody
+        antiphon: How good * is God to Israel.
+        psalms:
+        - number: '71'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '72'
   psalmody.de-ore-le-nis-l-bera-me-d-mine-d1cfe9bb37:
     role: psalmody
     content:
@@ -4062,6 +6157,11 @@ texts:
         text: De ore leónis líbera me, Dómine.
       - type: response
         text: Et a córnibus unicórnium humilitátem meam.
+      en2:
+      - type: versicle
+        text: From the mouth of the lion deliver me, O Lord.
+      - type: response
+        text: And from the horns of the unicorns my lowliness.
   psalmody.de-sion-v-niet-d-minus-omn-potens-ut-salvum-f-ci-735824973d:
     role: psalmody
     content:
@@ -4081,6 +6181,14 @@ texts:
           De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen eius.
           Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum.
           Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos.
+      en2:
+      - type: text
+        text: |-
+          The Lord Almighty will come from Zion * to save his people.
+          Turn to us, * O Lord, a little while, and do not delay in coming to your servants.
+          From Zion * will come the Lord who is to reign, Emmanuel is his great name.
+          Behold my God, * and I will honor him: the God of my father, and I will exalt him.
+          The Lord * is our lawgiver, the Lord our King, he himself will come and save us.
   psalmody.dele-d-mine-iniquit-tem-meam-77d865a09a:
     role: psalmody
     content:
@@ -4132,6 +6240,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Blot out, O Lord, * my iniquity.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: The salvation * of my face, and my God.
+        psalms:
+        - number: '42'
+      - type: psalmody
+        antiphon: For you I watch * from the dawn of light, O God.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: All the days * of our life save us, O Lord.
+        psalms:
+        - number: '222'
+      - type: psalmody
+        antiphon: All his Angels, * praise the Lord from the heavens.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.dele-iniquit-tem-meam-d-mine-sec-ndum-multit-din-a32c39e496:
     role: psalmody
     content:
@@ -4177,6 +6309,27 @@ texts:
         antiphon: Laudáte * Dóminum quia benígnus est, et in servis suis deprecábitur.
         psalms:
         - number: '134'
+      en2:
+      - type: psalmody
+        antiphon: Blot out my iniquity, * O Lord, according to the multitude of your mercies.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: Judge my cause, * O God, against a nation that is not holy.
+        psalms:
+        - number: '42'
+      - type: psalmody
+        antiphon: May God have mercy * on us and bless us.
+        psalms:
+        - number: '66'
+      - type: psalmody
+        antiphon: You will chastise me, O Lord, * and you will give me life.
+        psalms:
+        - number: '222'
+      - type: psalmody
+        antiphon: Praise * the Lord, for he is good, and he will be entreated on behalf of his servants.
+        psalms:
+        - number: '134'
   psalmody.diff-sa-est-gr-tia-in-l-biis-tuis-a45623f7dc:
     role: psalmody
     content:
@@ -4190,6 +6343,11 @@ texts:
         text: Diffúsa est grátia in lábiis tuis.
       - type: response
         text: Proptérea benedíxit te Deus in ætérnum.
+      en2:
+      - type: versicle
+        text: Grace is poured out upon your lips.
+      - type: response
+        text: Therefore God has blessed you for ever.
   psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-449cd68837:
     role: psalmody
     content:
@@ -4235,6 +6393,27 @@ texts:
         antiphon: Nos qui vívimus * benedícimus Dómino.
         psalms:
         - number: '113'
+      en2:
+      - type: psalmody
+        antiphon: 'The Lord said * to my Lord: Sit at my right hand.'
+        psalms:
+        - number: '109'
+      - type: psalmody
+        antiphon: 'Faithful * are all his commandments: confirmed for ever and ever.'
+        psalms:
+        - number: '110'
+      - type: psalmody
+        antiphon: In his commandments * he greatly delights.
+        psalms:
+        - number: '111'
+      - type: psalmody
+        antiphon: Blessed be the name of the Lord * for ever.
+        psalms:
+        - number: '112'
+      - type: psalmody
+        antiphon: We who live * bless the Lord.
+        psalms:
+        - number: '113'
   psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-8140184c6c:
     role: psalmody
     content:
@@ -4253,6 +6432,23 @@ texts:
         - number: '111'
       - type: psalmody
         antiphon: Sit nomen Dómini * benedíctum in sæcula
+        psalms:
+        - number: '112'
+      en2:
+      - type: psalmody
+        antiphon: 'The Lord said * to my Lord: Sit at my right hand.'
+        psalms:
+        - number: '109'
+      - type: psalmody
+        antiphon: 'Faithful * are all his commandments: confirmed for ever and ever.'
+        psalms:
+        - number: '110'
+      - type: psalmody
+        antiphon: In his commandments * he greatly delights.
+        psalms:
+        - number: '111'
+      - type: psalmody
+        antiphon: Blessed be the name of the Lord * for ever.
         psalms:
         - number: '112'
   psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-8ec64b5bf6:
@@ -4290,6 +6486,23 @@ texts:
         - number: '111'
       - type: psalmody
         antiphon: Sit nomen Dómini * benedíctum in sæcula
+        psalms:
+        - number: '112'
+      en2:
+      - type: psalmody
+        antiphon: 'The Lord said * to my Lord: Sit at my right hand.'
+        psalms:
+        - number: '109'
+      - type: psalmody
+        antiphon: 'Faithful * are all his commandments: confirmed for ever and ever.'
+        psalms:
+        - number: '110'
+      - type: psalmody
+        antiphon: In his commandments * he greatly delights.
+        psalms:
+        - number: '111'
+      - type: psalmody
+        antiphon: Blessed be the name of the Lord * for ever.
         psalms:
         - number: '112'
   psalmody.dixit-d-minus-d-mino-meo-sede-a-dextris-meis-fc28aaf14d:
@@ -4335,6 +6548,27 @@ texts:
         - number: '112'
       - type: psalmody
         antiphon: 'Deus autem noster * in cælo: ómnia quæcúmque vóluit, fecit.'
+        psalms:
+        - number: '113'
+      en2:
+      - type: psalmody
+        antiphon: 'The Lord said * to my Lord: Sit at my right hand.'
+        psalms:
+        - number: '109'
+      - type: psalmody
+        antiphon: 'Great are the works of the Lord: * sought out according to all his purposes.'
+        psalms:
+        - number: '110'
+      - type: psalmody
+        antiphon: He who fears the Lord * greatly delights in his commandments.
+        psalms:
+        - number: '111'
+      - type: psalmody
+        antiphon: Blessed be the name of the Lord * for ever.
+        psalms:
+        - number: '112'
+      - type: psalmody
+        antiphon: 'But our God * is in heaven: all things whatsoever he willed, he has done.'
         psalms:
         - number: '113'
   psalmody.ecce-quam-bonum-et-quam-iuc-ndum-habit-re-fratre-9db10f6059:
@@ -4390,6 +6624,31 @@ texts:
         antiphon: Confitébor * nómini tuo, Dómine, super misericórdia et veritáte tua.
         psalms:
         - number: '137'
+      en2:
+      - type: psalmody
+        antiphon: Behold how good * and how pleasant it is for brethren to dwell together in unity.
+        psalms:
+        - number: '132'
+      - type: psalmody
+        antiphon: Give thanks to the Lord, * for his mercy endures for ever.
+        psalms:
+        - number: '135'
+          start: '1'
+          end: '9'
+      - type: psalmody
+        antiphon: Give thanks to the Lord, * for he was mindful of us in our lowliness.
+        psalms:
+        - number: '135'
+          start: '10'
+          end: '26'
+      - type: psalmody
+        antiphon: Let my tongue cleave * to the roof of my mouth, if I do not remember you, O Jerusalem.
+        psalms:
+        - number: '136'
+      - type: psalmody
+        antiphon: I will give thanks * to your name, O Lord, for your mercy and for your truth.
+        psalms:
+        - number: '137'
   psalmody.ecce-v-niet-d-minus-princeps-regum-terr-be-ti-qu-828df81a42:
     role: psalmody
     content:
@@ -4409,6 +6668,14 @@ texts:
           Ecce iam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.
           Hauriétis aquas * in gáudio de fóntibus Salvatóris.
           Egrediétur * Dóminus de loco sancto suo: véniet ut salvet pópulum suum.
+      en2:
+      - type: text
+        text: |-
+          Behold, the Lord * shall come, the prince of the kings of the earth: blessed are those who are prepared to go out to meet him.
+          When the Son of Man comes, * do you think he will find faith on earth?
+          Behold, now comes * the fullness of time, in which God sent his Son into the lands.
+          You shall draw waters * with joy from the fountains of the Savior.
+          The Lord shall go forth * from his holy place: he shall come to save his people.
   psalmody.egredi-tur-d-minus-de-loco-sancto-suo-266236f87b:
     role: psalmody
     content:
@@ -4422,6 +6689,11 @@ texts:
         text: Egrediétur Dóminus de loco sancto suo.
       - type: response
         text: Véniet ut salvet pópulum suum.
+      en2:
+      - type: versicle
+        text: The Lord shall go forth from his holy place.
+      - type: response
+        text: He shall come to save his people.
   psalmody.egredi-tur-d-minus-de-loco-sancto-suo-3f56fdc97a:
     role: psalmody
     content:
@@ -4435,6 +6707,11 @@ texts:
         text: Egrediétur Dóminus de loco sancto suo.
       - type: response
         text: Véniet ut salvet pópulum suum.
+      en2:
+      - type: versicle
+        text: The Lord shall go forth from his holy place.
+      - type: response
+        text: He shall come to save his people.
   psalmody.em-tte-agnum-d-mine-dominat-rem-terr-ba22649fd4:
     role: psalmody
     content:
@@ -4448,6 +6725,11 @@ texts:
         text: Emítte Agnum, Dómine, Dominatórem terræ.
       - type: response
         text: De Petra desérti ad montem fíliæ Sion.
+      en2:
+      - type: versicle
+        text: Send forth the Lamb, O Lord, the Ruler of the earth.
+      - type: response
+        text: From the Rock of the desert to the mount of the daughter of Sion.
   psalmody.et-omnis-mansuet-dinis-eius-246e335726:
     role: psalmody
     content:
@@ -4493,6 +6775,27 @@ texts:
         antiphon: Hymnum cantáte * nobis de cánticis Sion.
         psalms:
         - number: '136'
+      en2:
+      - type: psalmody
+        antiphon: And of all * his meekness.
+        psalms:
+        - number: '131'
+      - type: psalmody
+        antiphon: Behold * how good and how pleasant it is for brethren to dwell together in unity.
+        psalms:
+        - number: '132'
+      - type: psalmody
+        antiphon: All things * whatsoever the Lord willed, he has done.
+        psalms:
+        - number: '134'
+      - type: psalmody
+        antiphon: For his mercy * endures for ever.
+        psalms:
+        - number: '135'
+      - type: psalmody
+        antiphon: Sing us a hymn * from the canticles of Sion.
+        psalms:
+        - number: '136'
   psalmody.ex-sion-sp-cies-dec-ris-eius-bc0e00eab3:
     role: psalmody
     content:
@@ -4506,6 +6809,11 @@ texts:
         text: Ex Sion spécies decóris eius.
       - type: response
         text: Deus noster maniféste véniet.
+      en2:
+      - type: versicle
+        text: Out of Sion, the perfection of his beauty.
+      - type: response
+        text: Our God shall come manifestly.
   psalmody.exalt-te-d-minum-deum-nostrum-et-ador-te-in-mont-80638f0fd7:
     role: psalmody
     content:
@@ -4549,6 +6857,27 @@ texts:
         - number: '215'
       - type: psalmody
         antiphon: Lauda, * Ierúsalem, Dóminum.
+        psalms:
+        - number: '147'
+      en2:
+      - type: psalmody
+        antiphon: Exalt * the Lord our God, and adore at his holy mountain.
+        psalms:
+        - number: '98'
+      - type: psalmody
+        antiphon: Deliver me * from my enemies, O Lord; to you have I fled.
+        psalms:
+        - number: '142'
+      - type: psalmody
+        antiphon: 'You have blessed, * O Lord, your land: you have forgiven the iniquity of your people.'
+        psalms:
+        - number: '84'
+      - type: psalmody
+        antiphon: In the Lord shall be justified * and praised all the seed of Israel.
+        psalms:
+        - number: '215'
+      - type: psalmody
+        antiphon: Praise, * O Jerusalem, the Lord.
         psalms:
         - number: '147'
   psalmody.exp-gna-d-mine-impugn-ntes-me-4aaf7a7bff:
@@ -4684,6 +7013,71 @@ texts:
         text: Deus, ne síleas a me, remítte mihi.
       - type: response
         text: Quóniam íncola ego sum apud te et peregrínus.
+      en2:
+      - type: psalmody
+        antiphon: Fight, O Lord, * against those who fight against me.
+        psalms:
+        - number: '34'
+          start: '1'
+          end: '10'
+      - type: psalmody
+        antiphon: Rescue my soul * from their evil deeds, O Lord.
+        psalms:
+        - number: '34'
+          start: '11'
+          end: '17'
+      - type: psalmody
+        antiphon: Arise, O Lord, * and attend to my judgment.
+        psalms:
+        - number: '34'
+          start: '18'
+          end: '28'
+      - type: versicle
+        text: My tongue shall meditate on your justice.
+      - type: response
+        text: All the day long, your praise, O Lord.
+      - type: psalmody
+        antiphon: Do not vie * with him who prospers and commits iniquity.
+        psalms:
+        - number: '36'
+          start: '1'
+          end: '15'
+      - type: psalmody
+        antiphon: The arms of sinners * shall be broken, but the Lord strengthens the just.
+        psalms:
+        - number: '36'
+          start: '16'
+          end: '29'
+      - type: psalmody
+        antiphon: Keep innocence * and behold equity.
+        psalms:
+        - number: '36'
+          start: '30'
+          end: '40'
+      - type: versicle
+        text: Wait for the Lord, and keep his way.
+      - type: response
+        text: He shall exalt you, that you may take the land as your inheritance.
+      - type: psalmody
+        antiphon: Do not rebuke me, O Lord, * in your anger.
+        psalms:
+        - number: '37'
+          start: '2'
+          end: '11'
+      - type: psalmody
+        antiphon: Be intent upon my help, * O Lord, the strength of my salvation.
+        psalms:
+        - number: '37'
+          start: '12'
+          end: '23'
+      - type: psalmody
+        antiphon: Remove, O Lord, * your plagues from me.
+        psalms:
+        - number: '38'
+      - type: versicle
+        text: O God, do not be silent toward me; forgive me.
+      - type: response
+        text: For I am a sojourner with you and a pilgrim.
   psalmody.exsult-te-deo-adiut-ri-nostro-5a86727c4a:
     role: psalmody
     content:
@@ -4757,6 +7151,41 @@ texts:
         text: Intret orátio mea in conspéctu tuo, Dómine.
       - type: response
         text: Inclína aurem tuam ad precem meam.
+      en2:
+      - type: psalmody
+        antiphon: Rejoice to God * our helper.
+        psalms:
+        - number: '80'
+        - number: '81'
+      - type: psalmody
+        antiphon: You alone * are the Most High above all the earth.
+        psalms:
+        - number: '82'
+        - number: '83'
+      - type: psalmody
+        antiphon: You have blessed * O Lord your land.
+        psalms:
+        - number: '84'
+        - number: '85'
+      - type: psalmody
+        antiphon: Its foundations * are in the holy mountains.
+        psalms:
+        - number: '86'
+        - number: '87'
+      - type: psalmody
+        antiphon: 'Blessed be the Lord * for ever: so be it, so be it.'
+        psalms:
+        - number: '88'
+        - number: '93'
+      - type: psalmody
+        antiphon: Sing to the Lord * and bless his name.
+        psalms:
+        - number: '95'
+        - number: '96'
+      - type: versicle
+        text: Let my prayer enter into your sight, O Lord.
+      - type: response
+        text: Incline your ear to my supplication.
   psalmody.f-lii-sion-exs-ltent-in-rege-suo-367b6b97f2:
     role: psalmody
     content:
@@ -4802,6 +7231,27 @@ texts:
         antiphon: Omnis spíritus * laudet Dóminum.
         psalms:
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Let the children of Sion * exult in their King.
+        psalms:
+        - number: '149'
+      - type: psalmody
+        antiphon: How great * are your works, O Lord.
+        psalms:
+        - number: '91'
+      - type: psalmody
+        antiphon: The just man shall rejoice * in the Lord and shall hope in him.
+        psalms:
+        - number: '63'
+      - type: psalmody
+        antiphon: Show us, O Lord, * the light of your mercies.
+        psalms:
+        - number: '216'
+      - type: psalmody
+        antiphon: Let every spirit * praise the Lord.
+        psalms:
+        - number: '150'
   psalmody.gav-si-sunt-disc-puli-allel-ia-8145020547:
     role: psalmody
     content:
@@ -4815,6 +7265,11 @@ texts:
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
+      en2:
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
   psalmody.gav-si-sunt-disc-puli-allel-ia-e49a643d90:
     role: psalmody
     content:
@@ -4828,6 +7283,11 @@ texts:
         text: Gavísi sunt discípuli, allelúia.
       - type: response
         text: Viso Dómino, allelúia.
+      en2:
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
   psalmody.h-die-sci-tis-quia-v-niet-d-minus-d3bf17437c:
     role: psalmody
     content:
@@ -4841,6 +7301,11 @@ texts:
         text: Hódie sciétis quia véniet Dóminus.
       - type: response
         text: Et mane vidébitis glóriam eius.
+      en2:
+      - type: versicle
+        text: Today you shall know that the Lord will come.
+      - type: response
+        text: And in the morning you shall see his glory.
   psalmody.iesum-qui-crucif-xus-est-qu-ritis-allel-ia-non-e-adf4c32f17:
     role: psalmody
     content:
@@ -4881,6 +7346,27 @@ texts:
       - type: text
         text: |-
           Veníte * et vidéte locum ubi pósitus erat Dóminus, allelúia, allelúia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
+      en2:
+      - type: text
+        text: |-
+          You seek Jesus who was crucified, * alleluia; he is not here: for he is risen, just as he told you, alleluia.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
+      - type: versicle
+        text: The disciples rejoiced, alleluia.
+      - type: response
+        text: Having seen the Lord, alleluia.
+      - type: text
+        text: |-
+          Come * and see the place where the Lord was laid, alleluia, alleluia.
           ;;
           ;;
           ;;
@@ -4929,6 +7415,27 @@ texts:
         - number: '140'
       - type: psalmody
         antiphon: Pórtio mea * Dómine sit in terra vivéntium.
+        psalms:
+        - number: '141'
+      en2:
+      - type: psalmody
+        antiphon: In the sight * of the Angels I will sing psalms to you, my God.
+        psalms:
+        - number: '137'
+      - type: psalmody
+        antiphon: O Lord, * you have searched me and known me.
+        psalms:
+        - number: '138'
+      - type: psalmody
+        antiphon: From the unjust man * deliver me, O Lord.
+        psalms:
+        - number: '139'
+      - type: psalmody
+        antiphon: O Lord, * I have cried to you; hear me.
+        psalms:
+        - number: '140'
+      - type: psalmody
+        antiphon: My portion, * O Lord, let it be in the land of the living.
         psalms:
         - number: '141'
   psalmody.in-deo-salut-re-meum-et-gl-ria-mea-et-spes-mea-i-d7aec6aa0f:
@@ -5064,6 +7571,71 @@ texts:
         text: Laudábo nomen Dei cum cántico.
       - type: response
         text: Et magnificábo eum in laude.
+      en2:
+      - type: psalmody
+        antiphon: 'In God is my salvation * and my glory: and my hope is in God.'
+        psalms:
+        - number: '61'
+      - type: psalmody
+        antiphon: Behold the works of the Lord, * and make the voice of his praise be heard.
+        psalms:
+        - number: '65'
+          start: '1'
+          end: '12'
+      - type: psalmody
+        antiphon: Hear, all * you who fear God, how much he has done for my soul.
+        psalms:
+        - number: '65'
+          start: '13'
+          end: '20'
+      - type: versicle
+        text: The Lord has not taken away my prayer.
+      - type: response
+        text: Nor his mercy from me.
+      - type: psalmody
+        antiphon: Let God arise, * and let his enemies be scattered.
+        psalms:
+        - number: '67'
+          start: '2'
+          end: '11'
+      - type: psalmody
+        antiphon: 'Our God, * the God of salvation: and to the Lord belong the escapes from death.'
+        psalms:
+        - number: '67'
+          start: '12'
+          end: '24'
+      - type: psalmody
+        antiphon: In the assemblies * bless the Lord God.
+        psalms:
+        - number: '67'
+          start: '25'
+          end: '36'
+      - type: versicle
+        text: God is wondrous in his holy ones.
+      - type: response
+        text: The God of Israel will give power to his people.
+      - type: psalmody
+        antiphon: Save me, * O God, for the waters have entered even to my soul.
+        psalms:
+        - number: '68'
+          start: '2'
+          end: '13'
+      - type: psalmody
+        antiphon: Because of my enemies * deliver me, O Lord.
+        psalms:
+        - number: '68'
+          start: '14'
+          end: '29'
+      - type: psalmody
+        antiphon: Seek the Lord, * and your soul shall live.
+        psalms:
+        - number: '68'
+          start: '30'
+          end: '37'
+      - type: versicle
+        text: I will praise the name of God with a canticle.
+      - type: response
+        text: And I will magnify him with praise.
   psalmody.in-domum-d-mini-l-t-ntes-bimus-3a4b279b6e:
     role: psalmody
     content:
@@ -5109,6 +7681,27 @@ texts:
         antiphon: Facti sumus * sicut consoláti.
         psalms:
         - number: '125'
+      en2:
+      - type: psalmody
+        antiphon: Into the house of the Lord * we shall go rejoicing.
+        psalms:
+        - number: '121'
+      - type: psalmody
+        antiphon: You who dwell * in the heavens, have mercy on us.
+        psalms:
+        - number: '122'
+      - type: psalmody
+        antiphon: Our * help is in the name of the Lord.
+        psalms:
+        - number: '123'
+      - type: psalmody
+        antiphon: Do good, * O Lord, to those who are good, and to the upright of heart.
+        psalms:
+        - number: '124'
+      - type: psalmody
+        antiphon: We have become * as those who are consoled.
+        psalms:
+        - number: '125'
   psalmody.in-princ-pio-et-ante-s-cula-deus-erat-verbum-ips-546d262db7:
     role: psalmody
     content:
@@ -5128,6 +7721,27 @@ texts:
       - type: text
         text: |-
           Natus * est nobis hódie Salvátor, qui est Christus Dóminus, in civitáte David.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
+      en2:
+      - type: text
+        text: |-
+          In the beginning * and before the ages God was the Word: † he himself was born for us as the Savior of the world.
+          ;;
+          ;;
+          ;;
+          ;;
+          ;;
+      - type: versicle
+        text: Like a bridegroom.
+      - type: response
+        text: The Lord coming forth from his bridal chamber.
+      - type: text
+        text: |-
+          Born * for us today is the Savior, who is Christ the Lord, in the city of David.
           ;;
           ;;
           ;;
@@ -5215,6 +7829,87 @@ texts:
         - number: '98'
       - type: psalmody
         antiphon: Iubiláte * Deo omnis terra
+        psalms:
+        - number: '99'
+      en2:
+      - type: psalmody
+        antiphon: Incline, O Lord, * your ear, and hear me.
+        psalms:
+        - number: '85'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '86'
+      - type: psalmody
+        antiphon: Blessed * be the Lord for ever.
+        psalms:
+        - number: '88'
+          start: '2'
+          end: '19'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '88'
+          start: '20'
+          end: '53'
+      - type: psalmody
+        antiphon: Be exalted, * you who judge the earth.
+        psalms:
+        - number: '92'
+      - type: versicle
+        text: Blessed is the man whom you instruct, O Lord.
+      - type: response
+        text: And whom you teach out of your law.
+      - type: psalmody
+        antiphon: Incline, O Lord, * your ear, and hear me.
+        psalms:
+        - number: '85'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '86'
+      - type: psalmody
+        antiphon: Blessed * be the Lord for ever.
+        psalms:
+        - number: '88'
+          start: '2'
+          end: '19'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '88'
+          start: '20'
+          end: '53'
+      - type: psalmody
+        antiphon: Be exalted, * you who judge the earth.
+        psalms:
+        - number: 92!75
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '93'
+      - type: versicle
+        text: Let my prayer enter into your sight, O Lord.
+      - type: response
+        text: Incline your ear to my supplication.
+      - type: psalmody
+        antiphon: Sing to the Lord, * and bless his name.
+        psalms:
+        - number: '95'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '96'
+      - type: psalmody
+        antiphon: For the Lord * has done wondrous deeds.
+        psalms:
+        - number: '97'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '98'
+      - type: psalmody
+        antiphon: Shout with joy * to God, all the earth.
         psalms:
         - number: '99'
   psalmody.incl-na-d-mine-aurem-tuam-et-ex-udi-me-b496e7ad2e:
@@ -5336,6 +8031,64 @@ texts:
         antiphon: ''
         psalms:
         - number: '100'
+      en2:
+      - type: psalmody
+        antiphon: Incline, O Lord, * your ear, and hear me.
+        psalms:
+        - number: '85'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '86'
+      - type: psalmody
+        antiphon: Blessed * be the Lord for ever.
+        psalms:
+        - number: '88'
+          start: '2'
+          end: '19'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '88'
+          start: '20'
+          end: '53'
+      - type: psalmody
+        antiphon: Be exalted, * you who judge the earth.
+        psalms:
+        - number: 92!75
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '93'
+      - type: versicle
+        text: Let my prayer enter into your sight, O Lord.
+      - type: response
+        text: Incline your ear to my supplication.
+      - type: psalmody
+        antiphon: Sing to the Lord, * and bless his name.
+        psalms:
+        - number: '95'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '96'
+      - type: psalmody
+        antiphon: For the Lord * has done wondrous deeds.
+        psalms:
+        - number: '97'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '98'
+      - type: psalmody
+        antiphon: Shout with joy * to God, all the earth.
+        psalms:
+        - number: 99!Bonumest*confitériDómino
+        - number: '91'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '100'
   psalmody.inclin-vit-d-minus-aurem-suam-mihi-78843d5513:
     role: psalmody
     content:
@@ -5379,6 +8132,27 @@ texts:
         - number: '119'
       - type: psalmody
         antiphon: Unde véniet * auxílium mihi.
+        psalms:
+        - number: '120'
+      en2:
+      - type: psalmody
+        antiphon: The Lord * has inclined his ear to me.
+        psalms:
+        - number: '114'
+      - type: psalmody
+        antiphon: I believed, * and therefore I spoke.
+        psalms:
+        - number: '115'
+      - type: psalmody
+        antiphon: Praise * the Lord, all you nations.
+        psalms:
+        - number: '116'
+      - type: psalmody
+        antiphon: I cried out, * and he heard me.
+        psalms:
+        - number: '119'
+      - type: psalmody
+        antiphon: From where * will my help come.
         psalms:
         - number: '120'
   psalmody.inclin-vit-d-minus-aurem-suam-mihi-ad617d7aed:
@@ -5426,6 +8200,27 @@ texts:
         antiphon: Lætátus sum * in his, quæ dicta sunt mihi.
         psalms:
         - number: '121'
+      en2:
+      - type: psalmody
+        antiphon: The Lord * has inclined his ear to me.
+        psalms:
+        - number: '114'
+      - type: psalmody
+        antiphon: I will pay my vows * to the Lord in the presence of all his people.
+        psalms:
+        - number: '115'
+      - type: psalmody
+        antiphon: I cried out * and the Lord heard me.
+        psalms:
+        - number: '119'
+      - type: psalmody
+        antiphon: My help * is from the Lord, who made heaven and earth.
+        psalms:
+        - number: '120'
+      - type: psalmody
+        antiphon: I rejoiced * at the things that were said to me.
+        psalms:
+        - number: '121'
   psalmody.intu-mini-quam-sit-glori-sus-iste-qui-ingr-ditur-a7b1c755fc:
     role: psalmody
     content:
@@ -5445,6 +8240,14 @@ texts:
           Ego Dóminus * prope feci iustítiam meam, non elongábitur, et salus mea non morábitur.
           Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Dóminus Deus noster.
           Parátus esto * Israël, in occúrsum Dómini, quóniam venit.
+      en2:
+      - type: text
+        text: |-
+          Behold * how glorious is he who comes to save the peoples.
+          His dominion * shall be multiplied, and there shall be no end of peace.
+          I the Lord * have brought my justice near, it shall not be far off, and my salvation shall not delay.
+          May the word of the Lord be awaited * as rain: and may the Lord our God descend upon us as dew.
+          Be ready, * O Israel, to meet the Lord, for he is coming.
   psalmody.ipse-liber-vit-me-de-l-queo-ven-ntium-0f5d801835:
     role: psalmody
     content:
@@ -5458,6 +8261,11 @@ texts:
         text: Ipse liberávit me de láqueo venántium.
       - type: response
         text: Et a verbo áspero.
+      en2:
+      - type: versicle
+        text: He himself delivered me from the snare of hunters.
+      - type: response
+        text: And from the harsh word.
   psalmody.iubil-te-deo-in-voce-exsultati-nis-23bc82ef17:
     role: psalmody
     content:
@@ -5501,6 +8309,27 @@ texts:
         - number: '211'
       - type: psalmody
         antiphon: Laudáte * Dóminum omnes gentes.
+        psalms:
+        - number: '116'
+      en2:
+      - type: psalmody
+        antiphon: Shout with joy * to God in a voice of exultation.
+        psalms:
+        - number: '46'
+      - type: psalmody
+        antiphon: Attend * to the voice of my prayer, my King and my God.
+        psalms:
+        - number: '5'
+      - type: psalmody
+        antiphon: 'The God of majesty * has thundered: bring glory to his name.'
+        psalms:
+        - number: '28'
+      - type: psalmody
+        antiphon: We praise * your glorious name, our God.
+        psalms:
+        - number: '211'
+      - type: psalmody
+        antiphon: Praise * the Lord, all you nations.
         psalms:
         - number: '116'
   psalmody.iubil-te-in-consp-ctu-regis-d-mini-0929d1729b:
@@ -5548,6 +8377,27 @@ texts:
         antiphon: Deo nostro * iucúnda sit laudátio.
         psalms:
         - number: '146'
+      en2:
+      - type: psalmody
+        antiphon: Shout with joy * in the presence of the Lord our King.
+        psalms:
+        - number: '97'
+      - type: psalmody
+        antiphon: O Lord, * you have been made our refuge.
+        psalms:
+        - number: '89'
+      - type: psalmody
+        antiphon: O Lord, * your mercy is in heaven.
+        psalms:
+        - number: '35'
+      - type: psalmody
+        antiphon: My people, * says the Lord, shall be filled with my good things.
+        psalms:
+        - number: '214'
+      - type: psalmody
+        antiphon: Let praise of our God * be joyful.
+        psalms:
+        - number: '146'
   psalmody.laud-te-d-minum-omnes-gentes-be7466971c:
     role: psalmody
     content:
@@ -5573,6 +8423,32 @@ texts:
           end: '9'
       - type: psalmody
         antiphon: Custódit * Dóminus omnes diligéntes se.
+        psalms:
+        - number: '144'
+          start: '10'
+          end: '21'
+      en2:
+      - type: psalmody
+        antiphon: Praise * the Lord, all you nations.
+        psalms:
+        - number: '115'
+        - number: '116'
+      - type: psalmody
+        antiphon: We have blessed * you in the name of the Lord.
+        psalms:
+        - number: '128'
+      - type: psalmody
+        antiphon: For brothers * to dwell in unity.
+        psalms:
+        - number: '132'
+      - type: psalmody
+        antiphon: For ever * and unto ages of ages.
+        psalms:
+        - number: '144'
+          start: '1'
+          end: '9'
+      - type: psalmody
+        antiphon: The Lord * keeps all those who love him.
         psalms:
         - number: '144'
           start: '10'
@@ -5688,6 +8564,63 @@ texts:
         - number: '82'
       - type: psalmody
         antiphon: Benedixísti * Dómine terram tuam
+        psalms:
+        - number: '83'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '84'
+      en2:
+      - type: psalmody
+        antiphon: You freed the rod * of your inheritance.
+        psalms:
+        - number: '73'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '74'
+      - type: psalmody
+        antiphon: You are the God * who works wonders.
+        psalms:
+        - number: '76'
+      - type: psalmody
+        antiphon: Incline * your ear to the words of my mouth.
+        psalms:
+        - number: '77'
+          start: '1'
+          end: '35'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '77'
+          start: '36'
+          end: '72'
+      - type: psalmody
+        antiphon: Be merciful * to our sins, O Lord.
+        psalms:
+        - number: '78'
+      - type: versicle
+        text: O God, your way is in the holy place.
+      - type: response
+        text: Who is so great a God as our God.
+      - type: psalmody
+        antiphon: Rejoice to God * our helper.
+        psalms:
+        - number: '79'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '80'
+      - type: psalmody
+        antiphon: You alone * are most high above all the earth.
+        psalms:
+        - number: '81'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '82'
+      - type: psalmody
+        antiphon: You have blessed * O Lord your land.
         psalms:
         - number: '83'
       - type: psalmody
@@ -5831,6 +8764,73 @@ texts:
         text: Exáltent Dóminum in ecclésia plebis.
       - type: response
         text: Et in cáthedra seniórum laudent eum.
+      en2:
+      - type: psalmody
+        antiphon: The Lord our God has been mindful * for ever of his covenant.
+        psalms:
+        - number: '104'
+          start: '1'
+          end: '15'
+      - type: psalmody
+        antiphon: 'The Lord increased * his people: and strengthened them against their enemies.'
+        psalms:
+        - number: '104'
+          start: '16'
+          end: '27'
+      - type: psalmody
+        antiphon: God led out * his people in exultation, and his chosen ones in gladness.
+        psalms:
+        - number: '104'
+          start: '28'
+          end: '45'
+      - type: versicle
+        text: The Lord was mindful of his holy word.
+      - type: response
+        text: Which he spoke to Abraham, his servant.
+      - type: psalmody
+        antiphon: The Lord saved them * for his name's sake.
+        psalms:
+        - number: '105'
+          start: '1'
+          end: '15'
+      - type: psalmody
+        antiphon: They forgot God * who saved them.
+        psalms:
+        - number: '105'
+          start: '16'
+          end: '31'
+      - type: psalmody
+        antiphon: 'When they were in tribulation * the Lord saw them: and heard their prayer.'
+        psalms:
+        - number: '105'
+          start: '32'
+          end: '48'
+      - type: versicle
+        text: Save us, O Lord our God.
+      - type: response
+        text: That we may give thanks to your holy name.
+      - type: psalmody
+        antiphon: They cried out to the Lord * and he delivered them from their distress.
+        psalms:
+        - number: '106'
+          start: '1'
+          end: '14'
+      - type: psalmody
+        antiphon: They themselves saw * the works of God and his wonders.
+        psalms:
+        - number: '106'
+          start: '15'
+          end: '30'
+      - type: psalmody
+        antiphon: The righteous shall see * and rejoice, and shall understand the mercies of the Lord.
+        psalms:
+        - number: '106'
+          start: '31'
+          end: '43'
+      - type: versicle
+        text: Let them exalt the Lord in the assembly of the people.
+      - type: response
+        text: And praise him in the seat of the elders.
   psalmody.miser-re-mei-deus-897540fc71:
     role: psalmody
     content:
@@ -5882,6 +8882,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Have mercy * on me, O God.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: Understand * my cry, O Lord.
+        psalms:
+        - number: '5'
+      - type: psalmody
+        antiphon: O God, my God, * for you I watch at break of day.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: Your anger, O Lord, * has turned away, and you have comforted me.
+        psalms:
+        - number: '221'
+      - type: psalmody
+        antiphon: Praise * the Lord from the heavens.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.miser-re-mei-deus-sec-ndum-magnam-miseric-rdiam-330ccbaf0d:
     role: psalmody
     content:
@@ -5925,6 +8949,27 @@ texts:
         - number: '221'
       - type: psalmody
         antiphon: Laudáte * Dóminum quóniam confirmáta est super nos misericórdia eius.
+        psalms:
+        - number: '116'
+      en2:
+      - type: psalmody
+        antiphon: Have mercy * on me, O God, according to your great mercy.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: Lead me * in your justice, O Lord.
+        psalms:
+        - number: '5'
+      - type: psalmody
+        antiphon: The Lord will give strength * and will bless his people in peace.
+        psalms:
+        - number: '28'
+      - type: psalmody
+        antiphon: Your anger, O Lord, * has turned away, and you have comforted me.
+        psalms:
+        - number: '221'
+      - type: psalmody
+        antiphon: Praise * the Lord, for his mercy toward us has been confirmed.
         psalms:
         - number: '116'
   psalmody.miser-re-mihi-d-mine-et-ex-udi-orati-nem-meam-9f0298a37a:
@@ -6070,6 +9115,76 @@ texts:
         - number: '102'
           start: '13'
           end: '22'
+      en2:
+      - type: table_row
+        label: sunday
+        text: Have mercy * on me, O Lord, and hear my prayer.
+        psalms:
+        - number: '4'
+        - number: '90'
+        - number: '133'
+      - type: table_row
+        label: monday
+        text: Save me, * O Lord, according to your mercy.
+        psalms:
+        - number: '6'
+        - number: '7'
+          start: '2'
+          end: '10'
+        - number: '7'
+          start: '11'
+          end: '18'
+      - type: table_row
+        label: tuesday
+        text: 'You, O Lord, * will keep us: and will preserve us for ever.'
+        psalms:
+        - number: '11'
+        - number: '12'
+        - number: '15'
+      - type: table_row
+        label: wednesday
+        text: 'The Angel of the Lord * shall encamp around those who fear him: and shall deliver them.'
+        psalms:
+        - number: '33'
+          start: '2'
+          end: '11'
+        - number: '33'
+          start: '12'
+          end: '23'
+        - number: '60'
+      - type: table_row
+        label: thursday
+        text: Be my helper * and my deliverer, O Lord.
+        psalms:
+        - number: '69'
+        - number: '70'
+          start: '1'
+          end: '12'
+        - number: '70'
+          start: '13'
+          end: '24'
+      - type: table_row
+        label: friday
+        text: 'With my voice * I cried to the Lord: nor will God forget to show mercy.'
+        psalms:
+        - number: '76'
+          start: '2'
+          end: '13'
+        - number: '76'
+          start: '14'
+          end: '21'
+        - number: '85'
+      - type: table_row
+        label: saturday
+        text: Let my prayer * enter into your sight, O Lord.
+        psalms:
+        - number: '87'
+        - number: '102'
+          start: '1'
+          end: '12'
+        - number: '102'
+          start: '13'
+          end: '22'
   psalmody.mplius-lava-me-d-mine-ab-iniust-tia-mea-5208c999d1:
     role: psalmody
     content:
@@ -6121,6 +9236,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Wash me more thoroughly, * O Lord, from my iniquity.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: A hymn becomes you, * O God, in Sion.
+        psalms:
+        - number: '64'
+      - type: psalmody
+        antiphon: My lips * shall praise you all my life, O my God.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: The Lord will judge * the ends of the earth.
+        psalms:
+        - number: '223'
+      - type: psalmody
+        antiphon: Heavens of heavens, * praise God.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.mplius-lava-me-d-mine-ab-iniust-tia-mea-ee26f02973:
     role: psalmody
     content:
@@ -6166,6 +9305,27 @@ texts:
         antiphon: Lauda * ánima mea Dóminum, qui érigit elísos et díligit iustos.
         psalms:
         - number: '145'
+      en2:
+      - type: psalmody
+        antiphon: Wash me more thoroughly, * O Lord, from my iniquity.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: For our impieties * you will be gracious, O God.
+        psalms:
+        - number: '64'
+      - type: psalmody
+        antiphon: In the innocence * of my heart I will walk, O Lord.
+        psalms:
+        - number: '100'
+      - type: psalmody
+        antiphon: My heart rejoiced * in the Lord, who humbles and lifts up.
+        psalms:
+        - number: '223'
+      - type: psalmody
+        antiphon: Praise * the Lord, O my soul, who raises up the downtrodden and loves the just.
+        psalms:
+        - number: '145'
   psalmody.ne-perdas-cum-mpiis-deus-nimam-meam-066e38dbc1:
     role: psalmody
     content:
@@ -6179,6 +9339,11 @@ texts:
         text: Ne perdas cum ímpiis, Deus, ánimam meam.
       - type: response
         text: Et cum viris sánguinum vitam meam.
+      en2:
+      - type: versicle
+        text: Destroy not with the ungodly, O God, my soul.
+      - type: response
+        text: Nor my life with men of blood.
   psalmody.non-confund-tur-cum-loqu-tur-inim-cis-suis-in-po-c1da643366:
     role: psalmody
     content:
@@ -6224,6 +9389,27 @@ texts:
         antiphon: Speret * Israël in Dómino.
         psalms:
         - number: '130'
+      en2:
+      - type: psalmody
+        antiphon: He will not be confounded * when he speaks with his enemies in the gate.
+        psalms:
+        - number: '126'
+      - type: psalmody
+        antiphon: Blessed * are all who fear the Lord.
+        psalms:
+        - number: '127'
+      - type: psalmody
+        antiphon: Often * have they fought against me from my youth.
+        psalms:
+        - number: '128'
+      - type: psalmody
+        antiphon: Out of the depths * I have cried to you, O Lord.
+        psalms:
+        - number: '129'
+      - type: psalmody
+        antiphon: Let Israel hope * in the Lord.
+        psalms:
+        - number: '130'
   psalmody.notum-fecit-d-minus-allel-ia-7ecd097853:
     role: psalmody
     content:
@@ -6237,6 +9423,11 @@ texts:
         text: Notum fecit Dóminus, allelúia.
       - type: response
         text: Salutáre suum, allelúia.
+      en2:
+      - type: versicle
+        text: The Lord has made known, alleluia.
+      - type: response
+        text: His salvation, alleluia.
   psalmody.omnis-terra-ad-ret-te-et-psallat-tibi-ec3b917f96:
     role: psalmody
     content:
@@ -6250,6 +9441,11 @@ texts:
         text: Omnis terra adóret te, et psallat tibi.
       - type: response
         text: Psalmum dicat nómini tuo, Dómine.
+      en2:
+      - type: versicle
+        text: Let all the earth adore you and sing praise to you.
+      - type: response
+        text: Let them sing a psalm to your name, O Lord.
   psalmody.proph-t-pr-dicav-runt-nasci-salvat-rem-de-v-rgin-308c170424:
     role: psalmody
     content:
@@ -6269,6 +9465,14 @@ texts:
           Propter Sion * non tacébo, donec egrediátur ut splendor iustus eius.
           Ecce, véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ téneat.
           Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.
+      en2:
+      - type: text
+        text: |-
+          The prophets foretold * that the Savior would be born of the Virgin Mary.
+          The Spirit * of the Lord is upon me; he has sent me to proclaim good news to the poor.
+          For Sion's sake * I will not be silent, until her just one goes forth as brightness.
+          Behold, the Lord will come, * to sit with princes and hold the throne of glory.
+          Proclaim to the peoples, * and say: Behold, our God the Savior will come.
   psalmody.qui-h-bitas-in-c-lis-miser-re-nobis-d8279e4bc9:
     role: psalmody
     content:
@@ -6312,6 +9516,27 @@ texts:
         - number: '125'
       - type: psalmody
         antiphon: Dóminus ædíficet * nobis domum, et custódiat civitátem.
+        psalms:
+        - number: '126'
+      en2:
+      - type: psalmody
+        antiphon: You who dwell in the heavens, * have mercy on us.
+        psalms:
+        - number: '122'
+      - type: psalmody
+        antiphon: Our help * is in the name of the Lord.
+        psalms:
+        - number: '123'
+      - type: psalmody
+        antiphon: The Lord is round about his people, * from this time forth and for ever.
+        psalms:
+        - number: '124'
+      - type: psalmody
+        antiphon: 'The Lord has done great things * for us: we are made glad.'
+        psalms:
+        - number: '125'
+      - type: psalmody
+        antiphon: May the Lord build * us a house, and guard the city.
         psalms:
         - number: '126'
   psalmody.quia-mirab-lia-fecit-d-minus-b6c794c815:
@@ -6397,6 +9622,46 @@ texts:
         psalms:
         - number: '91'
         - number: '100'
+      en2:
+      - type: psalmody
+        antiphon: For the Lord * has done wondrous deeds.
+        psalms:
+        - number: '97'
+        - number: '98'
+      - type: psalmody
+        antiphon: Shout with joy * to God, all the earth.
+        psalms:
+        - number: '99'
+        - number: '100'
+      - type: psalmody
+        antiphon: Let my cry * come to you, O God.
+        psalms:
+        - number: '101'
+        - number: '102'
+      - type: psalmody
+        antiphon: Bless * the Lord, O my soul.
+        psalms:
+        - number: '103'
+        - number: '104'
+      - type: psalmody
+        antiphon: Visit us, * O Lord, with your salvation.
+        psalms:
+        - number: '105'
+        - number: '106'
+      - type: psalmody
+        antiphon: I will give thanks to the Lord * greatly with my mouth.
+        psalms:
+        - number: '107'
+        - number: '108'
+      - type: versicle
+        text: O Lord, hear my prayer.
+      - type: response
+        text: And let my cry come before you.
+      - type: psalmody
+        antiphon: It is good * to give thanks to the Lord.
+        psalms:
+        - number: '91'
+        - number: '100'
   psalmody.rectos-decet-collaud-tio-35b74b3a3b:
     role: psalmody
     content:
@@ -6451,6 +9716,63 @@ texts:
         - number: '41'
       - type: psalmody
         antiphon: Eructávit * cor meum verbum bonum
+        psalms:
+        - number: '43'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '44'
+      en2:
+      - type: psalmody
+        antiphon: Praise befits * the upright.
+        psalms:
+        - number: '32'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '33'
+      - type: psalmody
+        antiphon: Fight * against those who fight against me.
+        psalms:
+        - number: '34'
+      - type: psalmody
+        antiphon: Reveal * to the Lord your way.
+        psalms:
+        - number: '36'
+          start: '1'
+          end: '26'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '36'
+          start: '27'
+          end: '40'
+      - type: psalmody
+        antiphon: Do not rebuke me, * O Lord, in your anger.
+        psalms:
+        - number: '37'
+      - type: versicle
+        text: Delight in the Lord.
+      - type: response
+        text: And he will give you the desires of your heart.
+      - type: psalmody
+        antiphon: That I may not sin * with my tongue.
+        psalms:
+        - number: '38'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '39'
+      - type: psalmody
+        antiphon: Heal my soul, * O Lord, for I have sinned against you.
+        psalms:
+        - number: '40'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '41'
+      - type: psalmody
+        antiphon: My heart * has uttered a good word.
         psalms:
         - number: '43'
       - type: psalmody
@@ -6574,6 +9896,63 @@ texts:
         antiphon: ''
         psalms:
         - number: '44'
+      en2:
+      - type: psalmody
+        antiphon: Praise befits * the upright.
+        psalms:
+        - number: '32'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '33'
+      - type: psalmody
+        antiphon: Fight * against those who fight against me.
+        psalms:
+        - number: '34'
+      - type: psalmody
+        antiphon: Reveal * to the Lord your way.
+        psalms:
+        - number: '36'
+          start: '1'
+          end: '26'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '36'
+          start: '27'
+          end: '40'
+      - type: psalmody
+        antiphon: Do not rebuke me, * O Lord, in your anger.
+        psalms:
+        - number: '37'
+      - type: versicle
+        text: O Lord, your mercy is in heaven.
+      - type: response
+        text: And your truth reaches to the clouds.
+      - type: psalmody
+        antiphon: That I may not sin * with my tongue.
+        psalms:
+        - number: '38'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '39'
+      - type: psalmody
+        antiphon: Heal my soul, * O Lord, for I have sinned against you.
+        psalms:
+        - number: '40'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '41'
+      - type: psalmody
+        antiphon: My heart * has uttered a good word.
+        psalms:
+        - number: '43'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '44'
   psalmody.reges-tharsis-et-nsul-m-nera-fferent-7146cb932f:
     role: psalmody
     content:
@@ -6587,6 +9966,11 @@ texts:
         text: Reges Tharsis et ínsulæ múnera ófferent.
       - type: response
         text: Reges Arabum et Saba dona addúcent.
+      en2:
+      - type: versicle
+        text: The kings of Tarshish and the islands shall offer gifts.
+      - type: response
+        text: The kings of Arabia and Sheba shall bring tribute.
   psalmody.ror-te-c-li-d-super-et-nubes-pluant-iustum-aperi-fadcdfd709:
     role: psalmody
     content:
@@ -6606,6 +9990,14 @@ texts:
           Ut cognoscámus, Dómine, * in terra viam tuam, in ómnibus géntibus salutáre tuum.
           Da mercédem, Dómine, * sustinéntibus te, ut prophétæ tui fidéles inveniántur.
           Lex per Móysen data est, * grátia et véritas per Iesum Christum facta est.
+      en2:
+      - type: text
+        text: |-
+          Drop down dew, O heavens, from above, * and let the clouds rain down the Just One: let the earth be opened, and bring forth a Savior.
+          Send forth the Lamb, O Lord, * the Ruler of the earth, from the rock of the desert, to the mountain of the daughter of Sion.
+          That we may know, O Lord, * your way upon earth, your salvation among all nations.
+          Give your reward, O Lord, * to those who wait for you, that your prophets may be found faithful.
+          The law was given through Moses, * grace and truth came through Jesus Christ.
   psalmody.rue-a-fr-mea-deus-nimam-meam-244f9b85f7:
     role: psalmody
     content:
@@ -6619,6 +10011,11 @@ texts:
         text: Érue a frámea, Deus, ánimam meam.
       - type: response
         text: Et de manu canis únicam meam.
+      en2:
+      - type: versicle
+        text: Rescue from the sword, O God, my soul.
+      - type: response
+        text: And my only one from the hand of the dog.
   psalmody.sc-pulis-suis-obumbr-bit-tibi-5dca3a5a24:
     role: psalmody
     content:
@@ -6632,6 +10029,11 @@ texts:
         text: Scápulis suis obumbrábit tibi.
       - type: response
         text: Et sub pennis eius sperábis.
+      en2:
+      - type: versicle
+        text: He will overshadow you with his shoulders.
+      - type: response
+        text: And under his wings you shall hope.
   psalmody.scuto-circ-mdabit-te-v-ritas-eius-7ec575bf56:
     role: psalmody
     content:
@@ -6645,6 +10047,11 @@ texts:
         text: Scuto circúmdabit te véritas eius.
       - type: response
         text: Non timébis a timóre noctúrno.
+      en2:
+      - type: versicle
+        text: His truth will surround you as a shield.
+      - type: response
+        text: You will not fear the terror of the night.
   psalmody.serv-te-d-mino-in-tim-re-87407697f3:
     role: psalmody
     content:
@@ -6675,6 +10082,39 @@ texts:
       - type: table_row
         label: Prima Feria VI
         text: Consérva me * Dómine, quóniam in te sperávi.
+        psalms:
+        - number: '15'
+        - number: '16'
+        - number: '17'
+          start: '2'
+          end: '25'
+      en2:
+      - type: table_row
+        label: Prima Feria II
+        text: Serve * the Lord in fear.
+        psalms:
+        - number: '1'
+        - number: '2'
+        - number: '6'
+      - type: table_row
+        label: Prima Feria III
+        text: O Lord * my God, in you have I hoped.
+        psalms:
+        - number: '7'
+        - number: '8'
+        - number: '9'
+          start: '2'
+          end: '19'
+      - type: table_row
+        label: Prima Feria V
+        text: Enlighten * my eyes, O Lord.
+        psalms:
+        - number: '12'
+        - number: '13'
+        - number: '14'
+      - type: table_row
+        label: Prima Feria VI
+        text: Keep me, * O Lord, for in you have I hoped.
         psalms:
         - number: '15'
         - number: '16'
@@ -6800,6 +10240,64 @@ texts:
         text: Exaltáre Dómine in virtúte tua.
       - type: response
         text: Cantábimus et psallémus virtútes tuas.
+      en2:
+      - type: psalmody
+        antiphon: Serve the Lord * in fear, and rejoice before him with trembling.
+        psalms:
+        - number: '1'
+        - number: '2'
+        - number: '3'
+        - number: '6'
+      - type: psalmody
+        antiphon: God is a just judge, * strong and patient; does he not show wrath every day?
+        psalms:
+        - number: '7'
+        - number: '8'
+        - number: '9'
+        - number: '10'
+      - type: psalmody
+        antiphon: You, O Lord, * will keep us and guard us.
+        psalms:
+        - number: '11'
+        - number: '12'
+        - number: '13'
+        - number: '14'
+      - type: versicle
+        text: In the night I remembered your name, O Lord.
+      - type: response
+        text: And he kept his law.
+      - type: psalmody
+        antiphon: You have no need * of my goods; in you have I hoped, keep me, O Lord.
+        psalms:
+        - number: '15'
+      - type: psalmody
+        antiphon: For the sake of the words * of your lips I have kept hard ways.
+        psalms:
+        - number: '16'
+      - type: psalmody
+        antiphon: I will love you, * O Lord, my strength.
+        psalms:
+        - number: '17'
+      - type: versicle
+        text: For you, O Lord, will enlighten my lamp.
+      - type: response
+        text: My God, enlighten my darkness.
+      - type: psalmody
+        antiphon: There are no speeches * nor words whose voices are not heard.
+        psalms:
+        - number: '18'
+      - type: psalmody
+        antiphon: May the Lord hear * you in the day of tribulation.
+        psalms:
+        - number: '19'
+      - type: psalmody
+        antiphon: O Lord, * the king will rejoice in your strength.
+        psalms:
+        - number: '20'
+      - type: versicle
+        text: Be exalted, O Lord, in your power.
+      - type: response
+        text: We will sing and proclaim your mighty deeds.
   psalmody.sp-ritu-princip-li-conf-rma-cor-meum-deus-30ff733103:
     role: psalmody
     content:
@@ -6851,6 +10349,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: With a steadfast spirit * strengthen my heart, O God.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: In your truth * hear me, O Lord.
+        psalms:
+        - number: '142'
+      - type: psalmody
+        antiphon: Let your face shine upon us, * O Lord.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: O Lord, * I heard your voice and was afraid.
+        psalms:
+        - number: '225'
+      - type: psalmody
+        antiphon: With timbrel * and dance, with strings and pipe, praise God.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.speci-sus-forma-pr-f-liis-h-minum-d77a218f15:
     role: psalmody
     content:
@@ -6864,6 +10386,11 @@ texts:
         text: Speciósus forma præ fíliis hóminum.
       - type: response
         text: Diffúsa est grátia in lábiis tuis.
+      en2:
+      - type: versicle
+        text: Beautiful in form beyond the sons of men.
+      - type: response
+        text: Grace is poured out upon your lips.
   psalmody.speci-sus-forma-pr-f-liis-h-minum-diff-sa-est-gr-28b4b9dbf0:
     role: psalmody
     content:
@@ -6993,6 +10520,69 @@ texts:
         text: Sacrifícium laudis honorificábit me.
       - type: response
         text: Et illic iter, quo osténdam illi salutáre Dei.
+      en2:
+      - type: psalmody
+        antiphon: Fairest in form * above the sons of men, grace has been poured upon your lips.
+        psalms:
+        - number: '44'
+          start: 2a
+          end: 10b
+      - type: psalmody
+        antiphon: The peoples will praise you, * O God, for ever.
+        psalms:
+        - number: '44'
+          start: '11'
+          end: 18b
+      - type: psalmody
+        antiphon: God is our helper * in tribulations.
+        psalms:
+        - number: '45'
+      - type: versicle
+        text: The Lord of hosts is with us.
+      - type: response
+        text: Our protector is the God of Jacob.
+      - type: psalmody
+        antiphon: Great is the Lord * and greatly to be praised in the city of our God.
+        psalms:
+        - number: '47'
+      - type: psalmody
+        antiphon: 'My mouth will speak * wisdom: and the meditation of my heart, understanding.'
+        psalms:
+        - number: '48'
+          start: '2'
+          end: '13'
+      - type: psalmody
+        antiphon: Do not fear * when a rich man dies; his glory will not descend into the tomb with him.
+        psalms:
+        - number: '48'
+          start: '14'
+          end: '21'
+      - type: versicle
+        text: God will redeem my soul from the hand of the netherworld.
+      - type: response
+        text: When he receives me.
+      - type: psalmody
+        antiphon: God of gods, * the Lord has spoken.
+        psalms:
+        - number: '49'
+          start: '1'
+          end: '6'
+      - type: psalmody
+        antiphon: Offer to God * a sacrifice of praise.
+        psalms:
+        - number: '49'
+          start: '7'
+          end: '15'
+      - type: psalmody
+        antiphon: Understand, * you who forget God.
+        psalms:
+        - number: '49'
+          start: '16'
+          end: '23'
+      - type: versicle
+        text: A sacrifice of praise will honor me.
+      - type: response
+        text: And there is the way by which I will show him the salvation of God.
   psalmody.speci-sus-forma-pr-f-liis-h-minum-diff-sa-est-gr-4fab8b1f17:
     role: psalmody
     content:
@@ -7118,6 +10708,67 @@ texts:
         text: Audítui meo dabis gáudium et lætítiam.
       - type: response
         text: Et exsultábunt ossa humiliáta.
+      en2:
+      - type: psalmody
+        antiphon: Fairest in form * above the sons of men, grace has been poured upon your lips.
+        psalms:
+        - number: '44'
+          start: 2a
+          end: 10b
+      - type: psalmody
+        antiphon: The peoples will praise you, * O God, for ever.
+        psalms:
+        - number: '44'
+          start: '11'
+          end: 18b
+      - type: psalmody
+        antiphon: God is our helper * in tribulations.
+        psalms:
+        - number: '45'
+      - type: versicle
+        text: The Lord of hosts is with us.
+      - type: response
+        text: Our protector is the God of Jacob.
+      - type: psalmody
+        antiphon: Great is the Lord * and greatly to be praised in the city of our God.
+        psalms:
+        - number: '47'
+      - type: psalmody
+        antiphon: 'My mouth will speak * wisdom: and the meditation of my heart, understanding.'
+        psalms:
+        - number: '48'
+          start: '2'
+          end: '13'
+      - type: psalmody
+        antiphon: Do not fear * when a rich man dies; his glory will not descend into the tomb with him.
+        psalms:
+        - number: '48'
+          start: '14'
+          end: '21'
+      - type: versicle
+        text: God will redeem my soul from the hand of the netherworld.
+      - type: response
+        text: When he receives me.
+      - type: psalmody
+        antiphon: God of gods, * the Lord has spoken.
+        psalms:
+        - number: '49'
+          start: '1'
+          end: '15'
+      - type: psalmody
+        antiphon: Understand, * you who forget God.
+        psalms:
+        - number: '49'
+          start: '16'
+          end: '23'
+      - type: psalmody
+        antiphon: You will accept a sacrifice * of justice upon your altar, O Lord.
+        psalms:
+        - number: '50'
+      - type: versicle
+        text: You will give to my hearing joy and gladness.
+      - type: response
+        text: And the humbled bones will rejoice.
   psalmody.surr-xit-d-minus-de-sep-lcro-allel-ia-e0e7274ff8:
     role: psalmody
     content:
@@ -7131,6 +10782,11 @@ texts:
         text: Surréxit Dóminus de sepúlcro, allelúia.
       - type: response
         text: Qui pro nobis pepéndit in ligno, allelúia.
+      en2:
+      - type: versicle
+        text: The Lord has risen from the tomb, alleluia.
+      - type: response
+        text: Who for us hung upon the wood, alleluia.
   psalmody.surr-xit-d-minus-vere-allel-ia-aa318f6898:
     role: psalmody
     content:
@@ -7144,6 +10800,11 @@ texts:
         text: Surréxit Dóminus vere, allelúia.
       - type: response
         text: Et appáruit Simóni, allelúia.
+      en2:
+      - type: versicle
+        text: The Lord is truly risen, alleluia.
+      - type: response
+        text: And he appeared to Simon, alleluia.
   psalmody.suscit-vit-d-minus-testim-nium-in-iacob-et-legem-241e32d100:
     role: psalmody
     content:
@@ -7269,6 +10930,67 @@ texts:
         text: Cognóscant quia nomen tibi Dóminus.
       - type: response
         text: Tu solus Altíssimus super omnem terram.
+      en2:
+      - type: psalmody
+        antiphon: 'The Lord raised up * a testimony in Jacob: and appointed a law in Israel.'
+        psalms:
+        - number: '77'
+          start: '1'
+          end: '8'
+      - type: psalmody
+        antiphon: Before their fathers * God worked wonders.
+        psalms:
+        - number: '77'
+          start: '9'
+          end: '16'
+      - type: psalmody
+        antiphon: The Lord opened * the gates of heaven, and rained down manna upon them to eat.
+        psalms:
+        - number: '77'
+          start: '17'
+          end: '31'
+      - type: versicle
+        text: God struck the rock and waters flowed.
+      - type: response
+        text: And the torrents overflowed.
+      - type: psalmody
+        antiphon: 'God * is their helper: and the Most High is their redeemer.'
+        psalms:
+        - number: '77'
+          start: '32'
+          end: '41'
+      - type: psalmody
+        antiphon: The Lord * redeemed them from the hand of the one who afflicted them.
+        psalms:
+        - number: '77'
+          start: '42'
+          end: '58'
+      - type: psalmody
+        antiphon: God * built his sanctuary on earth.
+        psalms:
+        - number: '77'
+          start: '59'
+          end: '72'
+      - type: versicle
+        text: The Lord chose the tribe of Judah.
+      - type: response
+        text: Mount Sion, which he loved.
+      - type: psalmody
+        antiphon: 'Help us, * O God, our salvation: and be gracious toward our sins.'
+        psalms:
+        - number: '78'
+      - type: psalmody
+        antiphon: I am the Lord * your God, O Israel, who brought you out of the land of Egypt.
+        psalms:
+        - number: '80'
+      - type: psalmody
+        antiphon: Be not silent, O God, * for your enemies have lifted up their head.
+        psalms:
+        - number: '82'
+      - type: versicle
+        text: Let them know that your name is Lord.
+      - type: response
+        text: You alone are the Most High over all the earth.
   psalmody.tamquam-sponsus-e520d0bd1c:
     role: psalmody
     content:
@@ -7282,6 +11004,11 @@ texts:
         text: Tamquam sponsus.
       - type: response
         text: Dóminus procédens de thálamo suo.
+      en2:
+      - type: versicle
+        text: Like a bridegroom.
+      - type: response
+        text: The Lord coming forth from his bridal chamber.
   psalmody.text-004a84b66c:
     role: psalmody
     content:
@@ -7293,6 +11020,13 @@ texts:
         - number: '247'
         - number: '248'
       la:
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '246'
+        - number: '247'
+        - number: '248'
+      en2:
       - type: psalmody
         antiphon: ''
         psalms:
@@ -7360,6 +11094,35 @@ texts:
         - number: '216'
           start: '1'
           end: '13'
+      en2:
+      - type: text
+        text: ;;
+      - type: psalmody
+        antiphon: We praise your glorious * name, O our God.
+        psalms:
+        - number: '211'
+      - type: psalmody
+        antiphon: Exalt * the King of ages in your works.
+        psalms:
+        - number: '212'
+      - type: psalmody
+        antiphon: O Lord, * you are great and glorious in your power.
+        psalms:
+        - number: '213'
+      - type: psalmody
+        antiphon: My people, * says the Lord, shall be filled with my good things.
+        psalms:
+        - number: '214'
+      - type: psalmody
+        antiphon: In the Lord shall be justified * and praised all the seed of Israel.
+        psalms:
+        - number: '215'
+      - type: psalmody
+        antiphon: Show us, O Lord, * the light of your mercies.
+        psalms:
+        - number: '216'
+          start: '1'
+          end: '13'
   psalmody.text-5836dbbea1:
     role: psalmody
     content:
@@ -7411,6 +11174,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '92'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '99'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.text-73d6c91b98:
     role: psalmody
     content:
@@ -7436,6 +11223,27 @@ texts:
         psalms:
         - number: '148'
       la:
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '117'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '220'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '148'
+      en2:
       - type: psalmody
         antiphon: ''
         psalms:
@@ -7507,6 +11315,30 @@ texts:
         - number: '148'
         - number: '149'
         - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '117'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '210'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
   psalmody.tibi-soli-pecc-vi-d-mine-miser-re-mei-64496ca728:
     role: psalmody
     content:
@@ -7550,6 +11382,27 @@ texts:
         - number: '224'
       - type: psalmody
         antiphon: Laudáte * Dóminum qui sanat contrítos corde, et álligat contritiónes eórum.
+        psalms:
+        - number: '146'
+      en2:
+      - type: psalmody
+        antiphon: Against you alone have I sinned, * O Lord, have mercy on me.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: Turn, O Lord, * and be appeased toward your servants.
+        psalms:
+        - number: '89'
+      - type: psalmody
+        antiphon: You have multiplied, O God, * your mercy.
+        psalms:
+        - number: '35'
+      - type: psalmody
+        antiphon: 'The Lord is my strength * and my praise: and he has become my salvation.'
+        psalms:
+        - number: '224'
+      - type: psalmody
+        antiphon: Praise * the Lord, who heals the brokenhearted, and binds up their wounds.
         psalms:
         - number: '146'
   psalmody.tibi-soli-pecc-vi-d-mine-miser-re-mei-98ee56fcaf:
@@ -7599,6 +11452,30 @@ texts:
         - number: '224'
       - type: psalmody
         antiphon: In sanctis eius * laudáte Deum.
+        psalms:
+        - number: '148'
+        - number: '149'
+        - number: '150'
+      en2:
+      - type: psalmody
+        antiphon: Against you alone have I sinned, * O Lord, have mercy on me.
+        psalms:
+        - number: '50'
+      - type: psalmody
+        antiphon: O Lord, * you have been made our refuge.
+        psalms:
+        - number: '89'
+      - type: psalmody
+        antiphon: In the morning * I will meditate on you.
+        psalms:
+        - number: '62'
+        - number: '66'
+      - type: psalmody
+        antiphon: Let us sing to the Lord * gloriously.
+        psalms:
+        - number: '224'
+      - type: psalmody
+        antiphon: Praise God * among his holy ones.
         psalms:
         - number: '148'
         - number: '149'
@@ -7676,6 +11553,41 @@ texts:
         text: Ímmola Deo sacrifium laudis.
       - type: response
         text: Et redde altíssimo vota tua.
+      en2:
+      - type: psalmody
+        antiphon: That I may not offend * with my tongue.
+        psalms:
+        - number: '38'
+        - number: '39'
+      - type: psalmody
+        antiphon: Heal, * O Lord, my soul, for I have sinned against you.
+        psalms:
+        - number: '40'
+        - number: '41'
+      - type: psalmody
+        antiphon: My heart * has uttered a good word.
+        psalms:
+        - number: '43'
+        - number: '44'
+      - type: psalmody
+        antiphon: A helper * in tribulations.
+        psalms:
+        - number: '45'
+        - number: '46'
+      - type: psalmody
+        antiphon: Great is the Lord * and exceedingly worthy of praise.
+        psalms:
+        - number: '47'
+        - number: '48'
+      - type: psalmody
+        antiphon: The Lord, the God of gods, * has spoken.
+        psalms:
+        - number: '49'
+        - number: '51'
+      - type: versicle
+        text: Offer to God a sacrifice of praise.
+      - type: response
+        text: And pay your vows to the Most High.
   psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-170ce41e3d:
     role: psalmody
     content:
@@ -7793,6 +11705,63 @@ texts:
         text: Egrediétur Dóminus de loco sancto suo.
       - type: response
         text: Véniet ut salvet pópulum suum.
+      en2:
+      - type: psalmody
+        antiphon: Behold, the King most high * shall come with great power to save the nations, alleluia.
+        psalms:
+        - number: '1'
+      - type: psalmody
+        antiphon: 'Strengthen * the drooping hands: take courage, say: Behold, our God shall come, and will save us, alleluia.'
+        psalms:
+        - number: '2'
+      - type: psalmody
+        antiphon: 'Rejoice, all, * and be glad: behold, for the Lord of vengeance shall come, he shall bring retribution: he himself shall come, and will save us.'
+        psalms:
+        - number: '3'
+      - type: versicle
+        text: Out of Sion, the perfection of his beauty.
+      - type: response
+        text: Our God shall come manifestly.
+      - type: psalmody
+        antiphon: 'Rejoice and be glad, * O daughter of Jerusalem: behold, your King shall come to you: O Sion, fear not, for your salvation shall come quickly.'
+        psalms:
+        - number: '8'
+      - type: psalmody
+        antiphon: Our King * Christ shall come, whom John proclaimed to be the Lamb who was to come.
+        psalms:
+        - number: '9'
+          start: '2'
+          end: '11'
+      - type: psalmody
+        antiphon: 'Behold, I come * quickly and my reward is with me, says the Lord: to give to each one according to his works.'
+        psalms:
+        - number: '9'
+          start: '12'
+          end: '21'
+      - type: versicle
+        text: Send forth the Lamb, O Lord, the Ruler of the earth.
+      - type: response
+        text: From the Rock of the desert to the mount of the daughter of Sion.
+      - type: psalmody
+        antiphon: 'The Angel Gabriel * spoke to Mary, saying: Hail, full of grace: the Lord is with you: blessed are you among women.'
+        psalms:
+        - number: '9'
+          start: '22'
+          end: '32'
+      - type: psalmody
+        antiphon: 'Mary said: * I wonder what manner of greeting this is, for my soul is troubled, and because I shall bring forth a King who shall not violate the enclosure of my virginity?'
+        psalms:
+        - number: '9'
+          start: '33'
+          end: '39'
+      - type: psalmody
+        antiphon: 'In the advent * of the most high King, let the hearts of men be cleansed, that we may walk worthily to meet him: for behold, he shall come and shall not delay.'
+        psalms:
+        - number: '10'
+      - type: versicle
+        text: The Lord shall go forth from his holy place.
+      - type: response
+        text: He shall come to save his people.
   psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-5bde3acd9e:
     role: psalmody
     content:
@@ -7912,6 +11881,64 @@ texts:
         text: Egrediétur Dóminus de loco sancto suo.
       - type: response
         text: Véniet ut salvet pópulum suum.
+      en2:
+      - type: psalmody
+        antiphon: Behold, the King shall come, * the most high, with great power, to save the nations. Alleluia.
+        psalms:
+        - number: '1'
+        - number: '2'
+        - number: '3'
+        - number: '6'
+      - type: psalmody
+        antiphon: 'Strengthen * the drooping hands: take courage, say: Behold, our God shall come, and will save us. Alleluia.'
+        psalms:
+        - number: '7'
+        - number: '8'
+        - number: '9'
+        - number: '10'
+      - type: psalmody
+        antiphon: 'Rejoice, all, * and be glad: behold, for the Lord of vengeance shall come, he shall bring retribution: he himself shall come, and will save us.'
+        psalms:
+        - number: '11'
+        - number: '12'
+        - number: '13'
+        - number: '14'
+      - type: versicle
+        text: Out of Sion, the perfection of his beauty.
+      - type: response
+        text: Our God shall come manifestly.
+      - type: psalmody
+        antiphon: 'Rejoice and be glad, * O daughter of Jerusalem: behold, your King shall come to you: O Sion, fear not, for your salvation shall come quickly.'
+        psalms:
+        - number: '15'
+      - type: psalmody
+        antiphon: Our King * Christ shall come, whom John proclaimed to be the Lamb who was to come.
+        psalms:
+        - number: '16'
+      - type: psalmody
+        antiphon: 'Behold, I come * quickly and my reward is with me, says the Lord: to give to each one according to his works.'
+        psalms:
+        - number: '17'
+      - type: versicle
+        text: Send forth the Lamb, O Lord, the Ruler of the earth.
+      - type: response
+        text: From the Rock of the desert to the mount of the daughter of Sion.
+      - type: psalmody
+        antiphon: 'The Angel Gabriel * spoke to Mary, saying: Hail, full of grace; the Lord is with you; blessed are you among women.'
+        psalms:
+        - number: '18'
+      - type: psalmody
+        antiphon: 'Mary said: * I wonder what manner of greeting this is, for my soul is troubled, and because I shall bring forth a King who shall not violate the enclosure of my virginity.'
+        psalms:
+        - number: '19'
+      - type: psalmody
+        antiphon: 'In the advent * of the most high King, let the hearts of men be cleansed, that we may walk worthily to meet him: for behold, he shall come and shall not delay.'
+        psalms:
+        - number: '20'
+      - type: versicle
+        text: The Lord shall go forth from his holy place.
+      - type: response
+        text: He shall come to save his people.
   psalmody.v-niet-ecce-rex-exc-lsus-cum-potest-te-magna-ad-a24da87a49:
     role: psalmody
     content:
@@ -8049,3 +12076,70 @@ texts:
         text: Egrediétur Dóminus de loco sancto suo.
       - type: response
         text: Véniet ut salvet pópulum suum.
+      en2:
+      - type: psalmody
+        antiphon: Behold, the King shall come, * the most high, with great power, to save the nations, alleluia.
+        psalms:
+        - number: '20'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '21'
+      - type: psalmody
+        antiphon: 'Strengthen * the drooping hands: take courage, say: Behold, our God shall come, and will save us, alleluia.'
+        psalms:
+        - number: '22'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '23'
+      - type: psalmody
+        antiphon: 'Rejoice, all, * and be glad: behold, he who shall come is the Lord of vengeance, he shall bring retribution: he himself shall come, and will save us.'
+        psalms:
+        - number: '24'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '25'
+      - type: versicle
+        text: Out of Sion, the perfection of his beauty.
+      - type: response
+        text: Our God shall come manifestly.
+      - type: psalmody
+        antiphon: 'Rejoice and be glad, * O daughter of Jerusalem: behold, your King shall come to you: O Sion, fear not, for your salvation shall come quickly.'
+        psalms:
+        - number: '26'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '27'
+      - type: psalmody
+        antiphon: Our King * Christ shall come, whom John proclaimed to be the Lamb who was to come.
+        psalms:
+        - number: '28'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '29'
+      - type: psalmody
+        antiphon: 'Behold, I come * quickly and my reward is with me, says the Lord: to give to each one according to his works.'
+        psalms:
+        - number: '30'
+      - type: psalmody
+        antiphon: ''
+        psalms:
+        - number: '31'
+      - type: versicle
+        text: Send forth the Lamb, O Lord, the Ruler of the earth.
+      - type: response
+        text: From the rock of the desert to the mountain of the daughter of Sion.
+      - type: psalmody
+        antiphon: 'The Angel Gabriel * spoke to Mary, saying: Hail, full of grace; the Lord is with you; Blessed are you among women.'
+        psalms:
+        - number: '240'
+        - number: '241'
+        - number: '242'
+      - type: versicle
+        text: The Lord shall go forth from his holy place.
+      - type: response
+        text: He shall come to save his people.

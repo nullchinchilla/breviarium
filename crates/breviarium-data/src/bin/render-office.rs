@@ -1,4 +1,4 @@
-use breviarium_data::{Breviarium, DocumentNode, Hour, OfficeColumnContent, OfficeRequest};
+use breviarium_data::{Breviarium, DocumentNode, Hour, OfficeBlockContent, OfficeRequest};
 use chrono::NaiveDate;
 use std::env;
 
@@ -31,48 +31,49 @@ fn run() -> Result<(), String> {
         }
     };
 
-    let mut request = OfficeRequest::new(date, hour);
-    request.languages = languages;
-
     let engine = Breviarium::embedded().map_err(|error| error.to_string())?;
-    let office = engine
-        .resolve_office(request)
-        .map_err(|error| error.to_string())?;
 
-    println!(
-        "{} {} profile={} principal={} rank={:?} temporal={:?} sanctoral={:?}",
-        office.date_facts.date,
-        office.hour.as_str(),
-        office.profile,
-        office.principal.id,
-        office.principal.rank,
-        office.temporal.as_ref().map(|observance| &observance.id),
-        office.sanctoral.as_ref().map(|observance| &observance.id)
-    );
-    for diagnostic in &office.diagnostics {
-        println!("diagnostic {}: {}", diagnostic.code, diagnostic.message);
-    }
-    for block in &office.blocks {
-        println!("\n## {} [{:?}]", block.id, block.role);
-        for column in &block.columns {
+    // The backend resolves one language per request; render each requested
+    // language in turn (clients display columns by zipping these documents).
+    for language in &languages {
+        let request = OfficeRequest::new(date, hour).with_language(language.clone());
+        let office = engine
+            .resolve_office(request)
+            .map_err(|error| error.to_string())?;
+
+        println!(
+            "\n# {} {} [{language}] profile={} principal={} rank={:?} temporal={:?} sanctoral={:?}",
+            office.date_facts.date,
+            office.hour.as_str(),
+            office.profile,
+            office.principal.id,
+            office.principal.rank,
+            office.temporal.as_ref().map(|observance| &observance.id),
+            office.sanctoral.as_ref().map(|observance| &observance.id)
+        );
+        for diagnostic in &office.diagnostics {
+            println!("diagnostic {}: {}", diagnostic.code, diagnostic.message);
+        }
+        for block in &office.blocks {
             println!(
-                "\n### {}{}",
-                column.language,
-                column
+                "\n## {} [{:?}]{}",
+                block.id,
+                block.role,
+                block
                     .title
                     .as_ref()
                     .map(|title| format!(" - {title}"))
                     .unwrap_or_default()
             );
-            match &column.content {
-                OfficeColumnContent::Resolved { nodes } => {
-                    println!("{}", document_text(&column.language, nodes));
+            match &block.content {
+                OfficeBlockContent::Resolved { nodes } => {
+                    println!("{}", document_text(language, nodes));
                 }
-                OfficeColumnContent::Missing { reason } => {
+                OfficeBlockContent::Missing { reason } => {
                     println!("[missing: {reason}]");
                 }
                 _ => {
-                    println!("[unknown column content]");
+                    println!("[unknown block content]");
                 }
             }
         }
@@ -98,7 +99,10 @@ fn parse_hour(value: &str) -> Result<Hour, String> {
 fn document_text(language: &str, nodes: &[DocumentNode]) -> String {
     nodes
         .iter()
-        .map(|node| node.plain_text_for_language(language))
+        .map(|node| {
+            let text = node.plain_text_for_language(language);
+            format!("[{}] {}", node.kind(), text.replace('\n', "\n        | "))
+        })
         .collect::<Vec<_>>()
         .join("\n")
 }

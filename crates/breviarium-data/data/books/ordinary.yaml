@@ -13,7 +13,7 @@ offices:
       gospel-antiphon-easter: antiphon.allel-ia-resurr-xit-d-minus-allel-ia-sicut-dixit-1fbc34c983
       gospel-antiphon-lent: antiphon.ev-gila-super-nos-t-rne-salv-tor-ne-nos-appreh-n-9c45721793
       gospel-antiphon-passiontide: antiphon.o-rex-glori-se-inter-sanctos-tuos-qui-semper-es-a5c4706bd5
-      hymn: hymn.te-lucis-ante-t-rminum-f252b6676d
+      hymn: hymn.te-lucis-ante-t-rminum-b3a2b192f8
       short-reading: short-reading.1-pet-5-8-9-7272d8b1ba
       short-responsory: short-responsory.in-manus-tuas-d-mine-comm-ndo-sp-ritum-meum-c2a8a19ae4
       versicle: versicle.cust-di-nos-d-mine-ut-pup-llam-culi-495c4e2775
@@ -45,7 +45,7 @@ offices:
       ant-alma-redemptoris-mater: rubric.alma-redempt-ris-mater-qu-p-rvia-c-li-porta-mane-b1b4e04801
       ant-ave-regina-caelorum: rubric.ave-reg-na-c-l-rum-76ec494780
       ant-regina-caeli: rubric.reg-na-c-li-l-t-re-allel-ia-b439a22fb0
-      ant-salve-regina: rubric.salve-reg-na-mater-miseric-rdi-dd8237bf5b
+      ant-salve-regina: rubric.salve-reg-na-mater-miseric-rdi-6d26e861ff
       ante: rubric.flexis-genibus-4a53b1e58a
       ante-coenam: rubric.ante-coenam-a2b95b9937
       ante-prandium: rubric.ante-prandium-f8e66d1318
@@ -90,11 +90,11 @@ offices:
       credo-carnis: rubric.credo-in-deum-patrem-omnipot-ntem-creat-rem-c-li-ce931b9589
       credo-secreto: rubric.credo-secreto-915a962f0a
       de-officio-capituli: rubric.de-officio-capituli-c9afc0be02
-      defunctlc: rubric.d-minus-vob-scum-817a6c67e4
-      defunctm: rubric.d-minus-vob-scum-28db943827
+      defunctlc: rubric.d-minus-vob-scum-46a31619e0
+      defunctm: rubric.d-minus-vob-scum-282e0e8c51
       defunctorum: rubric.commemoratio-defunctorum-35f7a64b6d
-      defunctv: rubric.d-minus-vob-scum-f028d2ccf5
-      defunctvc: rubric.d-minus-vob-scum-8a5fe52abd
+      defunctv: rubric.d-minus-vob-scum-1327f97b74
+      defunctvc: rubric.d-minus-vob-scum-1c04c0890c
       deo-gratias: rubric.deo-gr-tias-4498595b10
       deus-in-adjutorium: rubric.deus-in-adiut-rium-meum-int-nde-6c18bfe198
       deus-in-adjutorium-iij: rubric.deus-in-adiut-rium-meum-int-nde-d3957a81a0
@@ -199,7 +199,7 @@ offices:
       septem-psalmi-paenitentiales: rubric.septem-psalmi-p-nitentiales-c3b3c05355
       suffragium: rubric.suffragium-857c07470d
       te-decet: rubric.te-decet-laus-te-decet-hymnus-tibi-gl-ria-deo-pa-288c011952
-      te-deum: rubric.te-deum-laud-mus-te-d-minum-confit-mur-8ca85f2c52
+      te-deum: rubric.te-deum-laud-mus-te-d-minum-confit-mur-e01dbf3530
       tu-autem: rubric.tu-autem-d-mine-miser-re-nobis-4127bc78b9
       versus-in-loco: rubric.versus-in-loco-capituli-4c2837319d
       vigilia: rubric.vigilia-e8576580af
@@ -249,7 +249,7 @@ offices:
       preces-feriales-laudes: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-4e1418f5f6
       preces-feriales-vespera: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-4e1418f5f6
       quad-laudes: chapter.isa-58-1-92aba8eb7b
-      quad-laudes-c: chapter.2-cor-6-c7e74df562
+      quad-laudes-c: chapter.2-cor-6-222dbbef39
       quad-versum-0: versicle.in-m-nibus-port-bunt-te-294561b4db
       quad-versum-2: versicle.ngelis-suis-deus-mand-vit-de-te-e7f63a53fc
       quad-versum-3: versicle.ngelis-suis-deus-mand-vit-de-te-1d823f93aa
@@ -274,26 +274,26 @@ offices:
       responsory-quad-vespera: short-responsory.sc-pulis-suis-obumbr-bit-tibi-b42d9ef7af
       responsory-quad5-laudes: short-responsory.rue-a-fr-mea-deus-nimam-meam-b45586ea12
       responsory-quad5-vespera: short-responsory.de-ore-le-nis-l-bera-me-d-mine-81f5972ae6
-      suffragium: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-2c31f67422
-      suffragium-bmv: chapter.de-beata-maria-8904713905
-      suffragium-bmv-ant: antiphon.de-beata-maria-7d302388f8
-      suffragium-bmv-antl: antiphon.de-beata-maria-9f24050e64
+      suffragium: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-87f1c55ff7
+      suffragium-bmv: chapter.de-beata-maria-3eda778b56
+      suffragium-bmv-ant: antiphon.de-beata-maria-b36562084c
+      suffragium-bmv-antl: antiphon.de-beata-maria-afde53a508
       suffragium-conclusiobmv: chapter.per-e-ndem-christum-d-minum-nostrum-520934e7e6
-      suffragium-deapostolis: chapter.de-apostolis-97fa0e26a1
-      suffragium-deapostolisv: chapter.de-apostolis-72837948fa
-      suffragium-dejoseph: chapter.de-sancto-ioseph-bcbeeedfbc
-      suffragium-dejosephv: chapter.de-sancto-ioseph-87b787d2e5
-      suffragium-depace: chapter.de-pace-1a95f147de
-      suffragium-depatrono: chapter.de-patrono-vel-titulo-ecclesi-f8d987b4c5
-      suffragium-desspn: chapter.de-ss-benedicto-bernardo-et-roberto-623c5d0c42
-      suffragium-desspnv: chapter.de-ss-benedicto-bernardo-et-roberto-070a36a0b4
-      suffragium-divino: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-66ff66d743
-      suffragium-divino1: chapter.sancti-omnes-interc-dant-pro-nobis-ad-d-minum-ff123ee4eb
-      suffragium-feriale: chapter.de-cruce-e12794b574
-      suffragium-laudes: chapter.de-beata-maria-e6ebf1f157
+      suffragium-deapostolis: chapter.de-apostolis-e9346f754b
+      suffragium-deapostolisv: chapter.de-apostolis-026d23b622
+      suffragium-dejoseph: chapter.de-sancto-ioseph-4c40457fca
+      suffragium-dejosephv: chapter.de-sancto-ioseph-143cbfe709
+      suffragium-depace: chapter.de-pace-474fd549fc
+      suffragium-depatrono: chapter.de-patrono-vel-titulo-ecclesi-e47ef9b3e8
+      suffragium-desspn: chapter.de-ss-benedicto-bernardo-et-roberto-feedb73623
+      suffragium-desspnv: chapter.de-ss-benedicto-bernardo-et-roberto-8df971d35b
+      suffragium-divino: chapter.be-ta-dei-g-nitrix-virgo-mar-a-sanct-que-omnes-i-9355ed84b5
+      suffragium-divino1: chapter.sancti-omnes-interc-dant-pro-nobis-ad-d-minum-d170d069e8
+      suffragium-feriale: chapter.de-cruce-fbfd826199
+      suffragium-laudes: chapter.de-beata-maria-0368151478
       suffragium-paschale: chapter.crucif-xus-surr-xit-a-m-rtuis-et-red-mit-nos-all-54cbb60eb7
       suffragium-paschalev: chapter.crucem-sanctam-s-biit-qui-inf-rnum-confr-git-acc-d101cd5139
-      suffragium-vespera: chapter.de-beata-maria-ef3f0601f6
+      suffragium-vespera: chapter.de-beata-maria-b1082bf439
       versum-et-oratio-bmv: versicle.ora-pro-nobis-sancta-dei-g-netrix-bd38a845a3
   major-adv:
     slots:
@@ -302,7 +302,7 @@ offices:
   major-day0:
     slots:
       lauds-hymn: hymn.ecce-iam-noctis-tenu-tur-umbra-405051d6b9
-      vespers-hymn: hymn.lucis-cre-tor-ptime-a880bfca9e
+      vespers-hymn: hymn.lucis-cre-tor-ptime-e9599a46bc
   major-day1:
     slots:
       lauds-hymn: hymn.splendor-pat-rn-gl-ri-1afa66bbaf
@@ -372,7 +372,7 @@ offices:
   major-monastic-day0:
     slots:
       lauds-hymn: hymn.ecce-iam-noctis-tenu-tur-umbra-aeddb88f7a
-      vespers-hymn: hymn.lucis-cre-tor-ptime-60557a5608
+      vespers-hymn: hymn.lucis-cre-tor-ptime-c6d0351a0d
   major-monastic-day1:
     slots:
       lauds-hymn: hymn.splendor-pat-rn-gl-ri-1af1dd28f8
@@ -408,11 +408,11 @@ offices:
   major-monastic-quad5:
     slots:
       lauds-hymn: hymn.lustris-sex-qui-iam-per-ctis-2bb259ddf2
-      vespers-hymn: hymn.vex-lla-regis-pr-deunt-32ee565ceb
+      vespers-hymn: hymn.vex-lla-regis-pr-deunt-c131fd3fc3
   major-pasch:
     slots:
-      lauds-hymn: hymn.aur-ra-c-lum-p-rpurat-686f4f3e67
-      vespers-hymn: hymn.ad-r-gias-agni-dapes-782a2215d1
+      lauds-hymn: hymn.aur-ra-c-lum-p-rpurat-a5dcee243d
+      vespers-hymn: hymn.ad-r-gias-agni-dapes-b44cb8c347
   major-quad:
     slots:
       lauds-hymn: hymn.o-sol-sal-tis-ntimis-4e64d9647d
@@ -420,7 +420,7 @@ offices:
   major-quad5:
     slots:
       lauds-hymn: hymn.lustra-sex-qui-iam-per-git-345102b58a
-      vespers-hymn: hymn.vex-lla-regis-pr-deunt-f3456ff328
+      vespers-hymn: hymn.vex-lla-regis-pr-deunt-4c2d5c5105
   major-sunday:
     slots:
       lauds-chapter: chapter.apo-7-12-84a7697e3b
@@ -434,24 +434,24 @@ offices:
   marian-antiphons:
     slots:
       advent: marian-antiphon.alma-redempt-ris-mater-qu-p-rvia-c-li-porta-mane-fb4c310fbe
-      ant-ad-s-dominicum: marian-antiphon.ant-o-lumen-ecclesiae-doctor-veritatis-rosa-pati-e7fd1d12f3
+      ant-ad-s-dominicum: marian-antiphon.ant-o-lumen-ecclesiae-doctor-veritatis-rosa-pati-eac517ace2
       ant-finalis-cist: marian-antiphon.completbmv2-1525cca786
-      ant-finalis-op: marian-antiphon.salve-reg-na-mater-miseric-rdi-cebd0dee46
+      ant-finalis-op: marian-antiphon.salve-reg-na-mater-miseric-rdi-484dac0bf5
       nativiti: marian-antiphon.alma-redempt-ris-mater-qu-p-rvia-c-li-e2fa68e5a8
       paschalis: marian-antiphon.reg-na-c-li-l-t-re-allel-ia-7916a6fe7d
       postpentecost: marian-antiphon.salve-reg-na-mater-miseric-rdi-59a2190345
       quadragesimae: marian-antiphon.ave-reg-na-c-l-rum-c4cd570572
   matins:
     slots:
-      day0-hymnus1: hymn.primo-die-quo-tr-nitas-54f22747e1
-      day0-hymnus1m: hymn.primo-di-rum-mnium-90402d3210
+      day0-hymnus1: hymn.primo-die-quo-tr-nitas-4d1569fe01
+      day0-hymnus1m: hymn.primo-di-rum-mnium-15cf8918cb
       day0-hymnusm: hymn.nocte-surg-ntes-vigil-mus-omnes-c0b362635e
-      day1-hymnusm: hymn.somno-ref-ctis-rtubus-00fcb2b01b
-      day2-hymnusm: hymn.consors-pat-rni-l-minis-45775bc8db
-      day3-hymnusm: hymn.rerum-cre-tor-ptime-61da60dcc9
-      day4-hymnusm: hymn.nox-atra-rerum-c-ntegit-e03f9940f3
-      day5-hymnusm: hymn.tu-trinit-tis-unitas-82421ce659
-      day6-hymnusm: hymn.summ-deus-clem-nti-9011a39165
+      day1-hymnusm: hymn.somno-ref-ctis-rtubus-cd1d1f1514
+      day2-hymnusm: hymn.consors-pat-rni-l-minis-c0d8793e4e
+      day3-hymnusm: hymn.rerum-cre-tor-ptime-a863d7a925
+      day4-hymnusm: hymn.nox-atra-rerum-c-ntegit-0e5c87516b
+      day5-hymnusm: hymn.tu-trinit-tis-unitas-26f431a13a
+      day6-hymnusm: hymn.summ-deus-clem-nti-c1c5334c13
       hymnus-quad5: hymn.pange-lingua-glori-si-13dcaa9a6e
       hymnusm-adv: hymn.verbum-sup-rnum-pr-diens-6beccf4b5a
       hymnusm-pasch: hymn.rex-sempit-rne-d-mine-5413c77774
@@ -488,31 +488,31 @@ offices:
       nocturn-2-versum-sabbato: note.misit-verbum-suum-et-san-vit-eos-bba5f467e0
   matins-adv:
     slots:
-      hymn: hymn.verbum-sup-rnum-pr-diens-86a18cd66b
+      hymn: hymn.verbum-sup-rnum-pr-diens-af2793f84c
   matins-day0:
     slots:
       hymn: hymn.nocte-surg-ntes-vigil-mus-omnes-31f30353ab
   matins-day1:
     slots:
-      hymn: hymn.somno-ref-ctis-rtubus-7e627f3118
+      hymn: hymn.somno-ref-ctis-rtubus-54c8a97993
   matins-day2:
     slots:
-      hymn: hymn.consors-pat-rni-l-minis-63eb7753e8
+      hymn: hymn.consors-pat-rni-l-minis-6764898046
   matins-day3:
     slots:
-      hymn: hymn.rerum-cre-tor-ptime-039e460eb7
+      hymn: hymn.rerum-cre-tor-ptime-6e5133be30
   matins-day4:
     slots:
-      hymn: hymn.nox-atra-rerum-c-ntegit-7829b41359
+      hymn: hymn.nox-atra-rerum-c-ntegit-98f9809e03
   matins-day5:
     slots:
-      hymn: hymn.tu-trinit-tis-unitas-b970709677
+      hymn: hymn.tu-trinit-tis-unitas-3fedb6b107
   matins-day6:
     slots:
-      hymn: hymn.summ-parens-clem-nti-ae3fc140d1
+      hymn: hymn.summ-parens-clem-nti-86ca7fe0a3
   matins-pasch:
     slots:
-      hymn: hymn.rex-sempit-rne-c-litum-9244452d9a
+      hymn: hymn.rex-sempit-rne-c-litum-7ee892c61f
   matins-quad:
     slots:
       hymn: hymn.ex-more-docti-m-stico-6d8417e5d9
@@ -523,20 +523,20 @@ offices:
       ant-4-quad3: antiphon.m-dia-vita-in-morte-sumus-quem-qu-rimus-adiut-re-d02fa30e1e
       dominica-nonaop: chapter.1-ioann-5-7-38592af4d6
       dominica-sextaop: chapter.2-cor-13-13-2ae6473436
-      hymnus-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-566651a48a
-      hymnusm-completorium: hymn.te-lucis-ante-t-rminum-33af4d5940
-      hymnusm-nona: hymn.rerum-deus-tenax-vigor-3369fb8ae7
-      hymnusm-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-2c62e8e6c8
-      hymnusm-sexta: hymn.rector-potens-verax-deus-016c019c86
+      hymnus-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-bcfce70104
+      hymnusm-completorium: hymn.te-lucis-ante-t-rminum-0413906e0d
+      hymnusm-nona: hymn.rerum-deus-tenax-vigor-7961e90e1c
+      hymnusm-pasc7-tertia: hymn.prima-stropha-hymni-sequentis-dicitur-flexibus-g-bf9de4a65f
+      hymnusm-sexta: hymn.rector-potens-verax-deus-b81fa5e48f
       preces-dominicales: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-d31d1e6d5e
       preces-feriales: chapter.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8cb2aa5a1d
       responsory-adv-nonam: short-responsory.super-te-ier-salem-ori-tur-d-minus-96bac492ef
       responsory-adv-sextam: short-responsory.ost-nde-nobis-d-mine-miseric-rdiam-tuam-483df722f4
       responsory-adv-tertiam: short-responsory.veni-ad-liber-ndum-nos-d-mine-deus-virt-tum-86694df5f2
       responsory-breve-pasch-tertiaop: short-responsory.resurr-xit-d-minus-allel-ia-allel-ia-c786e2b70d
-      responsory-breve-quad5-nonaop: short-responsory.pr-ncipes-persec-ti-sunt-me-gratis-et-a-verbis-t-e039be9e1d
-      responsory-breve-quad5-sextaop: short-responsory.de-ore-le-nis-l-bera-me-d-mine-129f7df686
-      responsory-breve-quad5-tertiaop: short-responsory.rue-a-fr-mea-deus-nimam-meam-224ed6c78e
+      responsory-breve-quad5-nonaop: short-responsory.pr-ncipes-persec-ti-sunt-me-gratis-et-a-verbis-t-600899f44f
+      responsory-breve-quad5-sextaop: short-responsory.de-ore-le-nis-l-bera-me-d-mine-43d337abc4
+      responsory-breve-quad5-tertiaop: short-responsory.rue-a-fr-mea-deus-nimam-meam-1be24233a4
       responsory-completorium-op-quad: short-responsory.in-pace-in-id-psum-d-rmiam-et-requi-scam-1ab6855d9c
       responsory-dominica-nonam: short-responsory.ab-occ-ltis-meis-munda-me-d-mine-bea4733c01
       responsory-dominica-sextam: short-responsory.d-minus-regit-me-et-nihil-mihi-d-erit-0e9b10c080
@@ -549,15 +549,15 @@ offices:
       responsory-pasch-sextam: short-responsory.surr-xit-d-minus-vere-allel-ia-cfa6c49397
       responsory-pasch-tertiam: short-responsory.surr-xit-d-minus-de-sep-lcro-allel-ia-587f551e9b
       responsory-quad-nonam: short-responsory.scuto-circ-mdabit-te-v-ritas-eius-badf860725
-      responsory-quad-nonaop: short-responsory.s-pties-in-die-laudem-dixi-tibi-d-mine-deus-meus-11b2ef3d8e
+      responsory-quad-nonaop: short-responsory.s-pties-in-die-laudem-dixi-tibi-d-mine-deus-meus-52d7e99f3b
       responsory-quad-sextam: short-responsory.sc-pulis-suis-obumbr-bit-tibi-a537074b21
-      responsory-quad-sextaop: short-responsory.ab-omni-via-mala-proh-bui-pedes-meos-55aed7debc
+      responsory-quad-sextaop: short-responsory.ab-omni-via-mala-proh-bui-pedes-meos-6c387c21e1
       responsory-quad-tertiac: short-responsory.dicet-d-mino-susc-ptor-meus-es-tu-et-ref-gium-me-34434dcfde
       responsory-quad-tertiam: short-responsory.ipse-liber-vit-me-de-l-queo-ven-ntium-c07c86e928
-      responsory-quad-tertiaop: short-responsory.part-cipem-me-fac-deus-mnium-tim-ntium-te-6a895469e2
-      responsory-quad3-nonaop: short-responsory.decl-ra-super-nos-deus-cea905e2c2
-      responsory-quad3-sextaop: short-responsory.servus-tuus-ego-sum-c8faf5f283
-      responsory-quad3-tertiaop: short-responsory.bonum-mihi-d-mine-quod-humili-sti-me-d7bc5776c0
+      responsory-quad-tertiaop: short-responsory.part-cipem-me-fac-deus-mnium-tim-ntium-te-477d311f48
+      responsory-quad3-nonaop: short-responsory.decl-ra-super-nos-deus-4d7cb4a3cd
+      responsory-quad3-sextaop: short-responsory.servus-tuus-ego-sum-970d15f287
+      responsory-quad3-tertiaop: short-responsory.bonum-mihi-d-mine-quod-humili-sti-me-8bbc8bcb47
       responsory-quad5-nonam: short-responsory.ne-perdas-cum-mpiis-deus-nimam-meam-eb6aa05f26
       responsory-quad5-sextac: short-responsory.insurrex-runt-in-me-testes-in-qui-ae9308c627
       responsory-quad5-sextam: short-responsory.de-ore-le-nis-l-bera-me-d-mine-ce0de92bb2
@@ -601,9 +601,9 @@ offices:
       terce-versicle: versicle.adi-tor-meus-esto-ne-derel-nquas-me-8cbf944e68
   minor-hymn:
     slots:
-      none-hymn: hymn.rerum-deus-tenax-vigor-1d9e3fdd7c
-      sext-hymn: hymn.rector-potens-verax-deus-581d2ec760
-      terce-hymn: hymn.nunc-sancte-nobis-sp-ritus-8e3c4585e3
+      none-hymn: hymn.rerum-deus-tenax-vigor-e6b36cae21
+      sext-hymn: hymn.rector-potens-verax-deus-00ccc57f76
+      terce-hymn: hymn.nunc-sancte-nobis-sp-ritus-e4af760d21
   minor-pasch:
     slots:
       none-chapter: chapter.1-pet-3-18-a8bffa7df8
@@ -640,7 +640,7 @@ offices:
   prime:
     slots:
       commemoratio-defunctorum: short-reading.deinde-dicit-lector-commemor-tio-mnium-fratrum-f-8bed7f27f2
-      hymnusm-prima: hymn.iam-lucis-orto-s-dere-2014925616
+      hymnusm-prima: hymn.iam-lucis-orto-s-dere-a8374afd13
       preces-dominicales-prima-1: short-reading.k-rie-el-ison-christe-el-ison-k-rie-el-ison-8a5965bcb0
       preces-dominicales-prima-2: short-reading.adiut-rium-nostrum-in-n-mine-d-mini-7a6d41f165
       preces-feriales-prima: short-reading.ripe-me-364d192ed8
@@ -664,7 +664,7 @@ offices:
       chapter: short-reading.zach-8-19-09b7e144a5
   prime-fixed:
     slots:
-      hymn: hymn.iam-lucis-orto-s-dere-6e9435eec1
+      hymn: hymn.iam-lucis-orto-s-dere-ad9331c74e
       short-responsory: short-responsory.christe-fili-dei-vivi-miser-re-nobis-df8edff6b0
       versicle: versicle.exs-rge-christe-diuva-nos-16e4aca95e
   prime-heart:

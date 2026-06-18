@@ -394,7 +394,9 @@ impl DocumentNode {
             Self::Response { text } => format!("R. {text}"),
             Self::ShortResponse { text } => format!("R.br. {text}"),
             Self::Antiphon { text } => format!("Ant. {text}"),
-            Self::Blessing { text } if language == "en" => format!("Benediction. {text}"),
+            Self::Blessing { text } if matches!(language, "en" | "en2") => {
+                format!("Benediction. {text}")
+            }
             Self::Blessing { text } => format!("Benedictio. {text}"),
             Self::Amen => "R. Amen.".to_string(),
             Self::Unresolved {
@@ -406,42 +408,37 @@ impl DocumentNode {
     }
 }
 
-/// Resolved or missing content for one side-by-side column.
+/// Resolved or missing content for a block, in the document's single language.
 #[derive(Clone, Debug, Eq, PartialEq)]
 #[non_exhaustive]
-pub enum OfficeColumnContent {
+pub enum OfficeBlockContent {
     /// Content resolved for this language.
     Resolved {
         /// Output nodes.
         nodes: Vec<DocumentNode>,
     },
-    /// This requested language is missing.
+    /// The requested language is missing for this block.
     Missing {
         /// Human-readable reason.
         reason: String,
     },
 }
 
-/// One language column in a block.
-#[derive(Clone, Debug, Eq, PartialEq)]
-pub struct OfficeColumn {
-    /// Language identifier.
-    pub language: LanguageId,
-    /// Localized block title.
-    pub title: Option<String>,
-    /// Column content.
-    pub content: OfficeColumnContent,
-}
-
-/// One block in a resolved Office document.
+/// One block in a resolved Office document, in a single language.
+///
+/// A document is resolved for one language at a time; to show languages side by
+/// side, a client resolves the same `(date, hour)` once per language and zips the
+/// block lists by position — the block structure is language-independent.
 #[derive(Clone, Debug, Eq, PartialEq)]
 pub struct OfficeBlock {
-    /// Stable block identifier.
+    /// Stable block identifier (`office.<profile>.<hour>.<slot>`).
     pub id: RecordId,
     /// Semantic role.
     pub role: TextRole,
-    /// Side-by-side columns.
-    pub columns: Vec<OfficeColumn>,
+    /// Localized block title.
+    pub title: Option<String>,
+    /// Block content.
+    pub content: OfficeBlockContent,
 }
 
 /// Non-fatal diagnostic.
@@ -488,19 +485,26 @@ pub struct OfficeRequest {
     pub hour: Hour,
     /// Rubrical profile.
     pub profile: ProfileId,
-    /// Requested languages, displayed side by side.
-    pub languages: Vec<LanguageId>,
+    /// Requested language. One document resolves one language; clients zip
+    /// per-language documents to display columns.
+    pub language: LanguageId,
 }
 
 impl OfficeRequest {
-    /// Builds a Roman 1960 request with Latin and English columns.
+    /// Builds a Roman 1960 request for the given hour in Latin.
     pub fn new(date: NaiveDate, hour: Hour) -> Self {
         Self {
             date,
             hour,
             profile: "roman-1960".to_string(),
-            languages: vec!["la".to_string(), "en".to_string()],
+            language: "la".to_string(),
         }
+    }
+
+    /// Sets the requested language (builder style).
+    pub fn with_language(mut self, language: impl Into<LanguageId>) -> Self {
+        self.language = language.into();
+        self
     }
 }
 

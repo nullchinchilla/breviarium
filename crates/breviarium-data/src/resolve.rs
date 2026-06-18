@@ -5,7 +5,7 @@
 //! source/book context, and fills each slot from the book stack, expanding the
 //! stored (already-typed) lexicon nodes into render-neutral [`DocumentNode`]s.
 
-use crate::calendar::{divinum_weekday_number, sanctoral_key};
+use crate::calendar::{liturgical_weekday_number, sanctoral_key};
 use crate::catalog::section_nodes;
 use crate::data_slug;
 use crate::*;
@@ -802,27 +802,18 @@ fn execute_steps(
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Vec<OfficeBlock> {
     // The hour's structure is the data-driven `Slot` table; each slot dispatches
-    // on its generic `Handler` directly to a resolution function.
+    // on its generic `Handler` directly to a resolution function. The document is
+    // resolved for the single requested language; the block structure does not
+    // depend on the language, so clients zip per-language documents by position.
+    let language = request.language.as_str();
     hour_slots(request.hour)
         .iter()
         .map(|slot| {
-            let columns = request
-                .languages
-                .iter()
-                .map(|language| {
-                    let content =
-                        match dispatch(catalog, language, context, slot, request.hour, diagnostics)
-                        {
-                            Ok(nodes) => OfficeColumnContent::Resolved { nodes },
-                            Err(reason) => OfficeColumnContent::Missing { reason },
-                        };
-                    OfficeColumn {
-                        language: language.clone(),
-                        title: slot_title(slot, language),
-                        content,
-                    }
-                })
-                .collect();
+            let content =
+                match dispatch(catalog, language, context, slot, request.hour, diagnostics) {
+                    Ok(nodes) => OfficeBlockContent::Resolved { nodes },
+                    Err(reason) => OfficeBlockContent::Missing { reason },
+                };
             OfficeBlock {
                 id: format!(
                     "office.{}.{}.{}",
@@ -831,7 +822,8 @@ fn execute_steps(
                     slot.id
                 ),
                 role: slot.role.clone(),
-                columns,
+                title: slot_title(slot, language),
+                content,
             }
         })
         .collect()
@@ -842,7 +834,7 @@ fn execute_steps(
 fn slot_title(slot: &Slot, language: &str) -> Option<String> {
     match language {
         "la" => Some(slot.title.0.to_string()),
-        "en" => Some(slot.title.1.to_string()),
+        "en" | "en2" => Some(slot.title.1.to_string()),
         _ => None,
     }
 }
@@ -878,7 +870,7 @@ fn dispatch(
         Collect(arg) => resolve_collect(catalog, language, context, arg, diagnostics),
         Martyrology => resolve_prime_martyrology(catalog, language, context, diagnostics),
         Preces => Ok(vec![DocumentNode::Marker {
-            text: localized_literal(language, "omittitur", "omit").to_string(),
+            text: catalog.phrase(language, "preces-omit").to_string(),
         }]),
         FinalAntiphon => resolve_final_antiphon(catalog, language, context, diagnostics),
     }
@@ -1015,14 +1007,9 @@ fn resolve_formula(
                     nodes.push(DocumentNode::Text { text: line.clone() });
                 }
             }
-            Part::DomineExaudi => nodes.extend(domine_exaudi_nodes(language)),
+            Part::DomineExaudi => nodes.extend(domine_exaudi_nodes(catalog, language)),
             Part::ExaminationRubric => nodes.push(DocumentNode::Rubric {
-                text: localized_literal(
-                    language,
-                    "Examen conscientiae vel Pater Noster totum secreto.",
-                    "There follows an examination of conscience, or the Our Father said silently.",
-                )
-                .to_string(),
+                text: catalog.phrase(language, "examination-rubric").to_string(),
             }),
             Part::Amen => nodes.extend(amen_nodes()),
         }
@@ -1047,7 +1034,7 @@ fn resolve_matins_invitatory(
         .or_else(|| {
             let lines =
                 Stack::of(["ordinary/matins"]).antiphons(catalog, language, "invitatory")?;
-            let mut index = divinum_weekday_number(context.facts.weekday) as usize;
+            let mut index = liturgical_weekday_number(context.facts.weekday) as usize;
             if index == 0 && context.facts.date.month() < 4 {
                 index = 7;
             }
@@ -1143,7 +1130,7 @@ fn resolve_matins_nocturns(
             Stack::of([PSALTER_MATINS]).psalmody(
                 catalog,
                 language,
-                &format!("day{}", divinum_weekday_number(context.facts.weekday)),
+                &format!("day{}", liturgical_weekday_number(context.facts.weekday)),
             )
         })
         .ok_or_else(|| "missing Matins psalmody".to_string())?;
@@ -1151,7 +1138,7 @@ fn resolve_matins_nocturns(
     let lesson_count = matins_lesson_count(catalog, language, context);
     if lesson_count <= 3 {
         nodes.push(DocumentNode::Marker {
-            text: localized_nocturn_title(language, 1),
+            text: localized_nocturn_title(catalog, language, 1),
         });
         for entry in &entries {
             nodes.extend(expand_psalmody_entry(
@@ -1184,7 +1171,7 @@ fn resolve_matins_nocturns(
     for (index, entry) in entries.iter().enumerate() {
         if index % 3 == 0 {
             nodes.push(DocumentNode::Marker {
-                text: localized_nocturn_title(language, index / 3 + 1),
+                text: localized_nocturn_title(catalog, language, index / 3 + 1),
             });
         }
         nodes.extend(expand_psalmody_entry(
@@ -1260,7 +1247,7 @@ fn resolve_matins_versicle(
                 catalog,
                 language,
                 PSALTER_MATINS,
-                &format!("day{}", divinum_weekday_number(context.facts.weekday)),
+                &format!("day{}", liturgical_weekday_number(context.facts.weekday)),
             )
             .unwrap_or_default()
             .into_iter()
@@ -1312,7 +1299,7 @@ fn resolve_matins_lessons(
             diagnostics,
         )?);
         nodes.push(DocumentNode::Marker {
-            text: localized_lesson_title(language, lesson),
+            text: localized_lesson_title(catalog, language, lesson),
         });
         let section = format!("matins-reading-{lesson}");
         let mut lesson_added = false;
@@ -1457,7 +1444,7 @@ fn major_psalmody_entries(
                 if context.has_rule("psalmi-dominica") {
                     0
                 } else {
-                    divinum_weekday_number(context.facts.weekday)
+                    liturgical_weekday_number(context.facts.weekday)
                 },
                 context.laudes
             ),
@@ -1469,7 +1456,7 @@ fn major_psalmody_entries(
                 if context.has_rule("psalmi-dominica") {
                     0
                 } else {
-                    divinum_weekday_number(context.facts.weekday)
+                    liturgical_weekday_number(context.facts.weekday)
                 }
             ),
         ),
@@ -1630,7 +1617,7 @@ fn major_special_stack(context: &OfficeContext, is_vespers: bool) -> Stack {
             keys.push(format!("ordinary/major-{season}"));
         }
         None => {
-            let weekday = divinum_weekday_number(context.facts.weekday);
+            let weekday = liturgical_weekday_number(context.facts.weekday);
             keys.push(format!("ordinary/major-day{weekday}"));
             if is_vespers && weekday == 6 {
                 keys.push("ordinary/major-monastic-day6".to_string());
@@ -1664,7 +1651,7 @@ fn ferial_canticle_antiphons(
     context: &OfficeContext,
     slot: &str,
 ) -> Option<Vec<String>> {
-    let weekday = divinum_weekday_number(context.facts.weekday);
+    let weekday = liturgical_weekday_number(context.facts.weekday);
     let selector = if weekday == 0 {
         "dominica".to_string()
     } else {
@@ -1876,7 +1863,7 @@ fn resolve_collect(
     arg: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<DocumentNode>, String> {
-    let mut nodes = domine_exaudi_nodes(language);
+    let mut nodes = domine_exaudi_nodes(catalog, language);
     nodes.extend(formula_nodes(catalog, language, "oremus", diagnostics)?);
     match arg {
         "prime" => {
@@ -1892,7 +1879,7 @@ fn resolve_collect(
                 "per-dominum",
                 diagnostics,
             )?);
-            nodes.extend(domine_exaudi_nodes(language));
+            nodes.extend(domine_exaudi_nodes(catalog, language));
             nodes.extend(formula_nodes(
                 catalog,
                 language,
@@ -1952,7 +1939,7 @@ fn resolve_commemoration(
         nodes.push(DocumentNode::Marker {
             text: format!(
                 "{} {}",
-                localized_literal(language, "Commemoratio", "Commemoration of"),
+                catalog.phrase(language, "commemoration-prefix"),
                 title
             ),
         });
@@ -2031,7 +2018,7 @@ fn resolve_final_antiphon(
         diagnostics,
     )?;
     if context.hour == Hour::Compline {
-        nodes.extend(divinum_auxilium_nodes(language));
+        nodes.extend(divinum_auxilium_nodes(catalog, language));
     }
     Ok(nodes)
 }
@@ -2067,36 +2054,23 @@ fn amen_nodes() -> Vec<DocumentNode> {
     vec![DocumentNode::Amen]
 }
 
-fn domine_exaudi_nodes(language: &str) -> Vec<DocumentNode> {
+fn domine_exaudi_nodes(catalog: &Catalog, language: &str) -> Vec<DocumentNode> {
     vec![
         DocumentNode::Versicle {
-            text: localized_literal(
-                language,
-                "Dómine, exáudi oratiónem meam.",
-                "O Lord, hear my prayer.",
-            )
-            .to_string(),
+            text: catalog.phrase(language, "domine-exaudi-versicle").to_string(),
         },
         DocumentNode::Response {
-            text: localized_literal(
-                language,
-                "Et clamor meus ad te véniat.",
-                "And let my cry come unto thee.",
-            )
-            .to_string(),
+            text: catalog.phrase(language, "domine-exaudi-response").to_string(),
         },
     ]
 }
 
-fn divinum_auxilium_nodes(language: &str) -> Vec<DocumentNode> {
+fn divinum_auxilium_nodes(catalog: &Catalog, language: &str) -> Vec<DocumentNode> {
     vec![
         DocumentNode::Versicle {
-            text: localized_literal(
-                language,
-                "Divínum auxílium ✠ máneat semper nobíscum.",
-                "May the divine assistance ✠ remain with us always.",
-            )
-            .to_string(),
+            text: catalog
+                .phrase(language, "divinum-auxilium-versicle")
+                .to_string(),
         },
         DocumentNode::Amen,
     ]
@@ -2243,7 +2217,7 @@ fn expand_psalmody_entry(
             Ok(psalm_nodes) => nodes.extend(psalm_nodes),
             Err(reason) => nodes.push(DocumentNode::Unresolved {
                 kind: "psalm".to_string(),
-                value: localized_psalm_title(language, psalm),
+                value: localized_psalm_title(catalog, language, psalm),
                 reason,
             }),
         }
@@ -2267,6 +2241,17 @@ fn psalm_nodes(
         .ok_or_else(|| format!("missing psalm {}", reference.number))?;
     let mut lines =
         expand_nodes(catalog, language, &raw, diagnostics).map(|nodes| document_lines(&nodes))?;
+
+    // A canticle body opens with its title and a scripture-reference line, neither
+    // of which carries a verse number; a numbered psalm is verses only. Peel that
+    // preamble off so canticles keep their real heading + citation instead of a
+    // synthetic "Psalmus N" — DO likewise prints the canticle title, not a number.
+    let preamble_len = lines
+        .iter()
+        .take_while(|line| !has_verse_prefix(line))
+        .count();
+    let preamble = lines.drain(..preamble_len).collect::<Vec<_>>();
+
     if let Some(start) = &reference.start {
         let start = parse_verse_ref(start)?;
         let end = reference
@@ -2281,9 +2266,18 @@ fn psalm_nodes(
         });
     }
     let mut nodes = Vec::new();
-    if !is_gospel_canticle_number(&reference.number) {
+    if let Some((title, references)) = preamble.split_first() {
         nodes.push(DocumentNode::Heading {
-            text: localized_psalm_title(language, reference),
+            text: title.clone(),
+        });
+        for reference_line in references {
+            nodes.push(DocumentNode::Citation {
+                text: reference_line.clone(),
+            });
+        }
+    } else if !is_gospel_canticle_number(&reference.number) {
+        nodes.push(DocumentNode::Heading {
+            text: localized_psalm_title(catalog, language, reference),
         });
     }
     if !lines.is_empty() {
@@ -2324,6 +2318,20 @@ fn parse_verse_ref(input: &str) -> Result<VerseRef, String> {
         }
     });
     Ok(VerseRef { number, suffix })
+}
+
+/// True if `line` opens with a `chapter:verse` number (`92:1a`, `3:57`), the
+/// shape every psalm/canticle verse carries. A canticle's title and scripture
+/// reference lines do not, which is how `psalm_nodes` tells preamble from verses.
+fn has_verse_prefix(line: &str) -> bool {
+    let line = line.trim_start();
+    let chapter = line.chars().take_while(|ch| ch.is_ascii_digit()).count();
+    if chapter == 0 {
+        return false;
+    }
+    line[chapter..]
+        .strip_prefix(':')
+        .is_some_and(|rest| rest.starts_with(|ch: char| ch.is_ascii_digit()))
 }
 
 fn verse_ref_from_line(psalm_number: &str, line: &str) -> Option<VerseRef> {
@@ -2694,7 +2702,7 @@ fn adjacent_temporal_key(catalog: &Catalog, language: &str, date: NaiveDate) -> 
 }
 
 fn scripture_source_candidates(facts: &DateFacts) -> Vec<String> {
-    let weekday = i64::from(divinum_weekday_number(facts.weekday));
+    let weekday = i64::from(liturgical_weekday_number(facts.weekday));
     let week_start = facts.date - Duration::days(weekday);
     let month = week_start.month();
     if !(8..=11).contains(&month) {
@@ -2702,13 +2710,13 @@ fn scripture_source_candidates(facts: &DateFacts) -> Vec<String> {
     }
     let first_of_month =
         NaiveDate::from_ymd_opt(week_start.year(), month, 1).expect("valid month start");
-    let days_to_first_sunday = (7 - divinum_weekday_number(first_of_month.weekday())).rem_euclid(7);
+    let days_to_first_sunday = (7 - liturgical_weekday_number(first_of_month.weekday())).rem_euclid(7);
     let first_sunday = first_of_month + Duration::days(i64::from(days_to_first_sunday));
     if week_start < first_sunday {
         return Vec::new();
     }
     let week = 1 + ((week_start - first_sunday).num_days() / 7);
-    let weekday = divinum_weekday_number(facts.weekday);
+    let weekday = liturgical_weekday_number(facts.weekday);
     let mut stems = vec![format!("{month:02}{week}-{weekday}")];
     if weekday != 0 {
         stems.push(format!("{month:02}{week}-0"));
@@ -2719,37 +2727,17 @@ fn scripture_source_candidates(facts: &DateFacts) -> Vec<String> {
         .collect()
 }
 
-fn localized_literal<'a>(language: &str, latin: &'a str, english: &'a str) -> &'a str {
-    if language == "en" {
-        english
-    } else {
-        latin
-    }
+fn localized_nocturn_title(catalog: &Catalog, language: &str, nocturn: usize) -> String {
+    format!("{} {nocturn}", catalog.phrase(language, "nocturn-title"))
 }
 
-fn localized_nocturn_title(language: &str, nocturn: usize) -> String {
-    if language == "en" {
-        format!("Nocturn {nocturn}")
-    } else {
-        format!("Nocturnus {nocturn}")
-    }
+fn localized_lesson_title(catalog: &Catalog, language: &str, lesson: usize) -> String {
+    format!("{} {lesson}", catalog.phrase(language, "lesson-title"))
 }
 
-fn localized_lesson_title(language: &str, lesson: usize) -> String {
-    if language == "en" {
-        format!("Reading {lesson}")
-    } else {
-        format!("Lectio {lesson}")
-    }
-}
-
-fn localized_psalm_title(language: &str, psalm: &PsalmReference) -> String {
+fn localized_psalm_title(catalog: &Catalog, language: &str, psalm: &PsalmReference) -> String {
     let label = psalm_label(&psalm.number, psalm.start.as_deref(), psalm.end.as_deref());
-    if language == "en" {
-        format!("Psalm {label}")
-    } else {
-        format!("Psalmus {label}")
-    }
+    format!("{} {label}", catalog.phrase(language, "psalm-title"))
 }
 
 fn psalm_label(number: &str, start: Option<&str>, end: Option<&str>) -> String {
@@ -2925,7 +2913,7 @@ fn matins_hymn_office(context: &OfficeContext) -> String {
     } else {
         format!(
             "ordinary/matins-day{}",
-            divinum_weekday_number(context.facts.weekday)
+            liturgical_weekday_number(context.facts.weekday)
         )
     }
 }

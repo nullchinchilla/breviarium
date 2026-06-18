@@ -163,3 +163,215 @@ fn hour_for_clock(hour: u32) -> &'static str {
         _ => "completorium",
     }
 }
+
+use crate::officium::{HourLinkView, LineKind, LineView, OfficeBlockView, OfficeView};
+
+/// Resolves a single language's Office into the view consumed by the
+/// `Officium` component. The component calls this once per language (via the
+/// `load_office` server function) and zips the results for side-by-side
+/// display, so this makes exactly one backend call.
+pub(crate) fn resolve_office_view(
+    date: String,
+    hour: String,
+    language: String,
+) -> Result<OfficeView, String> {
+    use breviarium_data::{Breviarium, OfficeBlockContent, OfficeRequest};
+    use chrono::{Duration, NaiveDate};
+
+    let parsed_date = NaiveDate::parse_from_str(&date, "%Y%m%d")
+        .map_err(|error| format!("invalid date `{date}`: {error}"))?;
+    let parsed_hour =
+        parse_data_hour(&hour).ok_or_else(|| format!("unknown Office hour `{hour}`"))?;
+
+    let engine =
+        Breviarium::embedded().map_err(|error| format!("failed to load embedded data: {error}"))?;
+    let office = engine
+        .resolve_office(OfficeRequest::new(parsed_date, parsed_hour).with_language(language.as_str()))
+        .map_err(|error| format!("failed to resolve Office: {error}"))?;
+
+    let date_path = parsed_date.format("%Y%m%d").to_string();
+    let hour_path = canonical_hour_path(parsed_hour).to_string();
+    let title = office
+        .principal
+        .title
+        .clone()
+        .unwrap_or_else(|| office.principal.id.clone());
+    let page_title = format!("{title} - {}", display_hour(parsed_hour));
+    let previous_date = parsed_date - Duration::days(1);
+    let next_date = parsed_date + Duration::days(1);
+    let diagnostics = office
+        .diagnostics
+        .iter()
+        .map(|diagnostic| format!("{}: {}", diagnostic.code, diagnostic.message))
+        .collect::<Vec<_>>();
+    let blocks = office
+        .blocks
+        .iter()
+        .map(|block| {
+            let fallback_title = format!("{:?}", block.role);
+            let title = block.title.clone().unwrap_or_else(|| fallback_title.clone());
+            let class = fallback_title.to_ascii_lowercase();
+            let lines = match &block.content {
+                OfficeBlockContent::Resolved { nodes } => document_lines(&language, nodes),
+                OfficeBlockContent::Missing { reason } => vec![LineView {
+                    kind: LineKind::Unresolved,
+                    class: "missing".to_string(),
+                    text: format!("Missing: {reason}"),
+                }],
+                _ => Vec::new(),
+            };
+            OfficeBlockView {
+                title,
+                class,
+                lines,
+            }
+        })
+        .collect();
+
+    Ok(OfficeView {
+        page_title,
+        title,
+        date_label: parsed_date.format("%B %-d, %Y").to_string(),
+        hour_label: display_hour(parsed_hour).to_string(),
+        profile_label: office.profile.clone(),
+        previous_date_path: format!("/officium/{}/{}", previous_date.format("%Y%m%d"), hour_path),
+        next_date_path: format!("/officium/{}/{}", next_date.format("%Y%m%d"), hour_path),
+        hour_links: hour_links(&date_path, &hour_path),
+        blocks,
+        diagnostics,
+    })
+}
+
+fn parse_data_hour(value: &str) -> Option<breviarium_data::Hour> {
+    use breviarium_data::Hour;
+
+    match value.to_ascii_lowercase().as_str() {
+        "matins" | "matutinum" => Some(Hour::Matins),
+        "lauds" | "laudes" => Some(Hour::Lauds),
+        "prime" | "prima" => Some(Hour::Prime),
+        "terce" | "tertia" => Some(Hour::Terce),
+        "sext" | "sexta" => Some(Hour::Sext),
+        "none" | "nona" => Some(Hour::None),
+        "vespers" | "vespera" | "vesperae" => Some(Hour::Vespers),
+        "compline" | "completorium" => Some(Hour::Compline),
+        _ => None,
+    }
+}
+
+fn canonical_hour_path(hour: breviarium_data::Hour) -> &'static str {
+    use breviarium_data::Hour;
+
+    match hour {
+        Hour::Matins => "matutinum",
+        Hour::Lauds => "laudes",
+        Hour::Prime => "prima",
+        Hour::Terce => "tertia",
+        Hour::Sext => "sexta",
+        Hour::None => "nona",
+        Hour::Vespers => "vesperae",
+        Hour::Compline => "completorium",
+        _ => "office",
+    }
+}
+
+fn display_hour(hour: breviarium_data::Hour) -> &'static str {
+    use breviarium_data::Hour;
+
+    match hour {
+        Hour::Matins => "Matins",
+        Hour::Lauds => "Lauds",
+        Hour::Prime => "Prime",
+        Hour::Terce => "Terce",
+        Hour::Sext => "Sext",
+        Hour::None => "None",
+        Hour::Vespers => "Vespers",
+        Hour::Compline => "Compline",
+        _ => "Office",
+    }
+}
+
+fn document_lines(language: &str, nodes: &[breviarium_data::DocumentNode]) -> Vec<LineView> {
+    use breviarium_data::DocumentNode;
+
+    let mut lines = Vec::new();
+    for node in nodes {
+        // Semantic class from the node type, e.g. `versicle`, `response`,
+        // `short-response`, `antiphon`, `prayer`, `blessing`, `amen`, `heading`.
+        let class = node.kind().replace('_', "-");
+        match node {
+            DocumentNode::Text { .. }
+            | DocumentNode::Versicle { .. }
+            | DocumentNode::Response { .. }
+            | DocumentNode::ShortResponse { .. }
+            | DocumentNode::Antiphon { .. }
+            | DocumentNode::Prayer { .. }
+            | DocumentNode::Blessing { .. }
+            | DocumentNode::Amen => push_lines(
+                &mut lines,
+                LineKind::Text,
+                &class,
+                &node.plain_text_for_language(language),
+            ),
+            DocumentNode::Heading { .. }
+            | DocumentNode::Marker { .. }
+            | DocumentNode::Citation { .. } => push_lines(
+                &mut lines,
+                LineKind::Marker,
+                &class,
+                &node.plain_text_for_language(language),
+            ),
+            DocumentNode::Rubric { .. } => push_lines(
+                &mut lines,
+                LineKind::Rubric,
+                &class,
+                &node.plain_text_for_language(language),
+            ),
+            DocumentNode::Unresolved {
+                kind,
+                value,
+                reason,
+            } => lines.push(LineView {
+                kind: LineKind::Unresolved,
+                class,
+                text: format!("unresolved {kind}: {value}; {reason}"),
+            }),
+            _ => lines.push(LineView {
+                kind: LineKind::Unresolved,
+                class: "unresolved".to_string(),
+                text: "unknown output node".to_string(),
+            }),
+        }
+    }
+    lines
+}
+
+fn push_lines(lines: &mut Vec<LineView>, kind: LineKind, class: &str, text: &str) {
+    // Each node is one block: multiline text (a hymn, a psalm's verses) stays
+    // together and renders as one paragraph with internal line breaks (the `<p>`
+    // uses `white-space: pre-line`), rather than one `<p>` per line.
+    lines.push(LineView {
+        kind,
+        class: class.to_string(),
+        text: text.to_string(),
+    });
+}
+
+fn hour_links(date_path: &str, current_hour: &str) -> Vec<HourLinkView> {
+    [
+        ("matutinum", "Matins"),
+        ("laudes", "Lauds"),
+        ("prima", "Prime"),
+        ("tertia", "Terce"),
+        ("sexta", "Sext"),
+        ("nona", "None"),
+        ("vesperae", "Vespers"),
+        ("completorium", "Compline"),
+    ]
+    .into_iter()
+    .map(|(hour, label)| HourLinkView {
+        label: label.to_string(),
+        href: format!("/officium/{date_path}/{hour}"),
+        current: hour == current_hour,
+    })
+    .collect()
+}

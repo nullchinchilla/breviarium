@@ -1,1 +1,88 @@
 /* Custom app styles can override Pico CSS here. */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --pico-font-family: "EB Garamond",serif;
+    --rubric-color: #e22613;
+}
+
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host(:not([data-theme=dark])) {
+    --pico-background-color: #faf7f5;
+    --pico-color: black;
+}
+
+.officium section {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.officium .columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.officium .columns > * {
+    flex: 1 1 0;
+}
+
+.officium .columns > *:first-child {
+    padding-right: 1rem;
+}
+
+.officium .columns > *:not(:first-child) {
+    border-left: 1px gray solid;
+    padding-left: 1rem;
+}
+
+.date {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+.officium .block-title {
+    font-size: 1rem;
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--rubric-color);
+    font-weight: normal;
+}
+
+.versicle {
+    margin-bottom: 0rem;
+}
+
+.response {
+    margin-top: 0rem;
+}
+
+.heading {
+    color: var(--rubric-color);
+    font-style: italic;
+}
+
+.citation {
+    font-style: italic;
+}
+
+.marker, .rubric {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--rubric-color);
+}
+
+.versicle-mark, .response-mark, .cross, .antiphon-mark {
+    color: var(--rubric-color);
+}
+
+.antiphon-mark {
+    font-style: italic;
+}
+
+.verse-marker {
+    color: var(--rubric-color);
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+}

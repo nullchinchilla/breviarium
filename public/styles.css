@@ -1,5 +1,5 @@
 /* Custom app styles can override Pico CSS here. */
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
     --pico-font-family: "EB Garamond",serif;

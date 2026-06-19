@@ -1,0 +1,14 @@
+{
+  "unique_strings": 19080,
+  "total_occurrences": 26809,
+  "per_file_occurrences": {
+    "commons.yaml": 2228,
+    "martyrology.yaml": 371,
+    "ordinary.yaml": 1635,
+    "propers-sanctoral.yaml": 10073,
+    "propers-temporal.yaml": 8487,
+    "psalms.yaml": 3281,
+    "psalter.yaml": 734
+  },
+  "latin_json": "zh/latin.json"
+}

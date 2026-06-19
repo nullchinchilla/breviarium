@@ -1,9 +1,31 @@
 /* Custom app styles can override Pico CSS here. */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000');
+
+@font-face {
+    font-family: "JunicodeVF";
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("/fonts/JunicodeVF-Roman.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "JunicodeVF";
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("/fonts/JunicodeVF-Italic.woff2") format("woff2");
+}
 
 :root {
-    --pico-font-family: "EB Garamond",serif;
+    --pico-font-family: "JunicodeVF",serif;
     --rubric-color: #e22613;
+}
+
+nav {
+    font-family: "Ysabeau", sans-serif;
+    font-variant-numeric: lining-nums;
 }
 
 [data-theme=light],
@@ -37,9 +59,10 @@
 }
 
 .date {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: normal;
-    font-variant: small-caps;
+    font-style: italic;
+    margin-bottom: 0.5rem;
 }
 
 .officium .block-title {
@@ -48,6 +71,23 @@
     text-align: center;
     color: var(--rubric-color);
     font-weight: normal;
+}
+
+.officium .hour-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.officium .hour-links a {
+    color: black;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.officium .hour-links a[aria-current="page"]{
+    color: red;
 }
 
 .versicle {
@@ -73,11 +113,16 @@
     color: var(--rubric-color);
 }
 
-.versicle-mark, .response-mark, .cross, .antiphon-mark {
+.versicle-mark, .response-mark, .cross, .inline-mark {
     color: var(--rubric-color);
 }
 
-.antiphon-mark {
+.versicle-mark, .response-mark {
+    display: inline-block;
+    width: 0.8em;
+}
+
+.inline-mark {
     font-style: italic;
 }
 

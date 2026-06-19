@@ -1,0 +1,155 @@
+[
+  {
+    "id": "psalm.canticum-b-mari-virginis-luc-1-46-55-ce5eba84a7",
+    "file": "psalms.yaml",
+    "role": "psalm",
+    "reason": "curated",
+    "strings": [
+      "Canticum B. Mariæ Virginis",
+      "Luc. 1:46-55",
+      "1:46 Magníficat + * ánima mea Dóminum.",
+      "1:47 Et exsultávit spíritus meus: * in Deo, salutári meo.",
+      "1:48 Quia respéxit humilitátem ancíllæ suæ: * ecce enim ex hoc beátam me dicent omnes generatiónes.",
+      "1:49 Quia fecit mihi magna qui potens est: * et sanctum nomen eius.",
+      "1:50 Et misericórdia eius, a progénie in progénies: * timéntibus eum.",
+      "1:51 Fecit poténtiam in brácchio suo: * dispérsit supérbos mente cordis sui.",
+      "1:52 Depósuit poténtes de sede: * et exaltávit húmiles.",
+      "1:53 Esuriéntes implévit bonis: * et dívites dimísit inánes.",
+      "1:54 Suscépit Israël púerum suum: * recordátus misericórdiæ suæ.",
+      "1:55 Sicut locútus est ad patres nostros: * Ábraham, et sémini eius in sǽcula."
+    ]
+  },
+  {
+    "id": "psalm.116-1-laud-te-d-minum-omnes-gentes-laud-te-eum-o-4793be2c32",
+    "file": "psalms.yaml",
+    "role": "psalm",
+    "reason": "curated",
+    "strings": [
+      "116:1 Laudáte Dóminum, omnes gentes: * laudáte eum, omnes pópuli:",
+      "116:2 Quóniam confirmáta est super nos misericórdia eius: * et véritas Dómini manet in ætérnum."
+    ]
+  },
+  {
+    "id": "antiphon.c-cus-magis-ac-magis-clam-bat-ut-eum-d-minus-ill-a997ac04a5",
+    "file": "propers-temporal.yaml",
+    "role": "antiphon",
+    "reason": "shortest:antiphon",
+    "strings": [
+      "Cæcus magis * ac magis clamábat, ut eum Dóminus illumináret."
+    ]
+  },
+  {
+    "id": "marian-antiphon.reg-na-c-li-l-t-re-allel-ia-7916a6fe7d",
+    "file": "ordinary.yaml",
+    "role": "marian_antiphon",
+    "reason": "shortest:marian_antiphon",
+    "strings": [
+      "Regína cæli, lætáre, allelúia;\nQuia quem meruísti portáre, allelúia,\nResurréxit, sicut dixit, allelúia:\nOra pro nobis Deum, allelúia.\n",
+      "Gaude et lætáre, Virgo María, allelúia.",
+      "Quia surréxit Dóminus vere, allelúia.",
+      "Orémus.\nDeus, qui per resurrectiónem Fílii tui, Dómini nostri Iesu Christi, mundum lætificáre dignátus es: præsta, quǽsumus; ut, per eius Genetrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúndem Christum Dóminum nostrum. Amen."
+    ]
+  },
+  {
+    "id": "responsory.be-ti-qui-h-bitant-9327732cd0",
+    "file": "propers-temporal.yaml",
+    "role": "responsory",
+    "reason": "shortest:responsory",
+    "strings": [
+      "Beáti qui hábitant",
+      "In domo tua, Dómine.",
+      "In sǽcula sæculórum laudábunt te.",
+      "In domo tua, Dómine."
+    ]
+  },
+  {
+    "id": "short-responsory.surr-xit-d-minus-vere-allel-ia-cfa6c49397",
+    "file": "ordinary.yaml",
+    "role": "short_responsory",
+    "reason": "shortest:short_responsory",
+    "strings": [
+      "Surréxit Dóminus vere, allelúia.",
+      "Et appáruit Simóni, allelúia."
+    ]
+  },
+  {
+    "id": "chapter.per-e-ndem-christum-d-minum-nostrum-520934e7e6",
+    "file": "ordinary.yaml",
+    "role": "chapter",
+    "reason": "shortest:chapter",
+    "strings": [
+      "Per eúndem Christum Dóminum nostrum.\n(sed post partum omittitur)",
+      "Amen."
+    ]
+  },
+  {
+    "id": "versicle.am-vit-eum-d-minus-et-orn-vit-eum-c8ace597ba",
+    "file": "propers-sanctoral.yaml",
+    "role": "versicle",
+    "reason": "shortest:versicle",
+    "strings": [
+      "Amávit eum Dóminus, et ornávit eum.",
+      "Stolam glóriæ índuit eum."
+    ]
+  },
+  {
+    "id": "invitatory.laud-mus-deum-nostrum-in-sanctis-op-ribus-be-t-e-a357a17e36",
+    "file": "propers-sanctoral.yaml",
+    "role": "invitatory",
+    "reason": "shortest:invitatory",
+    "strings": [
+      "Laudémus Deum nostrum * In sanctis opéribus beátæ Elísabeth."
+    ]
+  },
+  {
+    "id": "short-reading.zach-8-19-09b7e144a5",
+    "file": "ordinary.yaml",
+    "role": "short_reading",
+    "reason": "shortest:short_reading",
+    "strings": [
+      "Zach 8:19",
+      "Pacem et veritátem dilígite, ait Dóminus omnípotens."
+    ]
+  },
+  {
+    "id": "hymn.mar-a-castis-sculis-e9bf646fd6",
+    "file": "propers-sanctoral.yaml",
+    "role": "hymn",
+    "reason": "shortest:hymn",
+    "strings": [
+      "María castis ósculis\nLambit Dei vestígia,\nFletu rigat, tergit comis,\nDetérsa nardo pérlinit.\n\nDeo Patri sit glória,\nEiúsque soli Fílio,\nCum Spíritu Paráclito,\nNunc, et per omne sǽculum.\nAmen."
+    ]
+  },
+  {
+    "id": "collect.commemor-tio-mnium-fratrum-famili-rum-rdinis-nos-56f4bdf84a",
+    "file": "ordinary.yaml",
+    "role": "collect",
+    "reason": "shortest:collect",
+    "strings": [
+      "Commemorátio ómnium fratrum, familiárum Órdinis nostri, atque benefactórum nostrórum."
+    ]
+  },
+  {
+    "id": "blessing.dies-et-actus-nostros-in-sua-pace-disp-nat-d-min-20bebe3bde",
+    "file": "ordinary.yaml",
+    "role": "blessing",
+    "reason": "shortest:blessing",
+    "strings": [
+      "Dies et actus nostros in sua pace dispónat Dóminus omnípotens.",
+      "Amen."
+    ]
+  },
+  {
+    "id": "reading.l-ctio-sancti-evang-lii-sec-ndum-lucam-5dc8e02c79",
+    "file": "propers-sanctoral.yaml",
+    "role": "reading",
+    "reason": "short:reading",
+    "strings": [
+      "Léctio sancti Evangélii secúndum Lucam",
+      "Luc 15:",
+      "In illo témpore: Erant appropinquántes ad Iesum publicáni et peccatóres, ut audírent illum. Et réliqua.\n\nHomilía S. Gregórii Papæ",
+      "Hom. 34 in Evang.",
+      "Audístis in lectióne ..."
+    ]
+  }
+]

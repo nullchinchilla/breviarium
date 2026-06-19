@@ -15002,44 +15002,44 @@ texts:
       en2:
       - type: text
         text: |-
-          We praise you, O God: * we acknowledge you as Lord.
-          All the earth worships you, * O Father everlasting.
-          To you all the Angels, * to you the Heavens, and all the Powers:
-          To you the Cherubim and Seraphim * cry out without ceasing:
-          (A bow is made) Holy, Holy, Holy, * Lord God of Hosts.
-          The heavens and the earth are full * of the majesty of your glory.
-          The glorious choir * of the Apostles,
-          The praiseworthy company * of the Prophets,
-          The white-robed army * of Martyrs praises you.
-          The holy Church throughout the world * acknowledges you,
-          the Father * of immeasurable majesty;
-          Your true and only * Son, worthy of veneration;
-          And the Holy * Paraclete Spirit.
-          You, O Christ, are the King of glory.
-          You are the * eternal Son of the Father.
-          (A bow is made) You, about to take on humanity for its liberation, * did not shrink from the Virgin's womb.
-          You, about to take on humanity for its liberation, * did not shrink from the Virgin's womb.
-          Having overcome the sting of death, * you opened the Kingdom of Heaven to those who believe.
-          You sit at the right hand of God, * in the glory of the Father.
-          You are believed * to be the Judge to come.
+          O God, we praise you; * O Lord, we acclaim you.
+          Eternal Father, * all the earth reveres you.
+          To you all the Angels, * the heavens and all the Powers of heaven:
+          To you the Cherubim and Seraphim * cry out in endless praise:
+          (A bow is made) Holy, Holy, Holy * Lord God of hosts;
+          Heaven and earth are filled * with the majesty of your glory.
+          The glorious choir of Apostles * sings to you,
+          the noble company of Prophets * praises you,
+          the white-robed army of Martyrs * glorifies you.
+          Holy Church throughout the earth * proclaims you,
+          the Father * of boundless majesty;
+          your true and only Son, * worthy of adoration;
+          and the Holy Spirit, * the Paraclete.
+          You, O Christ, * are the King of glory.
+          You are * the Father's everlasting Son.
+          (A bow is made) When you resolved to save the human race, * you did not spurn the Virgin's womb.
+          When you resolved to save the human race, * you did not spurn the Virgin's womb.
+          You overcame the sting of death * and opened the Kingdom of Heaven to those who put their faith in you.
+          You are seated at the right hand of God * in the glory of the Father.
+          We believe you are the Judge * who is to come.
       - type: rubric
         text: (The following verse is said kneeling)
       - type: rubric
         text: (Brethren, when they begin 'Te ergo quaesumus,' departing from the Stalls, let them reverently bow at the words 'Quos pretioso' and the rest)
       - type: text
         text: |-
-          We beseech you, therefore, come to the aid of your servants, * whom you have redeemed with your precious blood.
-          Number them among your Saints * in eternal glory.
-          Number them among your Saints * to receive reward in eternal glory.
-          Save your people, O Lord, * and bless your inheritance.
-          And rule them, * and lift them up for ever.
-          Day by day * we bless you.
-          (A bow is made, according to custom) And we praise your name for ever, * and for ever and ever.
-          And we praise your name for ever, * and for ever and ever.
-          Graciously keep us, O Lord, this day * without sin.
-          Have mercy on us, O Lord, * have mercy on us.
-          Let your mercy, O Lord, be upon us, * as we have hoped in you.
-          In you, O Lord, I have hoped: * let me not be confounded for ever.
+          And so we beg you, help your servants, * redeemed by your most precious blood.
+          Number them * among your Saints in eternal glory.
+          Number them * among your Saints in eternal glory.
+          Save your people, Lord, * and bless your inheritance.
+          Shepherd them * and raise them to eternal life.
+          Day by day * we bless you,
+          (A bow is made, according to custom) and we praise your name * for endless ages evermore.
+          and we praise your name * for endless ages evermore.
+          Be gracious, Lord, on this day, * and keep us from all sin.
+          Have mercy on us, O Lord, * have mercy.
+          May your mercy be upon us, Lord, * as we place our trust in you.
+          In you, O Lord, I rest my hope: * let me never be put to shame.
   rubric.tu-autem-d-mine-miser-re-nobis-4127bc78b9:
     role: rubric
     content:
@@ -16265,7 +16265,7 @@ texts:
     role: short_responsory
     content:
       en:
-      - type: short_response
+      - type: versicle
         text: Into thy hands, O Lord, * do I commend my spirit.
       - type: response
         text: Into thy hands, O Lord, * do I commend my spirit.
@@ -16278,35 +16278,27 @@ texts:
       - type: response
         text: Into thy hands, O Lord, * do I commend my spirit.
       la:
-      - type: short_response
+      - type: versicle
         text: In manus tuas, Dómine, * Comméndo spíritum meum.
       - type: response
         text: In manus tuas, Dómine, * Comméndo spíritum meum.
       - type: versicle
         text: Redemísti nos, Dómine, Deus veritátis.
-      - type: versicle
-        text: Redemísti me, Dómine, Deus veritátis.
       - type: response
         text: Comméndo spíritum meum.
-      - type: versicle
-        text: Glória Patri, et Fílio, * et Spirítui Sancto.
       - type: versicle
         text: Glória Patri, et Fílio, * et Spirítui Sancto.
       - type: response
         text: In manus tuas, Dómine, * Comméndo spíritum meum.
       en2:
-      - type: short_response
+      - type: versicle
         text: Into your hands, O Lord, * I commend my spirit.
       - type: response
         text: Into your hands, O Lord, * I commend my spirit.
       - type: versicle
         text: You have redeemed us, O Lord, God of truth.
-      - type: versicle
-        text: You have redeemed me, O Lord, God of truth.
       - type: response
         text: I commend my spirit.
-      - type: versicle
-        text: Glory be to the Father, and to the Son, * and to the Holy Spirit.
       - type: versicle
         text: Glory be to the Father, and to the Son, * and to the Holy Spirit.
       - type: response

@@ -50,7 +50,11 @@ TRANSLATABLE_KEYS = ("text", "antiphon")
 HERE = Path(__file__).resolve().parent
 CRATE = HERE.parent
 LEXICON_DIR = CRATE / "data" / "lexicon"
-OUT_DIR = CRATE / "en2"
+
+
+def out_dir(lang: str) -> Path:
+    """Per-language working dir holding ``latin.json`` and the translated array."""
+    return CRATE / lang
 
 
 def lexicon_files() -> list[Path]:
@@ -99,8 +103,9 @@ def cmd_extract(args) -> int:
 
     unique = list(seen.keys())
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    latin_path = OUT_DIR / "latin.json"
+    odir = out_dir(args.lang)
+    odir.mkdir(parents=True, exist_ok=True)
+    latin_path = odir / "latin.json"
     latin_path.write_text(
         json.dumps(unique, ensure_ascii=False, indent=0) + "\n", encoding="utf-8"
     )
@@ -111,7 +116,7 @@ def cmd_extract(args) -> int:
         "per_file_occurrences": per_file,
         "latin_json": str(latin_path.relative_to(CRATE)),
     }
-    (OUT_DIR / "manifest.json").write_text(
+    (odir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
@@ -122,20 +127,25 @@ def cmd_extract(args) -> int:
     return 0
 
 
-def build_en2_nodes(la_nodes, mapping, stats):
-    """Clone the ``la`` node list, replacing each prose field via the map."""
+def build_lang_nodes(la_nodes, mapping, stats):
+    """Clone the ``la`` node list, replacing each prose field via the map.
+
+    Returns ``(new_nodes, missing)`` where ``missing`` is the count of prose
+    fields with no translation. Untranslated fields keep their Latin text."""
     new_nodes = copy.deepcopy(la_nodes)
+    missing = 0
     for node in new_nodes:
         if not isinstance(node, dict):
             continue
         for key, val in list(node_strings(node)):
             repl = mapping.get(val)
             if repl is None:
+                missing += 1
                 stats["missing"] += 1
             else:
                 node[key] = repl
                 stats["applied"] += 1
-    return new_nodes
+    return new_nodes, missing
 
 
 class _Dumper(yaml.SafeDumper):
@@ -151,10 +161,10 @@ def _repr_str(dumper, data):
 _Dumper.add_representer(str, _repr_str)
 
 
-def render_block(en2_nodes, indent):
-    """Render an ``en2:`` block as YAML, indented to match the la/en columns."""
+def render_block(nodes, indent, lang="en2"):
+    """Render a ``<lang>:`` block as YAML, indented to match the la/en columns."""
     body = yaml.dump(
-        {"en2": en2_nodes},
+        {lang: nodes},
         Dumper=_Dumper,
         allow_unicode=True,
         sort_keys=False,
@@ -166,19 +176,28 @@ def render_block(en2_nodes, indent):
 
 
 def cmd_apply(args) -> int:
-    latin = json.loads((OUT_DIR / "latin.json").read_text(encoding="utf-8"))
-    en2 = json.loads(Path(args.translation).read_text(encoding="utf-8"))
-    if len(latin) != len(en2):
-        print(
-            f"ERROR: latin.json has {len(latin)} strings but "
-            f"{args.translation} has {len(en2)}",
-            file=sys.stderr,
-        )
-        return 1
-    mapping = dict(zip(latin, en2))
+    lang = args.lang
+    translated = json.loads(Path(args.translation).read_text(encoding="utf-8"))
+    # Two input shapes: a positional array parallel to latin.json (full run,
+    # untranslated slots stay Latin), or a {latin: translation} dict (partial /
+    # pilot — only entries whose every prose field is covered get a column).
+    partial = isinstance(translated, dict)
+    if partial:
+        mapping = translated
+    else:
+        latin = json.loads((out_dir(lang) / "latin.json").read_text(encoding="utf-8"))
+        if len(latin) != len(translated):
+            print(
+                f"ERROR: latin.json has {len(latin)} strings but "
+                f"{args.translation} has {len(translated)}",
+                file=sys.stderr,
+            )
+            return 1
+        mapping = dict(zip(latin, translated))
 
     stats = {"applied": 0, "missing": 0}
     entries_done = 0
+    entries_skipped = 0
     entries_no_la = 0
     for path in lexicon_files():
         text = path.read_text(encoding="utf-8")
@@ -204,25 +223,30 @@ def cmd_apply(args) -> int:
             if content is None or not content.value:
                 continue
             langs = {k.value: v for k, v in content.value}
-            if "la" not in langs or "en2" in langs:
+            if "la" not in langs or lang in langs:
                 entries_no_la += "la" not in langs
                 continue
             indent = content.value[0][0].start_mark.column
             insert_line = content.value[-1][1].end_mark.line
 
             la_doc_nodes = doc_texts[key_node.value]["content"]["la"]
-            en2_nodes = build_en2_nodes(la_doc_nodes, mapping, stats)
-            inserts.append((insert_line, render_block(en2_nodes, indent)))
+            lang_nodes, missing = build_lang_nodes(la_doc_nodes, mapping, stats)
+            # In partial mode, only emit a column for fully-translated entries.
+            if partial and missing:
+                entries_skipped += 1
+                continue
+            inserts.append((insert_line, render_block(lang_nodes, indent, lang)))
             entries_done += 1
 
         for insert_line, block in sorted(inserts, reverse=True):
             lines.insert(insert_line, block)
 
-        if not args.dry_run:
+        if not args.dry_run and inserts:
             path.write_text("".join(lines), encoding="utf-8")
-            print(f"updated {path.name}: +{len(inserts)} en2 blocks")
+            print(f"updated {path.name}: +{len(inserts)} {lang} blocks")
 
-    print(f"entries given en2        : {entries_done}")
+    print(f"entries given {lang:<10}: {entries_done}")
+    print(f"entries partial (skip)   : {entries_skipped}")
     print(f"entries with no la (skip): {entries_no_la}")
     print(f"prose fields translated  : {stats['applied']}")
     print(f"prose fields left Latin   : {stats['missing']}")
@@ -316,9 +340,13 @@ def restore_verse_prefixes(en2_nodes, la_nodes) -> bool:
 
 
 def cmd_fixups(args) -> int:
+    lang = args.lang
     only = getattr(args, "only", "all")
-    do_hymns = only in ("all", "hymns")
-    do_salve = only in ("all", "salve")
+    # The hymn (→en) and Salve Regina corrections are English-specific; the
+    # verse-prefix restoration applies to any column that mirrors `la` 1:1.
+    en_family = lang.startswith("en")
+    do_hymns = en_family and only in ("all", "hymns")
+    do_salve = en_family and only in ("all", "salve")
     do_verses = only in ("all", "verses")
     hymns = salves = verses = 0
     for path in lexicon_files():
@@ -341,23 +369,23 @@ def cmd_fixups(args) -> int:
             if content is None or not content.value:
                 continue
             langs = {k.value: v for k, v in content.value}
-            if "en2" not in langs:
+            if lang not in langs:
                 continue
             entry = doc_texts[key_node.value]
             cont = entry["content"]
-            en2_nodes = cont["en2"]
+            col_nodes = cont[lang]
             new_nodes = None
 
             if do_hymns and entry.get("role") == "hymn" and "en" in cont:
                 # change 2: hymns use the metrical en translation verbatim.
                 new_nodes = copy.deepcopy(cont["en"])
-                if new_nodes != en2_nodes:
+                if new_nodes != col_nodes:
                     hymns += 1
             elif entry.get("role") != "hymn" or "en" not in cont:
-                # en2 nodes mirror la 1:1, so corrections key off the parallel
-                # la node's prose.
+                # the lang column mirrors la 1:1, so corrections key off the
+                # parallel la node's prose.
                 la_nodes = cont.get("la") or []
-                candidate = copy.deepcopy(en2_nodes)
+                candidate = copy.deepcopy(col_nodes)
                 touched = False
                 # change 3: Salve Regina → traditional translation.
                 if do_salve:
@@ -383,13 +411,13 @@ def cmd_fixups(args) -> int:
                 if touched:
                     new_nodes = candidate
 
-            if new_nodes is None or new_nodes == en2_nodes:
+            if new_nodes is None or new_nodes == col_nodes:
                 continue
-            key_n = next(k for k, _ in content.value if k.value == "en2")
+            key_n = next(k for k, _ in content.value if k.value == lang)
             indent = key_n.start_mark.column
             edits.append(
-                (key_n.start_mark.line, langs["en2"].end_mark.line,
-                 render_block(new_nodes, indent))
+                (key_n.start_mark.line, langs[lang].end_mark.line,
+                 render_block(new_nodes, indent, lang))
             )
 
         for start, end, block in sorted(edits, reverse=True):
@@ -397,10 +425,10 @@ def cmd_fixups(args) -> int:
 
         if edits and not args.dry_run:
             path.write_text("".join(lines), encoding="utf-8")
-            print(f"updated {path.name}: {len(edits)} en2 blocks rewritten")
+            print(f"updated {path.name}: {len(edits)} {lang} blocks rewritten")
 
-    print(f"hymn en2 blocks set to en : {hymns}")
-    print(f"Salve Regina en2 rewritten: {salves}")
+    print(f"hymn {lang} blocks set to en : {hymns}")
+    print(f"Salve Regina {lang} rewritten: {salves}")
     print(f"verse-prefixes restored in: {verses}")
     if args.dry_run:
         print("(dry run — no files written)")
@@ -409,14 +437,22 @@ def cmd_fixups(args) -> int:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--lang",
+        default="en2",
+        help="target language column / working dir (default: en2; e.g. zh)",
+    )
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    p_ex = sub.add_parser("extract", help="write latin.json from the lexicon")
+    p_ex = sub.add_parser("extract", help="write <lang>/latin.json from the lexicon")
     p_ex.set_defaults(func=cmd_extract)
 
-    p_ap = sub.add_parser("apply", help="inject en2 column from a translated array")
+    p_ap = sub.add_parser(
+        "apply", help="inject <lang> column from a translated array or {latin:tr} dict"
+    )
     p_ap.add_argument(
-        "translation", help="path to the translated JSON array (parallel to latin.json)"
+        "translation",
+        help="JSON array parallel to latin.json, or a {latin: translation} dict (partial)",
     )
     p_ap.add_argument("--dry-run", action="store_true", help="don't write files")
     p_ap.set_defaults(func=cmd_apply)

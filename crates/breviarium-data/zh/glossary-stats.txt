@@ -1,0 +1,1067 @@
+=== repeated short lines (formulae / incipits), freq>=4 ===
+  239  Amen.
+   64  Homilía sancti Augustíni Epíscopi
+   48  In sempitérna sǽcula.
+   44  Homilía sancti Gregórii Papæ
+   36  Deo Patri sit glória,
+   36  Orémus.
+   35  Iesu, tibi sit glória,
+   35  Homilía sancti Ambrósii Epíscopi
+   35  ;;
+   32  Præsta, Pater piíssime,
+   32  Patríque compar Únice,
+   32  Cum Spíritu Paráclito
+   32  Regnans per omne sǽculum.
+   25  Cum Spíritu Paráclito,
+   23  Eiúsque soli Fílio,
+   23  Homilía sancti Hierónymi Presbýteri
+   21  Qui natus es de Vírgine,
+   16  In sæculórum sǽcula.
+   16  Cum Patre, et almo Spíritu,
+   13  Homilía sancti Ioánnis Chrysóstomi
+   12  Cum Patre et almo Spíritu,
+   11  Sancto simul Paráclito,
+   11  Homilía sancti Bedæ Venerábilis Presbýteri
+   10  Homilía sancti Bernárdi Abbátis
+    9  Témporis ævo.
+    9  Commune unius Confessoris Pontificis
+    9  Nunc et per omne sǽculum.
+    9  Ierúsalem, Ierúsalem, convértere ad Dóminum Deum tuum.
+    8  Nunc, et per omne sǽculum.
+    8  Virtus, honor, laus, glória
+    8  Et Fílio, qui a mórtuis
+    8  Surréxit, ac Paráclito,
+    8  Commune Apostolorum
+    8  Homilía sancti Hilárii Epíscopi
+    8  Súrgere qui curat, pópulo: tu quæ genuísti,
+    8  Natúra miránte, tuum sanctum Genitórem,
+    8  Virgo prius ac postérius, Gabriélis ab ore
+    8  Sumens illud Ave, peccatórum miserére.
+    8  Et nunc, et in perpétuum.
+    7  Sit decus Patri, genitǽque Proli,
+    7  Præstet hoc nobis Déitas beáta
+    7  Patris, ac Nati, paritérque Sancti
+    6  Deo Patri cum Fílio,
+    6  Commune Apostolorum tempore Paschali
+    6  Glória tibi Dómine,
+    6  Præsta, beáta Trínitas,
+    6  Ut fructuósa sint tuis
+    6  Ieiuniórum múnera.
+    6  Glória mundum.
+    6  Allelúia, * allelúia, allelúia.
+    5  Natóque Patris único,
+    5  Sicut fuit, sit iúgiter
+    5  Sæclum per omne glória.
+    5  Et tibi, compar utriúsque virtus,
+    5  Omne per ævum.
+    5  Ut sis perénne méntibus
+    5  A morte dira críminum
+    5  Vitæ renátos líbera.
+    5  Commune Plurimorum Martyrum Pontificum
+    5  Commune Unius Virginis et Martyris
+    5  Alma Redemptóris Mater, quæ pérvia cæli
+    5  Porta manes, et stella maris, succúrre cadénti,
+    5  Ab omni mortis ímpetu
+    5  Tuum defénde pópulum.
+    5  Spíritus, cuius résonat per omnem
+    5  1 Et factus est sermo Dómini ad me, dicens:
+    4  Patri, simúlque Fílio,
+    4  Spíritus semper, Deus unus, omni
+    4  Scándere sedes.
+    4  Cum Patre, et almo Spíritu
+    4  Commune unius Martyris Tempore Paschali
+    4  Commune Confessoris non pontificis
+    4  Homilía sancti Leónis Papæ
+    4  Ave, Regína cælórum,
+    4  Ave, Dómina Angelórum:
+    4  Salve radix, salve porta,
+    4  Ex qua mundo lux est orta:
+    4  Gaude, Virgo gloriósa,
+    4  Super omnes speciósa,
+    4  Vale, o valde decóra,
+    4  Et pro nobis Christum exóra.
+    4  Quǽsumus, Auctor ómnium,
+    4  In hoc pascháli gáudio,
+    4  Flectámus iram víndicem,
+    4  Plorémus ante Iúdicem,
+    4  Dicámus omnes cérnui:
+    4  Nostris malis offéndimus
+    4  Tuam, Deus, cleméntiam:
+    4  Effúnde nobis désuper,
+    4  Remíssor, indulgéntiam.
+    4  Meménto quod sumus tui,
+    4  Licet cadúci, plásmatis:
+    4  Ne des honórem nóminis
+    4  Tui, precámur, álteri.
+    4  Laxa malum, quod fécimus,
+    4  Auge bonum, quod póscimus:
+    4  Placére quo tandem tibi
+    4  Possímus hic, et pérpetim.
+    4  Concéde, simplex Únitas,
+    4  Victor triúmpho nóbili
+    4  Dominica=Adorémus Dóminum, * Qui fecit nos.
+    4  Feria II=Veníte, * Exsultémus Dómino.
+    4  Feria III=Iubilémus Deo, * Salutári nostro.
+    4  Sabbato=Dóminum, Deum nostrum, * Veníte, adorémus.
+    4  Spíritus semper, Deus unus omni
+    4  Sit laus Patri, sit Fílio,
+    4  Beáta nobis gáudia.
+    4  Honor, potéstas atque iubilátio,
+    4  In unitáte, quæ gubérnat ómnia,
+    4  Christe, sanctórum decus Angelórum,
+    4  Gentis humánæ Sator et Redémptor,
+    4  Régia cæli.
+    4  Sit rerum Dómino iugis honor Patri,
+    4  Divinúmque suprémis
+    4  Flamen láudibus éfferant.
+    4  Ex Bulla dogmatica Pii Papæ IX
+    4  De libro secúndo Machabæórum
+    4  2 Grátia vobis, et pax a Deo Patre nostro, et Dómino Iesu Christo.
+
+=== capitalized tokens (likely proper nouns), freq>=15 ===
+ 2061  Deus
+ 1763  Dei
+ 1733  Dóminus
+ 1269  Dómini
+ 1260  Dómine
+ 1233  Christi
+ 1152  Epíscopi
+  999  Deo
+  890  Dómino
+  801  Dóminum
+  776  Mártyrum
+  747  Iesu
+  728  Deum
+  706  Mártyris
+  584  Vírginis
+  550  Israël
+  548  Confessóris
+  541  Christum
+  505  Iesus
+  467  Romæ
+  446  Christo
+  445  Christus
+  431  David
+  429  Ecclésiæ
+  363  Ioseph
+  352  Maríæ
+  349  Amen
+  347  Ierúsalem
+  339  Kaléndas
+  324  Papæ
+  305  María
+  297  Spíritus
+  294  Homilía
+  287  Gállia
+  286  Virgo
+  280  Iesum
+  279  Sanctórum
+  277  Feria
+  269  Spíritu
+  267  Presbýteri
+  266  Imperatóre
+  266  Hebdomadam
+  263  Ecclésia
+  261  Papa
+  248  Pater
+  245  Petri
+  242  Sancti
+  237  Octavam
+  232  Iud
+  230  Reg
+  220  Confessoris
+  213  Apud
+  211  Dixit
+  210  Ioánnis
+  205  Apóstoli
+  205  Ecclésiam
+  200  Fílius
+  199  Quis
+  197  Fílium
+  197  Ioánnes
+  192  Sion
+  188  Angelus
+  188  Romam
+  184  Pius
+  183  Idus
+  180  Quo
+  178  Póntifex
+  173  Hoc
+  173  Rex
+  169  Sancto
+  166  Cor
+  166  Patris
+  165  Pauli
+  161  Pentecostes
+  159  Petrus
+  157  Quare
+  156  Patri
+  156  Iacob
+  153  Paulus
+  153  Augustíni
+  149  Apostolórum
+  149  Hispánia
+  148  Sermo
+  147  Martyris
+  142  Apóstolus
+  141  Allelúia
+  140  Sanctus
+  139  Eius
+  136  Quem
+  135  Cumque
+  134  Mater
+  134  Abbátis
+  134  Evangélium
+  134  Item
+  132  Patre
+  132  Cuius
+  130  Virginis
+  129  Diocletiáni
+  127  Isa
+  127  Vírginem
+  126  Iuda
+  124  Patrem
+  124  Fílio
+  121  Iudæórum
+  120  Homilia
+  119  Fílii
+  119  Gregórii
+  117  Verbum
+  116  Angelórum
+  112  Ipsíus
+  111  Angeli
+  110  Ordine
+  109  Itaque
+  109  Africa
+  109  Benedíctus
+  109  Saul
+  108  Veníte
+  108  Propter
+  107  Domini
+  106  Numquid
+  105  Regis
+  105  Ioánnem
+  105  Mac
+  104  Epíscopus
+  104  Diocletiáno
+  102  Ecclesiæ
+  101  Imperatóris
+  100  Matth
+  100  Ioannes
+  100  Eódem
+   99  Sir
+   99  Vírgine
+   98  Pontífice
+   97  Iob
+   95  Ubi
+   91  Paráclito
+   89  Alexandríæ
+   89  Nonas
+   88  Luc
+   88  Verum
+   88  Gregórius
+   86  Vírginum
+   86  Maria
+   86  Petro
+   86  Liber
+   85  Sociórum
+   84  Ave
+   84  Pontifex
+   83  Maríam
+   83  Act
+   83  Nos
+   83  Omnes
+   83  Petrum
+   83  Episcopi
+   83  Felícis
+   83  Ianuárii
+   82  Quibus
+   82  Leo
+   81  Maximiáno
+   80  Ægýpto
+   80  Salvátor
+   80  Abraham
+   79  Mariæ
+   79  Dominica
+   78  Præsta
+   78  Spíritum
+   78  Evangélii
+   78  Lib
+   77  Martyrum
+   77  Diáconi
+   76  Ambrósii
+   76  Constantinópoli
+   75  Regem
+   74  Paulo
+   73  Super
+   73  Gen
+   72  Beátus
+   71  Vos
+   71  Rom
+   71  Mox
+   71  Adam
+   70  Angelo
+   70  Commune
+   70  Matt
+   70  Dixítque
+   69  Sit
+   69  Sanctum
+   69  Salvatóris
+   69  Dénique
+   69  Máximus
+   69  Urbe
+   68  Christe
+   66  Iúlii
+   65  Matris
+   63  Mártyres
+   63  Nonne
+   63  Quómodo
+   63  Palæstína
+   63  Februárii
+   62  Redémptor
+   62  Antiochíæ
+   62  Campánia
+   62  Septémbris
+   61  Sabbato
+   61  Rege
+   61  Augústi
+   61  Maximiáni
+   61  Maii
+   60  Apóstolo
+   60  Románæ
+   58  Salvatórem
+   58  Galil
+   58  Angelum
+   58  Ordinis
+   58  Clemens
+   58  Elísabeth
+   57  Décimo
+   57  Ioannis
+   56  Hódie
+   56  Sanctis
+   56  Paschæ
+   56  Incipit
+   56  Decémbris
+   56  Crucis
+   55  Pontíficis
+   55  Gábriel
+   55  Ægýpti
+   55  Qua
+   55  Octóbris
+   55  Minórum
+   55  Románus
+   55  Epiphaniam
+   54  Fili
+   54  Erat
+   54  Epístola
+   54  Cæsaréæ
+   54  Urbis
+   54  Alexándri
+   54  Medioláni
+   54  Urbem
+   53  Matrem
+   53  Móyses
+   53  Pio
+   53  Eum
+   53  Iudas
+   52  Beáta
+   52  Glória
+   52  Apóstolis
+   52  Dominus
+   52  Noli
+   52  Nicomedíæ
+   51  Beáti
+   51  Gregório
+   51  Sámuel
+   50  Génetrix
+   50  Felix
+   50  Ægýptum
+   50  Porro
+   50  Nihil
+   50  Evangelísta
+   50  Aprílis
+   50  Prædicatórum
+   50  Anglia
+   50  Iúnii
+   50  Primi
+   50  Ioánne
+   49  Pontíficem
+   49  Martyr
+   49  Omnis
+   49  Venit
+   49  Nemo
+   49  Novémbris
+   49  Doctóris
+   49  Iúdice
+   49  Congregatiónis
+   49  Multa
+   48  Veni
+   48  Surge
+   48  Iuliáni
+   48  Deínde
+   48  Francísci
+   47  Regína
+   47  Doctoris
+   47  Missus
+   47  Lucas
+   47  Nolíte
+   47  Hierónymi
+   47  Trínitas
+   47  Valeriáni
+   47  Omnípotens
+   46  Apo
+   46  Sálomon
+   46  Simon
+   46  Ita
+   46  Ibídem
+   46  Kalendas
+   46  Isaac
+   45  Leónis
+   45  Románi
+   45  Christianórum
+   45  Mártii
+   45  Iudæ
+   45  Tandem
+   44  Fratres
+   44  Quando
+   44  Ideo
+   44  Vere
+   44  Quorum
+   44  Factum
+   44  Mónachi
+   44  Quarto
+   43  Domínicæ
+   43  Evangelia
+   43  Scriptúra
+   43  Evangélio
+   43  Prophéta
+   42  Prophétæ
+   42  Tértio
+   42  Corpus
+   41  Agni
+   41  Cap
+   41  Elías
+   41  Décii
+   41  Victóris
+   41  Iuliáno
+   41  Angelis
+   41  Confessórem
+   41  Quarta
+   40  Benedícti
+   40  Marci
+   40  Cruce
+   40  Christiános
+   39  Homo
+   39  Comment
+   39  Misit
+   39  Lucæ
+   39  Máximi
+   39  Secunda
+   39  Heb
+   39  Noë
+   39  Ezek
+   38  His
+   38  Huius
+   38  Apostolorum
+   38  Pontificis
+   38  Angelos
+   38  Fecit
+   38  Dominum
+   38  Umbria
+   38  Antoníno
+   38  Deíparæ
+   38  Pontifice
+   37  Prov
+   37  Hanc
+   37  Tract
+   37  Sacerdótis
+   37  Prídie
+   37  Orémus
+   37  Tertia
+   36  Doctórem
+   36  Redemptóris
+   36  Miserére
+   36  Décimus
+   36  Sicília
+   36  Hadriáno
+   36  Christiánis
+   36  Quinto
+   36  Dan
+   35  Sancta
+   35  Exáudi
+   35  Béthlehem
+   35  Magnus
+   35  Proptérea
+   35  Stéphani
+   35  Callísti
+   35  Sýria
+   35  Magni
+   35  Vírgini
+   35  Magi
+   35  Benedícite
+   35  Quinta
+   35  Sexta
+   35  Ecclesia
+   34  Vidi
+   34  Pontificum
+   34  Patríque
+   34  Salomónis
+   34  Ioann
+   34  Ipsa
+   34  Domínici
+   34  Quos
+   34  Serm
+   34  Córdubæ
+   34  Túscia
+   34  Cleménte
+   34  Corde
+   34  Sexto
+   34  Móysi
+   34  Pascha
+   34  Únice
+   34  Ipsi
+   34  Domino
+   34  Heli
+   34  Absalom
+   34  Iónathas
+   34  Philísthiim
+   33  Sap
+   33  Audíte
+   33  Apóstolos
+   33  Creátor
+   33  Agnus
+   33  Paulum
+   33  Etenim
+   33  Apóstolum
+   33  Viri
+   33  Monachórum
+   33  Alexándro
+   33  Décio
+   33  Máximo
+   33  Abrahæ
+   33  Demum
+   33  Regnans
+   33  Omnia
+   33  Ierosólymam
+   32  Concéde
+   32  Denique
+   32  Géntium
+   32  Unus
+   32  Præfécto
+   32  Genitrícis
+   32  Translátio
+   32  Appia
+   32  Vaticáno
+   32  Apóstata
+   32  Bríxiæ
+   32  Ier
+   32  Eccl
+   32  Vidéte
+   31  Cant
+   31  Mártyrem
+   31  Dedicationis
+   31  Philíppi
+   31  Pii
+   31  Pérside
+   31  Lugdúni
+   31  Kaléndis
+   31  Christiáni
+   31  Iacóbi
+   31  Sanctos
+   31  Cordis
+   31  Sedis
+   31  Agnum
+   31  Laudáte
+   31  Tum
+   31  Beati
+   31  Vide
+   31  Abram
+   30  Altíssimi
+   30  Confitébor
+   30  Nobis
+   30  Hunc
+   30  Sanctæ
+   30  Ángelus
+   30  Ierosólymis
+   30  Bernárdi
+   30  Regi
+   30  Víduæ
+   30  Cappadócia
+   30  Thomæ
+   30  Horum
+   30  Andréæ
+   30  Roma
+   30  Fac
+   30  Adventus
+   30  Fiat
+   30  Sanctorum
+   30  Decémbri
+   30  Inde
+   29  Ascéndit
+   29  Mariam
+   29  Apostoli
+   29  Cur
+   29  Est
+   29  Neápoli
+   29  Theodóri
+   29  Gálliam
+   29  Aureliáno
+   29  Constantíno
+   29  Oriénte
+   29  Séptimo
+   29  Pet
+   29  Vox
+   29  Bonum
+   28  Omne
+   28  Múlier
+   28  Nisi
+   28  Romános
+   28  Ioannem
+   28  Bedæ
+   28  Ait
+   28  Chrysóstomi
+   28  Ravénnæ
+   28  Gálliis
+   28  Príncipe
+   28  Antoníni
+   28  Románo
+   28  Valeriáno
+   28  Lauréntii
+   28  Constantinópolim
+   28  Tréviris
+   28  Verónæ
+   28  Floréntiæ
+   28  Vir
+   28  Anna
+   28  Verúmtamen
+   28  Philisth
+   27  Magnum
+   27  Tibi
+   27  Ariáno
+   27  Christiánæ
+   27  Lúcii
+   27  Cilícia
+   27  Hierosólymis
+   27  Basilíi
+   27  Undécimus
+   27  Duodécimus
+   27  Sacrum
+   27  Romanórum
+   27  Nonis
+   27  Anno
+   27  Canticum
+   27  Iudam
+   27  Adhuc
+   27  Vade
+   27  Deiparæ
+   27  Quadragesima
+   26  Vitæ
+   26  Heva
+   26  Názareth
+   26  Bene
+   26  Filius
+   26  Ora
+   26  Isti
+   26  Octávo
+   26  Saturníni
+   26  Trinitátis
+   26  Parisiórum
+   26  Zacharíæ
+   26  Heródes
+   26  Martha
+   26  Puer
+   26  Adoléscens
+   26  Móysen
+   26  Ias
+   26  Mardoch
+   25  Iustus
+   25  Cónditor
+   25  Laudémus
+   25  Surréxit
+   25  Símeon
+   25  Una
+   25  Salvatoris
+   25  Carthágine
+   25  Patrónum
+   25  Salária
+   25  Imáginum
+   25  Patres
+   25  Matre
+   25  Babylónis
+   25  Grátia
+   25  Stéphanus
+   25  Die
+   25  Sedit
+   25  Pentecosten
+   24  Summus
+   24  Domus
+   24  Audi
+   24  Eiúsque
+   24  Sponsum
+   24  Abbatis
+   24  Beatæ
+   24  Nostri
+   24  Gaude
+   24  Secúndum
+   24  Meménto
+   24  Chérubim
+   24  Líbano
+   24  Hierónymus
+   24  Augustínus
+   24  Marcélli
+   24  Carmelitárum
+   24  Bonóniæ
+   24  Arménia
+   24  Ariánis
+   24  Clericórum
+   24  Evangelístæ
+   24  Béniamin
+   24  Itáliam
+   24  Col
+   24  Míchaël
+   24  Dániel
+   24  Vixit
+   24  Esther
+   24  Memor
+   24  Eliséus
+   23  Iesse
+   23  Missa
+   23  Factus
+   23  Lux
+   23  Séraphim
+   23  Véritas
+   23  Sede
+   23  Baptístæ
+   23  Cypro
+   23  Nic
+   23  Viénnæ
+   23  Misericórdia
+   23  Episcopórum
+   23  Leóne
+   23  Aaron
+   23  Marco
+   23  Picéno
+   23  Hebr
+   23  Patrum
+   23  Primum
+   23  Respóndens
+   23  Missam
+   23  Nathan
+   22  Eph
+   22  Cæli
+   22  Sancte
+   22  Hac
+   22  Benedícta
+   22  Quicúmque
+   22  Cyrílli
+   22  Melchísedech
+   22  Magna
+   22  Persárum
+   22  Secúndi
+   22  Germánia
+   22  Alexánder
+   22  Omnium
+   22  Epíscopo
+   22  Sevéri
+   22  Vincéntii
+   22  Stéphano
+   22  Elíæ
+   22  Vides
+   22  Offícium
+   22  Exsúrge
+   22  Romanæ
+   22  Cantáte
+   22  Sacrórum
+   22  Idem
+   22  Romanus
+   22  Decembri
+   22  Ieróboam
+   21  Semper
+   21  Fidélis
+   21  Iusti
+   21  Facta
+   21  Marcus
+   21  Spiritu
+   21  Phrýgia
+   21  Antónii
+   21  Dionýsii
+   21  Ponto
+   21  Pápiæ
+   21  Eusébii
+   21  Genetrícis
+   21  Gentílium
+   21  Idibus
+   21  Regínæ
+   21  Archángeli
+   21  Gal
+   21  Tob
+   21  Romana
+   21  Esth
+   21  Aman
+   21  Idt
+   20  Fuit
+   20  Confessórum
+   20  Illi
+   20  Dies
+   20  Conféssor
+   20  Mundi
+   20  Paschali
+   20  Atténdite
+   20  Ángeli
+   20  Líbera
+   20  Sermone
+   20  Beatórum
+   20  Ite
+   20  Traiáno
+   20  Africam
+   20  Mesopotámia
+   20  Donáti
+   20  Benedicti
+   20  Germániam
+   20  Erant
+   20  Moab
+   20  Princeps
+   20  Paráclitus
+   20  Altíssimus
+   20  Andréas
+   20  Sacérdos
+   20  Salomónem
+   20  Iudith
+   20  Ecclesiam
+   20  Esto
+   20  Postquam
+   20  Romani
+   20  Confitémini
+   20  Assyriórum
+   20  Cain
+   20  Esau
+   20  Ioab
+   19  Zach
+   19  Vidérunt
+   19  Montes
+   19  Nativitatis
+   19  Púerum
+   19  Erit
+   19  Quaprópter
+   19  Isaías
+   19  Ióachim
+   19  Multis
+   19  Venerábilis
+   19  Sapiéntia
+   19  Cardinális
+   19  Simeónis
+   19  Presbyterórum
+   19  Christiána
+   19  Anastásii
+   19  Cypriáni
+   19  Nono
+   19  Zenónis
+   19  Etrúria
+   19  Bonifátii
+   19  Príncipis
+   19  Póstea
+   19  Tres
+   19  Crucem
+   19  Egréssus
+   19  Cæcília
+   19  Videns
+   19  Illa
+   19  Gregorii
+   19  Respóndit
+   19  Locútus
+   19  Tractatus
+   18  Doctor
+   18  Iustum
+   18  Altíssimo
+   18  Sponsi
+   18  Vitam
+   18  Inténde
+   18  Tempore
+   18  Tamquam
+   18  Scripturárum
+   18  Mérito
+   18  Redemptórem
+   18  Absit
+   18  Réspice
+   18  Eórum
+   18  Caii
+   18  Servórum
+   18  Timóthei
+   18  Fortunáti
+   18  Societáte
+   18  Undécimo
+   18  Antisiodóri
+   18  Christiánus
+   18  Thessalonícæ
+   18  Hadriáni
+   18  Asiæ
+   18  Baptistæ
+   18  Saulus
+   18  Pax
+   18  Martínus
+   18  Num
+   18  Nabuchodónosor
+   17  Adésto
+   17  Pontíficum
+   17  Sanguis
+   17  Laus
+   17  Vírgines
+   17  Summo
+   17  Martýribus
+   17  Officium
+   17  Léctio
+   17  Lucam
+   17  Hilárii
+   17  Spiritus
+   17  Lex
+   17  Eugénii
+   17  Theóphili
+   17  Benedícto
+   17  Marciáni
+   17  Licínio
+   17  Duodécimo
+   17  Fratrum
+   17  Lutétiæ
+   17  Turónis
+   17  Martíni
+   17  Annæ
+   17  Anglórum
+   17  Reges
+   17  Romána
+   17  Sacraméntum
+   17  Salve
+   17  Tuam
+   17  Crux
+   17  Caríssimi
+   17  Grátias
+   17  Mira
+   17  Magíster
+   17  Laurentii
+   17  Tota
+   17  Lot
+   17  Audístis
+   17  Machab
+   16  Pastor
+   16  Ætérna
+   16  Spirítui
+   16  Déitas
+   16  Ángelis
+   16  Certe
+   16  Virginem
+   16  Opórtet
+   16  Sunt
+   16  Mihi
+   16  Tanta
+   16  Manus
+   16  Evang
+   16  Homil
+   16  Verbi
+   16  Síquidem
+   16  Regnum
+   16  Terra
+   16  Ioséphi
+   16  Ecclésias
+   16  Ambrósius
+   16  Innocéntii
+   16  Magno
+   16  Valentíni
+   16  Sóciis
+   16  Rhemis
+   16  Eremítæ
+   16  Constántio
+   16  Theodósio
+   16  Constantíni
+   16  Sacris
+   16  Fundatrícis
+   16  Institúti
+   16  Septem
+   16  Bithýnia
+   16  Fundatóris
+   16  Asia
+   16  Ariános
+   16  Caritáte
+   16  Xysti
+   16  Thomas
+   16  Psalmum
+   16  Stéphanum
+   16  Phil
+   16  Vidéntes
+   16  Lam
+   16  Archángelus
+   16  Ráphaël
+   16  Baptísta
+   16  Constítuit
+   16  Quin
+   16  Tot
+   16  Zacharías
+   16  Augusti
+   16  Multi
+   16  Matri
+   16  Hebron
+   15  Scimus
+   15  Pontífices
+   15  Tibíque
+   15  Victor
+   15  Gabriélis
+   15  Heródis
+   15  Ítaque
+   15  Duo
+   15  Tyri
+   15  Iéricho
+   15  Chanan
+   15  Quidquid
+   15  Primo
+   15  Idcírco
+   15  Mane
+   15  Wandálica
+   15  Apollináris
+   15  Cleméntis
+   15  Británnia
+   15  Basílica
+   15  Michaélis
+   15  Turcárum
+   15  Germáni
+   15  Cláudii
+   15  Saracénis
+   15  Sardínia
+   15  Iren
+   15  Cápuæ
+   15  Valénte
+   15  Victoríni
+   15  Traiáni
+   15  Festum
+   15  Ieremíæ
+   15  Nonus
+   15  Aurélia
+   15  Adiútor
+   15  Constántii
+   15  Aquitánia
+   15  Urbánus
+   15  Angliam
+   15  Xystus
+   15  Scriptúris
+   15  Innocéntio
+   15  Iacóbus
+   15  Sedem
+   15  Verba
+   15  Fortis
+   15  Petre
+   15  Dominátor
+   15  Quas
+   15  Abel
+   15  Francisci
+   15  Octava
+   15  Iulii
+   15  Vidébunt
+   15  Tobías
+   15  Dixi
+   15  Stetit
+   15  Dedit
+   15  Septembris
+   15  Magis
+   15  Timótheus
+   15  Octobris
+   15  Cordi
+   15  Quattuor
+   15  Temporum
+   15  Antíochus

@@ -2057,10 +2057,14 @@ fn amen_nodes() -> Vec<DocumentNode> {
 fn domine_exaudi_nodes(catalog: &Catalog, language: &str) -> Vec<DocumentNode> {
     vec![
         DocumentNode::Versicle {
-            text: catalog.phrase(language, "domine-exaudi-versicle").to_string(),
+            text: catalog
+                .phrase(language, "domine-exaudi-versicle")
+                .to_string(),
         },
         DocumentNode::Response {
-            text: catalog.phrase(language, "domine-exaudi-response").to_string(),
+            text: catalog
+                .phrase(language, "domine-exaudi-response")
+                .to_string(),
         },
     ]
 }
@@ -2710,7 +2714,8 @@ fn scripture_source_candidates(facts: &DateFacts) -> Vec<String> {
     }
     let first_of_month =
         NaiveDate::from_ymd_opt(week_start.year(), month, 1).expect("valid month start");
-    let days_to_first_sunday = (7 - liturgical_weekday_number(first_of_month.weekday())).rem_euclid(7);
+    let days_to_first_sunday =
+        (7 - liturgical_weekday_number(first_of_month.weekday())).rem_euclid(7);
     let first_sunday = first_of_month + Duration::days(i64::from(days_to_first_sunday));
     if week_start < first_sunday {
         return Vec::new();

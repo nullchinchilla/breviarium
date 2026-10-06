@@ -1,0 +1,210 @@
+/* Custom app styles can override Pico CSS here. */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+SC:wght@400;700&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+/* Junicode's @font-face declarations use bundled asset URLs in App. */
+
+:root {
+    --pico-font-family: "EB Garamond", "JunicodeVF", "Noto Serif SC", serif;
+    --rubric-color: #b22418;
+    --ink-color: #211d1a;
+    --muted-ink-color: #746860;
+    --paper-color: #faf7f2;
+    --paper-deep-color: #efe7dc;
+    --rule-color: #cabcae;
+}
+
+nav {
+    --pico-font-family: "Ysabeau", sans-serif;
+    font-family: "Ysabeau", sans-serif;
+    font-variant-numeric: lining-nums;
+}
+
+/* The page advertises `color-scheme: light dark`, so the palette has to answer
+   for both. Only the tokens are redefined; every rule below reads them. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme=light]) {
+        --rubric-color: #e0705c;
+        --ink-color: #e9e3da;
+        --muted-ink-color: #a3968a;
+        --paper-color: #15120f;
+        --paper-deep-color: #211c17;
+        --rule-color: #463c33;
+    }
+}
+
+:root[data-theme=dark] {
+    --rubric-color: #e0705c;
+    --ink-color: #e9e3da;
+    --muted-ink-color: #a3968a;
+    --paper-color: #15120f;
+    --paper-deep-color: #211c17;
+    --rule-color: #463c33;
+}
+
+:root,
+[data-theme=light],
+[data-theme=dark] {
+    --pico-background-color: var(--paper-color);
+    --pico-color: var(--ink-color);
+}
+
+nav a {
+    color: #000;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--rubric-color);
+}
+
+/* Match the height of the navigation's small capitals. */
+nav .date-navigation {
+    font-size: 0.8em;
+}
+
+.date-controls {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.officium .date-controls .language-picker {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    margin: 0;
+}
+
+select.language-picker {
+    appearance: auto;
+    field-sizing: content;
+    width: auto;
+    margin: 0;
+    padding: 0.1rem 0.6rem 0.1rem 0.25rem;
+    border: 1px solid var(--rule-color);
+    border-radius: 0;
+    background: var(--paper-color);
+    color: var(--ink-color);
+    font: inherit;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.officium section {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.officium .columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.officium .columns > * {
+    flex: 1 1 0;
+}
+
+.officium .columns > *:first-child {
+    padding-right: 1rem;
+}
+
+.officium .columns > *:not(:first-child) {
+    border-left: 1px gray solid;
+    padding-left: 1rem;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.officium .block-title {
+    font-size: 1rem;
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--rubric-color);
+    font-weight: normal;
+}
+
+.officium .hour-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.officium .hour-links a {
+    color: var(--ink-color);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.officium .hour-links a[aria-current="page"],
+.officium .hour-links a:hover,
+.officium .hour-links a:focus-visible {
+    color: var(--rubric-color);
+}
+
+a[href]:hover,
+a[href]:focus-visible,
+.officium .hour-links a:hover,
+.officium .hour-links a:focus-visible {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+}
+
+.officium .language-picker {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+}
+
+.versicle {
+    margin-bottom: 0rem;
+}
+
+.response {
+    margin-top: 0rem;
+}
+
+.heading {
+    color: var(--rubric-color);
+    font-style: italic;
+}
+
+.citation {
+    font-style: italic;
+}
+
+.marker, .rubric {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--rubric-color);
+}
+
+.versicle-mark, .response-mark, .cross, .inline-mark {
+    color: var(--rubric-color);
+}
+
+.versicle-mark, .response-mark {
+    display: inline-block;
+    width: 0.8em;
+}
+
+.inline-mark {
+    font-style: italic;
+}
+
+.verse-marker {
+    color: var(--rubric-color);
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+}

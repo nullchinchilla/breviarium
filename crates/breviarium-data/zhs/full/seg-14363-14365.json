@@ -1,0 +1,5 @@
+{
+  "Quóniam tu es patiéntia mea.": "因为，你是我的期望。",
+  "Deus meus, ne elongéris a me: Deus meus, in auxílium meum réspice.": "我的天主，求祢不要远离我：我的天主，请速来救我。",
+  "_notes": "Both strings are fragments of Vulgate Ps 70 (=思高 圣咏 71, +1 offset applied). String 14363 is a fragment of v.5 ('quoniam tu es patientia mea'); the 思高 renders the full v.5 as '因为，我主上主，你是我的期望，你是我自幼惟一的仰仗。' — as a standalone liturgical versicle the vocative 'Domine Domine' is absent from the Latin fragment so it is omitted; '期望' follows 思高's rendering of 'patientia' in this verse. String 14364 is Ps 70(71):12; 思高 v.12: '天主，求你不要远离我，我的天主，请快来救我。' — rendered here with liturgical 祢 for direct address and slightly more literal colon division matching the Latin colon separator."
+}

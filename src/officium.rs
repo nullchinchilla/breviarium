@@ -1,100 +1,94 @@
 use dioxus::prelude::*;
 
-use crate::load_office::{load_office, LineKind, LineView};
+// Imported by item rather than by module: `lang` is also a prop name here.
+use crate::lang::{is_supported_code, remember, Language, LATIN};
+use crate::language_picker::LanguagePicker;
+use crate::load_office::{load_office, LineKind, LineView, MarkerView};
+use crate::Route;
+
+pub(crate) mod hour;
+use hour::Hour;
 
 #[component]
-pub fn Officium(date: ReadSignal<String>, hour: ReadSignal<String>) -> Element {
-    // The backend resolves one language per request, so we load each language
-    // independently and zip the parallel block lists here for side-by-side
-    // display. Block structure is language-independent, so the blocks line up by
-    // position across languages.
-    let latin_date = date.clone();
-    let latin_hour = hour.clone();
-    let latin = use_loader(move || load_office(latin_date(), latin_hour(), "la".to_string()))?;
-    let english_date = date.clone();
-    let english_hour = hour.clone();
-    let english =
-        use_loader(move || load_office(english_date(), english_hour(), "en2".to_string()))?;
-    let latin = latin();
-    let english = english();
+pub fn Officium(
+    lang: ReadSignal<String>,
+    date: ReadSignal<String>,
+    hour: ReadSignal<String>,
+) -> Element {
+    // An unknown segment would otherwise resolve to a document with every
+    // vernacular slot empty, which reads as a data problem rather than a bad
+    // URL. Reject it up front, and report it as one.
+    if !is_supported_code(&lang()) {
+        return rsx! { UnknownLanguage { code: lang() } };
+    }
 
-    // Metadata (titles, navigation, diagnostics) is taken from the Latin
-    // document; only the per-block line lists are zipped together.
-    let office = &latin;
-    let date_path = date();
-    let hour_path = canonical_hour_path(&hour());
-    let page_title = format!("{} - {}", office.title, display_hour(&hour_path));
-    let date_label = date_label(&date_path);
-    let (previous_date_path, next_date_path) = adjacent_date_paths(&date_path, &hour_path);
-    let hour_links = hour_links(&date_path, &hour_path);
+    // The backend resolves one language per request, so we load Latin and the
+    // requested vernacular (from the `lang` route segment) independently and zip
+    // the parallel block lists here for side-by-side display. Block structure is
+    // language-independent, so the blocks line up by position across languages.
+    let latin = use_loader(move || load_office(date(), hour(), "la".to_string()))?;
+    let vernacular = use_loader(move || load_office(date(), hour(), lang()))?;
+    let latin = latin();
+    let vernacular = vernacular();
+
+    // Metadata (title, navigation, diagnostics) is taken from the Latin
+    // document; only the per-block line lists are zipped together. Block
+    // structure is language-independent, so blocks line up by position: the
+    // Latin block at index `i` pairs with the vernacular lines at the same index.
+    let empty: &[LineView] = &[];
     let blocks = latin
         .blocks
         .iter()
         .enumerate()
         .map(|(index, latin_block)| {
-            let empty: &[LineView] = &[];
-            let english_lines = english
+            let vernacular_lines = vernacular
                 .blocks
                 .get(index)
-                .map(|block| block.lines.as_slice())
-                .unwrap_or(empty);
-            let row_count = latin_block.lines.len().max(english_lines.len());
-            let rows = (0..row_count)
-                .map(|row| OfficeRowView {
-                    cells: vec![
-                        OfficeCellView {
-                            lang: "la".to_string(),
-                            line: latin_block.lines.get(row).cloned(),
-                        },
-                        OfficeCellView {
-                            lang: "en".to_string(),
-                            line: english_lines.get(row).cloned(),
-                        },
-                    ],
-                })
-                .collect();
-            ZippedBlock {
-                title: latin_block.title.clone(),
-                class: latin_block.class.clone(),
-                rows,
-            }
+                .map_or(empty, |block| block.lines.as_slice());
+            (latin_block, vernacular_lines)
         })
         .collect::<Vec<_>>();
+    let page_title = format!(
+        "{} - {}",
+        latin.title,
+        Hour::from_path(&hour()).map_or("Officium", Hour::label)
+    );
+    let vernacular_lang = lang();
 
     rsx! {
         document::Title { "{page_title}" }
 
         main { class: "container officium",
-            OfficiumHeader {
-                title: office.title.clone(),
-                date_label,
-                hour_label: display_hour(&hour_path).to_string(),
-                previous_date_path,
-                next_date_path,
-                hour_links,
-            }
+            OfficiumHeader { title: latin.title.clone(), lang, date, hour }
 
-            if !office.diagnostics.is_empty() {
+            if !latin.diagnostics.is_empty() {
                 strong { "Diagnostics" } br{}
                 ul {
-                    for diagnostic in &office.diagnostics {
+                    for diagnostic in &latin.diagnostics {
                         li { "{diagnostic}" }
                     }
                 }
             }
 
-            for block in blocks {
-                section { class: "block {block.class}",
-                    h2 { class: "block-title", "{block.title}" }
+            for (latin_block, vernacular_lines) in blocks {
+                section { class: "block {latin_block.class}",
+                    h2 { class: "block-title", "{latin_block.title}" }
                     // Each row is one logical line (an antiphon, a whole psalm, a
                     // versicle…) with the languages interleaved side by side, so a
                     // single psalm — not a whole section — is the unit of a row.
-                    for row in block.rows {
+                    for row in 0..latin_block.lines.len().max(vernacular_lines.len()) {
                         div { class: "row columns",
-                            for cell in row.cells {
-                                div { class: "lang lang-{cell.lang}",
-                                    if let Some(line) = cell.line {
-                                        OfficeLine { line }
+                            div { class: "lang lang-la",
+                                if let Some(line) = latin_block.lines.get(row) {
+                                    OfficeLine { line: line.clone() }
+                                }
+                            }
+                            // `/la/...` is reachable by hand but never linked;
+                            // showing it would just repeat the left column.
+                            if vernacular_lang != LATIN {
+                                div { class: "lang lang-{vernacular_lang}",
+                                    if let Some(line) = vernacular_lines.get(row) {
+                                        OfficeLine { line: line.clone() }
                                     }
                                 }
                             }
@@ -109,32 +103,59 @@ pub fn Officium(date: ReadSignal<String>, hour: ReadSignal<String>) -> Element {
 #[component]
 fn OfficiumHeader(
     title: String,
-    date_label: String,
-    hour_label: String,
-    previous_date_path: String,
-    next_date_path: String,
-    hour_links: Vec<HourLinkView>,
+    lang: ReadSignal<String>,
+    date: ReadSignal<String>,
+    hour: ReadSignal<String>,
 ) -> Element {
+    let current = Hour::from_path(&hour());
+    let date_path = date();
+    let (previous_date, next_date) = adjacent_dates(&date_path);
+    // Keep the current hour across date navigation, normalizing aliases to the
+    // canonical path; an unrecognized hour is carried through unchanged.
+    let hour_path = match current {
+        Some(hour) => hour.path().to_string(),
+        None => hour(),
+    };
     rsx! {
         header {
             nav {
                 ul {
-                    li {  "Breviarium" }
+                    li {
+                        Link { to: Route::Home {}, "Breviarium" }
+                    }
                 }
-                ul {
-                    li { Link { to: "{previous_date_path}", "←" } }
-                    li {{date_label}}
-                    li { Link { to: "{next_date_path}", "→" } }
+                div { class: "date-controls",
+                    ul { class: "date-navigation",
+                        li {
+                            Link {
+                                to: Route::Officium { lang: lang(), date: previous_date, hour: hour_path.clone() },
+                                "←"
+                            }
+                        }
+                        li { {date_label(&date_path)} }
+                        li {
+                            Link {
+                                to: Route::Officium { lang: lang(), date: next_date, hour: hour_path.clone() },
+                                "→"
+                            }
+                        }
+                    }
+                    LanguagePicker {
+                        id: "office-language-picker",
+                        language: lang(),
+                        office: (date(), hour_path),
+                        onselect: move |choice| remember(choice),
+                    }
                 }
             }
             h1 { class: "date", "{title}" }
             div {
                 class: "hour-links",
-                for link in &hour_links {
+                for hour in Hour::ALL {
                     Link {
-                        to: "{link.href}",
-                        aria_current: if link.current { "page" } else { "false" },
-                        "{link.label}"
+                        to: Route::Officium { lang: lang(), date: date(), hour: hour.path().to_string() },
+                        aria_current: if current == Some(hour) { "page" } else { "false" },
+                        "{hour.label()}"
                     }
                 }
             }
@@ -142,146 +163,76 @@ fn OfficiumHeader(
     }
 }
 
-#[derive(Clone, Debug, PartialEq)]
-struct HourLinkView {
-    label: String,
-    href: String,
-    current: bool,
-}
-
-fn canonical_hour_path(hour: &str) -> String {
-    match hour.to_ascii_lowercase().as_str() {
-        "matins" | "matutinum" => "matutinum",
-        "lauds" | "laudes" => "laudes",
-        "prime" | "prima" => "prima",
-        "terce" | "tertia" => "tertia",
-        "sext" | "sexta" => "sexta",
-        "none" | "nona" => "nona",
-        "vespers" | "vespera" | "vesperae" => "vesperae",
-        "compline" | "completorium" => "completorium",
-        _ => hour,
-    }
-    .to_string()
-}
-
-fn display_hour(hour: &str) -> &'static str {
-    match hour {
-        "matutinum" => "Matutinum",
-        "laudes" => "Laudes",
-        "prima" => "Prima",
-        "tertia" => "Tertia",
-        "sexta" => "Sexta",
-        "nona" => "Nona",
-        "vesperae" => "Vesperae",
-        "completorium" => "Completorium",
-        _ => "Officium",
-    }
-}
-
-fn date_label(date_path: &str) -> String {
-    if date_path.len() == 8 {
-        format!(
-            "{}-{}-{}",
-            &date_path[0..4],
-            &date_path[4..6],
-            &date_path[6..8]
-        )
-    } else {
-        date_path.to_string()
-    }
-}
-
-fn adjacent_date_paths(date_path: &str, hour_path: &str) -> (String, String) {
-    let Some((year, month, day)) = parse_date_path(date_path) else {
-        return (
-            format!("/officium/{date_path}/{hour_path}"),
-            format!("/officium/{date_path}/{hour_path}"),
+/// Shown for a `:lang` segment the resolver has no column for. Rendering the
+/// Office anyway would produce a page of empty vernacular slots, which reads as
+/// missing data rather than a mistyped URL.
+#[component]
+fn UnknownLanguage(code: String) -> Element {
+    // The page still renders, but the response should say what it is: a bad
+    // URL, not an Office. No-op on the client, where there is no response.
+    use_hook(|| {
+        dioxus::fullstack::FullstackContext::commit_http_status(
+            StatusCode::NOT_FOUND,
+            Some("unknown language".to_string()),
         );
-    };
-    let previous = format_date_path(add_days(year, month, day, -1));
-    let next = format_date_path(add_days(year, month, day, 1));
-    (
-        format!("/officium/{previous}/{hour_path}"),
-        format!("/officium/{next}/{hour_path}"),
-    )
+    });
+
+    rsx! {
+        document::Title { "Unknown language" }
+        main { class: "container",
+            article {
+                header { h1 { "Unknown language" } }
+                p { "There is no translation column for `{code}`." }
+                ul {
+                    for choice in Language::ALL {
+                        li { "{choice.label()} — {choice.code()}" }
+                    }
+                }
+                p {
+                    Link { to: Route::Home {}, "Go to the home page" }
+                }
+            }
+        }
+    }
 }
 
-fn parse_date_path(date_path: &str) -> Option<(i32, u8, u8)> {
+/// Parses a `YYYYMMDD` path segment into a calendar date, rejecting anything
+/// that isn't exactly eight digits naming a real date.
+fn parse_date(date_path: &str) -> Option<chrono::NaiveDate> {
     if date_path.len() != 8 || !date_path.bytes().all(|byte| byte.is_ascii_digit()) {
         return None;
     }
     let year = date_path[0..4].parse().ok()?;
     let month = date_path[4..6].parse().ok()?;
     let day = date_path[6..8].parse().ok()?;
-    (1..=12)
-        .contains(&month)
-        .then_some((year, month, day))
-        .filter(|(year, month, day)| *day >= 1 && *day <= days_in_month(*year, *month))
+    chrono::NaiveDate::from_ymd_opt(year, month, day)
 }
 
-fn add_days(mut year: i32, mut month: u8, mut day: u8, days: i8) -> (i32, u8, u8) {
-    if days < 0 {
-        day -= 1;
-        if day == 0 {
-            if month == 1 {
-                year -= 1;
-                month = 12;
-            } else {
-                month -= 1;
-            }
-            day = days_in_month(year, month);
-        }
-    } else if days > 0 {
-        day += 1;
-        if day > days_in_month(year, month) {
-            day = 1;
-            if month == 12 {
-                year += 1;
-                month = 1;
-            } else {
-                month += 1;
-            }
-        }
-    }
-    (year, month, day)
+/// Formats a date back into the `YYYYMMDD` path segment.
+fn format_date(date: chrono::NaiveDate) -> String {
+    date.format("%Y%m%d").to_string()
 }
 
-fn format_date_path((year, month, day): (i32, u8, u8)) -> String {
-    format!("{year:04}{month:02}{day:02}")
+/// A human-readable `YYYY-MM-DD` label, falling back to the raw segment when it
+/// isn't a parseable date.
+fn date_label(date_path: &str) -> String {
+    parse_date(date_path).map_or_else(
+        || date_path.to_string(),
+        |date| date.format("%Y-%m-%d").to_string(),
+    )
 }
 
-fn days_in_month(year: i32, month: u8) -> u8 {
-    match month {
-        1 | 3 | 5 | 7 | 8 | 10 | 12 => 31,
-        4 | 6 | 9 | 11 => 30,
-        2 if is_leap_year(year) => 29,
-        2 => 28,
-        _ => 0,
-    }
-}
-
-fn is_leap_year(year: i32) -> bool {
-    year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
-}
-
-fn hour_links(date_path: &str, current_hour: &str) -> Vec<HourLinkView> {
-    [
-        ("matutinum", "Matutinum"),
-        ("laudes", "Laudes"),
-        ("prima", "Prima"),
-        ("tertia", "Tertia"),
-        ("sexta", "Sexta"),
-        ("nona", "Nona"),
-        ("vesperae", "Vesperae"),
-        ("completorium", "Completorium"),
-    ]
-    .into_iter()
-    .map(|(hour, label)| HourLinkView {
-        label: label.to_string(),
-        href: format!("/officium/{date_path}/{hour}"),
-        current: hour == current_hour,
-    })
-    .collect()
+/// The `(previous, next)` day path segments around `date_path`, leaving the
+/// segment unchanged for either neighbor that isn't representable.
+fn adjacent_dates(date_path: &str) -> (String, String) {
+    let Some(date) = parse_date(date_path) else {
+        return (date_path.to_string(), date_path.to_string());
+    };
+    let fallback = || date_path.to_string();
+    (
+        date.pred_opt().map_or_else(fallback, format_date),
+        date.succ_opt().map_or_else(fallback, format_date),
+    )
 }
 
 #[component]
@@ -292,6 +243,12 @@ fn OfficeLine(line: LineView) -> Element {
         // its own classed span so the stylesheet can present them.
         LineKind::Text => rsx! {
             p { class: "{line.class}",
+                // The leading marker arrives as structured data; the renderer
+                // picks the ℣/℟ glyph by role, or shows the localized label.
+                if let Some(marker) = &line.marker {
+                    {render_marker(marker)}
+                    " "
+                }
                 for (index , text_line) in line.text.lines().enumerate() {
                     if index > 0 {
                         br {}
@@ -312,13 +269,6 @@ fn OfficeLine(line: LineView) -> Element {
 #[derive(Debug, PartialEq, Eq)]
 enum Segment {
     Text(String),
-    /// Versicle marker `V.` → ℣.
-    Versicle,
-    /// Response marker `R.` / `R.br.` → ℟.
-    Response,
-    /// An inline label rendered emphasized, e.g. `Ant.`, `Benedictio.`. The
-    /// string holds the marker text verbatim.
-    InlineMark(String),
     /// Verse number at the start of a psalm line, e.g. `39:2`.
     Verse(String),
     /// The ordinary large sign of the cross marker `+`.
@@ -329,28 +279,16 @@ enum Segment {
     BreastSignOfCross,
 }
 
-/// Splits a text line into [`Segment`]s: an optional leading versicle/response/
-/// verse marker, then the body tokenized into text and cross markers.
+/// Splits a text line into [`Segment`]s: an optional leading verse number, then
+/// the body tokenized into text and cross markers. The versicle/response/
+/// antiphon/blessing marker is no longer parsed out here — it arrives as
+/// structured data on the line (see [`render_marker`]) — so this only handles
+/// markers that are genuinely inline in the source text (verse numbers, crosses).
 fn parse_line(line: &str) -> Vec<Segment> {
     let mut out = Vec::new();
-    let body = if let Some(rest) = line.strip_prefix("V. ") {
-        out.push(Segment::Versicle);
-        out.push(Segment::Text(" ".to_string()));
-        rest
-    } else if let Some(rest) = line.strip_prefix("R.br. ") {
-        out.push(Segment::Response);
-        out.push(Segment::Text(" ".to_string()));
-        rest
-    } else if let Some(rest) = line.strip_prefix("R. ") {
-        out.push(Segment::Response);
-        out.push(Segment::Text(" ".to_string()));
-        rest
-    } else if let Some((mark, rest)) = split_inline_mark(line) {
-        out.push(Segment::InlineMark(mark.to_string()));
-        out.push(Segment::Text(" ".to_string()));
-        rest
-    } else if let Some((marker, rest)) = split_verse_marker(line) {
+    let body = if let Some((marker, rest)) = split_verse_marker(line) {
         out.push(Segment::Verse(marker.to_string()));
+        // A leading verse number is separated from the body by a single space.
         out.push(Segment::Text(" ".to_string()));
         rest
     } else {
@@ -358,18 +296,6 @@ fn parse_line(line: &str) -> Vec<Segment> {
     };
     tokenize_crosses(body, &mut out);
     out
-}
-
-/// Leading inline-label markers (antiphon/blessing) recognized at the start of
-/// a line. Each is matched with its trailing space.
-const INLINE_MARKS: &[&str] = &["Ant.", "Benedictio.", "Benediction."];
-
-/// Splits off a leading inline-label marker (`Ant.`, `Benedictio.`, …),
-/// returning `(marker, rest)` with the marker text and the remaining body.
-fn split_inline_mark(line: &str) -> Option<(&str, &str)> {
-    INLINE_MARKS
-        .iter()
-        .find_map(|mark| line.strip_prefix(mark)?.strip_prefix(' ').map(|rest| (*mark, rest)))
 }
 
 /// A leading psalm verse number (`<digits>:<digits>[letter]`) followed by a
@@ -428,12 +354,19 @@ fn tokenize_crosses(text: &str, out: &mut Vec<Segment>) {
     }
 }
 
+/// Renders the structured leading marker: the versicle/response sigla as the
+/// ℣/℟ glyphs (by role), and antiphon/blessing as their localized label text.
+fn render_marker(marker: &MarkerView) -> Element {
+    match marker.kind.as_str() {
+        "versicle" => rsx! { span { class: "versicle-mark", "℣" } },
+        "response" | "short-response" => rsx! { span { class: "response-mark", "℟" } },
+        _ => rsx! { span { class: "inline-mark", "{marker.label}" } },
+    }
+}
+
 fn render_segment(segment: Segment) -> Element {
     match segment {
         Segment::Text(text) => rsx! { "{text}" },
-        Segment::Versicle => rsx! { span { class: "versicle-mark", "℣" } },
-        Segment::Response => rsx! { span { class: "response-mark", "℟" } },
-        Segment::InlineMark(mark) => rsx! { span { class: "inline-mark", "{mark}" } },
         Segment::Verse(marker) => rsx! { span { class: "verse-marker", "{marker}" } },
         Segment::LargeSignOfCross => rsx! { span { class: "cross cross-large", "✠" } },
         Segment::LesserSignOfCross => rsx! { span { class: "cross cross-lesser", "☩" } },
@@ -466,26 +399,4 @@ mod tests {
             ]
         );
     }
-}
-
-/// A block with its languages zipped into side-by-side rows, ready to render.
-/// Built client-side in [`Officium`] from the per-language [`OfficeBlockView`]s.
-struct ZippedBlock {
-    title: String,
-    class: String,
-    rows: Vec<OfficeRowView>,
-}
-
-/// A single display row, with one cell per language, built client-side by
-/// zipping the per-language [`OfficeBlockView::lines`].
-#[derive(Clone, Debug, PartialEq)]
-struct OfficeRowView {
-    cells: Vec<OfficeCellView>,
-}
-
-#[derive(Clone, Debug, PartialEq)]
-struct OfficeCellView {
-    lang: String,
-    /// The line for this language, or `None` if this language has fewer lines.
-    line: Option<LineView>,
 }

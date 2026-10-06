@@ -436,6 +436,56 @@ mod tests {
             }
         }
     }
+
+    #[test]
+    fn matins_invitatory_restores_the_verse_and_repeats_the_antiphon() {
+        let engine = Breviarium::embedded().unwrap();
+        let date = NaiveDate::from_ymd_opt(2026, 10, 2).unwrap();
+        for (language, restored_clause, repeat_instruction) in [
+            (
+                "en",
+                "Come, let us adore and fall prostrate, and let us weep before the Lord who made us.",
+                "Repeat the full invitatory antiphon.",
+            ),
+            (
+                "la",
+                "Veníte adorémus, et procidámus",
+                "repeat full invitatory antiphon",
+            ),
+        ] {
+            let office = engine
+                .resolve_office(OfficeRequest::new(date, Hour::Matins).with_language(language))
+                .unwrap();
+            let block = office
+                .blocks
+                .iter()
+                .find(|block| block.id.ends_with(".invitatory"))
+                .unwrap();
+            let OfficeBlockContent::Resolved { nodes } = &block.content else {
+                panic!("missing {language} invitatory");
+            };
+            let text = document_lines(engine.catalog(), language, nodes).join("\n");
+            assert_eq!(text.matches("94:6 ").count(), 1, "{language}");
+            assert_eq!(text.matches(restored_clause).count(), 1, "{language}");
+            assert!(!text.contains(repeat_instruction), "{language}");
+
+            let antiphons = nodes
+                .iter()
+                .filter_map(|node| match node {
+                    DocumentNode::Antiphon { text } => Some(text),
+                    _ => None,
+                })
+                .collect::<Vec<_>>();
+            assert_eq!(antiphons.len(), 7, "{language}");
+            assert!(antiphons[..6]
+                .iter()
+                .all(|antiphon| *antiphon == antiphons[0]));
+            assert_eq!(*antiphons[6], close_antiphon(antiphons[0]));
+            assert!(nodes.iter().any(|node| {
+                matches!(node, DocumentNode::Heading { .. })
+            }));
+        }
+    }
 }
 
 // ==== resolver (moved from lib.rs) ====
@@ -834,7 +884,7 @@ fn execute_steps(
 fn slot_title(slot: &Slot, language: &str) -> Option<String> {
     match language {
         "la" => Some(slot.title.0.to_string()),
-        "en" | "en2" => Some(slot.title.1.to_string()),
+        "en-dr" | "en" => Some(slot.title.1.to_string()),
         _ => None,
     }
 }
@@ -1044,11 +1094,11 @@ fn resolve_matins_invitatory(
         .unwrap_or_default();
     let mut nodes = Vec::new();
     if !antiphon.is_empty() {
-        nodes.push(DocumentNode::Text {
-            text: format!("Ant. {antiphon}"),
+        nodes.push(DocumentNode::Antiphon {
+            text: antiphon.clone(),
         });
     }
-    nodes.extend(psalm_nodes(
+    let psalm = psalm_nodes(
         catalog,
         language,
         &PsalmReference {
@@ -1058,10 +1108,54 @@ fn resolve_matins_invitatory(
             optional: false,
         },
         diagnostics,
-    )?);
+    )?;
+    // Every language follows the Latin Psalm 94 rows. Its unnumbered rows
+    // mark the five places where the full invitatory antiphon is repeated.
+    let repeat_indexes = section_lines(catalog, "la", "psalm/94", "raw")
+        .unwrap_or_default()
+        .into_iter()
+        .skip_while(|line| !has_verse_prefix(line))
+        .enumerate()
+        .filter_map(|(index, line)| (!has_verse_prefix(&line)).then_some(index))
+        .collect::<BTreeSet<_>>();
+    for node in psalm {
+        match node {
+            DocumentNode::Text { text }
+                if text
+                    .lines()
+                    .next()
+                    .is_some_and(|line| line.starts_with("94:")) =>
+            {
+                let mut verses = Vec::new();
+                for (index, line) in text.lines().enumerate() {
+                    if repeat_indexes.contains(&index) {
+                        if !verses.is_empty() {
+                            nodes.push(DocumentNode::Text {
+                                text: verses.join("\n"),
+                            });
+                            verses.clear();
+                        }
+                        if !antiphon.is_empty() {
+                            nodes.push(DocumentNode::Antiphon {
+                                text: antiphon.clone(),
+                            });
+                        }
+                    } else {
+                        verses.push(line);
+                    }
+                }
+                if !verses.is_empty() {
+                    nodes.push(DocumentNode::Text {
+                        text: verses.join("\n"),
+                    });
+                }
+            }
+            node => nodes.push(node),
+        }
+    }
     if !antiphon.is_empty() {
-        nodes.push(DocumentNode::Text {
-            text: format!("Ant. {}", close_antiphon(&antiphon)),
+        nodes.push(DocumentNode::Antiphon {
+            text: close_antiphon(&antiphon),
         });
     }
     Ok(nodes)
@@ -1386,9 +1480,7 @@ fn resolve_matins_blessing(
     if let Some(line) = section_lines(catalog, language, BENEDICTIONS, section)
         .and_then(|lines| lines.get((lesson - 1) % 3).cloned())
     {
-        nodes.push(DocumentNode::Text {
-            text: format!("Benedictio. {line}"),
-        });
+        nodes.push(DocumentNode::Blessing { text: line });
     }
     Ok(nodes)
 }
@@ -1958,8 +2050,8 @@ fn resolve_commemoration(
         .antiphons(catalog, language, indexed_antiphon)
         .and_then(|mut values| values.pop())
     {
-        nodes.push(DocumentNode::Text {
-            text: format!("Ant. {}", close_antiphon(&antiphon)),
+        nodes.push(DocumentNode::Antiphon {
+            text: close_antiphon(&antiphon),
         });
     }
     if let Ok(versicle) = sources.doc(catalog, language, indexed_versicle, diagnostics) {
@@ -2086,7 +2178,8 @@ fn formula_lines(
     section: &str,
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Result<Vec<String>, String> {
-    formula_nodes(catalog, language, section, diagnostics).map(|nodes| document_lines(&nodes))
+    formula_nodes(catalog, language, section, diagnostics)
+        .map(|nodes| document_lines(catalog, language, &nodes))
 }
 
 fn expand_nodes(
@@ -2243,8 +2336,8 @@ fn psalm_nodes(
     let source = source_key(&["psalm", &reference.number]);
     let raw = section_nodes(catalog, language, &source, "raw")
         .ok_or_else(|| format!("missing psalm {}", reference.number))?;
-    let mut lines =
-        expand_nodes(catalog, language, &raw, diagnostics).map(|nodes| document_lines(&nodes))?;
+    let mut lines = expand_nodes(catalog, language, &raw, diagnostics)
+        .map(|nodes| document_lines(catalog, language, &nodes))?;
 
     // A canticle body opens with its title and a scripture-reference line, neither
     // of which carries a verse number; a numbered psalm is verses only. Peel that
@@ -2572,11 +2665,11 @@ fn commemoration_sources(context: &OfficeContext, commemoration: &CommemorationC
     Stack::of(keys)
 }
 
-fn document_lines(nodes: &[DocumentNode]) -> Vec<String> {
+fn document_lines(catalog: &Catalog, language: &str, nodes: &[DocumentNode]) -> Vec<String> {
     nodes
         .iter()
         .flat_map(|node| {
-            node.plain_text()
+            node.plain_text_for_language(language, catalog)
                 .lines()
                 .map(ToOwned::to_owned)
                 .collect::<Vec<_>>()

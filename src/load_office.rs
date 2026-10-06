@@ -27,6 +27,7 @@ fn load_office_impl(date: String, hour: String, language: String) -> Result<Offi
             OfficeRequest::new(parsed_date, parsed_hour).with_language(language.as_str()),
         )
         .map_err(|error| format!("failed to resolve Office: {error}"))?;
+    let catalog = engine.catalog();
 
     let title = office
         .principal
@@ -49,10 +50,11 @@ fn load_office_impl(date: String, hour: String, language: String) -> Result<Offi
                 .unwrap_or_else(|| fallback_title.clone());
             let class = fallback_title.to_ascii_lowercase();
             let lines = match &block.content {
-                OfficeBlockContent::Resolved { nodes } => document_lines(&language, nodes),
+                OfficeBlockContent::Resolved { nodes } => document_lines(&language, catalog, nodes),
                 OfficeBlockContent::Missing { reason } => vec![LineView {
                     kind: LineKind::Unresolved,
                     class: "missing".to_string(),
+                    marker: None,
                     text: format!("Missing: {reason}"),
                 }],
                 _ => Vec::new(),
@@ -90,7 +92,11 @@ fn parse_data_hour(value: &str) -> Option<breviarium_data::Hour> {
 }
 
 #[cfg(feature = "server")]
-fn document_lines(language: &str, nodes: &[breviarium_data::DocumentNode]) -> Vec<LineView> {
+fn document_lines(
+    language: &str,
+    catalog: &breviarium_data::Catalog,
+    nodes: &[breviarium_data::DocumentNode],
+) -> Vec<LineView> {
     use breviarium_data::DocumentNode;
 
     let mut lines = Vec::new();
@@ -98,6 +104,20 @@ fn document_lines(language: &str, nodes: &[breviarium_data::DocumentNode]) -> Ve
         // Semantic class from the node type, e.g. `versicle`, `response`,
         // `short-response`, `antiphon`, `prayer`, `blessing`, `amen`, `heading`.
         let class = node.kind().replace('_', "-");
+        // The leading versicle/response/antiphon/blessing marker travels as
+        // structured data (role + localized label), so the renderer presents it
+        // without re-parsing the text. The body is the clean, marker-free text.
+        let marker = node.line_marker(language, catalog).map(|marker| MarkerView {
+            kind: marker.kind.as_str().to_string(),
+            label: marker.label,
+        });
+        let text = node.body_for_language(language, catalog);
+        let line = |kind| LineView {
+            kind,
+            class: class.clone(),
+            marker: marker.clone(),
+            text: text.clone(),
+        };
         match node {
             DocumentNode::Text { .. }
             | DocumentNode::Versicle { .. }
@@ -106,55 +126,21 @@ fn document_lines(language: &str, nodes: &[breviarium_data::DocumentNode]) -> Ve
             | DocumentNode::Antiphon { .. }
             | DocumentNode::Prayer { .. }
             | DocumentNode::Blessing { .. }
-            | DocumentNode::Amen => push_lines(
-                &mut lines,
-                LineKind::Text,
-                &class,
-                &node.plain_text_for_language(language),
-            ),
+            | DocumentNode::Amen => lines.push(line(LineKind::Text)),
             DocumentNode::Heading { .. }
             | DocumentNode::Marker { .. }
-            | DocumentNode::Citation { .. } => push_lines(
-                &mut lines,
-                LineKind::Marker,
-                &class,
-                &node.plain_text_for_language(language),
-            ),
-            DocumentNode::Rubric { .. } => push_lines(
-                &mut lines,
-                LineKind::Rubric,
-                &class,
-                &node.plain_text_for_language(language),
-            ),
-            DocumentNode::Unresolved {
-                kind,
-                value,
-                reason,
-            } => lines.push(LineView {
-                kind: LineKind::Unresolved,
-                class,
-                text: format!("unresolved {kind}: {value}; {reason}"),
-            }),
+            | DocumentNode::Citation { .. } => lines.push(line(LineKind::Marker)),
+            DocumentNode::Rubric { .. } => lines.push(line(LineKind::Rubric)),
+            DocumentNode::Unresolved { .. } => lines.push(line(LineKind::Unresolved)),
             _ => lines.push(LineView {
                 kind: LineKind::Unresolved,
                 class: "unresolved".to_string(),
+                marker: None,
                 text: "unknown output node".to_string(),
             }),
         }
     }
     lines
-}
-
-#[cfg(feature = "server")]
-fn push_lines(lines: &mut Vec<LineView>, kind: LineKind, class: &str, text: &str) {
-    // Each node is one block: multiline text (a hymn, a psalm's verses) stays
-    // together and renders as one paragraph with internal line breaks, rather
-    // than one `<p>` per source line.
-    lines.push(LineView {
-        kind,
-        class: class.to_string(),
-        text: text.to_string(),
-    });
 }
 
 /// The resolved Office payload returned by the backend.
@@ -183,7 +169,21 @@ pub(crate) struct LineView {
     /// Semantic CSS class derived from the source node type (`versicle`,
     /// `response`, `antiphon`, `hymn`-bearing `text`, ...).
     pub(crate) class: String,
+    /// Optional leading marker (versicle/response siglum, antiphon/blessing
+    /// label) carried as structured data — the renderer chooses the glyph or
+    /// label rather than parsing it back out of `text`.
+    pub(crate) marker: Option<MarkerView>,
     pub(crate) text: String,
+}
+
+/// A structured inline line marker for the renderer: the semantic `kind`
+/// (`versicle`, `response`, `short-response`, `antiphon`, `blessing`) and the
+/// localized `label` to show when the renderer presents a label rather than a
+/// glyph.
+#[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
+pub(crate) struct MarkerView {
+    pub(crate) kind: String,
+    pub(crate) label: String,
 }
 
 #[derive(Clone, Copy, Debug, Deserialize, Serialize, PartialEq)]

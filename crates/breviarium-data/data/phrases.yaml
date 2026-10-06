@@ -5,37 +5,76 @@ doc_type: phrases
 phrases:
   preces-omit:
     la: omittitur
+    en-dr: omit
     en: omit
-    en2: omit
+    zhs-ecu: 省略
+    zhs: 省略
   examination-rubric:
     la: Examen conscientiae vel Pater Noster totum secreto.
+    en-dr: There follows an examination of conscience, or the Our Father said silently.
     en: There follows an examination of conscience, or the Our Father said silently.
-    en2: There follows an examination of conscience, or the Our Father said silently.
+    zhs-ecu: 省察良心，或默念天主经全文。
+    zhs: 省察良心，或默念天主经全文。
   commemoration-prefix:
     la: Commemoratio
+    en-dr: Commemoration of
     en: Commemoration of
-    en2: Commemoration of
+    zhs-ecu: 纪念
+    zhs: 纪念
   domine-exaudi-versicle:
     la: Dómine, exáudi oratiónem meam.
+    en-dr: O Lord, hear my prayer.
     en: O Lord, hear my prayer.
-    en2: O Lord, hear my prayer.
+    zhs-ecu: 主啊，求你垂听我的祷告。
+    zhs: 上主，求你俯听我的祈祷。
   domine-exaudi-response:
     la: Et clamor meus ad te véniat.
-    en: And let my cry come unto thee.
-    en2: And let my cry come unto you.
+    en-dr: And let my cry come unto thee.
+    en: And let my cry come unto you.
+    zhs-ecu: 愿我的呼求达到你前。
+    zhs: 愿我的呼号上达于你。
   divinum-auxilium-versicle:
-    la: Divínum auxílium ✠ máneat semper nobíscum.
-    en: May the divine assistance ✠ remain with us always.
-    en2: May the divine assistance ✠ remain with us always.
+    la: Divínum auxílium + máneat semper nobíscum.
+    en-dr: May the divine assistance + remain with us always.
+    en: May the divine assistance + remain with us always.
+    zhs-ecu: 愿神的助佑 + 常与我们同在。
+    zhs: 愿天主的助佑 + 常与我们同在。
   nocturn-title:
     la: Nocturnus
+    en-dr: Nocturn
     en: Nocturn
-    en2: Nocturn
+    zhs-ecu: 夜课
+    zhs: 夜课
   lesson-title:
     la: Lectio
+    en-dr: Reading
     en: Reading
-    en2: Reading
+    zhs-ecu: 诵读
+    zhs: 诵读
   psalm-title:
     la: Psalmus
+    en-dr: Psalm
     en: Psalm
-    en2: Psalm
+    zhs-ecu: 诗篇
+    zhs: 圣咏
+  # Inline markers prepended to a node's text when rendered to plain text. The
+  # versicle/response/antiphon abbreviations are shared across languages (`la`
+  # fallback); the blessing label and the Amen response are localized.
+  versicle-marker:
+    la: "V."
+  response-marker:
+    la: "R."
+  short-response-marker:
+    la: "R.br."
+  antiphon-marker:
+    la: "Ant."
+  blessing-marker:
+    la: Benedictio.
+    en-dr: Benediction.
+    en: Benediction.
+    zhs-ecu: 祝福。
+    zhs: 祝福。
+  amen-response:
+    la: Amen.
+    zhs-ecu: 阿们。
+    zhs: 阿们。

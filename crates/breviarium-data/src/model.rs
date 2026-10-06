@@ -375,37 +375,49 @@ impl DocumentNode {
             Self::Unresolved { .. } => "unresolved",
         }
     }
+}
 
-    /// Returns a plain-text rendering suitable for comparison and simple UIs.
-    pub fn plain_text(&self) -> String {
-        self.plain_text_for_language("la")
-    }
+/// Role of an inline marker that precedes a rendered line — the versicle/
+/// response sigla and the antiphon/blessing labels. This carries only the role;
+/// the displayed glyph or label text is resolved from the localized `phrases`
+/// catalog (see [`DocumentNode::line_marker`]), so a renderer chooses its own
+/// presentation without parsing it back out of the text.
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+#[non_exhaustive]
+pub enum LineMarkerKind {
+    /// Versicle (℣).
+    Versicle,
+    /// Response (℟).
+    Response,
+    /// Short responsory (℟).
+    ShortResponse,
+    /// Antiphon label (`Ant.`).
+    Antiphon,
+    /// Blessing label (`Benedictio.`).
+    Blessing,
+}
 
-    /// Returns a plain-text rendering for a specific language column.
-    pub fn plain_text_for_language(&self, language: &str) -> String {
+impl LineMarkerKind {
+    /// Stable identifier, e.g. `versicle`, `short-response`.
+    pub const fn as_str(self) -> &'static str {
         match self {
-            Self::Text { text }
-            | Self::Heading { text }
-            | Self::Rubric { text }
-            | Self::Marker { text }
-            | Self::Citation { text }
-            | Self::Prayer { text } => text.clone(),
-            Self::Versicle { text } => format!("V. {text}"),
-            Self::Response { text } => format!("R. {text}"),
-            Self::ShortResponse { text } => format!("R.br. {text}"),
-            Self::Antiphon { text } => format!("Ant. {text}"),
-            Self::Blessing { text } if matches!(language, "en" | "en2") => {
-                format!("Benediction. {text}")
-            }
-            Self::Blessing { text } => format!("Benedictio. {text}"),
-            Self::Amen => "R. Amen.".to_string(),
-            Self::Unresolved {
-                kind,
-                value,
-                reason,
-            } => format!("[unresolved {kind}: {value}; {reason}]"),
+            Self::Versicle => "versicle",
+            Self::Response => "response",
+            Self::ShortResponse => "short-response",
+            Self::Antiphon => "antiphon",
+            Self::Blessing => "blessing",
         }
     }
+}
+
+/// A resolved inline marker: its [`LineMarkerKind`] plus the localized label to
+/// display (`℣`, `℟`, `Ant.`, `祝福。`, …).
+#[derive(Clone, Debug, Eq, PartialEq)]
+pub struct LineMarker {
+    /// Semantic role of the marker.
+    pub kind: LineMarkerKind,
+    /// Localized display label.
+    pub label: String,
 }
 
 /// Resolved or missing content for a block, in the document's single language.

@@ -12,8 +12,75 @@
 //! them untouched.
 
 use crate::schema::{BookFile, LexiconFile, PhrasesFile, RawProfile};
-use crate::{ContentNode, DataError, TextRole, DATA_DIR};
+use crate::{
+    ContentNode, DataError, DocumentNode, LineMarker, LineMarkerKind, TextRole, DATA_DIR,
+};
 use std::collections::{BTreeMap, BTreeSet};
+
+impl DocumentNode {
+    /// The structured inline marker that precedes this node when rendered, or
+    /// `None` if the node has no leading marker. The label is looked up from the
+    /// localized `phrases` catalog (`versicle-marker`, `antiphon-marker`, …), so
+    /// it stays language-specific and editable. Carrying the marker as data —
+    /// rather than baking it into the text — lets a renderer pick its own
+    /// presentation without re-parsing the string. Lives here, beside
+    /// [`Catalog::phrase`], because it needs the catalog; `model` stays pure data.
+    pub fn line_marker(&self, language: &str, catalog: &Catalog) -> Option<LineMarker> {
+        let (kind, id) = match self {
+            DocumentNode::Versicle { .. } => (LineMarkerKind::Versicle, "versicle-marker"),
+            DocumentNode::Response { .. } => (LineMarkerKind::Response, "response-marker"),
+            DocumentNode::ShortResponse { .. } => {
+                (LineMarkerKind::ShortResponse, "short-response-marker")
+            }
+            DocumentNode::Antiphon { .. } => (LineMarkerKind::Antiphon, "antiphon-marker"),
+            DocumentNode::Blessing { .. } => (LineMarkerKind::Blessing, "blessing-marker"),
+            // The Amen response carries the response siglum.
+            DocumentNode::Amen => (LineMarkerKind::Response, "response-marker"),
+            _ => return None,
+        };
+        Some(LineMarker {
+            kind,
+            label: catalog.phrase(language, id).to_string(),
+        })
+    }
+
+    /// The node's body text for a language column, with no leading marker. The
+    /// node's text is already resolved for the requested language; this just
+    /// strips the marker concern out so a renderer can present it freely.
+    pub fn body_for_language(&self, language: &str, catalog: &Catalog) -> String {
+        match self {
+            DocumentNode::Text { text }
+            | DocumentNode::Heading { text }
+            | DocumentNode::Rubric { text }
+            | DocumentNode::Marker { text }
+            | DocumentNode::Citation { text }
+            | DocumentNode::Prayer { text }
+            | DocumentNode::Versicle { text }
+            | DocumentNode::Response { text }
+            | DocumentNode::ShortResponse { text }
+            | DocumentNode::Antiphon { text }
+            | DocumentNode::Blessing { text } => text.clone(),
+            DocumentNode::Amen => catalog.phrase(language, "amen-response").to_string(),
+            DocumentNode::Unresolved {
+                kind,
+                value,
+                reason,
+            } => format!("[unresolved {kind}: {value}; {reason}]"),
+        }
+    }
+
+    /// Plain-text rendering for a language column, with the marker label baked in
+    /// — for plain-text consumers (e.g. `render-office`). The web renderer
+    /// instead uses [`Self::line_marker`] + [`Self::body_for_language`] and keeps
+    /// the marker structured.
+    pub fn plain_text_for_language(&self, language: &str, catalog: &Catalog) -> String {
+        let body = self.body_for_language(language, catalog);
+        match self.line_marker(language, catalog) {
+            Some(marker) => format!("{} {body}", marker.label),
+            None => body,
+        }
+    }
+}
 
 /// One observance / structural unit within a book.
 #[derive(Clone, Debug, Default)]

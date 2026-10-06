@@ -1,0 +1,636 @@
+{
+  "full_verses": {
+    "3:1": {
+      "text": "A Psalm of David. When he fled from the face of his son, Absalom.",
+      "reason": "superscription"
+    },
+    "4:1": {
+      "text": "In parts according to verses. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "5:1": {
+      "text": "Unto the end. For her who pursues the inheritance. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "6:1": {
+      "text": "In parts according to verses. A Psalm of David. For the octave.",
+      "reason": "superscription"
+    },
+    "7:1": {
+      "text": "A Psalm of David, which he sang to the Lord because of the words of Cush, the son of Jemini.",
+      "reason": "superscription"
+    },
+    "8:1": {
+      "text": "Unto the end. For the oil and wine presses. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "9:1": {
+      "text": "Unto the end. For the secrets of the Son. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "10:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "11:1": {
+      "text": "Unto the end. For the octave. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "17:1": {
+      "text": "Unto the end. For David, the servant of the Lord, who spoke the words of this canticle to the Lord, in the day that the Lord delivered him from the hand of all his enemies and from the hand of Saul. And he said:",
+      "reason": "superscription"
+    },
+    "18:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "19:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "20:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "21:1": {
+      "text": "Unto the end. For the tasks of early morning. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "29:1": {
+      "text": "A Canticle Psalm. In dedication to the house of David.",
+      "reason": "superscription"
+    },
+    "30:1": {
+      "text": "Unto the end. A Psalm of David according to an ecstasy.",
+      "reason": "superscription"
+    },
+    "33:1": {
+      "text": "To David, when he changed his appearance in the sight of Abimelech, and so he dismissed him, and he went away.",
+      "reason": "superscription"
+    },
+    "35:1": {
+      "text": "Unto the end. To the servant of the Lord, David himself.",
+      "reason": "superscription"
+    },
+    "37:1": {
+      "text": "A Psalm of David, in commemoration of the Sabbath.",
+      "reason": "superscription"
+    },
+    "38:1": {
+      "text": "Unto the end. For Jeduthun himself. A Canticle of David.",
+      "reason": "superscription"
+    },
+    "39:1": {
+      "text": "Unto the end. A Psalm of David himself.",
+      "reason": "superscription"
+    },
+    "40:1": {
+      "text": "Unto the end. A Psalm of David himself.",
+      "reason": "superscription"
+    },
+    "41:1": {
+      "text": "Unto the end. The understanding of the sons of Korah.",
+      "reason": "superscription"
+    },
+    "43:1": {
+      "text": "Unto the end. To the sons of Korah, toward understanding.",
+      "reason": "superscription"
+    },
+    "44:1": {
+      "text": "Unto the end. For those who will be changed. To the sons of Korah, toward understanding. A Canticle for the Beloved.",
+      "reason": "superscription"
+    },
+    "45:1": {
+      "text": "Unto the end. To the sons of Korah, for confidants. A Psalm.",
+      "reason": "superscription"
+    },
+    "46:1": {
+      "text": "Unto the end. A Psalm for the sons of Korah.",
+      "reason": "superscription"
+    },
+    "47:1": {
+      "text": "A Canticle Psalm. To the sons of Korah, on the second Sabbath.",
+      "reason": "superscription"
+    },
+    "48:1": {
+      "text": "Unto the end. A Psalm to the sons of Korah.",
+      "reason": "superscription"
+    },
+    "50:1": {
+      "text": "Unto the end. A Psalm of David,",
+      "reason": "superscription"
+    },
+    "50:2": {
+      "text": "when Nathan the prophet came to him, after he went to Bathsheba.",
+      "reason": "superscription"
+    },
+    "51:1": {
+      "text": "Unto the end. The understanding of David.",
+      "reason": "superscription"
+    },
+    "51:2": {
+      "text": "When Doeg the Edomite came and reported to Saul, David went to the house of Ahimelech.",
+      "reason": "superscription"
+    },
+    "53:1": {
+      "text": "Unto the end. In verses, the understanding of David,",
+      "reason": "superscription"
+    },
+    "53:2": {
+      "text": "when the Ziphites had arrived and they said to Saul, “Has not David been hidden with us?”",
+      "reason": "superscription"
+    },
+    "54:1": {
+      "text": "Unto the end. In verses, the understanding of David.",
+      "reason": "superscription"
+    },
+    "55:1": {
+      "text": "Unto the end. For the people who have become far removed from the Sacred. Of David, with the inscription of a title, when the Philistines held him in Gath.",
+      "reason": "superscription"
+    },
+    "56:1": {
+      "text": "Unto the end. May you not destroy. Of David, with the inscription of a title, when he fled from Saul into a cave.",
+      "reason": "superscription"
+    },
+    "57:1": {
+      "text": "Unto the end. May you not destroy. Of David, with the inscription of a title.",
+      "reason": "superscription"
+    },
+    "58:1": {
+      "text": "Unto the end. May you not destroy. Of David, with the inscription of a title, when Saul sent and watched his house, in order to execute him.",
+      "reason": "superscription"
+    },
+    "59:1": {
+      "text": "Unto the end. For those who will be changed, with the inscription of a title, of David himself, for instruction:",
+      "reason": "superscription"
+    },
+    "59:2": {
+      "text": "when he set fire to Mesopotamia of Syria and Sobal, and Joab turned back and struck Idumea, in the valley of the salt pits, twelve thousand men.",
+      "reason": "superscription"
+    },
+    "60:1": {
+      "text": "Unto the end. With hymns, of David.",
+      "reason": "superscription"
+    },
+    "61:1": {
+      "text": "Unto the end. For Jeduthun. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "62:1": {
+      "text": "A Psalm of David, when he was in the desert of Idumea.",
+      "reason": "superscription"
+    },
+    "63:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "64:1": {
+      "text": "Unto the end. A Psalm of David. A Canticle of Jeremiah and Ezekiel to the people of the captivity, when they began to go into exile.",
+      "reason": "superscription"
+    },
+    "66:1": {
+      "text": "Unto the end. With hymns, a Canticle Psalm of David.",
+      "reason": "superscription"
+    },
+    "67:1": {
+      "text": "Unto the end. A Canticle Psalm of David himself.",
+      "reason": "superscription"
+    },
+    "68:1": {
+      "text": "Unto the end. For those who will be changed: of David.",
+      "reason": "superscription"
+    },
+    "69:1": {
+      "text": "Unto the end. A Psalm of David, in remembrance that the Lord had saved him.",
+      "reason": "superscription"
+    },
+    "71:1": {
+      "text": "A Psalm according to Solomon.",
+      "reason": "superscription"
+    },
+    "71:20": {
+      "text": "The praises of David, the son of Jesse, have reached an end.",
+      "reason": "colophon"
+    },
+    "74:1": {
+      "text": "Unto the end. May you not be corrupted. A Canticle Psalm of Asaph.",
+      "reason": "superscription"
+    },
+    "75:1": {
+      "text": "Unto the end. With Praises. A Psalm of Asaph. A Canticle to the Assyrians.",
+      "reason": "superscription"
+    },
+    "76:1": {
+      "text": "Unto the end. For Jeduthun. A Psalm of Asaph.",
+      "reason": "superscription"
+    },
+    "79:1": {
+      "text": "Unto the end. For those who will be changed. The testimony of Asaph. A Psalm.",
+      "reason": "superscription"
+    },
+    "80:1": {
+      "text": "Unto the end. For the wine and oil presses. A Psalm of Asaph himself.",
+      "reason": "superscription"
+    },
+    "82:1": {
+      "text": "A Canticle Psalm of Asaph.",
+      "reason": "superscription"
+    },
+    "83:1": {
+      "text": "Unto the end. For the wine and oil presses. A Psalm to the sons of Korah.",
+      "reason": "superscription"
+    },
+    "84:1": {
+      "text": "Unto the end. A Psalm to the sons of Korah.",
+      "reason": "superscription"
+    },
+    "87:1": {
+      "text": "A Canticle Psalm to the sons of Korah. Unto the end. For Mahalath, to answer the understanding of Heman the Ezrahite.",
+      "reason": "superscription"
+    },
+    "88:1": {
+      "text": "The understanding of Ethan the Ezrahite.",
+      "reason": "superscription"
+    },
+    "91:1": {
+      "text": "A Canticle Psalm. On the day of the Sabbath.",
+      "reason": "superscription"
+    },
+    "92:1": {
+      "text": "The Praise of a Canticle, of David himself. In the time before the Sabbath, when the earth was founded.",
+      "reason": "superscription"
+    },
+    "99:1": {
+      "text": "A Psalm of Confession.",
+      "reason": "superscription"
+    },
+    "101:1": {
+      "text": "The prayer of the pauper, when he was anxious, and so he poured out his petition in the sight of the Lord.",
+      "reason": "superscription"
+    },
+    "107:1": {
+      "text": "A Canticle Psalm, of David himself.",
+      "reason": "superscription"
+    },
+    "108:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "139:1": {
+      "text": "Unto the end. A Psalm of David.",
+      "reason": "superscription"
+    },
+    "141:1": {
+      "text": "The understanding of David. A prayer, when he was in the cave.",
+      "reason": "superscription"
+    },
+    "145:1": {
+      "text": "Alleluia. Of Haggai and Zachariah.",
+      "reason": "superscription"
+    }
+  },
+  "prefixes": {
+    "12:1": {
+      "text": "Unto the end. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "13:1": {
+      "text": "Unto the end. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "14:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "15:1": {
+      "text": "The inscription of a title: of David himself. ",
+      "reason": "superscription"
+    },
+    "16:1": {
+      "text": "A Prayer of David. ",
+      "reason": "superscription"
+    },
+    "22:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "23:1": {
+      "text": "For the First Sabbath. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "24:1": {
+      "text": "Unto the end. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "25:1": {
+      "text": "Unto the end. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "26:1": {
+      "text": "A Psalm of David, before he was sealed. ",
+      "reason": "superscription"
+    },
+    "27:1": {
+      "text": "A Psalm of David himself. ",
+      "reason": "superscription"
+    },
+    "28:1": {
+      "text": "A Psalm of David, at the completion of the tabernacle. ",
+      "reason": "superscription"
+    },
+    "31:1": {
+      "text": "The understanding of David himself. ",
+      "reason": "superscription"
+    },
+    "32:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "34:1": {
+      "text": "Of David himself. ",
+      "reason": "superscription"
+    },
+    "36:1": {
+      "text": "A Psalm of David himself. ",
+      "reason": "superscription"
+    },
+    "42:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "49:1": {
+      "text": "A Psalm of Asaph. ",
+      "reason": "superscription"
+    },
+    "52:1": {
+      "text": "Unto the end. For Mahalath: the thoughts of David. ",
+      "reason": "superscription"
+    },
+    "65:1": {
+      "text": "Unto the end. A Canticle Psalm of the Resurrection. ",
+      "reason": "superscription"
+    },
+    "70:1": {
+      "text": "A Psalm of David. Of the sons of Jonadab and the former captives. ",
+      "reason": "superscription"
+    },
+    "72:1": {
+      "text": "A Psalm of Asaph. ",
+      "reason": "superscription"
+    },
+    "73:1": {
+      "text": "The understanding of Asaph. ",
+      "reason": "superscription"
+    },
+    "77:1": {
+      "text": "The understanding of Asaph. ",
+      "reason": "superscription"
+    },
+    "78:1": {
+      "text": "A Psalm of Asaph. ",
+      "reason": "superscription"
+    },
+    "81:1": {
+      "text": "A Psalm of Asaph. ",
+      "reason": "superscription"
+    },
+    "85:1": {
+      "text": "A Prayer of David himself. ",
+      "reason": "superscription"
+    },
+    "86:1": {
+      "text": "A Canticle Psalm to the sons of Korah. ",
+      "reason": "superscription"
+    },
+    "89:1": {
+      "text": "A prayer of Moses, the man of God. ",
+      "reason": "superscription"
+    },
+    "90:1": {
+      "text": "The Praise of a Canticle, of David. ",
+      "reason": "superscription"
+    },
+    "93:1": {
+      "text": "A Psalm of David himself. The Fourth Sabbath. ",
+      "reason": "superscription"
+    },
+    "94:1": {
+      "text": "The Praise of a Canticle, of David himself. ",
+      "reason": "superscription"
+    },
+    "95:1": {
+      "text": "A Canticle of David himself, when the house was built after the captivity. ",
+      "reason": "superscription"
+    },
+    "96:1": {
+      "text": "This is to David, when his land was restored to him. ",
+      "reason": "superscription"
+    },
+    "97:1": {
+      "text": "A Psalm of David himself. ",
+      "reason": "superscription"
+    },
+    "98:1": {
+      "text": "A Psalm of David himself. ",
+      "reason": "superscription"
+    },
+    "100:1": {
+      "text": "A Psalm of David himself. ",
+      "reason": "superscription"
+    },
+    "102:1": {
+      "text": "To David himself. ",
+      "reason": "superscription"
+    },
+    "103:1": {
+      "text": "To David himself. ",
+      "reason": "superscription"
+    },
+    "104:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "105:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "106:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "109:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "110:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "111:1": {
+      "text": "Alleluia. Of the return of Haggai and Zachariah. ",
+      "reason": "superscription"
+    },
+    "112:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "113:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "114:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "115:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "116:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "117:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "118:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "119:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "120:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "121:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "122:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "123:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "124:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "125:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "126:1": {
+      "text": "A Canticle in steps: of Solomon. ",
+      "reason": "superscription"
+    },
+    "127:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "128:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "129:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "130:1": {
+      "text": "A Canticle in steps: of David. ",
+      "reason": "superscription"
+    },
+    "131:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "132:1": {
+      "text": "A Canticle in steps: of David. ",
+      "reason": "superscription"
+    },
+    "133:1": {
+      "text": "A Canticle in steps. ",
+      "reason": "superscription"
+    },
+    "134:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "135:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "136:1": {
+      "text": "A Psalm of David: to Jeremiah. ",
+      "reason": "superscription"
+    },
+    "137:1": {
+      "text": "Of David himself. ",
+      "reason": "superscription"
+    },
+    "138:1": {
+      "text": "Unto the end. A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "140:1": {
+      "text": "A Psalm of David. ",
+      "reason": "superscription"
+    },
+    "142:1": {
+      "text": "A Psalm of David, when his son Absalom was pursuing him. ",
+      "reason": "superscription"
+    },
+    "143:1": {
+      "text": "A Psalm of David versus Goliath. ",
+      "reason": "superscription"
+    },
+    "144:1": {
+      "text": "The Praise of David himself. ",
+      "reason": "superscription"
+    },
+    "146:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "147:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "148:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "149:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    },
+    "150:1": {
+      "text": "Alleluia. ",
+      "reason": "superscription"
+    }
+  },
+  "suffixes": {
+    "147:9": {
+      "text": " Alleluia.",
+      "reason": "Alleluia absent from the Latin breviary psalm text"
+    },
+    "148:14": {
+      "text": " Alleluia.",
+      "reason": "Alleluia absent from the Latin breviary psalm text"
+    },
+    "149:9": {
+      "text": " Alleluia.",
+      "reason": "Alleluia absent from the Latin breviary psalm text"
+    },
+    "150:6": {
+      "text": " Alleluia.",
+      "reason": "Alleluia absent from the Latin breviary psalm text"
+    }
+  }
+}

@@ -20,14 +20,24 @@ yaml_serde = "0.10.4"
 
 [dependencies]
 breviarium-data = { path = "crates/breviarium-data", optional = true }
-chrono = { workspace = true, features = ["clock"], optional = true }
+chrono = { workspace = true }
 dioxus = { workspace = true, features = ["fullstack", "router"] }
 serde = { workspace = true, features = ["derive"] }
 
 [features]
 default = []
-server = ["dioxus/server", "dep:breviarium-data", "dep:chrono"]
+server = ["dioxus/server", "dep:breviarium-data", "chrono/clock"]
 web = ["dioxus/web"]
 
 [profile.dev]
 opt-level = 1
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

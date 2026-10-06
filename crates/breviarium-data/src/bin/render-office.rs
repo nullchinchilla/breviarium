@@ -1,4 +1,4 @@
-use breviarium_data::{Breviarium, DocumentNode, Hour, OfficeBlockContent, OfficeRequest};
+use breviarium_data::{Breviarium, Catalog, DocumentNode, Hour, OfficeBlockContent, OfficeRequest};
 use chrono::NaiveDate;
 use std::env;
 
@@ -32,6 +32,7 @@ fn run() -> Result<(), String> {
     };
 
     let engine = Breviarium::embedded().map_err(|error| error.to_string())?;
+    let catalog = engine.catalog();
 
     // The backend resolves one language per request; render each requested
     // language in turn (clients display columns by zipping these documents).
@@ -67,7 +68,7 @@ fn run() -> Result<(), String> {
             );
             match &block.content {
                 OfficeBlockContent::Resolved { nodes } => {
-                    println!("{}", document_text(language, nodes));
+                    println!("{}", document_text(language, catalog, nodes));
                 }
                 OfficeBlockContent::Missing { reason } => {
                     println!("[missing: {reason}]");
@@ -96,11 +97,11 @@ fn parse_hour(value: &str) -> Result<Hour, String> {
     }
 }
 
-fn document_text(language: &str, nodes: &[DocumentNode]) -> String {
+fn document_text(language: &str, catalog: &Catalog, nodes: &[DocumentNode]) -> String {
     nodes
         .iter()
         .map(|node| {
-            let text = node.plain_text_for_language(language);
+            let text = node.plain_text_for_language(language, catalog);
             format!("[{}] {}", node.kind(), text.replace('\n', "\n        | "))
         })
         .collect::<Vec<_>>()

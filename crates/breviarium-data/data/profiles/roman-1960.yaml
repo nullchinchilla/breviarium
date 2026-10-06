@@ -6,5 +6,7 @@ supported_services:
   - office
 supported_languages:
   - la
+  - en-dr
   - en
-  - en2
+  - zhs-ecu
+  - zhs

@@ -1,11 +1,13 @@
 use dioxus::prelude::*;
 
+mod about;
 mod clock;
 mod home;
 mod lang;
 mod language_picker;
 mod load_office;
 mod officium;
+use about::About;
 use home::Home;
 use officium::Officium;
 
@@ -30,6 +32,8 @@ fn main() {
 enum Route {
     #[route("/")]
     Home {},
+    #[route("/about")]
+    About {},
     #[route("/:lang/officium/:date/:hour")]
     Officium {
         lang: String,
@@ -67,6 +71,9 @@ fn App() -> Element {
             "#
         }
         Router::<Route> {}
+        footer { class: "site-footer",
+            a { href: "/about", "About" }
+        }
     }
 }
 

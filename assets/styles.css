@@ -208,3 +208,31 @@ a[href]:focus-visible,
     font-size: 0.8rem;
     margin-right: 0.2rem;
 }
+.site-footer {
+    margin: 2rem 0 1rem;
+    text-align: center;
+    font-family: "Ysabeau", sans-serif;
+    font-size: 0.7rem;
+    font-variant-caps: small-caps;
+    text-transform: lowercase;
+}
+
+.about h1 {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-variant-caps: small-caps;
+}
+
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 640px) {
+    .about-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

@@ -32,12 +32,13 @@ pub(crate) fn LanguagePicker(
                 }
             },
             if language == "la" {
-                option { value: "la", "Latina" }
+                option { value: "la", selected: true, "Latina" }
             }
             for choice in Language::ALL {
                 option {
                     key: "{choice.code()}",
                     value: choice.code(),
+                    selected: language == choice.code(),
                     "{choice.label()}"
                 }
             }

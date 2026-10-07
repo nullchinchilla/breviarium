@@ -66,18 +66,26 @@ The check compares complete psalm bodies, including punctuation, across verse
 boundaries and verifies that the English notation matches Latin. It detects
 missing or repeated clauses even when the verse labels and node counts agree.
 
-### `en2` translation
+Translations are stored directly in the multilingual YAML lexicon.
 
-The `en2` column is produced by `crates/breviarium-data/tools/en2.py`, which
-walks the Latin (`la`) column of the lexicon. It keys translations on the Latin
-source string, so `apply` is idempotent and re-runnable.
+### Ecumenical Chinese Scripture
+
+The `zhs-ecu` column follows the older public-domain Chinese Union Version
+(CUV), with our own punctuation modernization. It does not use the copyrighted
+New Punctuation or Revised CUV. Biblical wording follows CUV; 耶和华 becomes
+主 or 神 according to the Latin Dominus or Deus. The Latin liturgical text
+determines passage boundaries, omitted Alleluias, and necessary adaptations.
+Deuterocanonical passages and Latin additions without a canonical CUV parallel
+use original translations following CUV conventions.
+Instrumental “per” uses 借, including prayer conclusions. Both Chinese columns
+omit asterisks; the remaining liturgical notation is retained.
+The Glory Be begins “愿荣耀归于父、子、圣灵。” Prayer conclusions use
+“共生共治，独一的神，世世无尽”, with pronouns matching the Latin address.
+
+The retained source, documented source repairs, references, and reviewed
+adaptations are in `crates/breviarium-data/cuv`. Check the reviewed wording,
+verse labels, and chant divisions offline with Python 3 and PyYAML:
 
 ```sh
-# 1. Extract the unique Latin strings as a JSON array for the translator:
-python3 crates/breviarium-data/tools/en2.py extract
-#    → crates/breviarium-data/en2/latin.json
-
-# 2. Translate that array (preserving length and order), then inject the
-#    en2 column back into the lexicon:
-python3 crates/breviarium-data/tools/en2.py apply crates/breviarium-data/en2/english.json
+python3 crates/breviarium-data/tools/cuv_audit.py --self-test
 ```

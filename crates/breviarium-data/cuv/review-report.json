@@ -1,0 +1,74 @@
+{
+  "source_version": "Older public-domain Chinese Union Version (CUVS); not New Punctuation CUV or Revised CUV",
+  "source_url": "https://www.biblegateway.com/versions/Chinese-Union-Version-Simplified-CUVS",
+  "punctuation": "Modernized independently; lexical comparisons ignore punctuation and whitespace.",
+  "policy": {
+    "canonical": "Keep CUV wording and order within the Latin-selected passage extent. Replace 耶和华 with 主/神 according to Dominus/Deus.",
+    "liturgical": "Record essential authored adaptations and Latin additions; omit material absent from the Latin liturgical selection.",
+    "deuterocanonical": "Original translations from Latin following CUV conventions.",
+    "instrumental_per": "Use 借 for instrumental per/through, including prayer conclusions; this spelling convention also applies to quoted CUV wording. Retain 慰藉.",
+    "chinese_asterisks": "Omit asterisks from both Chinese columns; retain other notation.",
+    "doxology": "Glory Be: 愿荣耀归于父、子、圣灵。起初如何，今日依然，直到永远，世世无尽。阿们。 Long prayer conclusions: 借我们的主耶稣基督，你的儿子——他与你在圣灵的合一中，共生共治，独一的神，世世无尽。阿们。 Preserve grammatical-person and same-Spirit variants."
+  },
+  "coverage": {
+    "numbered_psalm_records": 151,
+    "biblical_canticles": 50,
+    "antiphon_fields": 2959,
+    "common_ordinary_psalter_formula_fields": 2213,
+    "temporal_formula_fields": 2794,
+    "sanctoral_formula_fields": 3371,
+    "ordinary_main_reading_fields_excluded_from_formulas_and_reviewed_separately": 18,
+    "canonical_numbered_reading_fields": 1147,
+    "gospel_opening_fields": 340,
+    "explicit_quoted_spans_in_commentary_reviewed": 599,
+    "audit_records": 14540,
+    "checked_corpus_fields": 17513,
+    "retained_source_verse_records": 31101,
+    "source_repairs": 584,
+    "documented_reading_structure_repairs": 42
+  },
+  "limitations": [
+    "Commentary review covers detected explicit quotations; unmarked scriptural allusions in commentary were not exhaustively reviewed.",
+    "One indirect commentary allusion, 人的命运在神手中, has no uniquely identifiable biblical source and was retained.",
+    "Original deuterocanonical translations and essential liturgical adaptations require editorial judgment; retained Latin and adaptation notes document those decisions."
+  ],
+  "validation": {
+    "offline_wording_structure_and_corruption_self_tests": "passed",
+    "other_languages_metadata_ids_and_node_structure": "preserved",
+    "workspace_tests": "18 tests passed",
+    "english_psalter": "151 CPDV records passed",
+    "annual_office_resolution": {
+      "year": 2026,
+      "languages": [
+        "zhs-ecu",
+        "zhs"
+      ],
+      "resolved_requests": 5840,
+      "hard_failures": 0,
+      "missing_columns": 0,
+      "unresolved_nodes": 0,
+      "diagnostics": 0
+    },
+    "representative_rendering": [
+      "2026-10-06 Matins",
+      "2026-10-06 Lauds",
+      "2026-10-06 Vespers",
+      "2026-10-06 Compline"
+    ]
+  },
+  "evidence": [
+    "source.json",
+    "source-repairs.json",
+    "audit.json",
+    "../tools/cuv_audit.py"
+  ],
+  "subsequent_user_requested_edits": {
+    "instrumental_藉_to_借": 1374,
+    "instrumental_因_to_借": 553,
+    "removed_asterisks": {
+      "zhs": 7204,
+      "zhs-ecu": 7243
+    },
+    "doxology_fields": 1463
+  }
+}

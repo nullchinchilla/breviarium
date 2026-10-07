@@ -81,6 +81,8 @@ Instrumental “per” uses 借, including prayer conclusions. Both Chinese colu
 omit asterisks; the remaining liturgical notation is retained.
 The Glory Be begins “愿荣耀归于父、子、圣灵。” Prayer conclusions use
 “共生共治，独一的神，世世无尽”, with pronouns matching the Latin address.
+Intercession uses 代求; “sancta Dei Genetrix” uses 神之圣母.
+“Beata Maria semper Virgo” and its grammatical variants use 永贞荣福马利亚.
 
 The retained source, documented source repairs, references, and reviewed
 adaptations are in `crates/breviarium-data/cuv`. Check the reviewed wording,

@@ -80,7 +80,7 @@ pub fn Officium(
                         div { class: "row columns",
                             div { class: "lang lang-la",
                                 if let Some(line) = latin_block.lines.get(row) {
-                                    OfficeLine { line: line.clone() }
+                                    OfficeLine { line: line.clone(), language: "la" }
                                 }
                             }
                             // `/la/...` is reachable by hand but never linked;
@@ -88,7 +88,7 @@ pub fn Officium(
                             if vernacular_lang != LATIN {
                                 div { class: "lang lang-{vernacular_lang}",
                                     if let Some(line) = vernacular_lines.get(row) {
-                                        OfficeLine { line: line.clone() }
+                                        OfficeLine { line: line.clone(), language: vernacular_lang.clone() }
                                     }
                                 }
                             }
@@ -236,7 +236,10 @@ fn adjacent_dates(date_path: &str) -> (String, String) {
 }
 
 #[component]
-fn OfficeLine(line: LineView) -> Element {
+fn OfficeLine(mut line: LineView, language: String) -> Element {
+    if matches!(language.as_str(), "zhs" | "zhs-ecu") {
+        line.text = line.text.replace(" * ", "").replace('*', "");
+    }
     match line.kind {
         // Each source line is parsed into inline segments: a leading versicle /
         // response / verse-number marker, and cross markers, each wrapped in

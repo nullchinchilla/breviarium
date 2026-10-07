@@ -8,7 +8,9 @@
     "deuterocanonical": "Original translations from Latin following CUV conventions.",
     "instrumental_per": "Use 借 for instrumental per/through, including prayer conclusions; this spelling convention also applies to quoted CUV wording. Retain 慰藉.",
     "chinese_asterisks": "Omit asterisks from both Chinese columns; retain other notation.",
-    "doxology": "Glory Be: 愿荣耀归于父、子、圣灵。起初如何，今日依然，直到永远，世世无尽。阿们。 Long prayer conclusions: 借我们的主耶稣基督，你的儿子——他与你在圣灵的合一中，共生共治，独一的神，世世无尽。阿们。 Preserve grammatical-person and same-Spirit variants."
+    "doxology": "Glory Be: 愿荣耀归于父、子、圣灵。起初如何，今日依然，直到永远，世世无尽。阿们。 Long prayer conclusions: 借我们的主耶稣基督，你的儿子——他与你在圣灵的合一中，共生共治，独一的神，世世无尽。阿们。 Preserve grammatical-person and same-Spirit variants.",
+    "intercession_marian_terminology": "Intercession: 代求. Sancta Dei Genetrix: 神之圣母; preserve Latin superlatives.",
+    "semper_virgin_title": "Beata Maria semper Virgo and its grammatical variants use 永贞荣福马利亚."
   },
   "coverage": {
     "numbered_psalm_records": 151,
@@ -21,8 +23,8 @@
     "canonical_numbered_reading_fields": 1147,
     "gospel_opening_fields": 340,
     "explicit_quoted_spans_in_commentary_reviewed": 599,
-    "audit_records": 14540,
-    "checked_corpus_fields": 17513,
+    "audit_records": 14747,
+    "checked_corpus_fields": 17720,
     "retained_source_verse_records": 31101,
     "source_repairs": 584,
     "documented_reading_structure_repairs": 42
@@ -69,6 +71,8 @@
       "zhs": 7204,
       "zhs-ecu": 7243
     },
-    "doxology_fields": 1463
+    "doxology_fields": 1463,
+    "intercession_marian_fields": 286,
+    "semper_virgin_fields": 19
   }
 }

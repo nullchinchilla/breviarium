@@ -16056,21 +16056,9 @@ texts:
         text: 'Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.'
       - type: response
         text: Amen.
-      - type: text
-        text: 'Deus, qui nos cónspicis ex nostra infirmitáte defícere: ad amórem tuum nos misericórditer per beáti Callísti, Mártyris tui atque Pontíficis, exémpla restáura.'
-      - type: prayer
-        text: 'Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.'
-      - type: response
-        text: Amen.
       en:
       - type: text
         text: 'O God, who see that we fail through our own weakness: mercifully restore us, through the examples of your Saints, to love of you.'
-      - type: prayer
-        text: 'Through our Lord Jesus Christ, your Son: who lives and reigns with you in the unity of the Holy Spirit, God, for ever and ever.'
-      - type: response
-        text: Amen.
-      - type: text
-        text: 'O God, who see that we fail through our own weakness: mercifully restore us, through the example of your blessed Martyr and Bishop Callistus, to love of you.'
       - type: prayer
         text: 'Through our Lord Jesus Christ, your Son: who lives and reigns with you in the unity of the Holy Spirit, God, for ever and ever.'
       - type: response
@@ -16082,21 +16070,9 @@ texts:
         text: "借我们的主耶稣基督，你的儿子——\n他与你在圣灵的合一中，共生共治，\n独一的神，世世无尽。"
       - type: response
         text: 阿们。
-      - type: text
-        text: 神啊，你眼见我们因自身的软弱而衰败：求你慈悲地借你真福殉道者主教加里斯都的榜样，使我们重归对你的爱。
-      - type: prayer
-        text: "借我们的主耶稣基督，你的儿子——\n他与你在圣灵的合一中，共生共治，\n独一的神，世世无尽。"
-      - type: response
-        text: 阿们。
       zhs:
       - type: text
         text: 天主，祢看见我们因自身的软弱而倒下；求祢仁慈地借着祢诸位圣人的榜样，将我们恢复于对祢的爱中。
-      - type: prayer
-        text: 因祢的子、我们的主耶稣基督：祂和祢及圣神，是唯一的天主，永生永王，世世无穷。
-      - type: response
-        text: 阿们。
-      - type: text
-        text: 天主，祢看见我们因自身的软弱而倒下；求祢仁慈地借着祢殉道者兼主教圣加利斯都的榜样，将我们恢复于对祢的爱中。
       - type: prayer
         text: 因祢的子、我们的主耶稣基督：祂和祢及圣神，是唯一的天主，永生永王，世世无穷。
       - type: response
@@ -41996,6 +41972,24 @@ texts:
       zhs:
       - type: text
         text: 圣波尼法爵殉道者
+  note.our-lady-of-the-rosary:
+    role: note
+    content:
+      la:
+      - type: text
+        text: Beatæ Mariæ Virginis a Rosario
+      en-dr:
+      - type: text
+        text: Our Lady of the Rosary
+      en:
+      - type: text
+        text: Our Lady of the Rosary
+      zhs-ecu:
+      - type: text
+        text: 玫瑰经圣母
+      zhs:
+      - type: text
+        text: 玫瑰圣母
   note.s-brunonis-confessoris-af1d0927d3:
     role: note
     content:
